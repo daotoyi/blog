@@ -1,0 +1,71 @@
+#+title: About
+#+Author: daoyi
+#+date: 2022-02-03T13:09:17+08:00
+#+tags[]: 
+#+categories[]: about 
+
+
+* myself
+daoyi
+
+* hobbies
+** computer enthusiast
+** financial/economic
+** quant/hedge
+** zhouyi/zhongyi
+** comics
+
+* refine
+** read
+** code
+*** python
+*** shell
+*** emacs-lisp
+*** c/c++
+** efficient tool
+| categories        | archive             | self-contral |
+|-------------------+---------------------+--------------|
+| normal            | uTools              |              |
+|                   | Quicker             |              |
+|                   | Capslock++          |              |
+|                   | FastKeys            |              |
+| emacs             | spacemacs           | dylayer      |
+|                   |                     | _emacs       |
+| vim               | spacevim            | dylayer      |
+|                   |                     | vimrc        |
+| download          | youtube-dl          | comics       |
+| github            | FastgithubUI        |              |
+| quant             | VNPY                | dymonitor    |
+|                   | Backtrader          |              |
+|                   | Qlib                |              |
+|                   | Lean                |              |
+| quant-resource    | tushare             |              |
+|                   | AkShare             |              |
+| passwd-manager    | Keepass             |              |
+|                   | Keepass2Android     |              |
+|                   | uTools-keepass      |              |
+| sync              | jianguoyun          |              |
+|                   | Syncthing           |              |
+|                   | verysync            |              |
+|                   | FoldSync Pro        |              |
+| GTD               | emacs               |              |
+|                   | Orgzly (apk)        |              |
+|                   | RefTime(apk)        |              |
+| telegram          | telegram X          |              |
+|                   | Nekogram X          |              |
+| broswer extension | Tampermonkey        |              |
+|                   | MarkDownload        |              |
+|                   | Octotree            |              |
+|                   | floccus             |              |
+|                   | Onetab              |              |
+|                   | Vimium              |              |
+|                   | NeatDownloadManager |              |
+|                   | FireShot            |              |
+|                   | stylus              |              |
+|                   | Microsoft passwd    |              |
+
+
+* about site
+
+- refine techknowledge
+- record life

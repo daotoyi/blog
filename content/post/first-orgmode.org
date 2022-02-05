@@ -1,12 +1,12 @@
-#+title: First
+#+title: First-orgmode
 #+Author: daoyi
 #+date: 2022-02-03T10:41:17+08:00
 #+tags[]: emacs, org
-#+categories[]: emacs
+#+categories[]: hugo, code
 
 * 简述
 
-采用 emacs org-mde 在 Hugo + Github 部署的静态网站上记录个人博客。
+采用 =emacs org-mde= 在 =Hugo + Github= 部署的静态网站上记录个人博客。
 
 * Hugo
 
@@ -25,9 +25,15 @@ github pages
 
 * Org-mode
 
+** Read More
+
+生成的文章要支持 Read More ，在需要分割的地方添加 ~#more~ (中间有空格)即可。
+
+# more
+
 ** meta
 #+begin_src org
-#+title: "First"
+#+title: First-orgmode
 #+Author: daoyi
 #+date: 2022-02-03T10:41:17+08:00
 #+tags[]: org, hugo, emacs
@@ -40,12 +46,6 @@ github pages
   * 一级标题
   ** 二级标题
 #+end_src
-
-** Read More
-
-生成的文章要支持 Read More ，在需要分割的地方添加 # more 即可。
-
-# more
 
 ** code
 

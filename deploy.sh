@@ -19,6 +19,9 @@ upper_repo(){
 }
 
 embed_repo(){
+    # Clean Public folder
+    rm -rf public/*
+
     # Build the project. 
     hugo # if using a theme, replace by `hugo -t <yourtheme>`
 
@@ -35,3 +38,7 @@ embed_repo(){
     git push -u origin main
 }
 
+# upper_repo
+embed_repo
+
+exit 0

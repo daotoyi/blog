@@ -1,0 +1,31 @@
+#+title: Repositories
+#+Author: daoyi
+#+date: 2022-02-04T09:33:17+08:00
+#+tags[]: 
+#+categories[]: hugo
+#+comment: false
+
+* github
+- emacs
+  - dylayer(spacemacs)
+  - emacs.d
+    
+- vim
+  - dylayer(spacevim)
+  - _vimrc
+    
+- quant
+  - dymonitor
+    
+- tools
+  - inspectionPro
+    
+* gitee
+- vim-plugins
+  - easymotion
+  - monokai
+  - orgmode
+  - supertab
+    
+* Org
+- github

@@ -1,33 +1,36 @@
 #+title: About
 #+Author: daoyi
 #+date: 2022-02-03T13:09:17+08:00
+#+comment: false
 #+tags[]: 
-#+categories[]: about 
+#+categories[]: hugo 
 
 
-* myself
+* about me
 daoyi
 
 * hobbies
-** computer enthusiast
-** financial/economic
-** quant/hedge
-** zhouyi/zhongyi
-** comics
+- computer
+- financial/economic
+- quant/hedge
+- zhouyi/zhongyi
+- comics
 
 * refine
-** read
-** code
-*** python
-*** shell
-*** emacs-lisp
-*** c/c++
-** efficient tool
-| categories        | archive             | self-contral |
+- read
+- code
+ - python
+ - shell
+ - c/c++
+ - emacs-lisp
+- efficient tool
+| categories        | archive             | self-control |
 |-------------------+---------------------+--------------|
-| normal            | uTools              |              |
+| windows           | uTools              |              |
 |                   | Quicker             |              |
 |                   | Capslock++          |              |
+|                   | geek                |              |
+|                   | everything/listary  |              |
 |                   | FastKeys            |              |
 | emacs             | spacemacs           | dylayer      |
 |                   |                     | _emacs       |
@@ -63,7 +66,6 @@ daoyi
 |                   | FireShot            |              |
 |                   | stylus              |              |
 |                   | Microsoft passwd    |              |
-
 
 * about site
 

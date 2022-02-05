@@ -1,9 +1,9 @@
 ---
-title: "Second"
+title: "Second-markdown"
 Author: daoyi
 date: 2022-02-03T11:17:37+08:00
-tags[]: markdown, org
-categories[]: code
+tags: [markdown, org]
+categories: [hugo, code]
 ---
 
 # 简述
@@ -51,7 +51,7 @@ LATEX |Org|MarkDown|show
 不编号| `$$a^2+b^2=c^2$&` 或者 `\[a^2+b^2=c^2\]`| `$$a^2+b^2=c^2$$`|$a^2+b^2=c^2$
 
 ## Latex - org
-```js
+```latex
 \begin{equation}
 \label{eq.mass-energy}
 E=mc^2
@@ -60,7 +60,7 @@ E=mc^2
 >`\label{eq.mass-energy}`是公式的身份标记，`eq.mass-energy` 是公式唯一的名字。在文中其他位置通过` \eqref{eq.mass-energy}` 即可引用此公式。
 
 ## Latex - markdown
-```js
+```latex
 <a id="eq.mass-energy"></a>
 $$
 E=mc^2
@@ -75,18 +75,18 @@ LINK |Org|MarkDown|show
 -|`[[Link][Description]]`| `[Description](Link)`|[Description](Link)
 
 ## Figure - org
-```js
+```org
 #+CAPTION: 标题说明（图表标题）
 #+NAME: fig.pic-name
 [[./img/a.jpg]]
 ```
 
 ## Figure - markdown
-```js
+```markdown
 ![Description](图片的网络地址或是本地路径)
 ```
 `or`
-```js
+```markdown
 <a id="fig.pic-name"></a>
 <center>
     <img  src="图片的网络地址或是本地路径"  width="300px"  alt="alt name">

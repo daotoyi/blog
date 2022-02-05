@@ -1,5 +1,10 @@
-#+title: "{{ replace .Name "-" " " | title }}"
+#+title: {{ replace .Name "-" " " | title }}
+#+subtitle:
 #+Author: daoyi
 #+date: {{ .Date }}
+#+lastmod: {{ .Date }}
 #+tags[]:
 #+categories[]:
+#+comment: true
+#+comment: true
+#+draft: flase

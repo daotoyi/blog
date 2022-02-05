@@ -1,0 +1,10 @@
+#+title: Hugo主题 LoveIt使用小结
+#+Author: daoyi
+#+date: 2022-02-05T12:04:10+08:00
+#+comment: true
+#+tags[]: LoveIt
+#+categories[]: hugo 
+
+* LoveIt
+
+** compatible

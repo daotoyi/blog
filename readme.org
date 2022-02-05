@@ -2,8 +2,8 @@
 #+Author: daoyi
 #+date: 2022-02-05T12:04:10+08:00
 #+comment: false
-#+tags[]: 
-#+categories[]: hugo 
+#+tags: 
+#+categories: hugo 
 
 * about
 
@@ -15,8 +15,6 @@
 - post
 
   博客必须存储在 content/post 中,否则主页无法显示文章内容.
-
-- utterance
 
 * utterance
   使用 utterance 托管博客评论.

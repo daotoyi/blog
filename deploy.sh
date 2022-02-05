@@ -4,8 +4,12 @@ set -eux
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 msg="rebuilding site `date`"
-if [ $# -eq 1  ]; then
+if [ $# -ge 1  ]; then
     msg="$1"
+fi
+
+if [ $# -ge 2 ]; then
+    theme=$2
 fi
 
 upper_repo(){
@@ -38,7 +42,21 @@ embed_repo(){
     git push -u origin main
 }
 
-# upper_repo
-embed_repo
+# ------------------------------------------------------------------
+if [ ! -z $theme ];then
+    if [ $theme == "even" ];then
+        [ -d content/posts/ ] && mv content/posts/ content/post/
+        mv config-even.toml config.toml 
+    else # LoveIt or others themes.
+        [ -d content/post/ ]  && mv content/post/ content/posts/
+        mv config-loveit.toml config.toml 
+    fi
+fi
+
+## push blog source files
+upper_repo
+
+## push bloh output files(public/)
+#embed_repo
 
 exit 0

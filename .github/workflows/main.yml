@@ -20,7 +20,7 @@ jobs:
 
       # 安装hugo命令
       - name: Install Hugo
-        run: sudo apt insatll hugo
+        run: sudo apt install hugo
 
       # 1、生成静态文件
       - name: hugo

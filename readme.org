@@ -1,0 +1,56 @@
+#+title: readme 
+#+Author: daoyi
+#+date: 2022-02-05T12:04:10+08:00
+#+comment: false
+#+tags[]: 
+#+categories[]: hugo 
+
+* about
+
+使用 emacs + hugo 在 Github Pages 上部署 静态博客.
+
+
+* Hugo
+
+- post
+
+  博客必须存储在 content/post 中,否则主页无法显示文章内容.
+
+- utterance
+
+* utterance
+  使用 utterance 托管博客评论.
+
+- 创建 repository
+    在 Github 上新建一个 public repo，用于存储评论内容
+
+- 配置 config
+为了方便配置，把需要的参数都放在 config.toml 文档中，在该文档中加入：
+
+#+begin_src toml
+  [params.utter]
+    repo = "{githubName}/{repoName}"
+    issueTerm = "title"        #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+    theme = "github-light"
+#+end_src
+
+
+- 配置 comments
+打开 themes/even/layouts/partials/comments.html，在 gitalk 下面加一个 utterances 的控制结构：
+
+#+begin_src html
+  {{- if .Site.Params.utter.repo -}}
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+        repo= '{{ .Site.Params.utter.repo }}'
+        issue-term= "{{ .Site.Params.utter.issueTerm }}"
+        theme= '{{ .Site.Params.utter.theme }}'
+        crossorigin= "anonymous"
+        async>
+    </script> 
+  {{- end }}
+#+end_src
+
+* Github Action
+push 博客原文档后,自动化生成网页文件,部署在 Github 和 Gitee Pages 中.
+

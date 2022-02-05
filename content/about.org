@@ -6,24 +6,24 @@
 #+categories[]: hugo 
 
 
-* about me
+* About [[https://github.com/daotoyi][Me]]
 daoyi
 
-* hobbies
+* Hobbies
 - computer
 - financial/economic
 - quant/hedge
 - zhouyi/zhongyi
 - comics
 
-* refine
-- read
-- code
+* Refine
+- *read*
+- *code*
  - python
  - shell
  - c/c++
  - emacs-lisp
-- efficient tool
+- *efficient tool*
 | categories        | archive             | self-control |
 |-------------------+---------------------+--------------|
 | windows           | uTools              |              |
@@ -67,7 +67,6 @@ daoyi
 |                   | stylus              |              |
 |                   | Microsoft passwd    |              |
 
-* about site
-
+* About [[https://github.com/daotoyi/daotoyi.github.com][Site]]
 - refine techknowledge
 - record life

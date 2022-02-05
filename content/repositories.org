@@ -5,7 +5,7 @@
 #+categories[]: hugo
 #+comment: false
 
-* github
+* Github
 - emacs
   - dylayer(spacemacs)
   - emacs.d
@@ -20,7 +20,7 @@
 - tools
   - inspectionPro
     
-* gitee
+* Gitee
 - vim-plugins
   - easymotion
   - monokai

@@ -1,7 +1,7 @@
 #+title: First-orgmode
 #+Author: daoyi
 #+date: 2022-02-03T10:41:17+08:00
-#+tags[]: emacs, org
+#+tags[]: emacs org
 #+categories[]: hugo, code
 
 * 简述

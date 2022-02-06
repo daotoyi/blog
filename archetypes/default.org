@@ -1,10 +1,12 @@
 #+title: {{ replace .Name "-" " " | title }}
 #+subtitle:
-#+Author: daoyi
+#+author: daoyi
 #+date: {{ .Date }}
 #+lastmod: {{ .Date }}
 #+tags[]:
 #+categories[]:
+#+keywords: []
+#+draft: true
 #+comment: true
-#+comment: true
-#+draft: flase
+#+toc: true
+#+autoCollapseToc: false

@@ -4,7 +4,7 @@ baseURL = "https://example.com"
 defaultContentLanguage = "zh-cn"
 # theme
 # 主题
-theme = "hugo-theme-LoveIt"
+theme = "LoveIt"
 # themes directory
 # 主题目录
 # themesDir = "../.."
@@ -765,10 +765,12 @@ enableEmoji = true
       enable = true
       # whether to keep the static table of the contents in front of the posts
       # 是否保持使用文章前面的静态目录
-      keepStatic = true
+      # true 会配置目录在文章上面， false在侧边
+      keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       # 是否使侧边目录自动折叠展开
-      auto = true
+      # true ：目录折叠，不会自动展开
+      auto = false 
     # Code config
     # 代码配置
     [params.page.code]

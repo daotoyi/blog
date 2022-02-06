@@ -6,6 +6,9 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 tags: []
 categories: []
-comment: true
-draft: flase
+keywords: []
+draft: true
+toc: true
+comment: false
+autoCollapseToc: false
 ---

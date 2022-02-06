@@ -8,6 +8,7 @@ if [ $# -ge 1  ]; then
     msg="$1"
 fi
 
+theme=""
 if [ $# -ge 2 ]; then
     theme=$2
 fi
@@ -22,7 +23,7 @@ upper_repo(){
     git push origin main
 }
 
-embed_repo(){
+sub_repo(){
     # Clean Public folder
     rm -rf public/*
 
@@ -42,21 +43,27 @@ embed_repo(){
     git push -u origin main
 }
 
-# ------------------------------------------------------------------
-if [ ! -z $theme ];then
-    if [ $theme == "even" ];then
-        [ -d content/posts/ ] && mv content/posts/ content/post/
-        mv config-even.toml config.toml 
-    else # LoveIt or others themes.
-        [ -d content/post/ ]  && mv content/post/ content/posts/
-        mv config-loveit.toml config.toml 
+para(){
+    if [ ! -z $theme ];then
+        if [ $theme == "even" ];then
+            [ -d content/posts/ ] && mv content/posts/ content/post/
+            mv config-even.toml config.toml 
+        else # LoveIt or others themes.
+            [ -d content/post/ ]  && mv content/post/ content/posts/
+            mv config-loveit.toml config.toml 
+        fi
     fi
-fi
+}
+
+# ------------------------------------------------------------------
+# judge parameter.
+# para
 
 ## push blog source files
-upper_repo
+# upper_repo
 
 ## push bloh output files(public/)
-#embed_repo
+sub_repo
 
 exit 0
+

@@ -1,0 +1,14 @@
+#+title: readme
+#+subtitle:
+#+author: daoyi
+#+date: 2022-02-08 10:20:57
+#+tags[]: 
+#+keywords[]:
+
+** site
+
+This page included static web-file is for =www.daotoyi.cn=. home site.
+
+- home: =daotoyi.cn=
+- jekyll: =jekyll.daotoyi.cn=
+

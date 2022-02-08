@@ -24,6 +24,10 @@ upper_repo(){
 }
 
 sub_repo(){
+
+    # shopt -s  extglob
+    # rm -rf public/* !(public/readme.org)
+
     # Clean Public folder
     rm -rf public/*
 
@@ -46,24 +50,24 @@ sub_repo(){
 para(){
     if [ ! -z $theme ];then
         if [ $theme == "even" ];then
-            [ -d content/posts/ ] && mv content/posts/ content/post/
-            mv config-even.toml config.toml 
+            # [ -d content/posts/ ] && mv content/posts/ content/post/
+            cp config-even.toml config.toml 
         else # LoveIt or others themes.
-            [ -d content/post/ ]  && mv content/post/ content/posts/
-            mv config-loveit.toml config.toml 
+            # [ -d content/post/ ]  && mv content/post/ content/posts/
+            cp config-loveit.toml config.toml 
         fi
     fi
 }
 
 # ------------------------------------------------------------------
-# judge parameter.
+# parse parameter.
 # para
 
 ## push blog source files
-# upper_repo
+upper_repo
 
-## push bloh output files(public/)
-sub_repo
+## push blog output files(public/)
+# sub_repo
 
 exit 0
 

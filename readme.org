@@ -7,34 +7,58 @@
 
 * about
 
-使用 emacs + hugo 在 Github Pages 上部署 静态博客.
-
+use =emacs + hugo= deploy static blog on  =Github Pages= .
 
 * Hugo
 
+** theme
+
+Configuration include two themes:
+- even
+  config-even.toml
+- loveit
+  config-loveit.toml
+
+Choose one of themes configration.
+
+=cp config-xxx.toml config.toml=.
+
+Then generate static web-files:
+- =hugo= (default config.toml)
+- =hugo --config config-xxx.toml=
+
+** notes
 - post
 
-  博客必须存储在 content/post 中,否则主页无法显示文章内容.
+  If even theme, blog source files must be saved in content/post, or can't show content on homepage of site(daotoyi.cn).
 
+  Can creat link =post/= to /posts/=, loveit theme can show hogmepgae normally.
+
+- archetypes/default
+
+  **Must configrate archetypes/default.md(org) match with theme used, or hugo will generate error.**
+  
 * utterance
-  使用 utterance 托管博客评论.
+  utterance hot comments on blog based on  github-pages.
 
-- 创建 repository
-    在 Github 上新建一个 public repo，用于存储评论内容
+- repository
+  Create public repo on github for store comments of blog.
 
-- 配置 config
-为了方便配置，把需要的参数都放在 config.toml 文档中，在该文档中加入：
+- configuration
+  - config.toml
+    
+  Add below content in config.toml：
 
 #+begin_src toml
   [params.utter]
     repo = "{githubName}/{repoName}"
-    issueTerm = "title"        #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+    issueTerm = "title"        #set name of issue match every blog，option: pathname/title/url
     theme = "github-light"
 #+end_src
 
 
-- 配置 comments
-打开 themes/even/layouts/partials/comments.html，在 gitalk 下面加一个 utterances 的控制结构：
+  - comments
+    add below content in themes/even/layouts/partials/comments.html，postion: after gitalk：
 
 #+begin_src html
   {{- if .Site.Params.utter.repo -}}
@@ -50,5 +74,7 @@
 #+end_src
 
 * Github Action
-push 博客原文档后,自动化生成网页文件,部署在 Github 和 Gitee Pages 中.
 
+After =git push=, automatic generate static web-fiels, deploy on Github && sync an deploy Gitee Pages.
+
+action configure in =.github/workflows/main.yml=

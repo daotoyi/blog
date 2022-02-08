@@ -7,8 +7,6 @@
 #+categories[]: hugo
 #+keywords[]: 
 # #+draft: true
-#+comment: true
-#+toc: true
 #+autoCollapseToc: false
 
 * 按不同配置启动

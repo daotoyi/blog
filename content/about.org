@@ -1,10 +1,8 @@
 #+title: About
-#+Author: daoyi
+#+author: daoyi
 #+date: 2022-02-03T13:09:17+08:00
-#+comment: false
 #+tags[]: 
 #+categories[]: hugo 
-
 
 * About [[https://github.com/daotoyi][Me]]
 daoyi

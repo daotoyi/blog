@@ -1,13 +1,11 @@
 #+title: Hugo主题 LoveIt使用小结
 #+Author: daoyi
 #+date: 2022-02-05T12:04:10+08:00
-#+comment: true
+##+comment: true
 #+tags[]: LoveIt
 #+categories[]: hugo 
 #+keywords[]: 
 # #+draft: true
-#+comment: true
-#+toc: true
 #+autoCollapseToc: false
 
 * LoveIt

@@ -2,7 +2,6 @@
 #+subtitle: 第三方登录问题
 #+Author: daoyi
 #+date: 2022-02-05T15:04:10+08:00
-#+comment: true
 #+tags[]: 
 #+categories[]: github
 

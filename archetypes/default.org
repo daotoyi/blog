@@ -5,8 +5,8 @@
 #+lastmod: {{ .Date }}
 #+tags[]:
 #+categories[]:
-#+keywords: []
+#+keywords[]: 
 #+draft: true
-#+comment: true
-#+toc: true
-#+autoCollapseToc: false
+# #+comment: true
+# #+toc: true
+# #+autoCollapseToc: false

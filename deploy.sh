@@ -15,12 +15,14 @@ fi
 
 upper_repo(){
     if [[ $(git status -s) ]]; then
-        echo "The working directory is dirty. Please commit any pending changes."
-        exit 1;
+        echo "The working directory is dirty. commit any pending changes."
+        git add -A
+        git commit -m "$msg"
+        git push origin main
+    else
+        echo "The working directory is clean"
+        exit 0;
     fi
-    git add -A
-    git commit -m "$msg"
-    git push origin main
 }
 
 sub_repo(){

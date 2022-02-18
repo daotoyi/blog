@@ -1,7 +1,6 @@
 +++
 title = "vim 不需要多光标编辑[fn:link]"
 date = 2022-02-12T14:54:00+08:00
-lastmod = 2022-02-12T14:55:13+08:00
 categories = ["emacs"]
 draft = false
 +++

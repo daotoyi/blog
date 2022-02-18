@@ -39,8 +39,8 @@ jobs:
           # hugo生成的public/ 文件夹. 或者 docs/
 
       # Gitee Branch  生成静态文件
-      - name: hugo-lovit
-        run: hugo  --config  config-loveit.toml
+      # - name: hugo-lovit
+      #   run: hugo  --config  config-loveit.toml
 
       # 3、同步到 gitee 的仓库
       - name: Sync to Gitee

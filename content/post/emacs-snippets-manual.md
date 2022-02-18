@@ -1,7 +1,7 @@
 +++
 title = "snippets 使用总结"
 date = 2022-02-06T08:21:00+08:00
-lastmod = 2022-02-12T10:44:37+08:00
+tags = ["snippet"]
 categories = ["emacs"]
 draft = false
 +++

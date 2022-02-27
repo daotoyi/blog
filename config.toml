@@ -49,11 +49,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "categories"
   url = "/categories/"
-[[menu.main]]
-  name = "Repositories"
-  weight = 50
-  identifier = "repositories"
-  url = "/repositories/"
+# [[menu.main]]
+  # name = "Repositories"
+  # name = ""
+  # weight = 50
+  # identifier = "repositories"
+  # url = "/repositories/"
 [[menu.main]]
   name = "About"
   weight = 60

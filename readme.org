@@ -5,13 +5,13 @@
 #+tags: 
 #+categories: hugo 
 
-* about
+* About
 
 use =emacs + hugo= deploy static blog on  =Github Pages= .
 
 * Hugo
 
-** theme
+** Theme
 
 Configuration include two themes:
 - even
@@ -27,7 +27,7 @@ Then generate static web-files:
 - =hugo= (default config.toml)
 - =hugo --config config-xxx.toml=
 
-** notes
+** Notes
 - post
 
   If even theme, blog source files must be saved in content/post, or can't show content on homepage of site(daotoyi.cn).
@@ -38,7 +38,7 @@ Then generate static web-files:
 
   **Must configrate archetypes/default.md(org) match with theme used, or hugo will generate error.**
   
-* utterance
+* Utterance
   utterance hot comments on blog based on  github-pages.
 
 - repository

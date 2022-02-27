@@ -32,5 +32,4 @@ spacemacs 需要 aspell0.6 以上的版本，但是 [Latest Version: GNU Aspell-
 通过 stack overflows 找到安装包, 使用效果 well.
 
 -   [ispell/hunspell/Windows: a fully-worked example](https://lists.gnu.org/archive/html/help-gnu-emacs/2014-04/msg00030.html)
-
-[- hunspell(win)-download-url](https://jaist.dl.sourceforge.net/project/ezwinports/hunspell-1.3.2-3-w32-bin.zip)
+-   [hunspell(win)-download-url](https://jaist.dl.sourceforge.net/project/ezwinports/hunspell-1.3.2-3-w32-bin.zip)

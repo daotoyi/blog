@@ -5,8 +5,11 @@
 #+categories[]: hugo 
 
 * About [[https://github.com/daotoyi][Me]]
-daoyi
+Daoyi Refine.
 
++ [[http://jekyll.daotoyi.cn/][Jekyll Home]]
++ [[http://fire.daotoyi.cn/][FIRE Page]]
+  
 * Hobbies
 + computer
 + financial/economic
@@ -16,60 +19,89 @@ daoyi
 
 * Refine
 + *read*
+
 + *code*
   * Python
   * Shell
   * C/C++
   * emacs-lisp
-  * LaTex
+  * Latex
+
 + *efficient tool*
-| categories         | archive             | opensource |
-|--------------------+---------------------+------------|
-| windows            | uTools              |            |
-|                    | Quicker             |            |
-|                    | Capslock++          |            |
-|                    | geek                |            |
-|                    | everything/listary  |            |
-|                    | FastKeys            |            |
-| screenshot/windows | [[https://legacy.imagemagick.org/][ImageMagick]]         |            |
-|                    | [[http://www.nirsoft.net/utils/nircmd.html][NirCmd]]              |            |
-|                    | [[https://github.com/chuntaro/screenshot-cmd][screenshot-cmd]]      |            |
-|                    | [[https://www.donationcoder.com/software/mouser/popular-apps/minicap#commandline-options][MiniCap]]             |            |
-| emacs              | spacemacs           | dylayer    |
-|                    |                     | _emacs     |
-| vim                | spacevim            | dylayer    |
-|                    |                     | vimrc      |
-| download           | youtube-dl          | comics     |
-| github             | FastgithubUI        |            |
-| quant              | VNPY                | dymonitor  |
-|                    | Backtrader          |            |
-|                    | Qlib                |            |
-|                    | Lean                |            |
-| quant-resource     | tushare             |            |
-|                    | AkShare             |            |
-| passwd-manager     | Keepass             |            |
-|                    | Keepass2Android     |            |
-|                    | uTools-keepass      |            |
-| sync               | jianguoyun          |            |
-|                    | Syncthing           |            |
-|                    | verysync            |            |
-|                    | FoldSync Pro        |            |
-| GTD                | emacs               |            |
-|                    | Orgzly (apk)        |            |
-|                    | RefTime(apk)        |            |
-| telegram           | telegram X          |            |
-|                    | Nekogram X          |            |
-| broswer extension  | Tampermonkey        |            |
-|                    | MarkDownload        |            |
-|                    | Octotree            |            |
-|                    | floccus             |            |
-|                    | Onetab              |            |
-|                    | Vimium              |            |
-|                    | NeatDownloadManager |            |
-|                    | FireShot            |            |
-|                    | stylus              |            |
-|                    | Microsoft passwd    |            |
+| Categories        | Archive              | Opensource      | Mark                                                           |
+|                   |                      |                 | <20>                                                           |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| windows           | uTools               |                 |                                                                |
+|                   | Quicker              |                 |                                                                |
+|                   | Capslock++           |                 | capslock key extension                                         |
+|                   | geek                 |                 | uninstall application on windows                               |
+|                   | everything/listary   |                 | search                                                         |
+|                   | FastKeys             |                 | hotkey                                                         |
+|                   | [[https://picgo.github.io/PicGo-Doc/][PicGo]]                |                 | picbed                                                         |
+|                   | [[http://qttabbar.wikidot.com/][QTTabBar]]             | [[https://github.com/indiff/qttabbar][QTTabBar-github]] | Explorer extension(2048 version,full function,support columns) |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| screenshot/win    | [[https://legacy.imagemagick.org/][ImageMagick]]          |                 |                                                                |
+|                   | [[http://www.nirsoft.net/utils/nircmd.html][NirCmd]]               |                 | cmd line                                                       |
+|                   | [[https://github.com/chuntaro/screenshot-cmd][screenshot-cmd]]       |                 |                                                                |
+|                   | [[https://www.donationcoder.com/software/mouser/popular-apps/minicap#commandline-options][MiniCap]]              |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+|                   | Inoreader            |                 | [[https://www.innoreader.com/][innoreader]]                                                     |
+|                   | The Old Reader       |                 |                                                                |
+|                   | [[https://apkpure.com/cn/feedme-rss-reader-podcast/com.seazon.feedme][FeedMe]](apk)          |                 |                                                                |
+|                   | [[https://github.com/skeeto/elfeed][Elfeed]](emacs)        |                 |                                                                |
+|                   |                      | [[https://github.com/huginn/huginn][Huginn]]          | a system for building agents that perform automated tasks      |
+|                   | [[https://rssfeed.today/weibo/][Weibo to RSS]]         |                 |                                                                |
+|                   | [[https://docs.rsshub.app/][RSSHub]] + [[https://github.com/Cay-Zhang/RSSBud][RSSbud]](iso) |                 | Generate and find RSS links.                                   |
+| RSS               | [[https://github.com/damoeb/rss-proxy][rss-proxy]]            |                 |                                                                |
+|                   | [[https://wechat.privacyhide.com/][WeChat-Feeds]]         | [[https://github.com/hellodword/wechat-feeds][wechat-feeds]]    | WX subsribe, Generate RSS                                      |
+|                   | [[https://greasyfork.org/zh-CN/scripts/374570-rsshelper][RSSHelper]] + [[https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss][RSS+]]     |                 | broswer extension                                              |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| emacs             | spacemacs            | dylayer         | Org, GTD, Agenda, Export                                       |
+|                   |                      | _emacs          |                                                                |
+| vim               | spacevim             | dylayer         | efficient edit operation                                       |
+|                   |                      | vimrc           |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| download          | youtube-dl           | comics          | cmd line                                                       |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| github            | [[https://github.com/dotnetcore/FastGithub][FastgithubUI]]         |                 | speed up to access github                                      |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| quant             | VNPY                 | dymonitor       |                                                                |
+|                   | Backtrader           |                 |                                                                |
+|                   | Qlib                 |                 |                                                                |
+|                   | Lean                 |                 |                                                                |
+| quant-resource    | tushare              |                 | data resource                                                  |
+|                   | AkShare              |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| passwd-manager    | Keepass              |                 |                                                                |
+|                   | Keepass2Android      |                 |                                                                |
+|                   | uTools-keepass       |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| sync              | jianguoyun           |                 |                                                                |
+|                   | Syncthing            |                 |                                                                |
+|                   | verysync             |                 |                                                                |
+|                   | FoldSync Pro         |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| GTD               | emacs                |                 | recommend                                                      |
+|                   | Orgzly (apk)         |                 | recommend, access DAV, math emacs(mobile-sync)                 |
+|                   | RefTime(apk)         |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| telegram          | telegram X           |                 |                                                                |
+|                   | Nekogram X           |                 | don't need VPN                                                 |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| broswer extension | Tampermonkey         |                 |                                                                |
+|                   | MarkDownload         |                 |                                                                |
+|                   | Octotree             |                 | tree github project list                                       |
+|                   | [[https://chrome.google.com/webstore/detail/octotree-octotree-without/inomfbmkjglaleakfkeedihbeiloklhe?utm_source=chrome-ntp-icon][you-tree]]             | [[https://github.com/qiudaoermu/you-tree][you-tree-github]] |                                                                |
+|                   | floccus              |                 | sync bookmarks                                                 |
+|                   | Onetab               |                 | stage site temporary                                           |
+|                   | Vimium               |                 | vim operation in browser                                       |
+|                   | NeatDownloadManager  |                 | opensource download                                            |
+|                   | FireShot             |                 | screenshot                                                     |
+|                   | stylus               |                 | browser style                                                  |
+|                   | Microsoft passwd     |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| otherk            | [[https://www.sololearn.com/][sololearn]]            |                 | The best way to learn to code                                  |
 
 * About [[https://github.com/daotoyi/daotoyi.github.com][Site]]
-- refine techknowledge
-- record life
++ Refine TechKnowledge
++ Record Life

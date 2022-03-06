@@ -1,7 +1,7 @@
 +++
 title = "Inoreader"
 date = 2022-02-27T08:21:00+08:00
-lastmod = 2022-02-27T08:36:26+08:00
+lastmod = 2022-02-28T09:26:41+08:00
 categories = ["RSS"]
 draft = false
 +++
@@ -40,5 +40,7 @@ Inoreader -&gt; Innoreader
 打开<https://twitrss.me/%EF%BC%8C%E5%9C%A8Twitter> User: @或者 Twitter Search: @框内输入想要接收的博主 ID，如博主的推特 ID 是 TheEconomist，输入进去，然后按下 Fetch RSS\`\`Fetch Search RSS，就会打开一个新网页，新网页即是 Feed 地址。
 
 ————————————————
+
 版权声明：本文为 CSDN 博主「Daotoyi」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+
 原文链接：<https://blog.csdn.net/wenhua_s/article/details/115937362>

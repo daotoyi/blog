@@ -1,6 +1,7 @@
 +++
 title = "Huginn"
-lastmod = 2022-02-27T08:18:31+08:00
+date = 2022-02-27T08:19:00+08:00
+lastmod = 2022-02-27T16:15:39+08:00
 categories = ["RSS"]
 draft = false
 +++
@@ -215,3 +216,10 @@ Scenarios -&gt; New Scenarios -&gt; Name(?) -&gt;Save Scenarios
 ### note {#note}
 
 因为搜狗上有反爬虫机制，所以 Agent 的触发间隔最好长一点. 如果想将触发间隔设置短一些，又不会触发到反爬虫机制，可以使用 Phantomjscloud 提供的 API，借助云端模拟浏览器进行爬取.
+
+
+## scenarios {#scenarios}
+
+-   公共脚本库
+
+[http://huginnio.herokuapp.com/scenarios](http://huginnio.herokuapp.com/scenarios)

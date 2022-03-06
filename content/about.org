@@ -82,8 +82,11 @@ Daoyi Refine.
 |                   | FoldSync Pro         |                 |                                                                |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
 | GTD               | emacs                |                 | recommend                                                      |
-|                   | Orgzly (apk)         |                 | recommend, access DAV, math emacs(mobile-sync)                 |
+|                   | Orgzly (apk)         |                 | recommend, access DAV, match emacs(mobile-sync)                |
 |                   | RefTime(apk)         |                 |                                                                |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| VPS               | GCP                  |                 | Google Cloud Platform, Compute Engine                          |
+|                   | v2ray                |                 |                                                                |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
 | telegram          | telegram X           |                 |                                                                |
 |                   | Nekogram X           |                 | don't need VPN                                                 |

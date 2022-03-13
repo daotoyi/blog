@@ -45,14 +45,13 @@ Daoyi Refine.
 |                   | [[https://github.com/chuntaro/screenshot-cmd][screenshot-cmd]]       |                 |                                                                |
 |                   | [[https://www.donationcoder.com/software/mouser/popular-apps/minicap#commandline-options][MiniCap]]              |                 |                                                                |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
-|                   | Inoreader            |                 | [[https://www.innoreader.com/][innoreader]]                                                     |
+| RSS               | Inoreader            |                 | [[https://www.innoreader.com/][innoreader]]                                                     |
 |                   | The Old Reader       |                 |                                                                |
 |                   | [[https://apkpure.com/cn/feedme-rss-reader-podcast/com.seazon.feedme][FeedMe]](apk)          |                 |                                                                |
 |                   | [[https://github.com/skeeto/elfeed][Elfeed]](emacs)        |                 |                                                                |
 |                   |                      | [[https://github.com/huginn/huginn][Huginn]]          | a system for building agents that perform automated tasks      |
 |                   | [[https://rssfeed.today/weibo/][Weibo to RSS]]         |                 |                                                                |
 |                   | [[https://docs.rsshub.app/][RSSHub]] + [[https://github.com/Cay-Zhang/RSSBud][RSSbud]](iso) |                 | Generate and find RSS links.                                   |
-| RSS               | [[https://github.com/damoeb/rss-proxy][rss-proxy]]            |                 |                                                                |
 |                   | [[https://wechat.privacyhide.com/][WeChat-Feeds]]         | [[https://github.com/hellodword/wechat-feeds][wechat-feeds]]    | WX subsribe, Generate RSS                                      |
 |                   | [[https://greasyfork.org/zh-CN/scripts/374570-rsshelper][RSSHelper]] + [[https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss][RSS+]]     |                 | broswer extension                                              |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
@@ -85,8 +84,17 @@ Daoyi Refine.
 |                   | Orgzly (apk)         |                 | recommend, access DAV, match emacs(mobile-sync)                |
 |                   | RefTime(apk)         |                 |                                                                |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| TTS               | Microsoft 大声朗读   |                 | work well in broswer, not on Android                           |
+|                   |                      | [[https://github.com/ag2s20150909/TTS][TTS]]             | recommend, invoke Microsoft, but work well on Android          |
+|-------------------+----------------------+-----------------+----------------------------------------------------------------|
+| Read              | 静读天下             |                 |                                                                |
+|                   | 微信读书             |                 |                                                                |
+|                   | Kindle               |                 |                                                                |
+|                   |                      | [[https://github.com/XIU2/Yuedu][阅读]]            |                                                                |
 | VPS               | GCP                  |                 | Google Cloud Platform, Compute Engine                          |
-|                   | v2ray                |                 |                                                                |
+| VPN               |                      | [[https://github.com/v2fly/v2ray-core][v2ray]]           |                                                                |
+|                   |                      | [[https://github.com/bannedbook/v2ray.vpn][v2ray.vpn]]       |                                                                |
+|                   |                      | [[https://github.com/bannedbook/fanqiang/blob/master/android/v2free.md][v2free]]          |                                                                |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
 | telegram          | telegram X           |                 |                                                                |
 |                   | Nekogram X           |                 | don't need VPN                                                 |

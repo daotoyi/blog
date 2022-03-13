@@ -1,6 +1,8 @@
 +++
-title = "GCP"
-lastmod = 2022-03-02T15:37:56+08:00
+title = "GCP 笔记"
+date = 2022-03-05T17:20:00+08:00
+lastmod = 2022-03-11T08:03:33+08:00
+tags = ["GCP"]
 categories = ["VPS"]
 draft = false
 +++

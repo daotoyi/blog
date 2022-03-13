@@ -1,7 +1,7 @@
 +++
-title = "v2ray(WebSocket+Nginx+CDN+TSL)"
+title = "v2ray 搭建(WebSocket+Nginx+CDN+TSL)"
 date = 2022-03-05T20:58:00+08:00
-lastmod = 2022-03-06T17:07:51+08:00
+lastmod = 2022-03-11T07:54:42+08:00
 tags = ["v2ray"]
 categories = ["VPS"]
 draft = false

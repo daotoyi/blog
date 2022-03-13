@@ -1,8 +1,9 @@
 +++
 title = "Hugo 使用总结"
-lastmod = 2022-02-28T11:10:57+08:00
+date = 2022-03-08T11:31:00+08:00
+lastmod = 2022-03-09T09:31:52+08:00
 categories = ["Hugo"]
-draft = true
+draft = false
 +++
 
 ## 按不同配置启动 {#按不同配置启动}
@@ -12,6 +13,22 @@ draft = true
 ```shell
 hugo --config debugconfig.toml
 hugo --config a.toml,b.toml,c.toml
+```
+
+
+## fix content {#fix-content}
+
+`hugo server` to show effect on website will deployed.
+
+example:
+
+```shell
+/path/to/where/you/installed/hugo server --source=./docs
+> 29 pages created
+> 0 tags index created
+> in 27 ms
+> Web Server is available at http://localhost:1313
+> Press ctrl+c to stop
 ```
 
 

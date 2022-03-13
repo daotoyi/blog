@@ -2,7 +2,7 @@
 baseURL = "https://daotoyi.github.io/"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "daoyi site"
+title = "DaoyiSite"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true

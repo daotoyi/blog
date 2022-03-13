@@ -1,7 +1,8 @@
 +++
 title = "doman-name-system 使用总结"
 date = 2022-02-07T08:44:00+08:00
-lastmod = 2022-02-12T08:45:35+08:00
+lastmod = 2022-03-11T17:44:19+08:00
+categories = ["Internet"]
 draft = false
 +++
 

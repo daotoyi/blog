@@ -1,7 +1,7 @@
 +++
 title = "v2ray 搭建(WebSocket+Nginx+CDN+TSL)"
 date = 2022-03-05T20:58:00+08:00
-lastmod = 2022-03-11T07:54:42+08:00
+lastmod = 2022-03-16T23:26:39+08:00
 tags = ["v2ray"]
 categories = ["VPS"]
 draft = false
@@ -379,6 +379,24 @@ systemctl start nginx
 ### note {#note}
 
 注: 生成证书前请关闭服务器的 Apache 或 Nginx,否则会生成失败。
+
+
+## BBR {#bbr}
+
+Google 设计，于 2016 年发布的拥塞算法。以往大部分拥塞算法是基于丢包来作为降低传输速率的信号，而 BBR 则基于模型主动探测。
+
+仅仅安装 v2ray，跨境上网的速度并不快，比如看 youtube 视频会卡，所以请务必再安装谷歌开发的加速器 BBR
+
+```shell
+  # 下载bbr安装脚本
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+# 将脚本变成可执行
+chmod +x bbr.sh
+# 运行脚本
+./bbr.sh
+# 查看bbr是否安装成功
+lsmod | grep bbr
+```
 
 
 ## Reference {#reference}

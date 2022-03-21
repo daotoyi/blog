@@ -1,6 +1,7 @@
 +++
-title = "Compare with Windows"
-lastmod = 2022-03-08T16:45:59+08:00
+title = "Linux compare with Windows"
+date = 2022-03-13T15:17:00+08:00
+lastmod = 2022-03-13T15:17:52+08:00
 categories = ["Linux"]
 draft = false
 +++

@@ -1,9 +1,9 @@
 +++
 title = "WordPress 笔记"
 date = 2022-03-15T22:26:00+08:00
-lastmod = 2022-03-20T13:28:11+08:00
+lastmod = 2022-03-27T17:39:25+08:00
 tags = ["WordPress"]
-categories = ["VPS"]
+categories = ["Blog"]
 draft = false
 +++
 
@@ -50,26 +50,45 @@ draft = false
 -   参考安装在虚拟机即可
 
 
+## Backup {#backup}
+
+-   [最好的WordPress网站备份插件（2020版）](https://www.guoyuguang.com/best-wordpress-website-backup-plugins/)
+
+
 ## Notes {#notes}
 
--   宝塔面板登陆地址为
-    -   ip:port
-    -   ip:port/xxxxxxxx
-        -   xxxxxxxx:新装机器都会随机一个 8 位字符的安全入口名称
-        -   可以在面板设置处修改
-        -   查看面板入口：/etc/init.d/bt default
-        -   【关闭安全入口】将使您的面板登录地址被直接暴露在互联网上，非常危险，请谨慎操作
 
--   WordPress 后台登录地址为
-    -   ip/wp-admin/
-    -   域名/wp-admin/
-    -   例如：<http://192.168.91.130/wp-admin/> 或者<http://www.baidu.com/wp-admin/>
+### 宝塔面板登陆地址为 {#宝塔面板登陆地址为}
 
--   WordPress 首页地址为
-    -   ip
-    -   域名
-    -   例如：<http://192.168.91.130/> 或者 <http://www.baidu.com/>
+-   ip:port
+-   ip:port/xxxxxxxx
+    -   xxxxxxxx:新装机器都会随机一个 8 位字符的安全入口名称
+    -   如: <http://192.168.220.149:8888/5996ef82/>
+    -   可以在面板设置处修改
+    -   查看面板入口：/etc/init.d/bt default
+    -   【关闭安全入口】将使您的面板登录地址被直接暴露在互联网上，非常危险，请谨慎操作
 
--   虚拟机安装 WP
-    -   安装完成会生成一个外网访问地址和一个内网访问地址
-    -   WP 的域名设置为 127.0.0.1,在主机上通过内网地址登陆访问.
+
+### WordPress 后台登录地址为 {#wordpress-后台登录地址为}
+
+-   ip/wp-admin/
+-   域名/wp-admin/
+-   例如：<http://192.168.220.149/wp-admin/> 或者<http://www.baidu.com/wp-admin/>
+
+
+### 访问 WordPress {#访问-wordpress}
+
+安装完成后,需要在宝塔面板的 "网站 - 默认站点"中选择站点,否则可能访问不成功.
+
+
+### WordPress 首页地址为 {#wordpress-首页地址为}
+
+-   ip
+-   域名
+-   例如：<http://192.168.220.149/> 或者 <http://www.baidu.com/>
+
+
+### 虚拟机安装 WP {#虚拟机安装-wp}
+
+-   安装完成会生成一个外网访问地址和一个内网访问地址
+-   WP 的域名设置为 127.0.0.1,在主机上通过内网地址登陆访问.

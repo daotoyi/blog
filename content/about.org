@@ -33,6 +33,7 @@ Daoyi Refine.
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|
 | windows           | uTools               |                 |                                                                |
 |                   | Quicker              |                 |                                                                |
+|                   | Scoop                | [[https://github.com/ScoopInstaller/scoop][Github]]          | package manager                                                |
 |                   | Capslock++           |                 | capslock key extension                                         |
 |                   | geek                 |                 | uninstall application on windows                               |
 |                   | everything/listary   |                 | search                                                         |

@@ -1,9 +1,9 @@
 +++
 title = "WordPress 笔记"
 date = 2022-03-15T22:26:00+08:00
-lastmod = 2022-03-27T17:39:25+08:00
+lastmod = 2022-04-03T17:38:55+08:00
 tags = ["WordPress"]
-categories = ["Blog"]
+categories = ["VPS"]
 draft = false
 +++
 
@@ -48,6 +48,115 @@ draft = false
 ### 安装在云平台上 {#安装在云平台上}
 
 -   参考安装在虚拟机即可
+
+
+### 安装在 docker 上 {#安装在-docker-上}
+
+
+#### install database {#install-database}
+
+mariadb 是 mysql 的替代品,几乎兼容(mysql 被 orcal 收购后有商业化不开源的风险)
+
+```bash
+# mariadb
+docker run --name wpdb --env MYSQL_ROOT_PASSWORD=wordpress -d mariadb
+docker exec -it wpdb bash
+
+# set password
+# /# mysql -u root -p
+# Enter password:
+```
+
+
+#### install wordpress {#install-wordpress}
+
+```bash
+# 1)使用官方的wordpress, 镜像is oud.io
+docker pull daocloud.io/daocloud/dao-wordpress:latest
+
+# 2)use wordpress官方镜像
+docker pull wordpress
+
+# startup
+docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
+
+# http://localhost:8080（或 http://host-ip:8080） 访问站点
+# http://ip:8080/wp-admin/install.php
+```
+
+-   使用外部数据库的话
+
+<!--listend-->
+
+```bash
+$ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306  -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+```
+
+> `WORDPRESS_DB_HOST` 数据库主机地址（默认为与其 link 的 mysql 容器的 IP 和 3306 端口：:3306）
+> `WORDPRESS_DB_USER` 数据库用户名（默认为 root）
+> `WORDPRESS_DB_PASSWORD` 数据库密码（默认为与其 link 的 mysql 容器提供的 MYSQL_ROOT_PASSWORD 变量的值）
+> `WORDPRESS_DB_NAME` 数据库名（默认为 wordpress）
+> `WORDPRESS_TABLE_PREFIX` 数据库表名前缀（默认为空，您可以从该变量覆盖 wp-config.php 中的配置）
+
+
+#### docker compose {#docker-compose}
+
+<!--list-separator-->
+
+-  docker-compose.yml
+
+    ```yaml
+    version: '3.3'
+    services:
+       db:
+         image: mysql:5.7
+         volumes:
+           - db_data:/var/lib/mysql
+         restart: always
+         environment:
+           MYSQL_ROOT_PASSWORD: somewordpress
+           MYSQL_DATABASE: wordpress
+           MYSQL_USER: wordpress
+           MYSQL_PASSWORD: wordpress
+       wordpress:
+         depends_on:
+           - db
+         image: wordpress:latest
+         ports:
+           - "8000:80"
+         restart: always
+         environment:
+           WORDPRESS_DB_HOST: db:3306
+           WORDPRESS_DB_USER: wordpress
+           WORDPRESS_DB_PASSWORD: wordpress
+           WORDPRESS_DB_NAME: wordpress
+    volumes:
+        db_data: {}
+    ```
+
+<!--list-separator-->
+
+-  useage
+
+    ```bash
+    docker-compose up -d   # startup
+    docker-compose -f docker-compose.wordpress.yml up -d #后台运行
+
+    docker-compose down    # stop
+    docker-compose -f docker-compose.wordpress.yml down #停止并删除服务
+    ```
+
+<!--list-separator-->
+
+-  Note
+
+    -   `docker-compose down`
+
+    当 Docker 容器停止时，它也会被删除; 这就是 Docker 的设计工作方式。但是，您的 WordPress 文件和数据将被保留，因为 docker-compose.yml 文件已配置为为该数据创建持久命名卷。
+
+    -   `docker-compose down --volumes`
+
+    如果要删除此数据并从 WordPress 站点重新开始，可以将--volumes 标志添加到上一个命令。这将永久删除您到目前为止所做的 WordPress 帖子和自定义。
 
 
 ## Backup {#backup}

@@ -1,33 +1,39 @@
 +++
-title = "v2ray"
+title = "v2ray 笔记"
 date = 2022-03-05T17:20:00+08:00
-lastmod = 2022-03-05T20:56:58+08:00
+lastmod = 2022-04-04T07:06:04+08:00
+tags = ["v2ray"]
 categories = ["VPS"]
 draft = false
 +++
 
-## 简介 {#简介}
+## introduction {#introduction}
 
 -   [V2Ray 用户手册](https://www.v2ray.com/)
 -   [v2ray简易手册](https://selierlin.github.io/v2ray/)
 -   [V2Ray 项目地址](https://github.com/v2ray/v2ray-core)
 
 
-## VS Shadowsocks {#vs-shadowsocks}
-
--   Shadowsocks 只是一个简单的代理工具，而 V2Ray 定位为一个平台，任何开发者都可以利用 V2Ray 提供的模块开发出新的代理软件。
--   V2Ray 本身只是一个内核，V2Ray 上的图形客户端大多是调用 V2Ray 内核套一个图形界面的外壳
--   V2Ray 不像 Shadowsocks 那样有统一规定的 URL 格式，所以各个 V2Ray 图形客户端的分享链接/二维码不一定通用。
--   V2Ray 对于时间有比较严格的要求，要求服务器和客户端时间差绝对值不能超过 2 分钟,还好 V2Ray 并不要求时区一致。
--   与 Shadowsocks 不同，从软件上 V2Ray 不区分服务器版和客户端版，也就是说在服务器和客户端运行的 V2Ray 是同一个软件，区别只是配置文件的不同。
--   可以用 V2Ray 配置成 Shadowsocks 服务器或者 Shadowsocks 客户端都是可以的，兼容 Shadowsocks-libev.
+## TLS/XTLS {#tls-xtls}
 
 
-## TLS(Transport Layer Security) {#tls--transport-layer-security}
+### TLS {#tls}
+
+(Transport Layer Security)
 
 译作: **传输层安全性协议** ([wikipedia:传输层安全性协议](https://wuu.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8%E6%80%A7%E5%8D%8F%E8%AE%AE))
 
 前身 \*安全套接层\*（Secure Sockets Layer，缩写：SSL）.
+
+
+### XTLS {#xtls}
+
+XTLS 官方库 的介绍仅有一句话：THE FUTURE。
+
+-   **XTLS 的原理：**
+
+    使用 TLS 代理时，https 数据其实经过了两层 TLS：外层是代理的 TLS，内层是 https 的 TLS。XTLS 无缝拼接了内外两条货真价实的 TLS，使得代理几乎无需再对 https 流量进行数据加解密，只起到流量中转的作用，极大的提高了性能。
+-   [V2ray 的 VLESS 协议介绍和使用教程](https://vpsgongyi.com/p/2422/)
 
 
 ## WebSocket {#websocket}
@@ -43,12 +49,109 @@ draft = false
 V2Ray 集成有 Shadowsocks 模块的，用 V2Ray 配置成 Shadowsocks 服务器或者 Shadowsocks 客户端都是可以的，兼容 Shadowsocks-libev。
 
 
-## Vmess {#vmess}
+### v2ray VS Shadowsocks {#v2ray-vs-shadowsocks}
+
+-   Shadowsocks 只是一个简单的代理工具，而 V2Ray 定位为一个平台，任何开发者都可以利用 V2Ray 提供的模块开发出新的代理软件。
+-   V2Ray 本身只是一个内核，V2Ray 上的图形客户端大多是调用 V2Ray 内核套一个图形界面的外壳
+-   V2Ray 不像 Shadowsocks 那样有统一规定的 URL 格式，所以各个 V2Ray 图形客户端的分享链接/二维码不一定通用。
+-   V2Ray 对于时间有比较严格的要求，要求服务器和客户端时间差绝对值不能超过 2 分钟,还好 V2Ray 并不要求时区一致。
+-   与 Shadowsocks 不同，从软件上 V2Ray 不区分服务器版和客户端版，也就是说在服务器和客户端运行的 V2Ray 是同一个软件，区别只是配置文件的不同。
+-   可以用 V2Ray 配置成 Shadowsocks 服务器或者 Shadowsocks 客户端都是可以的，兼容 Shadowsocks-libev.
+
+
+## Vmess/Vless {#vmess-vless}
+
+
+### Vmess {#vmess}
 
 VMess 协议是由 V2Ray 原创并使用于 V2Ray 的加密传输协议.
 
 
-## 系统安装 {#系统安装}
+### Vless {#vless}
+
+
+#### 简介 {#简介}
+
+V2ray 官方对 VLESS 协议的定义是“性能至上、可扩展性空前，目标是全场景终极协议”。
+
+VLESS 是一种无状态的轻量级数据传输协议，被定义为下一代 V2ray 数据传输协议。
+
+VLESS 命名源自“less is more”,与 VMESS 协议相同，VLESS 使用 UUID 进行身份验证，配置分入栈和出栈两部分，可用在客户端和服务端。.
+
+
+#### fallback 参数 {#fallback-参数}
+
+引入了分流和回落的概念.
+
+VLESS 协议 中的 fallback 是可选的，只能用于 TLS 或 XTLS 模式下;
+
+```js
+{
+  "alpn": "",
+  "path": "",
+  "dest": "",
+  "xver": ""
+}
+```
+
+-   dest: 必须的
+-   alpn: 可选,一般不用管（或者填["http/1.1"]）
+-   path: 是回落路径
+-   xver 用来指示是否传递真实 ip 信息（需要填 1，不需要填 0）。
+
+如果有多组转发，则可按照 path 路径配置多组 fallback 对象:
+
+```js
+"fallbacks": [
+    {
+        "dest": 80 // 或者回落到其它也防探测的代理
+    },
+    {
+        "path": "/websocket", // 必须换成自定义的 PATH
+        "dest": 1234,
+        "xver": 1
+    },
+    {
+        "path": "/vmesstcp", // 必须换成自定义的 PATH
+        "dest": 2345,
+        "xver": 1
+    },
+    {
+        "path": "/vmessws", // 必须换成自定义的 PATH
+        "dest": 3456,
+        "xver": 1
+    }
+]
+```
+
+-   客户端:
+    -   请求 域名:/websocket 时，流量将转发到本机的 1234 端口；
+    -   请求 域名:/vmesstcp 时，流量转发到本机的 2345 端口；
+    -   请求路径为 /vmessws 时转发到 3456 端口；
+    -   如果是其他请求，则转到到 80 端口。
+
+
+#### 总结 {#总结}
+
+VLESS 协议本身不自带加密，用于翻墙时不能单独使用。由于 XTLS 的引入，目前 VLESS 协议有如下玩法：
+
+-   VLESS + TCP + TLS
+-   VLESS + TCP +TLS +  WS
+-   VLESS + TCP + XTLS
+-   VLESS + HTTP2 + h2c
+
+
+### Vless 与 VMESS 区别 {#vless-与-vmess-区别}
+
+-   VLESS 协议 **不依赖于系统时间，不使用 alterId** 。
+-   VLESS 协议不带加密，用于科学上网时要配合 TLS 等加密手段；
+-   VLESS 协议 **支持分流和回落** ，比 Nginx 分流转发更简洁、高效和安全；
+-   使用 TLS 的情况下，VLESS 协议比 VMESS **速度更快** ，性能更好，因为 VLESS 不会对数据进行加解密；
+-   V2ray 官方对 VLESS 的期望更高，约束也更严格。例如要求客户端统一使用 VLESS 标识，而不是 Vless、vless 等名称；VLESS 分享链接标准将由官方统一制定（尚未出炉）；
+-   VLESS 协议的加密更灵活，不像 VMESS 一样高度耦合（仅对开发者有用）
+
+
+## install {#install}
 
 V2Ray 的安装有脚本安装、手动安装、编译安装 3 种方式.
 
@@ -57,11 +160,19 @@ V2Ray 的安装有脚本安装、手动安装、编译安装 3 种方式.
 <!--listend-->
 
 ```shell
-wget https://install.direct/go.sh # 下载脚本
+##  DISCARDED
+# wget https://install.direct/go.sh # 下载脚本
+# sudo bash go.sh
+# sudo systemctl start v2ray
 
-sudo bash go.sh
+## 安裝執行檔和 .dat 資料檔
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
 
-sudo systemctl start v2ray
+# 只更新 .dat 資料檔
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh)
+
+# 移除 V2Ray
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove
 ```
 
 配置文件路径为 `/etc/v2ray/config.json`
@@ -69,7 +180,7 @@ sudo systemctl start v2ray
 V2Ray 的方法是 **再次执行安装脚本** ！
 
 
-## docker 安装 {#docker-安装}
+## docker install {#docker-install}
 
 -   docker install v2ray
 
@@ -80,7 +191,9 @@ V2Ray 的方法是 **再次执行安装脚本** ！
 # docker pull v2ray/official:latest
 
 # v2ray change name v2fly
+# https://hub.docker.com/r/v2fly/v2fly-core/tags
 docker pull v2fly/v2fly-core
+docker pull v2fly/v2fly-core:v4.33.0
 
 mkdir /etc/v2ray
 # mkdir /var/log/v2ray
@@ -90,6 +203,8 @@ docker container stop v2ray //停止V2ray
 docker container restart v2ray //重启V2ray
 
 docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core  v2ray -config=/etc/v2ray/config.json
+docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core:v4.34.0  v2ray -config=/etc/v2ray/config.json
+#https://hub.docker.com/r/v2fly/v2fly-core/tags
 
 docker run \
        --restart=always \
@@ -99,12 +214,36 @@ docker run \
        -v /var/log/v2ray:/var/log/v2ray \
        -i -t -d \
        v2ray/official:latest
-
 # 升级
 docker container stop v2ray
 docker container rm v2ray
 docker pull v2ray/official
-docker run -it -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2ray/official v2ray -config=/etc/v2ray/config.json
+# docker run -it -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2ray/official v2ray -config=/etc/v2ray/config.json
+```
+
+
+## v2ray cmd-line {#v2ray-cmd-line}
+
+```cfg
+# 进入docker内部
+docker exec -it v2ray /bin/sh
+
+v2ray info 查看 V2Ray 配置信息
+v2ray config 修改 V2Ray 配置
+v2ray link 生成 V2Ray 配置文件链接
+v2ray infolink 生成 V2Ray 配置信息链接
+v2ray qr 生成 V2Ray 配置二维码链接
+v2ray ss 修改 Shadowsocks 配置
+v2ray ssinfo 查看 Shadowsocks 配置信息
+v2ray ssqr 生成 Shadowsocks 配置二维码链接
+v2ray status 查看 V2Ray 运行状态
+v2ray start 启动 V2Ray
+v2ray stop 停止 V2Ray
+v2ray restart 重启 V2Ray
+v2ray log 查看 V2Ray 运行日志
+v2ray update 更新 V2Ray
+v2ray update.sh 更新 V2Ray 管理脚本
+v2ray uninstall 卸载 V2Ray
 ```
 
 
@@ -358,27 +497,33 @@ V2Ray
 -   传入协议有
     -   HTTP
     -   SOCKS
+
         Socks 协议实现，兼容 Socks 4、Socks 4a 和 Socks 5。
     -   Shadowsocks
+
         包含传入和传出两部分，兼容大部分其它版本的实现。
     -   VMess
+
         加密传输协议，它分为传入和传出两部分，通常作为 V2Ray 客户端和服务器之间的桥梁。
     -   Dokodemo-door
+
         （任意门）是一个传入数据协议，它可以监听一个本地端口，并把所有进入此端口的数据发送至指定服务器的一个端口，从而达到端口映射的效果。
 
 -   传出协议有
     -   VMess
     -   Shadowsocks
     -   Blackhole
+
         （黑洞）是一个传出数据协议，它会阻碍所有数据的传出，配合路由（Routing）一起使用，可以达到禁止访问某些网站的效果。
     -   Freedom
+
         Freedom 是一个传出数据协议，可以用来向任意网络发送（正常的） TCP 或 UDP 数据
     -   SOCKS
 
 -   其他
     -   MTProto
+
         一个 Telegram 专用的代理协议。在 V2Ray 中可使用一组传入传出代理来完成 Telegram 数据的代理任务。 目前只支持转发到 Telegram 的 IPv4 地址。
-        -
 
 
 ### client {#client}
@@ -443,7 +588,7 @@ V2Ray
 ```
 
 
-## 域名路由规则 {#域名路由规则}
+## rules {#rules}
 
 
 ### 预定义域名列表 geosite: {#预定义域名列表-geosite}
@@ -526,7 +671,173 @@ geoip:private，包含所有私有地址，如 127.0.0.1（本条规则仅支持
 如 ext:<tag，必须以> ext:（全部小写）开头，后面跟文件名（不含扩展名）file 和标签 tag，文件必须存放在 V2Ray 核心的资源目录中，文件格式与 geoip.dat 相同，且指定的 tag 必须在文件中存在。
 
 
-## [反向代理/内网穿透](https://toutyrater.github.io/app/reverse2.html) {#反向代理-内网穿透}
+## reverse/NAT-DNSS {#reverse-nat-dnss}
+
+
+### 说明 {#说明}
+
+
+#### 环境 {#环境}
+
+-   主机 A：没有公网 IP，无法在公网上直接访问。
+-   主机 B：它可以由公网访问。
+
+
+### 配置 {#配置}
+
+
+#### 内网主机 A {#内网主机-a}
+
+```js
+{
+  "reverse":{
+    // 这是 A 的反向代理设置，必须有下面的 bridges 对象
+    "bridges":[
+      {
+        "tag":"bridge", // 关于 A 的反向代理标签，在路由中会用到
+        "domain":"private.cloud.com" // A 和 B 反向代理通信的域名，可以自己取一个，可以不是自己购买的域名，但必须跟下面 B 中的 reverse 配置的域名一致
+      }
+    ]
+  },
+  "outbounds": [
+    {
+      //A连接B的outbound
+      "tag":"tunnel", // A 连接 B 的 outbound 的标签，在路由中会用到
+      "protocol":"vmess",
+      "settings":{
+        "vnext":[
+          {
+            "address":"serveraddr.com", // B 地址，IP 或 实际的域名
+            "port":16823,
+            "users":[
+              {
+                "id":"b831381d-6324-4d53-ad4f-8cda48b30811",
+                "alterId":64
+              }
+            ]
+          }
+        ]
+      }
+    },
+    // 另一个 outbound，最终连接私有网盘
+    {
+      "protocol":"freedom",
+      "settings":{
+      },
+      "tag":"out"
+    }
+  ],
+  "routing":{
+    "rules":[
+      {
+        // 配置 A 主动连接 B 的路由规则
+        "type":"field",
+        "inboundTag":[
+          "bridge"
+        ],
+        "domain":[
+          "full:private.cloud.com"
+        ],
+        "outboundTag":"tunnel"
+      },
+      {
+        // 反向连接访问私有网盘的规则
+        "type":"field",
+        "inboundTag":[
+          "bridge"
+        ],
+        "outboundTag":"out"
+      }
+    ]
+  }
+}
+```
+
+
+#### 外网主机 B {#外网主机-b}
+
+```js
+{
+  "reverse":{  //这是 B 的反向代理设置，必须有下面的 portals 对象
+    "portals":[
+      {
+        "tag":"portal",
+        "domain":"private.cloud.com"        // 必须和上面 A 设定的域名一样
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      // 接受 C 的inbound
+      "tag":"external", // 标签，路由中用到
+      "port":80,
+      // 开放 80 端口，用于接收外部的 HTTP 访问
+      "protocol":"dokodemo-door",
+        "settings":{
+          "address":"127.0.0.1",
+          "port":80, //假设 NAS 监听的端口为 80
+          "network":"tcp"
+        }
+    },
+    // 另一个 inbound，接受 A 主动发起的请求
+    {
+      "tag": "tunnel",// 标签，路由中用到
+      "port":16823,
+      "protocol":"vmess",
+      "settings":{
+        "clients":[
+          {
+            "id":"b831381d-6324-4d53-ad4f-8cda48b30811",
+            "alterId":64
+          }
+        ]
+      }
+    }
+  ],
+  "routing":{
+    "rules":[
+      {  //路由规则，接收 C 请求后发给 A
+        "type":"field",
+        "inboundTag":[
+          "external"
+        ],
+        "outboundTag":"portal"
+      },
+      {  //路由规则，让 B 能够识别这是 A 主动发起的反向代理连接
+        "type":"field",
+        "inboundTag":[
+          "tunnel"
+        ],
+        "domain":[
+          "full:private.cloud.com"
+        ],
+        "outboundTag":"portal"
+      }
+    ]
+  }
+}
+```
+
+
+### bridge / portal {#bridge-portal}
+
+-   主机 A 中配置一个 V2Ray，称为 bridge
+-   主机 B 中配置一个 V2Ray，称为 portal。
+-   bridge 会向 portal 主动建立连接。
+-   portal 会收到两种连接:
+    -   一是由 bridge 发来的连接，
+    -   二是公网用户发来的连接。
+-   portal 会自动将两类连接合并,于是 bridge 就可以收到公网流量了
+
+**一个 V2Ray 既可以作为 bridge，也可以作为 portal，也可以同时两者，以适用于不同的场景需要。**
+
+
+### Ref {#ref}
+
+-   [Reverse 反向代理](https://www.v2fly.org/config/reverse.html#reverseobject)
+-   [V2Ray 白话文指南-反向代理/内网穿透](https://www.bookset.io/read/v2ray-guide/94bb3d54ac5738ed.md)
+-   [使用 V2ray 反向代理实现内网穿透](https://www.bookset.io/read/v2ray-guide/94bb3d54ac5738ed.md)
+-   [反向代理/内网穿透](https://toutyrater.github.io/app/reverse2.html)
 
 
 ## Notes {#notes}
@@ -537,3 +848,5 @@ geoip:private，包含所有私有地址，如 127.0.0.1（本条规则仅支持
     -   enabled: 是否开启流量探测。
     -   destOverride: 当流量为指定类型时，按其中包括的目标地址重置当前连接的目标。
     -   可选值为 "http" 和 "tls"。
+-   客户端和服务器之间的版本要一致
+    -   尤其是在 4.36 以上版本时

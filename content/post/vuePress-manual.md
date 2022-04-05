@@ -1,6 +1,6 @@
 +++
 title = "Vuepress 使用小结"
-lastmod = 2022-03-27T19:04:54+08:00
+lastmod = 2022-03-27T19:18:01+08:00
 tags = ["Vuepress"]
 categories = ["Blog"]
 draft = false
@@ -207,7 +207,7 @@ jobs:
 
 ### markdown {#markdown}
 
-```markdown
+```nil
 {{< figure src="https://pic4.zhimg.com/80/v2-1bb4dea5ae4f6ff7d1b9a1b405e09467_1440w.jpg" >}}
 ![](https://pic4.zhimg.com/80/v2-1bb4dea5ae4f6ff7d1b9a1b405e09467_1440w.jpg)
 ```

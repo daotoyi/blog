@@ -1,7 +1,7 @@
 +++
-title = "Huginn"
+title = "Huginn 笔记"
 date = 2022-02-27T08:19:00+08:00
-lastmod = 2022-02-27T16:15:39+08:00
+lastmod = 2022-03-29T18:22:44+08:00
 categories = ["RSS"]
 draft = false
 +++
@@ -89,7 +89,10 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 [基于 Docker 搭建 Huginn](https://miaotony.xyz/2020/02/03/Server_Huginn/)
 
-`docker run -it -p 3000:3000 huginn/huginn` 部署成功后访问 IP+3000 端口，出现界面点击登录，默认账号密码是 `admin/password` .
+-   `docker run -it -p 3000:3000 huginn/huginn`
+-   `docker run -d --name huginn -p 3000:3000 huginn/huginn`
+
+安装并部署，成功后访问 IP+3000 端口，出现界面点击登录，默认账号密码是 `admin/password` .
 
 -   <http://0.0.0.0:3000/>
 -   <http://127.0.0.1:3000>

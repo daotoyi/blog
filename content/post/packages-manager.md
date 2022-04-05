@@ -1,8 +1,10 @@
 +++
 title = "Packages Manager"
-lastmod = 2022-03-26T10:31:50+08:00
+date = 2022-04-02T12:30:00+08:00
+lastmod = 2022-04-02T21:13:22+08:00
+tags = ["managePackage"]
 categories = ["Tools"]
-draft = true
+draft = false
 +++
 
 ## Scoop {#scoop}
@@ -68,7 +70,7 @@ git -C "D:\Scoop\buckets\extras" remote set-url origin https://hub.fastgit.org/l
 ```
 
 
-### 使用 github mirror 添加 bucket 库 {#使用-github-mirror-添加-bucket-库}
+### 添加 bucket 库 {#添加-bucket-库}
 
 -   镜像 1: <https://hub.fastgit.org/>
 -   镜像 2: <https://github.com.cnpmjs.org/>
@@ -173,6 +175,15 @@ git config --global https.proxy https://host:port
 ```
 
 
+### Note {#note}
+
+
+#### 下载不成功 {#下载不成功}
+
+-   github 访问有问题
+-   git 仓库不干净,update 最新的版的 scoop 不能 pull 成功
+
+
 ## Chocolatey {#chocolatey}
 
 
@@ -181,6 +192,114 @@ git config --global https.proxy https://host:port
 ```shell
 choco install chocolateygui
 chocolateygui #即可进入软件界面
+```
+
+
+## Pacman {#pacman}
+
+
+### pacman {#pacman}
+
+
+#### parameter {#parameter}
+
+-   -S : synchronization, 在安装之前先与软件库进行同步
+-   -y : 更新本地存储库
+-   -u : 系统更新
+
+-   -Q : 查询本地包数据库
+-   -S : 查询同步数据库
+-   -F : 查询文件数据库
+    -   -s : search
+    -   -i : information
+    -   -l : list
+        -   package_name
+
+
+#### CMD {#cmd}
+
+```bash
+pacman -Syu xxx
+pacman -Qs xxx
+pacman -Ss xxx
+pacman -F xxx
+
+# 卸载一个包，并且删除它的所有依赖
+pacman -R xxx
+# 删除当前未安装的所有缓存包和未使用的同步数据库
+pacman -Sc
+# 从缓存中删除所有文件，请使用清除选项两次
+pacman -Scc
+
+# 安装不是来自远程存储库的“本地”包
+pacman -U local/path.pkg.tar.xz
+# 安装官方存储库中未包含的“远程”软件包：
+pacman -U http://www.example.com/repo/example.pkg.tar.xz
+```
+
+
+### featture {#featture}
+
+
+#### soft version {#soft-version}
+
+pacman 将其下载的包存储在 `/var/cache/Pacman/pkg/` 中，并且不会自动删除旧版本或卸载的版本。
+
+1.  它允许 降级 一个包，而不需要通过其他来源检索以前的版本。
+2.  已卸载的软件包可以轻松地直接从缓存文件夹重新安装。
+
+
+#### db.lc {#db-dot-lc}
+
+当 pacman 要修改包数据库时，例如安装包时，它会在 /var/lib/pacman/db.lck 处创建一个锁文件。这可以防止 pacman 的另一个实例同时尝试更改包数据库。
+
+如果 pacman 在更改数据库时被中断，这个过时的锁文件可能仍然保留。如果你确定没有 pacman 实例正在运行，那么请删除锁文件。
+
+lsof /var/lib/pacman/db.lck
+
+
+### pactree {#pactree}
+
+查看一个包的依赖树
+
+```bash
+
+pactree <package_name>
+```
+
+
+### paccache {#paccache}
+
+pacman contrib 包中提供的 paccache(8) 脚本默认情况下会删除已安装和未安装包的所有缓存版本，但最近 3 个版本除外
+
+```bash
+paccache -r
+```
+
+
+### downgrade {#downgrade}
+
+
+#### downgrade {#downgrade}
+
+使用 downgrade 命令的前提是你之前已经安装过该软件包
+
+```bash
+sudo pacman -S downgrade
+downgrade package_name
+# 弹出可选的本地包供选择
+```
+
+
+#### [Aur-Repo](https://aur.archlinux.org/packages?_blank) {#aur-repo}
+
+从 AUR 仓库[Sources]下载历史源码,解压后生成安装包.
+
+```bash
+tar -zxvf xxx.tar.gz
+cd xxx
+makepkg -s
+pacman -U xxx.pkg.tar.xz
 ```
 
 

@@ -1,7 +1,7 @@
 +++
 title = "CMD stty"
 date = 2022-03-25T21:03:00+08:00
-lastmod = 2022-03-25T22:12:21+08:00
+lastmod = 2022-03-30T18:48:44+08:00
 categories = ["Linux"]
 draft = false
 +++
@@ -35,9 +35,28 @@ stty -F /dev/ttyS0 speed 115200 cs8 -parenb -cstopb
 ```
 
 -   parameter
-    -   [-]cstopb    每个字符使用 2 位停止位 (要恢复成 1 位配合"-"即可)
-    -   [-]parenb    对输出生成奇偶校验位并等待输入的奇偶校验位
-    -   [-]parodd    设置校验位为奇数 (配合"-"则为偶数)
+    -   cstopb    每个字符使用 2 位停止位 (要恢复成 1 位配合"-"即可)
+    -   parenb    对输出生成奇偶校验位并等待输入的奇偶校验位
+    -   parodd    设置校验位为奇数 (配合"-"则为偶数)
+
+
+## Note {#note}
+
+-   使用中常需要关闭回显 -echo
+-   接收到数据但无法读取时需要 raw
+    -   raw
+        -   -ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr -icrnl -ixon -ixoff -iuclc -ixany -imaxbel -opost -isig -icanon -xcase min 1 time 0
+    -   cooked
+        -   brkint ignpar istrip icrnl ixon opost isig icanon eof eol 等的默认值
+    -   -raw 等于 cooked
+    -   -cooked 等于-raw
+-   可能的最终配置：
+
+    > stty -F /dev/ttyS0 speed 115200 cs8 -parenb -cstopb -echo raw
+
+————————————————
+版权声明：本文为 CSDN 博主「无尾猴」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：<https://blog.csdn.net/qq_34796705/article/details/116013286>
 
 ---
 

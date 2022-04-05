@@ -1,7 +1,8 @@
 +++
-title = "CAD 使用笔记"
+title = "CAD"
 date = 2022-03-17T19:58:00+08:00
-lastmod = 2022-03-17T19:58:51+08:00
+lastmod = 2022-04-04T06:57:58+08:00
+tags = ["CAD"]
 categories = ["Tools"]
 draft = false
 +++

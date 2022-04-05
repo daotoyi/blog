@@ -1,7 +1,7 @@
 +++
-title = "域名"
+title = "Doman 域名"
 date = 2022-03-05T16:31:00+08:00
-lastmod = 2022-03-05T17:18:58+08:00
+lastmod = 2022-04-03T13:47:35+08:00
 tags = ["domain"]
 categories = ["Internet"]
 draft = false

@@ -1,7 +1,7 @@
 +++
 title = "Docker 使用镜像"
 date = 2022-02-27T11:53:00+08:00
-lastmod = 2022-03-03T22:36:36+08:00
+lastmod = 2022-04-01T19:59:36+08:00
 categories = ["Docker"]
 draft = false
 +++
@@ -33,6 +33,9 @@ root@7896ef8f403f:/#  # 执行命令后，提示符会变为你正在使用镜�
 ## operate {#operate}
 
 ```shell
+# 给普通用户增加使用docker的权限
+sudo usermod -aG docker $USER
+
 docker ps
 docker ps -a
 docker ps -l     # 查看最后创建的容器

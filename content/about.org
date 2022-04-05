@@ -2,13 +2,13 @@
 #+author: daoyi
 #+date: 2022-02-03T13:09:17+08:00
 #+tags[]: 
-#+categories[]: hugo 
 
 * About [[https://github.com/daotoyi][Me]]
 Daoyi Refine.
 
-+ [[http://jekyll.daotoyi.cn/][Jekyll Home]]
++ [[http://jekyll.daotoyi.cn/][Jekyll Page]]
 + [[http://fire.daotoyi.cn/][FIRE Page]]
++ [[https://site.daotoyi.cn][Site Home]]
   
 * Hobbies
 + computer
@@ -18,16 +18,16 @@ Daoyi Refine.
 + comics
 
 * Refine
-+ *read*
++ *Read*
 
-+ *code*
++ *Code*
   * Python
   * Shell
   * C/C++
   * emacs-lisp
   * Latex
 
-+ *efficient tool*
++ *Efficient Tool*
 | Categories        | Archive              | Opensource      | Mark                                                           |
 |                   |                      |                 | <20>                                                           |
 |-------------------+----------------------+-----------------+----------------------------------------------------------------|

@@ -1,7 +1,7 @@
 +++
-title = "Sublime hotkey"
+title = "Sublime Hotkey"
 date = 2022-04-02T12:29:00+08:00
-lastmod = 2022-04-05T09:25:51+08:00
+lastmod = 2022-04-14T13:38:44+08:00
 tags = ["hotkey"]
 categories = ["Tools"]
 draft = false
@@ -84,3 +84,33 @@ draft = false
 -   Alt + Shift + 8：进行上下分屏
 -   Alt + Shift + 5：进行上下左右分屏
 -   分屏之后，使用 Ctrl + 数字键跳转到指定屏，使用 Ctrl + Shift + 数字键将当前屏移动到指定屏
+
+
+## 折叠代码 {#折叠代码}
+
+```cfg
+Ctrl+Shift+[ 折叠代码
+Ctrl+Shift+] 展开代码
+Ctrl+KT 折叠属性
+Ctrl+K0 展开所有
+```
+
+
+## keymap {#keymap}
+
+Preferences -&gt; Key Bindings
+
+```js
+[
+  { "keys": ["ctrl+shift+c"], "command": "cancel_build" },
+    {
+        "keys": ["f5"],
+        "caption": "SublimeREPL: Python - RUN current file",
+        "command": "run_existing_window_command",
+        "args": {
+            "id": "repl_python_run",
+            "file": "config/Python/Main.sublime-menu"
+        }
+    }
+]
+```

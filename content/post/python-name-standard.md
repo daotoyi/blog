@@ -1,6 +1,7 @@
 +++
 title = "Python 命名"
-lastmod = 2022-02-15T08:13:35+08:00
+date = 2022-04-13T18:06:00+08:00
+lastmod = 2022-04-13T19:24:16+08:00
 categories = ["Python"]
 draft = false
 +++

@@ -1,6 +1,7 @@
 +++
 title = "FastKey keybinding"
-lastmod = 2022-04-07T22:24:33+08:00
+date = 2022-04-10T20:31:00+08:00
+lastmod = 2022-04-11T07:46:26+08:00
 categories = ["Tools"]
 draft = false
 +++

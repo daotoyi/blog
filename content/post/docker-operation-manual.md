@@ -1,7 +1,7 @@
 +++
 title = "Docker 使用镜像"
 date = 2022-02-27T11:53:00+08:00
-lastmod = 2022-04-01T19:59:36+08:00
+lastmod = 2022-04-09T17:29:36+08:00
 categories = ["Docker"]
 draft = false
 +++
@@ -22,7 +22,15 @@ Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况�
 ```shell
 docker search ubuntu
 docker pull ubuntu
+
 docker images         # 查看已下载到计算机的镜像
+docker image list
+
+docker rmi image  # delete image
+docker image rm image
+
+docker image inspect ngin  # 查看镜像的详细信息
+
 
 docker run -it ubuntu # 使用-i -t 这两个参数，可以通过 shell 来
 
@@ -39,9 +47,16 @@ sudo usermod -aG docker $USER
 docker ps
 docker ps -a
 docker ps -l     # 查看最后创建的容器
+
 docker start ID/容器名
 docker stop  ID/容器名
+
 docker rm        # delete container_id
-docker rmi Imga  # delete image
+docker rm -f  `docker ps -a -q` # delete all
+
+docker attach name[/id]
 docker exec -it name[/id] /bin/sh[/bash]
+ctrl+p & ctrl+q   # exit
+
+docker volume ls
 ```

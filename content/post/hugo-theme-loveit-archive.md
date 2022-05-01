@@ -1,8 +1,10 @@
-+++
-title = "Hugo 主题 LoveIt 使用小结"
-lastmod = 2022-02-13T23:57:02+08:00
-categories = ["Hugo"]
-draft = true
-+++
+---
+title: "Hugo 主题 LoveIt 使用小结"
+date: "2022-03-08 11:31:00"
+lastmod: "2022-04-30 12:50:08"
+tags: ["Hugo"]
+categories: ["VPS"]
+draft: false
+---
 
 ## compatible {#compatible}

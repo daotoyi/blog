@@ -1,10 +1,10 @@
-+++
-title = "Nginx"
-date = 2022-04-04T23:44:00+08:00
-lastmod = 2022-04-05T10:46:40+08:00
-categories = ["Internet"]
-draft = false
-+++
+---
+title: "Nginx"
+date: "2022-04-04 23:44:00"
+lastmod: "2022-04-30 12:35:31"
+categories: ["Internet"]
+draft: false
+---
 
 ## instoducton {#instoducton}
 

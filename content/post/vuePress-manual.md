@@ -1,10 +1,10 @@
-+++
-title = "Vuepress 使用小结"
-lastmod = 2022-03-27T19:18:01+08:00
-tags = ["Vuepress"]
-categories = ["Blog"]
-draft = false
-+++
+---
+title: "Vuepress 使用小结"
+lastmod: "2022-04-30 19:28:58"
+tags: ["Vuepress"]
+categories: ["VPS"]
+draft: false
+---
 
 CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2022-03-26 周六 21:13]</span></span>
 
@@ -215,6 +215,11 @@ jobs:
 -   {{&lt;figure src="" &gt;}}格式,vuepress 不支持, hugo 支持
 
 
+### build {#build}
+
+如果 md 文件内容有问题，如找不到链接图片，在 dev 模式时，可以正常运行，但在 build 模式时无法正常生成。
+
+
 ## Reference {#reference}
 
 -   [VuePress中文网](http://caibaojian.com/vuepress/guide/)
@@ -222,5 +227,5 @@ jobs:
 -   [一篇带你用 VuePress + Github Pages 搭建博客](https://xie.infoq.cn/article/4d2f62c87d188331342e62563)
 -   [GitHub Actions 实现自动部署静态博客](https://xugaoyi.com/pages/6b9d359ec5aa5019/)
 -   [Vuepress + GitHub Actions 实现博客自动部署！](https://juejin.cn/post/7000572105154625567)
-
--[GitHub Actions 定时运行代码：每天定时百度链接推送](https://xugaoyi.com/pages/f44d2f9ad04ab8d3/)
+-   [GitHub Actions 定时运行代码：每天定时百度链接推送](https://xugaoyi.com/pages/f44d2f9ad04ab8d3/)
+-   [批量操作front matter工具](https://doc.xugaoyi.com/pages/2b8e22/)

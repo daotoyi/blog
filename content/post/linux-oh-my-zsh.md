@@ -1,9 +1,10 @@
-+++
-title = "Linux oh-my-zsh"
-lastmod = 2022-04-11T07:46:25+08:00
-categories = ["Linux"]
-draft = true
-+++
+---
+title: "Linux oh-my-zsh"
+date: "2022-04-15 07:11:00"
+lastmod: "2022-04-30 20:58:37"
+categories: ["Linux"]
+draft: false
+---
 
 ## zsh {#zsh}
 
@@ -26,7 +27,35 @@ source ~/.zshrc
 # plugins
 $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 $ mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+# $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/
 
 $ echo "plugins=(zsh-syntax-highlighting)" >>　~/.zshrc
 $ source ~/.zshrc
 ```
+
+
+## root user {#root-user}
+
+```bash
+sudo ln -s $HOME/.oh-my-zsh           /root/.oh-my-zsh
+sudo ln -s $HOME/.zshrc               /root/.zshrc
+```
+
+
+## theme config {#theme-config}
+
+```cfg
+# ~/.zshrc
+ZSH_THEME="random"
+
+ZSH_THEME_RANDOM_CANDIDATES=(  "robbyrussell"  "agnoster")
+```
+
+
+## theme recommend {#theme-recommend}
+
+-   powerlevel10k
+-   agnoster
+-   [astro](https://github.com/iplaces/astro-zsh-theme)
+-   bira
+-   fino

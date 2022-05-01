@@ -1,10 +1,11 @@
-+++
-title = "hugo-orgmode"
-date = 2022-02-01T08:37:00+08:00
-lastmod = 2022-03-12T19:15:30+08:00
-categories = ["Hugo"]
-draft = false
-+++
+---
+title: "Hugo 使用 orgmode"
+date: "2022-02-01 08:37:00"
+lastmod: "2022-04-30 12:50:03"
+tags: ["Hugo"]
+categories: ["VPS"]
+draft: false
+---
 
 ## 简述 {#简述}
 

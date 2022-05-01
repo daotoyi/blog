@@ -1,10 +1,10 @@
-+++
-title = "Jianguoyun"
-date = 2022-04-01T10:29:00+08:00
-lastmod = 2022-04-01T10:32:04+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Jianguoyun"
+date: "2022-04-01 10:29:00"
+lastmod: "2022-04-30 12:48:32"
+categories: ["Tools"]
+draft: false
+---
 
 坚果云中设置，倒是可以在坚果云的同步文件夹右键中选择“选择性同步”，但是只能设置到单个文件夹。
 

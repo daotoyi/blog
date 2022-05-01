@@ -1,9 +1,11 @@
-+++
-title = "Hugo 主题 even 使用小结"
-date = 2022-02-05T08:19:00+08:00
-lastmod = 2022-02-12T08:50:00+08:00
-draft = false
-+++
+---
+title: "Hugo 主题 even 使用小结"
+date: "2022-02-05 08:19:00"
+lastmod: "2022-04-30 12:50:06"
+tags: ["Hugo"]
+categories: ["VPS"]
+draft: false
+---
 
 ## config {#config}
 

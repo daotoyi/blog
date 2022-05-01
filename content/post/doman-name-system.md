@@ -1,10 +1,11 @@
-+++
-title = "doman-name-system 使用总结"
-date = 2022-02-07T08:44:00+08:00
-lastmod = 2022-03-11T17:44:19+08:00
-categories = ["Internet"]
-draft = false
-+++
+---
+title: "Domain name system 解析"
+date: "2022-02-07 08:44:00"
+lastmod: "2022-04-30 12:34:27"
+tags: ["domain"]
+categories: ["Internet"]
+draft: false
+---
 
 -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2022-02-12 周六 08:44]</span></span>
 

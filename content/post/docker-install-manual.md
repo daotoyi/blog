@@ -1,10 +1,10 @@
-+++
-title = "Docker 安装"
-date = 2022-02-27T11:53:00+08:00
-lastmod = 2022-03-28T23:45:36+08:00
-categories = ["Docker"]
-draft = false
-+++
+---
+title: "Docker 安装"
+date: "2022-02-27 11:53:00"
+lastmod: "2022-04-30 12:24:28"
+categories: ["Docker"]
+draft: false
+---
 
 官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。
 

@@ -1,11 +1,11 @@
-+++
-title = "v2ray 笔记"
-date = 2022-03-05T17:20:00+08:00
-lastmod = 2022-04-04T07:06:04+08:00
-tags = ["v2ray"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "v2ray 笔记"
+date: "2022-03-05 17:20:00"
+lastmod: "2022-04-30 12:50:19"
+tags: ["v2ray"]
+categories: ["VPS"]
+draft: false
+---
 
 ## introduction {#introduction}
 
@@ -77,58 +77,6 @@ V2ray 官方对 VLESS 协议的定义是“性能至上、可扩展性空前，�
 VLESS 是一种无状态的轻量级数据传输协议，被定义为下一代 V2ray 数据传输协议。
 
 VLESS 命名源自“less is more”,与 VMESS 协议相同，VLESS 使用 UUID 进行身份验证，配置分入栈和出栈两部分，可用在客户端和服务端。.
-
-
-#### fallback 参数 {#fallback-参数}
-
-引入了分流和回落的概念.
-
-VLESS 协议 中的 fallback 是可选的，只能用于 TLS 或 XTLS 模式下;
-
-```js
-{
-  "alpn": "",
-  "path": "",
-  "dest": "",
-  "xver": ""
-}
-```
-
--   dest: 必须的
--   alpn: 可选,一般不用管（或者填["http/1.1"]）
--   path: 是回落路径
--   xver 用来指示是否传递真实 ip 信息（需要填 1，不需要填 0）。
-
-如果有多组转发，则可按照 path 路径配置多组 fallback 对象:
-
-```js
-"fallbacks": [
-    {
-        "dest": 80 // 或者回落到其它也防探测的代理
-    },
-    {
-        "path": "/websocket", // 必须换成自定义的 PATH
-        "dest": 1234,
-        "xver": 1
-    },
-    {
-        "path": "/vmesstcp", // 必须换成自定义的 PATH
-        "dest": 2345,
-        "xver": 1
-    },
-    {
-        "path": "/vmessws", // 必须换成自定义的 PATH
-        "dest": 3456,
-        "xver": 1
-    }
-]
-```
-
--   客户端:
-    -   请求 域名:/websocket 时，流量将转发到本机的 1234 端口；
-    -   请求 域名:/vmesstcp 时，流量转发到本机的 2345 端口；
-    -   请求路径为 /vmessws 时转发到 3456 端口；
-    -   如果是其他请求，则转到到 80 端口。
 
 
 #### 总结 {#总结}
@@ -669,6 +617,39 @@ geoip:private，包含所有私有地址，如 127.0.0.1（本条规则仅支持
 
 从外部文件中加载 IP 规则：
 如 ext:<tag，必须以> ext:（全部小写）开头，后面跟文件名（不含扩展名）file 和标签 tag，文件必须存放在 V2Ray 核心的资源目录中，文件格式与 geoip.dat 相同，且指定的 tag 必须在文件中存在。
+
+
+### 路由域名规则 {#路由域名规则}
+
+
+#### 预定义域名列表 {#预定义域名列表}
+
+以 geosite: 开头，后面跟一个名称，例如 geosite:google 或 geosite:cn 名称 及 域名列表 请参考 预定义域名列表
+
+
+#### 子域名 {#子域名}
+
+由 "domain:" 开始，后面跟一个域名。当此域名是目标域名或其子域名时，该规则生效。例如 "domain:v2ray.com" 匹配 "www.v2ray.com"、"v2ray.com"，但不匹配 "xv2ray.com"。
+
+
+#### 完全匹配 {#完全匹配}
+
+由 "full:" 开始，后面跟一个域名。当此域名完整匹配目标域名时，该规则生效。例如 "full:v2ray.com" 匹配 "v2ray.com" 但不匹配 "www.v2ray.com"。
+
+
+#### 纯字符串 {#纯字符串}
+
+当此字符串匹配目标域名中任意部分，该规则生效。比如 "sina.com" 可以匹配 "sina.com"、"sina.com.cn" 和 "www.sina.com"，但不匹配 "sina.cn"。
+
+
+#### 正则表达式 {#正则表达式}
+
+由 "regexp:" 开始，余下部分是一个正则表达式。当此正则表达式匹配目标域名时，该规则生效。例如 "regexp:\\\\.goo.\*\\\\.com$" 匹配 "www.google.com"、"fonts.googleapis.com"，但不匹配 "google.com"。
+
+
+#### 从文件中加载域名 {#从文件中加载域名}
+
+形如 "ext:<tag"，必须以> ext:（小写）开头，后面跟 文件名 和 标签 ，文件存放在与 v2ray 核心相同的路径中，文件格式与 geosite.dat 相同，标签 必须在文件中声明。
 
 
 ## reverse/NAT-DNSS {#reverse-nat-dnss}

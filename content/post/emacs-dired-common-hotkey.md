@@ -1,11 +1,11 @@
-+++
-title = "Dired 使用"
-date = 2022-02-13T06:58:00+08:00
-lastmod = 2022-03-08T11:13:50+08:00
-tags = ["dired"]
-categories = ["emacs"]
-draft = false
-+++
+---
+title: "Dired 使用"
+date: "2022-02-13 06:58:00"
+lastmod: "2022-04-30 12:23:57"
+tags: ["dired"]
+categories: ["emacs"]
+draft: false
+---
 
 | hotkey    | cmd                  | function                  | notes                                                    |
 |-----------|----------------------|---------------------------|----------------------------------------------------------|

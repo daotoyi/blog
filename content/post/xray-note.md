@@ -1,9 +1,11 @@
-+++
-title = "Xray 笔记"
-lastmod = 2022-04-04T15:06:10+08:00
-categories = ["VPS"]
-draft = true
-+++
+---
+title: "Xray 笔记"
+date: "2022-04-10 22:15:00"
+lastmod: "2022-04-30 12:50:48"
+tags: ["Xray"]
+categories: ["VPS"]
+draft: false
+---
 
 ## install {#install}
 

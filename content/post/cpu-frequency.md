@@ -1,10 +1,10 @@
-+++
-title = "CPU Frequency"
-date = 2022-03-25T22:10:00+08:00
-lastmod = 2022-03-25T22:11:01+08:00
-categories = ["Hardware"]
-draft = false
-+++
+---
+title: "CPU Frequency"
+date: "2022-03-25 22:10:00"
+lastmod: "2022-04-30 12:33:54"
+categories: ["Hardware"]
+draft: false
+---
 
 ## 主频=外频×倍频系数 {#主频-外频-倍频系数}
 

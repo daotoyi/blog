@@ -1,9 +1,11 @@
-+++
-title = "Git Pull 强制覆盖"
-lastmod = 2022-03-26T09:24:49+08:00
-categories = ["Github"]
-draft = true
-+++
+---
+title: "Git Pull 强制覆盖"
+date: "2022-03-26 09:48:00"
+lastmod: "2022-04-30 12:32:03"
+tags: ["git"]
+categories: ["Github"]
+draft: false
+---
 
 ## 推荐方案 {#推荐方案}
 

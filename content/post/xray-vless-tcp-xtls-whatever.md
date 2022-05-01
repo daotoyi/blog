@@ -1,11 +1,12 @@
-+++
-title = "Xray+XTLS+VLESS 终极配置"
-description = "VLESS over TCP with XTLS + fullbacks(回落&分流) to WHATEVER"
-lastmod = 2022-04-04T23:11:22+08:00
-tags = ["Xray"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "Xray+XTLS+VLESS 终极配置"
+description: "VLESS over TCP with XTLS + fullbacks(回落&分流) to WHATEVER"
+date: "2022-04-10 22:15:00"
+lastmod: "2022-04-30 12:50:49"
+tags: ["Xray"]
+categories: ["VPS"]
+draft: false
+---
 
 ## [config](https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-WHATEVER/README.md) {#config}
 

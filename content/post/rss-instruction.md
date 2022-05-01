@@ -1,10 +1,10 @@
-+++
-title = "RSS"
-date = 2022-03-02T15:40:00+08:00
-lastmod = 2022-03-11T08:43:38+08:00
-categories = ["RSS"]
-draft = false
-+++
+---
+title: "RSS 整理"
+date: "2022-03-02 15:40:00"
+lastmod: "2022-04-30 12:46:41"
+categories: ["RSS"]
+draft: false
+---
 
 (Really Simple Syndication,简易信息聚合)
 

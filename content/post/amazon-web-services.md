@@ -1,10 +1,11 @@
-+++
-title = "AWS 笔记"
-lastmod = 2022-03-14T23:37:38+08:00
-tags = ["AWS"]
-categories = ["VPS"]
-draft = true
-+++
+---
+title: "AWS 笔记"
+date: "2022-04-10 22:15:00"
+lastmod: "2022-04-30 12:50:17"
+tags: ["AWS"]
+categories: ["VPS"]
+draft: false
+---
 
 ## Amazon Web Services (AWS) {#amazon-web-services--aws}
 

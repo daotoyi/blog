@@ -1,10 +1,10 @@
-+++
-title = "Mariadb/Mysql common command"
-date = 2022-04-04T06:47:00+08:00
-lastmod = 2022-04-04T06:47:31+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Mariadb/Mysql common command"
+date: "2022-04-04 06:47:00"
+lastmod: "2022-04-30 12:48:36"
+categories: ["Tools"]
+draft: false
+---
 
 ```bash
 # 登陆数据库方法

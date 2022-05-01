@@ -1,10 +1,10 @@
-+++
-title = "FastKey keybinding"
-date = 2022-04-10T20:31:00+08:00
-lastmod = 2022-04-11T07:46:26+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "FastKey keybinding"
+date: "2022-04-10 20:31:00"
+lastmod: "2022-04-30 12:48:39"
+categories: ["Tools"]
+draft: false
+---
 
 | key           | func                       |
 |---------------|----------------------------|

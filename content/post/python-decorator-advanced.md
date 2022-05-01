@@ -1,11 +1,11 @@
-+++
-title = "Python 装饰器高级版"
-description = "Python 类内定义装饰器并传递 self 参数"
-date = 2022-04-16T20:56:00+08:00
-lastmod = 2022-04-17T12:46:21+08:00
-categories = ["Python"]
-draft = false
-+++
+---
+title: "Python 装饰器高级版"
+description: "Python 类内定义装饰器并传递 self 参数"
+date: "2022-04-16 20:56:00"
+lastmod: "2022-04-30 12:46:09"
+categories: ["Python"]
+draft: false
+---
 
 ## 基本装饰器 {#基本装饰器}
 

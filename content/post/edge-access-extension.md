@@ -1,10 +1,11 @@
-+++
-title = "Edge 无法翻译、无法下载插件"
-date = 2022-03-04T14:44:00+08:00
-lastmod = 2022-03-04T14:45:10+08:00
-categories = ["Internet"]
-draft = false
-+++
+---
+title: "Edge 无法翻译、无法下载插件"
+date: "2022-03-04 14:44:00"
+lastmod: "2022-04-30 12:34:29"
+tags: ["edge"]
+categories: ["Internet"]
+draft: false
+---
 
 -   State "TODO"       from              <span class="timestamp-wrapper"><span class="timestamp">[2022-03-04 周五 14:44]</span></span>
 -   修改 host 文件

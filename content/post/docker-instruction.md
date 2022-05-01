@@ -1,10 +1,10 @@
-+++
-title = "Docker 初识"
-date = 2022-02-27T11:53:00+08:00
-lastmod = 2022-02-28T11:49:04+08:00
-categories = ["Docker"]
-draft = false
-+++
+---
+title: "Docker 初识"
+date: "2022-02-27 11:53:00"
+lastmod: "2022-04-30 12:24:27"
+categories: ["Docker"]
+draft: false
+---
 
 -   State "DONE"       from              <span class="timestamp-wrapper"><span class="timestamp">[2022-02-27 周日 11:53]</span></span>
 

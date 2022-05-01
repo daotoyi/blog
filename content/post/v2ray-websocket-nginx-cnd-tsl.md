@@ -1,12 +1,12 @@
-+++
-title = "v2ray 搭建笔记"
-description = "WebSocket+TSL+CDN+Nginx"
-date = 2022-03-05T20:58:00+08:00
-lastmod = 2022-04-02T08:27:16+08:00
-tags = ["v2ray"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "v2ray 搭建笔记"
+description: "WebSocket+TSL+CDN+Nginx"
+date: "2022-03-05 20:58:00"
+lastmod: "2022-04-30 12:50:43"
+tags: ["v2ray"]
+categories: ["VPS"]
+draft: false
+---
 
 目前官方推荐的协议组合方式：
 

@@ -1,10 +1,10 @@
-+++
-title = "Sublime Notes"
-date = 2022-04-12T11:58:00+08:00
-lastmod = 2022-04-16T09:07:17+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Sublime Notes"
+date: "2022-04-12 11:58:00"
+lastmod: "2022-04-30 12:48:35"
+categories: ["Tools"]
+draft: false
+---
 
 ## python {#python}
 

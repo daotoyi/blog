@@ -1,10 +1,10 @@
-+++
-title = "Docker daemon"
-date = 2022-03-03T09:56:00+08:00
-lastmod = 2022-03-03T10:00:49+08:00
-categories = ["Docker"]
-draft = false
-+++
+---
+title: "Docker daemon"
+date: "2022-03-03 09:56:00"
+lastmod: "2022-04-30 12:24:33"
+categories: ["Docker"]
+draft: false
+---
 
 ## startup error {#startup-error}
 

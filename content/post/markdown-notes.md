@@ -1,11 +1,11 @@
-+++
-title = "Markdown 笔记"
-date = 2022-03-19T11:04:00+08:00
-lastmod = 2022-03-19T11:04:12+08:00
-tags = ["markdown"]
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Markdown"
+date: "2022-03-19 11:04:00"
+lastmod: "2022-04-30 12:48:28"
+tags: ["markdown"]
+categories: ["Tools"]
+draft: false
+---
 
 ## 图片排列 {#图片排列}
 

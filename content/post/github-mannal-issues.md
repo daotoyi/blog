@@ -1,11 +1,11 @@
-+++
-title = "Git 使用问题整理"
-date = 2022-02-05T08:25:00+08:00
-lastmod = 2022-03-26T09:18:15+08:00
-tags = ["git"]
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Git 使用问题整理"
+date: "2022-02-05 08:25:00"
+lastmod: "2022-04-30 12:32:08"
+tags: ["git"]
+categories: ["Github"]
+draft: false
+---
 
 ## fatal: in unpopulated submodule XXX {#fatal-in-unpopulated-submodule-xxx}
 

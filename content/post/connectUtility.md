@@ -1,11 +1,11 @@
-+++
-title = "ConnectUtility"
-description = "logitech 无线键鼠与接收器配对"
-date = 2022-03-20T11:29:00+08:00
-lastmod = 2022-03-20T11:29:16+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "ConnectUtility"
+description: "logitech 无线键鼠与接收器配对"
+date: "2022-03-20 11:29:00"
+lastmod: "2022-04-30 12:48:29"
+categories: ["Tools"]
+draft: false
+---
 
 ## 直接配对 {#直接配对}
 

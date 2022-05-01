@@ -1,9 +1,10 @@
-+++
-title = "CMD ag"
-lastmod = 2022-04-05T22:38:59+08:00
-categories = ["Linux"]
-draft = true
-+++
+---
+title: "CMD ag"
+date: "2022-04-15 14:46:00"
+lastmod: "2022-04-30 12:45:36"
+categories: ["Linux"]
+draft: false
+---
 
 ## common command parameter {#common-command-parameter}
 

@@ -1,11 +1,11 @@
-+++
-title = "WordPress 笔记"
-date = 2022-03-15T22:26:00+08:00
-lastmod = 2022-04-03T17:38:55+08:00
-tags = ["WordPress"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "WordPress 笔记"
+date: "2022-03-15 22:26:00"
+lastmod: "2022-04-30 12:50:14"
+tags: ["WordPress"]
+categories: ["VPS"]
+draft: false
+---
 
 ## VPS Panel Compare {#vps-panel-compare}
 
@@ -78,6 +78,7 @@ docker pull daocloud.io/daocloud/dao-wordpress:latest
 docker pull wordpress
 
 # startup
+# docker run --name wpdb --env MYSQL_ROOT_PASSWORD=wordpress -d mariadb
 docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
 
 # http://localhost:8080（或 http://host-ip:8080） 访问站点

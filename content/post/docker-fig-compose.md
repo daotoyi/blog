@@ -1,10 +1,10 @@
-+++
-title = "Docker Compose"
-date = 2022-04-04T08:31:00+08:00
-lastmod = 2022-04-10T14:52:51+08:00
-categories = ["Docker"]
-draft = false
-+++
+---
+title: "Docker Compose"
+date: "2022-04-04 08:31:00"
+lastmod: "2022-04-30 12:25:01"
+categories: ["Docker"]
+draft: false
+---
 
 ## Ref {#ref}
 

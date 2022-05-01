@@ -1,10 +1,10 @@
-+++
-title = "CMD stty"
-date = 2022-03-25T21:03:00+08:00
-lastmod = 2022-03-30T18:48:44+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "CMD stty"
+date: "2022-03-25 21:03:00"
+lastmod: "2022-04-30 12:45:33"
+categories: ["Linux"]
+draft: false
+---
 
 ## Stty 指令简介 {#stty-指令简介}
 

@@ -1,11 +1,11 @@
-+++
-title = "Github App 及 OAuth"
-description = "第三方登录问题"
-date = 2022-02-05T08:28:00+08:00
-lastmod = 2022-02-12T10:21:01+08:00
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Github App 及 OAuth"
+description: "第三方登录问题"
+date: "2022-02-05 08:28:00"
+lastmod: "2022-04-30 12:32:11"
+categories: ["Github"]
+draft: false
+---
 
 ## 令牌与密码 {#令牌与密码}
 

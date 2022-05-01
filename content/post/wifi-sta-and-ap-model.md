@@ -1,10 +1,10 @@
-+++
-title = "WIFI 模式：STA 及 AP"
-date = 2022-03-11T07:52:00+08:00
-lastmod = 2022-03-11T10:33:15+08:00
-categories = ["Hardware"]
-draft = false
-+++
+---
+title: "WIFI 模式：STA 及 AP"
+date: "2022-03-11 07:52:00"
+lastmod: "2022-04-30 12:33:52"
+categories: ["Hardware"]
+draft: false
+---
 
 ## AP: {#ap}
 

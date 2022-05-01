@@ -1,10 +1,10 @@
-+++
-title = "Github 推送验证"
-date = 2022-03-19T13:00:00+08:00
-lastmod = 2022-03-19T13:09:38+08:00
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Github 推送验证"
+date: "2022-03-19 13:00:00"
+lastmod: "2022-04-30 12:32:38"
+categories: ["Github"]
+draft: false
+---
 
 ## 采用 token 进行认证访问 {#采用-token-进行认证访问}
 

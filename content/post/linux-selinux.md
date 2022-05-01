@@ -1,10 +1,10 @@
-+++
-title = "Selinux"
-date = 2022-04-15T14:46:00+08:00
-lastmod = 2022-04-15T14:47:03+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "Selinux"
+date: "2022-04-15 14:46:00"
+lastmod: "2022-04-30 12:45:42"
+categories: ["Linux"]
+draft: false
+---
 
 ```bash
 ## Reahdet

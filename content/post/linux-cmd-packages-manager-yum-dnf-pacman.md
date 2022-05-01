@@ -1,10 +1,10 @@
-+++
-title = "CMD yum/dnf/pacman"
-date = 2022-03-30T18:49:00+08:00
-lastmod = 2022-03-31T22:55:13+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "Linux yum/dnf/pacman/npm/yarn"
+date: "2022-03-30 18:49:00"
+lastmod: "2022-04-30 19:25:59"
+categories: ["Linux"]
+draft: false
+---
 
 ## yum {#yum}
 
@@ -120,4 +120,58 @@ pacman -Qo 包名   # 列出该包被哪个包包含
 pacman -Sw 包名 #只下载包，不安装。
 pacman -Sc Pacman # 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件
 pacman -Scc # 清理所有的缓存文件。
+```
+
+
+## npm/yarn {#npm-yarn}
+
+npm（全称 Node Package Manager）是一个软件包管理系统，专门管理用 JavaScript 编写的软件包。
+
+yarn 也是一个软件包管理系统，同样用于管理 用 JavaScript 编写的软件包，yarn 的出现是为了弥补 npm 的一些缺陷。
+
+```bash
+npm install                     === yarn
+npm install taco--save          === yarn add taco
+npm uninstall taco--save        === yarn remove taco
+npm install taco--save - dev    === yarn add taco--dev
+npm update--save                === yarn upgrade
+```
+
+```cfg
+# 将依赖项安装在本地node_modules文件夹中,默认情况下，npm install将安装所有列为package.json中的依赖项的模块。
+# 依赖项会依次安装
+npm install
+# Yarn 并行安装包,比 npm 更快的原因之一
+yarn
+
+# yarn 也是一个 JavaScript 软件包，需要先使用 npm 进行安装
+npm install -g yarn
+```
+
+
+### npm audit fix {#npm-audit-fix}
+
+```cfg
+# npm@5.10.0 & npm@6，允许开发人员分析复杂的代码，并查明特定的漏洞和缺陷。
+npm audit
+# npm@6.1.0  检测项目依赖中的漏洞并自动安装需要更新的有漏洞的依赖，而不必再自己进行跟踪和修复
+npm audit fix
+
+# 运行audit fix，但是只更新pkglock， 不更新node_modules：
+$ npm audit fix --package-lock-only
+
+#  只更新dependencies中安装的包，跳过devDependencies中的包：
+$ npm audit fix --only=prod
+
+# 运行命令，得到audit fix将会更新的内容，并且输出json格式的安装信息，但是并不真的安装更新：
+$ npm audit fix --dry-run --json
+```
+
+
+### npm install --no-fund {#npm-install-no-fund}
+
+一般都是开发者捐赠支持的提示，打开一个 github 的链接之后，会显示需要打赏捐赠的信息，此时如果不想捐赠或者跳过这个提示的话，直接在后面加–no-fund 即可.
+
+```bash
+npm install --no-fund
 ```

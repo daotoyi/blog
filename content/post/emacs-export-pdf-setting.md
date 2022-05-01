@@ -1,9 +1,10 @@
-+++
-title = "Export PDF"
-lastmod = 2022-02-15T07:04:36+08:00
-categories = ["Org"]
-draft = false
-+++
+---
+title: "Export PDF"
+date: "2022-03-11 17:46:00"
+lastmod: "2022-04-30 12:24:06"
+categories: ["emacs"]
+draft: false
+---
 
 ## LATEX_HEADER {#latex-header}
 

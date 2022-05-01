@@ -1,9 +1,9 @@
-+++
-title = "pandas 使用小结"
-lastmod = 2022-04-17T15:12:55+08:00
-categories = ["Python"]
-draft = true
-+++
+---
+title: "pandas 使用小结"
+lastmod: "2022-04-30 12:46:08"
+categories: ["Python"]
+draft: true
+---
 
 ## 显示全部内容 {#显示全部内容}
 

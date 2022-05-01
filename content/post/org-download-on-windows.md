@@ -1,10 +1,11 @@
-+++
-title = "org-download+screenshot 使用总结"
-date = 2022-02-18T11:22:00+08:00
-tags = ["screenshot"]
-categories = ["emacs"]
-draft = false
-+++
+---
+title: "org-download+screenshot 使用总结"
+date: "2022-02-18 11:22:00"
+lastmod: "2022-04-30 12:24:00"
+tags: ["screenshot"]
+categories: ["emacs"]
+draft: false
+---
 
 ## org-download {#org-download}
 

@@ -1,11 +1,11 @@
-+++
-title = "Github 图床显示图片"
-date = 2022-03-16T00:30:00+08:00
-lastmod = 2022-03-16T00:31:39+08:00
-tags = ["PicsBed"]
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Github 图床显示图片"
+date: "2022-03-16 00:30:00"
+lastmod: "2022-04-30 12:32:12"
+tags: ["PicsBed"]
+categories: ["Github"]
+draft: false
+---
 
 ## Github/Gitee 格式 {#github-gitee-格式}
 

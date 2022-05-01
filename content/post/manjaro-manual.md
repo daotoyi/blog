@@ -1,10 +1,10 @@
-+++
-title = "Manjaro 使用小结"
-date = 2022-03-31T22:53:00+08:00
-lastmod = 2022-04-04T20:14:24+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "Manjaro 使用小结"
+date: "2022-03-31 22:53:00"
+lastmod: "2022-04-30 12:45:40"
+categories: ["Linux"]
+draft: false
+---
 
 ## 更新系统 {#更新系统}
 

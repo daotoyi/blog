@@ -1,10 +1,10 @@
-+++
-title = "Linux compare with Windows"
-date = 2022-03-13T15:17:00+08:00
-lastmod = 2022-03-13T15:17:52+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "Linux compare with Windows"
+date: "2022-03-13 15:17:00"
+lastmod: "2022-04-30 12:45:29"
+categories: ["Linux"]
+draft: false
+---
 
 ## CMD {#cmd}
 

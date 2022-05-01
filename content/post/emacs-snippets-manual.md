@@ -1,10 +1,11 @@
-+++
-title = "snippets 使用总结"
-date = 2022-02-06T08:21:00+08:00
-tags = ["snippet"]
-categories = ["emacs"]
-draft = false
-+++
+---
+title: "snippets 使用总结"
+date: "2022-02-06 08:21:00"
+lastmod: "2022-04-30 12:23:56"
+tags: ["snippet"]
+categories: ["emacs"]
+draft: false
+---
 
 ## 常用指令 {#常用指令}
 

@@ -1,10 +1,11 @@
-+++
-title = "Hugo 主题 book 使用小结"
-date = 2022-03-09T00:07:00+08:00
-lastmod = 2022-03-09T08:27:23+08:00
-categories = ["Hugo"]
-draft = false
-+++
+---
+title: "Hugo 主题 book 使用小结"
+date: "2022-03-09 00:07:00"
+lastmod: "2022-04-30 12:50:09"
+tags: ["Hugo"]
+categories: ["VPS"]
+draft: false
+---
 
 ## Menu {#menu}
 

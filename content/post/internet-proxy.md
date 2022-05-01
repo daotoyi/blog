@@ -1,10 +1,11 @@
-+++
-title = "网络代理简介"
-description = "Transparent/Forward/Rerverse Proxy"
-lastmod = 2022-04-04T22:37:02+08:00
-categories = ["Internet"]
-draft = true
-+++
+---
+title: "网络代理简介"
+description: "Transparent/Forward/Rerverse Proxy"
+date: "2022-04-04 22:37:00"
+lastmod: "2022-04-30 12:35:54"
+categories: ["Internet"]
+draft: false
+---
 
 ## 透明代理(Transparent Proxy) {#透明代理--transparent-proxy}
 
@@ -31,4 +32,6 @@ Linux 通过 IP_TRANSPARENT 和 TPROXY 可以轻松地实现透明代理。
 
 {{< figure src="https://switch-router.gitee.io/assets/img/transparent-proxy/forward-reverse.png" >}}
 
-正向代理，代理客户端，服务端不知道实际发起请求的客户端；
+-   正向代理，代理客户端，服务端不知道实际发起请求的客户端；
+
+-   反向代理，代理服务端，客户端不知道实际提供服务的服务端；

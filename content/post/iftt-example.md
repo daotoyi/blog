@@ -1,10 +1,10 @@
-+++
-title = "IFTTT"
-date = 2022-03-17T19:30:00+08:00
-lastmod = 2022-04-11T19:47:58+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "IFTTT"
+date: "2022-03-17 19:30:00"
+lastmod: "2022-04-30 12:48:24"
+categories: ["Tools"]
+draft: false
+---
 
 ## if rssfeed, then telegram {#if-rssfeed-then-telegram}
 
@@ -16,7 +16,7 @@ draft = false
 -   [Python 发送手机通知教程](https://mp.weixin.qq.com/s/eOjukUh0ggFGqkYdD3l8rg)
 
 
-### make request {#make-request}
+### make request - JSON body {#make-request-json-body}
 
 To trigger an Event with an arbitrary JSON payload
 Make a POST or GET web request to:
@@ -27,6 +27,19 @@ Make a POST or GET web request to:
 With any JSON body. For example:
 
 { "this" : [ { "is": { "some": [ "test", "data" ] } } ] }
+
+
+### make request - options JSON body {#make-request-options-json-body}
+
+To trigger an Event with 3 JSON values
+
+Make a POST or GET web request to:
+
+<https://maker.ifttt.com/trigger/%7Bevent%7D/with/key/bMhBKbwkXMxADTWok23HtB>
+
+With an optional JSON body of:
+
+{ "value1" : "", "value2" : "", "value3" : "" }
 
 ```python
 class IFTTT():
@@ -50,3 +63,12 @@ You can also try it with curl from a command line.
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"this":[{"is":{"some":["test","data"]}}]}' https://maker.ifttt.com/trigger/{event}/json/with/key/bMhBKbwkXMxADTWok23HtB
 ```
+
+```bash
+curl -X POST https://maker.ifttt.com/trigger/{event}/with/key/bMhBKbwkXMxADTWok23HtB
+```
+
+
+## Ref {#ref}
+
+-   [王掌柜带你玩转 Zapier - Zapier vs. IFTTT](https://sspai.com/post/39258)

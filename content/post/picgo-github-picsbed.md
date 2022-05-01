@@ -1,9 +1,10 @@
-+++
-title = "PicGo+Github 作图床"
-lastmod = 2022-02-18T18:32:29+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "PicGo+Github"
+date: "2022-03-17 19:30:00"
+lastmod: "2022-04-30 12:48:23"
+categories: ["Tools"]
+draft: false
+---
 
 ## PicGo {#picgo}
 

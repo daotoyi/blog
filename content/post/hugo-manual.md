@@ -1,10 +1,11 @@
-+++
-title = "Hugo 使用总结"
-date = 2022-03-08T11:31:00+08:00
-lastmod = 2022-03-09T09:31:52+08:00
-categories = ["Hugo"]
-draft = false
-+++
+---
+title: "Hugo 使用总结"
+date: "2022-03-08 11:31:00"
+lastmod: "2022-04-30 12:50:05"
+tags: ["Hugo"]
+categories: ["VPS"]
+draft: false
+---
 
 ## 按不同配置启动 {#按不同配置启动}
 
@@ -61,3 +62,8 @@ example:
 | hugo: more                   | 摘要正文分隔符                             |
 | Footnotes                    | 用来保存文档的配置                         |
 | org-hugo-auto-export-on-save | 保存时自动导出                             |
+
+
+## date {#date}
+
+[hugo / go 模版中的日期格式](https://tricks.one/post/date-format-in-hugo-or-go-templates/)

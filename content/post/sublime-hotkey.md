@@ -1,11 +1,11 @@
-+++
-title = "Sublime Hotkey"
-date = 2022-04-02T12:29:00+08:00
-lastmod = 2022-04-14T13:38:44+08:00
-tags = ["hotkey"]
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Sublime Hotkey"
+date: "2022-04-02 12:29:00"
+lastmod: "2022-04-30 12:48:34"
+tags: ["hotkey"]
+categories: ["Tools"]
+draft: false
+---
 
 ## 通用（General） {#通用-general}
 

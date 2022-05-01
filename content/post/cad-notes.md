@@ -1,11 +1,11 @@
-+++
-title = "CAD"
-date = 2022-03-17T19:58:00+08:00
-lastmod = 2022-04-04T06:57:58+08:00
-tags = ["CAD"]
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "CAD"
+date: "2022-03-17 19:58:00"
+lastmod: "2022-04-30 12:48:26"
+tags: ["CAD"]
+categories: ["Tools"]
+draft: false
+---
 
 ## 输出 PDF 文件线条太粗 {#输出-pdf-文件线条太粗}
 

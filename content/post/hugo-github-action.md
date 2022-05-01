@@ -1,10 +1,11 @@
-+++
-title = "Hugo 使用 Github Action 使用"
-date = 2022-03-13T23:24:00+08:00
-lastmod = 2022-03-13T23:27:04+08:00
-categories = ["Hugo"]
-draft = false
-+++
+---
+title: "Hugo 使用 Github Action 使用"
+date: "2022-03-13 23:24:00"
+lastmod: "2022-04-30 12:50:11"
+tags: ["Hugo"]
+categories: ["VPS"]
+draft: false
+---
 
 ## Useage {#useage}
 

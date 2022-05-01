@@ -1,11 +1,11 @@
-+++
-title = "Doman 域名"
-date = 2022-03-05T16:31:00+08:00
-lastmod = 2022-04-03T13:47:35+08:00
-tags = ["domain"]
-categories = ["Internet"]
-draft = false
-+++
+---
+title: "Domain name 域名概念"
+date: "2022-03-05 16:31:00"
+lastmod: "2022-04-30 12:34:26"
+tags: ["domain"]
+categories: ["Internet"]
+draft: false
+---
 
 ## 域名 {#域名}
 

@@ -1,10 +1,10 @@
-+++
-title = "Kindle epub mobi azw3"
-date = 2022-04-05T23:15:00+08:00
-lastmod = 2022-04-05T23:22:41+08:00
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Kindle epub mobi azw3"
+date: "2022-04-05 23:15:00"
+lastmod: "2022-04-30 12:48:38"
+categories: ["Tools"]
+draft: false
+---
 
 -   epub 格式，是通用的电子书格式，主流阅读 APP 都支持。
 -   mobi 格式，是亚马逊开发的电子书传输格式，

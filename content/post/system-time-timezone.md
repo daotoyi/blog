@@ -1,9 +1,10 @@
-+++
-title = "Time TZ"
-lastmod = 2022-03-02T16:02:01+08:00
-categories = ["Linux"]
-draft = true
-+++
+---
+title: "Time TZ"
+date: "2022-03-02 16:02:00"
+lastmod: "2022-04-30 12:45:26"
+categories: ["Linux"]
+draft: false
+---
 
 ## GMT，CST，UTC {#gmt-cst-utc}
 

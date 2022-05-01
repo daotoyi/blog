@@ -1,10 +1,10 @@
-+++
-title = "Linux Proxy"
-date = 2022-04-10T16:43:00+08:00
-lastmod = 2022-04-10T16:43:08+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "Linux Proxy"
+date: "2022-04-10 16:43:00"
+lastmod: "2022-04-30 12:45:45"
+categories: ["Linux"]
+draft: false
+---
 
 ## local proxy {#local-proxy}
 

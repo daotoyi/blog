@@ -1,11 +1,11 @@
-+++
-title = "git submodule VS subtree"
-date = 2022-02-12T09:49:00+08:00
-lastmod = 2022-02-12T10:20:59+08:00
-tags = ["git"]
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Git submodule VS subtree"
+date: "2022-02-12 09:49:00"
+lastmod: "2022-04-30 12:32:05"
+tags: ["git"]
+categories: ["Github"]
+draft: false
+---
 
 -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2022-02-12 周六 09:49]</span></span>
 

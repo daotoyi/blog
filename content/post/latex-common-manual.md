@@ -1,10 +1,10 @@
-+++
-title = "Latex Config"
-date = 2022-02-19T12:43:00+08:00
-lastmod = 2022-02-19T12:53:15+08:00
-categories = ["Latex"]
-draft = false
-+++
+---
+title: "Latex Config"
+date: "2022-02-19 12:43:00"
+lastmod: "2022-04-30 12:45:15"
+categories: ["Latex"]
+draft: false
+---
 
 ## latex_introduction {#latex-introduction}
 

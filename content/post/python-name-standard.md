@@ -1,10 +1,10 @@
-+++
-title = "Python 命名"
-date = 2022-04-13T18:06:00+08:00
-lastmod = 2022-04-13T19:24:16+08:00
-categories = ["Python"]
-draft = false
-+++
+---
+title: "Python 命名"
+date: "2022-04-13 18:06:00"
+lastmod: "2022-04-30 12:46:04"
+categories: ["Python"]
+draft: false
+---
 
 Python 命名规范需要注意以下几点：
 

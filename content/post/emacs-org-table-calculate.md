@@ -1,11 +1,11 @@
-+++
-title = "Org Table calculate"
-date = 2022-04-05T23:10:00+08:00
-lastmod = 2022-04-05T23:22:42+08:00
-tags = ["org"]
-categories = ["emacs"]
-draft = false
-+++
+---
+title: "Org Table calculate"
+date: "2022-04-05 23:10:00"
+lastmod: "2022-04-30 12:24:08"
+tags: ["org"]
+categories: ["emacs"]
+draft: false
+---
 
 ## Ref {#ref}
 

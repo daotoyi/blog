@@ -1,14 +1,15 @@
-+++
-title = "Docker Dockerfile"
-date = 2022-04-05T15:32:00+08:00
-lastmod = 2022-04-09T17:51:17+08:00
-categories = ["Docker"]
-draft = false
-+++
+---
+title: "Docker Dockerfile"
+date: "2022-04-05 15:32:00"
+lastmod: "2022-05-01 18:41:37"
+categories: ["Docker"]
+draft: false
+---
 
 ## Ref {#ref}
 
 -   [Dockerfile介绍](http://www.dockerinfo.net/dockerfile%e4%bb%8b%e7%bb%8d)
+-   [Docker 容器入门](https://www.cnblogs.com/clsn/p/8410309.html)
 
 
 ## structure {#structure}
@@ -50,8 +51,19 @@ CMD /usr/sbin/nginx
 配置好 `.dockerfile` 文件后:
 
 ```bash
-docker image build  -t centos6.8-ssh .
+# docker image build  -t image .
+docker build  -t ImageName:TagName dir
+docker build github.com/creack/docker-firefox
+docker build -f /path/to/a/Dockerfile .
 ```
+
+-   -f - 指定构建镜像的 Dockerfile 文件（Dockerfile 可不在当前路径下）
+    -   如果不使用 -f，则默认将上下文路径下的名为 Dockerfile 的文件认为是构建镜像的 "Dockerfile"
+-   -t - 为镜像添加标签
+-   ImageName - 这是要为镜像命名的名称。
+-   TagName - 这是要为镜像提供的标签。
+-   Dir - Docker 文件所在的目录。
+    -   构建镜像的过程中，可以且只可以引用上下文中的任何文件
 
 
 ## network {#network}
@@ -77,6 +89,8 @@ docker network list
 镜像分层最大的一个好处就是共享资源。
 
 比如说有多个镜像都从相同的 base 镜像构建而来，那么 Docker Host 只需在磁盘上保存一份 base 镜像；同时内存中也只需加载一份 base 镜像，就可以为所有容器服务了。而且镜像的每一层都可以被共享。
+
+{{< figure src="https://images2017.cnblogs.com/blog/1190037/201802/1190037-20180203180355656-1765414705.png" >}}
 
 
 ## note {#note}

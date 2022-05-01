@@ -1,10 +1,10 @@
-+++
-title = "SSD 性能提升"
-date = 2022-02-08T08:18:00+08:00
-lastmod = 2022-02-12T09:14:24+08:00
-categories = ["Hardware"]
-draft = false
-+++
+---
+title: "SSD 性能提升"
+date: "2022-02-08 08:18:00"
+lastmod: "2022-04-30 12:33:51"
+categories: ["Hardware"]
+draft: false
+---
 
 ## 固态硬盘接口 {#固态硬盘接口}
 

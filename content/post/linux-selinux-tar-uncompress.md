@@ -1,10 +1,11 @@
-+++
-title = "tar 备份还原系统后无法进入桌面"
-lastmod = 2022-03-31T22:49:24+08:00
-tags = ["selinux"]
-categories = ["Linux"]
-draft = true
-+++
+---
+title: "tar 备份还原系统后无法进入桌面"
+date: "2022-03-31 22:53:00"
+lastmod: "2022-04-30 12:45:38"
+tags: ["selinux"]
+categories: ["Linux"]
+draft: false
+---
 
 ## 现象 {#现象}
 

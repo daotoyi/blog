@@ -1,10 +1,10 @@
-+++
-title = "Github Actions"
-date = 2022-03-19T22:33:00+08:00
-lastmod = 2022-03-19T22:33:31+08:00
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Github Actions"
+date: "2022-03-19 22:33:00"
+lastmod: "2022-04-30 12:32:40"
+categories: ["Github"]
+draft: false
+---
 
 ## [GitHub Actions入门教程：自动化部署静态博客](https://somenzz.gitee.io/auto-deploy-blog-by-github-actions.html) {#github-actions入门教程-自动化部署静态博客}
 

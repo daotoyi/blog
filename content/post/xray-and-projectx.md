@@ -1,11 +1,11 @@
-+++
-title = "v2ray 与 Xray"
-date = 2022-04-03T21:44:00+08:00
-lastmod = 2022-04-03T21:45:31+08:00
-tags = ["Xray", "v2ray"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "v2ray 与 Xray"
+date: "2022-04-03 21:44:00"
+lastmod: "2022-04-30 12:50:46"
+tags: ["Xray", "v2ray"]
+categories: ["VPS"]
+draft: false
+---
 
 ## v2ray/Project V {#v2ray-project-v}
 

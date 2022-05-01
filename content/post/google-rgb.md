@@ -1,10 +1,10 @@
-+++
-title = "Google RGB"
-date = 2022-04-07T17:52:00+08:00
-lastmod = 2022-04-07T17:59:33+08:00
-categories = ["Internet"]
-draft = false
-+++
+---
+title: "Google RGB"
+date: "2022-04-07 17:52:00"
+lastmod: "2022-04-30 12:35:56"
+categories: ["Internet"]
+draft: false
+---
 
 | color | 0x     | RGB               |
 |-------|--------|-------------------|

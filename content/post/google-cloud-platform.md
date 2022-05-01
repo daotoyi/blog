@@ -1,11 +1,11 @@
-+++
-title = "GCP 笔记"
-date = 2022-03-05T17:20:00+08:00
-lastmod = 2022-03-11T08:03:33+08:00
-tags = ["GCP"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "GCP 笔记"
+date: "2022-03-05 17:20:00"
+lastmod: "2022-04-30 12:50:16"
+tags: ["GCP"]
+categories: ["VPS"]
+draft: false
+---
 
 [GCP（Google Cloud Platform）入门](https://zhuanlan.zhihu.com/p/40983101)
 

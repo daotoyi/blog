@@ -1,10 +1,11 @@
-+++
-title = "elfeed,elfeed-org,elfeed-dashboard 使用总结"
-date = 2022-02-18T11:37:00+08:00
-tags = ["elfeed"]
-categories = ["emacs"]
-draft = false
-+++
+---
+title: "elfeed,elfeed-org,elfeed-dashboard 使用总结"
+date: "2022-02-18 11:37:00"
+lastmod: "2022-04-30 12:24:03"
+tags: ["elfeed"]
+categories: ["emacs"]
+draft: false
+---
 
 ## elfeed {#elfeed}
 
@@ -23,4 +24,4 @@ draft = false
 [elfeed-dashboard](https://github.com/Manoj321/elfeed-dashboard)
 
 -   注意得按 repo 标的配置抄写.[模板参考](https://github.com/Manoj321/elfeed-dashboard/blob/main/elfeed-dashboard.png)
--   括号要对齐,链接位置的描述词占位需要一致.
+-   `括号要对齐`,链接位置的描述词占位需要一致.

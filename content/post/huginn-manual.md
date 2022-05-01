@@ -1,10 +1,10 @@
-+++
-title = "Huginn 笔记"
-date = 2022-02-27T08:19:00+08:00
-lastmod = 2022-03-29T18:22:44+08:00
-categories = ["RSS"]
-draft = false
-+++
+---
+title: "Huginn 笔记"
+date: "2022-02-27 08:19:00"
+lastmod: "2022-04-30 12:47:08"
+categories: ["RSS"]
+draft: false
+---
 
 Huginn is a system for building agents that perform automated tasks for you online.
 

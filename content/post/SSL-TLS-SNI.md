@@ -1,10 +1,10 @@
-+++
-title = "SSL/TLS 和 SNI 概念"
-date = 2022-04-01T23:12:00+08:00
-lastmod = 2022-04-01T23:13:57+08:00
-categories = ["Internet"]
-draft = false
-+++
+---
+title: "SSL/TLS 和 SNI 概念"
+date: "2022-04-01 23:12:00"
+lastmod: "2022-04-30 12:34:32"
+categories: ["Internet"]
+draft: false
+---
 
 自 Web 诞生以来，我们所接触的互联网时代，都有可能存在信息的截断，而 SSL 协议及其后代 TLS 提供了加密和安全性，使现代互联网安全成为可能。
 

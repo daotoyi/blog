@@ -1,11 +1,11 @@
-+++
-title = "Packages Manager"
-date = 2022-04-02T12:30:00+08:00
-lastmod = 2022-04-02T21:13:22+08:00
-tags = ["managePackage"]
-categories = ["Tools"]
-draft = false
-+++
+---
+title: "Packages Manager"
+date: "2022-04-02 12:30:00"
+lastmod: "2022-04-30 12:48:31"
+tags: ["managePackage"]
+categories: ["Tools"]
+draft: false
+---
 
 ## Scoop {#scoop}
 

@@ -1,11 +1,11 @@
-+++
-title = "实时内核/系统"
-date = 2022-04-05T23:16:00+08:00
-lastmod = 2022-04-05T23:16:54+08:00
-tags = ["kernel"]
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "实时内核/系统"
+date: "2022-04-05 23:16:00"
+lastmod: "2022-04-30 12:45:43"
+tags: ["kernel"]
+categories: ["Linux"]
+draft: false
+---
 
 实时操作系统有硬实时和软实时之分.
 硬实时要求在规定的时间内必须完成操作，这是在操作系统设计时保证的；

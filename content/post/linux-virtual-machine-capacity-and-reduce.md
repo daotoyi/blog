@@ -1,10 +1,10 @@
-+++
-title = "Linux capacity && reduce"
-date = 2022-03-14T20:11:00+08:00
-lastmod = 2022-03-14T23:37:17+08:00
-categories = ["Linux"]
-draft = false
-+++
+---
+title: "Linux capacity && reduce"
+date: "2022-03-14 20:11:00"
+lastmod: "2022-04-30 12:45:31"
+categories: ["Linux"]
+draft: false
+---
 
 ## Reduce capacity {#reduce-capacity}
 

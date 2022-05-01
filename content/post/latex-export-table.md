@@ -1,9 +1,10 @@
-+++
-title = "Table: latex 表格超详细教程"
-lastmod = 2022-02-15T12:40:02+08:00
-categories = ["Latex"]
-draft = false
-+++
+---
+title: "Table: latex 表格超详细教程"
+date: "2022-02-19 12:44:00"
+lastmod: "2022-04-30 12:45:13"
+categories: ["Latex"]
+draft: false
+---
 
 ## 常用配置说明 {#常用配置说明}
 

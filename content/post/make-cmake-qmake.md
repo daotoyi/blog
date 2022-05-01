@@ -1,9 +1,10 @@
-+++
-title = "make, cmake, qmake"
-lastmod = 2022-04-15T09:37:46+08:00
-categories = ["Linux"]
-draft = true
-+++
+---
+title: "make, cmake, qmake"
+date: "2022-04-15 14:47:00"
+lastmod: "2022-04-30 12:45:48"
+categories: ["Linux"]
+draft: false
+---
 
 ## make {#make}
 

@@ -1,10 +1,11 @@
-+++
-title = "Magit 使用"
-date = 2022-02-13T23:35:00+08:00
-tags = ["magit"]
-categories = ["emacs"]
-draft = false
-+++
+---
+title: "Magit 使用"
+date: "2022-02-13 23:35:00"
+lastmod: "2022-04-30 12:23:59"
+tags: ["magit"]
+categories: ["emacs"]
+draft: false
+---
 
 ## 基本说明 {#基本说明}
 

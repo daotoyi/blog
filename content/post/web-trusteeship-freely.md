@@ -1,11 +1,11 @@
-+++
-title = "面向 WEB 的免费托管"
-date = 2022-03-11T08:02:00+08:00
-lastmod = 2022-03-29T00:16:30+08:00
-tags = ["trusteeship"]
-categories = ["VPS"]
-draft = false
-+++
+---
+title: "面向 WEB 的免费托管"
+date: "2022-03-11 08:02:00"
+lastmod: "2022-04-30 12:50:53"
+tags: ["trusteeship"]
+categories: ["VPS"]
+draft: false
+---
 
 ## GitHub Pages[^fn:1] {#github-pages}
 

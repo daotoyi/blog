@@ -1,9 +1,10 @@
-+++
-title = "CA SSL 证书"
-lastmod = 2022-04-04T22:33:52+08:00
-categories = ["Internet"]
-draft = true
-+++
+---
+title: "CA SSL 证书"
+date: "2022-04-04 22:33:00"
+lastmod: "2022-04-30 12:34:31"
+categories: ["Internet"]
+draft: false
+---
 
 ## CA {#ca}
 

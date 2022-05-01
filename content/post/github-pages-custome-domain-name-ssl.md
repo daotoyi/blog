@@ -1,10 +1,10 @@
-+++
-title = "Github-pages 托管静态网页绑定自定义域名"
-date = 2022-02-07T08:29:00+08:00
-lastmod = 2022-03-26T09:49:00+08:00
-categories = ["Github"]
-draft = false
-+++
+---
+title: "Github Pages 托管静态网页绑定自定义域名"
+date: "2022-02-07 08:29:00"
+lastmod: "2022-04-30 12:32:09"
+categories: ["Github"]
+draft: false
+---
 
 ## Git Pages {#git-pages}
 

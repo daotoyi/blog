@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/linux/</link>
+    <description>Recent content in Linux on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Jun 2022 16:48:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux yum/dnf 配置</title>
+      <link>https://daotoyi.github.io/post/linux-yum-dnf/</link>
+      <pubDate>Tue, 14 Jun 2022 16:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-yum-dnf/</guid>
+      <description>yum yum 的下载并安装 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 [root@localhost ~]# rpm -qa | grep yum # 删除yum下的所有组件 [root@localhost ~]# rpm -qa | grep yum | xargs rpm -e --nodeps # 查询原有yu</description>
+    </item>
+    
+    <item>
+      <title>Linux 用户及用户组</title>
+      <link>https://daotoyi.github.io/post/linux-user-group/</link>
+      <pubDate>Mon, 02 May 2022 15:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-user-group/</guid>
+      <description>useradd 1 2 3 4 5 # 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中g</description>
+    </item>
+    
+    <item>
+      <title>linux 文件目录颜色及特殊权限对应的颜色</title>
+      <link>https://daotoyi.github.io/post/linux-file&#43;directory-color/</link>
+      <pubDate>Sun, 01 May 2022 13:59:55 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-file&#43;directory-color/</guid>
+      <description>CLOSED: [2022-05-01 周日 13:58] 白色：表示普通文件 蓝色：表示目录 绿色：表示可执行文件 红色：表示压缩文件 浅蓝色：链接文件 红色闪烁：表示链接的文件有问题 黄色：表示设备</description>
+    </item>
+    
+    <item>
+      <title>Linux 动态链接器</title>
+      <link>https://daotoyi.github.io/post/linux-ld-linux.so/</link>
+      <pubDate>Sat, 16 Apr 2022 07:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-ld-linux.so/</guid>
+      <description>glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所</description>
+    </item>
+    
+    <item>
+      <title>make, cmake, qmake</title>
+      <link>https://daotoyi.github.io/post/make-cmake-qmake/</link>
+      <pubDate>Fri, 15 Apr 2022 14:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/make-cmake-qmake/</guid>
+      <description>make make 是用来执行 Makefile 的, Makefile 是类 unix 环境下(比如 Linux)的类似于批处理的&amp;quot;脚本&amp;quot;文件。 其基本语法是: 目标+依赖+命令 ，只有在</description>
+    </item>
+    
+    <item>
+      <title>CMD ag</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-ag/</link>
+      <pubDate>Fri, 15 Apr 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-ag/</guid>
+      <description>common command parameter ag -g &amp;lt;File Name&amp;gt; 类似于 find . -name &amp;lt;File Name&amp;gt; ag -i PATTERN： 忽略大小写搜索含 PATTERN 文本 ag -A PATTERN：搜索含 PATTERN 文本，并显示匹配内容之后的 n 行文本，例如</description>
+    </item>
+    
+    <item>
+      <title>Selinux</title>
+      <link>https://daotoyi.github.io/post/linux-selinux/</link>
+      <pubDate>Fri, 15 Apr 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-selinux/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 ## Reahdet # 查看SELinux状态： /usr/sbin/sestatus -v # SELinux status: enabled # or getenforce # 关闭SELinux： # 临时关闭（不用重启机器）： setenforce 0 # 设置SELi</description>
+    </item>
+    
+    <item>
+      <title>Ref</title>
+      <link>https://daotoyi.github.io/post/linux/</link>
+      <pubDate>Fri, 15 Apr 2022 17:10:08 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux/</guid>
+      <description>多个gcc/glibc版本的共存及指定gcc版本的编译</description>
+    </item>
+    
+    <item>
+      <title>Linux oh-my-zsh</title>
+      <link>https://daotoyi.github.io/post/linux-oh-my-zsh/</link>
+      <pubDate>Fri, 15 Apr 2022 07:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-oh-my-zsh/</guid>
+      <description>zsh 1 2 3 4 5 6  apt install zshyum/dnf install zshpacman -S zsh# change default terminalchsh -s /usr/bin/zsh  oh-my-zsh 1 2 3 4 5 6 7 8 9 10  sh -c &amp;#34;$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34;source ~/.zshrc# plugins$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git$ mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting# $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/$ echo &amp;#34;plugins=(zsh-syntax-highlighting)&amp;#34; &amp;gt;&amp;gt;　~/.zshrc$ source ~/.zshrc  root user 1 2  sudo ln -s $HOME/.</description>
+    </item>
+    
+    <item>
+      <title>Linux Proxy</title>
+      <link>https://daotoyi.github.io/post/linux-rpoxy/</link>
+      <pubDate>Sun, 10 Apr 2022 16:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-rpoxy/</guid>
+      <description>local proxy export http_proxy=http://127.0.0.1:port config 1 2 3 4 5 6 7 8 9 10 no_proxy=localhost,127.0.0.0/8,*.local # 访问指定地址时不使用代理，可以用逗号分隔多个地址 NO_PROXY=localhost,127.0.0.0/8,*.local all_proxy=socks://proxy.example.com:8080/ ALL_PROXY=socks://proxy.example.com:8080/ http_proxy=http://proxy.example.com:8080 HTTP_PROXY=http://proxy.example.com:8080 ftp_proxy=http://proxy.example.com:8080 FTP_PROXY=http://proxy.example.com:8080 https_proxy=http://proxy.example.com:8080 HTTPS_PROXY=http://proxy.example.com:8080</description>
+    </item>
+    
+    <item>
+      <title>实时内核/系统</title>
+      <link>https://daotoyi.github.io/post/linux-realtime-kernel/</link>
+      <pubDate>Tue, 05 Apr 2022 23:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-realtime-kernel/</guid>
+      <description>实时操作系统有硬实时和软实时之分. 硬实时要求在规定的时间内必须完成操作，这是在操作系统设计时保证的； 软实时则只要按照任务的优先级，尽可能快地</description>
+    </item>
+    
+    <item>
+      <title>locale</title>
+      <link>https://daotoyi.github.io/post/linux-locale/</link>
+      <pubDate>Sun, 03 Apr 2022 17:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-locale/</guid>
+      <description>locale 分类 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 $ locale LANG=en_US.UTF-8 LC_CTYPE=&amp;#34;en_US.UTF- 8&amp;#34; #用户所使用的语言符号及其分类 LC_NUMERIC=&amp;#34;en_US.UTF- 8&amp;#34; #数字 LC_TIME=&amp;#34;en_US.UTF-8&amp;#34; #时间显示格式 LC_COLLATE=&amp;#34;en_US.UTF-8&amp;#34; #比较和排序习惯 LC_MONETARY=&amp;#34;en_US.UTF-8&amp;#34; #LC_MONETARY LC_MESSAGES=&amp;#34;en_US.UTF- 8&amp;#34; #信息主要</description>
+    </item>
+    
+    <item>
+      <title>Manjaro 使用小结</title>
+      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
+      <description>更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行： 清</description>
+    </item>
+    
+    <item>
+      <title>tar 备份还原系统后无法进入桌面</title>
+      <link>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</guid>
+      <description>现象 如果因为某些缘故，所以你的系统必须要以备份的数据来回填到原本的系统中，那么得要 特别注意复原后的系统的 SELinux 问题！它可能会让你的系统⽆法存取某</description>
+    </item>
+    
+    <item>
+      <title>Linux yum/dnf/pacman/npm/yarn</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
+      <title>CMD yum/dnf</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
+      <title>CMD stty</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-stty/</link>
+      <pubDate>Fri, 25 Mar 2022 21:03:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-stty/</guid>
+      <description>Stty 指令简介 TTY 是 Teletype 或 Teletypewriter 的缩写，原来是指电传打字机，后来这种设备逐渐键盘和显示器取代。不管是电传打字机还是键盘显示器，都是作为计算机的终端设备存</description>
+    </item>
+    
+    <item>
+      <title>Linux capacity &amp;&amp; reduce</title>
+      <link>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</link>
+      <pubDate>Mon, 14 Mar 2022 20:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</guid>
+      <description>Reduce capacity 方法 1：给项目的 git 仓库瘦身 1 2 3 4 5 6 # 1.删除无用的分支 $ git branch -d &amp;lt;branch_name&amp;gt; # 2.删除无用的 tag $ git tag -d &amp;lt;tag_name&amp;gt; # 3.清理本地版本库 $ git gc --prune=now 方法 2：删除</description>
+    </item>
+    
+    <item>
+      <title>Linux compare with Windows</title>
+      <link>https://daotoyi.github.io/post/linux-compare-with-windows/</link>
+      <pubDate>Sun, 13 Mar 2022 15:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-compare-with-windows/</guid>
+      <description>CMD link (mklink ln) MKLINK [[/D] | [/H] | [/J]] Link Target para function /D 创建目录符号链接。默认为文件符号链接。 /H 创建硬链接而非符号链接。 /J 创建目录联接。 Lin k 指定新的符号链接名称。 Tar get</description>
+    </item>
+    
+    <item>
+      <title>System Port</title>
+      <link>https://daotoyi.github.io/post/system-port/</link>
+      <pubDate>Wed, 02 Mar 2022 16:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/system-port/</guid>
+      <description>netstat 提供有关网络连接的信息. netstat -tunlp -t：显示 TCP 端口。 -u：显示 UDP 端口。 -n：显示数字地址而不是解析主机。 -l：仅显示侦听端口。 -p：显示监听器进</description>
+    </item>
+    
+    <item>
+      <title>Time TZ</title>
+      <link>https://daotoyi.github.io/post/system-time-timezone/</link>
+      <pubDate>Wed, 02 Mar 2022 16:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/system-time-timezone/</guid>
+      <description>GMT，CST，UTC UTC 协调世界时 ，又称 世界标准时间 或 世界协调时间 ， UTC（Coordinated Universal Time），是最主要的世界时间标准，其以</description>
+    </item>
+    
+    <item>
+      <title>Unicode</title>
+      <link>https://daotoyi.github.io/post/unicode-utf8-gbk/</link>
+      <pubDate>Sun, 13 Feb 2022 14:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/unicode-utf8-gbk/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-13 周日 14:25] 概述 用什么编码，就用什么解码 ASCII 码 ASCII 码占 8 个比特位，也就是一个字节，其中最前面一个位是扩展位，都是 0，为了日后扩展所用，其余位</description>
+    </item>
+    
+  </channel>
+</rss>

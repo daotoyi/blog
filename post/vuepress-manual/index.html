@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vuepress 使用小结 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/vuepress-manual/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Vuepress 使用小结" />
+<meta property="og:description" content="CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/vuepress-manual/" />
+<meta property="article:published_time" content="2022-05-23T10:29:59+00:00" />
+<meta property="article:modified_time" content="2022-06-18T15:01:19+08:00" />
+<meta itemprop="name" content="Vuepress 使用小结">
+<meta itemprop="description" content="CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress">
+<meta itemprop="dateModified" content="2022-06-18T15:01:19&#43;08:00" />
+<meta itemprop="wordCount" content="1122">
+
+
+
+<meta itemprop="keywords" content="Vuepress," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vuepress 使用小结"/>
+<meta name="twitter:description" content="CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vuepress 使用小结</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-05-23 </span>
+        <div class="post-category">
+            <a href="/categories/vps/"> VPS </a>
+            </div>
+          <span class="more-meta"> 1122 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#vue-dot-js">Vue.js</a></li>
+        <li><a href="#vuepress">VuePress</a></li>
+        <li><a href="#use">use</a>
+          <ul>
+            <li><a href="#全局安装">全局安装</a></li>
+            <li><a href="#本地安装-启动">本地安装/启动</a></li>
+            <li><a href="#更换主题">更换主题</a></li>
+            <li><a href="#部署">部署</a></li>
+            <li><a href="#定时推送百度">定时推送百度</a></li>
+          </ul>
+        </li>
+        <li><a href="#note">Note</a>
+          <ul>
+            <li><a href="#configuration">configuration</a></li>
+            <li><a href="#markdown">markdown</a></li>
+            <li><a href="#build">build</a></li>
+          </ul>
+        </li>
+        <li><a href="#reference">Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2022-03-26 周六 21:13]</span></span></p>
+<h2 id="vue-dot-js">Vue.js</h2>
+<p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。</p>
+<h2 id="vuepress">VuePress</h2>
+<p>VuePress 由两部分组成：</p>
+<ul>
+<li>一个以 Vue 驱动的主题系统的简约静态网站生成工具</li>
+<li>一个为编写技术文档而优化的默认主题。</li>
+</ul>
+<p>它是为了支持 Vue 子项目的文档需求而创建的。</p>
+<h2 id="use">use</h2>
+<h3 id="全局安装">全局安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 全局安装</span>
+npm install -g vuepress
+
+<span class="c1"># 创建一个 markdown 文件</span>
+<span class="nb">echo</span> <span class="s1">&#39;# Hello VuePress&#39;</span> &gt; README.md
+
+<span class="c1"># 开始编写文档</span>
+vuepress dev
+
+<span class="c1"># 构建</span>
+vuepress build
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="本地安装-启动">本地安装/启动</h3>
+<h4 id="安装">安装</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 安装为本地依赖项</span>
+npm install -D vuepress
+yarn add -D vuepress
+
+<span class="c1"># 创建一个 docs 目录 &amp;&amp; markdown 文件</span>
+mkdir docs <span class="o">&amp;&amp;</span>  <span class="nb">echo</span> <span class="s1">&#39;# Hello VuePress&#39;</span> &gt; docs/README.md
+<span class="c1"># VuePress 会以 docs 为文档根目录，所以这个 README.md 相当于主页</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="添加-scripts">添加 scripts</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json">  <span class="p">{</span>
+  <span class="nt">&#34;scripts&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;docs:dev&#34;</span><span class="p">:</span> <span class="s2">&#34;vuepress dev docs&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;docs:build&#34;</span><span class="p">:</span> <span class="s2">&#34;vuepress build docs&#34;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="本地启动服务器">本地启动服务器</h4>
+<p>&gt; npm run docs:dev
+&gt; yarn docs:dev</p>
+<h3 id="更换主题">更换主题</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm install vuepress-theme-reco --save-dev
+</code></pre></td></tr></table>
+</div>
+</div><p>reco 主题可实现加载 loading、切换动画、模式切换（暗黑模式）、返回顶部、评论等功能.</p>
+<h3 id="部署">部署</h3>
+<h4 id="脚本部署">脚本部署</h4>
+<p>docs/scripts/deploy.sh</p>
+<p>&gt; npm run deploy.sh</p>
+<h4 id="github-action-部署">Github Action 部署</h4>
+<p>example1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># name 可以自定义</span><span class="w">
+</span><span class="w"></span><span class="k">name</span><span class="p">:</span><span class="w"> </span>Deploy<span class="w"> </span>GitHub<span class="w"> </span>Pages<span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># 触发条件：在 push 到 main/master 分支后</span><span class="w">
+</span><span class="w"></span>on<span class="p">:</span><span class="w">
+</span><span class="w">  </span>push<span class="p">:</span><span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w">
+</span><span class="w">      </span>- main<span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># 任务</span><span class="w">
+</span><span class="w"></span>jobs<span class="p">:</span><span class="w">
+</span><span class="w">  </span>build-and-deploy<span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="c"># 服务器环境：最新版 Ubuntu</span><span class="w">
+</span><span class="w">    </span><span class="k">runs-on</span><span class="p">:</span><span class="w"> </span>ubuntu-latest<span class="w">
+</span><span class="w">    </span>steps<span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="c"># 拉取代码</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Checkout<span class="w">
+</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>actions/checkout@v2<span class="w">
+</span><span class="w">        </span>with<span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="k">persist-credentials</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span><span class="c"># 生成静态文件</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Build<span class="w">
+</span><span class="w">        </span><span class="k">run</span><span class="p">:</span><span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span><span class="cp">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>docs<span class="p">:</span>build<span class="w">
+</span><span class="w">
+</span><span class="w">      </span><span class="c"># 部署到 GitHub Pages</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Deploy<span class="w">
+</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>JamesIves/github-pages-deploy-action@releases/v3<span class="w">
+</span><span class="w">        </span>with<span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="k">ACCESS_TOKEN</span><span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.ACCESS_TOKEN<span class="w"> </span>}}<span class="w"> </span><span class="c"># 也就是我们刚才生成的 secret</span><span class="w">
+</span><span class="w">          </span><span class="k">BRANCH</span><span class="p">:</span><span class="w"> </span>gh-pages<span class="w"> </span><span class="c"># 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件</span><span class="w">
+</span><span class="w">          </span><span class="k">FOLDER</span><span class="p">:</span><span class="w"> </span>docs/.vuepress/dist<span class="w"> </span><span class="c"># vuepress 生成的静态文件存放的地方</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>example2</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">name</span><span class="p">:</span><span class="w"> </span>GitHub<span class="w"> </span>Actions<span class="w"> </span>Demo<span class="w">
+</span><span class="w"></span>on<span class="p">:</span><span class="w">
+</span><span class="w">  </span>push<span class="p">:</span><span class="w">
+</span><span class="w">    </span>branches<span class="p">:</span><span class="w">
+</span><span class="w">      </span>- master<span class="w">
+</span><span class="w"></span>jobs<span class="p">:</span><span class="w">
+</span><span class="w">  </span>Explore-GitHub-Actions<span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">runs-on</span><span class="p">:</span><span class="w"> </span>ubuntu-latest<span class="w">
+</span><span class="w">    </span>steps<span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;🎉 触发动作：${{ github.event_name }}&#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;🐧 托管服务器：${{ runner.os }} server hosted by GitHub!&#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;🔎 当前分支：${{ github.ref }} &#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;🏠 当前仓库：${{ github.repository }}.&#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Check<span class="w"> </span>out<span class="w"> </span>repository<span class="w"> </span>code<span class="w">
+</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>actions/checkout@v2<span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;💡 获取源码：The ${{ github.repository }} repository has been cloned to the runner.&#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;🖥️ 工作流准备：The workflow is now ready to test your code on the runner.&#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Build<span class="w"> </span>and<span class="w"> </span>Deploy<span class="w">
+</span><span class="w">        </span><span class="k">run</span><span class="p">:</span><span class="w"> </span><span class="sd">|
+</span><span class="sd">          yarn install</span><span class="w">
+</span><span class="w">          </span>yarn<span class="w"> </span>build<span class="w">
+</span><span class="w">      </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;✅依赖安装并编译完成&#34;</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Deploy<span class="w">
+</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>peaceiris/actions-gh-pages@v3<span class="w">
+</span><span class="w">        </span>with<span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="k">github_token</span><span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.GITHUB_TOKEN<span class="w"> </span>}}<span class="w"> </span><span class="c"># 默认环境变量</span><span class="w">
+</span><span class="w">          </span><span class="k">publish_dir</span><span class="p">:</span><span class="w"> </span>docs/.vuepress/dist<span class="w"> </span><span class="c"># 发布本地文件地址</span><span class="w">
+</span><span class="w">          </span>- <span class="k">run</span><span class="p">:</span><span class="w"> </span>echo<span class="w"> </span><span class="s2">&#34;🍏 This job&#39;s status is ${{ job.status }}.&#34;</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="定时推送百度">定时推送百度</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c">## baiduPush.yml</span><span class="w">
+</span><span class="w"></span><span class="k">name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;baiduPush&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>on<span class="p">:</span><span class="w">
+</span><span class="w">  </span>push<span class="p">:</span><span class="w">
+</span><span class="w">  </span>schedule<span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">cron</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0 23 * * *&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>jobs<span class="p">:</span><span class="w">
+</span><span class="w">  </span>bot<span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">runs-on</span><span class="p">:</span><span class="w"> </span>ubuntu-latest<span class="w"> </span><span class="c"># 运行环境为最新版的Ubuntu</span><span class="w">
+</span><span class="w">    </span>steps<span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Checkout codes&#39;</span><span class="w"> </span><span class="c"># 步骤一，获取仓库代码</span><span class="w">
+</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>actions/checkout@v1<span class="w">
+</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Run baiduPush.sh&#39;</span><span class="w"> </span><span class="c"># 步骤二，执行sh命令文件</span><span class="w">
+</span><span class="w">        </span><span class="k">run</span><span class="p">:</span><span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span><span class="cp">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>baiduPush<span class="w"> </span><span class="c"># 运行命令。（注意，运行目录是仓库根目录）</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id="note">Note</h2>
+<h3 id="configuration">configuration</h3>
+<ul>
+<li>使用 npm 管理安装，dev 启动时插件加载会异常</li>
+<li>包管理工具会在项目锁定文件,自动生成，不能混用
+<ul>
+<li>npm： package-lock.json</li>
+<li>yarn: yarn.lock</li>
+</ul>
+</li>
+</ul>
+<h3 id="markdown">markdown</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"><figure>
+    <img src="https://pic4.zhimg.com/80/v2-1bb4dea5ae4f6ff7d1b9a1b405e09467_1440w.jpg"/> 
+</figure>
+
+![](https://pic4.zhimg.com/80/v2-1bb4dea5ae4f6ff7d1b9a1b405e09467_1440w.jpg)
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>{{&lt;figure src=&rdquo;&rdquo; &gt;}}格式,vuepress 不支持, hugo 支持</li>
+</ul>
+<h3 id="build">build</h3>
+<p>如果 md 文件内容有问题，如找不到链接图片，在 dev 模式时，可以正常运行，但在 build 模式时无法正常生成。</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="http://caibaojian.com/vuepress/guide/">VuePress中文网</a></li>
+<li><a href="http://caibaojian.com/vuepress/default-theme-config/">VuePress中文网默认主题配置</a></li>
+<li><a href="https://xie.infoq.cn/article/4d2f62c87d188331342e62563">一篇带你用 VuePress + Github Pages 搭建博客</a></li>
+<li><a href="https://xugaoyi.com/pages/6b9d359ec5aa5019/">GitHub Actions 实现自动部署静态博客</a></li>
+<li><a href="https://juejin.cn/post/7000572105154625567">Vuepress + GitHub Actions 实现博客自动部署！</a></li>
+<li><a href="https://xugaoyi.com/pages/f44d2f9ad04ab8d3/">GitHub Actions 定时运行代码：每天定时百度链接推送</a></li>
+<li><a href="https://doc.xugaoyi.com/pages/2b8e22/">批量操作front matter工具</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-06-18
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/3c206185d04de646d8374694459bd2570f998edd" title="update weekly">(3c20618)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/vuepress/">Vuepress</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/git-tag/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Git tag</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/wordpress-maintenance/">
+            <span class="next-text nav-default">WorPress 运维</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

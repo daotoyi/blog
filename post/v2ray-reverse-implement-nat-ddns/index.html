@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>v2ray 反向代理/内网穿透 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="v2ray 反向代理/内网穿透" />
+<meta property="og:description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/" />
+<meta property="article:published_time" content="2022-04-01T21:50:00+00:00" />
+<meta property="article:modified_time" content="2022-06-18T15:01:19+08:00" />
+<meta itemprop="name" content="v2ray 反向代理/内网穿透">
+<meta itemprop="description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有">
+<meta itemprop="datePublished" content="2022-04-01T21:50:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-06-18T15:01:19&#43;08:00" />
+<meta itemprop="wordCount" content="1023">
+
+
+
+<meta itemprop="keywords" content="v2ray," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="v2ray 反向代理/内网穿透"/>
+<meta name="twitter:description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">v2ray 反向代理/内网穿透</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-04-01 </span>
+        <div class="post-category">
+            <a href="/categories/vps/"> VPS </a>
+            </div>
+          <span class="more-meta"> 1023 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#说明示例">说明示例</a>
+          <ul>
+            <li><a href="#约定">约定</a></li>
+            <li><a href="#过程">过程</a></li>
+            <li><a href="#总结">总结</a></li>
+          </ul>
+        </li>
+        <li><a href="#配置">配置</a>
+          <ul>
+            <li><a href="#a">A</a></li>
+            <li><a href="#b">B</a></li>
+            <li><a href="#ref">Ref</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="说明示例">说明示例</h2>
+<h3 id="约定">约定</h3>
+<p>约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台）</p>
+<ul>
+<li>A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等；</li>
+<li>B 为具有公网 IP 的服务器，如平常我们购买的 VPS；</li>
+<li>C 为想要访问 NAS 或私有网盘的设备</li>
+</ul>
+<h3 id="过程">过程</h3>
+<ul>
+<li>A 会主动向 B 发起请求，建立起一个连接；通过 A 向 B 建立的连接转发给 A(即 B 反向连接了 A)；
+<ul>
+<li>A 需要一个 outbound ( <strong>vmess</strong> )
+<ul>
+<li>（A 的 outbound 是连接到 B 的 inbound，具备 inbound 和 outbound 的协议有 3 种：VMess, Shadowsocks 和 Socks。）</li>
+</ul>
+</li>
+<li>A 来访问最终的服务器(私有网盘)，所以 A 还需有一个 outbound( <strong>freedom</strong> )。</li>
+<li>B 需要一个 inbound</li>
+</ul>
+</li>
+<li>C 向 B 发起请求
+<ul>
+<li>B 还需要一个 inbound，( <strong>dokodemo-door</strong> )
+<ul>
+<li>（ B 的 inbound 要接受不是来自 V2 的流量，只能是任意门 dokodemo-door）</li>
+</ul>
+</li>
+<li>C 不运行 V2</li>
+</ul>
+</li>
+</ul>
+<h3 id="总结">总结</h3>
+<ul>
+<li>
+<p>A 需要两个 outbound（VMess 和 freedom）</p>
+</li>
+<li>
+<p>B 需要两个 inbound(VMess 和 dokodemo-door)。</p>
+</li>
+<li>
+<p>然后为了让 A 能够主动连接 B，A 需要配置反向代理(reverse)；</p>
+</li>
+<li>
+<p>同样的，为了能够让 B 反向连接 A，B 也需要配置反向代理(reverse)。</p>
+<p><a href="https://www.bookset.io/uploads/projects/v2ray-guide/1e9b7ada5a0a68d3938e9d5a7d2c658e.bmp">https://www.bookset.io/uploads/projects/v2ray-guide/1e9b7ada5a0a68d3938e9d5a7d2c658e.bmp</a></p>
+</li>
+</ul>
+<h2 id="配置">配置</h2>
+<h3 id="a">A</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">{</span>
+  <span class="na">&#34;reverse&#34;:{</span>
+    <span class="na">// 这是 A 的反向代理设置，必须有下面的 bridges 对象</span>
+    <span class="na">&#34;bridges&#34;:[</span>
+      <span class="na">{</span>
+        <span class="na">&#34;tag&#34;:&#34;bridge&#34;, // 关于 A 的反向代理标签，在路由中会用到</span>
+        <span class="na">&#34;domain&#34;:&#34;private.cloud.com&#34; // A 和 B 反向代理通信的域名，可以自己取一个，可以不是自己购买的域名，但必须跟下面 B 中的 reverse 配置的域名一致</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">},</span>
+  <span class="na">&#34;outbounds&#34;: [</span>
+    <span class="na">{</span>
+      <span class="na">//A连接B的outbound</span>
+      <span class="na">&#34;tag&#34;:&#34;tunnel&#34;, // A 连接 B 的 outbound 的标签，在路由中会用到</span>
+      <span class="na">&#34;protocol&#34;:&#34;vmess&#34;,</span>
+      <span class="na">&#34;settings&#34;:{</span>
+        <span class="na">&#34;vnext&#34;:[</span>
+          <span class="na">{</span>
+            <span class="na">&#34;address&#34;:&#34;serveraddr.com&#34;, // B 地址，IP 或 实际的域名</span>
+            <span class="na">&#34;port&#34;:16823,</span>
+            <span class="na">&#34;users&#34;:[</span>
+              <span class="na">{</span>
+                <span class="na">&#34;id&#34;:&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;,</span>
+                <span class="na">&#34;alterId&#34;:64</span>
+              <span class="na">}</span>
+            <span class="na">]</span>
+          <span class="na">}</span>
+        <span class="na">]</span>
+      <span class="na">}</span>
+    <span class="na">},</span>
+    <span class="na">// 另一个 outbound，最终连接私有网盘</span>
+    <span class="na">{</span>
+      <span class="na">&#34;protocol&#34;:&#34;freedom&#34;,</span>
+      <span class="na">&#34;settings&#34;:{</span>
+      <span class="na">},</span>
+      <span class="na">&#34;tag&#34;:&#34;out&#34;</span>
+    <span class="na">}</span>
+  <span class="na">],</span>
+  <span class="na">&#34;routing&#34;:{</span>
+    <span class="na">&#34;rules&#34;:[</span>
+      <span class="na">{</span>
+        <span class="na">// 配置 A 主动连接 B 的路由规则</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;bridge&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;domain&#34;:[</span>
+          <span class="na">&#34;full:private.cloud.com&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;tunnel&#34;</span>
+      <span class="na">},</span>
+      <span class="na">{</span>
+        <span class="na">// 反向连接访问私有网盘的规则</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;bridge&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;out&#34;</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="b">B</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">{</span>
+  <span class="na">&#34;reverse&#34;:{  //这是 B 的反向代理设置，必须有下面的 portals 对象</span>
+    <span class="na">&#34;portals&#34;:[</span>
+      <span class="na">{</span>
+        <span class="na">&#34;tag&#34;:&#34;portal&#34;,</span>
+        <span class="na">&#34;domain&#34;:&#34;private.cloud.com&#34;        // 必须和上面 A 设定的域名一样</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">},</span>
+  <span class="na">&#34;inbounds&#34;: [</span>
+    <span class="na">{</span>
+      <span class="na">// 接受 C 的inbound</span>
+      <span class="na">&#34;tag&#34;:&#34;external&#34;, // 标签，路由中用到</span>
+      <span class="na">&#34;port&#34;:80,</span>
+      <span class="na">// 开放 80 端口，用于接收外部的 HTTP 访问</span>
+      <span class="na">&#34;protocol&#34;:&#34;dokodemo-door&#34;,</span>
+        <span class="na">&#34;settings&#34;:{</span>
+          <span class="na">&#34;address&#34;:&#34;127.0.0.1&#34;,</span>
+          <span class="na">&#34;port&#34;:80, //假设 NAS 监听的端口为 80</span>
+          <span class="na">&#34;network&#34;:&#34;tcp&#34;</span>
+        <span class="na">}</span>
+    <span class="na">},</span>
+    <span class="na">// 另一个 inbound，接受 A 主动发起的请求</span>
+    <span class="na">{</span>
+      <span class="na">&#34;tag&#34;: &#34;tunnel&#34;,// 标签，路由中用到</span>
+      <span class="na">&#34;port&#34;:16823,</span>
+      <span class="na">&#34;protocol&#34;:&#34;vmess&#34;,</span>
+      <span class="na">&#34;settings&#34;:{</span>
+        <span class="na">&#34;clients&#34;:[</span>
+          <span class="na">{</span>
+            <span class="na">&#34;id&#34;:&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;,</span>
+            <span class="na">&#34;alterId&#34;:64</span>
+          <span class="na">}</span>
+        <span class="na">]</span>
+      <span class="na">}</span>
+    <span class="na">}</span>
+  <span class="na">],</span>
+  <span class="na">&#34;routing&#34;:{</span>
+    <span class="na">&#34;rules&#34;:[</span>
+      <span class="na">{  //路由规则，接收 C 请求后发给 A</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;external&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;portal&#34;</span>
+      <span class="na">},</span>
+      <span class="na">{  //路由规则，让 B 能够识别这是 A 主动发起的反向代理连接</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;tunnel&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;domain&#34;:[</span>
+          <span class="na">&#34;full:private.cloud.com&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;portal&#34;</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="ref">Ref</h3>
+<ul>
+<li><a href="https://www.bookset.io/read/v2ray-guide/94bb3d54ac5738ed.md">反向代理/内网穿透</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-06-18
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/3c206185d04de646d8374694459bd2570f998edd" title="update weekly">(3c20618)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/v2ray/">v2ray</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/ssl-tls-sni/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">SSL/TLS 和 SNI 概念</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/v2ray-debug-config-record/">
+            <span class="next-text nav-default">v2ray 趟坑</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

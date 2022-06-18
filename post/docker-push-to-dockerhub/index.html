@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Docker 提交推送 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker commit 1 2 3 docker commit -m &amp;#34;What you did to the image&amp;#34; -a &amp;#34;Author Name&amp;#34; container_id repository/new_image_name # docker commit -m &amp;#39;dyQuant image linux&amp;#39; -a &amp;#39;daotoyi&amp;#39; xxxx daotoyi/dypython -m 是提交镜像的备注 -a 用于指定作者名 container_id ( docker ps -a 显示的 CONTAINER ID) 当我们提交新" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/docker-push-to-dockerhub/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Docker 提交推送" />
+<meta property="og:description" content="State &ldquo;DONE&rdquo; from [2022-02-27 周日 11:53] Docker commit 1 2 3 docker commit -m &#34;What you did to the image&#34; -a &#34;Author Name&#34; container_id repository/new_image_name # docker commit -m &#39;dyQuant image linux&#39; -a &#39;daotoyi&#39; xxxx daotoyi/dypython -m 是提交镜像的备注 -a 用于指定作者名 container_id ( docker ps -a 显示的 CONTAINER ID) 当我们提交新" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/docker-push-to-dockerhub/" />
+<meta property="article:published_time" content="2022-02-27T11:53:00+00:00" />
+<meta property="article:modified_time" content="2022-06-18T15:01:19+08:00" />
+<meta itemprop="name" content="Docker 提交推送">
+<meta itemprop="description" content="State &ldquo;DONE&rdquo; from [2022-02-27 周日 11:53] Docker commit 1 2 3 docker commit -m &#34;What you did to the image&#34; -a &#34;Author Name&#34; container_id repository/new_image_name # docker commit -m &#39;dyQuant image linux&#39; -a &#39;daotoyi&#39; xxxx daotoyi/dypython -m 是提交镜像的备注 -a 用于指定作者名 container_id ( docker ps -a 显示的 CONTAINER ID) 当我们提交新">
+<meta itemprop="datePublished" content="2022-02-27T11:53:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-06-18T15:01:19&#43;08:00" />
+<meta itemprop="wordCount" content="245">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker 提交推送"/>
+<meta name="twitter:description" content="State &ldquo;DONE&rdquo; from [2022-02-27 周日 11:53] Docker commit 1 2 3 docker commit -m &#34;What you did to the image&#34; -a &#34;Author Name&#34; container_id repository/new_image_name # docker commit -m &#39;dyQuant image linux&#39; -a &#39;daotoyi&#39; xxxx daotoyi/dypython -m 是提交镜像的备注 -a 用于指定作者名 container_id ( docker ps -a 显示的 CONTAINER ID) 当我们提交新"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Docker 提交推送</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-02-27 </span>
+        <div class="post-category">
+            <a href="/categories/docker/"> Docker </a>
+            </div>
+          <span class="more-meta"> 245 words </span>
+          <span class="more-meta"> 1 min read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#docker-commit">Docker commit</a></li>
+        <li><a href="#docker-tag">Docker tag</a></li>
+        <li><a href="#docker-push">Docker push</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <ul>
+<li>State &ldquo;DONE&rdquo;       from              <span class="timestamp-wrapper"><span class="timestamp">[2022-02-27 周日 11:53]</span></span></li>
+</ul>
+<h2 id="docker-commit">Docker commit</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">docker commit -m <span class="s2">&#34;What you did to the image&#34;</span> -a <span class="s2">&#34;Author Name&#34;</span> container_id repository/new_image_name
+
+<span class="c1"># docker commit -m &#39;dyQuant image linux&#39; -a &#39;daotoyi&#39; xxxx daotoyi/dypython</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>-m 是提交镜像的备注</li>
+<li>-a 用于指定作者名</li>
+<li>container_id ( <code>docker ps -a</code> 显示的 <code>CONTAINER ID</code>)</li>
+</ul>
+<p>当我们提交新镜像时，新生成的镜像也会在我们的计算机上本地保存</p>
+<h2 id="docker-tag">Docker tag</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">➜ docker images
+<span class="c1"># REPOSITORY         TAG       IMAGE ID       CREATED          SIZE</span>
+<span class="c1"># daotoyi/dypython   latest    03d7caa6e12b   18 minutes ago   1.26GB</span>
+
+docker tag IMAGEID<span class="o">(</span>镜像id<span class="o">)</span> REPOSITORY:TAG（仓库：标签）
+<span class="c1"># docker tag 03d7caa6e12b daotoyi/dypython:linux</span>
+<span class="c1"># docker tag daotoyi/dypython:latest daotoyi/dypython:linux</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>打标签，会重新生成一个镜像，但是 IMAGE ID 不变。</p>
+<h2 id="docker-push">Docker push</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">
+<span class="c1"># 要推送镜像，请首先登录 Docker Hub</span>
+docker login -u docker-registry-username
+
+<span class="c1"># 推送镜像到 Docker hub</span>
+docker push docker-registry-username/docker-image-name
+<span class="c1"># docker push daotoyi/dypython</span>
+
+<span class="c1"># 推送到 kalacloud 的版本库</span>
+docker push kalacloud/ubuntu-nodejs
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-06-18
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/3c206185d04de646d8374694459bd2570f998edd" title="update weekly">(3c20618)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/docker-install-manual/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Docker 安装</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/inoreader-access-in-mainland/">
+            <span class="next-text nav-default">Inoreader</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

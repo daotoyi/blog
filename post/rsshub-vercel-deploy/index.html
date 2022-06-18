@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>RSShub&#43;Vercel 笔记 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="login 打开 https://vercel.com 打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问） deploy 接着打开 https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub 点击右边的“Github”，登陆授权后，输入仓库名称，比如" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/rsshub-vercel-deploy/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="RSShub&#43;Vercel 笔记" />
+<meta property="og:description" content="login 打开 https://vercel.com 打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问） deploy 接着打开 https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub 点击右边的“Github”，登陆授权后，输入仓库名称，比如" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/rsshub-vercel-deploy/" />
+<meta property="article:published_time" content="2022-03-11T09:25:00+00:00" />
+<meta property="article:modified_time" content="2022-06-18T15:01:19+08:00" />
+<meta itemprop="name" content="RSShub&#43;Vercel 笔记">
+<meta itemprop="description" content="login 打开 https://vercel.com 打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问） deploy 接着打开 https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub 点击右边的“Github”，登陆授权后，输入仓库名称，比如">
+<meta itemprop="datePublished" content="2022-03-11T09:25:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-06-18T15:01:19&#43;08:00" />
+<meta itemprop="wordCount" content="253">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RSShub&#43;Vercel 笔记"/>
+<meta name="twitter:description" content="login 打开 https://vercel.com 打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问） deploy 接着打开 https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub 点击右边的“Github”，登陆授权后，输入仓库名称，比如"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">RSShub&#43;Vercel 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-03-11 </span>
+        <div class="post-category">
+            <a href="/categories/rss/"> RSS </a>
+            </div>
+          <span class="more-meta"> 253 words </span>
+          <span class="more-meta"> 1 min read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#login">login</a></li>
+        <li><a href="#deploy">deploy</a></li>
+        <li><a href="#rsshub-的服务域名">RSSHub 的服务域名。</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="login">login</h2>
+<p>打开 <a href="https://vercel.com">https://vercel.com</a></p>
+<p>打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问）</p>
+<h2 id="deploy">deploy</h2>
+<p>接着打开 <a href="https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub">https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub</a></p>
+<p>点击右边的“Github”，登陆授权后，输入仓库名称，比如 RSSHub。</p>
+<figure>
+    <img src="https://daotoyi.cn/img/202203110917465.jpeg"/> 
+</figure>
+
+<p>接着点击“Create”，然后就会自动部署，这里大概会花费 2~3 分钟，耐心等待即可。</p>
+<p>完成后就会出现“恭喜”界面。</p>
+<p>点击“Go to Dashboard”，获取 Vercel 的服务地址。</p>
+<figure>
+    <img src="https://daotoyi.cn/img/202203110915305.jpeg"/> 
+</figure>
+
+<p>将 Vercel 的服务地址在浏览器中打开，即可查看 RSSHub 是否完成部署。</p>
+<h2 id="rsshub-的服务域名">RSSHub 的服务域名。</h2>
+<p>打开 RSS+ 脚本的设置页面，选择“设置 RSSHub 服务的域名”，然后修改为你的 Vercel 服务地址。</p>
+<figure>
+    <img src="https://daotoyi.cn/img/202203110916194.jpeg"/> 
+</figure>
+
+<p>这样一来，通过 RSS+ 嗅探得到的链接就会走你的 Vercel 服务器。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-06-18
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/3c206185d04de646d8374694459bd2570f998edd" title="update weekly">(3c20618)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/emacs-export-align-table-with-chinese/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Org 中文表格对齐</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/web-trusteeship-freely/">
+            <span class="next-text nav-default">面向 WEB 的免费托管</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

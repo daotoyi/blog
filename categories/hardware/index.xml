@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/hardware/</link>
+    <description>Recent content in Hardware on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Mar 2022 22:10:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CPU Frequency</title>
+      <link>https://daotoyi.github.io/post/cpu-frequency/</link>
+      <pubDate>Fri, 25 Mar 2022 22:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/cpu-frequency/</guid>
+      <description>主频=外频×倍频系数 主频 即 CPU 内核工作的主时钟频率，表示在 CPU 内数字脉冲信号震荡的速度。 外频 通常为系统总线的工作频率，是 CPU 的基准频率，单位是 MH</description>
+    </item>
+    
+    <item>
+      <title>WIFI 模式：STA 及 AP</title>
+      <link>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</link>
+      <pubDate>Fri, 11 Mar 2022 07:52:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</guid>
+      <description>AP: Access Point，提供无线接入服务，允许其它无线设备接入，提供数据访问.是一个无线网络的创建者,是网络的中心节点。 一般的无线路由/网桥工作在该</description>
+    </item>
+    
+    <item>
+      <title>SSD 性能提升</title>
+      <link>https://daotoyi.github.io/post/ssd-performance-improvement/</link>
+      <pubDate>Tue, 08 Feb 2022 08:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ssd-performance-improvement/</guid>
+      <description>固态硬盘接口 性能从低到高排序为: SATA 接口 SATA Revision 1.0 SATA Revision 2.0 SATA Revision 3.0 M.2 接口 一种支持 SATA 协议 一种支持 NVME 协议 协议性能更好，走 PCIE 通道，带宽高达 32G PCI-E 接口 直接通过 PCI-E</description>
+    </item>
+    
+  </channel>
+</rss>

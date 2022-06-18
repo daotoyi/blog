@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux 动态链接器 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-ld-linux.so/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux 动态链接器" />
+<meta property="og:description" content="glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-ld-linux.so/" />
+<meta property="article:published_time" content="2022-04-16T07:33:00+00:00" />
+<meta property="article:modified_time" content="2022-06-18T15:01:19+08:00" />
+<meta itemprop="name" content="Linux 动态链接器">
+<meta itemprop="description" content="glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所">
+<meta itemprop="datePublished" content="2022-04-16T07:33:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-06-18T15:01:19&#43;08:00" />
+<meta itemprop="wordCount" content="1068">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux 动态链接器"/>
+<meta name="twitter:description" content="glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux 动态链接器</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-04-16 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 1068 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#glibc-libc-glib">glibc，libc，glib</a>
+          <ul>
+            <li><a href="#glibc">glibc</a></li>
+            <li><a href="#libc">libc</a></li>
+            <li><a href="#glib">glib</a></li>
+            <li><a href="#check">check</a></li>
+          </ul>
+        </li>
+        <li><a href="#ld-linux-dot-so">ld-linux.so</a></li>
+        <li><a href="#多个-gcc-glibc-版本共存">多个 gcc/glibc 版本共存</a>
+          <ul>
+            <li><a href="#指定-gcc-g-plus-plus-glibc-的版本进行编译">指定 gcc/g++，glibc 的版本进行编译</a></li>
+            <li><a href="#程序运行机器上的依赖">程序运行机器上的依赖</a></li>
+          </ul>
+        </li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="glibc-libc-glib">glibc，libc，glib</h2>
+<h3 id="glibc">glibc</h3>
+<p>glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。</p>
+<p>glibc 除了封装 linux 操作系统所提供的系统服务，它本身也提供了许多其它必要功能服务的实现，例如：动态加载模块 libdl、实时扩展接口 librt。对应的动态库的名字 libc.so</p>
+<h3 id="libc">libc</h3>
+<p>是 Linux 下的 ANSI C 函数库，被 glibc 包含</p>
+<blockquote>
+<p>libc 是 Linux 下原来的标准 C 库，也就是当初写 hello world 时包含的头文件#include &lt; stdio.h&gt; 定义的地方。后来逐渐被 glibc 取代，也就是传说中的 GNU C Library,在此之前除了有 libc，还有 klibc,uclibc。</p>
+</blockquote>
+<h3 id="glib">glib</h3>
+<p>是 Linux 下 C 的一些工具库，和 glibc 没有关系</p>
+<h3 id="check">check</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看glibc版本,ldd是隶属于glibc，它的版本就是glibc的版本</span>
+ldd --version
+
+<span class="c1">#libstdc++是 gcc的标准C++库(libc++是clang的标准C++库)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ld-linux-dot-so">ld-linux.so</h2>
+<p>识别二进制映像以及文件映射到进程虚拟地址空间这个过程确实是在内核中完成的，但是动态链接的过程，需要把控制权交给 ld-linux.so.x，这是在用户空间进行的。</p>
+<p>ld-linux.so.x 是 Glibc 安装的库，所以动态链接的过程实际上这跟编译一样，属于用户态程序，核心代码在 elf/rtld.c 中。</p>
+<h2 id="多个-gcc-glibc-版本共存">多个 gcc/glibc 版本共存</h2>
+<p>多个 gcc/glibc 共存，新安装的 gcc/glibc 版本需要指定安装目录。特别是 glibc 作为基础库，如果直接替换了系统中原有的 glibc，很可能造成任何命令/程序都无法运行的情况。</p>
+<p><strong>切记，一定要指定安装目录。</strong></p>
+<h3 id="指定-gcc-g-plus-plus-glibc-的版本进行编译">指定 gcc/g++，glibc 的版本进行编译</h3>
+<ul>
+<li>指定 gcc/g++的版本</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">CC</span><span class="o">=</span>gcc的路径
+<span class="nb">export</span> <span class="nv">CXX</span><span class="o">=</span>g++的路径
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>指定连接器的版本
+将连接器的路径，放在 LD_LIBRARY_PATH 的最前面</p>
+</li>
+<li>
+<p>指定 glibc 的版本</p>
+<ul>
+<li>
+<p>通过 gcc 的-L 参数指定 glibc 库(libc.so)的路径</p>
+</li>
+<li>
+<p>在 gcc 的编译参数中指定 -Wl,–dynamic-linker=glibc 中动态链接器的路径，如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">-Wl,--dynamic-linker<span class="o">=</span>/动态连接器的路径/ld-linux-x86-64.so.2
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>在 gcc 中链接 libc.so(-lc)</p>
+</li>
+<li>
+<p>将 glibc 的路径，引入 LD_LIBRARY_PATH 中</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="程序运行机器上的依赖">程序运行机器上的依赖</h3>
+<p>如果编译环境与运行环境不同，则需要将 gcc，glibc 的一些库打包到程序安装包中，并且指定库的路径</p>
+<ul>
+<li>
+<p>依赖的库
+libstdc++.so,libc.so 库及它们的依赖库，动态连接器都需要放入程序的依赖库的目录中，基本是包含如下几个库:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">librt.so.1
+libdl.so.2
+libpthread.so.0
+libstdc++.so.6
+libm.so.6
+libc.so.6 -&gt; glibc库
+libgcc_s.so.1
+libresolv.so.2
+libcrypt.so.1
+ld-linux-x86-64.so.2 -&gt;其实是个执行程序，为动态连接器
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>指定依赖库的路径</p>
+</li>
+</ul>
+<p>在编译是通过 gcc 的编译参数 <code>-Wl,-rpath=程序的依赖库路径</code> ,这些库最好都放在指定的，固定的目录中，在编译时通过这个编译选项指定该路径.</p>
+<p>3.将动态连接器 ld-linux-x86-64.so.2 的路径配置到 PATH 中</p>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://blog.csdn.net/mo4776/article/details/119837501">多个gcc/glibc版本的共存及指定gcc版本的编译</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-06-18
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/3c206185d04de646d8374694459bd2570f998edd" title="update weekly">(3c20618)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/python-jupyter-lab/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Jupyter Notebook/Lab</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/make-cmake-qmake/">
+            <span class="next-text nav-default">make, cmake, qmake</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

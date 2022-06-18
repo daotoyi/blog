@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>WordPress 笔记 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="WordPress 笔记" />
+<meta property="og:description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" />
+<meta property="article:published_time" content="2022-03-15T22:26:00+00:00" />
+<meta property="article:modified_time" content="2022-06-18T15:01:19+08:00" />
+<meta itemprop="name" content="WordPress 笔记">
+<meta itemprop="description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建">
+<meta itemprop="datePublished" content="2022-03-15T22:26:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-06-18T15:01:19&#43;08:00" />
+<meta itemprop="wordCount" content="1773">
+
+
+
+<meta itemprop="keywords" content="WordPress," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WordPress 笔记"/>
+<meta name="twitter:description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">WordPress 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-03-15 </span>
+        <div class="post-category">
+            <a href="/categories/vps/"> VPS </a>
+            </div>
+          <span class="more-meta"> 1773 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#vps-panel-compare">VPS Panel Compare</a></li>
+        <li><a href="#wordpress-3-types">WordPress 3 types</a></li>
+        <li><a href="#install">Install</a>
+          <ul>
+            <li><a href="#安装在虚拟机上">安装在虚拟机上</a></li>
+            <li><a href="#安装在云平台上">安装在云平台上</a></li>
+            <li><a href="#安装在-docker-上">安装在 docker 上</a></li>
+          </ul>
+        </li>
+        <li><a href="#backup">Backup</a></li>
+        <li><a href="#recommend-plugins">Recommend Plugins</a>
+          <ul>
+            <li><a href="#pretty-link-lite">Pretty Link Lite</a></li>
+            <li><a href="#redirection">Redirection</a></li>
+            <li><a href="#page-links-to">Page Links To</a></li>
+            <li><a href="#child-theme-wizard">Child Theme Wizard</a></li>
+            <li><a href="#woocommerce">Woocommerce</a></li>
+            <li><a href="#envato-market">envato Market</a></li>
+            <li><a href="#translate-wordpress-with-gtranslate">Translate WordPress with GTranslate</a></li>
+            <li><a href="#weglot">Weglot</a></li>
+            <li><a href="#wp-super-cache">WP Super Cache</a></li>
+            <li><a href="#bfoken-link-checker">Bfoken Link Checker</a></li>
+            <li><a href="#really-simple-ssl">really simple ssl</a></li>
+            <li><a href="#wp-hide-login">wp hide login</a></li>
+          </ul>
+        </li>
+        <li><a href="#notes">Notes</a>
+          <ul>
+            <li><a href="#宝塔面板登陆地址为">宝塔面板登陆地址为</a></li>
+            <li><a href="#wordpress-后台登录地址为">WordPress 后台登录地址为</a></li>
+            <li><a href="#访问-wordpress">访问 WordPress</a></li>
+            <li><a href="#wordpress-首页地址为">WordPress 首页地址为</a></li>
+            <li><a href="#虚拟机安装-wp">虚拟机安装 WP</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="vps-panel-compare">VPS Panel Compare</h2>
+<ul>
+<li>最强大、最完善建站工具：WordPress (CMS)</li>
+<li>最受初学者欢迎的建站工具：Wix</li>
+<li>最设计优良的建站工具：Squarespace</li>
+<li>最容易使用的建站工具：Weebly</li>
+<li>最适合定制的建站工具：Duda</li>
+<li>最适合电商的建站工具：Shopify</li>
+<li>最好的免费建站工具：Google Sites (New)</li>
+<li>最强大的页面自定义建站工具：Webflow</li>
+<li>附带邮件营销功能的建站工具：Constant Contact Website Builder</li>
+<li>最适合大型商店的建站工具：BigCommerce</li>
+</ul>
+<figure>
+    <img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202203141616408.png"/> 
+</figure>
+
+<h2 id="wordpress-3-types">WordPress 3 types</h2>
+<ul>
+<li>WordPress.com
+此平台由 WordPress.com 开发人员团队完全托管。换句话说，要使用此免费软件，您要做的就是注册一个帐户并开始发布内容。其他一切都为您处理。</li>
+<li>高级 WordPress.com
+可以选择升级您的免费 WordPress.com 帐户。套餐的价格从每月 4 美元到 45 美元不等，并具有多种该更高级的功能。</li>
+<li>WordPress.org
+此平台是自托管的，你可以从这个网站下载到 WordPress 安装包，然后自己购买域名和主机服务器。WordPress 程序是完全免费使用的，使用这种方法建站，您还要负责所有站点维护，包括软件更新、速度优化和站点安全等等，换句话来说，自由度非常大。</li>
+</ul>
+<h2 id="install">Install</h2>
+<h3 id="安装在虚拟机上">安装在虚拟机上</h3>
+<ul>
+<li><a href="https://www.haah.net/collection/vm-station">虚拟机建站</a>
+<ul>
+<li><a href="https://www.haah.net/archives/2681.html">SSH 连接 Linux 安装宝塔面板</a></li>
+<li><a href="https://www.haah.net/archives/2728.html">宝塔面板安装完的一些列操作</a></li>
+<li><a href="https://www.haah.net/archives/2746.html">宝塔面板搭建服务器网站环境（超详细）</a></li>
+<li><a href="https://www.haah.net/archives/2815.html">宝塔面板安装WordPress（超详细)</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="安装在云平台上">安装在云平台上</h3>
+<ul>
+<li>参考安装在虚拟机即可</li>
+</ul>
+<h3 id="安装在-docker-上">安装在 docker 上</h3>
+<h4 id="install-database">install database</h4>
+<p>mariadb 是 mysql 的替代品,几乎兼容(mysql 被 orcal 收购后有商业化不开源的风险)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mariadb</span>
+docker run --name wpdb --env <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>wordpress -d mariadb
+docker <span class="nb">exec</span> -it wpdb bash
+
+<span class="c1"># set password</span>
+<span class="c1"># /# mysql -u root -p</span>
+<span class="c1"># Enter password:</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="install-wordpress">install wordpress</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1)使用官方的wordpress, 镜像is oud.io</span>
+docker pull daocloud.io/daocloud/dao-wordpress:latest
+
+<span class="c1"># 2)use wordpress官方镜像</span>
+docker pull wordpress
+
+<span class="c1"># startup</span>
+<span class="c1"># docker run --name wpdb --env MYSQL_ROOT_PASSWORD=wordpress -d mariadb</span>
+docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
+
+<span class="c1"># http://localhost:8080（或 http://host-ip:8080） 访问站点</span>
+<span class="c1"># http://ip:8080/wp-admin/install.php</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>使用外部数据库的话</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run --name some-wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>10.1.2.3:3306  -e <span class="nv">WORDPRESS_DB_USER</span><span class="o">=</span>... -e <span class="nv">WORDPRESS_DB_PASSWORD</span><span class="o">=</span>... -d wordpress
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><code>WORDPRESS_DB_HOST</code> 数据库主机地址（默认为与其 link 的 mysql 容器的 IP 和 3306 端口：:3306）
+<code>WORDPRESS_DB_USER</code> 数据库用户名（默认为 root）
+<code>WORDPRESS_DB_PASSWORD</code> 数据库密码（默认为与其 link 的 mysql 容器提供的 MYSQL_ROOT_PASSWORD 变量的值）
+<code>WORDPRESS_DB_NAME</code> 数据库名（默认为 wordpress）
+<code>WORDPRESS_TABLE_PREFIX</code> 数据库表名前缀（默认为空，您可以从该变量覆盖 wp-config.php 中的配置）</p>
+</blockquote>
+<h4 id="docker-compose">docker compose</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>docker-compose.yml</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.3&#39;</span><span class="w">
+</span><span class="w"></span>services<span class="p">:</span><span class="w">
+</span><span class="w">   </span>db<span class="p">:</span><span class="w">
+</span><span class="w">     </span><span class="k">image</span><span class="p">:</span><span class="w"> </span>mysql<span class="p">:</span><span class="m">5.7</span><span class="w">
+</span><span class="w">     </span>volumes<span class="p">:</span><span class="w">
+</span><span class="w">       </span>- db_data<span class="p">:</span>/var/lib/mysql<span class="w">
+</span><span class="w">     </span><span class="k">restart</span><span class="p">:</span><span class="w"> </span>always<span class="w">
+</span><span class="w">     </span>environment<span class="p">:</span><span class="w">
+</span><span class="w">       </span><span class="k">MYSQL_ROOT_PASSWORD</span><span class="p">:</span><span class="w"> </span>somewordpress<span class="w">
+</span><span class="w">       </span><span class="k">MYSQL_DATABASE</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
+</span><span class="w">       </span><span class="k">MYSQL_USER</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
+</span><span class="w">       </span><span class="k">MYSQL_PASSWORD</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
+</span><span class="w">   </span>wordpress<span class="p">:</span><span class="w">
+</span><span class="w">     </span>depends_on<span class="p">:</span><span class="w">
+</span><span class="w">       </span>- db<span class="w">
+</span><span class="w">     </span><span class="k">image</span><span class="p">:</span><span class="w"> </span>wordpress<span class="p">:</span>latest<span class="w">
+</span><span class="w">     </span>ports<span class="p">:</span><span class="w">
+</span><span class="w">       </span>- <span class="s2">&#34;8000:80&#34;</span><span class="w">
+</span><span class="w">     </span><span class="k">restart</span><span class="p">:</span><span class="w"> </span>always<span class="w">
+</span><span class="w">     </span>environment<span class="p">:</span><span class="w">
+</span><span class="w">       </span><span class="k">WORDPRESS_DB_HOST</span><span class="p">:</span><span class="w"> </span>db<span class="p">:</span><span class="m">3306</span><span class="w">
+</span><span class="w">       </span><span class="k">WORDPRESS_DB_USER</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
+</span><span class="w">       </span><span class="k">WORDPRESS_DB_PASSWORD</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
+</span><span class="w">       </span><span class="k">WORDPRESS_DB_NAME</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
+</span><span class="w"></span>volumes<span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">db_data</span><span class="p">:</span><span class="w"> </span>{}<span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>useage</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker-compose up -d   <span class="c1"># startup</span>
+docker-compose -f docker-compose.wordpress.yml up -d <span class="c1">#后台运行</span>
+
+docker-compose down    <span class="c1"># stop</span>
+docker-compose -f docker-compose.wordpress.yml down <span class="c1">#停止并删除服务</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Note</p>
+<ul>
+<li><code>docker-compose down</code></li>
+</ul>
+<p>当 Docker 容器停止时，它也会被删除; 这就是 Docker 的设计工作方式。但是，您的 WordPress 文件和数据将被保留，因为 docker-compose.yml 文件已配置为为该数据创建持久命名卷。</p>
+<ul>
+<li><code>docker-compose down --volumes</code></li>
+</ul>
+<p>如果要删除此数据并从 WordPress 站点重新开始，可以将&ndash;volumes 标志添加到上一个命令。这将永久删除您到目前为止所做的 WordPress 帖子和自定义。</p>
+</li>
+</ul>
+<h2 id="backup">Backup</h2>
+<ul>
+<li><a href="https://www.guoyuguang.com/best-wordpress-website-backup-plugins/">最好的WordPress网站备份插件（2020版）</a></li>
+</ul>
+<h2 id="recommend-plugins">Recommend Plugins</h2>
+<h3 id="pretty-link-lite">Pretty Link Lite</h3>
+<p>为您网站创建短链接的插件，可以将外部的链接映射到这些短链接，并且可以跟踪链接的每一次点击，而且提供详细的报告，包括来访者 ip、来访者使用的浏览器、操作系统等。</p>
+<h3 id="redirection">Redirection</h3>
+<p>管理 301 重定向、跟踪 404 错误的插件，如果您需要将旧网站进行迁移或者改变 wordpress 的安装目录，那么这将是一个十分有用的工具，使用很简单</p>
+<h3 id="page-links-to">Page Links To</h3>
+<p>可以直接将 wordpress 的文章或者页面直接跳转到其他任何链接的插件工具</p>
+<h3 id="child-theme-wizard">Child Theme Wizard</h3>
+<h3 id="woocommerce">Woocommerce</h3>
+<h3 id="envato-market">envato Market</h3>
+<p><a href="https://www.qingsongb2c.com/how-to-install-themes-from-themeforest/">安装 Themeforest 的主题.</a></p>
+<h3 id="translate-wordpress-with-gtranslate">Translate WordPress with GTranslate</h3>
+<ul>
+<li>多语言版本切换插件</li>
+<li>设置： 登入 WordPress 后台 &gt;&gt; 设置 &gt;&gt; GTranslate</li>
+<li>使用： 登入 WordPress 后台 &gt;&gt; 外观 &gt;&gt; 小工具，找到 GTranslate 并将其添加到相应侧边栏</li>
+</ul>
+<h3 id="weglot">Weglot</h3>
+<p>rft</p>
+<h3 id="wp-super-cache">WP Super Cache</h3>
+<h3 id="bfoken-link-checker">Bfoken Link Checker</h3>
+<p>该插件会检测到您网站上无法正常工作的链接，并在网站后台和邮件中通知您。</p>
+<h3 id="really-simple-ssl">really simple ssl</h3>
+<p>网站以 https 开头的</p>
+<h3 id="wp-hide-login">wp hide login</h3>
+<p>隐藏网站后台登入网址的。</p>
+<h2 id="notes">Notes</h2>
+<h3 id="宝塔面板登陆地址为">宝塔面板登陆地址为</h3>
+<ul>
+<li>ip:port</li>
+<li>ip:port/xxxxxxxx
+<ul>
+<li>xxxxxxxx:新装机器都会随机一个 8 位字符的安全入口名称</li>
+<li>如: <a href="http://192.168.220.149:8888/5996ef82/">http://192.168.220.149:8888/5996ef82/</a></li>
+<li>可以在面板设置处修改</li>
+<li>查看面板入口：/etc/init.d/bt default</li>
+<li>【关闭安全入口】将使您的面板登录地址被直接暴露在互联网上，非常危险，请谨慎操作</li>
+</ul>
+</li>
+</ul>
+<h3 id="wordpress-后台登录地址为">WordPress 后台登录地址为</h3>
+<ul>
+<li>ip/wp-admin/</li>
+<li>域名/wp-admin/</li>
+<li>例如：<a href="http://192.168.220.149/wp-admin/">http://192.168.220.149/wp-admin/</a> 或者<a href="http://www.baidu.com/wp-admin/">http://www.baidu.com/wp-admin/</a></li>
+</ul>
+<h3 id="访问-wordpress">访问 WordPress</h3>
+<p>安装完成后,需要在宝塔面板的 &ldquo;网站 - 默认站点&quot;中选择站点,否则可能访问不成功.</p>
+<h3 id="wordpress-首页地址为">WordPress 首页地址为</h3>
+<ul>
+<li>ip</li>
+<li>域名</li>
+<li>例如：<a href="http://192.168.220.149/">http://192.168.220.149/</a> 或者 <a href="http://www.baidu.com/">http://www.baidu.com/</a></li>
+</ul>
+<h3 id="虚拟机安装-wp">虚拟机安装 WP</h3>
+<ul>
+<li>安装完成会生成一个外网访问地址和一个内网访问地址</li>
+<li>WP 的域名设置为 127.0.0.1,在主机上通过内网地址登陆访问.</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-06-18
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/3c206185d04de646d8374694459bd2570f998edd" title="update weekly">(3c20618)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/wordpress/">WordPress</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/github-picsbed-show-pictures/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Github 图床显示图片</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/linux-virtual-machine-capacity-and-reduce/">
+            <span class="next-text nav-default">Linux capacity &amp;&amp; reduce</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

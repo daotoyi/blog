@@ -1,7 +1,7 @@
 ---
 title: "WordPress 笔记"
 date: "2022-03-15 22:26:00"
-lastmod: "2022-04-30 12:50:14"
+lastmod: "2022-06-07 11:35:27"
 tags: ["WordPress"]
 categories: ["VPS"]
 draft: false
@@ -163,6 +163,65 @@ $ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306  -e WORDPR
 ## Backup {#backup}
 
 -   [最好的WordPress网站备份插件（2020版）](https://www.guoyuguang.com/best-wordpress-website-backup-plugins/)
+
+
+## Recommend Plugins {#recommend-plugins}
+
+
+### Pretty Link Lite {#pretty-link-lite}
+
+为您网站创建短链接的插件，可以将外部的链接映射到这些短链接，并且可以跟踪链接的每一次点击，而且提供详细的报告，包括来访者 ip、来访者使用的浏览器、操作系统等。
+
+
+### Redirection {#redirection}
+
+管理 301 重定向、跟踪 404 错误的插件，如果您需要将旧网站进行迁移或者改变 wordpress 的安装目录，那么这将是一个十分有用的工具，使用很简单
+
+
+### Page Links To {#page-links-to}
+
+可以直接将 wordpress 的文章或者页面直接跳转到其他任何链接的插件工具
+
+
+### Child Theme Wizard {#child-theme-wizard}
+
+
+### Woocommerce {#woocommerce}
+
+
+### envato Market {#envato-market}
+
+[安装 Themeforest 的主题.](https://www.qingsongb2c.com/how-to-install-themes-from-themeforest/)
+
+
+### Translate WordPress with GTranslate {#translate-wordpress-with-gtranslate}
+
+-   多语言版本切换插件
+-   设置： 登入 WordPress 后台 &gt;&gt; 设置 &gt;&gt; GTranslate
+-   使用： 登入 WordPress 后台 &gt;&gt; 外观 &gt;&gt; 小工具，找到 GTranslate 并将其添加到相应侧边栏
+
+
+### Weglot {#weglot}
+
+rft
+
+
+### WP Super Cache {#wp-super-cache}
+
+
+### Bfoken Link Checker {#bfoken-link-checker}
+
+该插件会检测到您网站上无法正常工作的链接，并在网站后台和邮件中通知您。
+
+
+### really simple ssl {#really-simple-ssl}
+
+网站以 https 开头的
+
+
+### wp hide login {#wp-hide-login}
+
+隐藏网站后台登入网址的。
 
 
 ## Notes {#notes}

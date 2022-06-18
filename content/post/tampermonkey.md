@@ -1,8 +1,9 @@
 ---
 title: "Tampermonkey"
-lastmod: "2022-04-30 12:48:42"
+date: "2022-04-30 21:08:00"
+lastmod: "2022-06-01 23:42:48"
 categories: ["Tools"]
-draft: true
+draft: false
 ---
 
 ## Ref {#ref}

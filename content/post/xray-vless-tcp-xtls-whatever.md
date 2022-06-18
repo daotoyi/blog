@@ -2,7 +2,7 @@
 title: "Xray+XTLS+VLESS 终极配置"
 description: "VLESS over TCP with XTLS + fullbacks(回落&分流) to WHATEVER"
 date: "2022-04-10 22:15:00"
-lastmod: "2022-04-30 12:50:49"
+lastmod: "2022-05-08 16:22:33"
 tags: ["Xray"]
 categories: ["VPS"]
 draft: false
@@ -23,8 +23,7 @@ draft: false
 ```js
 // REFERENCE:
 // https://github.com/XTLS/Xray-examples
-// https://xtls.github.io/config/
-
+// https://xtls.github.io/config
 // 常用的config文件，不论服务器端还是客户端，都有5个部分。外加小小白解读：
 // ┌─ 1_log          日志设置 - 日志写什么，写哪里（出错时有据可查）
 // ├─ 2_dns          DNS-设置 - DNS怎么查（防DNS污染、防偷窥、避免国内外站匹配到国外服务器等）
@@ -138,3 +137,9 @@ draft: false
 > XTLS only supports TCP, mKCP and DomainSocket for now
 
 这是因为 WS 协议需要 **首先建立 HTTP 请求，然后才升级为 WS 连接** 。如果第一次请求就使用 XTLS 加密，CDN 或者 Nginx 等中间件无法识别该加密协议，将直接作为无效请求处理。
+
+
+## Ref {#ref}
+
+-   [!!!Nginx SNI分流（端口复用）使用Xray+VLESS+XTLS](https://qoant.com/2021/05/xray-nginx-sni/)
+-   [XTROJAN黑科技-xray](https://xtrojan.net/tag/xray/page/2)

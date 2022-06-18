@@ -1,7 +1,7 @@
 ---
 title: "Docker Watchtower"
 date: "2022-04-04 08:30:00"
-lastmod: "2022-04-30 12:25:05"
+lastmod: "2022-05-15 00:29:42"
 categories: ["Docker"]
 draft: false
 ---

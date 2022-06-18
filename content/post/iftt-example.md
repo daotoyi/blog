@@ -1,7 +1,7 @@
 ---
 title: "IFTTT"
 date: "2022-03-17 19:30:00"
-lastmod: "2022-04-30 12:48:24"
+lastmod: "2022-05-02 20:19:11"
 categories: ["Tools"]
 draft: false
 ---
@@ -71,4 +71,5 @@ curl -X POST https://maker.ifttt.com/trigger/{event}/with/key/bMhBKbwkXMxADTWok2
 
 ## Ref {#ref}
 
+-   [官网](https://ifttt.com/explore)
 -   [王掌柜带你玩转 Zapier - Zapier vs. IFTTT](https://sspai.com/post/39258)

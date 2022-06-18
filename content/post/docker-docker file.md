@@ -1,7 +1,7 @@
 ---
 title: "Docker Dockerfile"
 date: "2022-04-05 15:32:00"
-lastmod: "2022-05-01 18:41:37"
+lastmod: "2022-05-13 08:41:35"
 categories: ["Docker"]
 draft: false
 ---
@@ -53,8 +53,8 @@ CMD /usr/sbin/nginx
 ```bash
 # docker image build  -t image .
 docker build  -t ImageName:TagName dir
+
 docker build github.com/creack/docker-firefox
-docker build -f /path/to/a/Dockerfile .
 ```
 
 -   -f - 指定构建镜像的 Dockerfile 文件（Dockerfile 可不在当前路径下）
@@ -113,6 +113,9 @@ docker network list
 -   CMD command param1 param2 ： 在 /bin/sh 中执行，提供给需要交互的应用；
 
 指定启动容器时执行的命令，每个 Dockerfile 只能有一条 CMD 命令。如果指定了多条命令，只有最后一条会被执行。
+
+
+#### diff {#diff}
 
 
 ### WORKDIR {#workdir}

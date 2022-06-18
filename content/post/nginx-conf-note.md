@@ -1,12 +1,15 @@
 ---
 title: "Nginx"
 date: "2022-04-04 23:44:00"
-lastmod: "2022-04-30 12:35:31"
+lastmod: "2022-05-21 12:53:09"
 categories: ["Internet"]
 draft: false
 ---
 
 ## instoducton {#instoducton}
+
+
+### template {#template}
 
 ```cfg
 worker_processes  1;
@@ -145,6 +148,53 @@ http {
 ```
 
 
+## [general parameter](https://www.runoob.com/w3cnote/nginx-setup-intro.html) {#general-parameter}
+
+1.  $remote_addr 与 $http_x_forwarded_for 用以记录客户端的 ip 地址；
+2.  $remote_user ：用来记录客户端用户名称；
+3.  $time_local ： 用来记录访问时间与时区；
+4.  $request ： 用来记录请求的 url 与 http 协议；
+5.  $status ： 用来记录请求状态；成功是 200；
+6.  $body_bytes_s ent ：记录发送给客户端文件主体内容大小；
+7.  $http_referer ：用来记录从那个页面链接访问过来的；
+8.  $http_user_agent ：记录客户端浏览器的相关信息；
+
+
+## proxy_set_header {#proxy-set-header}
+
+```cfg
+location /wss
+    {
+        proxy_pass http://127.0.0.1:8888;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+        proxy_set_header X-Real-IP $remote_addr;
+
+        proxy_set_header Host $host:$server_port;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        echo "test.com";    # 输出测试
+    }
+```
+
+[Nginx proxy_set_header Host $host 和 proxy_set_header Host $http_host](https://www.jianshu.com/p/7a8a7eb3707a)
+
+-   /wss 这个是随便起的,告诉 Nginx 要代理的 url
+-   proxy_pass 要代理到的 url, 代理到本机的 8888 端口。
+    -   当我访问的我的服务器 `https://xxx.com/wss` 时,Nginx 会把请求映射到本机的 8888 端口。
+-   proxy_http_version 代理时使用的 http 版本
+-   proxy_set_header Upgrade 把代理时 http 请求头的 Upgrade 设置为原来 http 请求的请求头
+    -   wss 协议的请求头为 websocket
+-   proxy_set_header Connection 因为代理的 wss 协议,所以 http 请求头的 Connection 设置为 Upgrade
+-   proxy_set_header X-Real-IP 给代理设置原 http 请求的 ip(客户端真实 ip)
+-   proxy_set_header X-Forwarded-For 客户端真实 ip
+-   proxy_set_header Host (host-&gt; 访问 nginx 时返回:
+    -   $http_host          -&gt; $host:$server_port
+    -   $host               -&gt; 只返回 host
+    -   $host:$server_port  -&gt; listen port
+    -   $host:$proxy_port   -&gt; proxy_pass port
+
+
 ## proxy {#proxy}
 
 
@@ -251,7 +301,7 @@ server {
       }
       ## 通过客户端请求头信息
       proxy_pass_request_headers on;
-      ## 保留客户端的真实信息
+      ## 保留客户端的真实(ip etc.)信息
       proxy_set_header Host $host;
       proxy_set_header X-Real_IP $remote_addr;
       proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
@@ -288,6 +338,13 @@ location ~* .(gif|jpg|jpeg)$ {
   # 匹配以 gif, jpg, or jpeg结尾的请求.
 }
 ```
+
+
+## proxy multiport {#proxy-multiport}
+
+-   [Nginx单服务器部署多个网站，域名](https://blog.csdn.net/yaologos/article/details/113356620)(server)
+-   [Nginx配置——单域名反向代理多个端口](https://www.jianshu.com/p/5bc9cd2271b1)(location)
+-   [nginx代理 1个端口+路径匹配 代理多个web](https://blog.csdn.net/weixin_48215755/article/details/122713914)(location)
 
 
 ## load balancing {#load-balancing}
@@ -337,5 +394,6 @@ nginx -s quit
 
 ## Ref {#ref}
 
+-   [Nginx 配置详解](https://www.runoob.com/w3cnote/nginx-setup-intro.html)
 -   [Nginx配置文件详解](https://www.cnblogs.com/54chensongxia/p/12938929.html)
 -   [nginx.conf的结构和基础配置解析](https://www.jianshu.com/p/1037e6929f54)

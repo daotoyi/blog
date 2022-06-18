@@ -1,7 +1,7 @@
 ---
 title: "v2ray 笔记"
 date: "2022-03-05 17:20:00"
-lastmod: "2022-04-30 12:50:19"
+lastmod: "2022-05-07 12:42:25"
 tags: ["v2ray"]
 categories: ["VPS"]
 draft: false
@@ -826,6 +826,7 @@ geoip:private，包含所有私有地址，如 127.0.0.1（本条规则仅支持
 -   VMess 协议的认证基于时间，一定要保证服务器和客户端的系统时间相差要在一分钟以内。
 -   在 V2Ray 中，星号 \* 不具备通配符的意义，只是一个普通的字符而已
 -   sniffing (V2Ray 3.32+): 尝试探测流量类型。
+    -   将入䇂流量中的 ip 嗅探为域名。[ref](https://xtls.github.io/Xray-docs-next/en/config/inbound.html#inboundobject)
     -   enabled: 是否开启流量探测。
     -   destOverride: 当流量为指定类型时，按其中包括的目标地址重置当前连接的目标。
     -   可选值为 "http" 和 "tls"。

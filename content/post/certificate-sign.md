@@ -1,7 +1,7 @@
 ---
 title: "SSL 证书签发"
 date: "2022-04-04 18:52:00"
-lastmod: "2022-04-30 12:34:34"
+lastmod: "2022-05-19 08:37:42"
 categories: ["Internet"]
 draft: false
 ---
@@ -103,6 +103,13 @@ curl https://get.acme.sh | sh
 
 ### useage {#useage}
 
+acme 使用 ZeroSSL，不注册账户会提示错误
+
+> No EAB credentials found for ZeroSSL, let’s get one
+
+注册账号：
+`acme.sh --register-account -m 邮箱地址`
+
 ```bash
 # 已经运行了web软件，指定webroot即可签发证书
 ~/.acme.sh/acme.sh --issue -d 域名 --webroot web目录
@@ -116,9 +123,22 @@ curl https://get.acme.sh | sh
 # 重新生成证书,每60天自动重新生成
 acme.sh --renew -d www.psvmc.cn --force
 
+# 泛域名, dns方式十分适合用于生成泛解析证书
+# 1)
+./acme.sh --issue -d *.example.com  --dns --yes-I-know-dns-manual-mode-enough-go-ahead-please
+# 2) 在域名解析中添加TXT记录
+# https://upload-images.jianshu.io/upload_images/16254840-ed60c32b87967f76.png?imageMogr2/auto-orient/strip|imageView2/2/w/1114/format/webp
+# 3)
+./acme.sh --renew -d *.example.com  --yes-I-know-dns-manual-mode-enough-go-ahead-please
+
 # 开启自动升级
 acme.sh  --upgrade  --auto-upgrade
 acme.sh --upgrade  --auto-upgrade  0 # close
+
+# basic manager
+acme.sh --list
+acme.sh --remove -d example.com
+acme.sh --uninstall
 ```
 
 
@@ -127,10 +147,12 @@ acme.sh --upgrade  --auto-upgrade  0 # close
 申请好证书的证书位于~/.acme.sh 目录内，不建议直接使用，而是将其安装到指定目录
 
 ```bash
+# ~/.acme.sh/acme.sh --install-cert -d 域名 --key-file  /xxx --fullchain-file /xxx
+
 ~/.acme.sh/acme.sh --install-cert -d 域名 \
---key-file       密钥存放目录  \
---fullchain-file 证书存放路径 \
---reloadcmd     "service nginx force-reload"
+                   --key-file       密钥存放目录  \
+                   --fullchain-file 证书存放路径 \
+                   --reloadcmd     "service nginx force-reload"
 # 可选的，用来安装好证书后重启web服务器
 ```
 
@@ -143,5 +165,35 @@ acme.sh --upgrade  --auto-upgrade  0 # close
 
 ```bash
 acme.sh --register-account -m my@example.com
-acme.sh --set-default-ca --server letsencrypt
+#? acme.sh --set-default-ca --server letsencrypt
 ```
+
+**Nginx 的配置 ssl_certificate 使用 fullchain.cer ，而非 &lt;domain&gt;.cer ，否则 SSL Labs 的测试会报 Chain issues Incomplete 错误。**
+
+
+## [SSL证书申请与配置acme.sh和certbot](https://page.syao.fun/2020/09/11/web_caddy.html) {#ssl证书申请与配置acme-dot-sh和certbot}
+
+由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用--test 参数可以有效避免因短时间内申请次数过多而失败。
+
+
+## [使用Let's Encrypt的acme.sh申请泛域名证书](https://www.psay.cn/toss/126.html) {#使用let-s-encrypt的acme-dot-sh申请泛域名证书}
+
+
+## [acme.h 通配符证书](https://xtls.github.io/Xray-docs-next/document/level-1/fallbacks-with-sni.html#%E7%94%B3%E8%AF%B7-tls-%E8%AF%81%E4%B9%A6) {#acme-dot-h-通配符证书}
+
+要对不同前缀的域名进行分流，但一个通配符证书的作用域仅限于两“.”之间（例如：申请 **.example.com，example.com 和 \*.**.example.com 并不能使用该证书），故需申请 SAN 通配符证书。根据 Let's Encrypt 官网信息[1]，申请通配符证书要求 DNS-01 验证方式，此处演示 NS 记录为 Cloudflare 的域名通过 acme.sh 申请 Let's Encrypt 的免费 TLS 证书。使用其他域名托管商的申请方法请阅读 dnsapi · acmesh-official/acme.sh Wiki。
+
+```bash
+curl https://get.acme.sh | sh # 安装 acme.sh
+export CF_Token="sdfsdfsdfljlbjkljlkjsdfoiwje" # 设定 API Token 变量
+acme.sh --issue -d example.com -d *.example.com --dns dns_cf # 使用 DNS-01 验证方式申请证书
+mkdir /etc/ssl/xray # 新建证书存放目录
+acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --key-file /etc/ssl/xray/privkey.key --reloadcmd "chown nobody:nogroup -R /etc/ssl/xray && systemctl restart xray" # 安装证书到指定目录并设定自动续签生效指令
+```
+
+> 以下操作需要在 root 用户下进行，使用 sudo 会出现错误。
+
+
+## Ref {#ref}
+
+-   [Let's Encrypt 官网信息](https://letsencrypt.org/zh-cn/docs/faq/)

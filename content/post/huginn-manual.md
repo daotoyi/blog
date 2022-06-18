@@ -1,8 +1,9 @@
 ---
 title: "Huginn 笔记"
 date: "2022-02-27 08:19:00"
-lastmod: "2022-04-30 12:47:08"
-categories: ["RSS"]
+lastmod: "2022-05-13 08:18:46"
+tags: ["RSS"]
+categories: ["VPS"]
 draft: false
 ---
 

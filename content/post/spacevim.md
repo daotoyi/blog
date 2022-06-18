@@ -1,7 +1,7 @@
 ---
 title: "SpaceVim"
 date: "2022-04-28 20:59:00"
-lastmod: "2022-04-30 12:49:44"
+lastmod: "2022-05-15 23:07:48"
 categories: ["VIm"]
 draft: false
 ---
@@ -11,7 +11,7 @@ draft: false
 ```bash
 curl -sLf https://spacevim.org/cn/install.sh | bash
 
-git clone https://github.com/daotoyi/SpaceVim.d ~/
+git clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.d
 ln -s  ~/.SpceVim.d/autoload/dylayer.vim  ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim
 ```
 

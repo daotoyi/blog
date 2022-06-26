@@ -6,10 +6,55 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jun 2022 16:48:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jun 2022 18:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker Network</title>
+      <link>https://daotoyi.github.io/post/docker-network/</link>
+      <pubDate>Sat, 25 Jun 2022 18:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-network/</guid>
+      <description>容器间网络互通 容器间要能相互通信，需要同在一个网络中。 docker 容器在创建时若不指定网络驱动时会默认归属到 bridge 网络。 使用 docker inspect 指令查看两个容器是否同属一</description>
+    </item>
+    
+    <item>
+      <title>Linux Compile Install Openssh/Openssl</title>
+      <link>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</link>
+      <pubDate>Sat, 25 Jun 2022 16:13:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</guid>
+      <description>download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ steps 1 2 3 4 5 6 7 mkdir /opt/sshbak &amp;amp;&amp;amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;amp;&amp;amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref Linux升级OpenSSH和OpenSSL</description>
+    </item>
+    
+    <item>
+      <title>Linux chroot(mount –bind | mount namespaces)</title>
+      <link>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</link>
+      <pubDate>Sat, 25 Jun 2022 16:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</guid>
+      <description>chroot 切换根文件系统并运行进程 ,可以改变一个进程的根目录. Bind Mount 可以将一个目录或文件映射到别处，可以跨越不同的卷。 mount &amp;ndash;bind 命令是将前一个目录挂载到后一</description>
+    </item>
+    
+    <item>
+      <title>Git/GitHub/GitLab</title>
+      <link>https://daotoyi.github.io/post/git-github-gitlab/</link>
+      <pubDate>Thu, 23 Jun 2022 15:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-github-gitlab/</guid>
+      <description>简介 Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Sat, 18 Jun 2022 15:57:26 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
     
     <item>
       <title>Linux yum/dnf 配置</title>
@@ -36,15 +81,6 @@
       
       <guid>https://daotoyi.github.io/post/git-tag/</guid>
       <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bashttps://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git tag</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Mon, 23 May 2022 10:29:59 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>

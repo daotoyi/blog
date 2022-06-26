@@ -6,10 +6,19 @@
     <description>Recent content in Github on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Jun 2022 21:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jun 2022 15:20:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git/GitHub/GitLab</title>
+      <link>https://daotoyi.github.io/post/git-github-gitlab/</link>
+      <pubDate>Thu, 23 Jun 2022 15:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-github-gitlab/</guid>
+      <description>简介 Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持</description>
+    </item>
     
     <item>
       <title>Git tag</title>

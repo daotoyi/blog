@@ -6,10 +6,19 @@
     <description>Recent content in VPS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jun 2022 23:14:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jun 2022 15:57:26 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Sat, 18 Jun 2022 15:57:26 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
     
     <item>
       <title>VPS | Shared Hosting</title>
@@ -18,15 +27,6 @@
       
       <guid>https://daotoyi.github.io/post/vps-vs-shared-hosting/</guid>
       <description>vps与共享虚拟主机(Shared Hosting)的区别 VPS 拥有与实体服务器一样的用户体验 Shared Hosting 共享进程、共享内存 某一个站点有 bug,或者严重消</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Mon, 23 May 2022 10:29:59 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>

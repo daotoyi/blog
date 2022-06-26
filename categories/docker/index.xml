@@ -6,10 +6,19 @@
     <description>Recent content in Docker on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Apr 2022 14:22:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jun 2022 18:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker Network</title>
+      <link>https://daotoyi.github.io/post/docker-network/</link>
+      <pubDate>Sat, 25 Jun 2022 18:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-network/</guid>
+      <description>容器间网络互通 容器间要能相互通信，需要同在一个网络中。 docker 容器在创建时若不指定网络驱动时会默认归属到 bridge 网络。 使用 docker inspect 指令查看两个容器是否同属一</description>
+    </item>
     
     <item>
       <title>Docker Compose config</title>

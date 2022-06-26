@@ -1,7 +1,7 @@
 ---
 title: "Selinux"
 date: "2022-04-15 14:46:00"
-lastmod: "2022-04-30 12:45:42"
+lastmod: "2022-06-25 15:56:56"
 categories: ["Linux"]
 draft: false
 ---

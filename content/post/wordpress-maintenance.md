@@ -1,7 +1,7 @@
 ---
 title: "WorPress 运维"
 date: "2022-05-23 10:29:00"
-lastmod: "2022-06-13 07:42:13"
+lastmod: "2022-06-20 10:16:29"
 categories: ["VPS"]
 draft: false
 ---
@@ -125,25 +125,6 @@ define("FS_CHMOD_FILE", 0777);
 ## [apache2 wordpress建站并设置https访问](http://fisherlee.github.io/2018-09-26/apache2-wp-https/) {#apache2-wordpress建站并设置https访问}
 
 
-## Avatar {#avatar}
-
-
-### [如何通过Gravatar设置WordPress博客头像](https://www.wbolt.com/how-to-set-avatar-for-wordpress.html) {#如何通过gravatar设置wordpress博客头像}
-
-
-### [WordPress用户资料添加自定义用户头像功能](https://www.wpdaxue.com/wordpress-custom-avatar.html) {#wordpress用户资料添加自定义用户头像功能}
-
-
-### [如何修改WordPress的用户默认头像？](http://tencent.yundashi168.com/593.html) {#如何修改wordpress的用户默认头像}
-
-
-### Gravatar 头像不生效 {#gravatar-头像不生效}
-
--   注册的电子邮件地址不同-如果在 Gravatar 中注册的电子邮件地址和 WordPress 中设置的电子邮件地址不同，则无法显示 Gravatar 的头像。
--   设置了头像隐藏-如果你在 WordPress 仪表盘的“设置-讨论”中将头像显示的确认勾取消了，则头像也是不会显示的。
--   Gravatar 头像需要一定时间更新-如果你是才设置的 Gravatar 头像，则需要等 10 分服务器来更新数据。
-
-
 ## nginx 代理容器访问 wordpress 容器 {#nginx-代理容器访问-wordpress-容器}
 
 
@@ -258,6 +239,50 @@ RewriteRule ^(.*)$ https://metacover.tk/home/ [L,R=301]
 ### Ref {#ref}
 
 -   [通过重定向把子目录设置为网站根目录](https://www.xinyueseo.com/jianzhan/531.html)
+
+
+## MailPoet Error: MailPoet requires a PDO_MYSQL PHP extension {#mailpoet-error-mailpoet-requires-a-pdo-mysql-php-extension}
+
+```bash
+docker exec -it php-name /bin/bash
+docker-php-ext-install pdo pdo_mysql
+```
+
+
+### 查看 phpinfo {#查看-phpinfo}
+
+-   phpinfo 是一个运行指令，为显示 php 服务器的配置信息。实际上它就是 PHP 自带的一个函数，用来检测 PHP 各种环境的。
+-   创建 phpinfo.php 这样一个文件，里面写上规定的代码，就可以通过访问这个文件来显示出当前服务器 PHP 的配置信息。
+-   在网站根目录写个 phpinfo.php 文件，内容为
+
+    ```php
+    <?php
+      phpinfo();
+    ?>
+    ```
+-   再访问<http://localhost>[domain]/phpinfo.php
+
+
+### WP-docker + Mariadb-docker 只需要在 wp-docekr 增加 pdo-mysql 的支持. {#wp-docker-plus-mariadb-docker-只需要在-wp-docekr-增加-pdo-mysql-的支持-dot}
+
+
+## Avatar {#avatar}
+
+
+### [如何通过Gravatar设置WordPress博客头像](https://www.wbolt.com/how-to-set-avatar-for-wordpress.html) {#如何通过gravatar设置wordpress博客头像}
+
+
+### [WordPress用户资料添加自定义用户头像功能](https://www.wpdaxue.com/wordpress-custom-avatar.html) {#wordpress用户资料添加自定义用户头像功能}
+
+
+### [如何修改WordPress的用户默认头像？](http://tencent.yundashi168.com/593.html) {#如何修改wordpress的用户默认头像}
+
+
+### Gravatar 头像不生效 {#gravatar-头像不生效}
+
+-   注册的电子邮件地址不同-如果在 Gravatar 中注册的电子邮件地址和 WordPress 中设置的电子邮件地址不同，则无法显示 Gravatar 的头像。
+-   设置了头像隐藏-如果你在 WordPress 仪表盘的“设置-讨论”中将头像显示的确认勾取消了，则头像也是不会显示的。
+-   Gravatar 头像需要一定时间更新-如果你是才设置的 Gravatar 头像，则需要等 10 分服务器来更新数据。
 
 
 ## compose.yaml {#compose-dot-yaml}

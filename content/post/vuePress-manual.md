@@ -1,6 +1,6 @@
 ---
 title: "Vuepress 使用小结"
-lastmod: "2022-05-23 10:29:59"
+lastmod: "2022-06-18 15:57:26"
 tags: ["Vuepress"]
 categories: ["VPS"]
 draft: false
@@ -99,7 +99,9 @@ docs/scripts/deploy.sh
 
 #### Github Action 部署 {#github-action-部署}
 
-example1
+-   example1
+
+<!--listend-->
 
 ```yaml
 # name 可以自定义

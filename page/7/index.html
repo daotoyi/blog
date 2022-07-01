@@ -126,6 +126,75 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/python-json-export-chinese-formate/">Josn 格式化输入中文</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-16 </span>
+      <div class="post-category">
+          <a href="/categories/python/"> Python </a>
+          </div>
+        <span class="more-meta"> 184 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      code 1 2 3 4 5 import json dic = {&#39;a&#39;: &#39;a&#39;, &#39;b&#39;: 2, &#39;c&#39;: &#34;中文&#34;} js = json.dumps(dic, sort_keys=True, indent=4, separators=(&#39;,&#39;, &#39;:&#39;), ensure_ascii=False) print(js) sort_keys：是否按照字典排序（a-z）输出 indent=4
+    </div>
+    <div class="read-more">
+      <a href="/post/python-json-export-chinese-formate/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/python-jupyter-lab/">Jupyter Notebook/Lab</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-16 </span>
+      <div class="post-category">
+          <a href="/categories/python/"> Python </a>
+          </div>
+        <span class="more-meta"> 67 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      notebook lab 1 2  pip install jupyterlabjupyter lab  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  rem echo off @echo offif &#34;%1&#34;==&#34;h&#34; goto begin start mshta vbscript:createobject(&#34;wscript.shell&#34;).run(&#34;&#34;&#34;%~nx0&#34;&#34; h&#34;,0)(window.close)&amp;&amp;exit:begin e:cd Refine\Python\Jupyterrem activate base rem manual start jupyterLab, `activate base` needed rem in jupyterlab.bat, if activate, it will not work. ::.
+    </div>
+    <div class="read-more">
+      <a href="/post/python-jupyter-lab/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/linux-ld-linux.so/">Linux 动态链接器</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-16 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          </div>
+        <span class="more-meta"> 1068 words </span>
+        <span class="more-meta"> 3 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所
+    </div>
+    <div class="read-more">
+      <a href="/post/linux-ld-linux.so/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/make-cmake-qmake/">make, cmake, qmake</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-15 </span>
@@ -166,75 +235,6 @@
     </div>
     <div class="read-more">
       <a href="/post/linux-cmd-ag/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-selinux/">Selinux</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-15 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 211 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1 2 3 4 5 6 7 8 9 10 11 12 ## Reahdet # 查看SELinux状态： /usr/sbin/sestatus -v # SELinux status: enabled # or getenforce # 关闭SELinux： # 临时关闭（不用重启机器）： setenforce 0 # 设置SELi
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-selinux/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux/">Ref</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-15 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 27 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      多个gcc/glibc版本的共存及指定gcc版本的编译
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-oh-my-zsh/">Linux oh-my-zsh</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-15 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 99 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      zsh 1 2 3 4 5 6  apt install zshyum/dnf install zshpacman -S zsh# change default terminalchsh -s /usr/bin/zsh  oh-my-zsh 1 2 3 4 5 6 7 8 9 10  sh -c &#34;$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&#34;source ~/.zshrc# plugins$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git$ mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting# $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/$ echo &#34;plugins=(zsh-syntax-highlighting)&#34; &gt;&gt;　~/.zshrc$ source ~/.zshrc  root user 1 2  sudo ln -s $HOME/.
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-oh-my-zsh/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

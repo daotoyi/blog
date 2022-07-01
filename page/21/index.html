@@ -126,6 +126,75 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/v2ray-websocket-nginx-cnd-tsl/">v2ray 搭建笔记</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-05 </span>
+      <div class="post-category">
+          <a href="/categories/vps/"> VPS </a>
+          </div>
+        <span class="more-meta"> 2775 words </span>
+        <span class="more-meta"> 6 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) startup 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+    </div>
+    <div class="read-more">
+      <a href="/post/v2ray-websocket-nginx-cnd-tsl/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/google-cloud-platform/">GCP 笔记</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-05 </span>
+      <div class="post-category">
+          <a href="/categories/vps/"> VPS </a>
+          </div>
+        <span class="more-meta"> 192 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      GCP（Google Cloud Platform）入门 防火墙 建站之后若无法访问, 可能需要设置防火墙规则(入站防火墙)(GCP 建站及配置). 流量方向是：
+    </div>
+    <div class="read-more">
+      <a href="/post/google-cloud-platform/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/v2ray-manual/">v2ray 笔记</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-05 </span>
+      <div class="post-category">
+          <a href="/categories/vps/"> VPS </a>
+          </div>
+        <span class="more-meta"> 6603 words </span>
+        <span class="more-meta"> 14 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu
+    </div>
+    <div class="read-more">
+      <a href="/post/v2ray-manual/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/domain-instruction/">Domain name 域名概念</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-03-05 </span>
@@ -166,75 +235,6 @@
     </div>
     <div class="read-more">
       <a href="/post/edge-access-extension/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker-daemon/">Docker daemon</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-03 </span>
-      <div class="post-category">
-          <a href="/categories/docker/"> Docker </a>
-          </div>
-        <span class="more-meta"> 263 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      startup error 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # systemctl status docker ● docker.service - Docker Application Container Engine Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled) Active: failed (Result: exit-code) since Wed 2022-03-02 13:52:17 UTC; 2min 57s ago Docs: https://docs.docker.com Process: 8646 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock (code=exited, status=1/FAILURE) Main PID: 8646 (code=exited, status=1/FAILURE) Mar 02 13:52:17 instance-1 systemd[1]: docker.service: Service hold-off time
-    </div>
-    <div class="read-more">
-      <a href="/post/docker-daemon/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker-remote-access/">Docker 远程访问</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-03 </span>
-      <div class="post-category">
-          <a href="/categories/docker/"> Docker </a>
-          </div>
-        <span class="more-meta"> 638 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      默认情况下，Docker 守护进程会生成一个 socket 文件来进行本地进程通信，而不会监听任何端口，因此只能在本地使用 docker 客户端或者使用 Docker API 进行操作。 如果
-    </div>
-    <div class="read-more">
-      <a href="/post/docker-remote-access/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/system-port/">System Port</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-02 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 287 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      netstat 提供有关网络连接的信息. netstat -tunlp -t：显示 TCP 端口。 -u：显示 UDP 端口。 -n：显示数字地址而不是解析主机。 -l：仅显示侦听端口。 -p：显示监听器进
-    </div>
-    <div class="read-more">
-      <a href="/post/system-port/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

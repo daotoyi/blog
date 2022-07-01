@@ -6,10 +6,19 @@
     <description>Recent content in Python on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Apr 2022 20:56:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jul 2022 11:53:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cython</title>
+      <link>https://daotoyi.github.io/post/python-cython/</link>
+      <pubDate>Fri, 01 Jul 2022 11:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-cython/</guid>
+      <description>需求背景 不得不编写一些多重嵌套的循环，C 语言来实现会快上百倍 至少在数字计算方面，能够加入可选的静态类型，这样可以极大地加速运算效果。 对于一些</description>
+    </item>
     
     <item>
       <title>Python 装饰器高级版</title>

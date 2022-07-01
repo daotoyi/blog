@@ -1,10 +1,11 @@
 ---
-title: "Hugo 使用 orgmode"
+title: "Hugo 使用 orgmode(ox-hugo)"
 date: "2022-02-01 08:37:00"
-lastmod: "2022-04-30 12:50:03"
+lastmod: "2022-06-29 12:12:04"
 tags: ["Hugo"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## 简述 {#简述}
@@ -144,6 +145,50 @@ spacemacs 添加脚注的快捷键是 `, i f` 。
 {{< figure src="https://kangxiaoning.github.io/images/emacs/org-entities-help.png" >}}
 
 </div>
+
+
+## 隐藏 todo 时间戳 {#隐藏-todo-时间戳}
+
+在切换任务状态时，会有活动状态变更 log 记录，在 ox-hugo 导出时，这些记录显示会显示网页中.
+
+设置属性,保留这些记录，导出时，ox-hugo 又可以忽略这些记录
+
+```org
+:PROPERTIES:
+:LOG_INTO_DRAWER: t
+:END
+```
+
+当该属性开启状态时，日志信息会自动添加到 LOGBOOK 中，此时在执行导出，状态记录会被自动忽略。
+
+
+### Ref {#ref}
+
+-   [隐藏todo 状态转换之后的时间戳的方法](https://it-boyer.github.io/post/%E5%8D%9A%E5%AE%A2%E7%AB%99%E5%8A%A1/ox-hugo%E5%B7%A5%E5%85%B7%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF/#%E5%AF%BC%E5%87%BA%E6%97%B6todo-%E7%8A%B6%E6%80%81%E9%9A%90%E8%97%8F%E7%9A%84%E9%97%AE%E9%A2%98)
+
+
+## 头部文件说明 {#头部文件说明}
+
+```org
+# -*- mode: snippet -*-
+# name: hugo_blog
+# key: <hugo
+# --
+
+#+OPTIONS: author:nil ^:{}
+#+hugo_front_matter_format: yaml
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: posts/`(format-time-string "%Y/%m")`
+#+DATE: `(format-time-string "[%Y-%m-%d %a %H:%M]")`
+#+HUGO_CUSTOM_FRONT_MATTER: :toc true
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: $1
+#+HUGO_CATEGORIES: $2
+#+HUGO_DRAFT: false
+#+TITLE: $3
+
+$0
+```
 
 
 ## Hugo {#hugo}

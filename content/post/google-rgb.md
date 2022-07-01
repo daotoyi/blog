@@ -1,7 +1,7 @@
 ---
 title: "Google RGB"
 date: "2022-04-07 17:52:00"
-lastmod: "2022-04-30 12:35:56"
+lastmod: "2022-07-01 12:20:04"
 categories: ["Internet"]
 draft: false
 ---

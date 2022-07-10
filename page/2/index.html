@@ -126,6 +126,29 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/linux-compile-openssh-and-openssl/">Linux Compile Install Openssh/Openssl</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-06-25 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          </div>
+        <span class="more-meta"> 61 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ steps 1 2 3 4 5 6 7 mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref Linux升级OpenSSH和OpenSSL
+    </div>
+    <div class="read-more">
+      <a href="/post/linux-compile-openssh-and-openssl/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/chroot-mount-bind-and-namespaces/">Linux chroot(mount –bind | mount namespaces)</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-06-25 </span>
@@ -166,29 +189,6 @@
     </div>
     <div class="read-more">
       <a href="/post/git-github-gitlab/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/vuepress-manual/">Vuepress 使用小结</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-06-18 </span>
-      <div class="post-category">
-          <a href="/categories/vps/"> VPS </a>
-          </div>
-        <span class="more-meta"> 1122 words </span>
-        <span class="more-meta"> 3 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress
-    </div>
-    <div class="read-more">
-      <a href="/post/vuepress-manual/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

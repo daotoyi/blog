@@ -1,10 +1,11 @@
 ---
 title: "Xray 笔记"
 date: "2022-04-10 22:15:00"
-lastmod: "2022-05-08 23:45:57"
+lastmod: "2022-07-10 12:56:29"
 tags: ["Xray"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## install {#install}

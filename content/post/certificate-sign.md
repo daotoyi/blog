@@ -1,7 +1,8 @@
 ---
 title: "SSL 证书签发"
 date: "2022-04-04 18:52:00"
-lastmod: "2022-05-19 08:37:42"
+lastmod: "2022-07-06 18:36:31"
+tags: ["SSL", "Cert"]
 categories: ["Internet"]
 draft: false
 ---
@@ -142,6 +143,30 @@ acme.sh --uninstall
 ```
 
 
+### generated {#generated}
+
+完成后会给出证书的位置:
+
+```bash
+[Thu Sep 10 03:38:21 EDT 2020] Your cert is in  /home/user/.acme.sh/my.domain.com/my.domain.com.cer
+[Thu Sep 10 03:38:21 EDT 2020] Your cert key is in  /home/user/.acme.sh/my.domain.com/my.domain.com.key
+[Thu Sep 10 03:38:21 EDT 2020] The intermediate CA cert is in  /home/user/.acme.sh/my.domain.com/ca.cer
+[Thu Sep 10 03:38:21 EDT 2020] And the full chain certs is there:  /home/user/.acme.sh/my.domain.com/fullchain.cer
+```
+
+文件说明：
+
+-   ca.cer：Let’s Encrypt 的中级证书
+-   fullchain.cer：包含中级证书的域名证书
+-   my.domain.com.cer：无中级证书的域名证书
+-   my.domain.com.conf：该域名的配置文件
+-   my.domain.com.csr：该域名的 CSR 证书请求文件
+-   my.domain.com.csr.conf：该域名的 CSR 请求文件的配置文件
+-   my.domain.com.key：该域名证书的私钥
+
+> 在使用 acme.sh  -issue -d domain --webroot xxx [--standalone]时生成证书失败. 通过手动注册 ZeroSSL 并申请 domain 证书后, 再执行 OK.
+
+
 ### certificate install {#certificate-install}
 
 申请好证书的证书位于~/.acme.sh 目录内，不建议直接使用，而是将其安装到指定目录
@@ -175,6 +200,8 @@ acme.sh --register-account -m my@example.com
 
 由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用--test 参数可以有效避免因短时间内申请次数过多而失败。
 
+**acme.sh 在 V3.00 之后默认服务器更换为 ZeroSSL, 不存在短期内申请次数过多而申请受限的问题.**
+
 
 ## [使用Let's Encrypt的acme.sh申请泛域名证书](https://www.psay.cn/toss/126.html) {#使用let-s-encrypt的acme-dot-sh申请泛域名证书}
 
@@ -192,6 +219,9 @@ acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --
 ```
 
 > 以下操作需要在 root 用户下进行，使用 sudo 会出现错误。
+
+
+## [Github Action 部署 acme.sh 全自动批量签发多域名证书教程](https://www.ioiox.com/archives/104.html) {#github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程}
 
 
 ## Ref {#ref}

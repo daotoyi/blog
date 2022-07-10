@@ -1,9 +1,10 @@
 ---
 title: "Vuepress 使用小结"
-lastmod: "2022-06-18 15:57:26"
+lastmod: "2022-07-05 21:47:18"
 tags: ["Vuepress"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2022-03-26 周六 21:13]</span></span>

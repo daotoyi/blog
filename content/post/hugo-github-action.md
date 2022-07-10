@@ -1,10 +1,11 @@
 ---
 title: "Hugo 使用 Github Action 使用"
 date: "2022-03-13 23:24:00"
-lastmod: "2022-04-30 12:50:11"
+lastmod: "2022-07-05 21:48:31"
 tags: ["Hugo"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## Useage {#useage}
@@ -70,3 +71,4 @@ git add themes/hugo-book
 ## Reference {#reference}
 
 -   [GitHub Actions 入门教程-自动部署静态博客](https://zhuanlan.zhihu.com/p/364366127)
+-   [GitHub Actions入门教程：自动化部署静态博客](https://somenzz.gitee.io/auto-deploy-blog-by-github-actions.html)

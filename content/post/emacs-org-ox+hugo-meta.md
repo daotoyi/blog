@@ -1,7 +1,7 @@
 ---
 title: "Org ox-hugo"
 date: "2022-04-30 09:35:00"
-lastmod: "2022-04-30 12:24:10"
+lastmod: "2022-07-17 16:52:22"
 tags: ["ox", "hugo", "org"]
 categories: ["emacs"]
 draft: false

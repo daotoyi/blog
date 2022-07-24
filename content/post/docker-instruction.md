@@ -1,7 +1,7 @@
 ---
 title: "Docker 初识"
 date: "2022-02-27 11:53:00"
-lastmod: "2022-04-30 12:24:27"
+lastmod: "2022-07-23 06:37:45"
 categories: ["Docker"]
 draft: false
 ---
@@ -21,6 +21,17 @@ draft: false
 从 Docker 下载下来的叫镜像（ images ）
 
 使用 docker run 运行起来的镜像（ images ）叫容器（ containers ）
+
+
+## Docker (容器) 的原理 {#docker--容器--的原理}
+
+简单来说，就是使用 Linux 的 overlayfs[3], overlay file system 可以做到，将两个 file system merge  在一起，下层的文件系统只读，上层的文件系统可写。
+
+如果去读文件，找到上层就读上层的，否则的话就找到下层的去读。
+
+Docker 运行的时候，从最下层的文件系统开始，merge 两层，得到新的 fs 然后再 merge 上一层，然后再 merge 最上一层，最后得到最终的 directory，然后用 chroot[4] 改变进程的 root 目录，启动 container。
+
+Docker image 其实就是一个 tar 包[5]。一般来说我们通过 Dockerfile 用 docker built 命令来构建，但是其实也可以用其他工具构建，只要构建出来的 image 符合 Docker 的规范[6]，就可以运行。
 
 
 ## reference {#reference}

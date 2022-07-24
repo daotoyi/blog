@@ -1,7 +1,7 @@
 ---
 title: "WebSSH - 网页上的 SSH 终端"
 date: "2022-07-10 12:20:00"
-lastmod: "2022-07-10 13:09:15"
+lastmod: "2022-07-12 00:42:06"
 tags: ["WebSSH"]
 categories: ["VPS"]
 draft: false
@@ -51,19 +51,16 @@ http://localhost:8888/?term=xterm-256color
 
 -   内网主机搭建 v2ray 的 bridge 端, 并安装 webssh 并启动
 
-<!--listend-->
-
-```cfg
-"reverse": {
-      "bridges": [
-        {
-          "tag": "bridge",
-          "domain": "tunnel.daotoyi.cn"
-        }
-      ]
-}
-```
-
+    ```cfg
+    "reverse": {
+          "bridges": [
+            {
+              "tag": "bridge",
+              "domain": "tunnel.daotoyi.cn"
+            }
+          ]
+    }
+    ```
 -   vps 服务器搭建 v2ray 的 portal 端
 
     ```cfg

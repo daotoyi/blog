@@ -1,7 +1,7 @@
 ---
-title: "tar 备份还原系统后无法进入桌面"
+title: "Linux tar 备份还原系统后无法进入桌面"
 date: "2022-03-31 22:53:00"
-lastmod: "2022-04-30 12:45:38"
+lastmod: "2022-07-21 23:15:30"
 tags: ["selinux"]
 categories: ["Linux"]
 draft: false

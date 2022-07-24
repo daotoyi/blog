@@ -1,13 +1,13 @@
 ---
-title: "[vim 不需要多光标编辑] (<https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/>)"
+title: "vim 不需要多光标编辑"
 date: "2022-02-12 14:54:00"
-lastmod: "2022-04-30 12:49:41"
+lastmod: "2022-07-13 10:21:51"
 categories: ["VIm"]
 draft: false
 ---
 
-## 前言 {#前言}
-
+\*\*
+前言
 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-cursors ）模仿这一功能，但是存在一些问题。自动补全功能失效，撤销历史与我想象中的不一样，也无法把文本操作映射到某按键，以便在下次 Vim 会话中使用。还有，很难用眼睛跟踪所有光标，特别是当它们处于不同列的时候。使用该插件一段时间后，我得出结论：没有什么操作场景是 原生 Vim 特性无法完成的.
 
 {{< figure src="https://daotoyi.cn/img/20220224150901.png" >}}
@@ -69,4 +69,5 @@ Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意�
 
 ## Reference {#reference}
 
-引用资源：<https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db>
+-   [You don’t need more than one cursor in vim](https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db)
+-   [vim 不需要多光标编辑](https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/)

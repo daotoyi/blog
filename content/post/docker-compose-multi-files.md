@@ -1,8 +1,9 @@
 ---
 title: "Docker compose multi-files"
-lastmod: "2022-05-21 19:07:22"
+date: "2022-07-24 10:22:00"
+lastmod: "2022-07-24 10:22:37"
 categories: ["Docker"]
-draft: true
+draft: false
 ---
 
 ## two mode {#two-mode}

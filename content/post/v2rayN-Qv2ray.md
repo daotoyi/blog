@@ -1,9 +1,11 @@
 ---
 title: "v2rayN 和 Qv2ray"
 date: "2022-05-01 18:42:00"
-lastmod: "2022-05-01 18:42:27"
+lastmod: "2022-07-10 18:48:00"
+tags: ["v2rayN"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## 域名策略 {#域名策略}

@@ -1,7 +1,7 @@
 ---
-title: "Manjaro 使用小结"
+title: "Manjaro/Linux 使用"
 date: "2022-03-31 22:53:00"
-lastmod: "2022-04-30 12:45:40"
+lastmod: "2022-07-23 10:57:56"
 categories: ["Linux"]
 draft: false
 ---
@@ -502,3 +502,9 @@ pacman -S the_silver_searcher
 pacman -S certbot
 pip install certbot-nginx
 ```
+
+
+## tools {#tools}
+
+
+###  {#d41d8c}

@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/docker-instruction/" />
 <meta property="article:published_time" content="2022-02-27T11:53:00+00:00" />
-<meta property="article:modified_time" content="2022-07-10T13:10:25+08:00" />
+<meta property="article:modified_time" content="2022-07-24T16:55:27+08:00" />
 <meta itemprop="name" content="Docker 初识">
 <meta itemprop="description" content="State &ldquo;DONE&rdquo; from [2022-02-27 周日 11:53] Docker 是一个开源的应用容器引擎。Docker 可以让开发者打包他们创建的应用以及相应的依赖包到一个可移植、轻量级的容器中。Docke">
 <meta itemprop="datePublished" content="2022-02-27T11:53:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-07-10T13:10:25&#43;08:00" />
-<meta itemprop="wordCount" content="246">
+<meta itemprop="dateModified" content="2022-07-24T16:55:27&#43;08:00" />
+<meta itemprop="wordCount" content="496">
 
 
 
@@ -139,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/docker/"> Docker </a>
             </div>
-          <span class="more-meta"> 246 words </span>
+          <span class="more-meta"> 496 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -154,6 +154,7 @@
       <ul>
         <li><a href="#docker-镜像">Docker 镜像</a></li>
         <li><a href="#基本概念">基本概念</a></li>
+        <li><a href="#docker--容器--的原理">Docker (容器) 的原理</a></li>
         <li><a href="#reference">reference</a></li>
       </ul>
     </li>
@@ -171,6 +172,11 @@
 <h2 id="基本概念">基本概念</h2>
 <p>从 Docker 下载下来的叫镜像（ images ）</p>
 <p>使用 docker run 运行起来的镜像（ images ）叫容器（ containers ）</p>
+<h2 id="docker--容器--的原理">Docker (容器) 的原理</h2>
+<p>简单来说，就是使用 Linux 的 overlayfs[3], overlay file system 可以做到，将两个 file system merge  在一起，下层的文件系统只读，上层的文件系统可写。</p>
+<p>如果去读文件，找到上层就读上层的，否则的话就找到下层的去读。</p>
+<p>Docker 运行的时候，从最下层的文件系统开始，merge 两层，得到新的 fs 然后再 merge 上一层，然后再 merge 最上一层，最后得到最终的 directory，然后用 chroot[4] 改变进程的 root 目录，启动 container。</p>
+<p>Docker image 其实就是一个 tar 包[5]。一般来说我们通过 Dockerfile 用 docker built 命令来构建，但是其实也可以用其他工具构建，只要构建出来的 image 符合 Docker 的规范[6]，就可以运行。</p>
 <h2 id="reference">reference</h2>
 <p><a href="https://kalacloud.com/blog/how-to-install-and-use-docker-on-ubuntu/">Docker 入门指南：如何在 Ubuntu 上安装和使用 Docker</a></p>
 
@@ -184,8 +190,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-07-10
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/132fe6363fdbe30f83177f565c39e4bf00040347" title="update weekly">(132fe63)</a>
+        2022-07-24
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0d1a8629fff84042533b884bb17c1f597d7dda01" title="update weekly">(0d1a862)</a>
     </span>
   </p>
   

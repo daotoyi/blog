@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux Shell getopts/getopt - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-shell-input-parameter/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux Shell getopts/getopt" />
+<meta property="og:description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-shell-input-parameter/" />
+<meta property="article:published_time" content="2022-07-21T09:04:00+00:00" />
+<meta property="article:modified_time" content="2022-07-24T16:55:27+08:00" />
+<meta itemprop="name" content="Linux Shell getopts/getopt">
+<meta itemprop="description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get">
+<meta itemprop="datePublished" content="2022-07-21T09:04:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-07-24T16:55:27&#43;08:00" />
+<meta itemprop="wordCount" content="1759">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Shell getopts/getopt"/>
+<meta name="twitter:description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux Shell getopts/getopt</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-07-21 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 1759 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#解析方式">解析方式</a></li>
+        <li><a href="#n-直接处理">$n 直接处理</a></li>
+        <li><a href="#getopts">getopts</a></li>
+        <li><a href="#getopt">getopt</a></li>
+        <li><a href="#getopt-getpots">getopt/getpots</a></li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="解析方式">解析方式</h2>
+<p>在 Linux bash 中，可以用以下三种方式解析命令行参数</p>
+<ol>
+<li>直接处理：使用$1,$2,$3…进行解析</li>
+<li>getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项</li>
+<li>getopt：处理单个字符或长选项（long-option），例如：–prefix=/home 等</li>
+</ol>
+<p>经验：小型脚本可以直接处理，大多数情况使用 getopts，getopt 的功能更加强大。</p>
+<h2 id="n-直接处理">$n 直接处理</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">$0</span>   <span class="c1">#即命令本身，相当于c/c++中的argv[0]</span>
+<span class="nv">$1</span>   <span class="c1">#第一个参数</span>
+<span class="nv">$2</span>, <span class="nv">$3</span>, <span class="nv">$4</span> ...   <span class="c1">#第2、3、4个参数，依次类推</span>
+<span class="nv">$#</span>   <span class="c1">#参数的个数，不包括命令本身</span>
+<span class="nv">$@</span>   <span class="c1">#参数本身的列表，不包括命令本身</span>
+<span class="nv">$*</span>   <span class="c1">#和$@相同，但&#34;$*&#34;和&#34;$@&#34;(加引号)并不同，</span>
+     <span class="c1">#&#34;$*&#34;将所有的参数解释成一个字符串，而&#34;$@&#34;是一个参数数组</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="getopts">getopts</h2>
+<ul>
+<li>getopts 有两个参数，包括字符和“:”</li>
+<li>每一个字符都是一个有效选项（option）
+<ul>
+<li>如果字符后面带有&rdquo;:&quot;，表示这个选项有自己的 argument，argument 保存在内置变量 OPTARG 中
+<ul>
+<li>d:在实际的使用中就会对应-d 30，选项的值就是 30</li>
+</ul>
+</li>
+<li>没有跟随:的是开关型选项，不需要再指定值，相当于 true/false，只要带了这个参数就是 true</li>
+<li>如果命令行中包含了没有在 getopts 列表中的选项，会有警告信息，如果在整个 getopts 字符串前面也加上个:，就能消除警告信息了。</li>
+</ul>
+</li>
+<li>操作中有两个相对固定的“常量”，
+<ul>
+<li>OPTARG，用来取当前选项的值
+<ul>
+<li>$OPTARG 总是存储原始$*中下一个要处理的元素位置</li>
+</ul>
+</li>
+<li>OPTIND，代表当前选项在参数列表中的位移。</li>
+<li>getopts 在处理参数的时候，处理一个开关型选项，OPTIND 加 1，处理一个带值的选项参数，OPTIND 则会加 2。</li>
+</ul>
+</li>
+<li>选项参数的格式必须是-d val，而不能是中间没有空格的-dval</li>
+<li>所有选项参数必须写在其它参数的前面
+<ul>
+<li>因为 getopts 是从命令行前面开始处理，遇到非-开头的参数，或者选项参数结束标记&ndash;就中止了</li>
+</ul>
+</li>
+<li>不支持长选项， 也就是&ndash;debug 之类的选项</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">echo</span> original <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$*</span><span class="o">]</span>
+<span class="nb">echo</span> original <span class="nv">OPTIND</span><span class="o">=[</span><span class="nv">$OPTIND</span><span class="o">]</span>
+
+<span class="k">while</span> <span class="nb">getopts</span> <span class="s2">&#34;🅰bc&#34;</span> opt <span class="c1"># 第一个冒号表示忽略错误</span>
+<span class="k">do</span>
+    <span class="k">case</span> <span class="nv">$opt</span> in
+        a<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;this is -a option. OPTARG=[</span><span class="nv">$OPTARG</span><span class="s2">] OPTIND=[</span><span class="nv">$OPTIND</span><span class="s2">]&#34;</span>
+            <span class="p">;;</span>
+        b<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;this is -b option. OPTARG=[</span><span class="nv">$OPTARG</span><span class="s2">] OPTIND=[</span><span class="nv">$OPTIND</span><span class="s2">]&#34;</span>
+            <span class="p">;;</span>
+        c<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;this is -c option. OPTARG=[</span><span class="nv">$OPTARG</span><span class="s2">] OPTIND=[</span><span class="nv">$OPTIND</span><span class="s2">]&#34;</span>
+            <span class="p">;;</span>
+        ?<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;there is unrecognized parameter.&#34;</span>
+            <span class="nb">exit</span> 1
+            <span class="p">;;</span>
+    <span class="k">esac</span>
+<span class="k">done</span>
+<span class="c1">#通过shift $(($OPTIND - 1))的处理，$*中就只保留了除去选项内容的参数，</span>
+<span class="c1">#可以在后面的shell程序中进行处理</span>
+<span class="nb">shift</span> <span class="k">$((</span><span class="nv">$OPTIND</span> <span class="o">-</span> <span class="m">1</span><span class="k">))</span>
+
+<span class="nb">echo</span> remaining <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$*</span><span class="o">]</span>
+<span class="nb">echo</span> <span class="se">\$</span><span class="nv">1</span><span class="o">=[</span><span class="nv">$1</span><span class="o">]</span>
+<span class="nb">echo</span> <span class="se">\$</span><span class="nv">2</span><span class="o">=[</span><span class="nv">$2</span><span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="getopt">getopt</h2>
+<ul>
+<li>getopt 支持短选项和长选项(getopts 不支持长选项,如： &ndash;date)</li>
+<li>增强版 getopt 比较好用
+<ul>
+<li>执行命令 getopt -T; echo $?,如果输出 4，则代表是增强版</li>
+</ul>
+</li>
+<li>如果短选项带 argument 且参数可选时，argument 必须紧贴选项
+<ul>
+<li>-carg 而不能是-c arg</li>
+</ul>
+</li>
+<li>如果长选项带 argument 且参数可选时，argument 和选项之间用“=”
+<ul>
+<li>–clong=arg 而不能是–clong arg</li>
+</ul>
+</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">echo</span> original <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$@</span><span class="o">]</span>
+
+<span class="c1">#-o或--options选项后面是可接受的短选项，如ab:c::，表示可接受的短选项为-a -b -c，</span>
+<span class="c1">#其中-a选项不接参数，-b选项后必须接参数，-c选项的参数为可选的</span>
+<span class="c1">#-l或--long选项后面是可接受的长选项，用逗号分开，冒号的意义同短选项。</span>
+<span class="c1">#-n选项后接选项解析错误时提示的脚本名字</span>
+<span class="nv">ARGS</span><span class="o">=</span><span class="sb">`</span>getopt -o ab:c:: --long along,blong:,clong:: -n <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2">&#34;</span> -- <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span><span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> !<span class="o">=</span> <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Terminating...&#34;</span>
+    <span class="nb">exit</span> 1
+<span class="k">fi</span>
+
+<span class="nb">echo</span> <span class="nv">ARGS</span><span class="o">=[</span><span class="nv">$ARGS</span><span class="o">]</span>
+<span class="c1">#将规范化后的命令行参数分配至位置参数（$1,$2,...)</span>
+<span class="nb">eval</span> <span class="nb">set</span> -- <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ARGS</span><span class="si">}</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> formatted <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$@</span><span class="o">]</span>
+
+<span class="k">while</span> <span class="nb">true</span>
+<span class="k">do</span>
+    <span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> in
+        -a<span class="p">|</span>--along<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;Option a&#34;</span><span class="p">;</span>
+            <span class="nb">shift</span>
+            <span class="p">;;</span>
+        -b<span class="p">|</span>--blong<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;Option b, argument </span><span class="nv">$2</span><span class="s2">&#34;</span><span class="p">;</span>
+            <span class="nb">shift</span> 2
+            <span class="p">;;</span>
+        -c<span class="p">|</span>--clong<span class="o">)</span>
+            <span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$2</span><span class="s2">&#34;</span> in
+                <span class="s2">&#34;&#34;</span><span class="o">)</span>
+                    <span class="nb">echo</span> <span class="s2">&#34;Option c, no argument&#34;</span><span class="p">;</span>
+                    <span class="nb">shift</span> 2
+                    <span class="p">;;</span>
+                *<span class="o">)</span>
+                    <span class="nb">echo</span> <span class="s2">&#34;Option c, argument </span><span class="nv">$2</span><span class="s2">&#34;</span><span class="p">;</span>
+                    <span class="nb">shift</span> 2<span class="p">;</span>
+                    <span class="p">;;</span>
+            <span class="k">esac</span>
+            <span class="p">;;</span>
+        --<span class="o">)</span>
+            <span class="nb">shift</span>
+            <span class="nb">break</span>
+            <span class="p">;;</span>
+        *<span class="o">)</span>
+            <span class="nb">echo</span> <span class="s2">&#34;Internal error!&#34;</span>
+            <span class="nb">exit</span> 1
+            <span class="p">;;</span>
+    <span class="k">esac</span>
+<span class="k">done</span>
+
+<span class="c1">#处理剩余的参数</span>
+<span class="nb">echo</span> remaining <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$@</span><span class="o">]</span>
+<span class="nb">echo</span> <span class="se">\$</span><span class="nv">1</span><span class="o">=[</span><span class="nv">$1</span><span class="o">]</span>
+<span class="nb">echo</span> <span class="se">\$</span><span class="nv">2</span><span class="o">=[</span><span class="nv">$2</span><span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="getopt-getpots">getopt/getpots</h2>
+<ol>
+<li>getopts 是 bash 内建命令的， 而 getopt 是外部命令</li>
+<li>getopts 不支持长选项， 比如： &ndash;date</li>
+<li>在使用 getopt 的时候， 每处理完一个位置参数后都需要自己 shift 来跳到下一个位置， getopts 只需要在最后使用 shift $(($OPTIND - 1))来跳到 parameter 的位置。</li>
+<li>使用 getopt 时， 在命令行输入的位置参数是什么， 在 getopt 中需要保持原样， 比如 -t ， 在 getopt 的 case 语句中也要使用-t，  而 getopts 中不要前面的-。</li>
+<li>getopt 往往需要跟 set 配合使用</li>
+<li>getopt -o 的选项注意一下</li>
+<li>getopts 使用语法简单，getopt 使用语法较复杂</li>
+<li>getopts 不会重排所有参数的顺序，getopt 会重排参数顺序</li>
+<li>getopts 出现的目的是为了代替 getopt 较快捷的执行参数分析工作</li>
+</ol>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://blog.csdn.net/arpospf/article/details/103381621">Shell命令 getopts/getopt用法详解</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1043821">bash/shell 解析命令行参数工具：getopts/getopt</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-07-24
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0d1a8629fff84042533b884bb17c1f597d7dda01" title="update weekly">(0d1a862)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/linux-cmd-crontab/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Linux cmd crontab</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/internetcustomize-email-domain/">
+            <span class="next-text nav-default">自定义域名邮箱</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

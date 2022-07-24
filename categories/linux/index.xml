@@ -6,10 +6,46 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jun 2022 16:17:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jul 2022 23:24:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux cmd crontab</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-crontab/</link>
+      <pubDate>Thu, 21 Jul 2022 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-crontab/</guid>
+      <description>格式 f1 f2 f3 f4 f5 program 其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell getopts/getopt</title>
+      <link>https://daotoyi.github.io/post/linux-shell-input-parameter/</link>
+      <pubDate>Thu, 21 Jul 2022 09:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-input-parameter/</guid>
+      <description>解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get</description>
+    </item>
+    
+    <item>
+      <title>Linux 反弹 shell</title>
+      <link>https://daotoyi.github.io/post/linux-reverse-shell/</link>
+      <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-reverse-shell/</guid>
+      <description>什么是反弹 Shell 控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来</description>
+    </item>
+    
+    <item>
+      <title>Linux 64 位系统运行 32 位程序</title>
+      <link>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</link>
+      <pubDate>Mon, 11 Jul 2022 12:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</guid>
+      <description>step linux 64 位系统默认不支持 32 位程序运行. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 查看程序 file program_name # 查看系统 uname -a # 安装32位库 # ubuntu apt-get install ia32-libs # centos yum install xulrunner.i686 # yum install ia32-libs.i686</description>
+    </item>
     
     <item>
       <title>Linux busybox/buildroot/openwrt</title>
@@ -147,21 +183,21 @@
     </item>
     
     <item>
-      <title>Manjaro 使用小结</title>
-      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
-      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
-      <description>更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行： 清</description>
-    </item>
-    
-    <item>
-      <title>tar 备份还原系统后无法进入桌面</title>
+      <title>Linux tar 备份还原系统后无法进入桌面</title>
       <link>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</link>
       <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</guid>
       <description>现象 如果因为某些缘故，所以你的系统必须要以备份的数据来回填到原本的系统中，那么得要 特别注意复原后的系统的 SELinux 问题！它可能会让你的系统⽆法存取某</description>
+    </item>
+    
+    <item>
+      <title>Manjaro/Linux 使用</title>
+      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
+      <description>更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行： 清</description>
     </item>
     
     <item>

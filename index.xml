@@ -12,6 +12,87 @@
     
     
     <item>
+      <title>私有网盘 Nextcloud/ownCloud 和 Cloudreve</title>
+      <link>https://daotoyi.github.io/post/private-network-disk-nextcloud/</link>
+      <pubDate>Sat, 23 Jul 2022 20:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/private-network-disk-nextcloud/</guid>
+      <description>Cloudreve 国人开发的 支持使用七牛云存储、阿里云 OSS、又拍云、Amazon S3 等对象存储作为存储后端 也支持本地服务器、远程服务器和 OneDrive 等作为存储后端 也支</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd crontab</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-crontab/</link>
+      <pubDate>Thu, 21 Jul 2022 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-crontab/</guid>
+      <description>格式 f1 f2 f3 f4 f5 program 其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell getopts/getopt</title>
+      <link>https://daotoyi.github.io/post/linux-shell-input-parameter/</link>
+      <pubDate>Thu, 21 Jul 2022 09:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-input-parameter/</guid>
+      <description>解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get</description>
+    </item>
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
+    
+    <item>
+      <title>Linux 反弹 shell</title>
+      <link>https://daotoyi.github.io/post/linux-reverse-shell/</link>
+      <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-reverse-shell/</guid>
+      <description>什么是反弹 Shell 控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来</description>
+    </item>
+    
+    <item>
+      <title>Linux 64 位系统运行 32 位程序</title>
+      <link>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</link>
+      <pubDate>Mon, 11 Jul 2022 12:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</guid>
+      <description>step linux 64 位系统默认不支持 32 位程序运行. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 查看程序 file program_name # 查看系统 uname -a # 安装32位库 # ubuntu apt-get install ia32-libs # centos yum install xulrunner.i686 # yum install ia32-libs.i686</description>
+    </item>
+    
+    <item>
+      <title>WebSSH - 网页上的 SSH 终端</title>
+      <link>https://daotoyi.github.io/post/webssh/</link>
+      <pubDate>Sun, 10 Jul 2022 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/webssh/</guid>
+      <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
+    </item>
+    
+    <item>
       <title>Vuepress 使用小结</title>
       <link>https://daotoyi.github.io/post/vuepress-manual/</link>
       <pubDate>Tue, 05 Jul 2022 21:47:18 +0000</pubDate>
@@ -143,7 +224,7 @@
       <pubDate>Mon, 09 May 2022 17:45:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/microsoft-account-login/</guid>
-      <description>DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1</description>
+      <description>DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份</description>
     </item>
     
     <item>
@@ -224,7 +305,7 @@
       <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
-      <description>vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击 customize, 直接修</description>
+      <description>时间格式 vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击</description>
     </item>
     
     <item>
@@ -615,21 +696,21 @@
     </item>
     
     <item>
-      <title>Manjaro 使用小结</title>
-      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
-      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
-      <description>更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行： 清</description>
-    </item>
-    
-    <item>
-      <title>tar 备份还原系统后无法进入桌面</title>
+      <title>Linux tar 备份还原系统后无法进入桌面</title>
       <link>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</link>
       <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</guid>
       <description>现象 如果因为某些缘故，所以你的系统必须要以备份的数据来回填到原本的系统中，那么得要 特别注意复原后的系统的 SELinux 问题！它可能会让你的系统⽆法存取某</description>
+    </item>
+    
+    <item>
+      <title>Manjaro/Linux 使用</title>
+      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
+      <description>更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行： 清</description>
     </item>
     
     <item>
@@ -1138,12 +1219,12 @@ highlight in export file code-src</description>
     </item>
     
     <item>
-      <title>[vim 不需要多光标编辑] (&lt;https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/&gt;)</title>
+      <title>vim 不需要多光标编辑</title>
       <link>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</link>
       <pubDate>Sat, 12 Feb 2022 14:54:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</guid>
-      <description>前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curso</description>
+      <description>** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs</description>
     </item>
     
     <item>

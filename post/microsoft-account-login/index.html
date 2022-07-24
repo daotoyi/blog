@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,22 +40,22 @@
 
 
 <meta property="og:title" content="Microsoft 账号无法登陆" />
-<meta property="og:description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1" />
+<meta property="og:description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/microsoft-account-login/" />
 <meta property="article:published_time" content="2022-05-09T17:45:00+00:00" />
-<meta property="article:modified_time" content="2022-07-10T13:10:25+08:00" />
+<meta property="article:modified_time" content="2022-07-24T16:55:27+08:00" />
 <meta itemprop="name" content="Microsoft 账号无法登陆">
-<meta itemprop="description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1">
+<meta itemprop="description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份">
 <meta itemprop="datePublished" content="2022-05-09T17:45:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-07-10T13:10:25&#43;08:00" />
-<meta itemprop="wordCount" content="26">
+<meta itemprop="dateModified" content="2022-07-24T16:55:27&#43;08:00" />
+<meta itemprop="wordCount" content="384">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Microsoft 账号无法登陆"/>
-<meta name="twitter:description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1"/>
+<meta name="twitter:description" content="DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -139,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/internet/"> Internet </a>
             </div>
-          <span class="more-meta"> 26 words </span>
+          <span class="more-meta"> 384 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -153,6 +153,8 @@
     <li>
       <ul>
         <li><a href="#dns-修改配置">DNS 修改配置</a></li>
+        <li><a href="#官方方案">官方方案</a></li>
+        <li><a href="#ref">Ref</a></li>
       </ul>
     </li>
   </ul>
@@ -167,6 +169,36 @@
 <li>DNS 修改为 4.2.2.2</li>
 <li>备选 DNS 修改为 4.2.2.1</li>
 </ul>
+<h2 id="官方方案">官方方案</h2>
+<ol>
+<li>点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份运行” 按钮，稍等片刻，关闭黑色 CMD 窗口，再次启动 Office 应用并登录 Microsoft 账户。</li>
+<li>启动开始菜单，输入 CMD，右击搜索结果，选择 ”以管理员身份运行“。请您依次执行下方 5 个命令，手动重置 TCP / IP 堆栈、释放并续订 IP 地址、刷新并重置 DNS 客户端解析程序缓存：</li>
+</ol>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cmd" data-lang="cmd">netsh winsock reset
+netsh int ip reset
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+</code></pre></td></tr></table>
+</div>
+</div><p>全部执行成功后，请您重启电脑，继续执行步骤 3。</p>
+<ol>
+<li>右击任务栏 ”网络“ 图标，打开 ”网络和 Internet“ 设置。请您点击 “网络和共享中心”，继续点击当前网络名称，打开网络状态窗口。点击 “属性”，双击 “Internet 协议版本 4 (TCP / IPv4)”，将 DNS 服务器手动设置为 4.2.2.1 和 4.2.2.2，确定。请您再次测试 Office 应用 “登录” 功能是否已经恢复正常。</li>
+</ol>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://answers.microsoft.com/zh-hans/msoffice/forum/all/office%e4%b8%8d%e8%83%bd%e7%99%bb%e5%bd%95/0c53f42b-2ffc-4e06-bbb9-503d98c4e0b7">Office不能登录微软账户了</a></li>
+</ul>
 
     </div>
 
@@ -178,8 +210,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-07-10
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/132fe6363fdbe30f83177f565c39e4bf00040347" title="update weekly">(132fe63)</a>
+        2022-07-24
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0d1a8629fff84042533b884bb17c1f597d7dda01" title="update weekly">(0d1a862)</a>
     </span>
   </p>
   

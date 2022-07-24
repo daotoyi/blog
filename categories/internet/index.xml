@@ -6,10 +6,37 @@
     <description>Recent content in Internet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 May 2022 17:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jul 2022 08:55:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
     
     <item>
       <title>Microsoft 账号无法登陆</title>
@@ -17,7 +44,7 @@
       <pubDate>Mon, 09 May 2022 17:45:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/microsoft-account-login/</guid>
-      <description>DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1</description>
+      <description>DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份</description>
     </item>
     
     <item>

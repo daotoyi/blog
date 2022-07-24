@@ -6,10 +6,28 @@
     <description>Recent content in VPS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Jul 2022 21:47:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Jul 2022 20:31:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>私有网盘 Nextcloud/ownCloud 和 Cloudreve</title>
+      <link>https://daotoyi.github.io/post/private-network-disk-nextcloud/</link>
+      <pubDate>Sat, 23 Jul 2022 20:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/private-network-disk-nextcloud/</guid>
+      <description>Cloudreve 国人开发的 支持使用七牛云存储、阿里云 OSS、又拍云、Amazon S3 等对象存储作为存储后端 也支持本地服务器、远程服务器和 OneDrive 等作为存储后端 也支</description>
+    </item>
+    
+    <item>
+      <title>WebSSH - 网页上的 SSH 终端</title>
+      <link>https://daotoyi.github.io/post/webssh/</link>
+      <pubDate>Sun, 10 Jul 2022 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/webssh/</guid>
+      <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
+    </item>
     
     <item>
       <title>Vuepress 使用小结</title>
@@ -81,6 +99,15 @@
       
       <guid>https://daotoyi.github.io/post/v2rayn-qv2ray/</guid>
       <description>域名策略 AsIs 只使用域名进行路由选择，默认值 IPIfNonMatch 当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）后再次进行匹配 当一个域名有多个 A 记录时</description>
+    </item>
+    
+    <item>
+      <title>ox-hugo 生成 hugo/vuepress 通用 md 文件</title>
+      <link>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</link>
+      <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
+      <description>时间格式 vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击</description>
     </item>
     
     <item>

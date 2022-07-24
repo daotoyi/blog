@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>[vim 不需要多光标编辑] (&lt;https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/&gt;) - DaoyiSite</title>
+  <title>vim 不需要多光标编辑 - DaoyiSite</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curso" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -39,23 +39,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="[vim 不需要多光标编辑] (&lt;https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/&gt;)" />
-<meta property="og:description" content="前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curso" />
+<meta property="og:title" content="vim 不需要多光标编辑" />
+<meta property="og:description" content="** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/" />
 <meta property="article:published_time" content="2022-02-12T14:54:00+00:00" />
-<meta property="article:modified_time" content="2022-07-10T13:10:25+08:00" />
-<meta itemprop="name" content="[vim 不需要多光标编辑] (&lt;https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/&gt;)">
-<meta itemprop="description" content="前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curso">
+<meta property="article:modified_time" content="2022-07-24T16:55:27+08:00" />
+<meta itemprop="name" content="vim 不需要多光标编辑">
+<meta itemprop="description" content="** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs">
 <meta itemprop="datePublished" content="2022-02-12T14:54:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-07-10T13:10:25&#43;08:00" />
-<meta itemprop="wordCount" content="633">
+<meta itemprop="dateModified" content="2022-07-24T16:55:27&#43;08:00" />
+<meta itemprop="wordCount" content="565">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[vim 不需要多光标编辑] (&lt;https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/&gt;)"/>
-<meta name="twitter:description" content="前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curso"/>
+<meta name="twitter:title" content="vim 不需要多光标编辑"/>
+<meta name="twitter:description" content="** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,14 +132,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">[vim 不需要多光标编辑] (&lt;https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/&gt;)</h1>
+      <h1 class="post-title">vim 不需要多光标编辑</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2022-02-12 </span>
         <div class="post-category">
             <a href="/categories/vim/"> VIm </a>
             </div>
-          <span class="more-meta"> 633 words </span>
+          <span class="more-meta"> 565 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -152,7 +152,6 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#前言">前言</a></li>
         <li><a href="#在-n-个位置修改单词">在 N 个位置修改单词</a></li>
         <li><a href="#修改可视区域">修改可视区域</a></li>
         <li><a href="#基于多行的复杂修改">基于多行的复杂修改</a></li>
@@ -165,8 +164,9 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="前言">前言</h2>
-<p>Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-cursors ）模仿这一功能，但是存在一些问题。自动补全功能失效，撤销历史与我想象中的不一样，也无法把文本操作映射到某按键，以便在下次 Vim 会话中使用。还有，很难用眼睛跟踪所有光标，特别是当它们处于不同列的时候。使用该插件一段时间后，我得出结论：没有什么操作场景是 原生 Vim 特性无法完成的.</p>
+      <p>**
+前言
+Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-cursors ）模仿这一功能，但是存在一些问题。自动补全功能失效，撤销历史与我想象中的不一样，也无法把文本操作映射到某按键，以便在下次 Vim 会话中使用。还有，很难用眼睛跟踪所有光标，特别是当它们处于不同列的时候。使用该插件一段时间后，我得出结论：没有什么操作场景是 原生 Vim 特性无法完成的.</p>
 <figure>
     <img src="https://daotoyi.cn/img/20220224150901.png"/> 
 </figure>
@@ -213,7 +213,10 @@
 </ul>
 <h2 id="使用宏">使用宏</h2>
 <h2 id="reference">Reference</h2>
-<p>引用资源：<a href="https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db">https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db</a></p>
+<ul>
+<li><a href="https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db">You don’t need more than one cursor in vim</a></li>
+<li><a href="https://macplay.github.io/posts/vim-bu-xu-yao-duo-guang-biao-bian-ji-gong-neng/">vim 不需要多光标编辑</a></li>
+</ul>
 
     </div>
 
@@ -225,8 +228,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-07-10
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/132fe6363fdbe30f83177f565c39e4bf00040347" title="update weekly">(132fe63)</a>
+        2022-07-24
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0d1a8629fff84042533b884bb17c1f597d7dda01" title="update weekly">(0d1a862)</a>
     </span>
   </p>
   

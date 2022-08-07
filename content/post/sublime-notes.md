@@ -1,7 +1,8 @@
 ---
 title: "Sublime Notes"
 date: "2022-04-12 11:58:00"
-lastmod: "2022-04-30 12:48:35"
+lastmod: "2022-07-25 09:35:40"
+tags: ["sublime"]
 categories: ["Tools"]
 draft: false
 ---

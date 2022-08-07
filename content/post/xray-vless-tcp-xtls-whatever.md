@@ -2,10 +2,11 @@
 title: "Xray+XTLS+VLESS 终极配置"
 description: "VLESS over TCP with XTLS + fullbacks(回落&分流) to WHATEVER"
 date: "2022-04-10 22:15:00"
-lastmod: "2022-05-08 16:22:33"
+lastmod: "2022-07-26 22:38:43"
 tags: ["Xray"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## [config](https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-WHATEVER/README.md) {#config}
@@ -141,5 +142,6 @@ draft: false
 
 ## Ref {#ref}
 
--   [!!!Nginx SNI分流（端口复用）使用Xray+VLESS+XTLS](https://qoant.com/2021/05/xray-nginx-sni/)
+-   [!!!Nginx SNI分流（端口复用）使用Xray+VLESS+XTLS](https://qoant.com/2021/05/xray-nginx-sni/) (ngix-&gt;443-&gt;xray)
+-   [!!! Nginx SNI+Xray(Vless xtls &amp; Trojan xtls &amp; Vless ws &amp; Vless gRPC &amp; Trojan gRPC)](https://cnix.win/87.html) (ngix-&gt;443-&gt;xray)
 -   [XTROJAN黑科技-xray](https://xtrojan.net/tag/xray/page/2)

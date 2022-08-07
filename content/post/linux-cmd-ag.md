@@ -1,5 +1,5 @@
 ---
-title: "CMD ag"
+title: "cmd ag"
 date: "2022-04-15 14:46:00"
 lastmod: "2022-04-30 12:45:36"
 categories: ["Linux"]

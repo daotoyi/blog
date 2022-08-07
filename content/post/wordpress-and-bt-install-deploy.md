@@ -1,10 +1,11 @@
 ---
 title: "WordPress 笔记"
 date: "2022-03-15 22:26:00"
-lastmod: "2022-06-07 11:35:27"
+lastmod: "2022-08-05 11:10:32"
 tags: ["WordPress"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## VPS Panel Compare {#vps-panel-compare}
@@ -171,6 +172,11 @@ $ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306  -e WORDPR
 ### Pretty Link Lite {#pretty-link-lite}
 
 为您网站创建短链接的插件，可以将外部的链接映射到这些短链接，并且可以跟踪链接的每一次点击，而且提供详细的报告，包括来访者 ip、来访者使用的浏览器、操作系统等。
+
+
+### elementor {#elementor}
+
+设计页面
 
 
 ### Redirection {#redirection}

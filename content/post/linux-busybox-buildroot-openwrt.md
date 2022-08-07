@@ -2,7 +2,8 @@
 title: "Linux busybox/buildroot/openwrt"
 description: "嵌入式文件系统构建工具"
 date: "2022-06-26 16:17:00"
-lastmod: "2022-06-27 08:35:31"
+lastmod: "2022-08-01 14:07:19"
+tags: ["busybox"]
 categories: ["Linux"]
 draft: false
 ---

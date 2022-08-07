@@ -1,7 +1,7 @@
 ---
-title: "locale"
+title: "Linux locale"
 date: "2022-04-03 17:09:00"
-lastmod: "2022-04-30 12:45:41"
+lastmod: "2022-08-04 17:49:39"
 categories: ["Linux"]
 draft: false
 ---
@@ -56,3 +56,8 @@ export LC_ALL=zh_CN.utf8
 ```
 
 更改当前的编码为 zh_CN.utf8，如果要永久更改，运行： echo "export LC_ALL=zh_CN.utf8"&gt;&gt; /etc/profile
+
+
+## Note {#note}
+
+Windows 的默认编码为 GBK，Linux 的默认编码为 UTF-8。在 Windows 下编辑的中文，在 Linux 下显示为乱码。

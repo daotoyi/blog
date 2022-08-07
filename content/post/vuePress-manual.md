@@ -1,6 +1,6 @@
 ---
 title: "Vuepress 使用小结"
-lastmod: "2022-07-05 21:47:18"
+lastmod: "2022-07-25 06:45:58"
 tags: ["Vuepress"]
 categories: ["VPS"]
 draft: false
@@ -211,9 +211,12 @@ jobs:
 ### markdown {#markdown}
 
 ```nil
-{{< figure src="https://pic4.zhimg.com/80/v2-1bb4dea5ae4f6ff7d1b9a1b405e09467_1440w.jpg" >}}
-![](https://pic4.zhimg.com/80/v2-1bb4dea5ae4f6ff7d1b9a1b405e09467_1440w.jpg)
+{{< figure src="https://www.daotoyi.cn/img/avatar.png" >}}
+![](https://www.daotoyi.cn/img/avatar.png)
 ```
+
+> {{&lt; figure src="![](https://www.daotoyi.cn/img/avatar.png)" &gt;}}
+> \![](![](https://www.daotoyi.cn/img/avatar.png))
 
 -   {{&lt;figure src="" &gt;}}格式,vuepress 不支持, hugo 支持
 

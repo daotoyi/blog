@@ -2,10 +2,11 @@
 title: "v2ray 搭建笔记"
 description: "WebSocket+TSL+CDN+Nginx"
 date: "2022-03-05 20:58:00"
-lastmod: "2022-04-30 12:50:43"
+lastmod: "2022-07-26 20:12:52"
 tags: ["v2ray"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 目前官方推荐的协议组合方式：
@@ -610,7 +611,13 @@ systemctl restart firewalld.service
 
 ## BBR {#bbr}
 
+BBR = Bottleneck Bandwidth and Round-trip propagation time.是一种 TCP 的拥塞控制算法
+
 Google 设计，于 2016 年发布的拥塞算法。以往大部分拥塞算法是基于丢包来作为降低传输速率的信号，而 BBR 则基于模型主动探测。
+
+一般而言，有 BBR 和 没有 BBR 会有可以感知的差别（速度、稳定性、延迟方面都会有一些改善），所以 【非常建议开启 BBR】
+
+BBR 的更新和发布，都是跟随 Linux 的内核（Kernel）进行的。换言之，只要你用的是比较新的内核，就自然会使用到新版 BBR。
 
 仅仅安装 v2ray，跨境上网的速度并不快，比如看 youtube 视频会卡，所以请务必再安装谷歌开发的加速器 BBR
 

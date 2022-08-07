@@ -1,8 +1,9 @@
 ---
 title: "NAT-NNDS"
-lastmod: "2022-04-30 21:25:32"
+date: "2022-07-25 09:38:00"
+lastmod: "2022-07-25 09:38:59"
 categories: ["Tools"]
-draft: true
+draft: false
 ---
 
 ## utools {#utools}
@@ -20,4 +21,4 @@ ssh -R remote_socket:host:hostport serveo.net
 
 ### Ref {#ref}
 
--   [无需安装，仅需 1 条指令，秒实现内网穿透的神器](https://blog.csdn.net/easylife206/article/details/100981031)
+-   [无需安装，仅需 1 条指令，秒实现内网穿透的神器](https://blog.csdn.net/easylife206/article/details/100981031)k

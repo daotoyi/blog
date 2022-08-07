@@ -1,7 +1,8 @@
 ---
 title: "Linux chroot(mount –bind | mount namespaces)"
 date: "2022-06-25 16:12:00"
-lastmod: "2022-06-25 16:13:00"
+lastmod: "2022-08-01 14:01:41"
+tags: ["cmd"]
 categories: ["Linux"]
 draft: false
 ---

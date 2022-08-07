@@ -1,8 +1,9 @@
 ---
-title: "Windows and ISO"
-lastmod: "2022-05-14 08:53:10"
+title: "Windows and ISO「隔空投送」"
+date: "2022-07-25 09:37:00"
+lastmod: "2022-07-25 09:37:53"
 categories: ["Tools"]
-draft: true
+draft: false
 ---
 
 ## [Send Anywhere](https://send-anywhere.com/) {#send-anywhere}

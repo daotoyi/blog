@@ -1,8 +1,9 @@
 ---
-title: "make, cmake, qmake"
+title: "Linux make, cmake, qmake"
 date: "2022-04-15 14:47:00"
-lastmod: "2022-04-30 12:45:48"
-categories: ["Linux"]
+lastmod: "2022-08-07 10:52:56"
+tags: ["libs"]
+categories: ["Cplus"]
 draft: false
 ---
 

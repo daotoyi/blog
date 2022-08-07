@@ -2,7 +2,7 @@
 title: "ConnectUtility"
 description: "logitech 无线键鼠与接收器配对"
 date: "2022-03-20 11:29:00"
-lastmod: "2022-04-30 12:48:29"
+lastmod: "2022-07-25 14:13:30"
 categories: ["Tools"]
 draft: false
 ---

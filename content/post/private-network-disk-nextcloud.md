@@ -1,7 +1,7 @@
 ---
 title: "私有网盘 Nextcloud/ownCloud 和 Cloudreve"
 date: "2022-07-23 20:31:00"
-lastmod: "2022-07-24 14:48:36"
+lastmod: "2022-07-25 07:40:24"
 categories: ["VPS"]
 draft: false
 toc: true
@@ -24,7 +24,7 @@ toc: true
 -   不支持第三方国内云存储。
 
 
-## NextCloud 安装 docker {#nextcloud-安装-docker}
+## NextCloud 安装 (docker) {#nextcloud-安装--docker}
 
 
 ### docker-compose {#docker-compose}
@@ -79,16 +79,16 @@ services:
       WORDPRESS_DB_NAME: nextcloud
 ```
 
-浏览器中输入 Host(<http://ip:port>)<http:ip;8081> 即可访问 Nextcloud;
+浏览器中输入 Host(<http://ip:port>)<http:172.16.254.xxx:8081> 即可访问 Nextcloud;
 
-> 登录界面 MariaDB 的主机 Host 位置填入 **nextcloud-db:3306** or **nextcloudnetwork-mariadb** 即可登录配置.
+> 登录界面 MariaDB 的主机 Host 位置填入 **nextcloud-db:3306** or **nextcloudnetwork-mariadb:3306** 即可登录配置.
 
 
 ### 手动添加文件 {#手动添加文件}
 
 虽然上传了文件，但是 ownCloud/Nextcloud 的数据库里并没有这个文件的信息。文件信息都被存储在数据库的 oc_filecache 表中,需要扫描一下.
 
-```cfg
+```bash
 files
   files:cleanup              #清楚文件缓存
   files:scan                 #重新扫描文件系统
@@ -107,7 +107,7 @@ files:scan [-p|--path="..."] [-q|--quiet] [-v|vv|vvv --verbose] [--all] [user_id
   --unscanned           #仅扫描以前未扫描过的文件
 ```
 
--   <scan>
+-   `file:scan`
 
 <!--listend-->
 
@@ -120,7 +120,7 @@ sudo -u www-data php occ files:scan --path="/ChengYe/files/Photos" #指向用户
 
 # docker
 docker exec --user www-data  nextcloud(container) php occ files:scan --all
-docker exec --user www-data  nextcloud(container) php occ files:scan admin
+docker exec --user www-data  nextcloud php occ files:scan admin
 docker exec -u www-data nextcloud php occ user:list          #列出所有用户
 ```
 

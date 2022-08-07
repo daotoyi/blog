@@ -1,7 +1,7 @@
 ---
 title: "CAD"
 date: "2022-03-17 19:58:00"
-lastmod: "2022-04-30 12:48:26"
+lastmod: "2022-07-28 11:11:37"
 tags: ["CAD"]
 categories: ["Tools"]
 draft: false

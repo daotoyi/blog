@@ -1,7 +1,7 @@
 ---
 title: "Linux 用户及用户组"
 date: "2022-05-02 15:25:00"
-lastmod: "2022-05-02 20:19:09"
+lastmod: "2022-07-25 14:55:29"
 categories: ["Linux"]
 draft: false
 ---
@@ -62,14 +62,14 @@ chown root
 
 修改 /etc/sudoers 文件，找到下面一行，把前面的注释（#）去掉
 
-```cfg
+```bash
 ## Allows people in group wheel to run all commands
 %wheel    ALL=(ALL)    ALL
 ```
 
 然后修改用户，使其属于 root 组（wheel），命令如下：
 
-```cfg
+```bash
 usermod -g root mshing
 ```
 
@@ -78,7 +78,7 @@ usermod -g root mshing
 
 修改 /etc/sudoers 文件，找到下面一行，在 root 下面添加一行，如下所示
 
-```cfg
+```bash
 ## Allow root to run any commands anywhere
 root    ALL=(ALL)     ALL
 mshing   ALL=(ALL)     ALL
@@ -91,7 +91,7 @@ mshing   ALL=(ALL)     ALL
 
 修改 /etc/passwd 文件，找到如下行，把用户 ID 修改为 0
 
-```cfg
+```bash
 # beofore
 mshing:x:500:500:mshing:/home/mshing:/bin/bash
 

@@ -6,10 +6,28 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Jul 2022 23:24:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Aug 2022 21:04:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux 远程桌面(win)</title>
+      <link>https://daotoyi.github.io/post/linux-remote-desktop/</link>
+      <pubDate>Fri, 05 Aug 2022 21:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-remote-desktop/</guid>
+      <description>VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie</description>
+    </item>
+    
+    <item>
+      <title>Linux system FAQ</title>
+      <link>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</guid>
+      <description>FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon</description>
+    </item>
     
     <item>
       <title>Linux cmd crontab</title>
@@ -102,25 +120,7 @@
     </item>
     
     <item>
-      <title>Linux 动态链接器</title>
-      <link>https://daotoyi.github.io/post/linux-ld-linux.so/</link>
-      <pubDate>Sat, 16 Apr 2022 07:33:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/linux-ld-linux.so/</guid>
-      <description>glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所</description>
-    </item>
-    
-    <item>
-      <title>make, cmake, qmake</title>
-      <link>https://daotoyi.github.io/post/make-cmake-qmake/</link>
-      <pubDate>Fri, 15 Apr 2022 14:47:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/make-cmake-qmake/</guid>
-      <description>make make 是用来执行 Makefile 的, Makefile 是类 unix 环境下(比如 Linux)的类似于批处理的&amp;quot;脚本&amp;quot;文件。 其基本语法是: 目标+依赖+命令 ，只有在</description>
-    </item>
-    
-    <item>
-      <title>CMD ag</title>
+      <title>cmd ag</title>
       <link>https://daotoyi.github.io/post/linux-cmd-ag/</link>
       <pubDate>Fri, 15 Apr 2022 14:46:00 +0000</pubDate>
       
@@ -135,15 +135,6 @@
       
       <guid>https://daotoyi.github.io/post/linux-selinux/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 ## Reahdet # 查看SELinux状态： /usr/sbin/sestatus -v # SELinux status: enabled # or getenforce # 关闭SELinux： # 临时关闭（不用重启机器）： setenforce 0 # 设置SELi</description>
-    </item>
-    
-    <item>
-      <title>Ref</title>
-      <link>https://daotoyi.github.io/post/linux/</link>
-      <pubDate>Fri, 15 Apr 2022 17:10:08 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/linux/</guid>
-      <description>多个gcc/glibc版本的共存及指定gcc版本的编译</description>
     </item>
     
     <item>
@@ -174,7 +165,7 @@
     </item>
     
     <item>
-      <title>locale</title>
+      <title>Linux locale</title>
       <link>https://daotoyi.github.io/post/linux-locale/</link>
       <pubDate>Sun, 03 Apr 2022 17:09:00 +0000</pubDate>
       

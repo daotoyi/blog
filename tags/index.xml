@@ -6,10 +6,37 @@
     <description>Recent content in Tags on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Jul 2022 23:24:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Aug 2022 20:12:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>libs</title>
+      <link>https://daotoyi.github.io/tags/libs/</link>
+      <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/libs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://daotoyi.github.io/tags/faq/</link>
+      <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/faq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vuepress</title>
+      <link>https://daotoyi.github.io/tags/vuepress/</link>
+      <pubDate>Mon, 25 Jul 2022 06:45:58 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/vuepress/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cmd</title>
@@ -48,11 +75,11 @@
     </item>
     
     <item>
-      <title>Vuepress</title>
-      <link>https://daotoyi.github.io/tags/vuepress/</link>
-      <pubDate>Tue, 05 Jul 2022 21:47:18 +0000</pubDate>
+      <title>busybox</title>
+      <link>https://daotoyi.github.io/tags/busybox/</link>
+      <pubDate>Sun, 26 Jun 2022 16:17:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/tags/vuepress/</guid>
+      <guid>https://daotoyi.github.io/tags/busybox/</guid>
       <description></description>
     </item>
     
@@ -125,6 +152,15 @@
       <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/tags/org/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sublime</title>
+      <link>https://daotoyi.github.io/tags/sublime/</link>
+      <pubDate>Tue, 12 Apr 2022 11:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/sublime/</guid>
       <description></description>
     </item>
     

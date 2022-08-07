@@ -6,10 +6,127 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Jul 2022 20:31:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Aug 2022 10:49:15 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML、XML、XPath</title>
+      <link>https://daotoyi.github.io/post/code-html-xml/</link>
+      <pubDate>Sun, 07 Aug 2022 10:49:15 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/code-html-xml/</guid>
+      <description>HTML Hyper Text Markup Language（超文本标记语言）的缩写. 在浏览器中看到的内容都是 HTML 代码经过浏览器渲染的结果 XML EXtensible Markup Language（可扩展标记语言）</description>
+    </item>
+    
+    <item>
+      <title>Linux glibc、eglibc、uclibc、Musl-libc</title>
+      <link>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</link>
+      <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</guid>
+      <description>glibc GNU C Library 是 GNU 项目（GNU Project），所实现的 C 语言标准库（C standard library） 常见的桌面和服务器中的 GNU/Linux 类的系统中，都是用的这套 C 语言标</description>
+    </item>
+    
+    <item>
+      <title>Linux 远程桌面(win)</title>
+      <link>https://daotoyi.github.io/post/linux-remote-desktop/</link>
+      <pubDate>Fri, 05 Aug 2022 21:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-remote-desktop/</guid>
+      <description>VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie</description>
+    </item>
+    
+    <item>
+      <title>Windows chkdsk</title>
+      <link>https://daotoyi.github.io/post/windows-cmd-chkdsk/</link>
+      <pubDate>Thu, 04 Aug 2022 09:24:37 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-cmd-chkdsk/</guid>
+      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
+    </item>
+    
+    <item>
+      <title>Linux gcc</title>
+      <link>https://daotoyi.github.io/post/linux-gcc-compile-lib/</link>
+      <pubDate>Tue, 02 Aug 2022 22:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-gcc-compile-lib/</guid>
+      <description>gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I+ 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警</description>
+    </item>
+    
+    <item>
+      <title>Linux system FAQ</title>
+      <link>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</guid>
+      <description>FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon</description>
+    </item>
+    
+    <item>
+      <title>Xray&#43;XTLS&#43;VLESS(前端 Nginx SNI 分流)</title>
+      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</link>
+      <pubDate>Fri, 29 Jul 2022 07:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</guid>
+      <description>简述 Nginx 和 Xray 共用 443 端口，一般就两种方案: Xray 做前端 监听 443 端口，给 Vless 用 利用 vless+tcp+tls 强大的回落/分流特性，实现 Trojan 和 Nginx 共用 443 端口。 Nginx 做前端 监听 443 端口，给网站</description>
+    </item>
+    
+    <item>
+      <title>QTTabBar(2048)卸载</title>
+      <link>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</link>
+      <pubDate>Wed, 27 Jul 2022 23:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</guid>
+      <description>QTTabBar windows 自带的开源多标签浏览器插件。 使用起来卡顿，体验不如第三方工具 clover 好，很难卸载。 卸载方法 下载 Windows Installer CleanUp Utility工具，找到 QTTabBar 点击 remove 移除安装信</description>
+    </item>
+    
+    <item>
+      <title>NAT-NNDS</title>
+      <link>https://daotoyi.github.io/post/nat-nnds/</link>
+      <pubDate>Mon, 25 Jul 2022 09:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/nat-nnds/</guid>
+      <description>utools xray/v2ray serveo 1 ssh -R remote_socket:host:hostport serveo.net Ref 无需安装，仅需 1 条指令，秒实现内网穿透的神器k</description>
+    </item>
+    
+    <item>
+      <title>Windows and ISO「隔空投送」</title>
+      <link>https://daotoyi.github.io/post/windows-and-iso/</link>
+      <pubDate>Mon, 25 Jul 2022 09:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-and-iso/</guid>
+      <description>Send Anywhere 文件传输：Windows 和 iOS 也有「隔空投送」 win 和 iso 均需要安装客户端 第一次使用需要配对 Continue on PC 把手机上查看的网页发送到电脑上 在 Safari 里打开想要分</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Mon, 25 Jul 2022 06:45:58 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Docker 类似功能区分</title>
+      <link>https://daotoyi.github.io/post/docker-distinguish-functions/</link>
+      <pubDate>Sun, 24 Jul 2022 12:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-distinguish-functions/</guid>
+      <description>ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通</description>
+    </item>
+    
+    <item>
+      <title>Docker compose multi-files</title>
+      <link>https://daotoyi.github.io/post/docker-compose-multi-files/</link>
+      <pubDate>Sun, 24 Jul 2022 10:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-compose-multi-files/</guid>
+      <description>two mode 通过使用多个 compose 文件扩展整个 compose 文件 使用 extends 字段扩展单个服务 multi files 使用多个 compose 文件可以为不同的环境或不同的工作流自定义 compose 应用程序. 默认下，comp</description>
+    </item>
     
     <item>
       <title>私有网盘 Nextcloud/ownCloud 和 Cloudreve</title>
@@ -39,21 +156,12 @@
     </item>
     
     <item>
-      <title>自定义域名邮箱</title>
+      <title>企业邮箱(自定义域名)邮箱</title>
       <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
       <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
-      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
-    </item>
-    
-    <item>
-      <title>自定义域名邮箱</title>
-      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
-      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
-      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+      <description>企业邮箱 (绑定域名) 服务对比 免费的企业邮箱 / 域名邮箱服务: 国内 腾讯企业邮箱 阿里云企业邮箱 163 网易企业邮箱 飞书企业邮箱、 Zoho 中国版 国外 微软 Office 365 企业</description>
     </item>
     
     <item>
@@ -90,15 +198,6 @@
       
       <guid>https://daotoyi.github.io/post/webssh/</guid>
       <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Tue, 05 Jul 2022 21:47:18 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>
@@ -386,11 +485,11 @@
       <pubDate>Sat, 16 Apr 2022 07:33:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-ld-linux.so/</guid>
-      <description>glibc，libc，glib glibc glibc 是 linux 的 GUN C 函数库，是 linux 系统中最底层的 API，几乎其它任何运行时库都依赖于 glibc。 glibc 除了封装 linux 操作系统所</description>
+      <description>ELF 格式 Linux 上可执行程序遵循的是 ELF 格式。 一般一个 ELF 文件都会有两个 header : ELF header，作用是描述整个 ELF 文件的一些信息 program header, 作用主要是为了表明自己应该</description>
     </item>
     
     <item>
-      <title>make, cmake, qmake</title>
+      <title>Linux make, cmake, qmake</title>
       <link>https://daotoyi.github.io/post/make-cmake-qmake/</link>
       <pubDate>Fri, 15 Apr 2022 14:47:00 +0000</pubDate>
       
@@ -399,7 +498,7 @@
     </item>
     
     <item>
-      <title>CMD ag</title>
+      <title>cmd ag</title>
       <link>https://daotoyi.github.io/post/linux-cmd-ag/</link>
       <pubDate>Fri, 15 Apr 2022 14:46:00 +0000</pubDate>
       
@@ -414,15 +513,6 @@
       
       <guid>https://daotoyi.github.io/post/linux-selinux/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 ## Reahdet # 查看SELinux状态： /usr/sbin/sestatus -v # SELinux status: enabled # or getenforce # 关闭SELinux： # 临时关闭（不用重启机器）： setenforce 0 # 设置SELi</description>
-    </item>
-    
-    <item>
-      <title>Ref</title>
-      <link>https://daotoyi.github.io/post/linux/</link>
-      <pubDate>Fri, 15 Apr 2022 17:10:08 +0800</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/linux/</guid>
-      <description>多个gcc/glibc版本的共存及指定gcc版本的编译</description>
     </item>
     
     <item>
@@ -633,7 +723,7 @@
     </item>
     
     <item>
-      <title>locale</title>
+      <title>Linux locale</title>
       <link>https://daotoyi.github.io/post/linux-locale/</link>
       <pubDate>Sun, 03 Apr 2022 17:09:00 +0000</pubDate>
       

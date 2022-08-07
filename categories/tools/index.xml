@@ -6,10 +6,37 @@
     <description>Recent content in Tools on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 May 2022 23:41:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jul 2022 23:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>QTTabBar(2048)卸载</title>
+      <link>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</link>
+      <pubDate>Wed, 27 Jul 2022 23:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</guid>
+      <description>QTTabBar windows 自带的开源多标签浏览器插件。 使用起来卡顿，体验不如第三方工具 clover 好，很难卸载。 卸载方法 下载 Windows Installer CleanUp Utility工具，找到 QTTabBar 点击 remove 移除安装信</description>
+    </item>
+    
+    <item>
+      <title>NAT-NNDS</title>
+      <link>https://daotoyi.github.io/post/nat-nnds/</link>
+      <pubDate>Mon, 25 Jul 2022 09:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/nat-nnds/</guid>
+      <description>utools xray/v2ray serveo 1 ssh -R remote_socket:host:hostport serveo.net Ref 无需安装，仅需 1 条指令，秒实现内网穿透的神器k</description>
+    </item>
+    
+    <item>
+      <title>Windows and ISO「隔空投送」</title>
+      <link>https://daotoyi.github.io/post/windows-and-iso/</link>
+      <pubDate>Mon, 25 Jul 2022 09:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-and-iso/</guid>
+      <description>Send Anywhere 文件传输：Windows 和 iOS 也有「隔空投送」 win 和 iso 均需要安装客户端 第一次使用需要配对 Continue on PC 把手机上查看的网页发送到电脑上 在 Safari 里打开想要分</description>
+    </item>
     
     <item>
       <title>Google gmail</title>

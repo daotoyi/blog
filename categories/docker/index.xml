@@ -6,10 +6,28 @@
     <description>Recent content in Docker on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jun 2022 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jul 2022 12:01:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker 类似功能区分</title>
+      <link>https://daotoyi.github.io/post/docker-distinguish-functions/</link>
+      <pubDate>Sun, 24 Jul 2022 12:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-distinguish-functions/</guid>
+      <description>ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通</description>
+    </item>
+    
+    <item>
+      <title>Docker compose multi-files</title>
+      <link>https://daotoyi.github.io/post/docker-compose-multi-files/</link>
+      <pubDate>Sun, 24 Jul 2022 10:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-compose-multi-files/</guid>
+      <description>two mode 通过使用多个 compose 文件扩展整个 compose 文件 使用 extends 字段扩展单个服务 multi files 使用多个 compose 文件可以为不同的环境或不同的工作流自定义 compose 应用程序. 默认下，comp</description>
+    </item>
     
     <item>
       <title>Docker Network</title>

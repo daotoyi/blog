@@ -20,5 +20,14 @@
       <description>格式 f1 f2 f3 f4 f5 program 其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执</description>
     </item>
     
+    <item>
+      <title>Linux chroot(mount –bind | mount namespaces)</title>
+      <link>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</link>
+      <pubDate>Sat, 25 Jun 2022 16:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</guid>
+      <description>chroot 切换根文件系统并运行进程 ,可以改变一个进程的根目录. Bind Mount 可以将一个目录或文件映射到别处，可以跨越不同的卷。 mount &amp;ndash;bind 命令是将前一个目录挂载到后一</description>
+    </item>
+    
   </channel>
 </rss>

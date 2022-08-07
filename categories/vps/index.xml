@@ -6,10 +6,28 @@
     <description>Recent content in VPS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Jul 2022 20:31:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jul 2022 07:31:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Xray&#43;XTLS&#43;VLESS(前端 Nginx SNI 分流)</title>
+      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</link>
+      <pubDate>Fri, 29 Jul 2022 07:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</guid>
+      <description>简述 Nginx 和 Xray 共用 443 端口，一般就两种方案: Xray 做前端 监听 443 端口，给 Vless 用 利用 vless+tcp+tls 强大的回落/分流特性，实现 Trojan 和 Nginx 共用 443 端口。 Nginx 做前端 监听 443 端口，给网站</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Mon, 25 Jul 2022 06:45:58 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
     
     <item>
       <title>私有网盘 Nextcloud/ownCloud 和 Cloudreve</title>
@@ -27,15 +45,6 @@
       
       <guid>https://daotoyi.github.io/post/webssh/</guid>
       <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Tue, 05 Jul 2022 21:47:18 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>

@@ -2,7 +2,7 @@
 title: "Python 装饰器高级版"
 description: "Python 类内定义装饰器并传递 self 参数"
 date: "2022-04-16 20:56:00"
-lastmod: "2022-04-30 12:46:09"
+lastmod: "2022-08-07 13:09:50"
 categories: ["Python"]
 draft: false
 ---

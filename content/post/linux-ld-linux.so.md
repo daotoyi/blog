@@ -2,7 +2,7 @@
 title: "Linux 动态链接器"
 description: "跨 libc 启动程序（python3）"
 date: "2022-04-16 07:33:00"
-lastmod: "2022-08-07 12:24:40"
+lastmod: "2022-08-07 14:47:49"
 tags: ["libs"]
 categories: ["Cplus"]
 draft: false
@@ -173,3 +173,4 @@ $ ./patchelf --set-interpreter /path/to/newglibc/ld-linux.so.2 --set-rpath /path
 
 -   [理解 Linux 动态链接库依赖](https://zhuanlan.zhihu.com/p/59590848)
 -   [多个gcc/glibc版本的共存及指定gcc版本的编译](https://blog.csdn.net/mo4776/article/details/119837501)
+-   [linux-vdso.so.1简介](https://cs.pynote.net/sf/linux/sys/202111136/)

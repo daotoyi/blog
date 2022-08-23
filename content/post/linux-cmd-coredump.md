@@ -1,8 +1,10 @@
 ---
 title: "Linux cmd coredump"
-lastmod: "2022-07-27 19:08:26"
+date: "2022-08-01 13:40:00"
+lastmod: "2022-08-21 10:40:43"
+tags: ["cmd"]
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## 简介 {#简介}
@@ -17,9 +19,9 @@ coredumpctl 工具用于提取与处理先前由 systemd-coredump 保存的内�
 /etc/systemd/coredump.conf
 
 ```bash
-Storage=none  # 默认是不生成 coredump 文件,在日记中记录核心转储，但不储存
-              # external 储存在 /var/lib/systemd/coredump 中
-              # journal — 将核心储存在 systemd 日记中
+Storage=none      # 默认是不生成 coredump 文件,在日记中记录核心转储，但不储存
+Storage=external  # external 储存在 /var/lib/systemd/coredump 中
+                  # journal — 将核心储存在 systemd 日记中
 ```
 
 

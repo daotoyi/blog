@@ -1,7 +1,8 @@
 ---
 title: "Linux Compile Install Openssh/Openssl"
 date: "2022-06-25 16:13:00"
-lastmod: "2022-06-25 16:13:59"
+lastmod: "2022-08-07 19:19:12"
+tags: ["ssl"]
 categories: ["Linux"]
 draft: false
 ---
@@ -13,9 +14,24 @@ draft: false
 -   <https://www.openssl.org/source/>
 
 
-## steps {#steps}
+## openssl {#openssl}
 
 ```bash
+openssl version # 查看版本号
+
+./config
+make
+make install
+
+ln -s /usr/local/bin/openssl /usr/bin/openssl
+```
+
+
+## openssh {#openssh}
+
+```bash
+sshd -v # version
+
 mkdir /opt/sshbak &&  mv /etc/ssh/*  /opt/sshbak/
 mkdir /usr/local/sshd
 

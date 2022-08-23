@@ -1,7 +1,7 @@
 ---
-title: "Linux gcc"
+title: "Linux gcc/g++"
 date: "2022-08-02 22:47:00"
-lastmod: "2022-08-07 10:53:06"
+lastmod: "2022-08-07 22:39:29"
 tags: ["libs"]
 categories: ["Cplus"]
 draft: false

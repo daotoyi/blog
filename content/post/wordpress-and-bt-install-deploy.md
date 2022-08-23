@@ -1,7 +1,7 @@
 ---
 title: "WordPress 笔记"
 date: "2022-03-15 22:26:00"
-lastmod: "2022-08-05 11:10:32"
+lastmod: "2022-08-21 23:27:03"
 tags: ["WordPress"]
 categories: ["VPS"]
 draft: false
@@ -228,6 +228,11 @@ rft
 ### wp hide login {#wp-hide-login}
 
 隐藏网站后台登入网址的。
+
+
+### Yoast SEO {#yoast-seo}
+
+WordPress SEO，Yoast 是一个不得不安装的插件
 
 
 ## Notes {#notes}

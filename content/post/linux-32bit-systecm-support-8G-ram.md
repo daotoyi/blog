@@ -1,8 +1,9 @@
 ---
 title: "Linux 32 位系统支持 8G 内存"
-lastmod: "2022-07-11 12:55:24"
+date: "2022-07-11 12:55:00"
+lastmod: "2022-08-07 15:24:43"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## 问题方案 {#问题方案}

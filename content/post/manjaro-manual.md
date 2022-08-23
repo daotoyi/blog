@@ -1,7 +1,7 @@
 ---
 title: "Manjaro/Linux 使用"
 date: "2022-03-31 22:53:00"
-lastmod: "2022-07-23 10:57:56"
+lastmod: "2022-08-20 15:53:26"
 categories: ["Linux"]
 draft: false
 ---

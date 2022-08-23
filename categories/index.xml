@@ -6,10 +6,55 @@
     <description>Recent content in Categories on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Aug 2022 10:49:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Aug 2022 15:40:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Internet</title>
+      <link>https://daotoyi.github.io/categories/internet/</link>
+      <pubDate>Sun, 21 Aug 2022 15:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://daotoyi.github.io/categories/tools/</link>
+      <pubDate>Sun, 21 Aug 2022 10:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://daotoyi.github.io/categories/hardware/</link>
+      <pubDate>Thu, 18 Aug 2022 22:54:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://daotoyi.github.io/categories/linux/</link>
+      <pubDate>Sun, 07 Aug 2022 22:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://daotoyi.github.io/categories/python/</link>
+      <pubDate>Sun, 07 Aug 2022 13:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Code</title>
@@ -26,15 +71,6 @@
       <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/categories/cplus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://daotoyi.github.io/categories/linux/</link>
-      <pubDate>Fri, 05 Aug 2022 21:04:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
@@ -57,47 +93,11 @@
     </item>
     
     <item>
-      <title>Tools</title>
-      <link>https://daotoyi.github.io/categories/tools/</link>
-      <pubDate>Wed, 27 Jul 2022 23:30:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Docker</title>
       <link>https://daotoyi.github.io/categories/docker/</link>
       <pubDate>Sun, 24 Jul 2022 12:01:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/categories/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Internet</title>
-      <link>https://daotoyi.github.io/categories/internet/</link>
-      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/internet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://daotoyi.github.io/categories/python/</link>
-      <pubDate>Fri, 01 Jul 2022 11:53:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://daotoyi.github.io/categories/hardware/</link>
-      <pubDate>Fri, 01 Jul 2022 10:22:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/hardware/</guid>
       <description></description>
     </item>
     

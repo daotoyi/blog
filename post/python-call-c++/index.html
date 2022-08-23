@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python 调用 C&#43;&#43;的方式 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()&#43; &amp;#34;/libcdll.so&amp;#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/python-call-c&#43;&#43;/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Python 调用 C&#43;&#43;的方式" />
+<meta property="og:description" content="调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()&#43; &#34;/libcdll.so&#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/python-call-c&#43;&#43;/" />
+<meta property="article:published_time" content="2022-08-07T13:09:00+00:00" />
+<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
+<meta itemprop="name" content="Python 调用 C&#43;&#43;的方式">
+<meta itemprop="description" content="调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()&#43; &#34;/libcdll.so&#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa">
+<meta itemprop="datePublished" content="2022-08-07T13:09:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
+<meta itemprop="wordCount" content="893">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 调用 C&#43;&#43;的方式"/>
+<meta name="twitter:description" content="调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()&#43; &#34;/libcdll.so&#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python 调用 C&#43;&#43;的方式</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-07 </span>
+        <div class="post-category">
+            <a href="/categories/python/"> Python </a>
+            </div>
+          <span class="more-meta"> 893 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#调用-python-的自有模块-ctypes--dot-cpp-编译好的-dot-so--简单">调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单）</a></li>
+        <li><a href="#调用-c-c-plus-plus-编写的扩展模块-推荐">调用 c/c++编写的扩展模块（推荐）</a></li>
+        <li><a href="#调用-dot-cpp-编译好的-dot-exe-文件">调用.cpp 编译好的.exe 文件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="调用-python-的自有模块-ctypes--dot-cpp-编译好的-dot-so--简单">调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单）</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">sotest</span> <span class="o">=</span> <span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="o">+</span> <span class="s2">&#34;/libcdll.so&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">gcc -fPIC test.c -o example.so -shared  -I/usr/include/python2.7
+</code></pre></td></tr></table>
+</div>
+</div><p>-fPIC：生成位置无关目标代码，适用于动态连接；
+-L path：表示在 path 目录中搜索库文件，如-L.表示在当前目录；
+-I path：表示在 path 目录中搜索头文件；
+-o file：制定输出文件为 file；
+-shared：生成一个共享库文件；</p>
+<h2 id="调用-c-c-plus-plus-编写的扩展模块-推荐">调用 c/c++编写的扩展模块（推荐）</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">// #include &#34;Python.h&#34;
+</span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;Python.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">extern</span> <span class="s">&#34;C&#34;</span>
+<span class="kt">int</span> <span class="n">add_func</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">extern</span> <span class="s">&#34;C&#34;</span><span class="p">{</span>
+<span class="k">static</span> <span class="n">PyObject</span> <span class="o">*</span><span class="nf">_add_func</span><span class="p">(</span><span class="n">PyObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">_a</span><span class="p">,</span><span class="n">_b</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">res</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTuple</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s">&#34;ii&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">_a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">_b</span><span class="p">))</span>
+        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">add_func</span><span class="p">(</span><span class="n">_a</span><span class="p">,</span> <span class="n">_b</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">PyLong_FromLong</span><span class="p">(</span><span class="n">res</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">extern</span> <span class="s">&#34;C&#34;</span><span class="p">{</span>
+<span class="k">static</span> <span class="n">PyMethodDef</span> <span class="n">exCplusMethods</span><span class="p">[]</span> <span class="o">=</span>
+<span class="p">{</span>
+    <span class="p">{</span><span class="s">&#34;add_func&#34;</span><span class="p">,</span> <span class="n">_add_func</span><span class="p">,</span> <span class="n">METH_VARARGS</span><span class="p">,</span> <span class="s">&#34;&#34;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">}</span>
+<span class="p">};</span>
+<span class="p">}</span>
+
+<span class="c1">// Python 3.x中不再使用Py_InitModule.
+</span><span class="c1">// extern &#34;C&#34;
+</span><span class="c1">// PyMODINIT_FUNC initlibexdll(void)
+</span><span class="c1">// {
+</span><span class="c1">//     (void) Py_InitModule(&#34;libexdll&#34;, exCplusMethods);
+</span><span class="c1">// }
+</span><span class="c1"></span>
+<span class="c1">// 创建一个 PyModuleDef结构，然后将引用传递给 PyModule_Create。
+</span><span class="c1"></span><span class="k">static</span> <span class="k">struct</span> <span class="nc">PyModuleDef</span> <span class="n">exdll</span> <span class="o">=</span> <span class="p">{</span>
+           <span class="n">PyModuleDef_HEAD_INIT</span><span class="p">,</span>
+           <span class="s">&#34;add_func&#34;</span><span class="p">,</span> <span class="cm">/* name of module */</span>
+           <span class="nb">NULL</span><span class="p">,</span> <span class="cm">/* module documentation, may be NULL */</span>
+           <span class="o">-</span><span class="mi">1</span><span class="p">,</span>   <span class="cm">/* size of per-interpreter state of the module,
+</span><span class="cm">                       or -1 if the module keeps state in global variables. */</span>
+           <span class="n">exCplusMethods</span>
+<span class="p">};</span>
+
+<span class="n">PyMODINIT_FUNC</span> <span class="nf">PyInit_libexdll</span><span class="p">(</span> <span class="kt">void</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">return</span> <span class="n">PyModule_Create</span><span class="p">(</span> <span class="o">&amp;</span><span class="n">exdll</span> <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">cl /LD exdll.cpp /o libexdll.pyd -I C:<span class="se">\P</span>ython27<span class="se">\i</span>nclude C:<span class="se">\P</span>ython27<span class="se">\l</span>ibs<span class="se">\p</span>ython27.lib
+
+g++ -fPIC exdll.cpp -shared -o libexdll.so -I /usr/include/python3.8/ -lpython3.8
+</code></pre></td></tr></table>
+</div>
+</div><p>函数介绍：</p>
+<ul>
+<li>
+<p>包裹函数_add_func。它负责将 Python 的参数转化为 C 的参数（PyArg_ParseTuple），调用实际的 add_function，并处理 add_function 的返回值，最终返回给 Python 环境。</p>
+</li>
+<li>
+<p>参数解析 PyArg_ParseTuple，将 python 的变量解析成 C/C++变量，按照 ii,si,ss 等格式</p>
+</li>
+<li>
+<p>导出表 exCplusModuleMethods。它负责告诉 Python 这个模块里有哪些函数可以被 Python 调用。导出表的名字可以随便起，每一项有 4 个参数：</p>
+<ul>
+<li>第一个参数是提供给 Python 环境的函数名称，这个名称可以任取，</li>
+<li>第二个参数是_add_function，即包裹函数。</li>
+<li>第三个参数的含义是参数变长，</li>
+<li>第四个参数是一个说明性的字符串。导出表总是以{NULL,NULL, 0,NULL}结束。</li>
+</ul>
+</li>
+<li>
+<p>导出函数 initcpp_module。这个的名字不是任取的，是你的 module 名称添加前缀 init。导出函数中将模块名称与导出表进行连接。</p>
+</li>
+</ul>
+<h2 id="调用-dot-cpp-编译好的-dot-exe-文件">调用.cpp 编译好的.exe 文件</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">commands</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">main</span> <span class="o">=</span> <span class="s2">&#34;./cppexec&#34;</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">main</span><span class="p">):</span>
+    <span class="n">rc</span><span class="p">,</span> <span class="n">out</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">getstatusoutput</span><span class="p">(</span><span class="n">main</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;rc = </span><span class="si">%d</span><span class="s1">, </span><span class="se">\n</span><span class="s1">out = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">rc</span><span class="p">,</span> <span class="n">out</span><span class="p">))</span>
+
+<span class="n">cpptest</span><span class="o">=</span><span class="s2">&#34;cppexec.exe&#34;</span> <span class="c1">#in linux without suffix .exe</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">cpptest</span><span class="p">):</span>
+  <span class="n">f</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="n">cpptest</span><span class="p">)</span>
+  <span class="n">data</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1">#read the C++ printf or cout content</span>
+  <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;python execute cpp program:&#34;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cpptest</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-08-23
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/linux-cmd-brctl/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Linux cmd brctl</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/code-html-xml/">
+            <span class="next-text nav-default">HTML、XML、XPath</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

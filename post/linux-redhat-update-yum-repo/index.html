@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux Redhat/Centos 更新 yum 源 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="更换 yum 源 法 1:直接修改配置 /etc/yum.repos.d/，修改或者新建 .repo 格式的文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-redhat-update-yum-repo/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux Redhat/Centos 更新 yum 源" />
+<meta property="og:description" content="更换 yum 源 法 1:直接修改配置 /etc/yum.repos.d/，修改或者新建 .repo 格式的文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-redhat-update-yum-repo/" />
+<meta property="article:published_time" content="2022-08-07T22:38:00+00:00" />
+<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
+<meta itemprop="name" content="Linux Redhat/Centos 更新 yum 源">
+<meta itemprop="description" content="更换 yum 源 法 1:直接修改配置 /etc/yum.repos.d/，修改或者新建 .repo 格式的文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27">
+<meta itemprop="datePublished" content="2022-08-07T22:38:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
+<meta itemprop="wordCount" content="666">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Redhat/Centos 更新 yum 源"/>
+<meta name="twitter:description" content="更换 yum 源 法 1:直接修改配置 /etc/yum.repos.d/，修改或者新建 .repo 格式的文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux Redhat/Centos 更新 yum 源</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-07 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 666 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#更换-yum-源">更换 yum 源</a>
+          <ul>
+            <li><a href="#法-1-直接修改配置">法 1:直接修改配置</a></li>
+            <li><a href="#法-2-卸载原有yum重新安装">法 2:<a href="https://blog.csdn.net/x781437692/article/details/112768356">卸载原有yum重新安装</a></a></li>
+            <li><a href="#法-3-挂载安装-iso-中的-yum-源">法 3:挂载安装 ISO 中的 yum 源</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a>
+          <ul>
+            <li><a href="#errno-14-problem-making-ssl-connection">[Errno 14] problem making ssl connection</a></li>
+          </ul>
+        </li>
+        <li><a href="#centos-源">Centos 源</a></li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="更换-yum-源">更换 yum 源</h2>
+<h3 id="法-1-直接修改配置">法 1:直接修改配置</h3>
+<p>/etc/yum.repos.d/，修改或者新建 <code>.repo</code> 格式的文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># CentOS  -Base.repo</span>
+<span class="c1">#</span>
+<span class="c1"># The mirror system uses the connecting IP address of the client and the</span>
+<span class="c1"># update status of each mirror to pick mirrors that are updated to and</span>
+<span class="c1"># geographically close to the client.  You should use this for CentOS updates</span>
+<span class="c1"># unless you are manually picking other mirrors.</span>
+<span class="c1">#</span>
+<span class="c1"># If the mirrorlist= does not work for you, as a fall back you can try the</span>
+<span class="c1"># remarked out baseurl= line instead.</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+
+<span class="na">[base]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Base - mirrors.aliyun.com</span>
+<span class="na">failovermethod</span><span class="o">=</span><span class="s">priority</span>
+<span class="na">baseurl</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/$releasever/os/$basearch/
+</span><span class="s">        http://mirrors.aliyuncs.com/centos/$releasever/os/$basearch/
+</span><span class="s">        http://mirrors.cloud.aliyuncs.com/centos/$releasever/os/$basearch/</span>
+<span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+<span class="na">gpgkey</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6</span>
+
+<span class="c1">#released updates</span>
+<span class="na">[updates]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Updates - mirrors.aliyun.com</span>
+<span class="na">failovermethod</span><span class="o">=</span><span class="s">priority</span>
+<span class="na">baseurl</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/$releasever/updates/$basearch/
+</span><span class="s">        http://mirrors.aliyuncs.com/centos/$releasever/updates/$basearch/
+</span><span class="s">        http://mirrors.cloud.aliyuncs.com/centos/$releasever/updates/$basearch/</span>
+<span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+<span class="na">gpgkey</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6</span>
+
+<span class="c1">#additional packages that may be useful</span>
+<span class="na">[extras]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Extras - mirrors.aliyun.com</span>
+<span class="na">failovermethod</span><span class="o">=</span><span class="s">priority</span>
+<span class="na">baseurl</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/$releasever/extras/$basearch/
+</span><span class="s">        http://mirrors.aliyuncs.com/centos/$releasever/extras/$basearch/
+</span><span class="s">        http://mirrors.cloud.aliyuncs.com/centos/$releasever/extras/$basearch/</span>
+<span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+<span class="na">gpgkey</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6</span>
+
+<span class="c1">#additional packages that extend functionality of existing packages</span>
+<span class="na">[centosplus]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Plus - mirrors.aliyun.com</span>
+<span class="na">failovermethod</span><span class="o">=</span><span class="s">priority</span>
+<span class="na">baseurl</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/$releasever/centosplus/$basearch/
+</span><span class="s">        http://mirrors.aliyuncs.com/centos/$releasever/centosplus/$basearch/
+</span><span class="s">        http://mirrors.cloud.aliyuncs.com/centos/$releasever/centosplus/$basearch/</span>
+<span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+<span class="na">enabled</span><span class="o">=</span><span class="s">0</span>
+<span class="na">gpgkey</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6</span>
+
+<span class="c1">#contrib - packages by Centos Users</span>
+<span class="na">[contrib]</span>
+<span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Contrib - mirrors.aliyun.com</span>
+<span class="na">failovermethod</span><span class="o">=</span><span class="s">priority</span>
+<span class="na">baseurl</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/$releasever/contrib/$basearch/
+</span><span class="s">        http://mirrors.aliyuncs.com/centos/$releasever/contrib/$basearch/
+</span><span class="s">        http://mirrors.cloud.aliyuncs.com/centos/$releasever/contrib/$basearch/</span>
+<span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+<span class="na">enabled</span><span class="o">=</span><span class="s">0</span>
+<span class="na">gpgkey</span><span class="o">=</span><span class="s">http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-6</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>会有提示系统未注册但是可以正确安装软件</li>
+<li>需要手动替换文件中的$releasever 变量（redhat 不会自动匹配）</li>
+</ul>
+<h3 id="法-2-卸载原有yum重新安装">法 2:<a href="https://blog.csdn.net/x781437692/article/details/112768356">卸载原有yum重新安装</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">  rpm -qa <span class="p">|</span> grep yum <span class="p">|</span> xargs rpm -e --nodeps   <span class="c1">#不检查依赖关系，直接卸载</span>
+
+  <span class="c1"># centos yum packages</span>
+  rpm -ivh *              <span class="c1"># 安装该目录下所有rpm包</span>
+  rpm -qa <span class="p">|</span> grep yum      <span class="c1"># 查询是否安装好</span>
+
+  <span class="nb">echo</span> &gt;  /etc/yum.repos.d/centos7.yum <span class="s">&lt;&lt;EOL
+</span><span class="s">  [base]
+</span><span class="s">name= yum repo
+</span><span class="s">baseurl=http://mirrors.aliyun.com/centos/7/os/$basearch/
+</span><span class="s">enabled=1
+</span><span class="s">gpgcheck=0
+</span><span class="s">EOL</span>
+
+  yum clean allow
+  yum list <span class="p">|</span> wc -l
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="法-3-挂载安装-iso-中的-yum-源">法 3:挂载安装 ISO 中的 yum 源</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mkdir /media/cdrom
+mount -t iso9660 -o loop /path/to/rhel-server-7.0-x86_64-dvd.iso /media/cdrom
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">[rhel-media]</span>
+<span class="c1">#自定义名称</span>
+<span class="na">name</span><span class="o">=</span><span class="s">CentOS-$releasever - Base</span>
+<span class="c1">#本地光盘挂载路径</span>
+<span class="na">baseurl</span><span class="o">=</span><span class="s">file:///media/cdrom</span>
+<span class="c1">#启用yum源，0为不启用，1为启用</span>
+<span class="na">enabled</span><span class="o">=</span><span class="s">1</span>
+<span class="c1">#检查GPG-KEY，0为不检查，1为检查</span>
+<span class="na">gpgcheck</span><span class="o">=</span><span class="s">1</span>
+<span class="c1">#GPG-KEY路径</span>
+<span class="na">gpgkey</span><span class="o">=</span><span class="s">file:///media/cdrom/RPM-GPG-KEY-CentOS-6</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="faq">FAQ</h2>
+<h3 id="errno-14-problem-making-ssl-connection">[Errno 14] problem making ssl connection</h3>
+<blockquote>
+<p>On RHEL based systems (6.7 or older) when the above error is seen, it is caused by support for TLS 1.0 and 1.1 being deprecated for SSL。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum-config-manager --disable centrify.repo
+yum clean all
+yum update yum
+yum update curl
+yum update openssl
+yum update nss
+yum-config-manager --enable centrify.repo
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="centos-源">Centos 源</h2>
+<ul>
+<li>北外源 <a href="https://mirrors.bfsu.edu.cn/centos-vault/6.6/os/">https://mirrors.bfsu.edu.cn/centos-vault/6.6/os/</a>
+<ul>
+<li><a href="https://mirrors.bfsu.edu.cn/centos-vault/6.6/isos/i386/CentOS-6.6-i386-bin-DVD1.iso">Centos-6.6-i386</a></li>
+</ul>
+</li>
+<li>清华源 <a href="https://mirror.tuna.tsinghua.edu.cn/centos-vault/6.6/">https://mirror.tuna.tsinghua.edu.cn/centos-vault/6.6/</a></li>
+<li>阿里源 <a href="https://mirrors.aliyun.com/centos/">https://mirrors.aliyun.com/centos/</a>
+<ul>
+<li>Centos6 及以前的源均不包含</li>
+</ul>
+</li>
+<li>163 源 <a href="http://mirrors.163.com/centos/">http://mirrors.163.com/centos/</a>
+<ul>
+<li>Centos6 及以前的源均不包含</li>
+</ul>
+</li>
+<li>centos 源 <a href="https://vault.centos.org/">https://vault.centos.org/</a>
+<ul>
+<li>这个 vault 地址有所有版本的源。</li>
+</ul>
+</li>
+</ul>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/25a63cbf1e9d">三种方法更换YUM源</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-08-23
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/hardware-hsr-prp/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">HSR/PRP 冗余协议</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/linux-cmd-brctl/">
+            <span class="next-text nav-default">Linux cmd brctl</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

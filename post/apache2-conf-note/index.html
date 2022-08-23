@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Apache2 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/apache2-conf-note/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Apache2" />
+<meta property="og:description" content="Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/apache2-conf-note/" />
+<meta property="article:published_time" content="2022-08-21T15:40:00+00:00" />
+<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
+<meta itemprop="name" content="Apache2">
+<meta itemprop="description" content="Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include">
+<meta itemprop="datePublished" content="2022-08-21T15:40:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
+<meta itemprop="wordCount" content="1422">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apache2"/>
+<meta name="twitter:description" content="Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Apache2</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-21 </span>
+        <div class="post-category">
+            <a href="/categories/internet/"> Internet </a>
+            </div>
+          <span class="more-meta"> 1422 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#basic">Basic</a></li>
+        <li><a href="#web-site">Web site</a></li>
+        <li><a href="#parameter">Parameter</a></li>
+        <li><a href="#alias">Alias</a></li>
+        <li><a href="#redirext-and-rewrite">Redirext &amp; Rewrite</a>
+          <ul>
+            <li><a href="#redirect">Redirect</a></li>
+            <li><a href="#rewrite-example-通过重定向把子目录设置为网站根目录">Rewrite <a href="https://www.xinyueseo.com/jianzhan/531.html">example:通过重定向把子目录设置为网站根目录</a></a></li>
+          </ul>
+        </li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="basic">Basic</h2>
+<p>配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># Include module configuration:</span>
+<span class="na">Include /etc/apache2/mods-enabled/*.load</span>
+<span class="na">Include /etc/apache2/mods-enabled/*.conf</span>
+
+<span class="c1"># Include all the user configurations:</span>
+<span class="na">Include /etc/apache2/httpd.conf</span>
+
+<span class="c1"># Include ports listing</span>
+<span class="na">Include /etc/apache2/ports.conf</span>
+<span class="na">……</span>
+<span class="c1"># Include generic snippets of statements</span>
+<span class="na">Include /etc/apache2/conf.d/</span>
+
+<span class="c1"># Include the virtual host configurations:</span>
+<span class="na">Include /etc/apache2/sites-enabled/</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="web-site">Web site</h2>
+<p>文档根目录一般是是/var/www, 配置文件 <code>/etc/apache2/sites-enabled/000-default</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">&lt;VirtualHost *自定义端口&gt;</span>
+<span class="c1"># 在ServerName后加上你的网站名称</span>
+<span class="na">ServerName www.linyupark.com</span>
+<span class="c1"># 如果你想多个网站名称都取得相同的网站，可以加在ServerAlias后加上其他网站别名。</span>
+<span class="c1"># 别名间以空格隔开。</span>
+<span class="na">ServerAlias ftp.linyupark.com mail.linyupark.com</span>
+<span class="c1"># 在ServerAdmin后加上网站管理员的电邮地址，方便别人有问题是可以联络网站管理员。</span>
+<span class="na">ServerAdmin webmaster@linyupark.com</span>
+<span class="c1"># 在DocumentRoot后加上存放网站内容的目录路径(用户的个人目录)</span>
+<span class="na">DocumentRoot /home/linyupark/public_html</span>
+<span class="na">&lt;Directory /home/linyupark/public_html&gt;</span>
+
+<span class="na">Options Indexes FollowSymLinks MultiViews</span>
+<span class="na">AllowOverride None</span>
+<span class="na">Order allow,deny</span>
+<span class="na">allow from all</span>
+
+<span class="na">&lt;/Directory&gt;</span>
+<span class="na">ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/</span>
+<span class="na">&lt;Directory &#34;/usr/lib/cgi-bin&#34;&gt;</span>
+<span class="na">AllowOverride None</span>
+<span class="na">Options ExecCGI -MultiViews +SymLinksIfOwnerMatch</span>
+<span class="na">Allow from all</span>
+
+<span class="na">&lt;/Directory&gt;</span>
+<span class="na">ErrorLog/home/linyupark/public_html/error.log</span>
+<span class="c1"># Possible values include: debug, info, notice, warn, error, crit,alert, emerg.</span>
+<span class="na">LogLevel warn</span>
+<span class="na">CustomLog /home/linyupark/public_html/access.log combined</span>
+<span class="na">ServerSignature On</span>
+<span class="na">&lt;/VirtualHost&gt;</span>
+
+<span class="c1"># 如果你的服务器有多个IP，而不同的IP又有着不一样的虚拟用户的话，可以修改成:</span>
+<span class="na">&lt;VirtualHost IP地址[:端口]&gt;</span>
+<span class="na">...</span>
+<span class="na">&lt;/VirtualHost&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>sites-enabled 目录存放的只是一些指向 site-available(真正的配置文件)的符号链接.</li>
+<li><strong>available 目录是存放有效的内容，但不起作用，只有用 ln 连到 enabled 过去才可以起作用。</strong></li>
+<li>sudo apache2ctl configtest</li>
+<li>restart
+<ul>
+<li>/etc/init.d/apache2  restart</li>
+<li>service apache2 restart</li>
+</ul>
+</li>
+<li>a2ensite example1.conf
+<ul>
+<li>自动在/ etc / apache2 / sites-enabled /中创建 example.com 文件</li>
+</ul>
+</li>
+</ul>
+<h2 id="parameter">Parameter</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">&lt;directory &#34;</span><span class="o">=</span><span class="s">&#34;&#34; mnt=&#34;&#34; web=&#34;&#34; clusting&#34;=&#34;&#34;&gt;</span>
+<span class="na">Options FollowSymLinks</span>
+<span class="na">AllowOverride None</span>
+<span class="na">Order allow,deny</span>
+<span class="na">Allow from all</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Options：配置在特定目录使用哪些特性
+<ul>
+<li>ExecCGI: 在该目录下允许执行 CGI 脚本</li>
+<li>FollowSymLinks: 在该目录下允许文件系统使用符号连接。</li>
+<li>Indexes: 当用户访问该目录时，如果用户找不到 DirectoryIndex 指定的主页文件(例如 index.html),则返回该目录下的文件列表给用户</li>
+<li>SymLinksIfOwnerMatch: 当使用符号连接时，只有当符号连接的文件拥有者与实际文件的拥有者相同时才可以访问。</li>
+</ul>
+</li>
+<li>AllowOverride：允许存在于.htaccess 文件中的指令类型(.htaccess 文件名是可以改变的，其文件名由 AccessFileName 指令决定)：
+<ul>
+<li>None: 当 AllowOverride 被设置为 None 时。不搜索该目录下的.htaccess 文件（可以减小服务器开销）</li>
+<li>All: 在.htaccess 文件中可以使用所有的指令。</li>
+</ul>
+</li>
+<li>Order：控制在访问时 Allow 和 Deny 两个访问规则哪个优先</li>
+<li>Allow：允许访问的主机列表(可用域名或子网，例如：Allow from 192.168.0.0/16)</li>
+</ul>
+<h2 id="alias">Alias</h2>
+<p>Alias <em>download</em> &ldquo;<em>var/www/download</em>&rdquo; #访问时可以输入:<a href="http://www.custing.com/download/">http://www.custing.com/download/</a></p>
+<h2 id="redirext-and-rewrite">Redirext &amp; Rewrite</h2>
+<h3 id="redirect">Redirect</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Redirect / http://www.domain2.com
+RedirectMatch ^/(.*)$ http://www.domain2.com/$1
+
+Redirect permanent / http://www.domain2.com
+RedirectMatch permanent ^/(.*)$ http://www.domain2.com/$1
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="rewrite-example-通过重定向把子目录设置为网站根目录">Rewrite <a href="https://www.xinyueseo.com/jianzhan/531.html">example:通过重定向把子目录设置为网站根目录</a></h3>
+<p><strong>apache 的虚拟服务器的重定向都是通过 .htaccess 文件来实现的</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">RewriteEngine On</span>
+<span class="na">RewriteBase /</span>
+<span class="na">RewriteCond %{HTTP_HOST} ^bj.test.com$ [NC]</span>
+<span class="na">RewriteCond %{REQUEST_URI} !^/bj/</span>
+<span class="na">RewriteRule ^(.*)$ bj/$1 [QSA,L]</span>
+
+<span class="na">RewriteRule ^(.*)$ http://bj.test.com/$1 [QSA,R</span><span class="o">=</span><span class="s">301]</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>RewriteEngine On ： 开启 url 重写</li>
+<li>RewriteBase ：基准路径，默认 “/” 即可，表示当前目录下；</li>
+<li>RewriteCond ：重写条件；</li>
+<li>%{HTTP_HOST} ^bj.test.com$ [NC] ：重写条件内容，%{HTTP_HOST} 这个是系统默认变量，表示当前访问的域名，[NC] 表示忽略大小写，^bj.test.com$ 正则匹配条件
+<ul>
+<li>如果当前访问的域名是 bj.test.com 就继续进行下一句匹配；</li>
+</ul>
+</li>
+<li>RewriteCond %{REQUEST_URI} !^/bj/ 这句的意思是当前访问的路径不是以 <em>bj</em> 开头</li>
+<li>RewriteRule ^(.*)$ bj/$1 [QSA,L]： url 重写规则，这里用的是内部重定向 ；
+<ul>
+<li>QSA:保证 url 中的参数不分布被截断，如果不加这个，在 url 重写时，url 中的特殊符号后的参数部分会被截断</li>
+</ul>
+</li>
+<li>[R=301] 表示 301 重定向，如果不加 [R=301]，因为 url 规则总用了完整的 url 所以会默认 302 外部重定向，而 302 重定向对 seo 是不友好的，所以设置成 301 重定向。</li>
+<li>regx
+<ul>
+<li>(.*): 任意匹配</li>
+<li>^/$ : 域名根目录  <a href="https://domain.com/">https://domain.com/</a></li>
+<li>^/(.*)$ : URL 中/之后的所有内容</li>
+</ul>
+</li>
+</ul>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/ce2b7ac40454">Apache的配置文件http.conf参数详解</a></li>
+<li><a href="https://blog.csdn.net/sunny_ran/article/details/78052742">Apache配置详解</a></li>
+<li><a href="https://httpd.apache.org/docs/current/mod/mod_rewrite.html">Apache Module mod_rewrite</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-08-23
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/tools-siyuan_note/">
+            <span class="next-text nav-default">SiYuan_note</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

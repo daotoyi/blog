@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ steps 1 2 3 4 5 6 7 mkdir /opt/sshbak &amp;amp;&amp;amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;amp;&amp;amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref Linux升级OpenSSH和OpenSSL" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ openssl 1 2 3 4 5 6 7 openssl version # 查看版本号 ./config make make install ln -s /usr/local/bin/openssl /usr/bin/openssl openssh 1 2 3 4 5 6 7 8 9 sshd -v # version mkdir /opt/sshbak &amp;amp;&amp;amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;amp;&amp;amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref L" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,22 +40,22 @@
 
 
 <meta property="og:title" content="Linux Compile Install Openssh/Openssl" />
-<meta property="og:description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ steps 1 2 3 4 5 6 7 mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref Linux升级OpenSSH和OpenSSL" />
+<meta property="og:description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ openssl 1 2 3 4 5 6 7 openssl version # 查看版本号 ./config make make install ln -s /usr/local/bin/openssl /usr/bin/openssl openssh 1 2 3 4 5 6 7 8 9 sshd -v # version mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref L" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/" />
 <meta property="article:published_time" content="2022-06-25T16:13:00+00:00" />
-<meta property="article:modified_time" content="2022-08-07T12:25:25+08:00" />
+<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
 <meta itemprop="name" content="Linux Compile Install Openssh/Openssl">
-<meta itemprop="description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ steps 1 2 3 4 5 6 7 mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref Linux升级OpenSSH和OpenSSL">
+<meta itemprop="description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ openssl 1 2 3 4 5 6 7 openssl version # 查看版本号 ./config make make install ln -s /usr/local/bin/openssl /usr/bin/openssl openssh 1 2 3 4 5 6 7 8 9 sshd -v # version mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref L">
 <meta itemprop="datePublished" content="2022-06-25T16:13:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-08-07T12:25:25&#43;08:00" />
-<meta itemprop="wordCount" content="61">
+<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
+<meta itemprop="wordCount" content="91">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ssl," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux Compile Install Openssh/Openssl"/>
-<meta name="twitter:description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ steps 1 2 3 4 5 6 7 mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref Linux升级OpenSSH和OpenSSL"/>
+<meta name="twitter:description" content="download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ openssl 1 2 3 4 5 6 7 openssl version # 查看版本号 ./config make make install ln -s /usr/local/bin/openssl /usr/bin/openssl openssh 1 2 3 4 5 6 7 8 9 sshd -v # version mkdir /opt/sshbak &amp;&amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;&amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref L"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -139,7 +139,7 @@
         <div class="post-category">
             <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 61 words </span>
+          <span class="more-meta"> 91 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -153,7 +153,8 @@
     <li>
       <ul>
         <li><a href="#download">download</a></li>
-        <li><a href="#steps">steps</a></li>
+        <li><a href="#openssl">openssl</a></li>
+        <li><a href="#openssh">openssh</a></li>
         <li><a href="#ref">Ref</a></li>
       </ul>
     </li>
@@ -168,7 +169,7 @@
 <li><a href="https://ftp.openssl.org/source/">https://ftp.openssl.org/source/</a></li>
 <li><a href="https://www.openssl.org/source/">https://www.openssl.org/source/</a></li>
 </ul>
-<h2 id="steps">steps</h2>
+<h2 id="openssl">openssl</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -180,7 +181,32 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">mkdir /opt/sshbak <span class="o">&amp;&amp;</span>  mv /etc/ssh/*  /opt/sshbak/
+<pre class="chroma"><code class="language-bash" data-lang="bash">openssl version <span class="c1"># 查看版本号</span>
+
+./config
+make
+make install
+
+ln -s /usr/local/bin/openssl /usr/bin/openssl
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="openssh">openssh</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sshd -v <span class="c1"># version</span>
+
+mkdir /opt/sshbak <span class="o">&amp;&amp;</span>  mv /etc/ssh/*  /opt/sshbak/
 mkdir /usr/local/sshd
 
 tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ <span class="o">&amp;&amp;</span> <span class="nb">cd</span> /usr/local/src/openssh-8.8p1/
@@ -204,15 +230,17 @@ make install
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-08-07
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/8b49bcf90746646c0361804f2e5b3f7f26ec8e70" title="update weekly">(8b49bcf)</a>
+        2022-08-23
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
     </span>
   </p>
   
   
 </div>
 <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/ssl/">ssl</a>
+          </div>
       <nav class="post-nav">
         <a class="prev" href="/post/docker-network/">
             <i class="iconfont icon-left"></i>

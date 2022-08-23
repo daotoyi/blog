@@ -44,11 +44,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/xray-note/" />
 <meta property="article:published_time" content="2022-04-10T22:15:00+00:00" />
-<meta property="article:modified_time" content="2022-08-07T12:25:25+08:00" />
+<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
 <meta itemprop="name" content="Xray 笔记">
 <meta itemprop="description" content="install system github/XTLS Install &amp; Upgrade Xray-core and geodata with User=nobody, but will NOT overwrite User in existing service files 1 bash &lt;(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh) install Update geoip.dat and geosite.dat only 1 bash -c &#34;$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)&#34; @ install-geodata Remove Xray, except json and logs 1 docker 1 2 3 4 5 docker pull teddysun/xray mkdir -p /etc/xray mkdir -p /etc/xray/ssl yum install -y nginx config /etc/xray/config.json 1 2 3">
 <meta itemprop="datePublished" content="2022-04-10T22:15:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-08-07T12:25:25&#43;08:00" />
+<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
 <meta itemprop="wordCount" content="1571">
 
 
@@ -492,8 +492,8 @@ docker run -d -p 8888:8888 --name xray -v /etc/xray:/etc/xray teddysun/xray  xra
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-08-07
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/8b49bcf90746646c0361804f2e5b3f7f26ec8e70" title="update weekly">(8b49bcf)</a>
+        2022-08-23
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
     </span>
   </p>
   

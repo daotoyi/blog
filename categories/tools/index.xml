@@ -6,10 +6,19 @@
     <description>Recent content in Tools on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Jul 2022 23:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Aug 2022 10:10:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SiYuan_note</title>
+      <link>https://daotoyi.github.io/post/tools-siyuan_note/</link>
+      <pubDate>Sun, 21 Aug 2022 10:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-siyuan_note/</guid>
+      <description>简介 开源免费且“本地优先”的下一代个人知识管理系统 (笔记软件)，它支持离线使用，同时也支持端到端加密同步。 使用官方的云端服务来同步数据, 或通</description>
+    </item>
     
     <item>
       <title>QTTabBar(2048)卸载</title>

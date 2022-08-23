@@ -6,10 +6,19 @@
     <description>Recent content in Internet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Jul 2022 08:55:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Aug 2022 15:40:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache2</title>
+      <link>https://daotoyi.github.io/post/apache2-conf-note/</link>
+      <pubDate>Sun, 21 Aug 2022 15:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/apache2-conf-note/</guid>
+      <description>Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include</description>
+    </item>
     
     <item>
       <title>企业邮箱(自定义域名)邮箱</title>

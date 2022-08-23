@@ -6,10 +6,28 @@
     <description>Recent content in cmd on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Jul 2022 23:24:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Aug 2022 15:24:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux cmd brctl</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-brctl/</link>
+      <pubDate>Sun, 07 Aug 2022 15:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-brctl/</guid>
+      <description>简介 “bridge control”的缩写，其功能是用于管理以太网网桥。属于 bridge-utils 软件包。 参数 参数 功能 addbr 创建网桥 delbr 删除网桥 addif 将网卡接口接入网桥 delif 删</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd coredump</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-coredump/</link>
+      <pubDate>Mon, 01 Aug 2022 13:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-coredump/</guid>
+      <description>简介 coredumpctl 工具用于提取与处理先前由 systemd-coredump 保存的内存转储数据. 当某个进程（或属于应用程序的所有进程）崩溃时，此工具默认会将核心转储记录到 systemd 日记（如有可</description>
+    </item>
     
     <item>
       <title>Linux cmd crontab</title>

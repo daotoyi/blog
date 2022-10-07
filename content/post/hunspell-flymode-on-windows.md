@@ -1,7 +1,7 @@
 ---
 title: "flymode 在 windows 上使用总结"
 date: "2022-02-18 11:07:00"
-lastmod: "2022-04-30 12:24:02"
+lastmod: "2022-09-14 16:51:23"
 tags: ["hunspell"]
 categories: ["emacs"]
 draft: false

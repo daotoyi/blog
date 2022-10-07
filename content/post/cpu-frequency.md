@@ -1,7 +1,7 @@
 ---
 title: "CPU Frequency"
 date: "2022-03-25 22:10:00"
-lastmod: "2022-04-30 12:33:54"
+lastmod: "2022-09-09 07:56:18"
 categories: ["Hardware"]
 draft: false
 ---

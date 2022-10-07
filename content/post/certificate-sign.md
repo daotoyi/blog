@@ -1,7 +1,7 @@
 ---
 title: "SSL 证书签发"
 date: "2022-04-04 18:52:00"
-lastmod: "2022-07-06 18:36:31"
+lastmod: "2022-10-07 15:44:18"
 tags: ["SSL", "Cert"]
 categories: ["Internet"]
 draft: false
@@ -175,7 +175,7 @@ acme.sh --uninstall
 # ~/.acme.sh/acme.sh --install-cert -d 域名 --key-file  /xxx --fullchain-file /xxx
 
 ~/.acme.sh/acme.sh --install-cert -d 域名 \
-                   --key-file       密钥存放目录  \
+                   --key-file       密钥存路径  \
                    --fullchain-file 证书存放路径 \
                    --reloadcmd     "service nginx force-reload"
 # 可选的，用来安装好证书后重启web服务器
@@ -184,9 +184,10 @@ acme.sh --uninstall
 上面提到的申请和安装命令，执行过一次后，acme.sh 便会记下你的操作，在证书即将到期前自动帮你执行一遍
 
 
-### other {#other}
+### FAQ {#faq}
 
-签发证书时报错“Can not get EAB credentials from ZeroSSL”
+
+#### 签发证书时报错“Can not get EAB credentials from ZeroSSL” {#签发证书时报错-can-not-get-eab-credentials-from-zerossl}
 
 ```bash
 acme.sh --register-account -m my@example.com
@@ -194,6 +195,17 @@ acme.sh --register-account -m my@example.com
 ```
 
 **Nginx 的配置 ssl_certificate 使用 fullchain.cer ，而非 &lt;domain&gt;.cer ，否则 SSL Labs 的测试会报 Chain issues Incomplete 错误。**
+
+
+#### 申请 zerossl 证书出现 timeout {#申请-zerossl-证书出现-timeout}
+
+正常的话使用 acme.sh 申请 zerossl 证书：
+
+-   需要一个 zerossl 邮箱地址
+-   申请的域名是可访问状态，并且状态码是正常的 200.
+    -   如果使用 acme.sh 申请 zerossl 证书时，域名状态码不正常，就会出现了 timeout 的问题
+    -   保证域名正常可访问时，一般需要开启 80 端口，如果使用了 nginx 反向代理，就不能使用 standalone 模式，可使用 webroot
+        -   acme.sh --issue -d [domain.tk] --webroot  [web 目录]
 
 
 ## [SSL证书申请与配置acme.sh和certbot](https://page.syao.fun/2020/09/11/web_caddy.html) {#ssl证书申请与配置acme-dot-sh和certbot}
@@ -222,6 +234,9 @@ acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --
 
 
 ## [Github Action 部署 acme.sh 全自动批量签发多域名证书教程](https://www.ioiox.com/archives/104.html) {#github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程}
+
+
+## [解決使用acme.sh申请zerossl证书出现timeout的解决方法](https://www.vpslala.com/t/746) {#解決使用acme-dot-sh申请zerossl证书出现timeout的解决方法}
 
 
 ## Ref {#ref}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>eamcs export - DaoyiSite</title>
+  <title>Org(eamcs) set&amp;export - DaoyiSite</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,8 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="highlight inline =code=, ~code~
-highlight in export file code-src" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #&#43;LATEX_HEADER: documentclass{article} #&#43;LATEX_CLASS_OPTIONS: [a4paper] #&#43;LATEX_HEADER: usepackage{xeCJK} #&#43;LATEX_HEADER: usepackage{minted} #&#43;LATEX_HEADER: usepackage[margin=2cm]{geometry} #&#43;LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,26 +39,23 @@ highlight in export file code-src" /><meta name="keywords" content="Hugo, theme,
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="eamcs export" />
-<meta property="og:description" content="highlight inline =code=, ~code~
-highlight in export file code-src" />
+<meta property="og:title" content="Org(eamcs) set&amp;export" />
+<meta property="og:description" content="Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #&#43;LATEX_HEADER: documentclass{article} #&#43;LATEX_CLASS_OPTIONS: [a4paper] #&#43;LATEX_HEADER: usepackage{xeCJK} #&#43;LATEX_HEADER: usepackage{minted} #&#43;LATEX_HEADER: usepackage[margin=2cm]{geometry} #&#43;LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/emacs-export-manual/" />
 <meta property="article:published_time" content="2022-03-11T17:46:00+00:00" />
-<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
-<meta itemprop="name" content="eamcs export">
-<meta itemprop="description" content="highlight inline =code=, ~code~
-highlight in export file code-src">
+<meta property="article:modified_time" content="2022-10-07T17:42:35+08:00" />
+<meta itemprop="name" content="Org(eamcs) set&amp;export">
+<meta itemprop="description" content="Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #&#43;LATEX_HEADER: documentclass{article} #&#43;LATEX_CLASS_OPTIONS: [a4paper] #&#43;LATEX_HEADER: usepackage{xeCJK} #&#43;LATEX_HEADER: usepackage{minted} #&#43;LATEX_HEADER: usepackage[margin=2cm]{geometry} #&#43;LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出">
 <meta itemprop="datePublished" content="2022-03-11T17:46:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
-<meta itemprop="wordCount" content="9">
+<meta itemprop="dateModified" content="2022-10-07T17:42:35&#43;08:00" />
+<meta itemprop="wordCount" content="116">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="eamcs export"/>
-<meta name="twitter:description" content="highlight inline =code=, ~code~
-highlight in export file code-src"/>
+<meta itemprop="keywords" content="org," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Org(eamcs) set&amp;export"/>
+<meta name="twitter:description" content="Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #&#43;LATEX_HEADER: documentclass{article} #&#43;LATEX_CLASS_OPTIONS: [a4paper] #&#43;LATEX_HEADER: usepackage{xeCJK} #&#43;LATEX_HEADER: usepackage{minted} #&#43;LATEX_HEADER: usepackage[margin=2cm]{geometry} #&#43;LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -136,14 +132,14 @@ highlight in export file code-src"/>
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">eamcs export</h1>
+      <h1 class="post-title">Org(eamcs) set&amp;export</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2022-03-11 </span>
         <div class="post-category">
             <a href="/categories/emacs/"> emacs </a>
             </div>
-          <span class="more-meta"> 9 words </span>
+          <span class="more-meta"> 116 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -156,8 +152,13 @@ highlight in export file code-src"/>
   <ul>
     <li>
       <ul>
+        <li><a href="#emacs-align-text"><a href="http://xahlee.info/emacs/emacs/emacs_align_and_sort.html">Emacs: Align Text</a></a></li>
+        <li><a href="#export-settings"><a href="https://orgmode.org/manual/Export-Settings.html">Export Settings</a></a></li>
+        <li><a href="#org-mode各种设定"><a href="https://blog.csdn.net/railsbug/article/details/107173083">org-mode各种设定</a></a></li>
         <li><a href="#highlight-inline">highlight inline</a></li>
         <li><a href="#highlight-in-export-file">highlight in export file</a></li>
+        <li><a href="#export-pdf--latex-header">export pdf (LATEX_HEADER)</a></li>
+        <li><a href="#防止页面溢出">防止页面溢出</a></li>
       </ul>
     </li>
   </ul>
@@ -165,11 +166,47 @@ highlight in export file code-src"/>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="highlight-inline">highlight inline</h2>
+      <h2 id="emacs-align-text"><a href="http://xahlee.info/emacs/emacs/emacs_align_and_sort.html">Emacs: Align Text</a></h2>
+<h2 id="export-settings"><a href="https://orgmode.org/manual/Export-Settings.html">Export Settings</a></h2>
+<h2 id="org-mode各种设定"><a href="https://blog.csdn.net/railsbug/article/details/107173083">org-mode各种设定</a></h2>
+<h2 id="highlight-inline">highlight inline</h2>
 <p><code>=code=</code>, <code>~code~</code></p>
 <h2 id="highlight-in-export-file">highlight in export file</h2>
 <p><code>code-src</code></p>
-
+<h2 id="export-pdf--latex-header">export pdf (LATEX_HEADER)</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-org" data-lang="org"><span class="cs">#+LATEX_HEADER</span><span class="c">: documentclass{article}</span>
+<span class="cs">#+LATEX_CLASS_OPTIONS</span><span class="c">: [a4paper]</span>
+<span class="cs">#+LATEX_HEADER</span><span class="c">: usepackage{xeCJK}</span>
+<span class="cs">#+LATEX_HEADER</span><span class="c">: usepackage{minted}</span>
+<span class="cs">#+LATEX_HEADER</span><span class="c">: usepackage[margin=2cm]{geometry}</span>
+<span class="cs">#+LATEX_HEADER</span><span class="c">: setminted{fontsize=small,baselinestretch=1}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="防止页面溢出">防止页面溢出</h2>
+<p>如果一个 table 太宽了，导出成 pdf 时会超出页面。把它搞成 longtable 就可以 解决了。这样可以设置每一列的长度。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-org" data-lang="org">  #+ATTR_LATEX: :environment longtable :align l|lp{3cm}r|l
+| ..... | ..... |
+| ..... | ..... |
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -180,23 +217,25 @@ highlight in export file code-src"/>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-08-23
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
+        2022-10-07
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/8f5708adfecdb3aaf74353d85f8a20d5184990ec" title="update weekly">(8f5708a)</a>
     </span>
   </p>
   
   
 </div>
 <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/org/">org</a>
+          </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/linux-compare-with-windows/">
+        <a class="prev" href="/post/emacs-export-align-table-with-chinese/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Linux compare with Windows</span>
+            <span class="prev-text nav-default">Org 中文表格对齐</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/emacs-export-pdf-setting/">
-            <span class="next-text nav-default">Export PDF</span>
+        <a class="next" href="/post/rsshub-vercel-deploy/">
+            <span class="next-text nav-default">RSShub&#43;Vercel 笔记</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

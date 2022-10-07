@@ -44,11 +44,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/python-call-c&#43;&#43;/" />
 <meta property="article:published_time" content="2022-08-07T13:09:00+00:00" />
-<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
+<meta property="article:modified_time" content="2022-10-07T17:42:35+08:00" />
 <meta itemprop="name" content="Python 调用 C&#43;&#43;的方式">
 <meta itemprop="description" content="调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()&#43; &#34;/libcdll.so&#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa">
 <meta itemprop="datePublished" content="2022-08-07T13:09:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
+<meta itemprop="dateModified" content="2022-10-07T17:42:35&#43;08:00" />
 <meta itemprop="wordCount" content="893">
 
 
@@ -384,8 +384,8 @@ g++ -fPIC exdll.cpp -shared -o libexdll.so -I /usr/include/python3.8/ -lpython3.
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-08-23
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
+        2022-10-07
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/8f5708adfecdb3aaf74353d85f8a20d5184990ec" title="update weekly">(8f5708a)</a>
     </span>
   </p>
   

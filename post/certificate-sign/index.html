@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/certificate-sign/" />
 <meta property="article:published_time" content="2022-04-04T18:52:00+00:00" />
-<meta property="article:modified_time" content="2022-08-23T19:40:30+08:00" />
+<meta property="article:modified_time" content="2022-10-07T17:42:35+08:00" />
 <meta itemprop="name" content="SSL 证书签发">
 <meta itemprop="description" content="Certbot 使用自动证书机器人 Certbot,自动签发 Let’s Encrypt 的免费证书,只是需要三个月一续,机器人自动帮忙搞定 Before 1 2 3 4 5 6 7 8 9 10 11 12 13 # 安装">
 <meta itemprop="datePublished" content="2022-04-04T18:52:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-08-23T19:40:30&#43;08:00" />
-<meta itemprop="wordCount" content="1922">
+<meta itemprop="dateModified" content="2022-10-07T17:42:35&#43;08:00" />
+<meta itemprop="wordCount" content="2093">
 
 
 
@@ -139,8 +139,8 @@
         <div class="post-category">
             <a href="/categories/internet/"> Internet </a>
             </div>
-          <span class="more-meta"> 1922 words </span>
-          <span class="more-meta"> 4 mins read </span>
+          <span class="more-meta"> 2093 words </span>
+          <span class="more-meta"> 5 mins read </span>
         
       </div>
     </header>
@@ -165,13 +165,14 @@
             <li><a href="#useage">useage</a></li>
             <li><a href="#generated">generated</a></li>
             <li><a href="#certificate-install">certificate install</a></li>
-            <li><a href="#other">other</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </li>
         <li><a href="#ssl证书申请与配置acme-dot-sh和certbot"><a href="https://page.syao.fun/2020/09/11/web_caddy.html">SSL证书申请与配置acme.sh和certbot</a></a></li>
         <li><a href="#使用let-s-encrypt的acme-dot-sh申请泛域名证书"><a href="https://www.psay.cn/toss/126.html">使用Let&rsquo;s Encrypt的acme.sh申请泛域名证书</a></a></li>
         <li><a href="#acme-dot-h-通配符证书"><a href="https://xtls.github.io/Xray-docs-next/document/level-1/fallbacks-with-sni.html#%E7%94%B3%E8%AF%B7-tls-%E8%AF%81%E4%B9%A6">acme.h 通配符证书</a></a></li>
         <li><a href="#github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程"><a href="https://www.ioiox.com/archives/104.html">Github Action 部署 acme.sh 全自动批量签发多域名证书教程</a></a></li>
+        <li><a href="#解決使用acme-dot-sh申请zerossl证书出现timeout的解决方法"><a href="https://www.vpslala.com/t/746">解決使用acme.sh申请zerossl证书出现timeout的解决方法</a></a></li>
         <li><a href="#ref">Ref</a></li>
       </ul>
     </li>
@@ -432,15 +433,15 @@ acme.sh --uninstall
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ~/.acme.sh/acme.sh --install-cert -d 域名 --key-file  /xxx --fullchain-file /xxx</span>
 
 ~/.acme.sh/acme.sh --install-cert -d 域名 <span class="se">\</span>
-                   --key-file       密钥存放目录  <span class="se">\</span>
+                   --key-file       密钥存路径  <span class="se">\</span>
                    --fullchain-file 证书存放路径 <span class="se">\</span>
                    --reloadcmd     <span class="s2">&#34;service nginx force-reload&#34;</span>
 <span class="c1"># 可选的，用来安装好证书后重启web服务器</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>上面提到的申请和安装命令，执行过一次后，acme.sh 便会记下你的操作，在证书即将到期前自动帮你执行一遍</p>
-<h3 id="other">other</h3>
-<p>签发证书时报错“Can not get EAB credentials from ZeroSSL”</p>
+<h3 id="faq">FAQ</h3>
+<h4 id="签发证书时报错-can-not-get-eab-credentials-from-zerossl">签发证书时报错“Can not get EAB credentials from ZeroSSL”</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -452,6 +453,21 @@ acme.sh --uninstall
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>Nginx 的配置 ssl_certificate 使用 fullchain.cer ，而非 &lt;domain&gt;.cer ，否则 SSL Labs 的测试会报 Chain issues Incomplete 错误。</strong></p>
+<h4 id="申请-zerossl-证书出现-timeout">申请 zerossl 证书出现 timeout</h4>
+<p>正常的话使用 acme.sh 申请 zerossl 证书：</p>
+<ul>
+<li>需要一个 zerossl 邮箱地址</li>
+<li>申请的域名是可访问状态，并且状态码是正常的 200.
+<ul>
+<li>如果使用 acme.sh 申请 zerossl 证书时，域名状态码不正常，就会出现了 timeout 的问题</li>
+<li>保证域名正常可访问时，一般需要开启 80 端口，如果使用了 nginx 反向代理，就不能使用 standalone 模式，可使用 webroot
+<ul>
+<li>acme.sh &ndash;issue -d [domain.tk] &ndash;webroot  [web 目录]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="ssl证书申请与配置acme-dot-sh和certbot"><a href="https://page.syao.fun/2020/09/11/web_caddy.html">SSL证书申请与配置acme.sh和certbot</a></h2>
 <p>由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用&ndash;test 参数可以有效避免因短时间内申请次数过多而失败。</p>
 <p><strong>acme.sh 在 V3.00 之后默认服务器更换为 ZeroSSL, 不存在短期内申请次数过多而申请受限的问题.</strong></p>
@@ -478,6 +494,7 @@ acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --
 <p>以下操作需要在 root 用户下进行，使用 sudo 会出现错误。</p>
 </blockquote>
 <h2 id="github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程"><a href="https://www.ioiox.com/archives/104.html">Github Action 部署 acme.sh 全自动批量签发多域名证书教程</a></h2>
+<h2 id="解決使用acme-dot-sh申请zerossl证书出现timeout的解决方法"><a href="https://www.vpslala.com/t/746">解決使用acme.sh申请zerossl证书出现timeout的解决方法</a></h2>
 <h2 id="ref">Ref</h2>
 <ul>
 <li><a href="https://letsencrypt.org/zh-cn/docs/faq/">Let&rsquo;s Encrypt 官网信息</a></li>
@@ -493,8 +510,8 @@ acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-08-23
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6a817f8c0a7a87b4eafdbc754446cf5c88f15f" title="update weekly">(bc6a817)</a>
+        2022-10-07
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/8f5708adfecdb3aaf74353d85f8a20d5184990ec" title="update weekly">(8f5708a)</a>
     </span>
   </p>
   

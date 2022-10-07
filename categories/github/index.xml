@@ -53,7 +53,7 @@
       <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/git-pull-force/</guid>
-      <description>推荐方案 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？</description>
+      <description>不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展</description>
     </item>
     
     <item>

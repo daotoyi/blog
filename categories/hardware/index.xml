@@ -6,10 +6,55 @@
     <description>Recent content in Hardware on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Aug 2022 22:54:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Sep 2022 08:14:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SGCC</title>
+      <link>https://daotoyi.github.io/post/hardware-sgcc/</link>
+      <pubDate>Tue, 27 Sep 2022 08:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-sgcc/</guid>
+      <description>热浸镀锌钢板. 工艺就是把已清洗洁净的铁件，通过由 Flux 的润湿作用，浸入锌浴中让钢铁与熔融锌反应生成一合金化的皮膜. 优点是防锈、防蚀、耐候性强，而</description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://daotoyi.github.io/post/hardware-hardware/</link>
+      <pubDate>Sun, 25 Sep 2022 12:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-hardware/</guid>
+      <description>器件温度 Ta Actual ambient temperature 实际环境温度。 Ta 是指驱动器工作的环境温度。 Tc Surface Temperature of body 物体的表面温度。 Tc 为驱动器的外壳允许的最高温度。 Tj Operating Junction Temperature Range。 Tj 表</description>
+    </item>
+    
+    <item>
+      <title>干节点、湿节点</title>
+      <link>https://daotoyi.github.io/post/hardware-jiedian/</link>
+      <pubDate>Sun, 25 Sep 2022 11:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-jiedian/</guid>
+      <description>干节点：无源开关，具有闭合和断开的两种状态，两个接点之间没有极性，可以互换； 湿节点：有源开关，具有有电和无电的两种状态，两个接点之间有极性，</description>
+    </item>
+    
+    <item>
+      <title>主机硬件</title>
+      <link>https://daotoyi.github.io/post/hardware-host/</link>
+      <pubDate>Sat, 10 Sep 2022 09:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-host/</guid>
+      <description>CPU Intel &amp;amp; AMD 主频＝外频 X 倍频 主频：即 CPU 内核工作的时钟频率（CPU Clock Speed）。CPU 的主频表示在 CPU 内数字脉冲信号震荡的速度，与 CPU 实际的运算能力</description>
+    </item>
+    
+    <item>
+      <title>Modbus</title>
+      <link>https://daotoyi.github.io/post/hardware-modbus/</link>
+      <pubDate>Tue, 30 Aug 2022 20:36:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-modbus/</guid>
+      <description>简介 Modbus 是一种串行通信协议，是 Modicon 公司（现在的施耐德电气 Schneider Electric）于 1979 年为使用可编程逻辑控制器（PLC）通信而发表。 Modbus 已经成为工业领域</description>
+    </item>
     
     <item>
       <title>HSR/PRP 冗余协议</title>

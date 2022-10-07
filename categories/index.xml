@@ -6,10 +6,28 @@
     <description>Recent content in Categories on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Aug 2022 15:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Sep 2022 08:14:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://daotoyi.github.io/categories/hardware/</link>
+      <pubDate>Tue, 27 Sep 2022 08:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://daotoyi.github.io/categories/emacs/</link>
+      <pubDate>Sat, 24 Sep 2022 08:46:08 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/emacs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Internet</title>
@@ -26,15 +44,6 @@
       <pubDate>Sun, 21 Aug 2022 10:10:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://daotoyi.github.io/categories/hardware/</link>
-      <pubDate>Thu, 18 Aug 2022 22:54:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/hardware/</guid>
       <description></description>
     </item>
     
@@ -116,15 +125,6 @@
       <pubDate>Sat, 30 Apr 2022 10:08:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/categories/quant/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs</title>
-      <link>https://daotoyi.github.io/categories/emacs/</link>
-      <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/emacs/</guid>
       <description></description>
     </item>
     

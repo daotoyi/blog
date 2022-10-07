@@ -6,10 +6,37 @@
     <description>Recent content in emacs on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Apr 2022 09:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Sep 2022 08:46:08 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org-mode 简介</title>
+      <link>https://daotoyi.github.io/post/emacs-org-mode-instruction/</link>
+      <pubDate>Sat, 24 Sep 2022 08:46:08 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-mode-instruction/</guid>
+      <description>列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任</description>
+    </item>
+    
+    <item>
+      <title>Org VS Markdown</title>
+      <link>https://daotoyi.github.io/post/emacs-org-vs-markdown/</link>
+      <pubDate>Sat, 17 Sep 2022 09:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-vs-markdown/</guid>
+      <description>org output item org markdown show 粗体 `*粗体*` `**粗体**` or `_粗体_` 粗体 斜体 `/斜体/` `*斜体* ` or `_斜体_` 斜体 删除线 `+删除线+` `删除线` 删</description>
+    </item>
+    
+    <item>
+      <title>Beamer</title>
+      <link>https://daotoyi.github.io/post/emacs-org-beamer/</link>
+      <pubDate>Wed, 14 Sep 2022 16:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-beamer/</guid>
+      <description>ref Writing Beamer presentations in org-mode Beamer Export Frames and Blocks in Beamer Beamer specific syntax Org Beamer reference card archive 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ## LaTeX-beamer 学习教程 https://www.jianshu.com/p/7eba149baef7 1. [Beamer 快速入门 - 中译本 黄旭华老师翻译](https:/</description>
+    </item>
     
     <item>
       <title>Org ox-hugo</title>
@@ -30,16 +57,6 @@
     </item>
     
     <item>
-      <title>eamcs export</title>
-      <link>https://daotoyi.github.io/post/emacs-export-manual/</link>
-      <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/emacs-export-manual/</guid>
-      <description>highlight inline =code=, ~code~
-highlight in export file code-src</description>
-    </item>
-    
-    <item>
       <title>Export PDF</title>
       <link>https://daotoyi.github.io/post/emacs-export-pdf-setting/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
@@ -55,6 +72,15 @@ highlight in export file code-src</description>
       
       <guid>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</guid>
       <description>方法 1中文表格对齐 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ;; ----------------------------------------------------------------------------- ;; setting font for mac system ;; ----------------------------------------------------------------------------- ;; Setting English Font (defun s-font() (interactive) ;; font config for org table showing. (set-face-attribute &amp;#39;default nil :font &amp;#34;Monaco 12&amp;#34;) ;; Chinese Font 配制中文字</description>
+    </item>
+    
+    <item>
+      <title>Org(eamcs) set&amp;export</title>
+      <link>https://daotoyi.github.io/post/emacs-export-manual/</link>
+      <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-export-manual/</guid>
+      <description>Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出</description>
     </item>
     
     <item>

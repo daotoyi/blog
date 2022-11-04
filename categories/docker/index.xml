@@ -6,10 +6,19 @@
     <description>Recent content in Docker on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Jul 2022 12:01:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Oct 2022 13:40:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker 普通用户使用</title>
+      <link>https://daotoyi.github.io/post/docker-normal-user-permission/</link>
+      <pubDate>Fri, 28 Oct 2022 13:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-normal-user-permission/</guid>
+      <description>问题 1 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create: dial unix /var/run/docker.sock: connect: permission denied. 这主要是因为 Docker 进程使用 Unix Socket，而 /var/run/docker.sock 需要 root 权限才能进行读写操作。 方案 使用 root 权限创建</description>
+    </item>
     
     <item>
       <title>Docker 类似功能区分</title>

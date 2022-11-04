@@ -17,7 +17,7 @@
       <pubDate>Thu, 28 Apr 2022 20:59:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/spacevim/</guid>
-      <description>install 1 2 3 4  curl -sLf https://spacevim.org/cn/install.sh | bashgit clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.dln -s ~/.SpceVim.d/autoload/dylayer.vim ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim  root 1 2 3 4  su rootln -s /home/daoyi/.SpaceVim /root/.SpaceVimln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.dln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles  Ref  SpaceVim daotoyi/SpaceVim.d  </description>
+      <description>install 1 2 3 4  curl -sLf https://spacevim.org/cn/install.sh | bashgit clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.dln -s ~/.SpceVim.d/autoload/dylayer.vim ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim  root 1 2 3 4 5  su rootln -s /home/daoyi/.vim /root/.vimln -s /home/daoyi/.SpaceVim /root/.SpaceVimln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.dln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles  Ref  SpaceVim daotoyi/SpaceVim.d  </description>
     </item>
     
     <item>

@@ -6,10 +6,28 @@
     <description>Recent content in Internet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Aug 2022 15:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Oct 2022 08:31:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cloudflare</title>
+      <link>https://daotoyi.github.io/post/internet-cloudflare/</link>
+      <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-cloudflare/</guid>
+      <description>Exposing a web service with Cloudflare Tunnel 使用 Cloudflare Tunnel 公开 Web 服务 No more VPN. Introducting Cloudflare Tunnel 使用 Cloudflare Tunnel 隐藏你的服务器 SSH into your private machines from anywhere, for free, using Cloudflare Tunnel ssh-over-cloudflare</description>
+    </item>
+    
+    <item>
+      <title>Cloudflare Tunnel</title>
+      <link>https://daotoyi.github.io/post/internet-cloudflare-tunnel/</link>
+      <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-cloudflare-tunnel/</guid>
+      <description>CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上</description>
+    </item>
     
     <item>
       <title>Apache2</title>

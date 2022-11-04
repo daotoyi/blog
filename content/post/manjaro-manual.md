@@ -1,12 +1,17 @@
 ---
 title: "Manjaro/Linux 使用"
 date: "2022-03-31 22:53:00"
-lastmod: "2022-08-20 15:53:26"
+lastmod: "2022-10-31 19:20:38"
 categories: ["Linux"]
 draft: false
 ---
 
-## 更新系统 {#更新系统}
+## basic opreration {#basic-opreration}
+
+`/etc/pacman.conf`
+
+
+### 更新系统 {#更新系统}
 
 ```bash
 pacman -Syy					#本地的包数据库和远程的软件仓库同步
@@ -16,14 +21,76 @@ pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程�
 ```
 
 
-## 清理系统 {#清理系统}
+### 安装包 {#安装包}
 
 ```bash
-1 sudo pacman -Rsn $(pacman -Qdtq)
-2 sudo pacman -Scc
-3 sudo rm /var/lib/systemd/coredump/.
-4 sudo journalctl --vacuum-size=50M
+pacman -S 包名    # 例如，执行 pacman -S firefox ,也可以同时安装多个包，以空格分隔包名即可。
+pacman -Sy 包名   # 与上面命令不同的是，该命令将在同步包数据库后再执行安装。
+pacman -Sv 包名   # 在显示一些操作信息后执行安装。
+pacman -U 安装本地包 # 其扩展名为 pkg.tar.gz。
 ```
+
+
+### 删除包 {#删除包}
+
+```bash
+pacman -R 包名   # 该命令将只删除包，不包含该包的依赖。
+pacman -Rs 包名  # 在删除包的同时，也将删除其依赖。
+pacman -Rd 包名  # 在删除包时不检查依赖。
+pacman -Rsc 包名 # 删除一个包,所有依赖
+```
+
+
+### 搜索包 {#搜索包}
+
+```bash
+pacman -Ss 关键字 # 这将搜索含关键字的包。
+pacman -Qi 包名   # 查看有关包的信息。
+pacman -Ql 包名   # 列出该包的文件。
+pacman -Qo 包名   # 列出该包被哪个包包含
+```
+
+
+### 清理系统 {#清理系统}
+
+```bash
+sudo pacman -Rsn $(pacman -Qdtq)
+sudo pacman -Scc
+sudo rm /var/lib/systemd/coredump/.
+sudo journalctl --vacuum-size=50M
+
+pacman -R $(pacman -Qdtq) #
+```
+
+
+### 其他用法 {#其他用法}
+
+```bash
+pacman -Sw 包名 #只下载包，不安装。
+pacman -Sc Pacman # 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件
+pacman -Scc # 清理所有的缓存文件。
+```
+
+
+## FAQ {#faq}
+
+
+### update systecm {#update-systecm}
+
+
+#### <span class="org-todo done DONE">DONE</span> - python-pip:xxx files exists. {#python-pip-xxx-files-exists-dot}
+
+```bash
+pacman -R python-pip
+pacman -Syu
+```
+
+
+#### Errors occurred, no packages were upgraded. {#errors-occurred-no-packages-were-upgraded-dot}
+
+-   error: failed to commit transaction (invalid or corrupted package)
+
+[Manjaro软件更新失败：无效或已损坏的软件包](https://juejin.cn/post/7091962125660192798)
 
 
 ## pacman-gpg {#pacman-gpg}

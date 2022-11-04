@@ -1,7 +1,8 @@
 ---
-title: "Linux yum/dnf/pacman/npm/yarn"
+title: "Linux cmd yum/dnf/pacman/npm/yarn"
 date: "2022-03-30 18:49:00"
-lastmod: "2022-04-30 19:25:59"
+lastmod: "2022-10-31 18:51:19"
+tags: ["cmd"]
 categories: ["Linux"]
 draft: false
 ---
@@ -120,6 +121,7 @@ pacman -Qo 包名   # 列出该包被哪个包包含
 pacman -Sw 包名 #只下载包，不安装。
 pacman -Sc Pacman # 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件
 pacman -Scc # 清理所有的缓存文件。
+pacman -R $(pacman -Qdtq) # 清理系统中无用的包
 ```
 
 

@@ -1,7 +1,7 @@
 ---
 title: "SpaceVim"
 date: "2022-04-28 20:59:00"
-lastmod: "2022-05-15 23:07:48"
+lastmod: "2022-10-23 10:39:23"
 categories: ["VIm"]
 draft: false
 ---
@@ -20,6 +20,7 @@ ln -s  ~/.SpceVim.d/autoload/dylayer.vim  ~/.SpaceVim/autoload/SpaceVim/layers/d
 
 ```bash
 su root
+ln -s /home/daoyi/.vim /root/.vim
 ln -s /home/daoyi/.SpaceVim /root/.SpaceVim
 ln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.d
 ln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles

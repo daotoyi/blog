@@ -1,8 +1,9 @@
 ---
 title: "Linux 终端输出颜色"
-lastmod: "2022-10-03 09:58:03"
+date: "2022-10-08 10:24:00"
+lastmod: "2022-10-26 08:22:55"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## ANSI 转义序列 {#ansi-转义序列}
@@ -163,3 +164,6 @@ print("\033[48;5;160m\033[38;5;231m背景前景修改ABCDE \033[38;5;226m前景�
 ## Ref {#ref}
 
 -   [一个 print 函数，挺会玩啊？](https://mp.weixin.qq.com/s/B1HHiOAC3SOR83Xyx7uoAA)
+
+
+## <span class="org-todo todo TODO">TODO</span>  {#d41d8c}

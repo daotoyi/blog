@@ -1,12 +1,15 @@
 ---
 title: "Docker 使用镜像"
 date: "2022-02-27 11:53:00"
-lastmod: "2022-04-30 12:24:30"
+lastmod: "2022-11-05 10:42:25"
 categories: ["Docker"]
 draft: false
 ---
 
 -   State "DONE"       from              <span class="timestamp-wrapper"><span class="timestamp">[2022-02-27 周日 11:53]</span></span>
+
+
+## basic {#basic}
 
 Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况下，Docker 从 [Docker Hub](https://hub.docker.com/) 下载这些镜像，Docker 公司在运营这个 Docker Hub。
 
@@ -31,10 +34,32 @@ docker image rm image
 
 docker image inspect ngin  # 查看镜像的详细信息
 
+docker save ID > xxx.tar
+
+#保存/导入镜像
+docker save image_id > xxx.tar
+docker save image_name > xxx.tar
+docker save -o xxx.tar image_name
+
+docker load < xxx.tar
+docker load --input xxx.tar
 
 docker run -it ubuntu # 使用-i -t 这两个参数，可以通过 shell 来
 
 root@7896ef8f403f:/#  # 执行命令后，提示符会变为你正在使用镜像的容器id
+```
+
+
+## container {#container}
+
+```bash
+
+# 保存导入容器
+docker export container_id >xxx.tar
+docker import xxx.tar containr:v1
+
+# 然后再
+docker run -it containr:v1 bash
 ```
 
 

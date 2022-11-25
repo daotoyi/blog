@@ -1,7 +1,7 @@
 ---
 title: "Dired 使用"
 date: "2022-02-13 06:58:00"
-lastmod: "2022-04-30 12:23:57"
+lastmod: "2022-11-23 17:09:10"
 tags: ["dired"]
 categories: ["emacs"]
 draft: false

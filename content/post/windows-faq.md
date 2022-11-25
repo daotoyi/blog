@@ -1,7 +1,7 @@
 ---
-title: "FAQ"
+title: "Windows FAQ"
 date: "2022-10-18 14:05:00"
-lastmod: "2022-10-18 14:05:47"
+lastmod: "2022-11-07 18:55:32"
 categories: ["Windows"]
 draft: false
 ---

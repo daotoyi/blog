@@ -1,8 +1,9 @@
 ---
 title: "Word archive"
-lastmod: "2022-10-22 12:34:08"
+date: "2022-11-07 18:55:00"
+lastmod: "2022-11-07 18:55:40"
 categories: ["Windows"]
-draft: true
+draft: false
 ---
 
 ## 模板 {#模板}

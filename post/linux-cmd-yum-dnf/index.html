@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-cmd-yum-dnf/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="CMD yum/dnf" />
 <meta property="og:description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-cmd-yum-dnf/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-cmd-yum-dnf/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-30T18:49:00+08:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="CMD yum/dnf">
-<meta itemprop="description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软">
-<meta itemprop="datePublished" content="2022-03-30T18:49:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软"><meta itemprop="datePublished" content="2022-03-30T18:49:00+08:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="1086">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CMD yum/dnf"/>
 <meta name="twitter:description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软"/>
@@ -174,7 +171,7 @@
       <h2 id="yum">yum</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -189,7 +186,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">yum check-update     <span class="c1"># 列出所有可更新的软件清单命令：</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yum check-update     <span class="c1"># 列出所有可更新的软件清单命令：</span>
 yum update           <span class="c1"># 更新所有软件命令：</span>
 yum install &lt;package_name&gt; <span class="c1"># 仅安装指定的软件命令：</span>
 yum update &lt;package_name&gt;  <span class="c1"># 仅更新指定的软件命令：</span>
@@ -216,7 +213,7 @@ yum clean, yum clean all
 <p>DNF 使用 RPM,libsolv 和 hawkey 库进行包管理操作，DNF 包管理器克服了 YUM 包管理器的一些瓶颈，提升了包括用户体验，内存占用，依赖分析，运行速度等多方面的内容。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -244,7 +241,7 @@ yum clean, yum clean all
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 先安装并启用 epel-release 依赖</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 先安装并启用 epel-release 依赖</span>
 yum install epel-release
 yum install dnf
 dnf –version
@@ -277,13 +274,13 @@ dnf <span class="nb">history</span>
 <h3 id="1-更新系统">1、更新系统</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pacman -Syy					<span class="c1">#本地的包数据库和远程的软件仓库同步</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Syy					<span class="c1">#本地的包数据库和远程的软件仓库同步</span>
 pacman -Syu
 
 pacman -Su <span class="c1"># 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行：</span>
@@ -292,13 +289,13 @@ pacman -Su <span class="c1"># 如果你已经使用 pacman -Sy 将本地的包�
 </div><h3 id="2-安装包">2、安装包</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pacman -S 包名    <span class="c1"># 例如，执行 pacman -S firefox ,也可以同时安装多个包，以空格分隔包名即可。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -S 包名    <span class="c1"># 例如，执行 pacman -S firefox ,也可以同时安装多个包，以空格分隔包名即可。</span>
 pacman -Sy 包名   <span class="c1"># 与上面命令不同的是，该命令将在同步包数据库后再执行安装。</span>
 pacman -Sv 包名   <span class="c1"># 在显示一些操作信息后执行安装。</span>
 pacman -U 安装本地包 <span class="c1"># 其扩展名为 pkg.tar.gz。</span>
@@ -307,13 +304,13 @@ pacman -U 安装本地包 <span class="c1"># 其扩展名为 pkg.tar.gz。</span
 </div><h3 id="3-删除包">3、删除包</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pacman -R 包名   <span class="c1"># 该命令将只删除包，不包含该包的依赖。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -R 包名   <span class="c1"># 该命令将只删除包，不包含该包的依赖。</span>
 pacman -Rs 包名  <span class="c1"># 在删除包的同时，也将删除其依赖。</span>
 pacman -Rd 包名  <span class="c1"># 在删除包时不检查依赖。</span>
 pacman -Rsc 包名 <span class="c1"># 删除一个包,所有依赖</span>
@@ -322,13 +319,13 @@ pacman -Rsc 包名 <span class="c1"># 删除一个包,所有依赖</span>
 </div><h3 id="4-搜索包">4、搜索包</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pacman -Ss 关键字 <span class="c1"># 这将搜索含关键字的包。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Ss 关键字 <span class="c1"># 这将搜索含关键字的包。</span>
 pacman -Qi 包名   <span class="c1"># 查看有关包的信息。</span>
 pacman -Ql 包名   <span class="c1"># 列出该包的文件。</span>
 pacman -Qo 包名   <span class="c1"># 列出该包被哪个包包含</span>
@@ -337,12 +334,12 @@ pacman -Qo 包名   <span class="c1"># 列出该包被哪个包包含</span>
 </div><h3 id="5-其他用法">5、其他用法</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pacman -Sw 包名 <span class="c1">#只下载包，不安装。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Sw 包名 <span class="c1">#只下载包，不安装。</span>
 pacman -Sc Pacman <span class="c1"># 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件</span>
 pacman -Scc <span class="c1"># 清理所有的缓存文件。</span>
 </code></pre></td></tr></table>
@@ -350,13 +347,13 @@ pacman -Scc <span class="c1"># 清理所有的缓存文件。</span>
 </div><h3 id="manjaro-clear-system">manjaro clear system:</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="m">1</span> sudo pacman -Rsn <span class="k">$(</span>pacman -Qdtq<span class="k">)</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="m">1</span> sudo pacman -Rsn <span class="k">$(</span>pacman -Qdtq<span class="k">)</span>
 <span class="m">2</span> sudo pacman -Scc
 <span class="m">3</span> sudo rm /var/lib/systemd/coredump/.
 <span class="m">4</span> sudo journalctl --vacuum-size<span class="o">=</span>50M
@@ -373,8 +370,8 @@ pacman -Scc <span class="c1"># 清理所有的缓存文件。</span>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -465,7 +462,7 @@ pacman -Scc <span class="c1"># 清理所有的缓存文件。</span>
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

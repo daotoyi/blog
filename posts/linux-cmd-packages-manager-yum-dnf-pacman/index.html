@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux cmd yum/dnf/pacman/npm/yarn - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/linux-cmd-packages-manager-yum-dnf-pacman/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux cmd yum/dnf/pacman/npm/yarn" />
+<meta property="og:description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/linux-cmd-packages-manager-yum-dnf-pacman/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-30T18:49:00+00:00" />
+<meta property="article:modified_time" content="2022-10-31T18:51:19+00:00" />
+
+<meta itemprop="name" content="Linux cmd yum/dnf/pacman/npm/yarn">
+<meta itemprop="description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软"><meta itemprop="datePublished" content="2022-03-30T18:49:00+00:00" />
+<meta itemprop="dateModified" content="2022-10-31T18:51:19+00:00" />
+<meta itemprop="wordCount" content="1665">
+<meta itemprop="keywords" content="cmd," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux cmd yum/dnf/pacman/npm/yarn"/>
+<meta name="twitter:description" content="yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="yum">yum</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yum check-update     <span class="c1"># 列出所有可更新的软件清单命令：</span>
+yum update           <span class="c1"># 更新所有软件命令：</span>
+yum install &lt;package_name&gt; <span class="c1"># 仅安装指定的软件命令：</span>
+yum update &lt;package_name&gt;  <span class="c1"># 仅更新指定的软件命令：</span>
+yum list             <span class="c1"># 列出所有可安裝的软件清单命令：</span>
+yum remove &lt;package_name&gt;  <span class="c1"># 删除软件包命令：</span>
+yum search &lt;keyword&gt;  <span class="c1"># 查找软件包命令：</span>
+
+<span class="c1"># 清除缓存命令:</span>
+yum clean packages  <span class="c1"># 清除缓存目录下的软件包</span>
+yum clean headers   <span class="c1"># 清除缓存目录下的 headers</span>
+yum clean oldheaders <span class="c1"># 清除缓存目录下旧的 headers</span>
+yum clean, yum clean all
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="dnf">dnf</h2>
+<p>在 RHEL8 中把软件源分成了两部分一个是 BaseOS,一个是 AppStream.
+在 Red Hat Enterprise Linux 8.0 中，统一的 ISO 自动加载 BaseOS 和 AppStream 安装源存储库。</p>
+<p>存储库介绍:</p>
+<ol>
+<li>BaseOS 存储库旨在提供一套核心的底层操作系统的功能，为基础软件安装库</li>
+<li>AppStream 存储库中包括额外的用户空间应用程序、运行时语言和数据库，以支持不同的工作负载和用例。AppStream 中的内容有两种格式——熟悉的 RPM 格式和称为模块的 RPM 格式扩展。</li>
+</ol>
+<p>DNF(Dandified Yum)是新一代的 RPM 软件包管理器。</p>
+<p>DNF 使用 RPM,libsolv 和 hawkey 库进行包管理操作，DNF 包管理器克服了 YUM 包管理器的一些瓶颈，提升了包括用户体验，内存占用，依赖分析，运行速度等多方面的内容。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 先安装并启用 epel-release 依赖</span>
+yum install epel-release
+yum install dnf
+dnf –version
+
+dnf repolist  <span class="c1"># 显示系统中可用的 DNF 软件库</span>
+dnf repolist all    <span class="c1">#  显示系统中可用和不可用的所有的 DNF 软件库</span>
+dnf list            <span class="c1"># 列出所有 RPM 包</span>
+dnf list installed  <span class="c1"># 列出所有安装了的 RPM 包</span>
+dnf list available  <span class="c1"># 所有可供安装的 RPM 包</span>
+
+dnf search nano
+dnf provides /bin/bash  <span class="c1"># 查找某一文件的提供者</span>
+
+dnf info nano
+dnf install xxxx
+dnf update  xxxx
+
+dnf check-update   <span class="c1"># 检查系统软件包的更新</span>
+dnf update or dnf upgrade <span class="c1"># 升级所有系统软件包</span>
+
+dnf remove nano or dnf erase nano <span class="c1"># 删除软件包</span>
+dnf autoremove     <span class="c1"># 删除无用孤立的软件包</span>
+dnf clean all      <span class="c1"># 删除缓存的无用软件包</span>
+
+dnf <span class="nb">history</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="pacman">pacman</h2>
+<p><code>/etc/pacman.conf</code></p>
+<h3 id="1-更新系统">1、更新系统</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Syy					<span class="c1">#本地的包数据库和远程的软件仓库同步</span>
+pacman -Syu
+
+pacman -Su <span class="c1"># 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行：</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2-安装包">2、安装包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -S 包名    <span class="c1"># 例如，执行 pacman -S firefox ,也可以同时安装多个包，以空格分隔包名即可。</span>
+pacman -Sy 包名   <span class="c1"># 与上面命令不同的是，该命令将在同步包数据库后再执行安装。</span>
+pacman -Sv 包名   <span class="c1"># 在显示一些操作信息后执行安装。</span>
+pacman -U 安装本地包 <span class="c1"># 其扩展名为 pkg.tar.gz。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3-删除包">3、删除包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -R 包名   <span class="c1"># 该命令将只删除包，不包含该包的依赖。</span>
+pacman -Rs 包名  <span class="c1"># 在删除包的同时，也将删除其依赖。</span>
+pacman -Rd 包名  <span class="c1"># 在删除包时不检查依赖。</span>
+pacman -Rsc 包名 <span class="c1"># 删除一个包,所有依赖</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4-搜索包">4、搜索包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Ss 关键字 <span class="c1"># 这将搜索含关键字的包。</span>
+pacman -Qi 包名   <span class="c1"># 查看有关包的信息。</span>
+pacman -Ql 包名   <span class="c1"># 列出该包的文件。</span>
+pacman -Qo 包名   <span class="c1"># 列出该包被哪个包包含</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5-其他用法">5、其他用法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Sw 包名 <span class="c1">#只下载包，不安装。</span>
+pacman -Sc Pacman <span class="c1"># 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件</span>
+pacman -Scc <span class="c1"># 清理所有的缓存文件。</span>
+pacman -R <span class="k">$(</span>pacman -Qdtq<span class="k">)</span> <span class="c1"># 清理系统中无用的包</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="npm-yarn">npm/yarn</h2>
+<p>npm（全称 Node Package Manager）是一个软件包管理系统，专门管理用 JavaScript 编写的软件包。</p>
+<p>yarn 也是一个软件包管理系统，同样用于管理 用 JavaScript 编写的软件包，yarn 的出现是为了弥补 npm 的一些缺陷。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm <span class="nv">install</span>                     <span class="o">===</span> yarn
+npm install taco--save          <span class="o">===</span> yarn add taco
+npm uninstall taco--save        <span class="o">===</span> yarn remove taco
+npm install taco--save - <span class="nv">dev</span>    <span class="o">===</span> yarn add taco--dev
+npm update--save                <span class="o">===</span> yarn upgrade
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># 将依赖项安装在本地node_modules文件夹中,默认情况下，npm install将安装所有列为package.json中的依赖项的模块。</span>
+<span class="c1"># 依赖项会依次安装</span>
+<span class="na">npm install</span>
+<span class="c1"># Yarn 并行安装包,比 npm 更快的原因之一</span>
+<span class="na">yarn</span>
+
+<span class="c1"># yarn 也是一个 JavaScript 软件包，需要先使用 npm 进行安装</span>
+<span class="na">npm install -g yarn</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="npm-audit-fix">npm audit fix</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># npm@5.10.0 &amp; npm@6，允许开发人员分析复杂的代码，并查明特定的漏洞和缺陷。</span>
+<span class="na">npm audit</span>
+<span class="c1"># npm@6.1.0  检测项目依赖中的漏洞并自动安装需要更新的有漏洞的依赖，而不必再自己进行跟踪和修复</span>
+<span class="na">npm audit fix</span>
+
+<span class="c1"># 运行audit fix，但是只更新pkglock， 不更新node_modules：</span>
+<span class="na">$ npm audit fix --package-lock-only</span>
+
+<span class="c1">#  只更新dependencies中安装的包，跳过devDependencies中的包：</span>
+<span class="na">$ npm audit fix --only</span><span class="o">=</span><span class="s">prod</span>
+
+<span class="c1"># 运行命令，得到audit fix将会更新的内容，并且输出json格式的安装信息，但是并不真的安装更新：</span>
+<span class="na">$ npm audit fix --dry-run --json</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="npm-install-no-fund">npm install &ndash;no-fund</h3>
+<p>一般都是开发者捐赠支持的提示，打开一个 github 的链接之后，会显示需要打赏捐赠的信息，此时如果不想捐赠或者跳过这个提示的话，直接在后面加–no-fund 即可.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install --no-fund
+</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

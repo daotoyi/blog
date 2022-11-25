@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cloudflare Tunnel - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/internet-cloudflare-tunnel/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Cloudflare Tunnel" />
+<meta property="og:description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/internet-cloudflare-tunnel/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-22T08:31:00+00:00" />
+<meta property="article:modified_time" content="2022-10-22T08:31:36+00:00" />
+
+<meta itemprop="name" content="Cloudflare Tunnel">
+<meta itemprop="description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上"><meta itemprop="datePublished" content="2022-10-22T08:31:00+00:00" />
+<meta itemprop="dateModified" content="2022-10-22T08:31:36+00:00" />
+<meta itemprop="wordCount" content="940">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cloudflare Tunnel"/>
+<meta name="twitter:description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="cf-tunnel">CF Tunnel</h2>
+<h3 id="cf-tunnel-介绍">CF Tunnel 介绍</h3>
+<blockquote>
+<p>Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address.</p>
+</blockquote>
+<p>这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， <strong>Tunnel 的作用就是那你可以在公网连接上你没有公网网络的资源</strong> 。这里的资源可以是主机，虚拟机或者容器，甚至是 HTTP 服务之类的。</p>
+<h3 id="tunnel-使用概述">Tunnel 使用概述</h3>
+<p>Tunnel 的使用根据不同的服务类型使用方式也是不一样的：</p>
+<ul>
+<li>如果你是暴露 HTTP 服务，那么只需要在服务端运行 cloudflared 程序即可.</li>
+<li>如果你是暴露 SSH 服务，那么除了需要在服务端运行 cloudflared 程序，在客户端也需要运行 cloudflared 程序</li>
+</ul>
+<h3 id="安装-cloudflared">安装 cloudflared</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># brew install cloudflare/cloudflare/cloudflared</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="配置-cloudflared">配置 cloudflared</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel login</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>执行这个命令之后，它会生成一个链接然后你在浏览器上打开这个链接，然后登陆你的账号，如果有域名的话，选择一下绑定的域名就可以了，没域名或者不想绑定可以跳过。</p>
+<h2 id="服务端">服务端</h2>
+<h3 id="创建-tunnel">创建 Tunnel</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel create default</span>
+<span class="c1"># 记住这个命令返回的那个 UUID，如果没记住的话，问题也不大，有两种方式可以看到他：</span>
+
+<span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel list</span>
+You can obtain more detailed information <span class="k">for</span> each tunnel with <span class="sb">`</span>cloudflared tunnel info &lt;name/uuid&gt;<span class="sb">`</span>
+ID                                   NAME      CREATED              CONNECTIONS
+1c025733-a2ec-4ec5-8d3a-9c9d6775e49b default   2022-09-28T00:33:33Z 2xNRT, 2xSIN
+<span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># ls -al ~/.cloudflared</span>
+total <span class="m">20</span>
+drwx------  <span class="m">2</span> liqiang.io liqiang.io <span class="m">4096</span> Sep <span class="m">28</span> 08:44 .
+drwxr-xr-x <span class="m">55</span> liqiang.io liqiang.io <span class="m">4096</span> Sep <span class="m">28</span> 21:34 ..
+-rw-------  <span class="m">1</span> liqiang.io liqiang.io  <span class="m">161</span> Sep <span class="m">28</span> 08:33 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="配置-tunnel">配置 Tunnel</h3>
+<h4 id="配置-ssh-服务">配置 SSH 服务</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.cloudflared/config.yml</span>
+ingress:
+  - hostname: ssh.liqiang.io
+    service: ssh://localhost:22
+  - service: http_status:404
+tunnel: 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b
+credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
+</code></pre></td></tr></table>
+</div>
+</div><p>这就是一个 SSH 服务的配置，这里有几个细节需要介绍一下：</p>
+<ul>
+<li>文件名默认为 config.yml，位置为你的 HOME 目录下的 .cloudflared 目录中；</li>
+<li>当然，你也可以自定义文件名，但是这样的话，启动时就需要指定文件路径了，因为 cloudflared 默认查找的文件名只会是 config.yml</li>
+<li>SSH 服务的配置必须有一个默认的配置兜底：- service: http_status:404</li>
+<li>tunnel 的值就是前面让你记起来的值</li>
+</ul>
+<h4 id="配置-http-服务">配置 HTTP 服务</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.cloudflared/config.yml</span>
+url: http://localhost:2223
+tunnel: 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b
+credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="上报路由配置">上报路由配置</h3>
+<p>前面你只是在本地上配置了应用的信息，但是 Cloudflare 还不知道啊，所以你需要在 Cloudflare 上注册你的 DNS 信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel route dns 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b default</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这里表示的是你想注册一个域名为 default 的公网服务，这里的域名的后缀取决于你有没有绑定域名，如果有的话就是你绑定的域名，没有的话就是 Cloudflare 给你分配的，例如：default.cdn.cloudflare.net</p>
+<h3 id="启动服务">启动服务</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel run</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="客户端">客户端</h2>
+<h3 id="http-服务">HTTP 服务</h3>
+<p>如果你暴露的是 HTTP 服务，那么无需额外的配置，只需要访问域名就可以了，例如我的就是示例域名：default.liqiang.io，直接访问你就可以看到暴露出来的 HTTP 服务了。</p>
+<h3 id="ssh-服务">SSH 服务</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.ssh/config</span>
+Host default.liqiang.io
+  ProxyCommand /root/cloudflared access ssh --hostname %h
+
+<span class="c1">#直接访问这个 SSH 服务了:</span>
+<span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># ssh root@default.liqiang.io</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/e2qS9kWpmQivsAFOQ93UUQ">如何使用 Cloudflare Tunnel 免费服务将家庭网络中的设备暴露到公网</a></li>
+<li><a href="https://liqiang.io/post/export-vm-with-cloudfalre-tunnel">通过 Cloudflare Tunnel 开放 VM</a>(原文）</li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

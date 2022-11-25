@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/internet-cloudflare-tunnel/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Cloudflare Tunnel" />
 <meta property="og:description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/internet-cloudflare-tunnel/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/internet-cloudflare-tunnel/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-22T08:31:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Cloudflare Tunnel">
-<meta itemprop="description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上">
-<meta itemprop="datePublished" content="2022-10-22T08:31:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上"><meta itemprop="datePublished" content="2022-10-22T08:31:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="940">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Cloudflare Tunnel"/>
 <meta name="twitter:description" content="CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上"/>
@@ -197,19 +194,19 @@
 <h3 id="安装-cloudflared">安装 cloudflared</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># brew install cloudflare/cloudflare/cloudflared</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># brew install cloudflare/cloudflare/cloudflared</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="配置-cloudflared">配置 cloudflared</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel login</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel login</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>执行这个命令之后，它会生成一个链接然后你在浏览器上打开这个链接，然后登陆你的账号，如果有域名的话，选择一下绑定的域名就可以了，没域名或者不想绑定可以跳过。</p>
@@ -217,7 +214,7 @@
 <h3 id="创建-tunnel">创建 Tunnel</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -231,7 +228,7 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel create default</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel create default</span>
 <span class="c1"># 记住这个命令返回的那个 UUID，如果没记住的话，问题也不大，有两种方式可以看到他：</span>
 
 <span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel list</span>
@@ -239,7 +236,7 @@ You can obtain more detailed information <span class="k">for</span> each tunnel 
 ID                                   NAME      CREATED              CONNECTIONS
 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b default   2022-09-28T00:33:33Z 2xNRT, 2xSIN
 <span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># ls -al ~/.cloudflared</span>
-total 20
+total <span class="m">20</span>
 drwx------  <span class="m">2</span> liqiang.io liqiang.io <span class="m">4096</span> Sep <span class="m">28</span> 08:44 .
 drwxr-xr-x <span class="m">55</span> liqiang.io liqiang.io <span class="m">4096</span> Sep <span class="m">28</span> 21:34 ..
 -rw-------  <span class="m">1</span> liqiang.io liqiang.io  <span class="m">161</span> Sep <span class="m">28</span> 08:33 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
@@ -249,7 +246,7 @@ drwxr-xr-x <span class="m">55</span> liqiang.io liqiang.io <span class="m">4096<
 <h4 id="配置-ssh-服务">配置 SSH 服务</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -258,7 +255,7 @@ drwxr-xr-x <span class="m">55</span> liqiang.io liqiang.io <span class="m">4096<
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.cloudflared/config.yml</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.cloudflared/config.yml</span>
 ingress:
   - hostname: ssh.liqiang.io
     service: ssh://localhost:22
@@ -277,13 +274,13 @@ credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
 <h4 id="配置-http-服务">配置 HTTP 服务</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.cloudflared/config.yml</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.cloudflared/config.yml</span>
 url: http://localhost:2223
 tunnel: 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b
 credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
@@ -293,20 +290,20 @@ credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
 <p>前面你只是在本地上配置了应用的信息，但是 Cloudflare 还不知道啊，所以你需要在 Cloudflare 上注册你的 DNS 信息：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel route dns 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b default</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel route dns 1c025733-a2ec-4ec5-8d3a-9c9d6775e49b default</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>这里表示的是你想注册一个域名为 default 的公网服务，这里的域名的后缀取决于你有没有绑定域名，如果有的话就是你绑定的域名，没有的话就是 Cloudflare 给你分配的，例如：default.cdn.cloudflare.net</p>
 <h3 id="启动服务">启动服务</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel run</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cloudflared tunnel run</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="客户端">客户端</h2>
@@ -315,7 +312,7 @@ credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
 <h3 id="ssh-服务">SSH 服务</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -323,7 +320,7 @@ credentials-file: /root/.cloudflared/1c025733-a2ec-4ec5-8d3a-9c9d6775e49b.json
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.ssh/config</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@liqiang.io<span class="o">]</span><span class="c1"># cat ~/.ssh/config</span>
 Host default.liqiang.io
   ProxyCommand /root/cloudflared access ssh --hostname %h
 
@@ -347,8 +344,8 @@ Host default.liqiang.io
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -363,7 +360,7 @@ Host default.liqiang.io
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         <a class="next" href="/post/windows-faq/">
-            <span class="next-text nav-default">FAQ</span>
+            <span class="next-text nav-default">Windows FAQ</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -439,7 +436,7 @@ Host default.liqiang.io
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

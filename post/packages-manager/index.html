@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/packages-manager/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Packages Manager" />
 <meta property="og:description" content="Scoop 安装 Scoop 依赖于 Powershell 3&#43; 和 .NET Framework 4.5&#43;，因此，安装 Scoop 前请确保已经正确安装了它们。 1 2 3 iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;) # 如果出现“权限”错误，请根据错误提示执行以下命令 Set-ExecutionPolicy RemoteSigned" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/packages-manager/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/packages-manager/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-02T12:30:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Packages Manager">
-<meta itemprop="description" content="Scoop 安装 Scoop 依赖于 Powershell 3&#43; 和 .NET Framework 4.5&#43;，因此，安装 Scoop 前请确保已经正确安装了它们。 1 2 3 iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;) # 如果出现“权限”错误，请根据错误提示执行以下命令 Set-ExecutionPolicy RemoteSigned">
-<meta itemprop="datePublished" content="2022-04-02T12:30:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="Scoop 安装 Scoop 依赖于 Powershell 3&#43; 和 .NET Framework 4.5&#43;，因此，安装 Scoop 前请确保已经正确安装了它们。 1 2 3 iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;) # 如果出现“权限”错误，请根据错误提示执行以下命令 Set-ExecutionPolicy RemoteSigned"><meta itemprop="datePublished" content="2022-04-02T12:30:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="1888">
-
-
-
 <meta itemprop="keywords" content="managePackage," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Packages Manager"/>
 <meta name="twitter:description" content="Scoop 安装 Scoop 依赖于 Powershell 3&#43; 和 .NET Framework 4.5&#43;，因此，安装 Scoop 前请确保已经正确安装了它们。 1 2 3 iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;) # 如果出现“权限”错误，请根据错误提示执行以下命令 Set-ExecutionPolicy RemoteSigned"/>
@@ -197,12 +194,12 @@
 <p>Scoop 依赖于 Powershell 3+ 和 .NET Framework 4.5+，因此，安装 Scoop 前请确保已经正确安装了它们。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">iex <span class="o">(</span>new-object net.webclient<span class="o">)</span>.downloadstring<span class="o">(</span><span class="s1">&#39;https://get.scoop.sh&#39;</span><span class="o">)</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">iex <span class="o">(</span>new-object net.webclient<span class="o">)</span>.downloadstring<span class="o">(</span><span class="s1">&#39;https://get.scoop.sh&#39;</span><span class="o">)</span>
 <span class="c1"># 如果出现“权限”错误，请根据错误提示执行以下命令</span>
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 </code></pre></td></tr></table>
@@ -212,7 +209,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 <p>Scoop 安装用户应用的默认位置是：~/scoop，如下命令可自定义该位置。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -220,7 +217,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 设置用户环境变量 SCOOP</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 设置用户环境变量 SCOOP</span>
 <span class="o">[</span>environment<span class="o">]</span>::setEnvironmentVariable<span class="o">(</span><span class="s1">&#39;SCOOP&#39;</span>, <span class="s1">&#39;D:\program\scoop&#39;</span>, <span class="s1">&#39;User&#39;</span><span class="o">)</span>
 <span class="c1"># 使 SCOOP 在当前命令行生效</span>
 <span class="nv">$env</span>:SCOOP<span class="o">=</span><span class="s1">&#39;D:\program\scoop&#39;</span>
@@ -232,7 +229,7 @@ scoop install &lt;APP-NAME&gt;
 <p>Scoop 安装全局应用的默认位置是：C:\ProgramData\scoop，如下命令可自定义该位置。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -240,7 +237,7 @@ scoop install &lt;APP-NAME&gt;
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 设置全局环境变量</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 设置全局环境变量</span>
 <span class="o">[</span>environment<span class="o">]</span>::setEnvironmentVariable<span class="o">(</span><span class="s1">&#39;SCOOP_GLOBAL&#39;</span>,<span class="s1">&#39;D:\program\scoop-apps&#39;</span>,<span class="s1">&#39;Machine&#39;</span><span class="o">)</span>
 <span class="c1"># 使 SCOOP_GLOBAL 在当前命令行生效</span>
 <span class="nv">$env</span>:SCOOP_GLOBAL<span class="o">=</span><span class="s1">&#39;D:\program\scoop-apps&#39;</span>
@@ -251,25 +248,25 @@ scoop install -g &lt;APP-NAME&gt;
 </div><h3 id="更换-scoop-源">更换 scoop 源</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">scoop config SCOOP_REPO https://gitee.com/squallliu/scoop
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">scoop config SCOOP_REPO https://gitee.com/squallliu/scoop
 scoop update
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="更换-bucket-源">更换 bucket 源</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">scoop install git
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">scoop install git
 <span class="c1"># 注意：引号里面换成自己的路径，如果是默认路径则为${Env:USERPROFILE}\scoop\buckets\&lt;bucket_name&gt;</span>
 
 git -C <span class="s2">&#34;D:\Scoop\buckets\main&#34;</span> remote set-url origin https://hub.fastgit.org/ScoopInstaller/Main.git
@@ -285,7 +282,7 @@ git -C <span class="s2">&#34;D:\Scoop\buckets\extras&#34;</span> remote set-url 
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -298,7 +295,7 @@ git -C <span class="s2">&#34;D:\Scoop\buckets\extras&#34;</span> remote set-url 
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">scoop bucket add main <span class="s1">&#39;https://hub.fastgit.org/ScoopInstaller/Main&#39;</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">scoop bucket add main <span class="s1">&#39;https://hub.fastgit.org/ScoopInstaller/Main&#39;</span>
 scoop bucket add extras <span class="s1">&#39;https://hub.fastgit.org/lukesampson/scoop-extras&#39;</span>
 scoop bucket add versions <span class="s1">&#39;https://hub.fastgit.org/ScoopInstaller/Versions&#39;</span>
 scoop bucket add jetbrains <span class="s1">&#39;https://hub.fastgit.org/Ash258/Scoop-JetBrains&#39;</span>
@@ -314,7 +311,7 @@ scoop bucket add dorado <span class="s1">&#39;https://hub.fastgit.org/h404bi/dor
 </div><h3 id="常用命令">常用命令</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -359,7 +356,7 @@ scoop bucket add dorado <span class="s1">&#39;https://hub.fastgit.org/h404bi/dor
 </span><span class="lnt">43
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 查看某软件执行命令位置</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 查看某软件执行命令位置</span>
 scoop which <span class="o">{{</span>name<span class="o">}}</span>
 
 <span class="c1"># 打开某软件官网</span>
@@ -422,7 +419,7 @@ scoop cache rm *
 <p><code>coop config proxy 127.0.0.1:1080</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -430,7 +427,7 @@ scoop cache rm *
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">scoop config proxy <span class="o">[</span>username:password@<span class="o">]</span>host:port
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">scoop config proxy <span class="o">[</span>username:password@<span class="o">]</span>host:port
 scoop config rm proxy
 
 scoop config proxy currentuser@default
@@ -449,11 +446,11 @@ scoop config proxy none <span class="c1"># 绕过代理直连</span>
 <p>scoop 很多更新操作是基于 GitHub 的，因此，通常也会为 git 配置代理。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">git config --global http.proxy http://host:port
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">git config --global http.proxy http://host:port
 git config --global https.proxy https://host:port
 </code></pre></td></tr></table>
 </div>
@@ -467,11 +464,11 @@ git config --global https.proxy https://host:port
 <h3 id="chocolateygui">chocolateygui</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">choco install chocolateygui
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">choco install chocolateygui
 chocolateygui <span class="c1">#即可进入软件界面</span>
 </code></pre></td></tr></table>
 </div>
@@ -510,7 +507,7 @@ chocolateygui <span class="c1">#即可进入软件界面</span>
 <h4 id="cmd">CMD</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -528,7 +525,7 @@ chocolateygui <span class="c1">#即可进入软件界面</span>
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pacman -Syu xxx
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Syu xxx
 pacman -Qs xxx
 pacman -Ss xxx
 pacman -F xxx
@@ -561,11 +558,11 @@ pacman -U http://www.example.com/repo/example.pkg.tar.xz
 <p>查看一个包的依赖树</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">
 pactree &lt;package_name&gt;
 </code></pre></td></tr></table>
 </div>
@@ -573,10 +570,10 @@ pactree &lt;package_name&gt;
 <p>pacman contrib 包中提供的 paccache(8) 脚本默认情况下会删除已安装和未安装包的所有缓存版本，但最近 3 个版本除外</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">paccache -r
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">paccache -r
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="downgrade">downgrade</h3>
@@ -584,12 +581,12 @@ pactree &lt;package_name&gt;
 <p>使用 downgrade 命令的前提是你之前已经安装过该软件包</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S downgrade
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S downgrade
 downgrade package_name
 <span class="c1"># 弹出可选的本地包供选择</span>
 </code></pre></td></tr></table>
@@ -598,13 +595,13 @@ downgrade package_name
 <p>从 AUR 仓库[Sources]下载历史源码,解压后生成安装包.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">tar -zxvf xxx.tar.gz
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">tar -zxvf xxx.tar.gz
 <span class="nb">cd</span> xxx
 makepkg -s
 pacman -U xxx.pkg.tar.xz
@@ -620,12 +617,12 @@ pacman -U xxx.pkg.tar.xz
 <p>Windows</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">scoop install yarn
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">scoop install yarn
 <span class="c1"># scoop install nodejs</span>
 yarn --version
 </code></pre></td></tr></table>
@@ -638,13 +635,13 @@ yarn --version
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg <span class="p">|</span> sudo apt-key add -
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg <span class="p">|</span> sudo apt-key add -
 <span class="nb">echo</span> <span class="s2">&#34;deb https://dl.yarnpkg.com/debian/ stable main&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/yarn.list
 
 sudo apt update <span class="o">&amp;&amp;</span> sudo apt install yarn
@@ -653,7 +650,7 @@ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install yarn
 </div><h3 id="manual">Manual</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -681,7 +678,7 @@ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install yarn
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 初始化一个新项目</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 初始化一个新项目</span>
 yarn init
 
 <span class="c1"># 添加依赖包</span>
@@ -725,8 +722,8 @@ yarn install
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -819,7 +816,7 @@ yarn install
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

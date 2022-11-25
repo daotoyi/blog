@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-remote-desktop/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux 远程桌面(win)" />
 <meta property="og:description" content="VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-remote-desktop/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-remote-desktop/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-08-05T21:04:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux 远程桌面(win)">
-<meta itemprop="description" content="VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie">
-<meta itemprop="datePublished" content="2022-08-05T21:04:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie"><meta itemprop="datePublished" content="2022-08-05T21:04:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="944">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux 远程桌面(win)"/>
 <meta name="twitter:description" content="VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie"/>
@@ -225,7 +222,7 @@ tigervnc viewer：<a href="https://bintray.com/tigervnc/beta/tigervnc">https://b
 <p>在/etc/gdm/custom.conf 配置文件中的[xdmcp]下，添加 Enable=1(或 true). Port=177(默认）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -241,20 +238,20 @@ tigervnc viewer：<a href="https://bintray.com/tigervnc/beta/tigervnc">https://b
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># GDM configuration storage</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># GDM configuration storage</span>
 
-<span class="na">[daemon]</span>
+<span class="k">[daemon]</span>
 
-<span class="na">[security]</span>
+<span class="k">[security]</span>
 
-<span class="na">[xdmcp]</span>
-<span class="na">Enable</span><span class="o">=</span><span class="s">true</span>
-<span class="na">Port</span><span class="o">=</span><span class="s">177</span>
-<span class="na">[greeter]</span>
+<span class="k">[xdmcp]</span>
+<span class="na">Enable</span><span class="o">=</span><span class="s">true</span>
+<span class="na">Port</span><span class="o">=</span><span class="s">177</span>
+<span class="k">[greeter]</span>
 
-<span class="na">[chooser]</span>
+<span class="k">[chooser]</span>
 
-<span class="na">[debug]</span>
+<span class="k">[debug]</span>
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -298,7 +295,7 @@ tigervnc viewer：<a href="https://bintray.com/tigervnc/beta/tigervnc">https://b
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -306,7 +303,7 @@ tigervnc viewer：<a href="https://bintray.com/tigervnc/beta/tigervnc">https://b
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">apt install xrdp
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">apt install xrdp
 sudo systemctl restart xrdp
 systemctl <span class="nb">enable</span> xrdp
 
@@ -320,7 +317,7 @@ ufw allow 3389/tcp
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -329,7 +326,7 @@ ufw allow 3389/tcp
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rpm -Uvh https://dl.Fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">rpm -Uvh https://dl.Fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum update <span class="o">&amp;&amp;</span> yum -y install xrdp tigervnc-server
 
 firewall-cmd --permanent --zone<span class="o">=</span>public --add-port<span class="o">=</span>3389/tcp
@@ -354,7 +351,7 @@ systemctl <span class="nb">enable</span> xrdp <span class="o">&amp;&amp;</span> 
 <p><strong>开启 X11Forwarding</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -365,7 +362,7 @@ systemctl <span class="nb">enable</span> xrdp <span class="o">&amp;&amp;</span> 
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /etc/ssh/sshd_config</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /etc/ssh/sshd_config</span>
 X11Forwarding yes
 
 <span class="c1"># X11UseLocalhost no</span>
@@ -421,8 +418,8 @@ systemctl sshd restart
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -513,7 +510,7 @@ systemctl sshd restart
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

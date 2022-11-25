@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Nginx - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/nginx-conf-note/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Nginx" />
+<meta property="og:description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/nginx-conf-note/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-04T23:44:00+00:00" />
+<meta property="article:modified_time" content="2022-05-21T12:53:09+00:00" />
+
+<meta itemprop="name" content="Nginx">
+<meta itemprop="description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置"><meta itemprop="datePublished" content="2022-04-04T23:44:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-21T12:53:09+00:00" />
+<meta itemprop="wordCount" content="3660">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nginx"/>
+<meta name="twitter:description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="instoducton">instoducton</h2>
+<h3 id="template">template</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">worker_processes  1;</span>
+<span class="na">events {</span>
+    <span class="na">worker_connections  1024;</span>
+<span class="na">}</span>
+<span class="na">http {</span>
+    <span class="na">include       mime.types;</span>
+    <span class="na">default_type  application/octet-stream;</span>
+    <span class="na">keepalive_timeout  65;</span>
+    <span class="na">server {</span>
+        <span class="na">listen       80;</span>
+        <span class="na">server_name  localhost;</span>
+        <span class="na">location / {</span>
+            <span class="na">root   html;</span>
+            <span class="na">index  index.html index.htm;</span>
+        <span class="na">}</span>
+    <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><figure><img src="https://raw.githubusercontent.com/daotoyi/picsbed/main//img/202204051045737.png"/>
+</figure>
+
+<p>根据上述文件，我们可以很明显的将 nginx.conf 配置文件分为三部分</p>
+<h3 id="global">global</h3>
+<p>从配置文件开始到 events 块之间的内容，主要会设置一些影响 nginx 服务器整体运行的配置指令，主要包括配置运行 Nginx 服务器的用户（组）、允许生成的 worker process 数，进程 PID 存放路径、日志存放路径和类型以及配置文件的引入等。</p>
+<h3 id="events">events</h3>
+<p>events 块涉及的指令主要影响 Nginx 服务器与用户的网络连接，常用的设置包括是否开启对多 work process 下的网络连接进行序列化，是否允许同时接收多个网络连接，选取哪种事件驱动模型来处理连接请求，每个 word process 可以同时支持的最大连接数等。</p>
+<h3 id="http">http</h3>
+<p>是 Nginx 服务器配置中最频繁的部分，代理、缓存和日志定义等绝大多数功能和第三方模块的配置都在这里。</p>
+<p>需要注意的是：http 块也可以包括 http 全局块、server 块。是 Nginx 服务器配置中最频繁的部分，代理、缓存和日志定义等绝大多数功能和第三方模块的配置都在这里。</p>
+<p>需要注意的是：http 块也可以包括 http 全局块、server 块。</p>
+<h4 id="http-global">http global</h4>
+<p>http 全局块配置的指令包括文件引入、MIME-TYPE 定义、日志自定义、连接超时时间、单链接请求数上限等。</p>
+<h4 id="server">server</h4>
+<p>这块和虚拟主机有密切关系，虚拟主机从用户角度看，和一台独立的硬件主机是完全一样的，该技术的产生是为了节省互联网服务器硬件成本。</p>
+<p>每个 http 块可以包括多个 server 块，而每个 server 块就相当于一个虚拟主机。</p>
+<p>而每个 server 块也分为全局 server 块，以及可以同时包含多个 locaton 块。</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>serval global</p>
+<p>最常见的配置是本虚拟机主机的监听配置和本虚拟主机的名称或 IP 配置。</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>location</p>
+<p>一个 server 块可以配置多个 location 块。</p>
+<p>这块的主要作用是基于 Nginx 服务器接收到的请求字符串（例如 server_name/uri-string），对虚拟主机名称（也可以是 IP 别名）之外的字符串（例如 前面的 /uri-string）进行匹配，对特定的请求进行处理。地址定向、数据缓存和应答控制等功能，还有许多第三方模块的配置也在这里进行。</p>
+</li>
+</ul>
+<h2 id="default-config-note">default config note</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#指定用什么用户去跑work process，默认用linux下的nobody 用户</span>
+<span class="na">user  nobody;</span>
+<span class="c1">#工作进程数,可以设置为auto,nginx会探测cpu核心数，启动相同数量的work process</span>
+<span class="na">worker_processes  1;</span>
+<span class="c1">#错误日志存放位置.既然叫错误日志，通常应设置级别为warn|error</span>
+<span class="na">error_log  logs/error.log;</span>
+<span class="na">error_log  logs/error.log  notice;</span>
+<span class="na">error_log  logs/error.log  info;</span>
+<span class="c1">#主进程pid文件存放的地点</span>
+<span class="na">pid        logs/nginx.pid;</span>
+
+<span class="c1">#events模块只能在main上下文中，并且只能配置一个，</span>
+<span class="c1">#其中可以包含7种简单指令</span>
+<span class="na">events {</span>
+    <span class="na">worker_connections  1024;</span>
+    <span class="c1">#每个worker process可以支持的最大连接数，生成环境根据需要可以设置更大一些（9000）</span>
+    <span class="c1">#值得注意的是，此数字是包括了反向代理等等所需要的连接数在内，并不仅仅是指web端发起的连接数</span>
+    <span class="na">multi_accept on #是否work进程一次只接收一个连接。并发较大时应打开</span>
+    <span class="na">use epoll #选择底层处理连接的模型，Linux下默认epoll，无需自己设置</span>
+    <span class="na">accept_mutex</span>
+    <span class="na">accept_mutex_delay</span>
+    <span class="c1">#上面2参数是表示是否让worker进程使用one by one的工作模式，默认是关闭的。</span>
+    <span class="c1">#开启的时候，在低并发的时候非工作状态下的worker process将休眠，避免浪费资源。</span>
+<span class="na">}</span>
+
+<span class="c1">#nginx配置的“核心”</span>
+<span class="na">http {</span>
+    <span class="c1">#include指令用于加载单独的配置文件模块，避免过于臃肿</span>
+    <span class="c1">#而这里的 mime.types表示此文件应该在nginx.conf的同级目录下。</span>
+    <span class="c1">#其中的types模块用于表示nginx响应的文件后缀名和content-type直接的映射</span>
+    <span class="c1">#比如你想要让浏览器识别你返回的mytxt.data文件为文本内容在浏览器中显示为文本,添加 text/plain   data;</span>
+    <span class="na">include       mime.types;</span>
+    <span class="c1">#上面的匹配失败后，默认给的响应内容类型</span>
+    <span class="na">default_type  application/octet-stream;</span>
+
+    <span class="na">log_format  main  &#39;$remote_addr - $remote_user [$time_local] &#34;$request&#34; &#39;</span>
+                      <span class="na">&#39;$status $body_bytes_sent &#34;$http_referer&#34; &#39;</span>
+                      <span class="na">&#39;&#34;$http_user_agent&#34; &#34;$http_x_forwarded_for&#34;&#39;;</span>
+
+    <span class="na">access_log  logs/access.log  main;</span>
+    <span class="c1">#io时不阻塞处理connection，在传输大文件时使用，加快文件读写效率</span>
+    <span class="na">sendfile        on;</span>
+    <span class="na">tcp_nopush     on;#貌似意思是只有在sendfile启用时使用，让nginx发包的时候满包发送（不明白）通常不使用</span>
+    <span class="c1">#连接idle的最大时间，现代浏览器往往在一个页面同时打开多个connection传输js,css,html等。</span>
+    <span class="c1">#设置最大idle时间避免过长等待浪费connection</span>
+    <span class="c1">#keepalive_timeout  0;</span>
+    <span class="na">keepalive_timeout  65;</span>
+    <span class="c1">#开启response响应压缩，可以节省带宽，默认关闭。超过1024Kb才压缩</span>
+    <span class="na">gzip  on;</span>
+    <span class="c1">#server 上下文代表一个虚拟主机，可以有多个，内嵌在比如http,mail模块中</span>
+    <span class="na">server {</span>
+            <span class="na">listen 80;</span>
+            <span class="na">server_name myapp.info; #如果是在本地试验，要修改/etc/hosts的域名映射到本机</span>
+            <span class="na">location / { #location的匹配规则too tricky，单开一篇blog 注意匹配的文件夹的访问权限</span>
+                    <span class="na">root /usr/local/nginx;</span>
+            <span class="na">}</span>
+     <span class="na">};</span>
+     <span class="na">include /etc/nginx/conf/conf.d/*/*.conf;</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="general-parameter"><a href="https://www.runoob.com/w3cnote/nginx-setup-intro.html">general parameter</a></h2>
+<ol>
+<li>$remote_addr 与 $http_x_forwarded_for 用以记录客户端的 ip 地址；</li>
+<li>$remote_user ：用来记录客户端用户名称；</li>
+<li>$time_local ： 用来记录访问时间与时区；</li>
+<li>$request ： 用来记录请求的 url 与 http 协议；</li>
+<li>$status ： 用来记录请求状态；成功是 200；</li>
+<li>$body_bytes_s ent ：记录发送给客户端文件主体内容大小；</li>
+<li>$http_referer ：用来记录从那个页面链接访问过来的；</li>
+<li>$http_user_agent ：记录客户端浏览器的相关信息；</li>
+</ol>
+<h2 id="proxy-set-header">proxy_set_header</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location /wss</span>
+    <span class="na">{</span>
+        <span class="na">proxy_pass http://127.0.0.1:8888;</span>
+        <span class="na">proxy_http_version 1.1;</span>
+        <span class="na">proxy_set_header Upgrade $http_upgrade;</span>
+        <span class="na">proxy_set_header Connection &#34;Upgrade&#34;;</span>
+        <span class="na">proxy_set_header X-Real-IP $remote_addr;</span>
+
+        <span class="na">proxy_set_header Host $host:$server_port;</span>
+        <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+        <span class="na">echo &#34;test.com&#34;;    # 输出测试</span>
+    <span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://www.jianshu.com/p/7a8a7eb3707a">Nginx proxy_set_header Host $host 和 proxy_set_header Host $http_host</a></p>
+<ul>
+<li>/wss 这个是随便起的,告诉 Nginx 要代理的 url</li>
+<li>proxy_pass 要代理到的 url, 代理到本机的 8888 端口。
+<ul>
+<li>当我访问的我的服务器 <code>https://xxx.com/wss</code> 时,Nginx 会把请求映射到本机的 8888 端口。</li>
+</ul>
+</li>
+<li>proxy_http_version 代理时使用的 http 版本</li>
+<li>proxy_set_header Upgrade 把代理时 http 请求头的 Upgrade 设置为原来 http 请求的请求头
+<ul>
+<li>wss 协议的请求头为 websocket</li>
+</ul>
+</li>
+<li>proxy_set_header Connection 因为代理的 wss 协议,所以 http 请求头的 Connection 设置为 Upgrade</li>
+<li>proxy_set_header X-Real-IP 给代理设置原 http 请求的 ip(客户端真实 ip)</li>
+<li>proxy_set_header X-Forwarded-For 客户端真实 ip</li>
+<li>proxy_set_header Host (host-&gt; 访问 nginx 时返回:
+<ul>
+<li>$http_host          -&gt; $host:$server_port</li>
+<li>$host               -&gt; 只返回 host</li>
+<li>$host:$server_port  -&gt; listen port</li>
+<li>$host:$proxy_port   -&gt; proxy_pass port</li>
+</ul>
+</li>
+</ul>
+<h2 id="proxy">proxy</h2>
+<h3 id="single-server">single server</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#配置监听的目录为：/</span>
+<span class="na">location /{</span>
+    <span class="na">root html;</span>
+    <span class="na">index index.html index.htm;</span>
+    <span class="na">proxy_pass http/127.0.0.1:8080;  #反向代理了本机的8080端口</span>
+    <span class="c1">#proxy_pass http/127.0.0.1:8081; #反向代理了本机的8081端口</span>
+
+    <span class="c1"># 可以同时配置多条proxy_pass</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="multi-server">multi server</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#配置服务器组，取名为hello</span>
+<span class="na">upstream hello{</span>
+<span class="c1">#一个server对应一个服务器，当然也可以是不同端口的web程序</span>
+<span class="na">server 127.0.0.1:8080:</span>
+<span class="na">server 127.0.0.1:8081;</span>
+
+<span class="c1">#在location块中修改反向代理为服务器组</span>
+<span class="na">location/{</span>
+  <span class="na">root html ;</span>
+  <span class="na">index index.html index.htm;</span>
+  <span class="na">proxy_pass http/hello; #反向代理了hello服务器组中的所有服务</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="conf-dot-d">conf.d/</h2>
+<h3 id="subconfig">subConfig</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">server {</span>
+        <span class="na">listen 8000;</span>
+        <span class="na">server_name test1.com;</span>
+        <span class="na">location / {</span>
+            <span class="na">proxy_set_header Host $host:$server_port;</span>
+            <span class="na">proxy_set_header X-Real-Ip $remote_addr;</span>
+            <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+            <span class="na">echo &#34;test.com&#34;;    # 输出测试</span>
+        <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="upstream">upstream</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg">  <span class="c1">## 下游代理服务器，这里test-backend是自定义后台的名字。</span>
+  <span class="c1"># 这里的【127.0.0.1:9002】是后台接口地址</span>
+  <span class="na">upstream test-backend {</span>
+      <span class="na">server 127.0.0.1:9002;</span>
+  <span class="na">}</span>
+  <span class="c1">## test-peoject虚拟服务器配置</span>
+  <span class="na">server {</span>
+      <span class="c1">## 监听端口</span>
+      <span class="na">listen 99;</span>
+      <span class="c1">## 服务名称</span>
+      <span class="na">server_name localhost;</span>
+      <span class="c1">## 字符集编码</span>
+      <span class="na">charset utf-8;</span>
+      <span class="c1">## 访问日志</span>
+      <span class="na">access_log logs/test-peoject.access.log main;</span>
+      <span class="c1">## 错误日志</span>
+      <span class="c1">#error_log logs/test-peoject.error.log main;</span>
+      <span class="c1"># 客户端请求体最大值</span>
+      <span class="na">client_max_body_size 500m;</span>
+      <span class="c1"># 黑名单配置</span>
+      <span class="na">deny 192.53.163.212;</span>
+
+      <span class="c1">#【html/test-project】是前端项目打包好的文件的位置</span>
+      <span class="na">index index.html;</span>
+      <span class="na">root html/test-project;</span>
+
+      <span class="c1">## 默认首页</span>
+      <span class="na">location / {</span>
+          <span class="na">try_files $uri $uri/ @router;</span>
+          <span class="na">index  index.html index.htm;</span>
+      <span class="na">}</span>
+      <span class="c1">## VUE路由重写</span>
+      <span class="na">location @router {</span>
+          <span class="na">rewrite ^.*$ /index.html last;</span>
+      <span class="na">}</span>
+      <span class="c1">## 显示前端静态资源</span>
+      <span class="na">location ~ ^(/static/) {</span>
+          <span class="na">access_log off;</span>
+          <span class="na">root html/test-project;</span>
+          <span class="na">expires 7d;</span>
+      <span class="na">}</span>
+      <span class="c1">## 代理前端图片，缓存时间长一点</span>
+      <span class="na">location ~ ^(/static/).+\.(jpg|jpeg|gif|png)$ {</span>
+          <span class="na">access_log off;</span>
+          <span class="na">root html/test-project;</span>
+          <span class="na">expires 15d;</span>
+      <span class="na">}</span>
+      <span class="c1">## 通过客户端请求头信息</span>
+      <span class="na">proxy_pass_request_headers on;</span>
+      <span class="c1">## 保留客户端的真实(ip etc.)信息</span>
+      <span class="na">proxy_set_header Host $host;</span>
+      <span class="na">proxy_set_header X-Real_IP $remote_addr;</span>
+      <span class="na">proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;</span>
+      <span class="c1">## 转发后台请求，这个用到了test-backend（前面已定义的）</span>
+      <span class="na">location /test-pro {</span>
+          <span class="na">proxy_pass http://test-backend;</span>
+      <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="location">location</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">~  #波浪线表示执行一个正则匹配，区分大小写</span>
+<span class="na">~* #表示执行一个正则匹配，不区分大小写</span>
+<span class="na">^~ #^~表示普通字符匹配，如果该选项匹配，只匹配该选项，不匹配别的选项，一般用来匹配目录</span>
+<span class="o">=</span>  <span class="s">#进行普通字符精确匹配,用于不含正则表达式的 uri 前，要求请求字符串与 uri 严格匹配，如果匹配成功，就停止继续向下搜索并立即处理该请求。</span>
+<span class="na">@  #&#34;@&#34; 定义一个命名的 location，使用在内部定向时</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location</span>  <span class="o">=</span> <span class="s">/ {
+</span><span class="s">  # 只匹配&#34;/&#34;.</span>
+<span class="na">}</span>
+<span class="na">location  / {</span>
+  <span class="c1"># 匹配任何请求，因为所有请求都是以&#34;/&#34;开始</span>
+  <span class="c1"># 但是更长字符匹配或者正则表达式匹配会优先匹配</span>
+<span class="na">}</span>
+<span class="na">location ^~ /images/ {</span>
+  <span class="c1"># 匹配任何以 /images/ 开始的请求，并停止匹配 其它location</span>
+<span class="na">}</span>
+<span class="na">location ~* .(gif|jpg|jpeg)$ {</span>
+  <span class="c1"># 匹配以 gif, jpg, or jpeg结尾的请求.</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="proxy-multiport">proxy multiport</h2>
+<ul>
+<li><a href="https://blog.csdn.net/yaologos/article/details/113356620">Nginx单服务器部署多个网站，域名</a>(server)</li>
+<li><a href="https://www.jianshu.com/p/5bc9cd2271b1">Nginx配置——单域名反向代理多个端口</a>(location)</li>
+<li><a href="https://blog.csdn.net/weixin_48215755/article/details/122713914">nginx代理 1个端口+路径匹配 代理多个web</a>(location)</li>
+</ul>
+<h2 id="load-balancing">load balancing</h2>
+<h3 id="roll-polling-默认">roll polling 默认）</h3>
+<p>每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器 down 掉，能自动剔除。</p>
+<h3 id="weight">weight</h3>
+<p>Nginx 的负载均衡方式可以有很多种，如加权轮询(默认)、IP 哈希、url 哈希等等.</p>
+<p>加权轮询，也就是通过给服务器添加各自的权重值，Nginx 通过权重来进行请求的分配，权重越高接收到的请求数量越多，反之越少：</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-fbfbfae025d0fbbebbfb7a67c5a206be_1440w.jpg"/>
+</figure>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">upstream hello{</span>
+    <span class="na">server服务器1:8080 weight</span><span class="o">=</span><span class="s">3:#配置服务器1的权重为3
+</span><span class="s">    server服务器2:8080 weight=1;#配置服务器2的权重为1</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="ip-hash">ip_hash</h3>
+<p>每个请求按访问 ip 的 hash 结果分配，这样每个访客固定访问一个后端服务器，可以解决 session 的问题。</p>
+<h3 id="fair">fair</h3>
+<p>（第三方）
+按后端服务器的响应时间来分配请求，响应时间短的优先分配。</p>
+<h2 id="operate">operate</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nginx -t
+nginx -s reload
+nginx -s stop
+nginx -s quit
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.runoob.com/w3cnote/nginx-setup-intro.html">Nginx 配置详解</a></li>
+<li><a href="https://www.cnblogs.com/54chensongxia/p/12938929.html">Nginx配置文件详解</a></li>
+<li><a href="https://www.jianshu.com/p/1037e6929f54">nginx.conf的结构和基础配置解析</a></li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -6,10 +6,33 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Nov 2022 14:47:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Nov 2022 12:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 解压安装包文件</title>
+      <link>https://daotoyi.github.io/post/linuxumpack-install-packages/</link>
+      <pubDate>Mon, 21 Nov 2022 12:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linuxumpack-install-packages/</guid>
+      <description>dpkg X 解压 dekg-deb 重新打包 1 2 3 4 5 6 7 8 9 10 11 mkdir extract mkdir extract/DEBIAN mkdir build # 0 解压出包中的文件到 extract 目录下 dpkg -X ../openssh-client_6.1p1_i386.deb extract/ # 1 解压出包的控制信息 extract/DEBIAN</description>
+    </item>
     
-	<atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs 插件列表</title>
+      <link>https://daotoyi.github.io/post/emacs-plugins-list/</link>
+      <pubDate>Sun, 13 Nov 2022 13:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-plugins-list/</guid>
+      <description>基础 插件 用途 dracula-theme / molokai-theme 配色 neotree 文件列表 super-save 自动保存 popwin 窗口操作 window-numbering 窗口跳转 dired+ 目录增强 direx 打开当前文件目录 crux 打开应用 undo-tree 撤销 swiper，counsel 快捷命</description>
+    </item>
     
+    <item>
+      <title>Word archive</title>
+      <link>https://daotoyi.github.io/post/windows-word-archive/</link>
+      <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-word-archive/</guid>
+      <description>模板 一劳永逸，打造自己的word常规模板</description>
+    </item>
     
     <item>
       <title>Linux cmd tar/zip</title>
@@ -66,7 +89,7 @@
     </item>
     
     <item>
-      <title>FAQ</title>
+      <title>Windows FAQ</title>
       <link>https://daotoyi.github.io/post/windows-faq/</link>
       <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
       
@@ -539,7 +562,7 @@
       <pubDate>Tue, 10 May 2022 23:41:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/google-gmail/</guid>
-      <description>abc.def+hi@googlemail.com abcdef@gmail.com 1 2 3 4 5  abcdef@gmail.com a.bcdef@gmail.com ab.cdef@gmail.com abc.def@gmail.com ***   example@gmail.com 1 2 3 4  example+noreply@gmail.com example+bicner.com-1@gmail.com example+bicner.com-2@gmail.com example+bicner.com-3@gmail.com   @googlemail.com abcd@gmail.com -&amp;gt; abcd@googlemail.com</description>
+      <description>abc.def+hi@googlemail.com abcdef@gmail.com 1 2 3 4 5  abcdef@gmail.com a.bcdef@gmail.com ab.cdef@gmail.com abc.def@gmail.com ***   example@gmail.com 1 2 3 4  example+noreply@gmail.com example+bicner.com-1@gmail.com example+bicner.com-2@gmail.com example+bicner.com-3@gmail.com   @googlemail.com abcd@gmail.com -&amp;gt; abcd@googlemail.com</description>
     </item>
     
     <item>
@@ -665,7 +688,7 @@
       <pubDate>Thu, 28 Apr 2022 20:59:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/spacevim/</guid>
-      <description>install 1 2 3 4  curl -sLf https://spacevim.org/cn/install.sh | bashgit clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.dln -s ~/.SpceVim.d/autoload/dylayer.vim ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim  root 1 2 3 4 5  su rootln -s /home/daoyi/.vim /root/.vimln -s /home/daoyi/.SpaceVim /root/.SpaceVimln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.dln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles  Ref  SpaceVim daotoyi/SpaceVim.d  </description>
+      <description>install 1 2 3 4  curl -sLf https://spacevim.org/cn/install.sh | bash git clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.d ln -s ~/.SpceVim.d/autoload/dylayer.vim ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim   root 1 2 3 4 5  su root ln -s /home/daoyi/.vim /root/.vim ln -s /home/daoyi/.SpaceVim /root/.SpaceVim ln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.d ln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles   Ref  SpaceVim daotoyi/SpaceVim.d  </description>
     </item>
     
     <item>
@@ -683,7 +706,7 @@
       <pubDate>Wed, 20 Apr 2022 13:08:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/wxpusher/</guid>
-      <description>POST 1 http://wxpusher.zjiecode.com/api/send/message/?appToken=AT_xxx&amp;amp;content=daotyi-test&amp;amp;uid= UID_xxx&amp;amp;url=https://www.daotoyi.cn j#+begin_src js { &amp;ldquo;appToken&amp;rdquo;:&amp;ldquo;AT_xxx &amp;ldquo;, &amp;ldquo;summary&amp;rdquo;:&amp;ldquo;summary-decsriptions&amp;rdquo;, &amp;ldquo;content&amp;rdquo;:&amp;ldquo;daotoyi： {{EntryTitle}}&amp;quot;, &amp;ldquo;contentType&amp;rdquo;:1, &amp;ldquo;topicIds&amp;rdquo;:[ ], &amp;ldquo;uids&amp;rdquo;:[ &amp;ldquo;UID_xxx &amp;quot; ], &amp;ldquo;url&amp;rdquo;:&amp;ldquo;hhtps://www.daotoyi.cn&amp;rdquo; } #+end_src Ref github WxPusher后台</description>
+      <description>POST 1 http://wxpusher.zjiecode.com/api/send/message/?appToken=AT_xxx&amp;amp;content=daotyi-test&amp;amp;uid= UID_xxx&amp;amp;url=https://www.daotoyi.cn j#+begin_src js { &amp;ldquo;appToken&amp;rdquo;:&amp;ldquo;AT_xxx &amp;ldquo;, &amp;ldquo;summary&amp;rdquo;:&amp;ldquo;summary-decsriptions&amp;rdquo;, &amp;ldquo;content&amp;rdquo;:&amp;ldquo;daotoyi： {{EntryTitle}}&amp;rdquo;, &amp;ldquo;contentType&amp;rdquo;:1, &amp;ldquo;topicIds&amp;rdquo;:[ ], &amp;ldquo;uids&amp;rdquo;:[ &amp;ldquo;UID_xxx &amp;quot; ], &amp;ldquo;url&amp;rdquo;:&amp;ldquo;hhtps://www.daotoyi.cn&amp;rdquo; } #+end_src Ref github WxPusher后台</description>
     </item>
     
     <item>
@@ -710,7 +733,7 @@
       <pubDate>Sat, 16 Apr 2022 13:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/python-jupyter-lab/</guid>
-      <description>notebook lab 1 2  pip install jupyterlabjupyter lab  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  rem echo off @echo offif &amp;#34;%1&amp;#34;==&amp;#34;h&amp;#34; goto begin start mshta vbscript:createobject(&amp;#34;wscript.shell&amp;#34;).run(&amp;#34;&amp;#34;&amp;#34;%~nx0&amp;#34;&amp;#34; h&amp;#34;,0)(window.close)&amp;amp;&amp;amp;exit:begin e:cd Refine\Python\Jupyterrem activate base rem manual start jupyterLab, `activate base` needed rem in jupyterlab.bat, if activate, it will not work. ::.</description>
+      <description>notebook lab 1 2  pip install jupyterlab jupyter lab   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  rem echo off @echo off if &amp;#34;%1&amp;#34;==&amp;#34;h&amp;#34; goto begin start mshta vbscript:createobject(&amp;#34;wscript.shell&amp;#34;).run(&amp;#34;&amp;#34;&amp;#34;%~nx0&amp;#34;&amp;#34; h&amp;#34;,0)(window.close)&amp;amp;&amp;amp;exit :begin e: cd Refine\Python\Jupyter rem activate base rem manual start jupyterLab, `activate base` needed rem in jupyterlab.bat, if activate, it will not work. ::.\jupyter.exe.lnk lab jupyter lab pause   </description>
     </item>
     
     <item>
@@ -755,7 +778,7 @@
       <pubDate>Fri, 15 Apr 2022 07:11:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-oh-my-zsh/</guid>
-      <description>zsh 1 2 3 4 5 6  apt install zshyum/dnf install zshpacman -S zsh# change default terminalchsh -s /usr/bin/zsh  oh-my-zsh 1 2 3 4 5 6 7 8 9 10  sh -c &amp;#34;$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34;source ~/.zshrc# plugins$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git$ mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting# $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/$ echo &amp;#34;plugins=(zsh-syntax-highlighting)&amp;#34; &amp;gt;&amp;gt;　~/.zshrc$ source ~/.zshrc  root user 1 2  sudo ln -s $HOME/.</description>
+      <description>zsh 1 2 3 4 5 6  apt install zsh yum/dnf install zsh pacman -S zsh # change default terminal chsh -s /usr/bin/zsh   oh-my-zsh 1 2 3 4 5 6 7 8 9 10  sh -c &amp;#34;$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; source ~/.zshrc # plugins $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting # $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/ $ echo &amp;#34;plugins=(zsh-syntax-highlighting)&amp;#34; &amp;gt;&amp;gt;　~/.zshrc $ source ~/.zshrc   root user 1 2  sudo ln -s $HOME/.</description>
     </item>
     
     <item>
@@ -872,7 +895,7 @@
       <pubDate>Tue, 05 Apr 2022 23:10:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/emacs-org-table-calculate/</guid>
-      <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&amp;rsquo;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
+      <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&#39;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
     </item>
     
     <item>
@@ -1214,7 +1237,7 @@
       <pubDate>Sun, 13 Mar 2022 23:24:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/hugo-github-action/</guid>
-      <description>Useage Touch .github/workflows/main.yml in root directory. confiure as: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 name:DeployGitHubPages# 触发条件：在 push 到 master/main 分支后 on:push:branches:- main# 任务 jobs:build-and-deploy:# 服务器环境：最</description>
+      <description>Useage Touch .github/workflows/main.yml in root directory. confiure as: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 name:Deploy GitHub Pages# 触发条件：在 push 到 master/main 分支后on:push:br</description>
     </item>
     
     <item>
@@ -1412,7 +1435,7 @@
       <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/docker-operation-manual/</guid>
-      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况下，Docker 从 Docker Hub 下载这些镜像，Docker 公司在运营这个 Docker H</description>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] basic Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况下，Docker 从 Docker Hub 下载这些镜像，Docker 公司在运营这个 Docker</description>
     </item>
     
     <item>

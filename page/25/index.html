@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/" />
@@ -37,7 +37,7 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -45,7 +45,7 @@
 <meta property="og:description" content="Hugo theme even example site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://daotoyi.github.io/" />
-<meta property="og:updated_time" content="2022-02-04T09:33:17+08:00" />
+
 <meta itemprop="name" content="DaoyiSite">
 <meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="DaoyiSite"/>
@@ -126,13 +126,82 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git-pull-force/">Git Pull 强制覆盖</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-26 </span>
+      <div class="post-category">
+          <a href="/categories/github/"> Github </a>
+          </div>
+        <span class="more-meta"> 103 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展
+    </div>
+    <div class="read-more">
+      <a href="/post/git-pull-force/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git-stash/">Git stash</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-26 </span>
+      <div class="post-category">
+          <a href="/categories/github/"> Github </a>
+          </div>
+        <span class="more-meta"> 81 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      git stash 命令用于将更改储藏在脏工作目录中。 useage 1 2 3 4 5 6 7 git stash # git stash save git stash list # 列出 git stash show # 进行检查 git stash apply # 恢复 git stash apply stash@{2} git stash drop stash@{2} # 移除储藏 git stash pop #
+    </div>
+    <div class="read-more">
+      <a href="/post/git-stash/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/cpu-frequency/">CPU Frequency</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-25 </span>
+      <div class="post-category">
+          <a href="/categories/hardware/"> Hardware </a>
+          </div>
+        <span class="more-meta"> 655 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      主频=外频×倍频系数 主频 即 CPU 内核工作的主时钟频率，表示在 CPU 内数字脉冲信号震荡的速度。 外频 通常为系统总线的工作频率，是 CPU 的基准频率，单位是 MH
+    </div>
+    <div class="read-more">
+      <a href="/post/cpu-frequency/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/linux-cmd-stty/">CMD stty</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-03-25 </span>
       <div class="post-category">
           <a href="/categories/linux/"> Linux </a>
           </div>
-        <span class="more-meta"> 699 words </span>
+        <span class="more-meta"> 698 words </span>
         <span class="more-meta"> 2 mins read </span>
     </div>
   </header>
@@ -166,75 +235,6 @@
     </div>
     <div class="read-more">
       <a href="/post/connectutility/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/github-actions/">Github Actions</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-19 </span>
-      <div class="post-category">
-          <a href="/categories/github/"> Github </a>
-          </div>
-        <span class="more-meta"> 921 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep
-    </div>
-    <div class="read-more">
-      <a href="/post/github-actions/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/github-access-verification-with-token/">Github 推送验证</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-19 </span>
-      <div class="post-category">
-          <a href="/categories/github/"> Github </a>
-          </div>
-        <span class="more-meta"> 573 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 git remote set-url origin https://userName:token@github.com/userName/reponame.git # or git remote set-url origin https://token@github.com/userName/reponame.git git remote set-url origin https://hao203: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@github.com/hao203/Demo.git 将 token 当
-    </div>
-    <div class="read-more">
-      <a href="/post/github-access-verification-with-token/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/markdown-notes/">Markdown</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-19 </span>
-      <div class="post-category">
-          <a href="/categories/tools/"> Tools </a>
-          </div>
-        <span class="more-meta"> 290 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      图片排列 普通左右排列 要一张图片接着一张图片的写，中间不能有换行。如果换行的话则图片也换行 ，例如： 1 ![描述](图片链接)![描述](图片链接
-    </div>
-    <div class="read-more">
-      <a href="/post/markdown-notes/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -306,7 +306,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

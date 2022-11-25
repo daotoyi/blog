@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux Qt - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/linux-qt/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux Qt" />
+<meta property="og:description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/linux-qt/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-02T20:18:00+00:00" />
+<meta property="article:modified_time" content="2022-11-02T20:18:36+00:00" />
+
+<meta itemprop="name" content="Linux Qt">
+<meta itemprop="description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路"><meta itemprop="datePublished" content="2022-11-02T20:18:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-02T20:18:36+00:00" />
+<meta itemprop="wordCount" content="488">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Qt"/>
+<meta name="twitter:description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="basic">basic</h2>
+<ul>
+<li>pro 文件
+<ul>
+<li>用来告诉 qmake 如何生成 makefile。
+<ul>
+<li>如该项目有哪些源文件和头文件，该应用程序的特定配置，</li>
+<li>比如需要链接的额外的库，或者一个额外的包含路径，这些都应该放在项目文件中。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">qmake  xxx.pro 		//生成makefile文件  <span class="o">(</span>移植的qt<span class="o">)</span>
+make 				//编译生成可执行文件 （生成arm开发板下可执行文件）
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="configure">configure</h2>
+<p>QT 的源码所在目录下，再进到 qws 目录下 <code>cd mkspecs/qws</code>.</p>
+<p>查看是否有适合我们的配置目录 <code>linux-arm-gnueabi-g++</code> ，如果没有，就自己建一个目录，然后 mkspecs/目录下的其他拷贝两个文件 <code>qmake.conf</code> 和 <code>qplatformdefs.h</code> 。</p>
+<p>之后进入到 linux-arm-gnueabi-g++目录，修改 qmake.conf 的编译器位置，如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">QMAKE_CC</span>                <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-gcc</span>
+<span class="na">QMAKE_CXX</span>               <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
+<span class="na">QMAKE_LINK</span>              <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
+<span class="na">QMAKE_LINK_SHLIB</span>        <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
+
+<span class="c1"># modifications to linux.conf</span>
+<span class="na">QMAKE_AR</span>                <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-ar cqs</span>
+<span class="na">QMAKE_OBJCOPY</span>           <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-objcopy</span>
+<span class="na">QMAKE_STRIP</span>             <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-strip</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>./mktarget 生成的文件解压在目标系统的根目录中，可在/usr/local/Trolltech/QtEmbedded-x.x.x-arm/bin 中找到 qmake。</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="basic-xlib-functionality-test-failed">Basic XLib functionality test failed!</h3>
+<p>sudo apt-get install libxext-dev</p>
+<h3 id="mark-时-usr-bin-ld-cannot-find-lxext">mark 时/usr/bin/ld: cannot find -lXext</h3>
+<p>sudo apt-get install libxt-dev</p>
+<h3 id="mark-时-usr-bin-ld-cannot-find-lxrender">mark 时 /usr/bin/ld: cannot find -lXrender</h3>
+<p>sudo apt-get install libxrender-dev</p>
+<h3 id="出现-x11-extensions-xdamage-dot-h-no-such-file-or-directory">出现 X11/extensions/Xdamage.h: No such file or directory</h3>
+<p>sudo apt-get install libxdamage-dev</p>
+<h3 id="about-qtopengl"><span class="org-todo done DONE">DONE</span> About QtOpenGL</h3>
+<p>If try -opengl then: All the OpenGL functionality tests failed!</p>
+<p>sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev</p>
+<h3 id="about-qtdbus">About QtDBus</h3>
+<p>If try -dbus then:The QtDBus module cannot be enabled because libdbus-1 version 0.93 was not found</p>
+<p>sudo apt-get install libdbus-1-dev
+sudo apt-get install libedbus-dev</p>
+<h3 id="gconf">gconf</h3>
+<p>sudo apt-get install libgconf2-dev</p>
+<h3 id="icu">icu</h3>
+<p>sudo apt-get install libicu-dev</p>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.cnblogs.com/wanghuaijun/p/7746560.html">编译 arm 版的qt</a></li>
+<li><a href="https://www.codeprj.com/blog/9beb661.html">Qt5.12.0 交叉编译搭建</a></li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-gcc-compile-lib/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux gcc/g&#43;&#43;" />
 <meta property="og:description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-gcc-compile-lib/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-gcc-compile-lib/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-08-02T22:47:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux gcc/g&#43;&#43;">
-<meta itemprop="description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警">
-<meta itemprop="datePublished" content="2022-08-02T22:47:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警"><meta itemprop="datePublished" content="2022-08-02T22:47:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="725">
-
-
-
 <meta itemprop="keywords" content="libs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux gcc/g&#43;&#43;"/>
 <meta name="twitter:description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警"/>
@@ -179,7 +176,7 @@
 <p>常用参数</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -190,7 +187,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">-v	查看版本
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">-v	查看版本
 -o	产生目标文件
 -I+ 目录	指定头文件目录
 -D	编译时定义宏
@@ -209,7 +206,7 @@
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -220,7 +217,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">+--- include
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">+--- include
 <span class="p">|</span>   +--- head.h
 +--- lib
 <span class="p">|</span>   +--- main.c
@@ -235,13 +232,13 @@
 <p>将所有指定的源文件，都编译成相应的目标文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c"><span class="n">gcc</span> <span class="o">*</span><span class="p">.</span><span class="n">c</span> <span class="o">-</span><span class="n">c</span> <span class="o">-</span><span class="n">I</span><span class="p">..</span><span class="o">/</span><span class="n">include</span>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="n">gcc</span> <span class="o">*</span><span class="p">.</span><span class="n">c</span> <span class="o">-</span><span class="n">c</span> <span class="o">-</span><span class="n">I</span><span class="p">..</span><span class="o">/</span><span class="n">include</span>
 
 <span class="c1">// ls *.o
 </span><span class="c1"></span><span class="n">add</span><span class="p">.</span><span class="n">o</span>  <span class="n">div</span><span class="p">.</span><span class="n">o</span> <span class="n">mul</span><span class="p">.</span><span class="n">o</span> <span class="n">sub</span><span class="p">.</span><span class="n">o</span>
@@ -250,12 +247,12 @@
 </div><h3 id="创建静态库">创建静态库</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c" data-lang="c"><span class="n">ar</span> <span class="n">rcs</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span> <span class="o">*</span><span class="p">.</span><span class="n">o</span>
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="n">ar</span> <span class="n">rcs</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span> <span class="o">*</span><span class="p">.</span><span class="n">o</span>
 <span class="n">mv</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span> <span class="p">..</span><span class="o">/</span><span class="n">lib</span>
 <span class="n">nm</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span>  <span class="c1">// 查看库中包含的函数等信息
 </span></code></pre></td></tr></table>
@@ -269,12 +266,12 @@
 <h4 id="第一种方法">第一种方法：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -L 静态库路径 + -l静态库名 + -I头文件目录 + -o 可执行文件名
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -L 静态库路径 + -l静态库名 + -I头文件目录 + -o 可执行文件名
 gcc main.c -L lib -l MyTest -I include -o app
 ./app
 </code></pre></td></tr></table>
@@ -282,11 +279,11 @@ gcc main.c -L lib -l MyTest -I include -o app
 </div><h4 id="第二种方法">第二种方法：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -I头文件 + libxxx.a + -o 可执行文件名
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -I头文件 + libxxx.a + -o 可执行文件名
 gcc main.c -I include lib/libMyTest.a -o app
 </code></pre></td></tr></table>
 </div>
@@ -298,20 +295,20 @@ gcc main.c -I include lib/libMyTest.a -o app
 <h3 id="编译-o-文件-与位置无关">编译 o 文件（与位置无关）</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc -fPIC *.c -I ../include -c   <span class="c1"># 参数-fPIC表示生成与位置无关代码</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc -fPIC *.c -I ../include -c   <span class="c1"># 参数-fPIC表示生成与位置无关代码</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="创建动态库">创建动态库</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc -shared -o libMyTest.so *.o        <span class="c1"># 参数：-shared 制作动态库 -o：重命名生成的新文件</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc -shared -o libMyTest.so *.o        <span class="c1"># 参数：-shared 制作动态库 -o：重命名生成的新文件</span>
 mv libMyTest.so ../lib
 </code></pre></td></tr></table>
 </div>
@@ -319,13 +316,13 @@ mv libMyTest.so ../lib
 <h4 id="第一种方法">第一种方法：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -L 动态库路径 + -l动态库名 + -I头文件目录 + -o 可执行文件名
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -L 动态库路径 + -l动态库名 + -I头文件目录 + -o 可执行文件名
 gcc main.c -L lib -l MyTest -I include -o app
 ./app
 <span class="c1"># （执行失败，找不到链接库，没有给动态链接器（ld-linux.so.2）指定好动态库 libmytest.so 的路径）</span>
@@ -338,12 +335,12 @@ gcc main.c -L lib -l MyTest -I include -o app
 <h4 id="第二种方法">第二种方法：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -I头文件 + libxxx.so + -o 可执行文件名
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -I头文件 + libxxx.so + -o 可执行文件名
 gcc main.c -I include lib/libMyTest.so -o app
 <span class="c1"># （执行成功，已经指明了动态库的路径）</span>
 </code></pre></td></tr></table>
@@ -359,8 +356,8 @@ gcc main.c -I include lib/libMyTest.so -o app
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -453,7 +450,7 @@ gcc main.c -I include lib/libMyTest.so -o app
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

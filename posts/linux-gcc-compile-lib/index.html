@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux gcc/g&#43;&#43; - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/linux-gcc-compile-lib/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux gcc/g&#43;&#43;" />
+<meta property="og:description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/linux-gcc-compile-lib/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-02T22:47:00+00:00" />
+<meta property="article:modified_time" content="2022-08-07T22:39:29+00:00" />
+
+<meta itemprop="name" content="Linux gcc/g&#43;&#43;">
+<meta itemprop="description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警"><meta itemprop="datePublished" content="2022-08-02T22:47:00+00:00" />
+<meta itemprop="dateModified" content="2022-08-07T22:39:29+00:00" />
+<meta itemprop="wordCount" content="725">
+<meta itemprop="keywords" content="libs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux gcc/g&#43;&#43;"/>
+<meta name="twitter:description" content="gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I&#43; 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="gcc-工作流程">gcc 工作流程</h2>
+<p><a href="https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70</a></p>
+<p>常用参数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">-v	查看版本
+-o	产生目标文件
+-I+ 目录	指定头文件目录
+-D	编译时定义宏
+-00/-01/-03	没有优化/缺省值/优化级别最高
+-Wall	提示更多警告信息
+-c	只编译子程序
+-E	生成预处理文件
+-g	包含调试信息
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="静态库">静态库</h2>
+<ul>
+<li>在 Linux 发行版系统中，静态链接库文件的后缀名通常用 .a 表示；</li>
+<li>在 Windows 系统中，静态链接库文件的后缀名为 .lib</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">+--- include
+<span class="p">|</span>   +--- head.h
++--- lib
+<span class="p">|</span>   +--- main.c
++--- src
+<span class="p">|</span>   +--- add.c
+<span class="p">|</span>   +--- div.c
+<span class="p">|</span>   +--- mul.c
+<span class="p">|</span>   +--- sub.c
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编译-o-文件">编译 o 文件</h3>
+<p>将所有指定的源文件，都编译成相应的目标文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="n">gcc</span> <span class="o">*</span><span class="p">.</span><span class="n">c</span> <span class="o">-</span><span class="n">c</span> <span class="o">-</span><span class="n">I</span><span class="p">..</span><span class="o">/</span><span class="n">include</span>
+
+<span class="c1">// ls *.o
+</span><span class="c1"></span><span class="n">add</span><span class="p">.</span><span class="n">o</span>  <span class="n">div</span><span class="p">.</span><span class="n">o</span> <span class="n">mul</span><span class="p">.</span><span class="n">o</span> <span class="n">sub</span><span class="p">.</span><span class="n">o</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="创建静态库">创建静态库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="n">ar</span> <span class="n">rcs</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span> <span class="o">*</span><span class="p">.</span><span class="n">o</span>
+<span class="n">mv</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span> <span class="p">..</span><span class="o">/</span><span class="n">lib</span>
+<span class="n">nm</span> <span class="n">libMyTest</span><span class="p">.</span><span class="n">a</span>  <span class="c1">// 查看库中包含的函数等信息
+</span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>r 将文件插入静态库中</li>
+<li>c 创建静态库，不管库是否存在</li>
+<li>写入一个目标文件索引到库</li>
+</ul>
+<h3 id="使用静态库">使用静态库</h3>
+<h4 id="第一种方法">第一种方法：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -L 静态库路径 + -l静态库名 + -I头文件目录 + -o 可执行文件名
+gcc main.c -L lib -l MyTest -I include -o app
+./app
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="第二种方法">第二种方法：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -I头文件 + libxxx.a + -o 可执行文件名
+gcc main.c -I include lib/libMyTest.a -o app
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="动态库">动态库</h2>
+<ul>
+<li>在 Linux 发行版系统中，动态链接库的后缀名通常用 .so 表示；</li>
+<li>在 Windows 系统中，动态链接库的后缀名为 .dll；</li>
+</ul>
+<h3 id="编译-o-文件-与位置无关">编译 o 文件（与位置无关）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc -fPIC *.c -I ../include -c   <span class="c1"># 参数-fPIC表示生成与位置无关代码</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="创建动态库">创建动态库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc -shared -o libMyTest.so *.o        <span class="c1"># 参数：-shared 制作动态库 -o：重命名生成的新文件</span>
+mv libMyTest.so ../lib
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="使用动态库">使用动态库</h3>
+<h4 id="第一种方法">第一种方法：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -L 动态库路径 + -l动态库名 + -I头文件目录 + -o 可执行文件名
+gcc main.c -L lib -l MyTest -I include -o app
+./app
+<span class="c1"># （执行失败，找不到链接库，没有给动态链接器（ld-linux.so.2）指定好动态库 libmytest.so 的路径）</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>export LD_LIBRARY_PATH=自定义动态库的路径</li>
+<li>将 libmytest.so 所在绝对路径追加入到 <strong>/etc/ld.so.conf</strong> 文件，使用 <strong>sudo ldconfig -v</strong>  更新</li>
+</ul>
+<h4 id="第二种方法">第二种方法：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc + 源文件 + -I头文件 + libxxx.so + -o 可执行文件名
+gcc main.c -I include lib/libMyTest.so -o app
+<span class="c1"># （执行成功，已经指明了动态库的路径）</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

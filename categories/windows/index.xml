@@ -6,17 +6,40 @@
     <description>Recent content in Windows on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Oct 2022 14:05:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 07 Nov 2022 18:55:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Word archive</title>
+      <link>https://daotoyi.github.io/post/windows-word-archive/</link>
+      <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-word-archive/</guid>
+      <description>模板 一劳永逸，打造自己的word常规模板</description>
+    </item>
     
     <item>
-      <title>FAQ</title>
+      <title>Word archive</title>
+      <link>https://daotoyi.github.io/posts/windows-word-archive/</link>
+      <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-word-archive/</guid>
+      <description>模板 一劳永逸，打造自己的word常规模板</description>
+    </item>
+    
+    <item>
+      <title>Windows FAQ</title>
       <link>https://daotoyi.github.io/post/windows-faq/</link>
       <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/windows-faq/</guid>
+      <description>电脑麦克风使用不了没有声音了怎么办</description>
+    </item>
+    
+    <item>
+      <title>Windows FAQ</title>
+      <link>https://daotoyi.github.io/posts/windows-faq/</link>
+      <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-faq/</guid>
       <description>电脑麦克风使用不了没有声音了怎么办</description>
     </item>
     
@@ -26,6 +49,15 @@
       <pubDate>Thu, 04 Aug 2022 09:24:37 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/windows-cmd-chkdsk/</guid>
+      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
+    </item>
+    
+    <item>
+      <title>Windows chkdsk</title>
+      <link>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</link>
+      <pubDate>Thu, 04 Aug 2022 09:24:37 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</guid>
       <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
     </item>
     

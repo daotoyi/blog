@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/docker-distinguish-functions/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Docker 类似功能区分" />
 <meta property="og:description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/docker-distinguish-functions/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/docker-distinguish-functions/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-07-24T12:01:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Docker 类似功能区分">
-<meta itemprop="description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通">
-<meta itemprop="datePublished" content="2022-07-24T12:01:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通"><meta itemprop="datePublished" content="2022-07-24T12:01:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="655">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker 类似功能区分"/>
 <meta name="twitter:description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通"/>
@@ -183,16 +180,16 @@
 <h3 id="ports">ports</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ports:</span>
-    <span class="na">- 80       # 将服务的80端口映射到宿主机的一个随机的端口上</span>
-    <span class="na">- 8080:80             # 映射到宿主机的端口</span>
-    <span class="na">- 10.16.1.1:8080:80   # 映射到宿主机的10.16.1.1的8080端口</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ports:</span>
+    <span class="na">- 80       # 将服务的80端口映射到宿主机的一个随机的端口上</span>
+    <span class="na">- 8080:80             # 映射到宿主机的端口</span>
+    <span class="na">- 10.16.1.1:8080:80   # 映射到宿主机的10.16.1.1的8080端口</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="expose--dockerfile-or-docker-compose">expose (Dockerfile or docker-compose)</h3>
@@ -202,7 +199,7 @@
 <p>通过 links 把 MySQL、Redis、MongoDB、Elasticsearch 四个服务建立了一套别名。然后又通过 depends_on 指定 maintain 服务依赖这四个服务。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -222,24 +219,24 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">services:</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">services:</span>
 
-  <span class="na">maintain:</span>
-    <span class="na">build:</span>
-      <span class="na">dockerfile: Dockerfile</span>
-      <span class="na">context: ./image/nginx1.20</span>
-    <span class="na">container_name: maintain</span>
-    <span class="na">image: nginx1.20</span>
-    <span class="na">links:</span>
-      <span class="na">- mysql:server_mysql</span>
-      <span class="na">- redis:server_redis</span>
-      <span class="na">- mongo:server_mongo</span>
-      <span class="na">- elasticsearch:server_es</span>
-    <span class="na">depends_on:</span>
-      <span class="na">- mysql</span>
-      <span class="na">- redis</span>
-      <span class="na">- mongo</span>
-      <span class="na">- elasticsearch</span>
+  <span class="na">maintain:</span>
+    <span class="na">build:</span>
+      <span class="na">dockerfile: Dockerfile</span>
+      <span class="na">context: ./image/nginx1.20</span>
+    <span class="na">container_name: maintain</span>
+    <span class="na">image: nginx1.20</span>
+    <span class="na">links:</span>
+      <span class="na">- mysql:server_mysql</span>
+      <span class="na">- redis:server_redis</span>
+      <span class="na">- mongo:server_mongo</span>
+      <span class="na">- elasticsearch:server_es</span>
+    <span class="na">depends_on:</span>
+      <span class="na">- mysql</span>
+      <span class="na">- redis</span>
+      <span class="na">- mongo</span>
+      <span class="na">- elasticsearch</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="depends-on">depends_on</h3>
@@ -250,7 +247,7 @@
 <p>链接到另一个服务中的容器，并以与 depends_on 相同的方式表示服务之间的依赖关系.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -258,12 +255,12 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">services:</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">services:</span>
 
-  <span class="na">tomcat:</span>
-    <span class="na">image: tflinux_tomcat9.0</span>
-    <span class="na">links:</span>
-      <span class="na">- mysql:server_mysql</span>
+  <span class="na">tomcat:</span>
+    <span class="na">image: tflinux_tomcat9.0</span>
+    <span class="na">links:</span>
+      <span class="na">- mysql:server_mysql</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="extend-已弃用">extend - <strong>已弃用</strong></h3>
@@ -271,14 +268,14 @@
 <h3 id="弃用-links">弃用 links</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">web:</span>
-  <span class="na">links:</span>
-   <span class="na">- db</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">web:</span>
+  <span class="na">links:</span>
+   <span class="na">- db</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -301,8 +298,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -393,7 +390,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-shell-input-parameter/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux Shell getopts/getopt" />
 <meta property="og:description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-shell-input-parameter/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-shell-input-parameter/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-07-21T09:04:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux Shell getopts/getopt">
-<meta itemprop="description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get">
-<meta itemprop="datePublished" content="2022-07-21T09:04:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get"><meta itemprop="datePublished" content="2022-07-21T09:04:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="1759">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux Shell getopts/getopt"/>
 <meta name="twitter:description" content="解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get"/>
@@ -176,7 +173,7 @@
 <h2 id="n-直接处理">$n 直接处理</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -185,7 +182,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">$0</span>   <span class="c1">#即命令本身，相当于c/c++中的argv[0]</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">$0</span>   <span class="c1">#即命令本身，相当于c/c++中的argv[0]</span>
 <span class="nv">$1</span>   <span class="c1">#第一个参数</span>
 <span class="nv">$2</span>, <span class="nv">$3</span>, <span class="nv">$4</span> ...   <span class="c1">#第2、3、4个参数，依次类推</span>
 <span class="nv">$#</span>   <span class="c1">#参数的个数，不包括命令本身</span>
@@ -199,7 +196,7 @@
 <li>getopts 有两个参数，包括字符和“:”</li>
 <li>每一个字符都是一个有效选项（option）
 <ul>
-<li>如果字符后面带有&rdquo;:&quot;，表示这个选项有自己的 argument，argument 保存在内置变量 OPTARG 中
+<li>如果字符后面带有&quot;:&quot;，表示这个选项有自己的 argument，argument 保存在内置变量 OPTARG 中
 <ul>
 <li>d:在实际的使用中就会对应-d 30，选项的值就是 30</li>
 </ul>
@@ -230,7 +227,7 @@
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -262,12 +259,12 @@
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
 </span><span class="cp"></span>
 <span class="nb">echo</span> original <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$*</span><span class="o">]</span>
 <span class="nb">echo</span> original <span class="nv">OPTIND</span><span class="o">=[</span><span class="nv">$OPTIND</span><span class="o">]</span>
 
-<span class="k">while</span> <span class="nb">getopts</span> <span class="s2">&#34;🅰bc&#34;</span> opt <span class="c1"># 第一个冒号表示忽略错误</span>
+<span class="k">while</span> <span class="nb">getopts</span> <span class="s2">&#34;🅰️bc&#34;</span> opt <span class="c1"># 第一个冒号表示忽略错误</span>
 <span class="k">do</span>
     <span class="k">case</span> <span class="nv">$opt</span> in
         a<span class="o">)</span>
@@ -281,7 +278,7 @@
             <span class="p">;;</span>
         ?<span class="o">)</span>
             <span class="nb">echo</span> <span class="s2">&#34;there is unrecognized parameter.&#34;</span>
-            <span class="nb">exit</span> 1
+            <span class="nb">exit</span> <span class="m">1</span>
             <span class="p">;;</span>
     <span class="k">esac</span>
 <span class="k">done</span>
@@ -316,7 +313,7 @@
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -375,7 +372,7 @@
 </span><span class="lnt">57
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
 </span><span class="cp"></span>
 <span class="nb">echo</span> original <span class="nv">parameters</span><span class="o">=[</span><span class="nv">$@</span><span class="o">]</span>
 
@@ -386,7 +383,7 @@
 <span class="nv">ARGS</span><span class="o">=</span><span class="sb">`</span>getopt -o ab:c:: --long along,blong:,clong:: -n <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2">&#34;</span> -- <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span><span class="sb">`</span>
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> !<span class="o">=</span> <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
     <span class="nb">echo</span> <span class="s2">&#34;Terminating...&#34;</span>
-    <span class="nb">exit</span> 1
+    <span class="nb">exit</span> <span class="m">1</span>
 <span class="k">fi</span>
 
 <span class="nb">echo</span> <span class="nv">ARGS</span><span class="o">=[</span><span class="nv">$ARGS</span><span class="o">]</span>
@@ -403,13 +400,13 @@
             <span class="p">;;</span>
         -b<span class="p">|</span>--blong<span class="o">)</span>
             <span class="nb">echo</span> <span class="s2">&#34;Option b, argument </span><span class="nv">$2</span><span class="s2">&#34;</span><span class="p">;</span>
-            <span class="nb">shift</span> 2
+            <span class="nb">shift</span> <span class="m">2</span>
             <span class="p">;;</span>
         -c<span class="p">|</span>--clong<span class="o">)</span>
             <span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$2</span><span class="s2">&#34;</span> in
                 <span class="s2">&#34;&#34;</span><span class="o">)</span>
                     <span class="nb">echo</span> <span class="s2">&#34;Option c, no argument&#34;</span><span class="p">;</span>
-                    <span class="nb">shift</span> 2
+                    <span class="nb">shift</span> <span class="m">2</span>
                     <span class="p">;;</span>
                 *<span class="o">)</span>
                     <span class="nb">echo</span> <span class="s2">&#34;Option c, argument </span><span class="nv">$2</span><span class="s2">&#34;</span><span class="p">;</span>
@@ -423,7 +420,7 @@
             <span class="p">;;</span>
         *<span class="o">)</span>
             <span class="nb">echo</span> <span class="s2">&#34;Internal error!&#34;</span>
-            <span class="nb">exit</span> 1
+            <span class="nb">exit</span> <span class="m">1</span>
             <span class="p">;;</span>
     <span class="k">esac</span>
 <span class="k">done</span>
@@ -462,8 +459,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -554,7 +551,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/github-actions/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Github Actions" />
 <meta property="og:description" content="GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/github-actions/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/github-actions/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-19T22:33:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Github Actions">
-<meta itemprop="description" content="GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep">
-<meta itemprop="datePublished" content="2022-03-19T22:33:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
-<meta itemprop="wordCount" content="921">
-
-
-
+<meta itemprop="description" content="GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep"><meta itemprop="datePublished" content="2022-03-19T22:33:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
+<meta itemprop="wordCount" content="1035">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Github Actions"/>
 <meta name="twitter:description" content="GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep"/>
@@ -139,8 +136,8 @@
         <div class="post-category">
             <a href="/categories/github/"> Github </a>
             </div>
-          <span class="more-meta"> 921 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 1035 words </span>
+          <span class="more-meta"> 3 mins read </span>
         
       </div>
     </header>
@@ -172,7 +169,7 @@
 <p>将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 repo2.并且同步给 gitee 上的仓库 repo3.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -245,77 +242,77 @@
 </span><span class="lnt">71
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span><span class="k">name</span><span class="p">:</span><span class="w"> </span>Deploy<span class="w"> </span>GitHub<span class="w"> </span>Pages<span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy GitHub Pages</span><span class="w">
 </span><span class="w">
-</span><span class="w"></span><span class="c"># 触发条件：在 push 到 master 分支后</span><span class="w">
-</span><span class="w"></span>on<span class="p">:</span><span class="w">
-</span><span class="w">  </span>push<span class="p">:</span><span class="w">
-</span><span class="w">    </span>branches<span class="p">:</span><span class="w">
-</span><span class="w">      </span>- master<span class="w">
+</span><span class="w"></span><span class="c"># 触发条件：在 push 到 master 分支后</span><span class="w">
+</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">master</span><span class="w">
 </span><span class="w">
-</span><span class="w"></span><span class="c"># 任务</span><span class="w">
-</span><span class="w"></span>jobs<span class="p">:</span><span class="w">
-</span><span class="w">  </span>build-and-deploy<span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="c"># 服务器环境：最新版 Ubuntu</span><span class="w">
-</span><span class="w">    </span><span class="k">runs-on</span><span class="p">:</span><span class="w"> </span>ubuntu-latest<span class="w">
-</span><span class="w">    </span>steps<span class="p">:</span><span class="w">
-</span><span class="w">      </span><span class="c"># 拉取代码</span><span class="w">
-</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Checkout<span class="w">
-</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>actions/checkout@v2<span class="w">
-</span><span class="w">        </span>with<span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="k">persist-credentials</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="c"># 任务</span><span class="w">
+</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">build-and-deploy</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="c"># 服务器环境：最新版 Ubuntu</span><span class="w">
+</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="c"># 拉取代码</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">persist-credentials</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">
-</span><span class="w">      </span><span class="c"># 1、生成静态文件</span><span class="w">
-</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Build<span class="w">
-</span><span class="w">        </span><span class="k">run</span><span class="p">:</span><span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span><span class="cp">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">
+</span><span class="w">      </span><span class="c"># 1、生成静态文件</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">npm install &amp;&amp; npm run build</span><span class="w">
 </span><span class="w">
-</span><span class="w">      </span><span class="c"># 2、部署到 GitHub Pages</span><span class="w">
-</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Deploy<span class="w">
-</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>JamesIves/github-pages-deploy-action@releases/v3<span class="w">
-</span><span class="w">        </span>with<span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="k">ACCESS_TOKEN</span><span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.ACCESS_TOKEN<span class="w"> </span>}}<span class="w">
-</span><span class="w">          </span><span class="k">REPOSITORY_NAME</span><span class="p">:</span><span class="w"> </span>somenzz/somenzz.github.io<span class="w">
-</span><span class="w">          </span><span class="k">BRANCH</span><span class="p">:</span><span class="w"> </span>master<span class="w">
-</span><span class="w">          </span><span class="k">FOLDER</span><span class="p">:</span><span class="w"> </span>public<span class="w">
-</span><span class="w">          </span><span class="c">#注意这里的 public 是仓库根目录下的 public，也就是 npm run build 生成静态资源的路径，比如有的人是 `docs/.vuepress/dist`</span><span class="w">
+</span><span class="w">      </span><span class="c"># 2、部署到 GitHub Pages</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">JamesIves/github-pages-deploy-action@releases/v3</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">ACCESS_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.ACCESS_TOKEN }}</span><span class="w">
+</span><span class="w">          </span><span class="nt">REPOSITORY_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">somenzz/somenzz.github.io</span><span class="w">
+</span><span class="w">          </span><span class="nt">BRANCH</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
+</span><span class="w">          </span><span class="nt">FOLDER</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
+</span><span class="w">          </span><span class="c">#注意这里的 public 是仓库根目录下的 public，也就是 npm run build 生成静态资源的路径，比如有的人是 `docs/.vuepress/dist`</span><span class="w">
 </span><span class="w">
-</span><span class="w">      </span><span class="c"># 3、同步到 gitee 的仓库</span><span class="w">
-</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Sync<span class="w"> </span>to<span class="w"> </span>Gitee<span class="w">
-</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>wearerequired/git-mirror-action@master<span class="w">
-</span><span class="w">        </span>env<span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="c"># 注意在 Settings-&gt;Secrets 配置 GITEE_RSA_PRIVATE_KEY</span><span class="w">
-</span><span class="w">          </span><span class="k">SSH_PRIVATE_KEY</span><span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.GITEE_RSA_PRIVATE_KEY<span class="w"> </span>}}<span class="w">
-</span><span class="w">        </span>with<span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="c"># 注意替换为你的 GitHub 源仓库地址</span><span class="w">
-</span><span class="w">          </span><span class="k">source-repo</span><span class="p">:</span><span class="w"> </span>git@github.com<span class="p">:</span>somenzz/somenzz.github.io.git<span class="w">
-</span><span class="w">          </span><span class="c"># 注意替换为你的 Gitee 目标仓库地址</span><span class="w">
-</span><span class="w">          </span><span class="k">destination-repo</span><span class="p">:</span><span class="w"> </span>git@gitee.com<span class="p">:</span>somenzz/somenzz.git<span class="w">
+</span><span class="w">      </span><span class="c"># 3、同步到 gitee 的仓库</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Sync to Gitee</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">wearerequired/git-mirror-action@master</span><span class="w">
+</span><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="c"># 注意在 Settings-&gt;Secrets 配置 GITEE_RSA_PRIVATE_KEY</span><span class="w">
+</span><span class="w">          </span><span class="nt">SSH_PRIVATE_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GITEE_RSA_PRIVATE_KEY }}</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="c"># 注意替换为你的 GitHub 源仓库地址</span><span class="w">
+</span><span class="w">          </span><span class="nt">source-repo</span><span class="p">:</span><span class="w"> </span><span class="l">git@github.com:somenzz/somenzz.github.io.git</span><span class="w">
+</span><span class="w">          </span><span class="c"># 注意替换为你的 Gitee 目标仓库地址</span><span class="w">
+</span><span class="w">          </span><span class="nt">destination-repo</span><span class="p">:</span><span class="w"> </span><span class="l">git@gitee.com:somenzz/somenzz.git</span><span class="w">
 </span><span class="w">
-</span><span class="w">      </span><span class="c"># 4、部署到 Gitee Pages</span><span class="w">
-</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Build<span class="w"> </span>Gitee<span class="w"> </span>Pages<span class="w">
-</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>yanglbme/gitee-pages-action@main<span class="w">
-</span><span class="w">        </span>with<span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="c"># 注意替换为你的 Gitee 用户名</span><span class="w">
-</span><span class="w">          </span><span class="k">gitee-username</span><span class="p">:</span><span class="w"> </span>somenzz<span class="w">
-</span><span class="w">          </span><span class="c"># 注意在 Settings-&gt;Secrets 配置 GITEE_PASSWORD</span><span class="w">
-</span><span class="w">          </span><span class="k">gitee-password</span><span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.GITEE_PASSWORD<span class="w"> </span>}}<span class="w">
-</span><span class="w">          </span><span class="c"># 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错</span><span class="w">
-</span><span class="w">          </span><span class="k">gitee-repo</span><span class="p">:</span><span class="w"> </span>somenzz/somenzz<span class="w">
-</span><span class="w">          </span><span class="c"># 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）</span><span class="w">
-</span><span class="w">          </span><span class="k">branch</span><span class="p">:</span><span class="w"> </span>master<span class="w">
+</span><span class="w">      </span><span class="c"># 4、部署到 Gitee Pages</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Gitee Pages</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">yanglbme/gitee-pages-action@main</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="c"># 注意替换为你的 Gitee 用户名</span><span class="w">
+</span><span class="w">          </span><span class="nt">gitee-username</span><span class="p">:</span><span class="w"> </span><span class="l">somenzz</span><span class="w">
+</span><span class="w">          </span><span class="c"># 注意在 Settings-&gt;Secrets 配置 GITEE_PASSWORD</span><span class="w">
+</span><span class="w">          </span><span class="nt">gitee-password</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GITEE_PASSWORD }}</span><span class="w">
+</span><span class="w">          </span><span class="c"># 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错</span><span class="w">
+</span><span class="w">          </span><span class="nt">gitee-repo</span><span class="p">:</span><span class="w"> </span><span class="l">somenzz/somenzz</span><span class="w">
+</span><span class="w">          </span><span class="c"># 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）</span><span class="w">
+</span><span class="w">          </span><span class="nt">branch</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
 </span><span class="w">
-</span><span class="w">      </span><span class="c"># 5、部署到 somenzz.cn 服务器</span><span class="w">
-</span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>rsync<span class="w"> </span>deployments<span class="w">
-</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>burnett01/rsync-deployments@<span class="m">4.1</span><span class="w">
-</span><span class="w">        </span>with<span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="c"># 这里是 rsync 的参数 switches: -avzh --delete --exclude=&#34;&#34; --include=&#34;&#34; --filter=&#34;&#34;</span><span class="w">
-</span><span class="w">          </span><span class="k">switches</span><span class="p">:</span><span class="w"> </span>-avzh<span class="w">
-</span><span class="w">          </span><span class="k">path</span><span class="p">:</span><span class="w"> </span>public/<span class="w">
-</span><span class="w">          </span><span class="k">remote_path</span><span class="p">:</span><span class="w"> </span>/home/ubuntu/public/<span class="w">
-</span><span class="w">          </span><span class="k">remote_host</span><span class="p">:</span><span class="w"> </span>somenzz.cn<span class="w">
-</span><span class="w">          </span><span class="k">remote_port</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
-</span><span class="w">          </span><span class="k">remote_user</span><span class="p">:</span><span class="w"> </span>ubuntu<span class="w">
-</span><span class="w">          </span><span class="k">remote_key</span><span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.MY_UBUNTU_RSA_PRIVATE_KEY<span class="w"> </span>}}<span class="w">
+</span><span class="w">      </span><span class="c"># 5、部署到 somenzz.cn 服务器</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">rsync deployments</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">burnett01/rsync-deployments@4.1</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="c"># 这里是 rsync 的参数 switches: -avzh --delete --exclude=&#34;&#34; --include=&#34;&#34; --filter=&#34;&#34;</span><span class="w">
+</span><span class="w">          </span><span class="nt">switches</span><span class="p">:</span><span class="w"> </span>-<span class="l">avzh</span><span class="w">
+</span><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">public/</span><span class="w">
+</span><span class="w">          </span><span class="nt">remote_path</span><span class="p">:</span><span class="w"> </span><span class="l">/home/ubuntu/public/</span><span class="w">
+</span><span class="w">          </span><span class="nt">remote_host</span><span class="p">:</span><span class="w"> </span><span class="l">somenzz.cn</span><span class="w">
+</span><span class="w">          </span><span class="nt">remote_port</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
+</span><span class="w">          </span><span class="nt">remote_user</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu</span><span class="w">
+</span><span class="w">          </span><span class="nt">remote_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.MY_UBUNTU_RSA_PRIVATE_KEY }}</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -347,8 +344,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -439,7 +436,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="v2ray 反向代理/内网穿透" />
 <meta property="og:description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-01T21:50:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="v2ray 反向代理/内网穿透">
-<meta itemprop="description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有">
-<meta itemprop="datePublished" content="2022-04-01T21:50:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有"><meta itemprop="datePublished" content="2022-04-01T21:50:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="1023">
-
-
-
 <meta itemprop="keywords" content="v2ray," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="v2ray 反向代理/内网穿透"/>
 <meta name="twitter:description" content="说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有"/>
@@ -225,7 +222,7 @@
 <h3 id="a">A</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -289,74 +286,74 @@
 </span><span class="lnt">62
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">{</span>
-  <span class="na">&#34;reverse&#34;:{</span>
-    <span class="na">// 这是 A 的反向代理设置，必须有下面的 bridges 对象</span>
-    <span class="na">&#34;bridges&#34;:[</span>
-      <span class="na">{</span>
-        <span class="na">&#34;tag&#34;:&#34;bridge&#34;, // 关于 A 的反向代理标签，在路由中会用到</span>
-        <span class="na">&#34;domain&#34;:&#34;private.cloud.com&#34; // A 和 B 反向代理通信的域名，可以自己取一个，可以不是自己购买的域名，但必须跟下面 B 中的 reverse 配置的域名一致</span>
-      <span class="na">}</span>
-    <span class="na">]</span>
-  <span class="na">},</span>
-  <span class="na">&#34;outbounds&#34;: [</span>
-    <span class="na">{</span>
-      <span class="na">//A连接B的outbound</span>
-      <span class="na">&#34;tag&#34;:&#34;tunnel&#34;, // A 连接 B 的 outbound 的标签，在路由中会用到</span>
-      <span class="na">&#34;protocol&#34;:&#34;vmess&#34;,</span>
-      <span class="na">&#34;settings&#34;:{</span>
-        <span class="na">&#34;vnext&#34;:[</span>
-          <span class="na">{</span>
-            <span class="na">&#34;address&#34;:&#34;serveraddr.com&#34;, // B 地址，IP 或 实际的域名</span>
-            <span class="na">&#34;port&#34;:16823,</span>
-            <span class="na">&#34;users&#34;:[</span>
-              <span class="na">{</span>
-                <span class="na">&#34;id&#34;:&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;,</span>
-                <span class="na">&#34;alterId&#34;:64</span>
-              <span class="na">}</span>
-            <span class="na">]</span>
-          <span class="na">}</span>
-        <span class="na">]</span>
-      <span class="na">}</span>
-    <span class="na">},</span>
-    <span class="na">// 另一个 outbound，最终连接私有网盘</span>
-    <span class="na">{</span>
-      <span class="na">&#34;protocol&#34;:&#34;freedom&#34;,</span>
-      <span class="na">&#34;settings&#34;:{</span>
-      <span class="na">},</span>
-      <span class="na">&#34;tag&#34;:&#34;out&#34;</span>
-    <span class="na">}</span>
-  <span class="na">],</span>
-  <span class="na">&#34;routing&#34;:{</span>
-    <span class="na">&#34;rules&#34;:[</span>
-      <span class="na">{</span>
-        <span class="na">// 配置 A 主动连接 B 的路由规则</span>
-        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
-        <span class="na">&#34;inboundTag&#34;:[</span>
-          <span class="na">&#34;bridge&#34;</span>
-        <span class="na">],</span>
-        <span class="na">&#34;domain&#34;:[</span>
-          <span class="na">&#34;full:private.cloud.com&#34;</span>
-        <span class="na">],</span>
-        <span class="na">&#34;outboundTag&#34;:&#34;tunnel&#34;</span>
-      <span class="na">},</span>
-      <span class="na">{</span>
-        <span class="na">// 反向连接访问私有网盘的规则</span>
-        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
-        <span class="na">&#34;inboundTag&#34;:[</span>
-          <span class="na">&#34;bridge&#34;</span>
-        <span class="na">],</span>
-        <span class="na">&#34;outboundTag&#34;:&#34;out&#34;</span>
-      <span class="na">}</span>
-    <span class="na">]</span>
-  <span class="na">}</span>
-<span class="na">}</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">{</span>
+  <span class="na">&#34;reverse&#34;:{</span>
+    <span class="na">// 这是 A 的反向代理设置，必须有下面的 bridges 对象</span>
+    <span class="na">&#34;bridges&#34;:[</span>
+      <span class="na">{</span>
+        <span class="na">&#34;tag&#34;:&#34;bridge&#34;, // 关于 A 的反向代理标签，在路由中会用到</span>
+        <span class="na">&#34;domain&#34;:&#34;private.cloud.com&#34; // A 和 B 反向代理通信的域名，可以自己取一个，可以不是自己购买的域名，但必须跟下面 B 中的 reverse 配置的域名一致</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">},</span>
+  <span class="na">&#34;outbounds&#34;: [</span>
+    <span class="na">{</span>
+      <span class="na">//A连接B的outbound</span>
+      <span class="na">&#34;tag&#34;:&#34;tunnel&#34;, // A 连接 B 的 outbound 的标签，在路由中会用到</span>
+      <span class="na">&#34;protocol&#34;:&#34;vmess&#34;,</span>
+      <span class="na">&#34;settings&#34;:{</span>
+        <span class="na">&#34;vnext&#34;:[</span>
+          <span class="na">{</span>
+            <span class="na">&#34;address&#34;:&#34;serveraddr.com&#34;, // B 地址，IP 或 实际的域名</span>
+            <span class="na">&#34;port&#34;:16823,</span>
+            <span class="na">&#34;users&#34;:[</span>
+              <span class="na">{</span>
+                <span class="na">&#34;id&#34;:&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;,</span>
+                <span class="na">&#34;alterId&#34;:64</span>
+              <span class="na">}</span>
+            <span class="na">]</span>
+          <span class="na">}</span>
+        <span class="na">]</span>
+      <span class="na">}</span>
+    <span class="na">},</span>
+    <span class="na">// 另一个 outbound，最终连接私有网盘</span>
+    <span class="na">{</span>
+      <span class="na">&#34;protocol&#34;:&#34;freedom&#34;,</span>
+      <span class="na">&#34;settings&#34;:{</span>
+      <span class="na">},</span>
+      <span class="na">&#34;tag&#34;:&#34;out&#34;</span>
+    <span class="na">}</span>
+  <span class="na">],</span>
+  <span class="na">&#34;routing&#34;:{</span>
+    <span class="na">&#34;rules&#34;:[</span>
+      <span class="na">{</span>
+        <span class="na">// 配置 A 主动连接 B 的路由规则</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;bridge&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;domain&#34;:[</span>
+          <span class="na">&#34;full:private.cloud.com&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;tunnel&#34;</span>
+      <span class="na">},</span>
+      <span class="na">{</span>
+        <span class="na">// 反向连接访问私有网盘的规则</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;bridge&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;out&#34;</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">}</span>
+<span class="na">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="b">B</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -417,65 +414,65 @@
 </span><span class="lnt">59
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">{</span>
-  <span class="na">&#34;reverse&#34;:{  //这是 B 的反向代理设置，必须有下面的 portals 对象</span>
-    <span class="na">&#34;portals&#34;:[</span>
-      <span class="na">{</span>
-        <span class="na">&#34;tag&#34;:&#34;portal&#34;,</span>
-        <span class="na">&#34;domain&#34;:&#34;private.cloud.com&#34;        // 必须和上面 A 设定的域名一样</span>
-      <span class="na">}</span>
-    <span class="na">]</span>
-  <span class="na">},</span>
-  <span class="na">&#34;inbounds&#34;: [</span>
-    <span class="na">{</span>
-      <span class="na">// 接受 C 的inbound</span>
-      <span class="na">&#34;tag&#34;:&#34;external&#34;, // 标签，路由中用到</span>
-      <span class="na">&#34;port&#34;:80,</span>
-      <span class="na">// 开放 80 端口，用于接收外部的 HTTP 访问</span>
-      <span class="na">&#34;protocol&#34;:&#34;dokodemo-door&#34;,</span>
-        <span class="na">&#34;settings&#34;:{</span>
-          <span class="na">&#34;address&#34;:&#34;127.0.0.1&#34;,</span>
-          <span class="na">&#34;port&#34;:80, //假设 NAS 监听的端口为 80</span>
-          <span class="na">&#34;network&#34;:&#34;tcp&#34;</span>
-        <span class="na">}</span>
-    <span class="na">},</span>
-    <span class="na">// 另一个 inbound，接受 A 主动发起的请求</span>
-    <span class="na">{</span>
-      <span class="na">&#34;tag&#34;: &#34;tunnel&#34;,// 标签，路由中用到</span>
-      <span class="na">&#34;port&#34;:16823,</span>
-      <span class="na">&#34;protocol&#34;:&#34;vmess&#34;,</span>
-      <span class="na">&#34;settings&#34;:{</span>
-        <span class="na">&#34;clients&#34;:[</span>
-          <span class="na">{</span>
-            <span class="na">&#34;id&#34;:&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;,</span>
-            <span class="na">&#34;alterId&#34;:64</span>
-          <span class="na">}</span>
-        <span class="na">]</span>
-      <span class="na">}</span>
-    <span class="na">}</span>
-  <span class="na">],</span>
-  <span class="na">&#34;routing&#34;:{</span>
-    <span class="na">&#34;rules&#34;:[</span>
-      <span class="na">{  //路由规则，接收 C 请求后发给 A</span>
-        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
-        <span class="na">&#34;inboundTag&#34;:[</span>
-          <span class="na">&#34;external&#34;</span>
-        <span class="na">],</span>
-        <span class="na">&#34;outboundTag&#34;:&#34;portal&#34;</span>
-      <span class="na">},</span>
-      <span class="na">{  //路由规则，让 B 能够识别这是 A 主动发起的反向代理连接</span>
-        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
-        <span class="na">&#34;inboundTag&#34;:[</span>
-          <span class="na">&#34;tunnel&#34;</span>
-        <span class="na">],</span>
-        <span class="na">&#34;domain&#34;:[</span>
-          <span class="na">&#34;full:private.cloud.com&#34;</span>
-        <span class="na">],</span>
-        <span class="na">&#34;outboundTag&#34;:&#34;portal&#34;</span>
-      <span class="na">}</span>
-    <span class="na">]</span>
-  <span class="na">}</span>
-<span class="na">}</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">{</span>
+  <span class="na">&#34;reverse&#34;:{  //这是 B 的反向代理设置，必须有下面的 portals 对象</span>
+    <span class="na">&#34;portals&#34;:[</span>
+      <span class="na">{</span>
+        <span class="na">&#34;tag&#34;:&#34;portal&#34;,</span>
+        <span class="na">&#34;domain&#34;:&#34;private.cloud.com&#34;        // 必须和上面 A 设定的域名一样</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">},</span>
+  <span class="na">&#34;inbounds&#34;: [</span>
+    <span class="na">{</span>
+      <span class="na">// 接受 C 的inbound</span>
+      <span class="na">&#34;tag&#34;:&#34;external&#34;, // 标签，路由中用到</span>
+      <span class="na">&#34;port&#34;:80,</span>
+      <span class="na">// 开放 80 端口，用于接收外部的 HTTP 访问</span>
+      <span class="na">&#34;protocol&#34;:&#34;dokodemo-door&#34;,</span>
+        <span class="na">&#34;settings&#34;:{</span>
+          <span class="na">&#34;address&#34;:&#34;127.0.0.1&#34;,</span>
+          <span class="na">&#34;port&#34;:80, //假设 NAS 监听的端口为 80</span>
+          <span class="na">&#34;network&#34;:&#34;tcp&#34;</span>
+        <span class="na">}</span>
+    <span class="na">},</span>
+    <span class="na">// 另一个 inbound，接受 A 主动发起的请求</span>
+    <span class="na">{</span>
+      <span class="na">&#34;tag&#34;: &#34;tunnel&#34;,// 标签，路由中用到</span>
+      <span class="na">&#34;port&#34;:16823,</span>
+      <span class="na">&#34;protocol&#34;:&#34;vmess&#34;,</span>
+      <span class="na">&#34;settings&#34;:{</span>
+        <span class="na">&#34;clients&#34;:[</span>
+          <span class="na">{</span>
+            <span class="na">&#34;id&#34;:&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;,</span>
+            <span class="na">&#34;alterId&#34;:64</span>
+          <span class="na">}</span>
+        <span class="na">]</span>
+      <span class="na">}</span>
+    <span class="na">}</span>
+  <span class="na">],</span>
+  <span class="na">&#34;routing&#34;:{</span>
+    <span class="na">&#34;rules&#34;:[</span>
+      <span class="na">{  //路由规则，接收 C 请求后发给 A</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;external&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;portal&#34;</span>
+      <span class="na">},</span>
+      <span class="na">{  //路由规则，让 B 能够识别这是 A 主动发起的反向代理连接</span>
+        <span class="na">&#34;type&#34;:&#34;field&#34;,</span>
+        <span class="na">&#34;inboundTag&#34;:[</span>
+          <span class="na">&#34;tunnel&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;domain&#34;:[</span>
+          <span class="na">&#34;full:private.cloud.com&#34;</span>
+        <span class="na">],</span>
+        <span class="na">&#34;outboundTag&#34;:&#34;portal&#34;</span>
+      <span class="na">}</span>
+    <span class="na">]</span>
+  <span class="na">}</span>
+<span class="na">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="ref">Ref</h3>
@@ -493,8 +490,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -587,7 +584,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

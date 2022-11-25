@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-ld-linux.so/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux 动态链接器" />
 <meta property="og:description" content="跨 libc 启动程序（python3）" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-ld-linux.so/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-ld-linux.so/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-16T07:33:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux 动态链接器">
-<meta itemprop="description" content="跨 libc 启动程序（python3）">
-<meta itemprop="datePublished" content="2022-04-16T07:33:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="跨 libc 启动程序（python3）"><meta itemprop="datePublished" content="2022-04-16T07:33:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="1813">
-
-
-
 <meta itemprop="keywords" content="libs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux 动态链接器"/>
 <meta name="twitter:description" content="跨 libc 启动程序（python3）"/>
@@ -216,13 +213,13 @@
 <h3 id="check">check</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看glibc版本,ldd是隶属于glibc，它的版本就是glibc的版本</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看glibc版本,ldd是隶属于glibc，它的版本就是glibc的版本</span>
 ldd --version
 
 <span class="c1">#libstdc++是 gcc的标准C++库(libc++是clang的标准C++库)</span>
@@ -251,10 +248,10 @@ ldd --version
 <p>在不同平台运行程序，可以复制拷贝程序所需的动态库，指定搜索路径后再运行，如</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">LD_LIBRARY_PATH=/new/path:$LD_LIBRARY_PATH /usr/bin/python3
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">LD_LIBRARY_PATH=/new/path:$LD_LIBRARY_PATH /usr/bin/python3
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="新系统平台运行">新系统平台运行</h2>
@@ -265,14 +262,14 @@ ldd --version
 <h3 id="解决方式一-指定链接库重新编译">解决方式一：指定链接库重新编译</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">g++ main.o -o myapp ... <span class="se">\</span>
-   -Wl,--rpath<span class="o">=</span>/path/to/newglibc <span class="se">\</span>
-   -Wl,--dynamic-linker<span class="o">=</span>/path/to/newglibc/ld-linux.so.2
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">g++ main.o -o myapp ... <span class="se">\
+</span><span class="se"></span>   -Wl,--rpath<span class="o">=</span>/path/to/newglibc <span class="se">\
+</span><span class="se"></span>   -Wl,--dynamic-linker<span class="o">=</span>/path/to/newglibc/ld-linux.so.2
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -289,11 +286,11 @@ ldd --version
 <p>指定 gcc/g++的版本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">CC</span><span class="o">=</span>gcc的路径
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">CC</span><span class="o">=</span>gcc的路径
 <span class="nb">export</span> <span class="nv">CXX</span><span class="o">=</span>g++的路径
 </code></pre></td></tr></table>
 </div>
@@ -305,12 +302,12 @@ ldd --version
 <p>在 gcc 的编译参数中指定 -Wl,–dynamic-linker=glibc 中动态链接器的路径，如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc xxx -o xxx <span class="se">\</span>
-  -Wl,--dynamic-linker<span class="o">=</span>/动态连接器的路径/ld-linux-x86-64.so.2
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcc xxx -o xxx <span class="se">\
+</span><span class="se"></span>  -Wl,--dynamic-linker<span class="o">=</span>/动态连接器的路径/ld-linux-x86-64.so.2
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -324,20 +321,20 @@ ldd --version
 <h3 id="方式一扩展">方式一扩展</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">./ld-linux-x86-64.so.2  ./xxxx.exe
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">./ld-linux-x86-64.so.2  ./xxxx.exe
 </code></pre></td></tr></table>
 </div>
 </div><p>适用于一些在新平台上不支持重新编译构建或者编译有困难的库。</p>
 <h3 id="解决方式二-patchelf">解决方式二：patchelf</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ./patchelf --set-interpreter /path/to/newglibc/ld-linux.so.2 --set-rpath /path/to/newglibc/ myapp
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ ./patchelf --set-interpreter /path/to/newglibc/ld-linux.so.2 --set-rpath /path/to/newglibc/ myapp
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="gcc-glibc-多版本共存">gcc/glibc 多版本共存</h2>
@@ -360,8 +357,8 @@ ldd --version
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -454,7 +451,7 @@ ldd --version
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

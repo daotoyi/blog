@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-qt/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux Qt" />
 <meta property="og:description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-qt/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-qt/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-11-02T20:18:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux Qt">
-<meta itemprop="description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路">
-<meta itemprop="datePublished" content="2022-11-02T20:18:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路"><meta itemprop="datePublished" content="2022-11-02T20:18:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="488">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux Qt"/>
 <meta name="twitter:description" content="basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路"/>
@@ -190,11 +187,11 @@
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">qmake  xxx.pro 		//生成makefile文件  <span class="o">(</span>移植的qt<span class="o">)</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">qmake  xxx.pro 		//生成makefile文件  <span class="o">(</span>移植的qt<span class="o">)</span>
 make 				//编译生成可执行文件 （生成arm开发板下可执行文件）
 </code></pre></td></tr></table>
 </div>
@@ -204,7 +201,7 @@ make 				//编译生成可执行文件 （生成arm开发板下可执行文件�
 <p>之后进入到 linux-arm-gnueabi-g++目录，修改 qmake.conf 的编译器位置，如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -215,15 +212,15 @@ make 				//编译生成可执行文件 （生成arm开发板下可执行文件�
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">QMAKE_CC</span>                <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-gcc</span>
-<span class="na">QMAKE_CXX</span>               <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
-<span class="na">QMAKE_LINK</span>              <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
-<span class="na">QMAKE_LINK_SHLIB</span>        <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">QMAKE_CC</span>                <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-gcc</span>
+<span class="na">QMAKE_CXX</span>               <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
+<span class="na">QMAKE_LINK</span>              <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
+<span class="na">QMAKE_LINK_SHLIB</span>        <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-g++</span>
 
-<span class="c1"># modifications to linux.conf</span>
-<span class="na">QMAKE_AR</span>                <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-ar cqs</span>
-<span class="na">QMAKE_OBJCOPY</span>           <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-objcopy</span>
-<span class="na">QMAKE_STRIP</span>             <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-strip</span>
+<span class="c1"># modifications to linux.conf</span>
+<span class="na">QMAKE_AR</span>                <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-ar cqs</span>
+<span class="na">QMAKE_OBJCOPY</span>           <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-objcopy</span>
+<span class="na">QMAKE_STRIP</span>             <span class="o">=</span> <span class="s">arm-none-linux-gnueabi-strip</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>./mktarget 生成的文件解压在目标系统的根目录中，可在/usr/local/Trolltech/QtEmbedded-x.x.x-arm/bin 中找到 qmake。</p>
@@ -263,8 +260,8 @@ sudo apt-get install libedbus-dev</p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -355,7 +352,7 @@ sudo apt-get install libedbus-dev</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

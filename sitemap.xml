@@ -3,1715 +3,3031 @@
   
   <url>
     <loc>https://daotoyi.github.io/categories/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/cmd/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/linux/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-tar-zip/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-qt/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/docker/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-normal-user-permission/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-access/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/github/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/internet-cloudflare/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/internet-cloudflare-tunnel/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/internet/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/windows-faq/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/windows/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-terminal-show-color/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/hardware/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-sgcc/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-hardware/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-jiedian/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/emacs/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-org-mode-instruction/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-org-vs-markdown/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-org-beamer/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-host/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-modbus/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/apache2-conf-note/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/tools-siyuan_note/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/tools/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-hsr-prp/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-redhat-update-yum-repo/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-brctl/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/python/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/python-call-c&#43;&#43;/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/code/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/code-html-xml/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/cplus/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/libs/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-remote-desktop/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/windows-cmd-chkdsk/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-gcc-compile-lib/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/faq/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-coredump/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/vps/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/nat-nnds/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/windows-and-iso/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/vuepress/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/vuepress-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-distinguish-functions/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-compose-multi-files/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/private-network-disk-nextcloud/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-crontab/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-shell-input-parameter/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/domain/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/internetcustomize-email-domain/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/internetcustomize-email-domain/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-reverse-shell/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/shell/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-32bit-systecm-support-8g-ram/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/webssh/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/webssh/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/python-cython/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hardware-switch/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/busybox/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-busybox-buildroot-openwrt/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-network/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/ssl/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-github-gitlab/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-yum-dnf/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/vps-vs-shared-hosting/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/git/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-tag/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/wordpress-maintenance/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/saas-iaas-paas/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/google-gmail/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/microsoft-account-login/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/rsshub-docker-deployed/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/v2ray/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2ray-share-proxy-to-others/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/nat-ddns/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-user-group/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/ssh/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/ssh-nat&#43;ddns/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-checkout-commit&#43;push/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/v2rayn/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2rayn-qv2ray/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-file&#43;directory-color/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/tampermonkey/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/hugo/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/ox/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/oxhugo/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/quant/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/quant-tushare/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/org/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/spacevim/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/vim/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/tool-capslock&#43;/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/wxpusher/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/python-decorator-advanced/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/python-json-export-chinese-formate/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/python-jupyter-lab/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-ld-linux.so/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/make-cmake-qmake/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-ag/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-selinux/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-oh-my-zsh/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/python-name-standard/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/sublime/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/sublime-notes/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/aws/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/amazon-web-services/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/xray/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/xray-note/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/fastkeysautomation/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-rpoxy/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-compose-config/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/vim-jump/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/google-rgb/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/kernel/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-realtime-kernel/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/kindle-formate-epub-mobi-azw3/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-org-table-calculate/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-docker-file/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/nginx-conf-note/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/internet-proxy/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/ca-ssl-certificate/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/cert/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/certificate-sign/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-fig-compose/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-watchtower/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/mariadb-mysql-common-command/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/xray-and-projectx/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-locale/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/managepackage/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/packages-manager/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/hotkey/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/sublime-hotkey/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/ssl-tls-sni/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2ray-debug-config-record/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/jianguoyun-sync-exclude-file/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/manjaro-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/selinux/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-common-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-pull-force/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-stash/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/cpu-frequency/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-cmd-stty/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/connectutility/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/github-actions/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/github-access-verification-with-token/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/markdown-notes/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/markdown/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/github-profile-show-stats-language-and-metrics/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/cad/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/cad-notes/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/iftt-example/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/imagemagick-pdf-switch-image/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/picgo-github-picsbed/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/github-picsbed-show-pictures/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/picsbed/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/wordpress/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hugo-github-action/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/linux-compare-with-windows/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-export-pdf-setting/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-export-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/rss/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/rsshub-vercel-deploy/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/trusteeship/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/web-trusteeship-freely/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hugo-theme-book-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hugo-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/vpn/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/gcp/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/google-cloud-platform/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/v2ray-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/domain-instruction/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/edge/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/edge-access-extension/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-daemon/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-remote-access/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/system-port/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/system-time-timezone/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/rss-instruction/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-operation-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-instruction/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-install-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/docker-push-to-dockerhub/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/inoreader-access-in-mainland/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/rss/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/huginn-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/categories/latex/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/latex-export-table/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/latex-common-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/org-latex-table-width/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/elfeed/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-elfeed-org/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/org-download-on-windows/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/screenshot/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/hunspell/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/magit/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-magit-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/unicode-utf8-gbk/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/dired/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/git-submodule-vs-subtree/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/ssd-performance-improvement/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/doman-name-system/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/github-pages-custome-domain-name-ssl/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/tags/snippet/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/emacs-snippets-manual/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/oauth/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/github-mannal-issues/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://daotoyi.github.io/post/hugo-theme-even-archive/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/linux/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linuxumpack-install-packages/</loc>
+    <lastmod>2022-11-21T14:05:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linuxumpack-install-packages/</loc>
+    <lastmod>2022-11-21T14:05:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/</loc>
+    <lastmod>2022-11-23T17:09:10+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/emacs/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-plugins-list/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-plugins-list/</loc>
+    <lastmod>2022-11-13T13:08:15+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/windows/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/windows-word-archive/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/windows-word-archive/</loc>
+    <lastmod>2022-11-07T18:55:40+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/cmd/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-tar-zip/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-tar-zip/</loc>
+    <lastmod>2022-11-03T14:49:40+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-qt/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-qt/</loc>
+    <lastmod>2022-11-02T20:18:36+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/docker/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-normal-user-permission/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-normal-user-permission/</loc>
+    <lastmod>2022-10-28T13:40:42+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-access/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-access/</loc>
+    <lastmod>2022-10-23T10:10:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/github/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/internet-cloudflare/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/internet-cloudflare/</loc>
+    <lastmod>2022-10-22T08:31:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/internet-cloudflare-tunnel/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/internet-cloudflare-tunnel/</loc>
+    <lastmod>2022-10-22T08:31:36+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/internet/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/windows-faq/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/windows-faq/</loc>
+    <lastmod>2022-11-07T18:55:32+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-terminal-show-color/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-terminal-show-color/</loc>
+    <lastmod>2022-10-26T08:22:55+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/hardware/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-sgcc/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-sgcc/</loc>
+    <lastmod>2022-09-27T08:14:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-hardware/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-hardware/</loc>
+    <lastmod>2022-10-03T15:59:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-jiedian/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-jiedian/</loc>
+    <lastmod>2022-09-27T08:14:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-org-mode-instruction/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-org-mode-instruction/</loc>
+    <lastmod>2022-09-24T08:46:08+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-org-vs-markdown/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-org-vs-markdown/</loc>
+    <lastmod>2022-09-17T09:23:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-org-beamer/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-org-beamer/</loc>
+    <lastmod>2022-10-07T18:03:44+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-host/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-host/</loc>
+    <lastmod>2022-09-25T21:50:49+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-modbus/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-modbus/</loc>
+    <lastmod>2022-08-30T20:36:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/apache2-conf-note/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/apache2-conf-note/</loc>
+    <lastmod>2022-08-21T15:40:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/tools-siyuan_note/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/tools-siyuan_note/</loc>
+    <lastmod>2022-08-21T10:10:49+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/tools/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-hsr-prp/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-hsr-prp/</loc>
+    <lastmod>2022-08-18T22:55:12+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-redhat-update-yum-repo/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-redhat-update-yum-repo/</loc>
+    <lastmod>2022-08-19T10:39:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-brctl/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-brctl/</loc>
+    <lastmod>2022-08-07T15:24:16+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/python/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/python-call-c&#43;&#43;/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/python-call-c&#43;&#43;/</loc>
+    <lastmod>2022-08-07T13:10:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/code/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/code-html-xml/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/code-html-xml/</loc>
+    <lastmod>2022-08-07T10:49:15+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/cplus/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/libs/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-glibc-eglibc-uclibc-musl/</loc>
+    <lastmod>2022-08-07T10:53:15+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-remote-desktop/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-remote-desktop/</loc>
+    <lastmod>2022-08-07T09:28:21+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/windows-cmd-chkdsk/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</loc>
+    <lastmod>2022-08-04T09:24:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-gcc-compile-lib/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-gcc-compile-lib/</loc>
+    <lastmod>2022-08-07T22:39:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/faq/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-system-frequently-asked-questions/</loc>
+    <lastmod>2022-08-04T09:38:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-coredump/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-coredump/</loc>
+    <lastmod>2022-08-21T10:40:43+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/vps/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/xray-vless-tcp-xtls-via-nginx/</loc>
+    <lastmod>2022-07-29T07:32:05+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/tools-qttabbar-uninstall/</loc>
+    <lastmod>2022-08-06T18:15:48+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/nat-nnds/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/nat-nnds/</loc>
+    <lastmod>2022-07-25T09:38:59+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/windows-and-iso/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/windows-and-iso/</loc>
+    <lastmod>2022-07-25T09:37:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/vuepress/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/vuepress-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/vuepress-manual/</loc>
+    <lastmod>2022-07-25T06:45:58+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-distinguish-functions/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-distinguish-functions/</loc>
+    <lastmod>2022-07-24T12:02:09+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-compose-multi-files/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-compose-multi-files/</loc>
+    <lastmod>2022-07-24T10:22:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/private-network-disk-nextcloud/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/private-network-disk-nextcloud/</loc>
+    <lastmod>2022-07-25T07:40:24+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-crontab/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-crontab/</loc>
+    <lastmod>2022-07-21T23:24:54+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-shell-input-parameter/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-shell-input-parameter/</loc>
+    <lastmod>2022-07-21T09:05:05+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/domain/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/internetcustomize-email-domain/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/internetcustomize-email-domain/</loc>
+    <lastmod>2022-07-25T06:11:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/internetcustomize-email-domain/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/internetcustomize-email-domain/</loc>
+    <lastmod>2022-07-20T08:56:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-reverse-shell/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-reverse-shell/</loc>
+    <lastmod>2022-07-24T17:01:38+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/shell/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-32bit-systecm-support-8g-ram/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-32bit-systecm-support-8g-ram/</loc>
+    <lastmod>2022-08-07T15:24:43+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-32bit-program-run-on-64bit-system/</loc>
+    <lastmod>2022-07-11T12:55:39+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/webssh/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/webssh/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/webssh/</loc>
+    <lastmod>2022-07-12T00:42:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/vps-judge-vps-ip-or-port-banned/</loc>
+    <lastmod>2022-10-07T16:22:32+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/python-cython/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/python-cython/</loc>
+    <lastmod>2022-07-01T11:53:58+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hardware-switch/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hardware-switch/</loc>
+    <lastmod>2022-07-01T11:04:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/busybox/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-busybox-buildroot-openwrt/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-busybox-buildroot-openwrt/</loc>
+    <lastmod>2022-08-07T14:34:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-network/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-network/</loc>
+    <lastmod>2022-06-25T18:31:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-compile-openssh-and-openssl/</loc>
+    <lastmod>2022-08-07T19:19:12+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/ssl/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/chroot-mount-bind-and-namespaces/</loc>
+    <lastmod>2022-08-01T14:01:41+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-github-gitlab/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-github-gitlab/</loc>
+    <lastmod>2022-06-23T15:20:07+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-yum-dnf/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-yum-dnf/</loc>
+    <lastmod>2022-06-14T16:48:58+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/vps-vs-shared-hosting/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/vps-vs-shared-hosting/</loc>
+    <lastmod>2022-06-13T23:14:07+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/git/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-tag/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-tag/</loc>
+    <lastmod>2022-06-12T12:04:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/wordpress-maintenance/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/wordpress-maintenance/</loc>
+    <lastmod>2022-06-20T10:16:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/saas-iaas-paas/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/saas-iaas-paas/</loc>
+    <lastmod>2022-06-12T13:45:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/google-gmail/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/google-gmail/</loc>
+    <lastmod>2022-05-10T23:41:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/microsoft-account-login/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/microsoft-account-login/</loc>
+    <lastmod>2022-07-17T17:29:24+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/rsshub-docker-deployed/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/rsshub-docker-deployed/</loc>
+    <lastmod>2022-05-07T07:09:18+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/v2ray/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2ray-share-proxy-to-others/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2ray-share-proxy-to-others/</loc>
+    <lastmod>2022-05-04T10:11:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/nat-ddns/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2ray-mix-reverse&#43;proxy/</loc>
+    <lastmod>2022-05-07T06:59:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-user-group/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-user-group/</loc>
+    <lastmod>2022-07-25T14:55:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/ssh/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/ssh-nat&#43;ddns/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/ssh-nat&#43;ddns/</loc>
+    <lastmod>2022-09-25T16:24:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-checkout-commit&#43;push/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-checkout-commit&#43;push/</loc>
+    <lastmod>2022-05-01T19:05:42+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/v2rayn/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2rayn-qv2ray/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2rayn-qv2ray/</loc>
+    <lastmod>2022-07-10T18:48:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-file&#43;directory-color/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-file&#43;directory-color/</loc>
+    <lastmod>2022-05-01T13:59:55+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/tampermonkey/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/tampermonkey/</loc>
+    <lastmod>2022-06-01T23:42:48+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/hugo/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-ox&#43;hugo-hugo-vuepress/</loc>
+    <lastmod>2022-07-17T17:25:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/oxhugo/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/quant/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/quant-tushare/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/quant-tushare/</loc>
+    <lastmod>2022-04-30T12:46:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/org/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-org-ox&#43;hugo-meta/</loc>
+    <lastmod>2022-07-17T16:52:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/ox/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/spacevim/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/spacevim/</loc>
+    <lastmod>2022-10-23T10:39:23+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/vim/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/tool-capslock&#43;/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/tool-capslock&#43;/</loc>
+    <lastmod>2022-04-30T12:48:41+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/wxpusher/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/wxpusher/</loc>
+    <lastmod>2022-04-30T12:48:25+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/python-decorator-advanced/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/python-decorator-advanced/</loc>
+    <lastmod>2022-08-07T13:09:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/python-json-export-chinese-formate/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/python-json-export-chinese-formate/</loc>
+    <lastmod>2022-04-30T12:46:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/python-jupyter-lab/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/python-jupyter-lab/</loc>
+    <lastmod>2022-04-30T12:46:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-ld-linux.so/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-ld-linux.so/</loc>
+    <lastmod>2022-08-07T14:47:49+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/make-cmake-qmake/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/make-cmake-qmake/</loc>
+    <lastmod>2022-08-07T10:52:56+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-ag/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-ag/</loc>
+    <lastmod>2022-04-30T12:45:36+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-selinux/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-selinux/</loc>
+    <lastmod>2022-06-25T15:56:56+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-oh-my-zsh/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-oh-my-zsh/</loc>
+    <lastmod>2022-04-30T20:58:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/python-name-standard/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/python-name-standard/</loc>
+    <lastmod>2022-04-30T12:46:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/sublime/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/sublime-notes/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/sublime-notes/</loc>
+    <lastmod>2022-07-25T09:35:40+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/aws/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/amazon-web-services/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/amazon-web-services/</loc>
+    <lastmod>2022-04-30T12:50:17+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/xray/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/xray-note/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/xray-note/</loc>
+    <lastmod>2022-07-10T12:56:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/xray-vless-tcp-xtls-whatever/</loc>
+    <lastmod>2022-07-26T22:38:43+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/fastkeysautomation/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/fastkeysautomation/</loc>
+    <lastmod>2022-04-30T12:48:39+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-rpoxy/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-rpoxy/</loc>
+    <lastmod>2022-04-30T12:45:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-compose-config/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-compose-config/</loc>
+    <lastmod>2022-04-30T12:25:03+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/vim-jump/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/vim-jump/</loc>
+    <lastmod>2022-04-30T12:49:42+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/google-rgb/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/google-rgb/</loc>
+    <lastmod>2022-07-01T12:20:04+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/kernel/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-realtime-kernel/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-realtime-kernel/</loc>
+    <lastmod>2022-04-30T12:45:43+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/kindle-formate-epub-mobi-azw3/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/kindle-formate-epub-mobi-azw3/</loc>
+    <lastmod>2022-04-30T12:48:38+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-org-table-calculate/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-org-table-calculate/</loc>
+    <lastmod>2022-04-30T12:24:08+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-docker-file/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-docker-file/</loc>
+    <lastmod>2022-05-13T08:41:35+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/nginx-conf-note/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/nginx-conf-note/</loc>
+    <lastmod>2022-05-21T12:53:09+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/internet-proxy/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/internet-proxy/</loc>
+    <lastmod>2022-04-30T12:35:54+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/ca-ssl-certificate/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/ca-ssl-certificate/</loc>
+    <lastmod>2022-04-30T12:34:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/cert/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/certificate-sign/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/certificate-sign/</loc>
+    <lastmod>2022-10-07T15:44:18+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-fig-compose/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-fig-compose/</loc>
+    <lastmod>2022-04-30T12:25:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-watchtower/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-watchtower/</loc>
+    <lastmod>2022-05-15T00:29:42+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/mariadb-mysql-common-command/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/mariadb-mysql-common-command/</loc>
+    <lastmod>2022-04-30T12:48:36+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/xray-and-projectx/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/xray-and-projectx/</loc>
+    <lastmod>2022-04-30T12:50:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-locale/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-locale/</loc>
+    <lastmod>2022-08-09T09:25:43+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/managepackage/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/packages-manager/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/packages-manager/</loc>
+    <lastmod>2022-04-30T12:48:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/hotkey/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/sublime-hotkey/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/sublime-hotkey/</loc>
+    <lastmod>2022-04-30T12:48:34+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/ssl-tls-sni/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/ssl-tls-sni/</loc>
+    <lastmod>2022-04-30T12:34:32+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2ray-reverse-implement-nat-ddns/</loc>
+    <lastmod>2022-04-30T12:50:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2ray-debug-config-record/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2ray-debug-config-record/</loc>
+    <lastmod>2022-04-30T12:50:20+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/jianguoyun-sync-exclude-file/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/jianguoyun-sync-exclude-file/</loc>
+    <lastmod>2022-04-30T12:48:32+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-selinux-tar-uncompress/</loc>
+    <lastmod>2022-07-21T23:15:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/manjaro-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/manjaro-manual/</loc>
+    <lastmod>2022-10-31T19:20:38+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/selinux/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-packages-manager-yum-dnf-pacman/</loc>
+    <lastmod>2022-10-31T18:51:19+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-yum-dnf/</loc>
+    <lastmod>2022-03-31T22:18:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-common-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-common-manual/</loc>
+    <lastmod>2022-06-10T23:02:22+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-pull-force/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-pull-force/</loc>
+    <lastmod>2022-10-07T17:29:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-stash/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-stash/</loc>
+    <lastmod>2022-04-30T12:32:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/cpu-frequency/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/cpu-frequency/</loc>
+    <lastmod>2022-09-09T07:56:18+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-cmd-stty/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-cmd-stty/</loc>
+    <lastmod>2022-04-30T12:45:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/connectutility/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/connectutility/</loc>
+    <lastmod>2022-07-25T14:13:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github-actions/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/github-actions/</loc>
+    <lastmod>2022-04-30T12:32:40+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github-access-verification-with-token/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/github-access-verification-with-token/</loc>
+    <lastmod>2022-04-30T12:32:38+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/markdown-notes/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/markdown-notes/</loc>
+    <lastmod>2022-07-16T20:44:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/markdown/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github-profile-show-stats-language-and-metrics/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/github-profile-show-stats-language-and-metrics/</loc>
+    <lastmod>2022-04-30T12:32:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/cad/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/cad-notes/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/cad-notes/</loc>
+    <lastmod>2022-07-28T11:11:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/iftt-example/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/iftt-example/</loc>
+    <lastmod>2022-05-02T20:19:11+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/imagemagick-pdf-switch-image/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/imagemagick-pdf-switch-image/</loc>
+    <lastmod>2022-04-30T12:47:58+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/picgo-github-picsbed/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/picgo-github-picsbed/</loc>
+    <lastmod>2022-04-30T12:48:23+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github-picsbed-show-pictures/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/github-picsbed-show-pictures/</loc>
+    <lastmod>2022-04-30T12:32:12+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/picsbed/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/wordpress/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/wordpress-and-bt-install-deploy/</loc>
+    <lastmod>2022-08-21T23:27:03+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-virtual-machine-capacity-and-reduce/</loc>
+    <lastmod>2022-04-30T12:45:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo-github-action/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-github-action/</loc>
+    <lastmod>2022-07-05T21:48:31+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/linux-compare-with-windows/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/linux-compare-with-windows/</loc>
+    <lastmod>2022-09-19T08:09:47+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-export-pdf-setting/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-export-pdf-setting/</loc>
+    <lastmod>2022-04-30T12:24:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-export-align-table-with-chinese/</loc>
+    <lastmod>2022-04-30T12:24:07+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-export-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-export-manual/</loc>
+    <lastmod>2022-09-13T22:59:07+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/rss/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/rsshub-vercel-deploy/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/rsshub-vercel-deploy/</loc>
+    <lastmod>2022-04-30T12:47:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/trusteeship/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/web-trusteeship-freely/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/web-trusteeship-freely/</loc>
+    <lastmod>2022-04-30T12:50:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/wifi-sta-and-ap-model/</loc>
+    <lastmod>2022-04-30T12:33:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo-theme-book-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-theme-book-manual/</loc>
+    <lastmod>2022-04-30T12:50:09+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-theme-loveit-archive/</loc>
+    <lastmod>2022-04-30T12:50:08+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-manual/</loc>
+    <lastmod>2022-04-30T12:50:05+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/vpn/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/vpn-v2rayvpn-v2free/</loc>
+    <lastmod>2022-05-02T10:43:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2ray-websocket-nginx-cnd-tsl/</loc>
+    <lastmod>2022-07-26T20:12:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/gcp/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/google-cloud-platform/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/google-cloud-platform/</loc>
+    <lastmod>2022-04-30T12:50:16+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/v2ray-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/v2ray-manual/</loc>
+    <lastmod>2022-05-07T12:42:25+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/domain-instruction/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/domain-instruction/</loc>
+    <lastmod>2022-04-30T12:34:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/edge/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/edge-access-extension/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/edge-access-extension/</loc>
+    <lastmod>2022-04-30T12:34:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-daemon/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-daemon/</loc>
+    <lastmod>2022-04-30T12:24:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-remote-access/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-remote-access/</loc>
+    <lastmod>2022-04-30T12:24:34+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/system-port/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/system-port/</loc>
+    <lastmod>2022-04-30T12:45:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/system-time-timezone/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/system-time-timezone/</loc>
+    <lastmod>2022-04-30T12:45:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/rss-instruction/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/rss-instruction/</loc>
+    <lastmod>2022-04-30T12:46:41+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-operation-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-operation-manual/</loc>
+    <lastmod>2022-11-05T10:42:25+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-instruction/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-instruction/</loc>
+    <lastmod>2022-07-23T06:37:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-install-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-install-manual/</loc>
+    <lastmod>2022-04-30T12:24:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/docker-push-to-dockerhub/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/docker-push-to-dockerhub/</loc>
+    <lastmod>2022-05-02T22:54:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/inoreader-access-in-mainland/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/inoreader-access-in-mainland/</loc>
+    <lastmod>2022-05-14T08:40:44+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/rss/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/huginn-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/huginn-manual/</loc>
+    <lastmod>2022-05-13T08:18:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/categories/latex/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/latex-export-table/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/latex-export-table/</loc>
+    <lastmod>2022-04-30T12:45:13+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/latex-common-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/latex-common-manual/</loc>
+    <lastmod>2022-04-30T12:45:15+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/org-latex-table-width/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/org-latex-table-width/</loc>
+    <lastmod>2022-04-30T12:45:13+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/elfeed/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-elfeed-org/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-elfeed-org/</loc>
+    <lastmod>2022-04-30T12:24:03+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/org-download-on-windows/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/org-download-on-windows/</loc>
+    <lastmod>2022-04-30T12:24:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/screenshot/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hunspell-flymode-on-windows/</loc>
+    <lastmod>2022-09-14T16:51:23+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/hunspell/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/magit/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-magit-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-magit-manual/</loc>
+    <lastmod>2022-04-30T12:23:59+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/unicode-utf8-gbk/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/unicode-utf8-gbk/</loc>
+    <lastmod>2022-04-30T12:45:25+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/dired/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-dired-common-hotkey/</loc>
+    <lastmod>2022-11-23T17:09:10+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/vim-donnot-need-multipe-cursor-edit/</loc>
+    <lastmod>2022-07-13T10:21:51+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/git-submodule-vs-subtree/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/git-submodule-vs-subtree/</loc>
+    <lastmod>2022-04-30T12:32:05+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/ssd-performance-improvement/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/ssd-performance-improvement/</loc>
+    <lastmod>2022-04-30T12:33:51+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/doman-name-system/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/doman-name-system/</loc>
+    <lastmod>2022-04-30T12:34:27+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github-pages-custome-domain-name-ssl/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/github-pages-custome-domain-name-ssl/</loc>
+    <lastmod>2022-04-30T12:32:09+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/tags/snippet/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/emacs-snippets-manual/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/emacs-snippets-manual/</loc>
+    <lastmod>2022-04-30T12:23:56+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/oauth/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/oauth/</loc>
+    <lastmod>2022-04-30T12:32:11+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/github-mannal-issues/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/github-mannal-issues/</loc>
+    <lastmod>2022-04-30T12:32:08+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/post/hugo-theme-even-archive/</loc>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-theme-even-archive/</loc>
+    <lastmod>2022-04-30T12:50:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/repositories/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/about/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/categories/hugo/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/post/hugo-markdown/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-markdown/</loc>
+    <lastmod>2022-02-03T11:17:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://daotoyi.github.io/post/hugo-org-mode/</loc>
-    <lastmod>2022-11-04T22:29:41+08:00</lastmod>
+    <lastmod>2022-11-25T23:11:25+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daotoyi.github.io/posts/hugo-org-mode/</loc>
+    <lastmod>2022-06-29T12:12:04+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-user-group/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux 用户及用户组" />
 <meta property="og:description" content="useradd 1 2 3 4 5 # 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中g" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-user-group/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-user-group/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-05-02T15:25:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux 用户及用户组">
-<meta itemprop="description" content="useradd 1 2 3 4 5 # 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中g">
-<meta itemprop="datePublished" content="2022-05-02T15:25:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="useradd 1 2 3 4 5 # 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中g"><meta itemprop="datePublished" content="2022-05-02T15:25:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="606">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux 用户及用户组"/>
 <meta name="twitter:description" content="useradd 1 2 3 4 5 # 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中g"/>
@@ -174,14 +171,14 @@
       <h2 id="useradd">useradd</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中group用户组是其主组。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中group用户组是其主组。</span>
 useradd -s /bin/sh -g group –G adm,root gem
 
 <span class="c1"># 选项是 -r，它的作用是把用户的主目录一起删除</span>
@@ -191,14 +188,14 @@ userdel -r user_name
 </div><h2 id="usermod-groupmod">usermod/groupmod</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 将用户sam的登录Shell修改为ksh，主目录改为/home/z，用户组改为developer</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 将用户sam的登录Shell修改为ksh，主目录改为/home/z，用户组改为developer</span>
 usermod -s /bin/ksh -d /home/z –g developer sam
 
 <span class="c1"># 将组group2的标识号改为10000，组名修改为group3</span>
@@ -208,7 +205,7 @@ groupmod –g <span class="m">10000</span> -n group3 group2
 </div><h2 id="chown">chown</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -218,7 +215,7 @@ groupmod –g <span class="m">10000</span> -n group3 group2
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 将文件 file1.txt 的拥有者设为 runoob，群体的使用者 runoobgroup :</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 将文件 file1.txt 的拥有者设为 runoob，群体的使用者 runoobgroup :</span>
 chown runoob:runoobgroup file1.txt
 
 <span class="c1"># 目录下的所有文件</span>
@@ -231,7 +228,7 @@ chown root
 </div><h2 id="chgrp">chgrp</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -240,7 +237,7 @@ chown root
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@localhost test<span class="o">]</span><span class="c1"># ll</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@localhost test<span class="o">]</span><span class="c1"># ll</span>
 ---xrw-r-- <span class="m">1</span> root root <span class="m">302108</span> 11-13 06:03 log2012.log
 <span class="o">[</span>root@localhost test<span class="o">]</span><span class="c1"># chgrp -v bin log2012.log</span>
 
@@ -254,33 +251,33 @@ chown root
 <p>修改 /etc/sudoers 文件，找到下面一行，把前面的注释（#）去掉</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## Allows people in group wheel to run all commands</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## Allows people in group wheel to run all commands</span>
 %wheel    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span>    ALL
 </code></pre></td></tr></table>
 </div>
 </div><p>然后修改用户，使其属于 root 组（wheel），命令如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">usermod -g root mshing
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">usermod -g root mshing
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="m2-recommend">M2 recommend</h3>
 <p>修改 /etc/sudoers 文件，找到下面一行，在 root 下面添加一行，如下所示</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## Allow root to run any commands anywhere</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## Allow root to run any commands anywhere</span>
 root    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span>     ALL
 mshing   <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span>     ALL
 </code></pre></td></tr></table>
@@ -290,14 +287,14 @@ mshing   <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
 <p>修改 /etc/passwd 文件，找到如下行，把用户 ID 修改为 0</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># beofore</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># beofore</span>
 mshing❌500:500:mshing:/home/mshing:/bin/bash
 
 <span class="c1"># after</span>
@@ -319,8 +316,8 @@ mshing❌0:500:mshing:/home/mshing:/bin/bash
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -411,7 +408,7 @@ mshing❌0:500:mshing:/home/mshing:/bin/bash
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

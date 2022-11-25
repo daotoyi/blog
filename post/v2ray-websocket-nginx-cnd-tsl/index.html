@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="v2ray 搭建笔记" />
 <meta property="og:description" content="WebSocket&#43;TSL&#43;CDN&#43;Nginx" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-05T20:58:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="v2ray 搭建笔记">
-<meta itemprop="description" content="WebSocket&#43;TSL&#43;CDN&#43;Nginx">
-<meta itemprop="datePublished" content="2022-03-05T20:58:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="WebSocket&#43;TSL&#43;CDN&#43;Nginx"><meta itemprop="datePublished" content="2022-03-05T20:58:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="2910">
-
-
-
 <meta itemprop="keywords" content="v2ray," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="v2ray 搭建笔记"/>
 <meta name="twitter:description" content="WebSocket&#43;TSL&#43;CDN&#43;Nginx"/>
@@ -203,7 +200,7 @@
 <h3 id="startup">startup</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -225,7 +222,7 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">
 <span class="c1"># install docker</span>
 apt install docker
 
@@ -252,7 +249,7 @@ docker rm v2ray
 <h4 id="port-80">port:80</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -364,7 +361,7 @@ docker rm v2ray
 </span><span class="lnt">110
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
     <span class="s2">&#34;error&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
@@ -479,7 +476,7 @@ docker rm v2ray
 </div><h4 id="port-433">port:433</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -595,7 +592,7 @@ docker rm v2ray
 </span><span class="lnt">114
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
     <span class="s2">&#34;error&#34;</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
@@ -715,7 +712,7 @@ docker rm v2ray
 <p><code>/etc/v2ray/config.json</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -781,7 +778,7 @@ docker rm v2ray
 </span><span class="lnt">64
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">&#34;loglevel&#34;</span><span class="o">:</span> <span class="s2">&#34;warning&#34;</span><span class="p">,</span>
         <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/access.log&#34;</span><span class="p">,</span>
@@ -854,14 +851,14 @@ docker rm v2ray
 <p>要 TLS 就必须得有域名，得有个反代(如 Nginx).</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">systemctl stop nginx
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">systemctl stop nginx
 
 certbot certonly --renew-by-default --email <span class="o">[</span>your-email<span class="o">]</span> -d <span class="o">[</span>xxxx.com<span class="o">](</span>damain<span class="o">)</span> -d www.xxx.com
 
@@ -873,7 +870,7 @@ systemctl start nginx
 <h4 id="before">Before</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -888,7 +885,7 @@ systemctl start nginx
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装 cerbot</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装 cerbot</span>
 <span class="o">[</span>root@  ~<span class="o">]</span><span class="c1"># yum install certbot</span>
 <span class="o">[</span>root@  ~<span class="o">]</span><span class="c1"># yum install python3-certbot-nginx</span>
 
@@ -906,7 +903,7 @@ certbot renew
 </div><p>使用 Linux 的计划任务自动更新证书(新版本会自动更新）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -926,7 +923,7 @@ certbot renew
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@ ~]# cat /etc/crontab
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@ ~]# cat /etc/crontab
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
@@ -953,7 +950,7 @@ MAILTO=root
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -972,7 +969,7 @@ MAILTO=root
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 在 CentOS/Redaht7  中添加 EPEL</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 在 CentOS/Redaht7  中添加 EPEL</span>
 sudo yum install -y epel-release
 
 <span class="c1"># 在 CentOS/Redaht8  中添加 EPEL</span>
@@ -996,7 +993,7 @@ certbot renew --dry-run
 <p>客户端 v2ray 配置 <code>security</code> :</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -1005,7 +1002,7 @@ certbot renew --dry-run
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;streamSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;streamSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">&#34;network&#34;</span><span class="o">:</span> <span class="s2">&#34;ws&#34;</span><span class="p">,</span>
     <span class="s2">&#34;security&#34;</span><span class="o">:</span> <span class="s2">&#34;tls&#34;</span><span class="p">,</span>
     <span class="s2">&#34;wsSettings&#34;</span><span class="o">:</span> <span class="p">{</span>
@@ -1022,7 +1019,7 @@ certbot renew --dry-run
 <h2 id="nginx">Nginx</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1034,7 +1031,7 @@ certbot renew --dry-run
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># install ngix</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># install ngix</span>
 apt -y install nginx
 
 <span class="c1"># start ngix</span>
@@ -1049,7 +1046,7 @@ nginx -s reload
 </div><h3 id="etc-nginx-nginx-dot-conf">/etc/nginx/nginx.conf</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1134,75 +1131,75 @@ nginx -s reload
 </span><span class="lnt">83
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">user nginx;</span>
-<span class="na">worker_processes auto;</span>
-<span class="c1"># pid /run/nginx.pid;</span>
-<span class="c1"># include /etc/nginx/modules-enabled/*.conf;</span>
-<span class="na">worker_rlimit_nofile  655350;</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">user nginx;</span>
+<span class="na">worker_processes auto;</span>
+<span class="c1"># pid /run/nginx.pid;</span>
+<span class="c1"># include /etc/nginx/modules-enabled/*.conf;</span>
+<span class="na">worker_rlimit_nofile  655350;</span>
 
-<span class="na">events {</span>
-  <span class="na">use epoll;</span>
-  <span class="na">multi_accept on;</span>
-  <span class="na">worker_connections 65536;</span>
-<span class="na">}</span>
+<span class="na">events {</span>
+  <span class="na">use epoll;</span>
+  <span class="na">multi_accept on;</span>
+  <span class="na">worker_connections 65536;</span>
+<span class="na">}</span>
 
-<span class="na">http {</span>
-  <span class="na">sendfile on;</span>
-  <span class="na">tcp_nopush on;</span>
-  <span class="na">tcp_nodelay on;</span>
-  <span class="na">keepalive_timeout 65;</span>
-  <span class="na">keepalive_requests 10000;</span>
-  <span class="na">types_hash_max_size 2048;</span>
+<span class="na">http {</span>
+  <span class="na">sendfile on;</span>
+  <span class="na">tcp_nopush on;</span>
+  <span class="na">tcp_nodelay on;</span>
+  <span class="na">keepalive_timeout 65;</span>
+  <span class="na">keepalive_requests 10000;</span>
+  <span class="na">types_hash_max_size 2048;</span>
 
-  <span class="na">access_log /var/log/nginx-access.log;</span>
-  <span class="na">error_log /var/log/nginx-error.log;</span>
+  <span class="na">access_log /var/log/nginx-access.log;</span>
+  <span class="na">error_log /var/log/nginx-error.log;</span>
 
-  <span class="c1"># gzip on;</span>
-  <span class="na">server {</span>
+  <span class="c1"># gzip on;</span>
+  <span class="na">server {</span>
     <span class="na">if ($host</span> <span class="o">=</span> <span class="s">daotoyi.tk) {
 </span><span class="s">        return 301 https://$host$request_uri;
-</span><span class="s">    } # managed by Certbot</span>
+</span><span class="s">    } # managed by Certbot</span>
 
 
-    <span class="na">listen 80 default_server;</span>
-    <span class="na">listen [::]:80 default_server;</span>
-    <span class="na">server_name daotoyi.tk;</span>
+    <span class="na">listen 80 default_server;</span>
+    <span class="na">listen [::]:80 default_server;</span>
+    <span class="na">server_name daotoyi.tk;</span>
 
-    <span class="na">root /var/www/daotoyi;</span>
-    <span class="na">index index.html index.htm index.nginx-debian.html;</span>
+    <span class="na">root /var/www/daotoyi;</span>
+    <span class="na">index index.html index.htm index.nginx-debian.html;</span>
 
-    <span class="na">location /daotoyi { # match path in V2Ray configuration</span>
-      <span class="na">proxy_redirect off;</span>
-      <span class="na">proxy_pass http://127.0.0.1:8888;</span>
-      <span class="na">proxy_http_version 1.1;</span>
-      <span class="na">proxy_set_header Upgrade $http_upgrade;</span>
-      <span class="na">proxy_set_header Connection &#34;upgrade&#34;;</span>
-      <span class="na">proxy_set_header Host $http_host;</span>
+    <span class="na">location /daotoyi { # match path in V2Ray configuration</span>
+      <span class="na">proxy_redirect off;</span>
+      <span class="na">proxy_pass http://127.0.0.1:8888;</span>
+      <span class="na">proxy_http_version 1.1;</span>
+      <span class="na">proxy_set_header Upgrade $http_upgrade;</span>
+      <span class="na">proxy_set_header Connection &#34;upgrade&#34;;</span>
+      <span class="na">proxy_set_header Host $http_host;</span>
 
-      <span class="c1"># Show realip in v2ray access.log</span>
-      <span class="na">proxy_set_header X-Real-IP $remote_addr;</span>
-      <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
-    <span class="na">}</span>
-<span class="na">}</span>
+      <span class="c1"># Show realip in v2ray access.log</span>
+      <span class="na">proxy_set_header X-Real-IP $remote_addr;</span>
+      <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+    <span class="na">}</span>
+<span class="na">}</span>
 
-  <span class="na">server {</span>
-    <span class="na">listen 443 ssl;</span>
-    <span class="na">listen [::]:443 ssl;</span>
-    <span class="na">server_name daotoyi.tk;</span>
+  <span class="na">server {</span>
+    <span class="na">listen 443 ssl;</span>
+    <span class="na">listen [::]:443 ssl;</span>
+    <span class="na">server_name daotoyi.tk;</span>
 
-    <span class="na">ssl_session_timeout 1d;</span>
-    <span class="na">ssl_session_cache shared:MozSSL:10m;</span>
-    <span class="na">ssl_session_tickets off;</span>
+    <span class="na">ssl_session_timeout 1d;</span>
+    <span class="na">ssl_session_cache shared:MozSSL:10m;</span>
+    <span class="na">ssl_session_tickets off;</span>
 
-    <span class="na">ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;</span>
-    <span class="c1"># ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;</span>
-    <span class="na">ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;</span>
-    <span class="na">ssl_prefer_server_ciphers off;</span>
+    <span class="na">ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;</span>
+    <span class="c1"># ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;</span>
+    <span class="na">ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;</span>
+    <span class="na">ssl_prefer_server_ciphers off;</span>
 
-    <span class="na">ssl_certificate /etc/letsencrypt/live/daotoyi.tk/fullchain.pem; # managed by Certbot</span>
-    <span class="na">ssl_certificate_key /etc/letsencrypt/live/daotoyi.tk/privkey.pem; # managed by Certbot</span>
+    <span class="na">ssl_certificate /etc/letsencrypt/live/daotoyi.tk/fullchain.pem; # managed by Certbot</span>
+    <span class="na">ssl_certificate_key /etc/letsencrypt/live/daotoyi.tk/privkey.pem; # managed by Certbot</span>
 
-    <span class="na">location /daotoyi {</span>
+    <span class="na">location /daotoyi {</span>
         <span class="na">if ($http_upgrade !</span><span class="o">=</span> <span class="s">&#34;websocket&#34;) { # WebSocket协商失败时返回404
 </span><span class="s">                return 404;
 </span><span class="s">         }
@@ -1215,14 +1212,14 @@ nginx -s reload
 </span><span class="s">        proxy_set_header X-Real-IP $remote_addr;
 </span><span class="s">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 </span><span class="s">    }
-</span><span class="s">  }</span>
-<span class="na">}</span>
+</span><span class="s">  }</span>
+<span class="na">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="firewall">firewall</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1241,7 +1238,7 @@ nginx -s reload
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看端口分配</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看端口分配</span>
 netstat -ntlp
 <span class="c1"># Active Internet connections (only servers)</span>
 <span class="c1"># Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name</span>
@@ -1268,7 +1265,7 @@ systemctl restart firewalld.service
 <p>仅仅安装 v2ray，跨境上网的速度并不快，比如看 youtube 视频会卡，所以请务必再安装谷歌开发的加速器 BBR</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -1278,7 +1275,7 @@ systemctl restart firewalld.service
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">  <span class="c1"># 下载bbr安装脚本</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">  <span class="c1"># 下载bbr安装脚本</span>
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 <span class="c1"># 将脚本变成可执行</span>
 chmod +x bbr.sh
@@ -1321,15 +1318,14 @@ lsmod <span class="p">|</span> grep bbr
 <h3 id="8888-reference">8888 reference :</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core  v2ray -config<span class="o">=</span>/etc/v2ray/config.json
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core  v2ray -config<span class="o">=</span>/etc/v2ray/config.json
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="conclusion">Conclusion</h2>
-<figure>
-    <img src="https://cdn.jsdelivr.net/gh/jamesxwang/cdn/img/v2ray/process.png"/> 
+<figure><img src="https://cdn.jsdelivr.net/gh/jamesxwang/cdn/img/v2ray/process.png"/>
 </figure>
 
 <p>请求链路如下：</p>
@@ -1438,8 +1434,8 @@ lsmod <span class="p">|</span> grep bbr
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -1532,7 +1528,7 @@ lsmod <span class="p">|</span> grep bbr
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

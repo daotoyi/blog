@@ -6,17 +6,22 @@
     <description>Recent content in shell on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jul 2022 15:23:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://daotoyi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Jul 2022 15:23:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux 反弹 shell</title>
       <link>https://daotoyi.github.io/post/linux-reverse-shell/</link>
       <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-reverse-shell/</guid>
+      <description>什么是反弹 Shell 控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来</description>
+    </item>
+    
+    <item>
+      <title>Linux 反弹 shell</title>
+      <link>https://daotoyi.github.io/posts/linux-reverse-shell/</link>
+      <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-reverse-shell/</guid>
       <description>什么是反弹 Shell 控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来</description>
     </item>
     

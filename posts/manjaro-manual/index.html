@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Manjaro/Linux 使用 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/manjaro-manual/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Manjaro/Linux 使用" />
+<meta property="og:description" content="basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/manjaro-manual/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-31T22:53:00+00:00" />
+<meta property="article:modified_time" content="2022-10-31T19:20:38+00:00" />
+
+<meta itemprop="name" content="Manjaro/Linux 使用">
+<meta itemprop="description" content="basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执"><meta itemprop="datePublished" content="2022-03-31T22:53:00+00:00" />
+<meta itemprop="dateModified" content="2022-10-31T19:20:38+00:00" />
+<meta itemprop="wordCount" content="2895">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Manjaro/Linux 使用"/>
+<meta name="twitter:description" content="basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="basic-opreration">basic opreration</h2>
+<p><code>/etc/pacman.conf</code></p>
+<h3 id="更新系统">更新系统</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Syy					<span class="c1">#本地的包数据库和远程的软件仓库同步</span>
+pacman -Syu
+
+pacman -Su <span class="c1"># 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执行：</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="安装包">安装包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -S 包名    <span class="c1"># 例如，执行 pacman -S firefox ,也可以同时安装多个包，以空格分隔包名即可。</span>
+pacman -Sy 包名   <span class="c1"># 与上面命令不同的是，该命令将在同步包数据库后再执行安装。</span>
+pacman -Sv 包名   <span class="c1"># 在显示一些操作信息后执行安装。</span>
+pacman -U 安装本地包 <span class="c1"># 其扩展名为 pkg.tar.gz。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="删除包">删除包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -R 包名   <span class="c1"># 该命令将只删除包，不包含该包的依赖。</span>
+pacman -Rs 包名  <span class="c1"># 在删除包的同时，也将删除其依赖。</span>
+pacman -Rd 包名  <span class="c1"># 在删除包时不检查依赖。</span>
+pacman -Rsc 包名 <span class="c1"># 删除一个包,所有依赖</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="搜索包">搜索包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Ss 关键字 <span class="c1"># 这将搜索含关键字的包。</span>
+pacman -Qi 包名   <span class="c1"># 查看有关包的信息。</span>
+pacman -Ql 包名   <span class="c1"># 列出该包的文件。</span>
+pacman -Qo 包名   <span class="c1"># 列出该包被哪个包包含</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="清理系统">清理系统</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Rsn <span class="k">$(</span>pacman -Qdtq<span class="k">)</span>
+sudo pacman -Scc
+sudo rm /var/lib/systemd/coredump/.
+sudo journalctl --vacuum-size<span class="o">=</span>50M
+
+pacman -R <span class="k">$(</span>pacman -Qdtq<span class="k">)</span> <span class="c1">#</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="其他用法">其他用法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Sw 包名 <span class="c1">#只下载包，不安装。</span>
+pacman -Sc Pacman <span class="c1"># 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件</span>
+pacman -Scc <span class="c1"># 清理所有的缓存文件。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="faq">FAQ</h2>
+<h3 id="update-systecm">update systecm</h3>
+<h4 id="python-pip-xxx-files-exists-dot"><span class="org-todo done DONE">DONE</span> - python-pip:xxx files exists.</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -R python-pip
+pacman -Syu
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="errors-occurred-no-packages-were-upgraded-dot">Errors occurred, no packages were upgraded.</h4>
+<ul>
+<li>error: failed to commit transaction (invalid or corrupted package)</li>
+</ul>
+<p><a href="https://juejin.cn/post/7091962125660192798">Manjaro软件更新失败：无效或已损坏的软件包</a></p>
+<h2 id="pacman-gpg">pacman-gpg</h2>
+<h3 id="说明">说明</h3>
+<p>加密的过程是：如果 A 君要发送信息给 B 君，首先 B 君得把自己的公钥扔出来，A君得获取 B 君的公钥后加密信息并发送过去，B君收到（加过密的）信息使用自己的私钥解密就可以还原信息了。</p>
+<p>而数字签名的过程稍微不同，信息是通过普通未加密方式发送信息给对方的，只是在每条信息后面都会附加一坨字符（名曰：签名）， 这个签名是由程序根据发送者的私钥以及信息内容计算得出，接收者使用发送者的公钥就可以核对信息有无被篡改。</p>
+<h3 id="操作">操作</h3>
+<h4 id="生成查看">生成查看</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ gpg --gen-key
+$ gpg --full-generate-key
+$ gpg --list-keys   查看本机钥匙信息
+$ gpg -k 生成钥匙对
+$ gpg -a --output key.public --export UID&lt;用户 ID&gt;   导出公钥
+
+$ gpg --keyserver keys.gnupg.net --send-key ID    把公钥发布到公钥服务器
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="生成撤销证书">生成撤销证书</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ gpg --gen-revoke ID  制作一张撤销证书，用于密钥作废，请求外部公钥服务器撤销你的公钥
+
+<span class="c1"># 二进制证书 revocation-gmail.cert； 但会提示 &#34;已强行使用 ASCII 封装过的输出&#34;</span>
+$ gpg --output revocation-gmail.cert --gen-revoke MASTERKEYID
+
+<span class="c1"># -a (--armor)输出文件为 revocation-gmail-cert.txt 文本文件</span>
+$ gpg -a -o revocation-gmail-cert.txt --gen-revoke MASTERKEYID
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="下载导入证书">下载导入证书</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ gpg --send-keys &lt;key-id&gt;   分发
+$ gpg --search-keys &lt;key-id&gt;    查询
+$ gpg --recv-keys &lt;key-id&gt;    导入
+
+$ gpg --keyserver keys.gnupg.net --search-key ivarptr&lt;示例作者名&gt;    <span class="c1"># –search-key 用于指定搜索关键字，可以是 uid 的名字或者 email 地址部分</span>
+$ gpg --keyserver keys.gnupg.net --recv-key 72E75B05   知道要导入的公钥的 id，也可以跳过搜索而直接导入：
+$ gpg --keyserver p80.pool.sks-keyservers.net --recv-keys ID
+$ gpg --keyserver subkeys.pgp.net --recv-keys
+<span class="c1"># --keyserver hkp://keyserver.ubuntu.com:80</span>
+    GnuPG 默认的公钥服务器是 keys.gnupg.net
+    keys.gnupg.net 背后是一组服务器，它们之间的信息同步需要一定的时间，如果刚刚提交了自己的公钥,要过一段时间（大概 <span class="m">1</span> 小时）就可以查到了。
+    如果你用的是普通公钥服务器，比如 pgp.mit.edu 则不会有这个问题。
+$ gpg --import key.public   直接导入对方公钥文件 key.public
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="导出密钥">导出密钥</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gpg --armor --output public-key-gmail.txt --export MASTERKEYID    <span class="c1"># 导出公钥</span>
+gpg --armor --output secret-key-gmail.txt --export-secret-keys MASTERKEYID    <span class="c1"># 导出私钥</span>
+gpg --edit-key MASTERKEYID    <span class="c1"># 编辑密钥</span>
+
+gpg --export -armor -o filename      <span class="o">(</span>文件目录如  F:<span class="se">\f</span>ile.txt<span class="o">)</span>
+gpg --export -a &gt; filename
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="签名">签名</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 需要进一步跟我核对公钥是否正确，然后签收（sign key）它</span>
+$ gpg --fingerprint  <span class="c1"># 因为公钥有可能出现冒牌货，所以每个公钥里都加入了指纹值，使用下面命令可以查看指纹值</span>
+$ gpg --sign-key ivarptr
+$ gpg --delete-keys ivarptr
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="加密文件">加密文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">给 ivarptr--用 ivarptr 的公钥
+$ gpg -a --output message-ciper.txt -r ivarptr@126.com -e message.txt
+    -a 表示输出文本文件格式。
+    –output 指定输出（即加密后）的文件名。
+    -r 指定信息的接收者（recipient）公钥的 uid，可以是名字也可以是 email 地址。
+    -e 表示这次要执行的是加密（encrypt）操作。
+
+    ivarptr 解密一个文件
+$ gpg --output message-plain.txt -d message-ciper.txt
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="数字签名">数字签名</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ gpg -a -b message.txt   <span class="c1">#  在当前文件夹里产生一个 message.txt.asc 的文件</span>
+    -a 表示输出文本文件格式。
+    -b 表示以生成独立的签名文件的方式进行签名。
+$ gpg --verify message.txt.asc  <span class="c1"># 把原信息文件 message.txt 连同签名文件 message.txt.asc 一起</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="github">github</h3>
+<p>git commit -S -m &ldquo;提交信息&rdquo; # -S 选项表示对此次提交使用 gpg 进行签名</p>
+<p>GitHub 中，使用 SSH 连接到 GitHub 时可以使用 ssh key 来进行加密连接；而 gpg key 用于认证每次提交.</p>
+<h2 id="pacman-keys">pacman-keys</h2>
+<h3 id="pacman-dot-conf">pacman.conf</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>mingw32<span class="o">]</span>
+<span class="nv">SigLevel</span> <span class="o">=</span> Optional TrustAll
+<span class="nv">Include</span> <span class="o">=</span> /etc/pacman.d/mirrorlist.mingw32
+
+<span class="o">[</span>mingw64<span class="o">]</span>
+<span class="nv">SigLevel</span> <span class="o">=</span> Optional TrustAll
+<span class="nv">Include</span> <span class="o">=</span> /etc/pacman.d/mirrorlist.mingw64
+
+<span class="o">[</span>msys<span class="o">]</span>
+<span class="nv">SigLevel</span> <span class="o">=</span> Optional TrustAll
+<span class="nv">Include</span> <span class="o">=</span> /etc/pacman.d/mirrorlist.msys
+
+<span class="o">[</span>archlinuxcn<span class="o">]</span>
+<span class="nv">SigLevel</span> <span class="o">=</span> Optional TrustAll
+<span class="nv">Server</span> <span class="o">=</span> http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="nv">$arch</span>
+<span class="c1">#Server = http://repo.archlinuxcn.org/$arch</span>
+<span class="c1">#Server = rsync://sync.repo.archlinuxcn.org</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="keys">keys</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">出现 Keys 错误，签名失败。。之类的依次运行以下命令
+
+1<span class="o">)</span>移除旧的 keys
+  sudo rm -rf /etc/pacman.d/gnupg
+2<span class="o">)</span>初始化 pacman 的 keys
+  sudo pacman-key --init
+3<span class="o">)</span>加载签名的 keys
+  sudo pacman-key --populate archlinux
+4<span class="o">)</span>刷新升级已经签名的 keys
+  sudo pacman-key -refresh-keys
+5<span class="o">)</span>清空并且下载新数据
+  sudo pacman -Sc
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ntpdate">ntpdate</h2>
+<h3 id="同步网络时间">同步网络时间</h3>
+<p>ntpdate 0.rhel.pool.ntp.org</p>
+<h3 id="双系统时间不一致">双系统时间不一致</h3>
+<p>sudo timedatectl set-local-rtc 1</p>
+<h2 id="libreoffice-chinese">libreoffice-Chinese</h2>
+<p>pacman -S libreoffice-zh-CN</p>
+<h2 id="gen-mirrorlist-plus-update-system">gen-MirrorList + update system</h2>
+<h3 id="生成镜像列表">生成镜像列表</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman-mirrors -i -c China -m rank
+
+
+  0.161 China          : https://mirrors.pku.edu.cn/manjaro/
+  0.160 China          : http://mirrors.pku.edu.cn/manjaro/
+  0.329 China          : https://mirrors.aliyun.com/manjaro/
+  0.240 China          : https://mirrors.ustc.edu.cn/manjaro/
+  0.155 China          : https://mirrors.tuna.tsinghua.edu.cn/manjaro/
+  0.156 China          : https://mirrors.tuna.tsinghua.edu.cn/manjaro/
+  0.363 China          : https://mirrors.sjtug.sjtu.edu.cn/manjaro/
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="etc-pacman-dot-conf">/etc/pacman.conf:</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>archlinuxcn<span class="o">]</span>
+<span class="nv">SigLevel</span> <span class="o">=</span> Optional TrustedOnly
+<span class="c1">#清华源</span>
+<span class="nv">Server</span> <span class="o">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="nv">$arch</span>
+
+<span class="c1">#更新源列表</span>
+sudo pacman-mirrors -g
+
+<span class="c1">#更新 pacman 数据库并全面更新系统</span>
+sudo pacman -Syyu
+
+<span class="c1">#防止 PGP 签名错误</span>
+sudo pacman -S archlinuxcn-keyring
+sudo pacman -S antergos-keyring
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="hotkey">HotKey</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Alt + f10 最大化窗口或原大小
+Alt + f9 隐藏窗口
+Alt + f8 跟随鼠标调整窗口大小
+Alt + f7 跟随鼠标调整窗口位置
+ctrl + alt + right / left 下一个工作区/上一个工作区
+
+<span class="c1"># 终端下</span>
+ctrl + <span class="nb">shift</span> + s 设置终端标题
+xfce4-popup-whiskermenu 显示 super 菜单
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="social-tool">social-Tool</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># TIM:</span>
+yaourt -S deepin-wine-tim
+yaourt -Sy deepin.com.qq.office  <span class="o">(</span>这个在效
+
+<span class="c1"># Wechat</span>
+yaourt -S deepin-wechat  <span class="o">(</span>sudo 会报错 <span class="o">)</span>
+
+<span class="c1"># Netease-cloud</span>
+pacman -S netease-cloud-music
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="shell">shell</h2>
+<p>chsh -s /bin/zsh （重启生效)</p>
+<h2 id="install-deb">install-deb</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看电脑上是否安装过</span>
+sudo pacman -Q debtap
+
+<span class="c1"># 安装 yay 工具，记得配置 arch</span>
+sudo pacman -S yay
+
+<span class="c1"># 安装解包打包工具 debtap</span>
+yay -S debtap
+
+<span class="c1"># 升级 debtap</span>
+sudo debtap -u
+
+sudo debtap  xxxx.deb
+sudo pacman -U x.tar.xz
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="rime">RIME</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1、源文件目录</span>
+/usr/share/rime-data/
+
+<span class="c1"># 2、用户目录</span>
+~/.config/ibus/rime/
+~/.config/fcitx/rime/
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="scan">scan</h2>
+<p>yauourt  -S  xsane	#后台服务端</p>
+<h2 id="xx-net">XX-net</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  supervisor
+  <span class="c1"># 手动启动</span>
+  /usr/bin/supervisord -c /etc/supervisor.conf
+  <span class="c1"># 手动关闭</span>
+  /usr/bin/supervisorctl stop all
+  <span class="nb">kill</span> pid
+  <span class="c1"># 添加自启动服务</span>
+  systemctl <span class="nb">enable</span> supervisord.service
+  or
+  systemctl start/restart/stop supervisord.service
+
+  supervisorctl start/stop zhoujyAADADWRAZCQ
+  supervisorctl start/stop all
+
+  <span class="c1"># 在/etc/supervisor/conf.d 文件夹新建文件 shadowsocks.conf :</span>
+  :<span class="s">&lt;&lt;EOF
+</span><span class="s">  [program:shadowsocks]
+</span><span class="s">command = ssserver -c /var/shadowsocks/shadowsocks.json
+</span><span class="s">user = root
+</span><span class="s">autostart = true
+</span><span class="s">autoresart = true
+</span><span class="s">stderr_logfile = /var/shadowsocks/shadowsocks.stderr.log
+</span><span class="s">stdout_logfile = /var/shadowsocks/shadowsocks.stdout.log
+</span><span class="s">EOF</span>
+
+  <span class="c1"># 后台运行：</span>
+  sudo supervisorctl reread
+  sudo supervisorctl update
+  sudo supervisorctl start shadowsocks
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="theme">theme</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 图标</span>
+yaourt -S numix-circle-icon-theme
+pacman -S papirus-icon-theme
+
+<span class="c1"># 主题</span>
+yaourt -S gtk-theme-arc-git
+
+<span class="c1"># 字体:</span>
+xfce4-appearance-settings
+style:
+  vertex-maia-light
+Font:
+  cantarell
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="wps-font">WPS-font</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"> sudo cp * /usr/share/fonts
+ <span class="c1"># 生成字体索引：</span>
+ sudo mkfontscale
+ sudo mkfontdir
+
+ <span class="c1"># 更新字体缓存：</span>
+ sudo fc-cache -fv
+
+ PKGBUILD
+<span class="c1"># 编译安装 PKGBUILD</span>
+ makepkg -i  <span class="c1">#安装</span>
+ makepkg   <span class="c1">#不立即安装  makepkg -fi  重新编译再安装</span>
+
+ 若文件存在：
+ makepkg，然后 pacman -U --force file.pkg.tar.xz 强制覆盖安装（file.pkg.tar.xz 就是 makepkg 生成的本地安装包
+
+ asciiquarium
+ cmatrix
+
+ Manjaro
+  ████████  ████████  ████████     WM Theme: X-Arc-White
+  ████████  ████████  ████████     GTK Theme: Arc <span class="o">[</span>GTK2<span class="o">]</span>
+  ████████  ████████  ████████     Icon Theme: Enlightenment-X
+
+ cairo-dock
+ dockbarx
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="conky">conky</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">API:a2f877a8682f22d1da079a5617de304e
+ID:1809104 haidian
+ID:1796236 shanghai
+<span class="nb">kill</span> <span class="k">$(</span>ps aux <span class="p">|</span> grep conky <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span>
+
+conky -c /home/wenhuas/Harmattan/.harmattan-themes/Transparent/God-Mode/.conkyrc  <span class="c1">#透明 黑白</span>
+conky -c /home/wenhuas/Harmattan/.harmattan-themes/Glass/God-Mode/.conkyrc  <span class="c1">#透明 黑白 较黑</span>
+
+conky -c /home/wenhuas/Harmattan/.harmattan-themes/Flatts/God-Mode/normal-mode/.conkyrc <span class="c1">#多彩</span>
+conky -c /home/wenhuas/Harmattan/.harmattan-themes/Elementary/God-Mode/normal-mode/.conkyrc
+conky -c /home/wenhuas/Harmattan/.harmattan-themes/Nord/God-Mode/normal-mode/.conkyrc
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="virbox">virbox</h2>
+<blockquote>
+<p>共享文件
+net use e：\\vboxsvr
+net use e: /del</p>
+</blockquote>
+<h2 id="docker">docker</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -Syu <span class="c1"># update system first</span>
+pacman -S docker
+
+<span class="c1"># 默认只有root用户可以管理Docker，可运行下列命令将当前用户赋予管理权限</span>
+sudo usermod -aG docker <span class="nv">$USER</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>默认的镜像下载站点是在海外，切换到国内镜像站点可以提高下载速度。</p>
+<p>打开或新建/etc/docker/daemon.json 文件，将镜像地址添加到 registry-mirrors 数组里即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  <span class="o">{</span>
+    <span class="s2">&#34;registry-mirrors&#34;</span>: <span class="o">[</span>
+        <span class="s2">&#34;https://registry.docker-cn.com&#34;</span>
+    <span class="o">]</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="selinux">selinux</h2>
+<p>Manjaro 防火墙默认关闭的，并且没有安装 selinux.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">systemctl stop iptables <span class="c1">#关闭防火墙</span>
+setenforce <span class="m">0</span> <span class="c1">#关闭 selinux</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>关闭 selinux 开机启动:</p>
+<p><code>vim /etc/selinux/config</code>, 将 <code>SELINUX=enforcing</code> 改为 <code>SELINUX=disabled</code></p>
+<h2 id="bt-panel">bt_panel</h2>
+<h3 id="install">install</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">curl -sSO http://download.bt.cn/install/install_panel.sh <span class="o">&amp;&amp;</span>sudo bash ./install_panel.sh
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="systemctl">systemctl</h3>
+<p>/etc/systemd/system/bt-local.service</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Unit</span><span class="p">]</span>
+<span class="nx">Description</span><span class="p">=</span><span class="s2">&#34;bt.local Compatibility&#34;</span>
+
+<span class="p">[</span><span class="nx">Service</span><span class="p">]</span>
+<span class="nx">RestartSec</span><span class="p">=</span><span class="mi">30</span><span class="nx">s</span>
+<span class="nx">Type</span><span class="p">=</span><span class="nx">simple</span>
+<span class="nx">ExecStart</span><span class="p">=</span><span class="err">/</span><span class="nx">etc</span><span class="err">/</span><span class="nx">bt</span><span class="p">.</span><span class="nx">local</span> <span class="nx">start</span>
+<span class="c">#Restart=always</span>
+<span class="nx">RemainAfterExit</span><span class="p">=</span><span class="nx">yes</span>
+<span class="nx">SysVStartPriority</span><span class="p">=</span><span class="mi">99</span>
+
+<span class="p">[</span><span class="nx">Install</span><span class="p">]</span>
+<span class="nx">WantedBy</span><span class="p">=</span><span class="nx">multi-user</span><span class="p">.</span><span class="nx">target</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ag">ag</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -S the_silver_searcher
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="certbox">certbox</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pacman -S certbot
+pip install certbot-nginx
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="tools">tools</h2>
+<h3 id="d41d8c"></h3>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

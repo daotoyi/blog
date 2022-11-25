@@ -6,17 +6,22 @@
     <description>Recent content in hotkey on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Apr 2022 12:29:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://daotoyi.github.io/tags/hotkey/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 02 Apr 2022 12:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/hotkey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sublime Hotkey</title>
       <link>https://daotoyi.github.io/post/sublime-hotkey/</link>
       <pubDate>Sat, 02 Apr 2022 12:29:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/sublime-hotkey/</guid>
+      <description>通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl + Shift + P：调出命令板（Command Palette</description>
+    </item>
+    
+    <item>
+      <title>Sublime Hotkey</title>
+      <link>https://daotoyi.github.io/posts/sublime-hotkey/</link>
+      <pubDate>Sat, 02 Apr 2022 12:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/sublime-hotkey/</guid>
       <description>通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl + Shift + P：调出命令板（Command Palette</description>
     </item>
     

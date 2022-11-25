@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="WordPress 笔记" />
 <meta property="og:description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-15T22:26:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="WordPress 笔记">
-<meta itemprop="description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建">
-<meta itemprop="datePublished" content="2022-03-15T22:26:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建"><meta itemprop="datePublished" content="2022-03-15T22:26:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="1801">
-
-
-
 <meta itemprop="keywords" content="WordPress," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="WordPress 笔记"/>
 <meta name="twitter:description" content="VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建"/>
@@ -209,8 +206,7 @@
 <li>附带邮件营销功能的建站工具：Constant Contact Website Builder</li>
 <li>最适合大型商店的建站工具：BigCommerce</li>
 </ul>
-<figure>
-    <img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202203141616408.png"/> 
+<figure><img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202203141616408.png"/>
 </figure>
 
 <h2 id="wordpress-3-types">WordPress 3 types</h2>
@@ -243,7 +239,7 @@
 <p>mariadb 是 mysql 的替代品,几乎兼容(mysql 被 orcal 收购后有商业化不开源的风险)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -252,7 +248,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mariadb</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mariadb</span>
 docker run --name wpdb --env <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>wordpress -d mariadb
 docker <span class="nb">exec</span> -it wpdb bash
 
@@ -264,7 +260,7 @@ docker <span class="nb">exec</span> -it wpdb bash
 </div><h4 id="install-wordpress">install wordpress</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -278,7 +274,7 @@ docker <span class="nb">exec</span> -it wpdb bash
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1)使用官方的wordpress, 镜像is oud.io</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1)使用官方的wordpress, 镜像is oud.io</span>
 docker pull daocloud.io/daocloud/dao-wordpress:latest
 
 <span class="c1"># 2)use wordpress官方镜像</span>
@@ -298,10 +294,10 @@ docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ docker run --name some-wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>10.1.2.3:3306  -e <span class="nv">WORDPRESS_DB_USER</span><span class="o">=</span>... -e <span class="nv">WORDPRESS_DB_PASSWORD</span><span class="o">=</span>... -d wordpress
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ docker run --name some-wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>10.1.2.3:3306  -e <span class="nv">WORDPRESS_DB_USER</span><span class="o">=</span>... -e <span class="nv">WORDPRESS_DB_PASSWORD</span><span class="o">=</span>... -d wordpress
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -318,7 +314,7 @@ docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
 <p>docker-compose.yml</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -346,32 +342,32 @@ docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.3&#39;</span><span class="w">
-</span><span class="w"></span>services<span class="p">:</span><span class="w">
-</span><span class="w">   </span>db<span class="p">:</span><span class="w">
-</span><span class="w">     </span><span class="k">image</span><span class="p">:</span><span class="w"> </span>mysql<span class="p">:</span><span class="m">5.7</span><span class="w">
-</span><span class="w">     </span>volumes<span class="p">:</span><span class="w">
-</span><span class="w">       </span>- db_data<span class="p">:</span>/var/lib/mysql<span class="w">
-</span><span class="w">     </span><span class="k">restart</span><span class="p">:</span><span class="w"> </span>always<span class="w">
-</span><span class="w">     </span>environment<span class="p">:</span><span class="w">
-</span><span class="w">       </span><span class="k">MYSQL_ROOT_PASSWORD</span><span class="p">:</span><span class="w"> </span>somewordpress<span class="w">
-</span><span class="w">       </span><span class="k">MYSQL_DATABASE</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
-</span><span class="w">       </span><span class="k">MYSQL_USER</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
-</span><span class="w">       </span><span class="k">MYSQL_PASSWORD</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
-</span><span class="w">   </span>wordpress<span class="p">:</span><span class="w">
-</span><span class="w">     </span>depends_on<span class="p">:</span><span class="w">
-</span><span class="w">       </span>- db<span class="w">
-</span><span class="w">     </span><span class="k">image</span><span class="p">:</span><span class="w"> </span>wordpress<span class="p">:</span>latest<span class="w">
-</span><span class="w">     </span>ports<span class="p">:</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.3&#39;</span><span class="w">
+</span><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span><span class="w">   </span><span class="nt">db</span><span class="p">:</span><span class="w">
+</span><span class="w">     </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mysql:5.7</span><span class="w">
+</span><span class="w">     </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">       </span>- <span class="l">db_data:/var/lib/mysql</span><span class="w">
+</span><span class="w">     </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span><span class="w">     </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">       </span><span class="nt">MYSQL_ROOT_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l">somewordpress</span><span class="w">
+</span><span class="w">       </span><span class="nt">MYSQL_DATABASE</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress</span><span class="w">
+</span><span class="w">       </span><span class="nt">MYSQL_USER</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress</span><span class="w">
+</span><span class="w">       </span><span class="nt">MYSQL_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress</span><span class="w">
+</span><span class="w">   </span><span class="nt">wordpress</span><span class="p">:</span><span class="w">
+</span><span class="w">     </span><span class="nt">depends_on</span><span class="p">:</span><span class="w">
+</span><span class="w">       </span>- <span class="l">db</span><span class="w">
+</span><span class="w">     </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress:latest</span><span class="w">
+</span><span class="w">     </span><span class="nt">ports</span><span class="p">:</span><span class="w">
 </span><span class="w">       </span>- <span class="s2">&#34;8000:80&#34;</span><span class="w">
-</span><span class="w">     </span><span class="k">restart</span><span class="p">:</span><span class="w"> </span>always<span class="w">
-</span><span class="w">     </span>environment<span class="p">:</span><span class="w">
-</span><span class="w">       </span><span class="k">WORDPRESS_DB_HOST</span><span class="p">:</span><span class="w"> </span>db<span class="p">:</span><span class="m">3306</span><span class="w">
-</span><span class="w">       </span><span class="k">WORDPRESS_DB_USER</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
-</span><span class="w">       </span><span class="k">WORDPRESS_DB_PASSWORD</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
-</span><span class="w">       </span><span class="k">WORDPRESS_DB_NAME</span><span class="p">:</span><span class="w"> </span>wordpress<span class="w">
-</span><span class="w"></span>volumes<span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">db_data</span><span class="p">:</span><span class="w"> </span>{}<span class="w">
+</span><span class="w">     </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span><span class="w">     </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">       </span><span class="nt">WORDPRESS_DB_HOST</span><span class="p">:</span><span class="w"> </span><span class="l">db:3306</span><span class="w">
+</span><span class="w">       </span><span class="nt">WORDPRESS_DB_USER</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress</span><span class="w">
+</span><span class="w">       </span><span class="nt">WORDPRESS_DB_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress</span><span class="w">
+</span><span class="w">       </span><span class="nt">WORDPRESS_DB_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">wordpress</span><span class="w">
+</span><span class="w"></span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">db_data</span><span class="p">:</span><span class="w"> </span>{}<span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div></li>
@@ -382,14 +378,14 @@ docker run --name WordPress --link wpdb:mysql -p 8080:80 -d wordpress
 <p>useage</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker-compose up -d   <span class="c1"># startup</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker-compose up -d   <span class="c1"># startup</span>
 docker-compose -f docker-compose.wordpress.yml up -d <span class="c1">#后台运行</span>
 
 docker-compose down    <span class="c1"># stop</span>
@@ -490,8 +486,8 @@ docker-compose -f docker-compose.wordpress.yml down <span class="c1">#停止并�
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -584,7 +580,7 @@ docker-compose -f docker-compose.wordpress.yml down <span class="c1">#停止并�
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

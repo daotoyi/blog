@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/linux-terminal-show-color/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux 终端输出颜色" />
 <meta property="og:description" content="ANSI 转义序列 终端不仅能够显示程序的输出。它可以显示移动光标、为文本着色、清除整个屏幕，并且不仅仅是静态输出。比如颜色字体或者闪烁的光标或者是进" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/linux-terminal-show-color/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-terminal-show-color/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-08T10:24:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Linux 终端输出颜色">
-<meta itemprop="description" content="ANSI 转义序列 终端不仅能够显示程序的输出。它可以显示移动光标、为文本着色、清除整个屏幕，并且不仅仅是静态输出。比如颜色字体或者闪烁的光标或者是进">
-<meta itemprop="datePublished" content="2022-10-08T10:24:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
-<meta itemprop="wordCount" content="812">
-
-
-
+<meta itemprop="description" content="ANSI 转义序列 终端不仅能够显示程序的输出。它可以显示移动光标、为文本着色、清除整个屏幕，并且不仅仅是静态输出。比如颜色字体或者闪烁的光标或者是进"><meta itemprop="datePublished" content="2022-10-08T10:24:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
+<meta itemprop="wordCount" content="810">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux 终端输出颜色"/>
 <meta name="twitter:description" content="ANSI 转义序列 终端不仅能够显示程序的输出。它可以显示移动光标、为文本着色、清除整个屏幕，并且不仅仅是静态输出。比如颜色字体或者闪烁的光标或者是进"/>
@@ -139,7 +136,7 @@
         <div class="post-category">
             <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 812 words </span>
+          <span class="more-meta"> 810 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -188,8 +185,7 @@
 </ul>
 <h2 id="16-色">16 色</h2>
 <h3 id="示例">示例</h3>
-<figure>
-    <img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202210030952682.png"/> 
+<figure><img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202210030952682.png"/>
 </figure>
 
 <p>16 色的配色方案包含两个颜色设置，每个 8 色，一个是背景色一个是字体色（也即前景色）.</p>
@@ -221,7 +217,7 @@
 <p>－ 颜色输出的模块</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -234,23 +230,23 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">colorama</span> <span class="kn">import</span> <span class="n">init</span><span class="p">,</span> <span class="n">Fore</span><span class="p">,</span> <span class="n">Back</span><span class="p">,</span> <span class="n">Style</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">colorama</span> <span class="kn">import</span> <span class="n">init</span><span class="p">,</span> <span class="n">Fore</span><span class="p">,</span> <span class="n">Back</span><span class="p">,</span> <span class="n">Style</span>
 
-<span class="c1"># Initializes Colorama</span>
-<span class="n">init</span><span class="p">(</span><span class="n">autoreset</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c1"># Initializes Colorama</span>
+<span class="n">init</span><span class="p">(</span><span class="n">autoreset</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span> <span class="o">+</span> <span class="n">Back</span><span class="o">.</span><span class="n">YELLOW</span> <span class="o">+</span> <span class="n">Fore</span><span class="o">.</span><span class="n">RED</span> <span class="o">+</span> <span class="s2">&#34;from colorama import init, Fore, Back, Style</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span> <span class="o">+</span> <span class="n">Back</span><span class="o">.</span><span class="n">YELLOW</span> <span class="o">+</span> <span class="n">Fore</span><span class="o">.</span><span class="n">RED</span> <span class="o">+</span> <span class="s2">&#34;from colorama import init, Fore, Back, Style</span>
 
-<span class="c1"># Initializes Colorama</span>
-<span class="n">init</span><span class="p">(</span><span class="n">autoreset</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c1"># Initializes Colorama</span>
+<span class="n">init</span><span class="p">(</span><span class="n">autoreset</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span> <span class="o">+</span> <span class="n">Back</span><span class="o">.</span><span class="n">YELLOW</span> <span class="o">+</span> <span class="n">Fore</span><span class="o">.</span><span class="n">RED</span> <span class="o">+</span> <span class="s2">&#34;Colorama &#34;</span><span class="p">)</span><span class="s2">&#34;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Style</span><span class="o">.</span><span class="n">BRIGHT</span> <span class="o">+</span> <span class="n">Back</span><span class="o">.</span><span class="n">YELLOW</span> <span class="o">+</span> <span class="n">Fore</span><span class="o">.</span><span class="n">RED</span> <span class="o">+</span> <span class="s2">&#34;Colorama &#34;</span><span class="p">)</span><span class="s2">&#34;)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>－ 变色函数</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -290,7 +286,7 @@
 </span><span class="lnt">38
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">background_color_dict</span><span class="o">=</span><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">background_color_dict</span><span class="o">=</span><span class="p">{</span>
     <span class="s1">&#39;BLACK&#39;</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span>
     <span class="s1">&#39;RED&#39;</span><span class="p">:</span><span class="mi">41</span><span class="p">,</span>
     <span class="s1">&#39;GREEN&#39;</span><span class="p">:</span><span class="mi">42</span><span class="p">,</span>
@@ -326,23 +322,22 @@
     <span class="n">style_code</span> <span class="o">=</span> <span class="n">style_dict</span><span class="p">[</span><span class="n">style</span><span class="p">]</span>
     <span class="n">text_color_code</span> <span class="o">=</span> <span class="n">text_color_dict</span><span class="p">[</span><span class="n">text_color</span><span class="p">]</span>
     <span class="n">back_color_code</span> <span class="o">=</span> <span class="n">background_color_dict</span><span class="p">[</span><span class="n">background_color</span><span class="p">]</span>
-    <span class="n">print_text</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="se">\033</span><span class="s1">[{style_code};{text_color_code};{back_color_code}m{str}</span><span class="se">\033</span><span class="s1">[0m&#39;</span>
+    <span class="n">print_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\033</span><span class="s1">[</span><span class="si">{</span><span class="n">style_code</span><span class="si">}</span><span class="s1">;</span><span class="si">{</span><span class="n">text_color_code</span><span class="si">}</span><span class="s1">;</span><span class="si">{</span><span class="n">back_color_code</span><span class="si">}</span><span class="s1">m</span><span class="si">{</span><span class="nb">str</span><span class="si">}</span><span class="se">\033</span><span class="s1">[0m&#39;</span>
     <span class="k">return</span> <span class="n">print_text</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="256-色">256 色</h2>
 <h3 id="示例">示例</h3>
-<figure>
-    <img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202210030953406.png"/> 
+<figure><img src="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202210030953406.png"/>
 </figure>
 
 <p>标注显示模式则是 38 或者 48 选择一个表名后面颜色代码是前景色还是背景色。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[48;5;160m</span><span class="se">\033</span><span class="s2">[38;5;231m背景前景修改ABCDE </span><span class="se">\033</span><span class="s2">[38;5;226m前景修改ABCDE</span><span class="se">\033</span><span class="s2">[0;0m&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[48;5;160m</span><span class="se">\033</span><span class="s2">[38;5;231m背景前景修改ABCDE </span><span class="se">\033</span><span class="s2">[38;5;226m前景修改ABCDE</span><span class="se">\033</span><span class="s2">[0;0m&#34;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -350,7 +345,7 @@
 <p>输出一下所有的前景颜色</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -363,17 +358,17 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">print_colors_256</span><span class="p">(</span><span class="n">color_code</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">print_colors_256</span><span class="p">(</span><span class="n">color_code</span><span class="p">):</span>
     <span class="n">num1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">color_code</span><span class="p">)</span>
     <span class="n">num2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">color_code</span><span class="p">)</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">color_code</span> <span class="o">%</span> <span class="mi">16</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[38;5;{num1}m {num2} </span><span class="se">\033</span><span class="s2">[0;0m</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[38;5;</span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s2">m </span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s2"> </span><span class="se">\033</span><span class="s2">[0;0m</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span><span class="p">(</span><span class="n">f</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[38;5;{num1}m {num2} </span><span class="se">\033</span><span class="s2">[0;0m&#34;</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[38;5;</span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s2">m </span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s2"> </span><span class="se">\033</span><span class="s2">[0;0m&#34;</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s2">&#34;256 color scheme:&#34;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">print_colors_256</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">256</span><span class="p">)]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;256 color scheme:&#34;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">print_colors_256</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">256</span><span class="p">)]))</span>
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -401,8 +396,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -413,7 +408,7 @@
       <nav class="post-nav">
         <a class="prev" href="/post/windows-faq/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">FAQ</span>
+            <span class="prev-text nav-default">Windows FAQ</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         <a class="next" href="/post/hardware-sgcc/">
@@ -493,7 +488,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

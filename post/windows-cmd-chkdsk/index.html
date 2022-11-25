@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/windows-cmd-chkdsk/" />
@@ -35,23 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Windows chkdsk" />
 <meta property="og:description" content="简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/windows-cmd-chkdsk/" />
-<meta property="article:published_time" content="2022-08-04T09:24:37+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="og:url" content="https://daotoyi.github.io/post/windows-cmd-chkdsk/" /><meta property="article:section" content="post" />
+
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Windows chkdsk">
 <meta itemprop="description" content="简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32">
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="786">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Windows chkdsk"/>
 <meta name="twitter:description" content="简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32"/>
@@ -192,20 +190,18 @@ filename 仅用于 FAT/FAT32: 指定要检查是否有碎片的文件。
 <h3 id="从命令提示符运行磁盘检查命令">从命令提示符运行磁盘检查命令</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bat" data-lang="bat">chkdsk k: /f
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat">chkdsk k: /f
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="从分区属性运行检查磁盘">从分区属性运行检查磁盘</h3>
-<figure>
-    <img src="https://www.disktool.cn/assets/images6540/other/check-file-system-error.png"/> 
+<figure><img src="https://www.disktool.cn/assets/images6540/other/check-file-system-error.png"/>
 </figure>
 
 <h3 id="使用免费分区软件启动-chkdsk-dot-exe-工具-推荐">使用免费分区软件启动 chkdsk.exe 工具（推荐）</h3>
-<figure>
-    <img src="https://www.disktool.cn/assets/images6540/check-partition/check-partition.png"/> 
+<figure><img src="https://www.disktool.cn/assets/images6540/check-partition/check-partition.png"/>
 </figure>
 
 <h3 id="ref">Ref</h3>
@@ -218,31 +214,31 @@ filename 仅用于 FAT/FAT32: 指定要检查是否有碎片的文件。
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span> 1456.424000<span class="o">]</span> FAT-fs <span class="o">(</span>sdb4<span class="o">)</span>: error, fat_free_clusters: deleting FAT entry beyond EOF
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span> 1456.424000<span class="o">]</span> FAT-fs <span class="o">(</span>sdb4<span class="o">)</span>: error, fat_free_clusters: deleting FAT entry beyond EOF
 <span class="o">[</span> 1456.440000<span class="o">]</span> FAT-fs <span class="o">(</span>sdb4<span class="o">)</span>: Filesystem has been <span class="nb">set</span> read-only
 </code></pre></td></tr></table>
 </div>
 </div><p>在运行一些 shell 时报错, 是因为以上原因导致系统文件损坏。文件被截断。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">/bin/sh: Syntax error: Unterminated quoted string
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">/bin/sh: Syntax error: Unterminated quoted string
 </code></pre></td></tr></table>
 </div>
 </div><p>在更换文件时，一些文件大小为 0，且无法被删除。可使用 windows chdsk 检查修复，之后 u 盘恢复正常。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bat" data-lang="bat">chkdsk k: #只检查不修复
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat">chkdsk k: #只检查不修复
 chkdsk k: /f
 </code></pre></td></tr></table>
 </div>
@@ -257,8 +253,8 @@ chkdsk k: /f
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -349,7 +345,7 @@ chkdsk k: /f
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

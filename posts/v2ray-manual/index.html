@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>v2ray 笔记 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/v2ray-manual/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="v2ray 笔记" />
+<meta property="og:description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/v2ray-manual/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-05T17:20:00+00:00" />
+<meta property="article:modified_time" content="2022-05-07T12:42:25+00:00" />
+
+<meta itemprop="name" content="v2ray 笔记">
+<meta itemprop="description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu"><meta itemprop="datePublished" content="2022-03-05T17:20:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-07T12:42:25+00:00" />
+<meta itemprop="wordCount" content="6603">
+<meta itemprop="keywords" content="v2ray," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="v2ray 笔记"/>
+<meta name="twitter:description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="introduction">introduction</h2>
+<ul>
+<li><a href="https://www.v2ray.com/">V2Ray 用户手册</a></li>
+<li><a href="https://selierlin.github.io/v2ray/">v2ray简易手册</a></li>
+<li><a href="https://github.com/v2ray/v2ray-core">V2Ray 项目地址</a></li>
+</ul>
+<h2 id="tls-xtls">TLS/XTLS</h2>
+<h3 id="tls">TLS</h3>
+<p>(Transport Layer Security)</p>
+<p>译作: <strong>传输层安全性协议</strong> (<a href="https://wuu.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8%E6%80%A7%E5%8D%8F%E8%AE%AE">wikipedia:传输层安全性协议</a>)</p>
+<p>前身 *安全套接层*（Secure Sockets Layer，缩写：SSL）.</p>
+<h3 id="xtls">XTLS</h3>
+<p>XTLS 官方库 的介绍仅有一句话：THE FUTURE。</p>
+<ul>
+<li>
+<p><strong>XTLS 的原理：</strong></p>
+<p>使用 TLS 代理时，https 数据其实经过了两层 TLS：外层是代理的 TLS，内层是 https 的 TLS。XTLS 无缝拼接了内外两条货真价实的 TLS，使得代理几乎无需再对 https 流量进行数据加解密，只起到流量中转的作用，极大的提高了性能。</p>
+</li>
+<li>
+<p><a href="https://vpsgongyi.com/p/2422/">V2ray 的 VLESS 协议介绍和使用教程</a></p>
+</li>
+</ul>
+<h2 id="websocket">WebSocket</h2>
+<ul>
+<li>HTTP 协议有一个缺陷：通信只能由客户端发起。</li>
+<li>WebSocket:服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，属于服务器推送技术的一种.</li>
+</ul>
+<p><a href="https://www.ruanyifeng.com/blog/2017/05/websocket.html">WebSocket教程</a></p>
+<h2 id="shadowsocks">Shadowsocks</h2>
+<p>V2Ray 集成有 Shadowsocks 模块的，用 V2Ray 配置成 Shadowsocks 服务器或者 Shadowsocks 客户端都是可以的，兼容 Shadowsocks-libev。</p>
+<h3 id="v2ray-vs-shadowsocks">v2ray VS Shadowsocks</h3>
+<ul>
+<li>Shadowsocks 只是一个简单的代理工具，而 V2Ray 定位为一个平台，任何开发者都可以利用 V2Ray 提供的模块开发出新的代理软件。</li>
+<li>V2Ray 本身只是一个内核，V2Ray 上的图形客户端大多是调用 V2Ray 内核套一个图形界面的外壳</li>
+<li>V2Ray 不像 Shadowsocks 那样有统一规定的 URL 格式，所以各个 V2Ray 图形客户端的分享链接/二维码不一定通用。</li>
+<li>V2Ray 对于时间有比较严格的要求，要求服务器和客户端时间差绝对值不能超过 2 分钟,还好 V2Ray 并不要求时区一致。</li>
+<li>与 Shadowsocks 不同，从软件上 V2Ray 不区分服务器版和客户端版，也就是说在服务器和客户端运行的 V2Ray 是同一个软件，区别只是配置文件的不同。</li>
+<li>可以用 V2Ray 配置成 Shadowsocks 服务器或者 Shadowsocks 客户端都是可以的，兼容 Shadowsocks-libev.</li>
+</ul>
+<h2 id="vmess-vless">Vmess/Vless</h2>
+<h3 id="vmess">Vmess</h3>
+<p>VMess 协议是由 V2Ray 原创并使用于 V2Ray 的加密传输协议.</p>
+<h3 id="vless">Vless</h3>
+<h4 id="简介">简介</h4>
+<p>V2ray 官方对 VLESS 协议的定义是“性能至上、可扩展性空前，目标是全场景终极协议”。</p>
+<p>VLESS 是一种无状态的轻量级数据传输协议，被定义为下一代 V2ray 数据传输协议。</p>
+<p>VLESS 命名源自“less is more”,与 VMESS 协议相同，VLESS 使用 UUID 进行身份验证，配置分入栈和出栈两部分，可用在客户端和服务端。.</p>
+<h4 id="总结">总结</h4>
+<p>VLESS 协议本身不自带加密，用于翻墙时不能单独使用。由于 XTLS 的引入，目前 VLESS 协议有如下玩法：</p>
+<ul>
+<li>VLESS + TCP + TLS</li>
+<li>VLESS + TCP +TLS +  WS</li>
+<li>VLESS + TCP + XTLS</li>
+<li>VLESS + HTTP2 + h2c</li>
+</ul>
+<h3 id="vless-与-vmess-区别">Vless 与 VMESS 区别</h3>
+<ul>
+<li>VLESS 协议 <strong>不依赖于系统时间，不使用 alterId</strong> 。</li>
+<li>VLESS 协议不带加密，用于科学上网时要配合 TLS 等加密手段；</li>
+<li>VLESS 协议 <strong>支持分流和回落</strong> ，比 Nginx 分流转发更简洁、高效和安全；</li>
+<li>使用 TLS 的情况下，VLESS 协议比 VMESS <strong>速度更快</strong> ，性能更好，因为 VLESS 不会对数据进行加解密；</li>
+<li>V2ray 官方对 VLESS 的期望更高，约束也更严格。例如要求客户端统一使用 VLESS 标识，而不是 Vless、vless 等名称；VLESS 分享链接标准将由官方统一制定（尚未出炉）；</li>
+<li>VLESS 协议的加密更灵活，不像 VMESS 一样高度耦合（仅对开发者有用）</li>
+</ul>
+<h2 id="install">install</h2>
+<p>V2Ray 的安装有脚本安装、手动安装、编译安装 3 种方式.</p>
+<ul>
+<li>脚本安装</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">##  DISCARDED</span>
+<span class="c1"># wget https://install.direct/go.sh # 下载脚本</span>
+<span class="c1"># sudo bash go.sh</span>
+<span class="c1"># sudo systemctl start v2ray</span>
+
+<span class="c1">## 安裝執行檔和 .dat 資料檔</span>
+bash &lt;<span class="o">(</span>curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh<span class="o">)</span>
+
+<span class="c1"># 只更新 .dat 資料檔</span>
+bash &lt;<span class="o">(</span>curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh<span class="o">)</span>
+
+<span class="c1"># 移除 V2Ray</span>
+bash &lt;<span class="o">(</span>curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh<span class="o">)</span> --remove
+</code></pre></td></tr></table>
+</div>
+</div><p>配置文件路径为 <code>/etc/v2ray/config.json</code></p>
+<p>V2Ray 的方法是 <strong>再次执行安装脚本</strong> ！</p>
+<h2 id="docker-install">docker install</h2>
+<ul>
+<li>docker install v2ray</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># docker pull v2ray/official</span>
+<span class="c1"># docker pull v2ray/official:latest</span>
+
+<span class="c1"># v2ray change name v2fly</span>
+<span class="c1"># https://hub.docker.com/r/v2fly/v2fly-core/tags</span>
+docker pull v2fly/v2fly-core
+docker pull v2fly/v2fly-core:v4.33.0
+
+mkdir /etc/v2ray
+<span class="c1"># mkdir /var/log/v2ray</span>
+
+docker container start v2ray //启动V2ray
+docker container stop v2ray //停止V2ray
+docker container restart v2ray //重启V2ray
+
+docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core  v2ray -config<span class="o">=</span>/etc/v2ray/config.json
+docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core:v4.34.0  v2ray -config<span class="o">=</span>/etc/v2ray/config.json
+<span class="c1">#https://hub.docker.com/r/v2fly/v2fly-core/tags</span>
+
+docker run <span class="se">\
+</span><span class="se"></span>       --restart<span class="o">=</span>always <span class="se">\
+</span><span class="se"></span>       --name<span class="o">=</span>v2ray <span class="se">\
+</span><span class="se"></span>       --net<span class="o">=</span>host <span class="se">\
+</span><span class="se"></span>       -v /etc/v2ray/config.json:/etc/v2ray/config.json <span class="se">\
+</span><span class="se"></span>       -v /var/log/v2ray:/var/log/v2ray <span class="se">\
+</span><span class="se"></span>       -i -t -d <span class="se">\
+</span><span class="se"></span>       v2ray/official:latest
+<span class="c1"># 升级</span>
+docker container stop v2ray
+docker container rm v2ray
+docker pull v2ray/official
+<span class="c1"># docker run -it -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2ray/official v2ray -config=/etc/v2ray/config.json</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="v2ray-cmd-line">v2ray cmd-line</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># 进入docker内部</span>
+<span class="na">docker exec -it v2ray /bin/sh</span>
+
+<span class="na">v2ray info 查看 V2Ray 配置信息</span>
+<span class="na">v2ray config 修改 V2Ray 配置</span>
+<span class="na">v2ray link 生成 V2Ray 配置文件链接</span>
+<span class="na">v2ray infolink 生成 V2Ray 配置信息链接</span>
+<span class="na">v2ray qr 生成 V2Ray 配置二维码链接</span>
+<span class="na">v2ray ss 修改 Shadowsocks 配置</span>
+<span class="na">v2ray ssinfo 查看 Shadowsocks 配置信息</span>
+<span class="na">v2ray ssqr 生成 Shadowsocks 配置二维码链接</span>
+<span class="na">v2ray status 查看 V2Ray 运行状态</span>
+<span class="na">v2ray start 启动 V2Ray</span>
+<span class="na">v2ray stop 停止 V2Ray</span>
+<span class="na">v2ray restart 重启 V2Ray</span>
+<span class="na">v2ray log 查看 V2Ray 运行日志</span>
+<span class="na">v2ray update 更新 V2Ray</span>
+<span class="na">v2ray update.sh 更新 V2Ray 管理脚本</span>
+<span class="na">v2ray uninstall 卸载 V2Ray</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="configure">configure</h2>
+<p><code>/etc/v2ray/config.json</code>
+<a href="https://ansongd.gitbooks.io/v2ray/content/v2rayji-ben-pei-zhi.html">V2ray 基本配置方法</a></p>
+<h3 id="formate">formate</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;outbound&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;inboundDetour&#34;</span><span class="o">:</span> <span class="p">[],</span>
+    <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[],</span>
+    <span class="s2">&#34;routing&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;transport&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;dns&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;policy&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;stats&#34;</span><span class="o">:</span> <span class="p">{},</span>
+    <span class="s2">&#34;api&#34;</span><span class="o">:</span> <span class="p">{},</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="log">log</h3>
+<ul>
+<li>access：将访问的记录保存到文件中，这个选项的值是要保存到的文件的路径</li>
+<li>error：将错误的记录保存到文件中，这个选项的值是要保存到的文件的路径</li>
+<li>error、access 字段留空，并且在手动执行 V2Ray 时，V2Ray 会将日志输出在 stdout 即命令行中（terminal、cmd 等），便于排错</li>
+</ul>
+<h3 id="route"><a href="https://www.bookstack.cn/read/V2RAY/chapter_02-03_routing.md">route</a></h3>
+<p>4 种 outbound 协议：</p>
+<ul>
+<li>用于代理的 VMess 和 Shadowsocks 协议</li>
+<li>用于直连的 freedom 协议</li>
+<li>以及用于拦截的 blackhole 协议。</li>
+</ul>
+<p>domainStrategy 支持</p>
+<ol>
+<li>
+<p>&ldquo;AsIs&rdquo;：针对域名生效
+只使用域名进行路由选择。
+快速解析，不精确分流。默认值。</p>
+</li>
+<li>
+<p>&ldquo;IPIfNonMatch&rdquo;：针对 IP 地址生效
+当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）再次进行匹配.</p>
+<ul>
+<li>
+<p>当一个域名有多个 A 记录时，会尝试匹配所有的 A 记录，直到其中一个与某个规则匹配为止；</p>
+</li>
+<li>
+<p>解析后的 IP 仅在路由选择时起作用，转发的数据包中依然使用原始域名;</p>
+<p>理论上解析比”AsIs”稍慢，但使用中通常不会觉察到。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>&ldquo;IPOnDemand&rdquo;：针对 IP 地址生效
+当匹配时碰到任何基于 IP 的规则，将域名立即解析为 IP 进行匹配；</p>
+<p>解析最精确，也最慢。</p>
+</li>
+</ol>
+<p>如果在自定义路由设置规则时，添加了匹配 IP 的路由代理规则，比如 geoip:cn、geoip:private，或者直接添加的 IP 地址规则，须选择位于中间的”IPIfNonMatch”，不然，匹配 IP 地址的路由规则不会生效。</p>
+<p>rules 属性有两个规则：</p>
+<ol>
+<li>
+<p>type 支持</p>
+<ul>
+<li>&ldquo;field（全属 ）&rdquo;</li>
+<li>&ldquo;chinaip（中国境内的 IP ）&rdquo;</li>
+<li>&ldquo;chinasites（中国境内的域名）&rdquo;</li>
+</ul>
+</li>
+<li>
+<p>outboundTag 支持</p>
+<ul>
+<li>&ldquo;direct(直连)&rdquo;</li>
+<li>&ldquo;blocked(组织)&rdquo;</li>
+<li>对应的额外传出配置</li>
+</ul>
+</li>
+</ol>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span> <span class="c1">//outboundDetour，是一个数组，可以放若干个如 outbound 格式的内容
+</span><span class="c1"></span>        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;blackhole&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="direct">direct</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{},</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span> <span class="c1">//如果要使用路由，这个 tag 是一定要有的，在这里 direct 就是 freedom 的一个标号，在路由中说 direct V2Ray 就知道是这里的 freedom 了
+</span><span class="c1"></span>        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&#34;routing&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;strategy&#34;</span><span class="o">:</span> <span class="s2">&#34;rules&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&#34;domainStrategy&#34;</span><span class="o">:</span> <span class="s2">&#34;IPOnDemand&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;rules&#34;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geosite:cn&#34;</span><span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;chinaip&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;ip&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geoip:cn&#34;</span><span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>&ldquo;domain&rdquo;: [&ldquo;geosite:cn&rdquo;] 包含了中国大陆主流网站大部分域名</li>
+<li>&ldquo;ip&rdquo;: [&ldquo;geoip:cn&rdquo;]       包含了中国大陆几乎所有的 ip</li>
+</ul>
+<p><code>outbound 是作为默认的传出，当一个数据包没有匹配的规则时，路由就会把数据包发往 outbound</code></p>
+<h4 id="adblock">adblock</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;rules&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="s2">&#34;tanx.com&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;googeadsserving.cn&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;baidu.com&#34;</span>
+            <span class="p">],</span>
+            <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;adblock&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="s2">&#34;amazon.com&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;microsoft.com&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;jd.com&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;youku.com&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;baidu.com&#34;</span>
+            <span class="p">],</span>
+            <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span><span class="err">，</span>
+            <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geosite:cn&#34;</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;chinaip&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;direct&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;ip&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;geoip:cn&#34;</span><span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>规则是放在 routing.settings.rules 这个数组当中，数组的内容是有顺序的，也就是说在这里规则是有顺序的，匹配规则时是从上往下匹配；</li>
+<li>当路由匹配到一个规则时就会跳出匹配而不会对之后的规则进行匹配；</li>
+</ul>
+<h4 id="bt--vps">BT(vps)</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;blackhole&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{},</span>
+            <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;block&#34;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&#34;routing&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;strategy&#34;</span><span class="o">:</span> <span class="s2">&#34;rules&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&#34;domainStrategy&#34;</span><span class="o">:</span> <span class="s2">&#34;AsIs&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;rules&#34;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;field&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span> <span class="s2">&#34;block&#34;</span><span class="p">,</span>
+                    <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="p">[</span>
+                        <span class="s2">&#34;bittorrent&#34;</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>inbound 的 sniffing 必须开启.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&#34;sniffing&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;enabled&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="s2">&#34;destOverride&#34;</span><span class="o">:</span> <span class="p">[</span>
+            <span class="s2">&#34;http&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;tls&#34;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h4 id="proxy">proxy</h4>
+<h3 id="dns"><a href="https://www.bookstack.cn/read/V2RAY/chapter_02-04_dns.md">DNS</a></h3>
+<p>V2Ray 内置了一个 DNS 服务器，可以将 DNS 查询根据路由设置转发到不同的远程服务器中。</p>
+<h3 id="policy">policy</h3>
+<p>本地策略可以配置一些用户相关的权限，比如连接超时设置。V2Ray 处理的每一个连接，都对应到一个用户，按照这个用户的等级（level）应用不同的策略。</p>
+<h3 id="mux">Mux</h3>
+<p>Mux 多路复用功能是在一条 TCP 连接上分发多个 TCP 连接的数据。</p>
+<h3 id="api">API</h3>
+<p>V2Ray 中可以开放一些 API 以便远程调用。这些 API 都基于 gRPC。</p>
+<h3 id="stats">stats</h3>
+<p>V2Ray 提供了一些关于其运行状况的统计信息。</p>
+<h3 id="protocol">protocol</h3>
+<p>V2Ray</p>
+<ul>
+<li>
+<p>传入协议有</p>
+<ul>
+<li>
+<p>HTTP</p>
+</li>
+<li>
+<p>SOCKS</p>
+<p>Socks 协议实现，兼容 Socks 4、Socks 4a 和 Socks 5。</p>
+</li>
+<li>
+<p>Shadowsocks</p>
+<p>包含传入和传出两部分，兼容大部分其它版本的实现。</p>
+</li>
+<li>
+<p>VMess</p>
+<p>加密传输协议，它分为传入和传出两部分，通常作为 V2Ray 客户端和服务器之间的桥梁。</p>
+</li>
+<li>
+<p>Dokodemo-door</p>
+<p>（任意门）是一个传入数据协议，它可以监听一个本地端口，并把所有进入此端口的数据发送至指定服务器的一个端口，从而达到端口映射的效果。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>传出协议有</p>
+<ul>
+<li>
+<p>VMess</p>
+</li>
+<li>
+<p>Shadowsocks</p>
+</li>
+<li>
+<p>Blackhole</p>
+<p>（黑洞）是一个传出数据协议，它会阻碍所有数据的传出，配合路由（Routing）一起使用，可以达到禁止访问某些网站的效果。</p>
+</li>
+<li>
+<p>Freedom</p>
+<p>Freedom 是一个传出数据协议，可以用来向任意网络发送（正常的） TCP 或 UDP 数据</p>
+</li>
+<li>
+<p>SOCKS</p>
+</li>
+</ul>
+</li>
+<li>
+<p>其他</p>
+<ul>
+<li>
+<p>MTProto</p>
+<p>一个 Telegram 专用的代理协议。在 V2Ray 中可使用一组传入传出代理来完成 Telegram 数据的代理任务。 目前只支持转发到 Telegram 的 IPv4 地址。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="client">client</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="mi">1080</span><span class="p">,</span> <span class="c1">// 监听端口
+</span><span class="c1"></span>        <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;socks&#34;</span><span class="p">,</span> <span class="c1">// 入口协议为 SOCKS 5
+</span><span class="c1"></span>        <span class="s2">&#34;domainOverride&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;tls&#34;</span><span class="p">,</span><span class="s2">&#34;http&#34;</span><span class="p">],</span> <span class="c1">//从网络流量中识别出域名
+</span><span class="c1"></span>        <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&#34;auth&#34;</span><span class="o">:</span> <span class="s2">&#34;noauth&#34;</span>  <span class="c1">//socks的认证设置，noauth 代表不认证，由于 socks 通常在客户端使用，所以这里不认证
+</span><span class="c1"></span>        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;outbound&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;vmess&#34;</span><span class="p">,</span> <span class="c1">// 出口协议
+</span><span class="c1"></span>        <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&#34;vnext&#34;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&#34;address&#34;</span><span class="o">:</span> <span class="s2">&#34;serveraddr.com&#34;</span><span class="p">,</span> <span class="c1">// 服务器地址，请修改为你自己的服务器 IP 或域名
+</span><span class="c1"></span>                    <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="mi">16823</span><span class="p">,</span>  <span class="c1">// 服务器端口
+</span><span class="c1"></span>                    <span class="s2">&#34;users&#34;</span><span class="o">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;</span><span class="p">,</span>  <span class="c1">// 用户 ID，必须与服务器端配置相同
+</span><span class="c1"></span>                            <span class="s2">&#34;alterId&#34;</span><span class="o">:</span> <span class="mi">64</span> <span class="c1">// 此处的值也应当与服务器相同,
+</span><span class="c1"></span>                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="server">server</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+    <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;loglevel&#34;</span><span class="o">:</span> <span class="s2">&#34;warning&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/access.log&#34;</span><span class="p">,</span> <span class="c1">// 这是 Linux 的路径
+</span><span class="c1"></span>        <span class="s2">&#34;error&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/error.log&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="mi">16823</span><span class="p">,</span> <span class="c1">// 服务器监听端口
+</span><span class="c1"></span>        <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;vmess&#34;</span><span class="p">,</span>    <span class="c1">// 主传入协议
+</span><span class="c1"></span>        <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&#34;clients&#34;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&#34;id&#34;</span><span class="o">:</span> <span class="s2">&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;</span><span class="p">,</span>  <span class="c1">// 用户 ID，客户端与服务器必须相同
+</span><span class="c1"></span>                    <span class="s2">&#34;alterId&#34;</span><span class="o">:</span> <span class="mi">64</span>  <span class="c1">//加强防探测能力,理论上 alterId 越大越好，但越大就约占内存(只针对服务器，客户端不占内存) ,30 到 100 之间
+</span><span class="c1"></span>                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;outbound&#34;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>  <span class="c1">// 主传出协议
+</span><span class="c1"></span>        <span class="s2">&#34;settings&#34;</span><span class="o">:</span> <span class="p">{}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="rules">rules</h2>
+<h3 id="预定义域名列表-geosite">预定义域名列表 geosite:</h3>
+<p>以 geosite: 开头，后面是一个预定义域名列表名称，如 geosite:google ，意思是包含了 Google 旗下绝大部分域名；或者 geosite:cn，意思是包含了常见的大陆站点域名。</p>
+<p>常用名称及域名列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">category-ads：包含了常见的广告域名。
+category-ads-all：包含了常见的广告域名，以及广告提供商的域名。
+cn：相当于 geolocation-cn 和 tld-cn 的合集。
+apple：包含了 Apple 旗下绝大部分域名。
+google：包含了 Google 旗下绝大部分域名。
+microsoft：包含了 Microsoft 旗下绝大部分域名。
+facebook：包含了 Facebook 旗下绝大部分域名。
+twitter：包含了 Twitter 旗下绝大部分域名。
+telegram：包含了 Telegram 旗下绝大部分域名。
+geolocation-cn：包含了常见的大陆站点域名。
+geolocation-!cn：包含了常见的非大陆站点域名，同时包含了 tld-!cn。
+tld-cn：包含了 CNNIC 管理的用于中国大陆的顶级域名，如以 .cn、.中国 结尾的域名。
+tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）、.tw（台湾）、.jp（日本）、.sg（新加坡）、.us（美国）.ca（加拿大）等结尾的域名。
+</code></pre></td></tr></table>
+</div>
+</div><p>更多域名类别，请查看 <a href="https://github.com/v2fly/domain-list-community/tree/master/data">data目录</a></p>
+<h4 id="域名-domain">域名 domain:</h4>
+<p>由 domain: 开始，后面是一个域名。例如 domain:baiyunju.cc ，匹配 <a href="http://www.baiyunju.cc">www.baiyunju.cc</a> 、baiyunju.cc，以及其他 baiyunju.cc 主域名下的子域名。</p>
+<p>前缀 domain:可以省略，只输入域名，其实也就成了纯字符串了。</p>
+<h4 id="完整匹配-full">完整匹配 full:</h4>
+<p>由 full: 开始，后面是一个域名。例如 full:baiyunju.cc 只匹配 baiyunju.cc，但不匹配 <a href="http://www.baiyunju.cc">www.baiyunju.cc</a> 。</p>
+<h4 id="纯字符串">纯字符串</h4>
+<p>比如直接输入 sina.com, 可以分行，也可以不分行以“,”隔开，可以匹配 sina.com、sina.com.cn 和 <a href="http://www.sina.com">www.sina.com</a>，但不匹配 sina.cn。</p>
+<h4 id="正则表达式-regexp">正则表达式 regexp:</h4>
+<p>由 regexp: 开始，后面是一个正则表达式。例如 regexp:\.goo.*\.com$ 匹配 <a href="http://www.google.com">www.google.com</a>、fonts.googleapis.com，但不匹配 google.com。</p>
+<h3 id="从外部文件中加载域名规则-ext">从外部文件中加载域名规则 ext:</h3>
+<p>比如 ext:&lt;tag，必须以&gt; ext:（全部小写）开头，后面跟文件名（不含扩展名）file 和标签 tag，文件必须存放在 V2Ray 核心的资源目录中，文件格式与 geosite.dat 相同，且指定的标签 tag 必须在文件中存在。</p>
+<p>说明：普通用户常用的也就是上面的“纯字符串”规则写法，比如，在代理（或直连）栏下填写 baiyunju.cc,　就可以让网站通过代理（或直连）上网。</p>
+<h3 id="ip-路由规则">IP 路由规则</h3>
+<h4 id="geoip">geoip:</h4>
+<p>以 geoip:（全部小写）开头，后面跟双字符国家代码，如 geoip:cn ，意思是所有中国大陆境内的 IP 地址，geoip:us 代表美国境内的 IP 地址。</p>
+<h4 id="特殊值">特殊值：</h4>
+<p>geoip:private，包含所有私有地址，如 127.0.0.1（本条规则仅支持 V2Ray 3.5 以上版本）。</p>
+<h4 id="ip">IP：</h4>
+<p>如 127.0.0.1，20.194.25.232</p>
+<h4 id="cidr">CIDR：</h4>
+<p>如 10.0.0.0/8。</p>
+<p>从外部文件中加载 IP 规则：
+如 ext:&lt;tag，必须以&gt; ext:（全部小写）开头，后面跟文件名（不含扩展名）file 和标签 tag，文件必须存放在 V2Ray 核心的资源目录中，文件格式与 geoip.dat 相同，且指定的 tag 必须在文件中存在。</p>
+<h3 id="路由域名规则">路由域名规则</h3>
+<h4 id="预定义域名列表">预定义域名列表</h4>
+<p>以 geosite: 开头，后面跟一个名称，例如 geosite:google 或 geosite:cn 名称 及 域名列表 请参考 预定义域名列表</p>
+<h4 id="子域名">子域名</h4>
+<p>由 &ldquo;domain:&rdquo; 开始，后面跟一个域名。当此域名是目标域名或其子域名时，该规则生效。例如 &ldquo;domain:v2ray.com&rdquo; 匹配 &ldquo;<a href="http://www.v2ray.com">www.v2ray.com</a>&rdquo;、&ldquo;v2ray.com&rdquo;，但不匹配 &ldquo;xv2ray.com&rdquo;。</p>
+<h4 id="完全匹配">完全匹配</h4>
+<p>由 &ldquo;full:&rdquo; 开始，后面跟一个域名。当此域名完整匹配目标域名时，该规则生效。例如 &ldquo;full:v2ray.com&rdquo; 匹配 &ldquo;v2ray.com&rdquo; 但不匹配 &ldquo;<a href="http://www.v2ray.com">www.v2ray.com</a>&rdquo;。</p>
+<h4 id="纯字符串">纯字符串</h4>
+<p>当此字符串匹配目标域名中任意部分，该规则生效。比如 &ldquo;sina.com&rdquo; 可以匹配 &ldquo;sina.com&rdquo;、&ldquo;sina.com.cn&rdquo; 和 &ldquo;<a href="http://www.sina.com">www.sina.com</a>&rdquo;，但不匹配 &ldquo;sina.cn&rdquo;。</p>
+<h4 id="正则表达式">正则表达式</h4>
+<p>由 &ldquo;regexp:&rdquo; 开始，余下部分是一个正则表达式。当此正则表达式匹配目标域名时，该规则生效。例如 &ldquo;regexp:\\.goo.*\\.com$&rdquo; 匹配 &ldquo;<a href="http://www.google.com">www.google.com</a>&rdquo;、&ldquo;fonts.googleapis.com&rdquo;，但不匹配 &ldquo;google.com&rdquo;。</p>
+<h4 id="从文件中加载域名">从文件中加载域名</h4>
+<p>形如 &ldquo;ext:&lt;tag&rdquo;，必须以&gt; ext:（小写）开头，后面跟 文件名 和 标签 ，文件存放在与 v2ray 核心相同的路径中，文件格式与 geosite.dat 相同，标签 必须在文件中声明。</p>
+<h2 id="reverse-nat-dnss">reverse/NAT-DNSS</h2>
+<h3 id="说明">说明</h3>
+<h4 id="环境">环境</h4>
+<ul>
+<li>主机 A：没有公网 IP，无法在公网上直接访问。</li>
+<li>主机 B：它可以由公网访问。</li>
+</ul>
+<h3 id="配置">配置</h3>
+<h4 id="内网主机-a">内网主机 A</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+  <span class="s2">&#34;reverse&#34;</span><span class="o">:</span><span class="p">{</span>
+    <span class="c1">// 这是 A 的反向代理设置，必须有下面的 bridges 对象
+</span><span class="c1"></span>    <span class="s2">&#34;bridges&#34;</span><span class="o">:</span><span class="p">[</span>
+      <span class="p">{</span>
+        <span class="s2">&#34;tag&#34;</span><span class="o">:</span><span class="s2">&#34;bridge&#34;</span><span class="p">,</span> <span class="c1">// 关于 A 的反向代理标签，在路由中会用到
+</span><span class="c1"></span>        <span class="s2">&#34;domain&#34;</span><span class="o">:</span><span class="s2">&#34;private.cloud.com&#34;</span> <span class="c1">// A 和 B 反向代理通信的域名，可以自己取一个，可以不是自己购买的域名，但必须跟下面 B 中的 reverse 配置的域名一致
+</span><span class="c1"></span>      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="s2">&#34;outbounds&#34;</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="c1">//A连接B的outbound
+</span><span class="c1"></span>      <span class="s2">&#34;tag&#34;</span><span class="o">:</span><span class="s2">&#34;tunnel&#34;</span><span class="p">,</span> <span class="c1">// A 连接 B 的 outbound 的标签，在路由中会用到
+</span><span class="c1"></span>      <span class="s2">&#34;protocol&#34;</span><span class="o">:</span><span class="s2">&#34;vmess&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;settings&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;vnext&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="p">{</span>
+            <span class="s2">&#34;address&#34;</span><span class="o">:</span><span class="s2">&#34;serveraddr.com&#34;</span><span class="p">,</span> <span class="c1">// B 地址，IP 或 实际的域名
+</span><span class="c1"></span>            <span class="s2">&#34;port&#34;</span><span class="o">:</span><span class="mi">16823</span><span class="p">,</span>
+            <span class="s2">&#34;users&#34;</span><span class="o">:</span><span class="p">[</span>
+              <span class="p">{</span>
+                <span class="s2">&#34;id&#34;</span><span class="o">:</span><span class="s2">&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;</span><span class="p">,</span>
+                <span class="s2">&#34;alterId&#34;</span><span class="o">:</span><span class="mi">64</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="c1">// 另一个 outbound，最终连接私有网盘
+</span><span class="c1"></span>    <span class="p">{</span>
+      <span class="s2">&#34;protocol&#34;</span><span class="o">:</span><span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;settings&#34;</span><span class="o">:</span><span class="p">{</span>
+      <span class="p">},</span>
+      <span class="s2">&#34;tag&#34;</span><span class="o">:</span><span class="s2">&#34;out&#34;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s2">&#34;routing&#34;</span><span class="o">:</span><span class="p">{</span>
+    <span class="s2">&#34;rules&#34;</span><span class="o">:</span><span class="p">[</span>
+      <span class="p">{</span>
+        <span class="c1">// 配置 A 主动连接 B 的路由规则
+</span><span class="c1"></span>        <span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;field&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;inboundTag&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="s2">&#34;bridge&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;domain&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="s2">&#34;full:private.cloud.com&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span><span class="s2">&#34;tunnel&#34;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="c1">// 反向连接访问私有网盘的规则
+</span><span class="c1"></span>        <span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;field&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;inboundTag&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="s2">&#34;bridge&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span><span class="s2">&#34;out&#34;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="外网主机-b">外网主机 B</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+  <span class="s2">&#34;reverse&#34;</span><span class="o">:</span><span class="p">{</span>  <span class="c1">//这是 B 的反向代理设置，必须有下面的 portals 对象
+</span><span class="c1"></span>    <span class="s2">&#34;portals&#34;</span><span class="o">:</span><span class="p">[</span>
+      <span class="p">{</span>
+        <span class="s2">&#34;tag&#34;</span><span class="o">:</span><span class="s2">&#34;portal&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;domain&#34;</span><span class="o">:</span><span class="s2">&#34;private.cloud.com&#34;</span>        <span class="c1">// 必须和上面 A 设定的域名一样
+</span><span class="c1"></span>      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="s2">&#34;inbounds&#34;</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="c1">// 接受 C 的inbound
+</span><span class="c1"></span>      <span class="s2">&#34;tag&#34;</span><span class="o">:</span><span class="s2">&#34;external&#34;</span><span class="p">,</span> <span class="c1">// 标签，路由中用到
+</span><span class="c1"></span>      <span class="s2">&#34;port&#34;</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span>
+      <span class="c1">// 开放 80 端口，用于接收外部的 HTTP 访问
+</span><span class="c1"></span>      <span class="s2">&#34;protocol&#34;</span><span class="o">:</span><span class="s2">&#34;dokodemo-door&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;settings&#34;</span><span class="o">:</span><span class="p">{</span>
+          <span class="s2">&#34;address&#34;</span><span class="o">:</span><span class="s2">&#34;127.0.0.1&#34;</span><span class="p">,</span>
+          <span class="s2">&#34;port&#34;</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="c1">//假设 NAS 监听的端口为 80
+</span><span class="c1"></span>          <span class="s2">&#34;network&#34;</span><span class="o">:</span><span class="s2">&#34;tcp&#34;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="c1">// 另一个 inbound，接受 A 主动发起的请求
+</span><span class="c1"></span>    <span class="p">{</span>
+      <span class="s2">&#34;tag&#34;</span><span class="o">:</span> <span class="s2">&#34;tunnel&#34;</span><span class="p">,</span><span class="c1">// 标签，路由中用到
+</span><span class="c1"></span>      <span class="s2">&#34;port&#34;</span><span class="o">:</span><span class="mi">16823</span><span class="p">,</span>
+      <span class="s2">&#34;protocol&#34;</span><span class="o">:</span><span class="s2">&#34;vmess&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;settings&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;clients&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="p">{</span>
+            <span class="s2">&#34;id&#34;</span><span class="o">:</span><span class="s2">&#34;b831381d-6324-4d53-ad4f-8cda48b30811&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;alterId&#34;</span><span class="o">:</span><span class="mi">64</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s2">&#34;routing&#34;</span><span class="o">:</span><span class="p">{</span>
+    <span class="s2">&#34;rules&#34;</span><span class="o">:</span><span class="p">[</span>
+      <span class="p">{</span>  <span class="c1">//路由规则，接收 C 请求后发给 A
+</span><span class="c1"></span>        <span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;field&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;inboundTag&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="s2">&#34;external&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span><span class="s2">&#34;portal&#34;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>  <span class="c1">//路由规则，让 B 能够识别这是 A 主动发起的反向代理连接
+</span><span class="c1"></span>        <span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;field&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;inboundTag&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="s2">&#34;tunnel&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;domain&#34;</span><span class="o">:</span><span class="p">[</span>
+          <span class="s2">&#34;full:private.cloud.com&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;outboundTag&#34;</span><span class="o">:</span><span class="s2">&#34;portal&#34;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="bridge-portal">bridge / portal</h3>
+<ul>
+<li>主机 A 中配置一个 V2Ray，称为 bridge</li>
+<li>主机 B 中配置一个 V2Ray，称为 portal。</li>
+<li>bridge 会向 portal 主动建立连接。</li>
+<li>portal 会收到两种连接:
+<ul>
+<li>一是由 bridge 发来的连接，</li>
+<li>二是公网用户发来的连接。</li>
+</ul>
+</li>
+<li>portal 会自动将两类连接合并,于是 bridge 就可以收到公网流量了</li>
+</ul>
+<p><strong>一个 V2Ray 既可以作为 bridge，也可以作为 portal，也可以同时两者，以适用于不同的场景需要。</strong></p>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><a href="https://www.v2fly.org/config/reverse.html#reverseobject">Reverse 反向代理</a></li>
+<li><a href="https://www.bookset.io/read/v2ray-guide/94bb3d54ac5738ed.md">V2Ray 白话文指南-反向代理/内网穿透</a></li>
+<li><a href="https://www.bookset.io/read/v2ray-guide/94bb3d54ac5738ed.md">使用 V2ray 反向代理实现内网穿透</a></li>
+<li><a href="https://toutyrater.github.io/app/reverse2.html">反向代理/内网穿透</a></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>VMess 协议的认证基于时间，一定要保证服务器和客户端的系统时间相差要在一分钟以内。</li>
+<li>在 V2Ray 中，星号 * 不具备通配符的意义，只是一个普通的字符而已</li>
+<li>sniffing (V2Ray 3.32+): 尝试探测流量类型。
+<ul>
+<li>将入䇂流量中的 ip 嗅探为域名。<a href="https://xtls.github.io/Xray-docs-next/en/config/inbound.html#inboundobject">ref</a></li>
+<li>enabled: 是否开启流量探测。</li>
+<li>destOverride: 当流量为指定类型时，按其中包括的目标地址重置当前连接的目标。</li>
+<li>可选值为 &ldquo;http&rdquo; 和 &ldquo;tls&rdquo;。</li>
+</ul>
+</li>
+<li>客户端和服务器之间的版本要一致
+<ul>
+<li>尤其是在 4.36 以上版本时</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

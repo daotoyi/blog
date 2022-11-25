@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/docker-docker-file/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Docker Dockerfile" />
 <meta property="og:description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/docker-docker-file/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/docker-docker-file/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-05T15:32:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="Docker Dockerfile">
-<meta itemprop="description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17">
-<meta itemprop="datePublished" content="2022-04-05T15:32:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17"><meta itemprop="datePublished" content="2022-04-05T15:32:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="907">
-
-
-
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker Dockerfile"/>
 <meta name="twitter:description" content="Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17"/>
@@ -187,7 +184,7 @@
 <h2 id="config">config</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -207,37 +204,37 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># This dockerfile uses the ubuntu image</span>
-<span class="c1"># VERSION 2 - EDITION 1</span>
-<span class="c1"># Author: docker_user</span>
-<span class="c1"># Command format: Instruction [arguments / command] ..</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># This dockerfile uses the ubuntu image</span>
+<span class="c1"># VERSION 2 - EDITION 1</span>
+<span class="c1"># Author: docker_user</span>
+<span class="c1"># Command format: Instruction [arguments / command] ..</span>
 
-<span class="c1"># Base image to use, this must be set as the first line</span>
-<span class="na">FROM ubuntu</span>
+<span class="c1"># Base image to use, this must be set as the first line</span>
+<span class="na">FROM ubuntu</span>
 
-<span class="c1"># Maintainer: docker_user &lt;docker_user at email.com&gt; (@docker_user)</span>
-<span class="na">MAINTAINER docker_user docker_user@email.com</span>
+<span class="c1"># Maintainer: docker_user &lt;docker_user at email.com&gt; (@docker_user)</span>
+<span class="na">MAINTAINER docker_user docker_user@email.com</span>
 
-<span class="c1"># Commands to update the image</span>
-<span class="na">RUN echo &#34;deb http://archive.ubuntu.com/ubuntu/ raring main universe&#34; &gt;&gt; /etc/apt/sources.list</span>
-<span class="na">RUN apt-get update &amp;&amp; apt-get install -y nginx</span>
-<span class="na">RUN echo &#34;\ndaemon off;&#34; &gt;&gt; /etc/nginx/nginx.conf</span>
+<span class="c1"># Commands to update the image</span>
+<span class="na">RUN echo &#34;deb http://archive.ubuntu.com/ubuntu/ raring main universe&#34; &gt;&gt; /etc/apt/sources.list</span>
+<span class="na">RUN apt-get update &amp;&amp; apt-get install -y nginx</span>
+<span class="na">RUN echo &#34;\ndaemon off;&#34; &gt;&gt; /etc/nginx/nginx.conf</span>
 
-<span class="c1"># Commands when creating a new container</span>
-<span class="na">CMD /usr/sbin/nginx</span>
+<span class="c1"># Commands when creating a new container</span>
+<span class="na">CMD /usr/sbin/nginx</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="build">build</h2>
 <p>配置好 <code>.dockerfile</code> 文件后:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># docker image build  -t image .</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># docker image build  -t image .</span>
 docker build  -t ImageName:TagName dir
 
 docker build github.com/creack/docker-firefox
@@ -288,18 +285,17 @@ docker build github.com/creack/docker-firefox
 <p>Bridge 默认 docker 网络隔离基于网络命名空间，在物理机上创建 docker 容器时会为每一个 docker 容器分配网络命名空间，并且把容器 IP 桥接到物理机的虚拟网桥上。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker network list
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker network list
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="copy-on-write">Copy-on-Write</h2>
 <p>实际上，Docker Hub 中 99% 的镜像都是通过在 base 镜像中安装和配置需要的软件构建出来的。</p>
 <p>镜像分层最大的一个好处就是共享资源。</p>
 <p>比如说有多个镜像都从相同的 base 镜像构建而来，那么 Docker Host 只需在磁盘上保存一份 base 镜像；同时内存中也只需加载一份 base 镜像，就可以为所有容器服务了。而且镜像的每一层都可以被共享。</p>
-<figure>
-    <img src="https://images2017.cnblogs.com/blog/1190037/201802/1190037-20180203180355656-1765414705.png"/> 
+<figure><img src="https://images2017.cnblogs.com/blog/1190037/201802/1190037-20180203180355656-1765414705.png"/>
 </figure>
 
 <h2 id="note">note</h2>
@@ -313,7 +309,7 @@ docker build github.com/creack/docker-firefox
 </li>
 <li>RUN [&ldquo;executable&rdquo;, &ldquo;param1&rdquo;, &ldquo;param2&rdquo;]： 使用 exec 执行
 <ul>
-<li>如 RUN [&quot;/bin/bash&rdquo;, &ldquo;-c&rdquo;, &ldquo;echo hello&rdquo;]，</li>
+<li>如 RUN [&quot;/bin/bash&quot;, &ldquo;-c&rdquo;, &ldquo;echo hello&rdquo;]，</li>
 </ul>
 </li>
 </ul>
@@ -329,16 +325,16 @@ docker build github.com/creack/docker-firefox
 <p>可以使用多个 WORKDIR 指令，后续命令如果参数是相对路径，则会基于之前命令指定的路径。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">WORKDIR /a</span>
-<span class="na">WORKDIR b</span>
-<span class="na">WORKDIR c</span>
-<span class="na">RUN pwd</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">WORKDIR /a</span>
+<span class="na">WORKDIR b</span>
+<span class="na">WORKDIR c</span>
+<span class="na">RUN pwd</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>则最终路径为 /a/b/c</p>
@@ -353,8 +349,8 @@ docker build github.com/creack/docker-firefox
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -445,7 +441,7 @@ docker build github.com/creack/docker-firefox
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

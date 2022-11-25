@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Docker 类似功能区分 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/docker-distinguish-functions/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Docker 类似功能区分" />
+<meta property="og:description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/docker-distinguish-functions/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-24T12:01:00+00:00" />
+<meta property="article:modified_time" content="2022-07-24T12:02:09+00:00" />
+
+<meta itemprop="name" content="Docker 类似功能区分">
+<meta itemprop="description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通"><meta itemprop="datePublished" content="2022-07-24T12:01:00+00:00" />
+<meta itemprop="dateModified" content="2022-07-24T12:02:09+00:00" />
+<meta itemprop="wordCount" content="655">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker 类似功能区分"/>
+<meta name="twitter:description" content="ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="ports-和-expose">ports 和 expose</h2>
+<ul>
+<li>ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。</li>
+<li>expose 用来把服务端口开放给其他服务使用，客户端服务可以通过 links 功能访问服务端服务的端口。</li>
+</ul>
+<h3 id="ports">ports</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ports:</span>
+    <span class="na">- 80       # 将服务的80端口映射到宿主机的一个随机的端口上</span>
+    <span class="na">- 8080:80             # 映射到宿主机的端口</span>
+    <span class="na">- 10.16.1.1:8080:80   # 映射到宿主机的10.16.1.1的8080端口</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="expose--dockerfile-or-docker-compose">expose (Dockerfile or docker-compose)</h3>
+<p>等效, 如果 Dockerfile 里面通过 EXPOSE 暴露了端口出来，那么在通过 docker-compose 创建的服务也会暴露这个端口出来。</p>
+<h2 id="links-和-depends-on">links 和 depends_on</h2>
+<h3 id="example">example</h3>
+<p>通过 links 把 MySQL、Redis、MongoDB、Elasticsearch 四个服务建立了一套别名。然后又通过 depends_on 指定 maintain 服务依赖这四个服务。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">services:</span>
+
+  <span class="na">maintain:</span>
+    <span class="na">build:</span>
+      <span class="na">dockerfile: Dockerfile</span>
+      <span class="na">context: ./image/nginx1.20</span>
+    <span class="na">container_name: maintain</span>
+    <span class="na">image: nginx1.20</span>
+    <span class="na">links:</span>
+      <span class="na">- mysql:server_mysql</span>
+      <span class="na">- redis:server_redis</span>
+      <span class="na">- mongo:server_mongo</span>
+      <span class="na">- elasticsearch:server_es</span>
+    <span class="na">depends_on:</span>
+      <span class="na">- mysql</span>
+      <span class="na">- redis</span>
+      <span class="na">- mongo</span>
+      <span class="na">- elasticsearch</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="depends-on">depends_on</h3>
+<p>表达服务之间的依赖性。</p>
+<p>通过 depends_on 告诉 docker-compose 当前服务启动之前先要把 depends_on 指定的服务启动起来才行。</p>
+<h3 id="links-已弃用">links - <strong>已弃用</strong></h3>
+<p>links 的目的是把一个服务的名称在当前服务里面创建一个别名.</p>
+<p>链接到另一个服务中的容器，并以与 depends_on 相同的方式表示服务之间的依赖关系.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">services:</span>
+
+  <span class="na">tomcat:</span>
+    <span class="na">image: tflinux_tomcat9.0</span>
+    <span class="na">links:</span>
+      <span class="na">- mysql:server_mysql</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="extend-已弃用">extend - <strong>已弃用</strong></h3>
+<p>使用 extends 字段扩展单个服务.</p>
+<h3 id="弃用-links">弃用 links</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">web:</span>
+  <span class="na">links:</span>
+   <span class="na">- db</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>当启动 db 容器时会随机分配一个本地端口比如 32777 来连接容器 3306 端口，每一次修改或者重启容器都会改变该端口，使用 links 来保证每一次都能够连接数据库，而不需要知道具体端口是什么。</li>
+<li>docker-compose 执行 V2 文件时会自动在容器间创建一个网络，每一个容器都能够立即通过名字来访问到另外的容器。</li>
+<li>因此，不再需要 links，links 过去通常用来开始 db 容器和 web server 容器网络之间的通讯，但是这一步已经被 docker-compose 做了。</li>
+</ul>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><a href="https://einverne.github.io/post/2018/04/gtld-xyz.html">docker-compose 中 links 和 depends_on 区别</a></li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

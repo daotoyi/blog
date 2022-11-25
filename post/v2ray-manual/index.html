@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
 
 
 <link rel="canonical" href="https://daotoyi.github.io/post/v2ray-manual/" />
@@ -35,24 +35,21 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="v2ray 笔记" />
 <meta property="og:description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-manual/" />
+<meta property="og:url" content="https://daotoyi.github.io/post/v2ray-manual/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-05T17:20:00+00:00" />
-<meta property="article:modified_time" content="2022-11-04T22:29:41+08:00" />
+<meta property="article:modified_time" content="2022-11-25T23:11:25+08:00" />
+
 <meta itemprop="name" content="v2ray 笔记">
-<meta itemprop="description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu">
-<meta itemprop="datePublished" content="2022-03-05T17:20:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-11-04T22:29:41&#43;08:00" />
+<meta itemprop="description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu"><meta itemprop="datePublished" content="2022-03-05T17:20:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:11:25+08:00" />
 <meta itemprop="wordCount" content="6603">
-
-
-
 <meta itemprop="keywords" content="v2ray," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="v2ray 笔记"/>
 <meta name="twitter:description" content="introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu"/>
@@ -286,7 +283,7 @@
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -301,7 +298,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">##  DISCARDED</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">##  DISCARDED</span>
 <span class="c1"># wget https://install.direct/go.sh # 下载脚本</span>
 <span class="c1"># sudo bash go.sh</span>
 <span class="c1"># sudo systemctl start v2ray</span>
@@ -325,7 +322,7 @@ bash &lt;<span class="o">(</span>curl -L https://raw.githubusercontent.com/v2fly
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -359,7 +356,7 @@ bash &lt;<span class="o">(</span>curl -L https://raw.githubusercontent.com/v2fly
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># docker pull v2ray/official</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># docker pull v2ray/official</span>
 <span class="c1"># docker pull v2ray/official:latest</span>
 
 <span class="c1"># v2ray change name v2fly</span>
@@ -378,14 +375,14 @@ docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-cor
 docker run -d --name v2ray -v /etc/v2ray:/etc/v2ray -p 8888:8888 v2fly/v2fly-core:v4.34.0  v2ray -config<span class="o">=</span>/etc/v2ray/config.json
 <span class="c1">#https://hub.docker.com/r/v2fly/v2fly-core/tags</span>
 
-docker run <span class="se">\</span>
-       --restart<span class="o">=</span>always <span class="se">\</span>
-       --name<span class="o">=</span>v2ray <span class="se">\</span>
-       --net<span class="o">=</span>host <span class="se">\</span>
-       -v /etc/v2ray/config.json:/etc/v2ray/config.json <span class="se">\</span>
-       -v /var/log/v2ray:/var/log/v2ray <span class="se">\</span>
-       -i -t -d <span class="se">\</span>
-       v2ray/official:latest
+docker run <span class="se">\
+</span><span class="se"></span>       --restart<span class="o">=</span>always <span class="se">\
+</span><span class="se"></span>       --name<span class="o">=</span>v2ray <span class="se">\
+</span><span class="se"></span>       --net<span class="o">=</span>host <span class="se">\
+</span><span class="se"></span>       -v /etc/v2ray/config.json:/etc/v2ray/config.json <span class="se">\
+</span><span class="se"></span>       -v /var/log/v2ray:/var/log/v2ray <span class="se">\
+</span><span class="se"></span>       -i -t -d <span class="se">\
+</span><span class="se"></span>       v2ray/official:latest
 <span class="c1"># 升级</span>
 docker container stop v2ray
 docker container rm v2ray
@@ -396,7 +393,7 @@ docker pull v2ray/official
 </div><h2 id="v2ray-cmd-line">v2ray cmd-line</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -417,25 +414,25 @@ docker pull v2ray/official
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># 进入docker内部</span>
-<span class="na">docker exec -it v2ray /bin/sh</span>
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># 进入docker内部</span>
+<span class="na">docker exec -it v2ray /bin/sh</span>
 
-<span class="na">v2ray info 查看 V2Ray 配置信息</span>
-<span class="na">v2ray config 修改 V2Ray 配置</span>
-<span class="na">v2ray link 生成 V2Ray 配置文件链接</span>
-<span class="na">v2ray infolink 生成 V2Ray 配置信息链接</span>
-<span class="na">v2ray qr 生成 V2Ray 配置二维码链接</span>
-<span class="na">v2ray ss 修改 Shadowsocks 配置</span>
-<span class="na">v2ray ssinfo 查看 Shadowsocks 配置信息</span>
-<span class="na">v2ray ssqr 生成 Shadowsocks 配置二维码链接</span>
-<span class="na">v2ray status 查看 V2Ray 运行状态</span>
-<span class="na">v2ray start 启动 V2Ray</span>
-<span class="na">v2ray stop 停止 V2Ray</span>
-<span class="na">v2ray restart 重启 V2Ray</span>
-<span class="na">v2ray log 查看 V2Ray 运行日志</span>
-<span class="na">v2ray update 更新 V2Ray</span>
-<span class="na">v2ray update.sh 更新 V2Ray 管理脚本</span>
-<span class="na">v2ray uninstall 卸载 V2Ray</span>
+<span class="na">v2ray info 查看 V2Ray 配置信息</span>
+<span class="na">v2ray config 修改 V2Ray 配置</span>
+<span class="na">v2ray link 生成 V2Ray 配置文件链接</span>
+<span class="na">v2ray infolink 生成 V2Ray 配置信息链接</span>
+<span class="na">v2ray qr 生成 V2Ray 配置二维码链接</span>
+<span class="na">v2ray ss 修改 Shadowsocks 配置</span>
+<span class="na">v2ray ssinfo 查看 Shadowsocks 配置信息</span>
+<span class="na">v2ray ssqr 生成 Shadowsocks 配置二维码链接</span>
+<span class="na">v2ray status 查看 V2Ray 运行状态</span>
+<span class="na">v2ray start 启动 V2Ray</span>
+<span class="na">v2ray stop 停止 V2Ray</span>
+<span class="na">v2ray restart 重启 V2Ray</span>
+<span class="na">v2ray log 查看 V2Ray 运行日志</span>
+<span class="na">v2ray update 更新 V2Ray</span>
+<span class="na">v2ray update.sh 更新 V2Ray 管理脚本</span>
+<span class="na">v2ray uninstall 卸载 V2Ray</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="configure">configure</h2>
@@ -444,7 +441,7 @@ docker pull v2ray/official
 <h3 id="formate">formate</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -459,7 +456,7 @@ docker pull v2ray/official
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{},</span>
     <span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{},</span>
     <span class="s2">&#34;outbound&#34;</span><span class="o">:</span> <span class="p">{},</span>
@@ -536,7 +533,7 @@ docker pull v2ray/official
 <!--listend-->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -550,7 +547,7 @@ docker pull v2ray/official
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span> <span class="c1">//outboundDetour，是一个数组，可以放若干个如 outbound 格式的内容
 </span><span class="c1"></span>        <span class="p">{</span>
             <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
@@ -567,7 +564,7 @@ docker pull v2ray/official
 </div><h4 id="direct">direct</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -596,7 +593,7 @@ docker pull v2ray/official
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
             <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;freedom&#34;</span><span class="p">,</span>
@@ -633,7 +630,7 @@ docker pull v2ray/official
 <h4 id="adblock">adblock</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -669,7 +666,7 @@ docker pull v2ray/official
 </span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;rules&#34;</span><span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
             <span class="s2">&#34;domain&#34;</span><span class="o">:</span> <span class="p">[</span>
@@ -712,7 +709,7 @@ docker pull v2ray/official
 <h4 id="bt--vps">BT(vps)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -738,7 +735,7 @@ docker pull v2ray/official
 </span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;outboundDetour&#34;</span><span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
             <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;blackhole&#34;</span><span class="p">,</span>
@@ -769,7 +766,7 @@ docker pull v2ray/official
 <p>inbound 的 sniffing 必须开启.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -780,7 +777,7 @@ docker pull v2ray/official
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">&#34;sniffing&#34;</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">&#34;enabled&#34;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="s2">&#34;destOverride&#34;</span><span class="o">:</span> <span class="p">[</span>
@@ -866,7 +863,7 @@ docker pull v2ray/official
 <h3 id="client">client</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -895,7 +892,7 @@ docker pull v2ray/official
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;inbound&#34;</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">&#34;port&#34;</span><span class="o">:</span> <span class="mi">1080</span><span class="p">,</span> <span class="c1">// 监听端口
 </span><span class="c1"></span>        <span class="s2">&#34;protocol&#34;</span><span class="o">:</span> <span class="s2">&#34;socks&#34;</span><span class="p">,</span> <span class="c1">// 入口协议为 SOCKS 5
@@ -927,7 +924,7 @@ docker pull v2ray/official
 </div><h3 id="server">server</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -952,7 +949,7 @@ docker pull v2ray/official
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
     <span class="s2">&#34;log&#34;</span><span class="o">:</span> <span class="p">{</span>
         <span class="s2">&#34;loglevel&#34;</span><span class="o">:</span> <span class="s2">&#34;warning&#34;</span><span class="p">,</span>
         <span class="s2">&#34;access&#34;</span><span class="o">:</span> <span class="s2">&#34;/var/log/v2ray/access.log&#34;</span><span class="p">,</span> <span class="c1">// 这是 Linux 的路径
@@ -983,7 +980,7 @@ docker pull v2ray/official
 <p>常用名称及域名列表：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -998,7 +995,7 @@ docker pull v2ray/official
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">category-ads：包含了常见的广告域名。
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">category-ads：包含了常见的广告域名。
 category-ads-all：包含了常见的广告域名，以及广告提供商的域名。
 cn：相当于 geolocation-cn 和 tld-cn 的合集。
 apple：包含了 Apple 旗下绝大部分域名。
@@ -1061,7 +1058,7 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
 <h4 id="内网主机-a">内网主机 A</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1125,7 +1122,7 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
 </span><span class="lnt">62
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="s2">&#34;reverse&#34;</span><span class="o">:</span><span class="p">{</span>
     <span class="c1">// 这是 A 的反向代理设置，必须有下面的 bridges 对象
 </span><span class="c1"></span>    <span class="s2">&#34;bridges&#34;</span><span class="o">:</span><span class="p">[</span>
@@ -1192,7 +1189,7 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
 </div><h4 id="外网主机-b">外网主机 B</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1253,7 +1250,7 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
 </span><span class="lnt">59
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="s2">&#34;reverse&#34;</span><span class="o">:</span><span class="p">{</span>  <span class="c1">//这是 B 的反向代理设置，必须有下面的 portals 对象
 </span><span class="c1"></span>    <span class="s2">&#34;portals&#34;</span><span class="o">:</span><span class="p">[</span>
       <span class="p">{</span>
@@ -1364,8 +1361,8 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-11-04
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/4941316df136355d0c8465e1dbc24161ef1ddc86" title="update weekly">(4941316)</a>
+        2022-11-25
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/0b222ea84c311ddd9443a7f5e795db9484c1ff83" title="update weekly">(0b222ea)</a>
     </span>
   </p>
   
@@ -1458,7 +1455,7 @@ tld-!cn：包含了非中国大陆使用的顶级域名，如以 .hk（香港）
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

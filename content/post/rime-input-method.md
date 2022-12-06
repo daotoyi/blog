@@ -1,8 +1,9 @@
 ---
 title: "Rime"
-lastmod: "2022-05-21 16:05:57"
+date: "2022-07-16 20:43:00"
+lastmod: "2022-12-04 14:05:31"
 categories: ["Tools"]
-draft: true
+draft: false
 ---
 
 ## 使用说明 {#使用说明}
@@ -69,6 +70,66 @@ sync_dir: 'D:\path\to\RimeSync'
 -   【鼠鬚管】 $TMPDIR/rime.squirrel.\*
 
 **註:** 以上標有 ※ 號的文件，包含用戶資料，您在清理文件時要注意備份！
+
+
+## 显示简繁体 {#显示简繁体}
+
+在 RIME 輸入法的基础上，将简体词库进行擴充：.dict.yaml 的文件为字典文件，输入的字母与相应的文字符号进行映射
+
+
+### 词库扩充\* {#词库扩充}
+
+采用 OpneCC （Open Chinese Convert（OpenCC））自动实现，将字典文件(见附件链接）生成一个新的文件，替换原有文件，最终在 RIME 中进行重新部署
+
+转换代码如下：
+
+```python
+from opencc import OpenCC
+import time
+
+def transText(file, newFile):
+    index = 0
+    covT = OpenCC('s2t')  # 转繁体
+    covTW = OpenCC('s2tw')  # 转台湾繁体
+    covHK = OpenCC('s2hk')  # 转香港繁体
+
+    with open(file, "r", encoding="utf-8") as f1, open(newFile, "w", encoding="utf-8") as f2:
+        for line in f1:
+            index += 1
+            if index % 200 == 0:
+                print(f'Line{index}')
+
+            f2.write(line)
+
+            t = covT.convert(line)
+            if t != line:
+                f2.write(t)
+
+            tw = covTW.convert(line)
+            if t != tw:
+                f2.write(t)
+
+            hk = covHK.convert(line)
+            if hk != tw:
+                f2.write(hk)
+
+
+if __name__ == '__main__':
+    time_start = time.time()
+
+    filename = 'THUOCL_car.dict.yaml'
+    filenameN = 'THUOCL_car.dict.yaml_'
+
+    transText(filename, filenameN)
+
+    time_end = time.time()
+    print(f'End ,time cost {time_end-time_start} s')
+```
+
+
+### Ref {#ref}
+
+-   [RIME输入法 实现简体中文输入，简体繁体多个提示](https://blog.csdn.net/yulinxx/article/details/124006694)
 
 
 ## Note {#note}

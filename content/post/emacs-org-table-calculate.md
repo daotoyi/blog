@@ -1,7 +1,7 @@
 ---
 title: "Org Table calculate"
 date: "2022-04-05 23:10:00"
-lastmod: "2022-04-30 12:24:08"
+lastmod: "2022-11-30 21:27:18"
 tags: ["org"]
 categories: ["emacs"]
 draft: false
@@ -19,7 +19,7 @@ draft: false
 引用表格中字段: `@row_index$col_index`
 优化: @4$5='(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可
 
-```lisp
+```markdown
 `-c }`   ;; 显示或者隐藏 row_index 和 col_index
 `-c *`   ;; 对整个表格重新计算（光标必须停留在表格上)
 `-c =`   ;; 后在 mini buffer 中输入公式，回车,会在表格下面出现公式

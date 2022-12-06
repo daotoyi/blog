@@ -80,6 +80,24 @@
     </item>
     
     <item>
+      <title>Rime</title>
+      <link>https://daotoyi.github.io/post/rime-input-method/</link>
+      <pubDate>Sat, 16 Jul 2022 20:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/rime-input-method/</guid>
+      <description>使用说明 同步 打开 installation.yaml 文件，在最下方添加如下代码: C:\Users\`USER`\AppData\Roaming\Rime\installation.yaml 1 sync_dir: &amp;#39;D:\path\to\RimeSync&amp;#39; 在开始菜单找到点击*【小狼毫】用户资料同步*. NOTE :Rime 的同步功能，在个人词典是双向同步，在</description>
+    </item>
+    
+    <item>
+      <title>Rime</title>
+      <link>https://daotoyi.github.io/posts/rime-input-method/</link>
+      <pubDate>Sat, 16 Jul 2022 20:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/rime-input-method/</guid>
+      <description>使用说明 同步 打开 installation.yaml 文件，在最下方添加如下代码: C:\Users\`USER`\AppData\Roaming\Rime\installation.yaml 1 sync_dir: &amp;#39;D:\path\to\RimeSync&amp;#39; 在开始菜单找到点击*【小狼毫】用户资料同步*. NOTE :Rime 的同步功能，在个人词典是双向同步，在</description>
+    </item>
+    
+    <item>
       <title>Google gmail</title>
       <link>https://daotoyi.github.io/post/google-gmail/</link>
       <pubDate>Tue, 10 May 2022 23:41:00 +0000</pubDate>
@@ -319,7 +337,7 @@
       <pubDate>Thu, 17 Mar 2022 19:58:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/cad-notes/</guid>
-      <description>输出 PDF 文件线条太粗 CAD 软件界面点击打印 打印-模型 打印样式表(画笔指定) 选定样式表(acad.ctb) 点击打印样式表后面的图标 打印样式表编辑器 打</description>
+      <description>基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数</description>
     </item>
     
     <item>
@@ -328,7 +346,7 @@
       <pubDate>Thu, 17 Mar 2022 19:58:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/cad-notes/</guid>
-      <description>输出 PDF 文件线条太粗 CAD 软件界面点击打印 打印-模型 打印样式表(画笔指定) 选定样式表(acad.ctb) 点击打印样式表后面的图标 打印样式表编辑器 打</description>
+      <description>基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数</description>
     </item>
     
     <item>

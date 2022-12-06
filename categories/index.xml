@@ -6,22 +6,31 @@
     <description>Recent content in Categories on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Nov 2022 12:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 11:05:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Linux</title>
-      <link>https://daotoyi.github.io/categories/linux/</link>
-      <pubDate>Mon, 21 Nov 2022 12:29:00 +0000</pubDate>
+      <title>Hardware</title>
+      <link>https://daotoyi.github.io/categories/hardware/</link>
+      <pubDate>Sun, 04 Dec 2022 11:05:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/categories/linux/</guid>
+      <guid>https://daotoyi.github.io/categories/hardware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
       <link>https://daotoyi.github.io/categories/emacs/</link>
-      <pubDate>Sun, 13 Nov 2022 13:08:00 +0000</pubDate>
+      <pubDate>Fri, 25 Nov 2022 23:07:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://daotoyi.github.io/categories/linux/</link>
+      <pubDate>Mon, 21 Nov 2022 12:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
@@ -58,15 +67,6 @@
       <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/categories/internet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://daotoyi.github.io/categories/hardware/</link>
-      <pubDate>Tue, 27 Sep 2022 08:14:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/categories/hardware/</guid>
       <description></description>
     </item>
     

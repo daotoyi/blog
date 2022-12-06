@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bongo - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &amp;#39;normal :keymaps &amp;#39;bongo-playlist-mode-map &amp;#34;&amp;lt;return&amp;gt;&amp;#34; &amp;#39;bongo-dwim &amp;#34;i&amp;#34; &amp;#39;bongo-insert-file &amp;#34;p&amp;#34; &amp;#39;bongo-play-previous &amp;#34;n&amp;#34; &amp;#39;bongo-play-next &amp;#34;w&amp;#34; &amp;#39;bongo-pause/resume &amp;#34;d&amp;#34; &amp;#39;bongo-dired-line &amp;#34;a&amp;#34; &amp;#39;bongo-append-enqueue &amp;#34;s&amp;#34; &amp;#39;bongo-seek &amp;#34;r&amp;#34; &amp;#39;bongo-rename-line &amp;#34;v&amp;#34; &amp;#39;volume) :custom (bongo-enabled-backends &amp;#39;(mplayer.exe)) (bongo-default-directory &amp;#34;e:/Recreation/Music/&amp;#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&amp;#39;." /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/emacs-bongo/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Bongo" />
+<meta property="og:description" content="configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &#39;normal :keymaps &#39;bongo-playlist-mode-map &#34;&lt;return&gt;&#34; &#39;bongo-dwim &#34;i&#34; &#39;bongo-insert-file &#34;p&#34; &#39;bongo-play-previous &#34;n&#34; &#39;bongo-play-next &#34;w&#34; &#39;bongo-pause/resume &#34;d&#34; &#39;bongo-dired-line &#34;a&#34; &#39;bongo-append-enqueue &#34;s&#34; &#39;bongo-seek &#34;r&#34; &#39;bongo-rename-line &#34;v&#34; &#39;volume) :custom (bongo-enabled-backends &#39;(mplayer.exe)) (bongo-default-directory &#34;e:/Recreation/Music/&#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&#39;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/emacs-bongo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-25T22:36:00+00:00" />
+<meta property="article:modified_time" content="2022-11-25T23:09:18+00:00" />
+
+<meta itemprop="name" content="Bongo">
+<meta itemprop="description" content="configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &#39;normal :keymaps &#39;bongo-playlist-mode-map &#34;&lt;return&gt;&#34; &#39;bongo-dwim &#34;i&#34; &#39;bongo-insert-file &#34;p&#34; &#39;bongo-play-previous &#34;n&#34; &#39;bongo-play-next &#34;w&#34; &#39;bongo-pause/resume &#34;d&#34; &#39;bongo-dired-line &#34;a&#34; &#39;bongo-append-enqueue &#34;s&#34; &#39;bongo-seek &#34;r&#34; &#39;bongo-rename-line &#34;v&#34; &#39;volume) :custom (bongo-enabled-backends &#39;(mplayer.exe)) (bongo-default-directory &#34;e:/Recreation/Music/&#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&#39;."><meta itemprop="datePublished" content="2022-11-25T22:36:00+00:00" />
+<meta itemprop="dateModified" content="2022-11-25T23:09:18+00:00" />
+<meta itemprop="wordCount" content="575">
+<meta itemprop="keywords" content="music," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bongo"/>
+<meta name="twitter:description" content="configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &#39;normal :keymaps &#39;bongo-playlist-mode-map &#34;&lt;return&gt;&#34; &#39;bongo-dwim &#34;i&#34; &#39;bongo-insert-file &#34;p&#34; &#39;bongo-play-previous &#34;n&#34; &#39;bongo-play-next &#34;w&#34; &#39;bongo-pause/resume &#34;d&#34; &#39;bongo-dired-line &#34;a&#34; &#39;bongo-append-enqueue &#34;s&#34; &#39;bongo-seek &#34;r&#34; &#39;bongo-rename-line &#34;v&#34; &#39;volume) :custom (bongo-enabled-backends &#39;(mplayer.exe)) (bongo-default-directory &#34;e:/Recreation/Music/&#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&#39;."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="configure">configure</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">use-package</span> <span class="nv">bongo</span>
+  <span class="ss">:commands</span> <span class="nv">bongo-playlist</span>
+  <span class="ss">:general</span>
+  <span class="p">(</span><span class="ss">:states</span> <span class="ss">&#39;normal</span>
+   <span class="ss">:keymaps</span> <span class="ss">&#39;bongo-playlist-mode-map</span>
+     <span class="s">&#34;&lt;return&gt;&#34;</span> <span class="ss">&#39;bongo-dwim</span>
+     <span class="s">&#34;i&#34;</span> <span class="ss">&#39;bongo-insert-file</span>
+     <span class="s">&#34;p&#34;</span> <span class="ss">&#39;bongo-play-previous</span>
+     <span class="s">&#34;n&#34;</span> <span class="ss">&#39;bongo-play-next</span>
+     <span class="s">&#34;w&#34;</span> <span class="ss">&#39;bongo-pause/resume</span>
+     <span class="s">&#34;d&#34;</span> <span class="ss">&#39;bongo-dired-line</span>
+     <span class="s">&#34;a&#34;</span> <span class="ss">&#39;bongo-append-enqueue</span>
+     <span class="s">&#34;s&#34;</span> <span class="ss">&#39;bongo-seek</span>
+     <span class="s">&#34;r&#34;</span> <span class="ss">&#39;bongo-rename-line</span>
+     <span class="s">&#34;v&#34;</span> <span class="ss">&#39;volume</span><span class="p">)</span>
+  <span class="ss">:custom</span>
+  <span class="p">(</span><span class="nv">bongo-enabled-backends</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">mplayer.exe</span><span class="p">))</span>
+  <span class="p">(</span><span class="nv">bongo-default-directory</span> <span class="s">&#34;e:/Recreation/Music/&#34;</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">bongo-insert-album-covers</span> <span class="no">t</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">bongo-album-cover-size</span> <span class="mi">100</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">bongo-mode-line-indicator-mode</span> <span class="no">nil</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="note">note</h2>
+<h3 id="githut-bongo"><a href="https://github.com/dbrock/bongo">githut/bongo</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-md" data-lang="md">To start Bongo, run <span class="sb">`M-x bongo RET&#39;.  To insert a file or a whole
+</span><span class="sb">directory of files, type `</span>i&#39;.  Then hit <span class="sb">`RET&#39; to play one of them.
+</span><span class="sb">To see a list of available commands, run `</span>M-x describe-mode RET&#39;.
+Here are some common ones for your convenience:
+ <span class="sb">`i&#39;         Insert a track (or a directory tree full of tracks).
+</span><span class="sb">  `</span>RET&#39;       Start playing the track at point (and then continue).
+  <span class="sb">`SPC&#39;       Pause playback (if supported by the backend).
+</span><span class="sb">  `</span>C-c C-s&#39;   Stop playback (or start, if already stopped).
+  <span class="sb">`C-c C-n&#39;   Start playing the next track.
+</span><span class="sb">  `</span>C-c C-r&#39;   Start playing a random track.
+  <span class="sb">`s&#39;         Seek backward or forward (if supported by the backend).
+</span><span class="sb">  `</span>l&#39;         Move point to the current track and recenter.
+  <span class="sb">`q&#39;         Quit Bongo (bury Bongo buffers and delete windows).
+</span><span class="sb">
+</span><span class="sb">  `</span>c&#39;         Copy the track or section under point.
+  <span class="sb">`k&#39;         Kill the track or section under point.
+</span><span class="sb">  `</span>C-w&#39;       Kill all tracks and sections in the region.
+  <span class="sb">`y&#39;         Reinsert the last copied or killed stuff.
+</span><span class="sb">  `</span>I u&#39;       Insert a URI (can be used to play podcasts and radio).
+  <span class="sb">`I TAB&#39;     List other kinds of tracks that can be inserted.
+</span><span class="sb">
+</span><span class="sb">  `</span>2 C-c C-n&#39; Skip the next track and start playing the one after that.
+  <span class="sb">`3 C-c C-s&#39; Stop playback after the next three tracks finish playing.
+</span><span class="sb">  `</span>3 RET&#39;     Start playing the track under point, and continue playing
+              tracks, but stop after playing the third track.
+  <span class="sb">`C-u C-c C-s&#39;
+</span><span class="sb">              Stop playback after each track finishes playing (this is
+</span><span class="sb">              good when playing movies, for example).
+</span><span class="sb">  `</span>C-u C-u C-c C-s&#39;
+              Stop playback after the track at point finishes playing.
+  <span class="sb">`C-u C-c C-n&#39;
+</span><span class="sb">              Play the next track after each track finishes playing
+</span><span class="sb">              (this undoes the effect of `</span>C-u C-c C-s&#39;).
+  <span class="sb">`C-u C-c C-r&#39;
+</span><span class="sb">              Play tracks in random order.
+</span><span class="sb">
+</span><span class="sb">Here are some commands that are nice if you use library buffers:
+</span><span class="sb">
+</span><span class="sb">  `</span>h&#39;         Switch from playlist to library (or vice versa).
+  <span class="sb">`C-u h&#39;     Switch from playlist to library (or vice versa), leaving
+</span><span class="sb">              the original buffer visible in another window.
+</span><span class="sb">  `</span>e&#39;         Append the track under point or the region (if active)
+              to the end of the playlist buffer.
+  <span class="sb">`3 e&#39;       Append the track at point and the two after that to the
+</span><span class="sb">              end of the playlist buffer.
+</span><span class="sb">  `</span>E&#39;         Insert the track under point or the region (if active)
+              into the playlist buffer, directly below the track
+              that&#39;s currently playing.
+  <span class="sb">`C-x C-s&#39;   Save the current buffer (library buffers are stored
+</span><span class="sb">              using the `</span>.bongo-library&#39; file extension).
+
+Finally, since you&#39;ve read this far, here are a few bonus commands:
+
+  <span class="sb">`d&#39;         Open a Dired buffer containing the track under point.
+</span><span class="sb">  `</span>r&#39;         Rename the file corresponding to the track under point.
+  <span class="sb">`v&#39;         Change audio volume (requires the `</span>volume-el&#39; package).
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="playlist">playlist</h3>
+<ul>
+<li>h
+<ul>
+<li>sitch between  playlist and libray</li>
+<li><code>I</code> -&gt; Directory append all musics to playlist</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

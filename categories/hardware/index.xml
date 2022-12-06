@@ -6,7 +6,25 @@
     <description>Recent content in Hardware on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Sep 2022 08:14:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 11:05:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>模拟采样</title>
+      <link>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</link>
+      <pubDate>Sun, 04 Dec 2022 11:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</guid>
+      <description>AD burst 模式 一次将所有通道内的数据采过来，然后由软件读取。 过采样 Oversampling 以远远高于信号带宽两倍或其最高频率对其进行采样的过程。一般来说是指采样频率高于</description>
+    </item>
+    
+    <item>
+      <title>模拟采样</title>
+      <link>https://daotoyi.github.io/posts/hardware-simulation-of-sampling/</link>
+      <pubDate>Sun, 04 Dec 2022 11:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-simulation-of-sampling/</guid>
+      <description>AD burst 模式 一次将所有通道内的数据采过来，然后由软件读取。 过采样 Oversampling 以远远高于信号带宽两倍或其最高频率对其进行采样的过程。一般来说是指采样频率高于</description>
+    </item>
+    
     <item>
       <title>SGCC</title>
       <link>https://daotoyi.github.io/post/hardware-sgcc/</link>

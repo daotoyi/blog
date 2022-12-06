@@ -126,115 +126,115 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker-normal-user-permission/">Docker 普通用户使用</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/emacs-use-package/">use-package</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-10-28 </span>
+      <span class="post-time"> 2022-11-25 </span>
       <div class="post-category">
-          <a href="/categories/docker/"> Docker </a>
+          <a href="/categories/emacs/"> emacs </a>
           </div>
-        <span class="more-meta"> 156 words </span>
+        <span class="more-meta"> 405 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      问题 1 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create: dial unix /var/run/docker.sock: connect: permission denied. 这主要是因为 Docker 进程使用 Unix Socket，而 /var/run/docker.sock 需要 root 权限才能进行读写操作。 方案 使用 root 权限创建
+      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ;; 最简洁的格式 (use-package restart-emacs) ;; 常用的格式 (use-package smooth-scrolling :ensure t ;是否一定要确保已安装 :defer nil ;是否要延迟加
     </div>
     <div class="read-more">
-      <a href="/post/docker-normal-user-permission/" class="read-more-link">Read more...</a>
+      <a href="/post/emacs-use-package/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git-access/">Git 访问</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/emacs-emms/">EMMS</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-10-23 </span>
+      <span class="post-time"> 2022-11-25 </span>
       <div class="post-category">
-          <a href="/categories/github/"> Github </a>
+          <a href="/categories/emacs/"> emacs </a>
           </div>
-        <span class="more-meta"> 128 words </span>
+        <span class="more-meta"> 201 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      由于网络原因, 一般情况无访问，可参考修改主机映射： /etc/host 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 140.82.114.25 alive.github.com 140.82.112.25 live.github.com 185.199.108.154 github.githubassets.com 140.82.112.22 central.github.com 185.199.108.133 desktop.githubusercontent.com
+      eg.1 1 2 3 4 5 6 7  (add-to-list &#39;load-path &#34;~/.emacs.d/emms/lisp&#34;) (require &#39;emms-setup) (require &#39;emms-player-vlc) (emms-standard) (emms-default-players) (setq emms-player-vlc-command-name &#34;/Applications/VLC.app/Contents/MacOS/VLC&#34;)   eg.2 1 2 3 4 5 6 7 8 9 10 11  (setq exec-path (append exec-path &#39;(&#34;/usr/local/bin&#34;))) (add-to-list &#39;load-path &#34;~/.emacs.d/site-lisp/emms/lisp&#34;) (require &#39;emms-setup) (require &#39;emms-player-mplayer) (emms-standard) (emms-default-players) (define-emms-simple-player mplayer &#39;(file url) (regexp-opt &#39;(&#34;.ogg&#34; &#34;.mp3&#34; &#34;.wav&#34; &#34;.mpg&#34; &#34;.mpeg&#34; &#34;.wmv&#34; &#34;.wma&#34; &#34;.mov&#34; &#34;.avi&#34; &#34;.divx&#34; &#34;.ogm&#34; &#34;.asf&#34; &#34;.mkv&#34; &#34;http://&#34; &#34;mms://&#34; &#34;.
     </div>
     <div class="read-more">
-      <a href="/post/git-access/" class="read-more-link">Read more...</a>
+      <a href="/post/emacs-emms/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/internet-cloudflare/">Cloudflare</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/emacs-bongo/">Bongo</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-10-22 </span>
+      <span class="post-time"> 2022-11-25 </span>
       <div class="post-category">
-          <a href="/categories/internet/"> Internet </a>
+          <a href="/categories/emacs/"> emacs </a>
           </div>
-        <span class="more-meta"> 46 words </span>
+        <span class="more-meta"> 575 words </span>
+        <span class="more-meta"> 3 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &#39;normal :keymaps &#39;bongo-playlist-mode-map &#34;&lt;return&gt;&#34; &#39;bongo-dwim &#34;i&#34; &#39;bongo-insert-file &#34;p&#34; &#39;bongo-play-previous &#34;n&#34; &#39;bongo-play-next &#34;w&#34; &#39;bongo-pause/resume &#34;d&#34; &#39;bongo-dired-line &#34;a&#34; &#39;bongo-append-enqueue &#34;s&#34; &#39;bongo-seek &#34;r&#34; &#39;bongo-rename-line &#34;v&#34; &#39;volume) :custom (bongo-enabled-backends &#39;(mplayer.exe)) (bongo-default-directory &#34;e:/Recreation/Music/&#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&#39;.
+    </div>
+    <div class="read-more">
+      <a href="/post/emacs-bongo/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/linuxumpack-install-packages/">Linux 解压安装包文件</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-11-21 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          </div>
+        <span class="more-meta"> 216 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Exposing a web service with Cloudflare Tunnel 使用 Cloudflare Tunnel 公开 Web 服务 No more VPN. Introducting Cloudflare Tunnel 使用 Cloudflare Tunnel 隐藏你的服务器 SSH into your private machines from anywhere, for free, using Cloudflare Tunnel ssh-over-cloudflare
+      dpkg X 解压 dekg-deb 重新打包 1 2 3 4 5 6 7 8 9 10 11 mkdir extract mkdir extract/DEBIAN mkdir build # 0 解压出包中的文件到 extract 目录下 dpkg -X ../openssh-client_6.1p1_i386.deb extract/ # 1 解压出包的控制信息 extract/DEBIAN
     </div>
     <div class="read-more">
-      <a href="/post/internet-cloudflare/" class="read-more-link">Read more...</a>
+      <a href="/post/linuxumpack-install-packages/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/internet-cloudflare-tunnel/">Cloudflare Tunnel</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/emacs-plugins-list/">Emacs 插件列表</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-10-22 </span>
+      <span class="post-time"> 2022-11-13 </span>
       <div class="post-category">
-          <a href="/categories/internet/"> Internet </a>
+          <a href="/categories/emacs/"> emacs </a>
           </div>
-        <span class="more-meta"> 940 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上
-    </div>
-    <div class="read-more">
-      <a href="/post/internet-cloudflare-tunnel/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/windows-faq/">Windows FAQ</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-10-18 </span>
-      <div class="post-category">
-          <a href="/categories/windows/"> Windows </a>
-          </div>
-        <span class="more-meta"> 17 words </span>
+        <span class="more-meta"> 211 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      电脑麦克风使用不了没有声音了怎么办
+      基础 插件 用途 dracula-theme / molokai-theme 配色 neotree 文件列表 super-save 自动保存 popwin 窗口操作 window-numbering 窗口跳转 dired+ 目录增强 direx 打开当前文件目录 crux 打开应用 undo-tree 撤销 swiper，counsel 快捷命
     </div>
     <div class="read-more">
-      <a href="/post/windows-faq/" class="read-more-link">Read more...</a>
+      <a href="/post/emacs-plugins-list/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

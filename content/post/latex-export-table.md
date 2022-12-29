@@ -1,7 +1,7 @@
 ---
 title: "Table: latex 表格超详细教程"
 date: "2022-02-19 12:44:00"
-lastmod: "2022-04-30 12:45:13"
+lastmod: "2022-12-24 10:36:09"
 categories: ["Latex"]
 draft: false
 ---
@@ -46,3 +46,5 @@ latex 里的表格是一行行来绘制的,每一行里面用 `&` 来分隔各�
 ## 参考 {#参考}
 
 -   [（table, tabular, multirow, multicolumn）](https://blog.csdn.net/weixin_41519463/article/details/103737464)
+-   [LaTeX使用笔记：长表格longtable（附实例）](http://sparkandshine.net/latex-use-notes-longtable-with-examples/)
+-   [How to make automatically line break when use longtable?](https://tex.stackexchange.com/questions/194150/how-to-make-automatically-line-break-when-use-longtable)

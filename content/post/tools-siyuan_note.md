@@ -1,7 +1,7 @@
 ---
 title: "SiYuan_note"
 date: "2022-08-21 10:10:00"
-lastmod: "2022-08-21 10:10:49"
+lastmod: "2022-12-28 16:00:36"
 categories: ["Tools"]
 draft: false
 ---
@@ -20,7 +20,7 @@ draft: false
 -   大纲、块级双向链接、全文搜索、标签分类、数学公式、思维导图 / 流程图、代码片段、跨平台同步等众多特性
 
 
-## Docker 部署 {#docker-部署}
+## Docker {#docker}
 
 ```bash
 if [ -d ${CURRENT_PATH}/siyuan/workspace ];then
@@ -49,3 +49,22 @@ docker run -d \
 ## 同步 {#同步}
 
 **Docker 部署只支持 PC/移动端 网页访问**
+
+
+## Note {#note}
+
+
+### docker deploy {#docker-deploy}
+
+docker 部署的只是一个同步节点，不是 WebDAV 服务器。
+
+
+### WebDAV sync {#webdav-sync}
+
+-   Andriod/docker
+    -   在 设置-云端 里直接填写相应地址即可。
+-   PC
+    -   有设置工作目录的，会与第三方同步（nutstore 等）干涉
+    -   工作目录和 webdav 同步目录选不同的目录。
+-   注意导入数据仓库密钥
+-   官网建议只同步 data 目录，但似乎有问题，同步整个目录测试也可以

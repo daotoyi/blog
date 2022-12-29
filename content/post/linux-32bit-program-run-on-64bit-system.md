@@ -1,7 +1,7 @@
 ---
 title: "Linux 64 位系统运行 32 位程序"
 date: "2022-07-11 12:55:00"
-lastmod: "2022-07-11 12:55:39"
+lastmod: "2022-12-24 14:40:22"
 categories: ["Linux"]
 draft: false
 ---

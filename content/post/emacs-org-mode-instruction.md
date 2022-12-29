@@ -1,6 +1,6 @@
 ---
 title: "Org-mode 简介"
-lastmod: "2022-09-24 08:46:08"
+lastmod: "2022-12-29 11:43:57"
 categories: ["emacs"]
 draft: false
 ---
@@ -119,6 +119,8 @@ TODO 是一类标题，需要用\*开头
 -   M-S-RET 插入同级 TODO 标签
 -   C-c C-c [ ]中的 x 标识
 
+\#+begin_src org
+
 
 ### <span class="org-todo todo DRAFT">DRAFT</span> 任务 1 {#任务-1}
 
@@ -140,6 +142,8 @@ TODO 是一类标题，需要用\*开头
 
 
 #### <span class="org-todo done DONE">DONE</span> 一个已完成的任务 {#一个已完成的任务}
+
+\#+end_src
 
 
 ## 标签 Tags {#标签-tags}
@@ -164,12 +168,12 @@ TODO 是一类标题，需要用\*开头
 -   C-c . 插入时间
 
 <span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-17 周二&gt;</span></span>
+
 时间前可以加 DEADLINE:和 SCHEDULED:表示时间的类型
+
 DEADLINE:<span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-12 周四&gt;</span></span>
+
 一个常见的 TODO 标签：
-
-
-### <span class="org-todo todo TODO">TODO</span>  {#d41d8c}
 
 一些待办事项
 SCHEDULED: <span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-19 周四&gt;</span></span>
@@ -183,9 +187,14 @@ DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2015-03-01
 
 可以加一些说明符：
 
-Everything should be made as simple as possible,
-but not any simpler -- Albert Einstein
-\#+END_QUOTE
+```org
+#+TITLE: This is the title of the document
+#+OPTIONS: toc:2 (only to two levels in TOC)
+#+OPTIONS: toc:nil (no TOC )
+```
+
+> Everything should be made as simple as possible,
+> but not any simpler -- Albert Einstein
 
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
@@ -203,21 +212,18 @@ but not any simpler
 
 ### 一些特殊格式： {#一些特殊格式}
 
-**bold**
-_italic_
-<span class="underline">underlined</span>
-`code`
-`verbatim`
-~~strike-through~~
+```org
+*bold*
+/italic/
+_underlined_
+=code=
+~verbatim~
++strike-through+
+```
 
 注释的用法# this is comment
 
 在导出后 LaTeX 能被正确解释
-
-\begin{equation}
-\nabla^2 x=\int\Omega \frac{a}{\log{a}h
-} \sum^n\_{i=1} a\_i d\Omega
-\end{equation}
 
 
 ### 插入源代码 {#插入源代码}
@@ -226,6 +232,9 @@ org mode 的源代码可以直接求出运行结果，需要在.emacsu 配置文
 
 -   C-c C-c 对当前代码块求值
 
+<!--listend-->
+
+```lisp
 (org-babel-do-load-languages
  'org-babel-load-languages
  '(
@@ -240,9 +249,15 @@ org mode 的源代码可以直接求出运行结果，需要在.emacsu 配置文
    (perl . t)
    (C . t)
    ))
+```
 
 ```emacs-lisp
 (+ 1 2 3 4)
+```
+
+```org
+#+RESULTS:
+: 10
 ```
 
 ```python
@@ -250,7 +265,10 @@ a = 1+1
 print a
 ```
 
-S
+```org
+#+RESULTS:
+: 2
+```
 
 ```C++
 int a=1;

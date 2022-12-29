@@ -1,10 +1,11 @@
 ---
 title: "Hugo 使用总结"
 date: "2022-03-08 11:31:00"
-lastmod: "2022-04-30 12:50:05"
+lastmod: "2022-12-09 20:25:45"
 tags: ["Hugo"]
 categories: ["VPS"]
 draft: false
+toc: true
 ---
 
 ## 按不同配置启动 {#按不同配置启动}
@@ -19,7 +20,7 @@ hugo --config a.toml,b.toml,c.toml
 
 ## fix content {#fix-content}
 
-`hugo server` to show effect on website will deployed.
+`hugo server` to show effect on website will be deployed.
 
 example:
 

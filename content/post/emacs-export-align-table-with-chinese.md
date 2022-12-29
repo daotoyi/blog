@@ -1,7 +1,8 @@
 ---
-title: "Org 中文表格对齐"
+title: "Org Table 中文表格对齐"
 date: "2022-03-11 17:46:00"
-lastmod: "2022-04-30 12:24:07"
+lastmod: "2022-12-23 20:38:46"
+tags: ["org"]
 categories: ["emacs"]
 draft: false
 ---

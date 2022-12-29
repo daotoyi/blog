@@ -103,7 +103,7 @@
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/hugo-manual/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in</description>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/hugo-manual/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in</description>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>

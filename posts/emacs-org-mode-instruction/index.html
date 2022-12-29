@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/posts/emacs-org-mode-instruction/" /><meta property="article:section" content="posts" />
 
-<meta property="article:modified_time" content="2022-09-24T08:46:08+00:00" />
+<meta property="article:modified_time" content="2022-12-29T11:43:57+00:00" />
 
 <meta itemprop="name" content="Org-mode 简介">
 <meta itemprop="description" content="列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任">
-<meta itemprop="dateModified" content="2022-09-24T08:46:08+00:00" />
-<meta itemprop="wordCount" content="1045">
+<meta itemprop="dateModified" content="2022-12-29T11:43:57+00:00" />
+<meta itemprop="wordCount" content="1090">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Org-mode 简介"/>
 <meta name="twitter:description" content="列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任"/>
@@ -286,6 +286,7 @@
 <li>M-S-RET 插入同级 TODO 标签</li>
 <li>C-c C-c <input disabled="" type="checkbox"> 中的 x 标识</li>
 </ul>
+<p>#+begin_src org</p>
 <h3 id="任务-1"><span class="org-todo todo DRAFT">DRAFT</span> 任务 1</h3>
 <h3 id="任务-2"><span class="org-todo todo TODO">TODO</span> 任务 2</h3>
 <h3 id="总任务"><span class="org-todo todo TODO">TODO</span> 总任务 <code>[33%]</code></h3>
@@ -300,6 +301,7 @@
 </li>
 </ul>
 <h4 id="一个已完成的任务"><span class="org-todo done DONE">DONE</span> 一个已完成的任务</h4>
+<p>#+end_src</p>
 <h2 id="标签-tags">标签 Tags</h2>
 <p>子标题的标签会继承父标题标签</p>
 <h3 id="title">title <span class="tag"><span class="work">work</span><span class="learn">learn</span></span></h3>
@@ -313,20 +315,32 @@
 <ul>
 <li>C-c . 插入时间</li>
 </ul>
-<p><span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-17 周二&gt;</span></span>
-时间前可以加 DEADLINE:和 SCHEDULED:表示时间的类型
-DEADLINE:<span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-12 周四&gt;</span></span>
-一个常见的 TODO 标签：</p>
-<h3 id="d41d8c"><span class="org-todo todo TODO">TODO</span> </h3>
+<p><span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-17 周二&gt;</span></span></p>
+<p>时间前可以加 DEADLINE:和 SCHEDULED:表示时间的类型</p>
+<p>DEADLINE:<span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-12 周四&gt;</span></span></p>
+<p>一个常见的 TODO 标签：</p>
 <p>一些待办事项
 SCHEDULED: <span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-19 周四&gt;</span></span>
 DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2015-03-01 周日&gt;</span></span></p>
 <h2 id="富文本导出">富文本导出</h2>
 <h3 id="basic">basic</h3>
 <p>可以加一些说明符：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="cs">#+TITLE</span><span class="c">: This is the title of the document</span>
+<span class="cs">#+OPTIONS</span><span class="c">: toc:2 (only to two levels in TOC)</span>
+<span class="cs">#+OPTIONS</span><span class="c">: toc:nil (no TOC )</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>Everything should be made as simple as possible,
-but not any simpler &ndash; Albert Einstein
-#+END_QUOTE</p>
+but not any simpler &ndash; Albert Einstein</p>
+</blockquote>
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 <div class="org-center">
 <p>Everything should be made as simple as possible, <br />
@@ -341,38 +355,67 @@ but not any simpler</p>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="一些特殊格式">一些特殊格式：</h3>
-<p><strong>bold</strong>
-<em>italic</em>
-<span class="underline">underlined</span>
-<code>code</code>
-<code>verbatim</code>
-<del>strike-through</del></p>
-<p>注释的用法# this is comment</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="gs">*bold*</span>
+<span class="ge">/italic/</span>
+<span class="gl">_underlined_</span>
+<span class="nc">=code=</span>
+<span class="nc">~verbatim~</span>
+<span class="gd">+strike-through+</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>注释的用法# this is comment</p>
 <p>在导出后 LaTeX 能被正确解释</p>
-<p>\begin{equation}
-\nabla^2 x=\int\Omega \frac{a}{\log{a}h
-} \sum^n_{i=1} a_i d\Omega
-\end{equation}</p>
 <h3 id="插入源代码">插入源代码</h3>
 <p>org mode 的源代码可以直接求出运行结果，需要在.emacsu 配置文件中设置加载的运行语言</p>
 <ul>
 <li>C-c C-c 对当前代码块求值</li>
 </ul>
-<p>(org-babel-do-load-languages
-&lsquo;org-babel-load-languages
-&lsquo;(
-(sh . t)
-(python . t)
-(R . t)
-(ruby . t)
-(ditaa . t)
-(dot . t)
-(octave . t)
-(sqlite . t)
-(perl . t)
-(C . t)
-))</p>
+<!--listend-->
 <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">org-babel-do-load-languages</span>
+ <span class="ss">&#39;org-babel-load-languages</span>
+ <span class="o">&#39;</span><span class="p">(</span>
+   <span class="p">(</span><span class="nv">sh</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">python</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">R</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">ruby</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">ditaa</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">dot</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">octave</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">sqlite</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">perl</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">(</span><span class="nv">C</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>
+   <span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -386,12 +429,31 @@ but not any simpler</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="cs">#+RESULTS</span><span class="c">:</span>
+: 10
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
 <span class="nb">print</span> <span class="n">a</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>S</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="cs">#+RESULTS</span><span class="c">:</span>
+: 2
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2

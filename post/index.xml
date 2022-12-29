@@ -6,7 +6,61 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Dec 2022 11:05:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 11:43:57 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org-mode 简介</title>
+      <link>https://daotoyi.github.io/post/emacs-org-mode-instruction/</link>
+      <pubDate>Thu, 29 Dec 2022 11:43:57 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-mode-instruction/</guid>
+      <description>列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任</description>
+    </item>
+    
+    <item>
+      <title>Org Export Pdf</title>
+      <link>https://daotoyi.github.io/post/emacs-org-export-pdf/</link>
+      <pubDate>Sat, 24 Dec 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-export-pdf/</guid>
+      <description>Table 溢出表格 整体缩放 表格前后增加以下内容 1 2 3 4 5 6 #+LaTeX: \resizebox{\textwidth}{!}{ | 姓名 | 身高 | 颜值 | 爱好 | 交往系数 | |------+-----+------+------+---------| | | | | | | #+LaTeX: } +ATTR_LATEX 改字号+longtable+a</description>
+    </item>
+    
+    <item>
+      <title>Manjaro FAQ</title>
+      <link>https://daotoyi.github.io/post/majaro-faq/</link>
+      <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/majaro-faq/</guid>
+      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu Errors occurred, no packages were upgraded. error: failed to commit transaction (invalid or corrupted package) Manjaro软件更新失败：无效或已损坏的软件包 update openssl libcrypto.so.1.1: cannot open shared object file 单独升级 openssl 之后，部</description>
+    </item>
+    
+    <item>
+      <title>emacs emoji</title>
+      <link>https://daotoyi.github.io/post/emacs-emoji/</link>
+      <pubDate>Mon, 12 Dec 2022 13:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-emoji/</guid>
+      <description>Unicode 15.0 和表情符号 Emacs 现在支持 Unicode 15.0，这是目前最新的 Unicode 版本。新前缀 C-x 8 e 现在会导致一些与表情符号相关的新命令： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 20:27:21 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Sphinx 使用总结</title>
+      <link>https://daotoyi.github.io/post/sphinx-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 14:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/sphinx-manual/</guid>
+      <description>reStructuredText reStructuredText 是一种轻量级标记语言。它是 Python Doc-SIG（Documentation Special Interest Group）的 Docutils 项目的一部分，旨在为 Python 创建一组类似于 Java 的 Javadoc 或 Perl</description>
+    </item>
+    
     <item>
       <title>模拟采样</title>
       <link>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</link>
@@ -206,15 +260,6 @@
     </item>
     
     <item>
-      <title>Org-mode 简介</title>
-      <link>https://daotoyi.github.io/post/emacs-org-mode-instruction/</link>
-      <pubDate>Sat, 24 Sep 2022 08:46:08 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/emacs-org-mode-instruction/</guid>
-      <description>列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任</description>
-    </item>
-    
-    <item>
       <title>Org VS Markdown</title>
       <link>https://daotoyi.github.io/post/emacs-org-vs-markdown/</link>
       <pubDate>Sat, 17 Sep 2022 09:23:00 +0000</pubDate>
@@ -401,15 +446,6 @@
       
       <guid>https://daotoyi.github.io/post/windows-and-iso/</guid>
       <description>Send Anywhere 文件传输：Windows 和 iOS 也有「隔空投送」 win 和 iso 均需要安装客户端 第一次使用需要配对 Continue on PC 把手机上查看的网页发送到电脑上 在 Safari 里打开想要分</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Mon, 25 Jul 2022 06:45:58 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>
@@ -1340,7 +1376,7 @@
     </item>
     
     <item>
-      <title>Org 中文表格对齐</title>
+      <title>Org Table 中文表格对齐</title>
       <link>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
       
@@ -1408,7 +1444,7 @@
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/hugo-manual/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in</description>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>

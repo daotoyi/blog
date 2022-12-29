@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/emacs-org-table-calculate/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-05T23:10:00+00:00" />
-<meta property="article:modified_time" content="2022-12-06T22:55:28+08:00" />
+<meta property="article:modified_time" content="2022-12-29T11:45:24+08:00" />
 
 <meta itemprop="name" content="Org Table calculate">
 <meta itemprop="description" content="Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&#39;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14"><meta itemprop="datePublished" content="2022-04-05T23:10:00+00:00" />
-<meta itemprop="dateModified" content="2022-12-06T22:55:28+08:00" />
-<meta itemprop="wordCount" content="304">
+<meta itemprop="dateModified" content="2022-12-29T11:45:24+08:00" />
+<meta itemprop="wordCount" content="305">
 <meta itemprop="keywords" content="org," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Org Table calculate"/>
 <meta name="twitter:description" content="Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&#39;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14"/>
@@ -136,7 +136,7 @@
         <div class="post-category">
             <a href="/categories/emacs/"> emacs </a>
             </div>
-          <span class="more-meta"> 304 words </span>
+          <span class="more-meta"> 305 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -186,24 +186,24 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="sb">`-c }`</span>   ;; 显示或者隐藏 row_index 和 col_index
-<span class="sb">`-c *`</span>   ;; 对整个表格重新计算（光标必须停留在表格上)
-<span class="sb">`-c =`</span>   ;; 后在 mini buffer 中输入公式，回车,会在表格下面出现公式
-<span class="sb">`-c + -y`</span> ;; 对某列求和, insert result into buffer (emacs mode)
-<span class="sb">`-c + S-Inertchar`</span> ;; 对某列求和, insert result into buffer (evil mode)
-<span class="sb">`-c &#39;`</span>     ;; 光标停留在某个有公式的字段, -c &#39;就会出现新的 buffe,显示公式
-<span class="sb">`-u -c -c`</span> ;; 安装公式 ??
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="o">`</span><span class="nv">-c</span> <span class="nv">}</span><span class="o">`</span>   <span class="c1">;; 显示或者隐藏 row_index 和 col_index</span>
+<span class="o">`</span><span class="nv">-c</span> <span class="nf">*</span><span class="o">`</span>   <span class="c1">;; 对整个表格重新计算（光标必须停留在表格上)</span>
+<span class="o">`</span><span class="nv">-c</span> <span class="nf">=</span><span class="o">`</span>   <span class="c1">;; 后在 mini buffer 中输入公式，回车,会在表格下面出现公式</span>
+<span class="o">`</span><span class="nv">-c</span> <span class="nf">+</span> <span class="nv">-y</span><span class="o">`</span> <span class="c1">;; 对某列求和, insert result into buffer (emacs mode)</span>
+<span class="o">`</span><span class="nv">-c</span> <span class="nf">+</span> <span class="nv">S-Inertchar</span><span class="o">`</span> <span class="c1">;; 对某列求和, insert result into buffer (evil mode)</span>
+<span class="o">`</span><span class="nv">-c</span> <span class="o">&#39;`</span>     <span class="c1">;; 光标停留在某个有公式的字段, -c &#39;就会出现新的 buffe,显示公式</span>
+<span class="o">`</span><span class="nv">-u</span> <span class="nv">-c</span> <span class="nv">-c</span><span class="o">`</span> <span class="c1">;; 安装公式 ??</span>
 
-<span class="sb">`..`</span> ;; 引用范围的 fields 值可以用..表示 from..to 的语义
-+TBLFM: $6=&#39;(+ $2..$5);N
+<span class="o">`..`</span> <span class="c1">;; 引用范围的 fields 值可以用..表示 from..to 的语义</span>
+<span class="nv">+TBLFM:</span> <span class="nv">$6=</span><span class="o">&#39;</span><span class="p">(</span><span class="nf">+</span> <span class="nv">$2..$5</span><span class="p">)</span><span class="c1">;N</span>
 
 
-;;  浮点数指定小数位数:
-$4=&#39;(format &#34;%0.2f&#34; (* (/ (* (- $2 $3) 1.0) $2) 100));N
+<span class="c1">;;  浮点数指定小数位数:</span>
+<span class="nv">$4=</span><span class="o">&#39;</span><span class="p">(</span><span class="nf">format</span> <span class="s">&#34;%0.2f&#34;</span> <span class="p">(</span><span class="nf">*</span> <span class="p">(</span><span class="nf">/</span> <span class="p">(</span><span class="nf">*</span> <span class="p">(</span><span class="nf">-</span> <span class="nv">$2</span> <span class="nv">$3</span><span class="p">)</span> <span class="mf">1.0</span><span class="p">)</span> <span class="nv">$2</span><span class="p">)</span> <span class="mi">100</span><span class="p">))</span><span class="c1">;N</span>
 
-;; 两种表达方式:
-+TBLFM: <span class="ni">@4</span>$6=@4$2+@4$3::@5$6=@5$2+@5$3+@5$4+@5$5
-+TBLFM: <span class="ni">@2</span>$2=&#39;(+ <span class="ni">@3</span>$2 <span class="ni">@4</span>$2 <span class="ni">@5</span>$2);N::@2$3=&#39;(+ <span class="ni">@3</span>$3 <span class="ni">@4</span>$3 <span class="ni">@5</span>$3);N
+<span class="c1">;; 两种表达方式:</span>
+<span class="nv">+TBLFM:</span> <span class="nv">@4$6=@4$2+@4$3::@5$6=@5$2+@5$3+@5$4+@5$5</span>
+<span class="nv">+TBLFM:</span> <span class="nv">@2$2=</span><span class="o">&#39;</span><span class="p">(</span><span class="nf">+</span> <span class="nv">@3$2</span> <span class="nv">@4$2</span> <span class="nv">@5$2</span><span class="p">)</span><span class="c1">;N::@2$3=&#39;(+ @3$3 @4$3 @5$3);N</span>
 </code></pre></td></tr></table>
 </div>
 </div><table>
@@ -236,7 +236,7 @@ $4=&#39;(format &#34;%0.2f&#34; (* (/ (* (- $2 $3) 1.0) $2) 100));N
 </tr>
 <tr>
 <td>2020</td>
-<td></td>
+<td>99</td>
 <td></td>
 <td></td>
 <td></td>
@@ -279,8 +279,8 @@ $4=&#39;(format &#34;%0.2f&#34; (* (/ (* (- $2 $3) 1.0) $2) 100));N
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-12-06
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/70df35caafc95e9620333063926657ec4f031b47" title="update weekly">(70df35c)</a>
+        2022-12-29
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/912d83c8810ee2f529fb7c0f9e1088bfc2a6adf3" title="update weekly">(912d83c)</a>
     </span>
   </p>
   

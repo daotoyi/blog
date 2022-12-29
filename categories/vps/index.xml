@@ -6,7 +6,43 @@
     <description>Recent content in VPS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Jul 2022 07:31:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 20:27:21 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 20:27:21 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/posts/vuepress-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 20:27:21 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Sphinx 使用总结</title>
+      <link>https://daotoyi.github.io/post/sphinx-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 14:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/sphinx-manual/</guid>
+      <description>reStructuredText reStructuredText 是一种轻量级标记语言。它是 Python Doc-SIG（Documentation Special Interest Group）的 Docutils 项目的一部分，旨在为 Python 创建一组类似于 Java 的 Javadoc 或 Perl</description>
+    </item>
+    
+    <item>
+      <title>Sphinx 使用总结</title>
+      <link>https://daotoyi.github.io/posts/sphinx-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 14:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/sphinx-manual/</guid>
+      <description>reStructuredText reStructuredText 是一种轻量级标记语言。它是 Python Doc-SIG（Documentation Special Interest Group）的 Docutils 项目的一部分，旨在为 Python 创建一组类似于 Java 的 Javadoc 或 Perl</description>
+    </item>
+    
     <item>
       <title>Xray&#43;XTLS&#43;VLESS(前端 Nginx SNI 分流)</title>
       <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</link>
@@ -23,24 +59,6 @@
       
       <guid>https://daotoyi.github.io/posts/xray-vless-tcp-xtls-via-nginx/</guid>
       <description>简述 Nginx 和 Xray 共用 443 端口，一般就两种方案: Xray 做前端 监听 443 端口，给 Vless 用 利用 vless+tcp+tls 强大的回落/分流特性，实现 Trojan 和 Nginx 共用 443 端口。 Nginx 做前端 监听 443 端口，给网站</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Mon, 25 Jul 2022 06:45:58 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/posts/vuepress-manual/</link>
-      <pubDate>Mon, 25 Jul 2022 06:45:58 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>
@@ -463,7 +481,7 @@
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/hugo-manual/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in</description>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>
@@ -472,7 +490,7 @@
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/hugo-manual/</guid>
-      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in</description>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>

@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/tools-siyuan_note/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-08-21T10:10:00+00:00" />
-<meta property="article:modified_time" content="2022-12-06T22:55:28+08:00" />
+<meta property="article:modified_time" content="2022-12-29T11:45:24+08:00" />
 
 <meta itemprop="name" content="SiYuan_note">
 <meta itemprop="description" content="简介 开源免费且“本地优先”的下一代个人知识管理系统 (笔记软件)，它支持离线使用，同时也支持端到端加密同步。 使用官方的云端服务来同步数据, 或通"><meta itemprop="datePublished" content="2022-08-21T10:10:00+00:00" />
-<meta itemprop="dateModified" content="2022-12-06T22:55:28+08:00" />
-<meta itemprop="wordCount" content="283">
+<meta itemprop="dateModified" content="2022-12-29T11:45:24+08:00" />
+<meta itemprop="wordCount" content="411">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SiYuan_note"/>
 <meta name="twitter:description" content="简介 开源免费且“本地优先”的下一代个人知识管理系统 (笔记软件)，它支持离线使用，同时也支持端到端加密同步。 使用官方的云端服务来同步数据, 或通"/>
@@ -136,7 +136,7 @@
         <div class="post-category">
             <a href="/categories/tools/"> Tools </a>
             </div>
-          <span class="more-meta"> 283 words </span>
+          <span class="more-meta"> 411 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -150,8 +150,14 @@
     <li>
       <ul>
         <li><a href="#简介">简介</a></li>
-        <li><a href="#docker-部署">Docker 部署</a></li>
+        <li><a href="#docker">Docker</a></li>
         <li><a href="#同步">同步</a></li>
+        <li><a href="#note">Note</a>
+          <ul>
+            <li><a href="#docker-deploy">docker deploy</a></li>
+            <li><a href="#webdav-sync">WebDAV sync</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -169,7 +175,7 @@
 <li>类似 Notion 的“内容块”编辑</li>
 <li>大纲、块级双向链接、全文搜索、标签分类、数学公式、思维导图 / 流程图、代码片段、跨平台同步等众多特性</li>
 </ul>
-<h2 id="docker-部署">Docker 部署</h2>
+<h2 id="docker">Docker</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -218,6 +224,25 @@ docker run -d <span class="se">\
 </div>
 </div><h2 id="同步">同步</h2>
 <p><strong>Docker 部署只支持 PC/移动端 网页访问</strong></p>
+<h2 id="note">Note</h2>
+<h3 id="docker-deploy">docker deploy</h3>
+<p>docker 部署的只是一个同步节点，不是 WebDAV 服务器。</p>
+<h3 id="webdav-sync">WebDAV sync</h3>
+<ul>
+<li>Andriod/docker
+<ul>
+<li>在 设置-云端 里直接填写相应地址即可。</li>
+</ul>
+</li>
+<li>PC
+<ul>
+<li>有设置工作目录的，会与第三方同步（nutstore 等）干涉</li>
+<li>工作目录和 webdav 同步目录选不同的目录。</li>
+</ul>
+</li>
+<li>注意导入数据仓库密钥</li>
+<li>官网建议只同步 data 目录，但似乎有问题，同步整个目录测试也可以</li>
+</ul>
 
     </div>
 
@@ -229,8 +254,8 @@ docker run -d <span class="se">\
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-12-06
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/70df35caafc95e9620333063926657ec4f031b47" title="update weekly">(70df35c)</a>
+        2022-12-29
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/912d83c8810ee2f529fb7c0f9e1088bfc2a6adf3" title="update weekly">(912d83c)</a>
     </span>
   </p>
   

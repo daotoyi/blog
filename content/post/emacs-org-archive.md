@@ -1,7 +1,7 @@
 ---
-title: "Org Archive"
+title: "Emacs Archive"
 date: "2022-11-25 23:07:00"
-lastmod: "2022-11-25 23:07:35"
+lastmod: "2023-03-02 08:19:18"
 categories: ["emacs"]
 draft: false
 ---
@@ -83,3 +83,8 @@ spacemacs/chinese layer
 ;; 或者
 fcitx.el - Better fcitx integration for Emacs.
 ```
+
+
+## agenda {#agenda}
+
+-   [如何利用Emacs进行个人时间管理(GTD)](https://www.cnblogs.com/yangruiGB2312/p/9101838.html)

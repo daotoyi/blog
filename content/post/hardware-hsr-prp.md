@@ -1,7 +1,7 @@
 ---
 title: "HSR/PRP 冗余协议"
 date: "2022-08-18 22:54:00"
-lastmod: "2022-08-18 22:55:12"
+lastmod: "2022-12-29 12:59:45"
 categories: ["Hardware"]
 draft: false
 ---

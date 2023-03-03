@@ -1,7 +1,7 @@
 ---
 title: "干节点、湿节点"
 date: "2022-09-25 11:15:00"
-lastmod: "2022-09-27 08:14:50"
+lastmod: "2022-12-29 17:33:55"
 categories: ["Hardware"]
 draft: false
 ---

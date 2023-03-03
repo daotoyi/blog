@@ -1,6 +1,6 @@
 ---
 title: "Org-mode 简介"
-lastmod: "2022-12-29 11:43:57"
+lastmod: "2022-12-29 19:49:24"
 categories: ["emacs"]
 draft: false
 ---
@@ -109,7 +109,7 @@ input | Name        |  Phone | sub1 | sub2 | total |
 ```
 
 
-## 待办事项 TODO {#待办事项-todo}
+## 待办事项 {#待办事项}
 
 TODO 是一类标题，需要用\*开头
 

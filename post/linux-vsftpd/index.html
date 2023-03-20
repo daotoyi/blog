@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux vsftpd - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&amp;gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&amp;gt;匿名用户使用的登陆名为ftp或anonymo" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-vsftpd/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux vsftpd" />
+<meta property="og:description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&gt;匿名用户使用的登陆名为ftp或anonymo" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-vsftpd/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-12-29T17:56:00+00:00" />
+<meta property="article:modified_time" content="2023-03-20T23:09:09+08:00" />
+
+<meta itemprop="name" content="Linux vsftpd">
+<meta itemprop="description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&gt;匿名用户使用的登陆名为ftp或anonymo"><meta itemprop="datePublished" content="2022-12-29T17:56:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-20T23:09:09+08:00" />
+<meta itemprop="wordCount" content="5797">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux vsftpd"/>
+<meta name="twitter:description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&gt;匿名用户使用的登陆名为ftp或anonymo"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux vsftpd</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-12-29 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 5797 words </span>
+          <span class="more-meta"> 12 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#config">config</a>
+          <ul>
+            <li><a href="#默认配置">默认配置：</a></li>
+            <li><a href="#配置文件格式">配置文件格式：</a></li>
+            <li><a href="#匿名用户-anonymous-设置">匿名用户（anonymous）设置</a></li>
+            <li><a href="#本地用户设置">本地用户设置</a></li>
+            <li><a href="#欢迎语设置">欢迎语设置</a></li>
+            <li><a href="#控制用户是否允许切换到上级目录">控制用户是否允许切换到上级目录</a></li>
+            <li><a href="#数据传输模式设置">数据传输模式设置</a></li>
+            <li><a href="#访问控制设置">访问控制设置</a></li>
+            <li><a href="#访问速率设置">访问速率设置</a></li>
+            <li><a href="#超时时间设置">超时时间设置</a></li>
+            <li><a href="#日志文件设置">日志文件设置</a></li>
+            <li><a href="#定义用户配置文件">定义用户配置文件</a></li>
+            <li><a href="#ftp-的工作方式与端口设置">FTP 的工作方式与端口设置</a></li>
+            <li><a href="#与连接相关的设置">与连接相关的设置</a></li>
+            <li><a href="#虚拟用户设置">虚拟用户设置</a></li>
+            <li><a href="#其他设置">其他设置</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a>
+          <ul>
+            <li><a href="#error-of-running-with-a-writeable-root-directory-inside-a-chroot-dot">error of running with a writeable root directory inside a chroot().</a></li>
+          </ul>
+        </li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="config">config</h2>
+<h3 id="默认配置">默认配置：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg">
+<span class="c1"># 1&gt;允许匿名用户和本地用户登陆。</span>
+
+     <span class="na">anonymous_enable</span><span class="o">=</span><span class="s">YES</span>
+
+     <span class="na">local_enable</span><span class="o">=</span><span class="s">YES</span>
+
+<span class="c1"># 2&gt;匿名用户使用的登陆名为ftp或anonymous，口令为空；匿名用户不能离开匿名用户家目录/var/ftp,且只能下载不能上传。</span>
+
+<span class="c1"># 3&gt;本地用户的登录名为本地用户名，口令为此本地用户的口令；本地用户可以在自 己家目录中进行读写操作；本地用户可以离开自家目录切换至有权限访问的其他目录，并在权限允许的情况下进行上传/下载。</span>
+
+    <span class="na">write_enable</span><span class="o">=</span><span class="s">YES</span>
+
+<span class="c1"># 4&gt;写在文件/etc/vsftpd.ftpusers中的本地用户禁止登陆。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="配置文件格式">配置文件格式：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># vsftpd.conf 的内容非常单纯，每一行即为一项设定。若是空白行或是开头为#的一行，将会被忽略。内容的格式只有一种，如下所示</span>
+<span class="na">option</span><span class="o">=</span><span class="s">value</span>
+
+<span class="c1"># 要注意的是，等号两边不能加空白。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="匿名用户-anonymous-设置">匿名用户（anonymous）设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">anonymous_enable</span><span class="o">=</span>YES/NO（YES）
+ <span class="c1">#  控制是否允许匿名用户登入，YES 为允许匿名登入，NO 为不允许。默认值为YES。</span>
+
+<span class="nv">write_enable</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 是否允许登陆用户有写权限。属于全局设置，默认值为YES。</span>
+
+<span class="nv">no_anon_password</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 若是启动这项功能，则使用匿名登入时，不会询问密码。默认值为NO。</span>
+
+<span class="nv">ftp_username</span><span class="o">=</span>ftp
+<span class="c1"># 定义匿名登入的使用者名称。默认值为ftp。</span>
+
+<span class="nv">anon_root</span><span class="o">=</span>/var/ftp
+<span class="c1"># 使用匿名登入时，所登入的目录。默认值为/var/ftp。注意ftp目录不能是777的权限属性，即匿名用户的家目录不能有777的权限。</span>
+
+<span class="nv">anon_upload_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 如果设为YES，则允许匿名登入者有上传文件（非目录）的权限，只有在write_enable=YES时，此项才有效。当然，匿名用户必须要有对上层目录的写入权。默认值为NO。</span>
+
+<span class="nv">anon_world_readable_only</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 如果设为YES，则允许匿名登入者下载可阅读的档案（可以下载到本机阅读，不能直接在FTP服务器中打开阅读）。默认值为YES。</span>
+
+<span class="nv">anon_mkdir_write_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 如果设为YES，则允许匿名登入者有新增目录的权限，只有在write_enable=YES时，此项才有效。当然，匿名用户必须要有对上层目录的写入权。默认值为NO。</span>
+
+<span class="nv">anon_other_write_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 如果设为YES，则允许匿名登入者更多于上传或者建立目录之外的权限，譬如删除或者重命名。（如果 anon_upload_enable=NO，则匿名用户不能上传文件，但可以删除或者重命名已经存在的文件；如果 anon_mkdir_write_enable=NO，则匿名用户不能上传或者新建文件夹，但可以删除或者重命名已经存在的文件夹。）默认值为NO。</span>
+
+<span class="nv">chown_uploads</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 设置是否改变匿名用户上传文件（非目录）的属主。默认值为NO。</span>
+
+<span class="nv">chown_username</span><span class="o">=</span>username
+<span class="c1"># 设置匿名用户上传文件（非目录）的属主名。建议不要设置为root。</span>
+
+<span class="nv">anon_umask</span><span class="o">=</span><span class="m">077</span>
+<span class="c1"># 设置匿名登入者新增或上传档案时的umask 值。默认值为077，则新建档案的对应权限为700。</span>
+
+<span class="nv">deny_email_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># ; 若是启动这项功能，则必须提供一个档案/etc/vsftpd/banner_emails，内容为email address。若是使用匿名登入，则会要求输入email address，若输入的email address 在此档案内，则不允许进入。默认值为NO。</span>
+
+<span class="nv">banned_email_file</span><span class="o">=</span>/etc/vsftpd/banner_emails
+<span class="c1"># 此文件用来输入email address，只有在deny_email_enable=YES时，才会使用到此档案。若是使用匿名登入，则会要求输入email address，若输入的email address 在此档案内，则不允许进入。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="本地用户设置">本地用户设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">local_enable</span><span class="o">=</span>YES/NO（YES）
+ <span class="c1"># 控制是否允许本地用户登入，YES 为允许本地用户登入，NO为不允许。默认值为YES。</span>
+
+<span class="nv">local_root</span><span class="o">=</span>/home/username
+ <span class="c1"># 当本地用户登入时，将被更换到定义的目录下。默认值为各用户的家目录。</span>
+
+<span class="nv">write_enable</span><span class="o">=</span>YES/NO（YES）
+<span class="c1">#  是否允许登陆用户有写权限。属于全局设置，默认值为YES。</span>
+
+<span class="nv">local_umask</span><span class="o">=</span><span class="m">022</span>
+ <span class="c1"># 本地用户新增档案时的umask 值。默认值为077。</span>
+
+<span class="nv">file_open_mode</span><span class="o">=</span><span class="m">0755</span>
+ <span class="c1"># 本地用户上传档案后的档案权限，与chmod 所使用的数值相同。默认值为0666。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="欢迎语设置">欢迎语设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">dirmessage_enable</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 如果启动这个选项，那么使用者第一次进入一个目录时，会检查该目录下是否有.message 这个档案，如果有，则会出现此档案的内容，通常这个档案会放置欢迎话语，或是对该目录的说明。默认值为开启。</span>
+
+<span class="nv">message_file</span><span class="o">=</span>.message
+<span class="c1"># 设置目录消息文件，可将要显示的信息写入该文件。默认值为.message。</span>
+
+<span class="nv">banner_file</span><span class="o">=</span>/etc/vsftpd/banner
+<span class="c1"># 当使用者登入时，会显示此设定所在的档案内容，通常为欢迎话语或是说明。默认值为无。如果欢迎信息较多，则使用该配置项。</span>
+
+<span class="nv">ftpd_banner</span><span class="o">=</span>Welcome to BOB<span class="err">&#39;</span>s FTP server
+<span class="c1"># 这里用来定义欢迎话语的字符串，banner_file 是档案的形式，而 ftpd_banner 则是字符串的形式。预设为无。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="控制用户是否允许切换到上级目录">控制用户是否允许切换到上级目录</h3>
+<p>在默认配置下，本地用户登入 FTP 后可以使用 cd 命令切换到其他目录，这样会对系统带来安全隐患。可以通过以下三条配置文件来控制用户切换目录。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">chroot_list_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 设置是否启用 chroot_list_file 配置项指定的用户列表文件。默认值为 NO。</span>
+
+<span class="nv">chroot_list_file</span><span class="o">=</span>/etc/vsftpd.chroot_list
+<span class="c1"># 用于指定用户列表文件，该文件用于控制哪些用户可以切换到用户家目录的上级目录。</span>
+
+<span class="nv">chroot_local_user</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 用于指定用户列表文件中的用户是否允许切换到上级目录。默认值为 NO。</span>
+
+通过搭配能实现以下几种效果：
+
+①当 <span class="nv">chroot_list_enable</span><span class="o">=</span>YES，chroot_local_user<span class="o">=</span>YES 时，在/etc/vsftpd.chroot_list 文件中列出的用户，可以切换到其他目录；未在文件中列出的用户，不能切换到其他目录。
+
+②当 <span class="nv">chroot_list_enable</span><span class="o">=</span>YES，chroot_local_user<span class="o">=</span>NO 时，在/etc/vsftpd.chroot_list 文件中列出的用户，不能切换到其他目录；未在文件中列出的用户，可以切换到其他目录。
+
+③当 <span class="nv">chroot_list_enable</span><span class="o">=</span>NO，chroot_local_user<span class="o">=</span>YES 时，所有的用户均不能切换到其他目录。
+
+④当 <span class="nv">chroot_list_enable</span><span class="o">=</span>NO，chroot_local_user<span class="o">=</span>NO 时，所有的用户均可以切换到其他目录。
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="数据传输模式设置">数据传输模式设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+<span class="c1"># FTP 在传输数据时，可以使用二进制方式，也可以使用 ASCII 模式来上传或下载数据。</span>
+
+<span class="nv">ascii_upload_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 设置是否启用 ASCII 模式上传数据。默认值为 NO。</span>
+
+<span class="nv">ascii_download_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 设置是否启用 ASCII 模式下载数据。默认值为 NO。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="访问控制设置">访问控制设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+ 两种控制方式：一种控制主机访问，另一种控制用户访问。
+
+ ①控制主机访问：
+
+ <span class="nv">tcp_wrappers</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 设置 vsftpd 是否与 tcp wrapper 相结合来进行主机的访问控制。默认值为 YES。如果启用，则 vsftpd 服务器会检查/etc/hosts.allow 和/etc/hosts.deny 中的设置，来决定请求连接的主机，是否允许访问该 FTP 服务器。这两个文件可以起到简易的防火墙功能。</span>
+
+ <span class="c1"># 比如：若要仅允许 192.168.0.1—192.168.0.254 的用户可以连接 FTP 服务器，则在/etc/hosts.allow 文件中添加以下内容：</span>
+ vsftpd:192.168.0. :allow
+
+ all:all :deny
+ <span class="c1"># ②控制用户访问：</span>
+
+ <span class="c1"># 对于用户的访问控制可以通过/etc 目录下的 vsftpd.user_list 和 ftpusers 文件来实现。</span>
+
+ <span class="nv">userlist_file</span><span class="o">=</span>/etc/vsftpd.user_list
+ <span class="c1"># 控制用户访问 FTP 的文件，里面写着用户名称。一个用户名称一行。</span>
+
+ <span class="nv">userlist_enable</span><span class="o">=</span>YES/NO（NO）
+ <span class="c1"># 是否启用 vsftpd.user_list 文件。</span>
+
+ <span class="nv">userlist_deny</span><span class="o">=</span>YES/NO（YES）
+ <span class="c1"># 决定 vsftpd.user_list 文件中的用户是否能够访问 FTP 服务器。若设置为 YES，则 vsftpd.user_list 文件中的用户不允许访问 FTP，若设置为 NO，则只有 vsftpd.user_list 文件中的用户才能访问 FTP。</span>
+
+ /etc/vsftpd/ftpusers 文件专门用于定义不允许访问 FTP 服务器的用户列表（注意: 如果 <span class="nv">userlist_enable</span><span class="o">=</span>YES,userlist_deny<span class="o">=</span>NO,此时如果在 vsftpd.user_list 和 ftpusers 中都有 某个用户时，那么这个用户是不能够访问 FTP 的，即 ftpusers 的优先级要高）。默认情况下 vsftpd.user_list 和 ftpusers，这 两个文件已经预设置了一些不允许访问 FTP 服务器的系统内部账户。如果系统没有这两个文件，那么新建这两个文件，将用户添加进去即可。
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="访问速率设置">访问速率设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+<span class="nv">anon_max_rate</span><span class="o">=</span><span class="m">0</span>
+<span class="c1"># 设置匿名登入者使用的最大传输速度，单位为 B/s，0 表示不限制速度。默认值为 0。</span>
+
+<span class="nv">local_max_rate</span><span class="o">=</span><span class="m">0</span>
+<span class="c1"># 本地用户使用的最大传输速度，单位为 B/s，0 表示不限制速度。预设值为 0。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="超时时间设置">超时时间设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+<span class="nv">accept_timeout</span><span class="o">=</span><span class="m">60</span>
+<span class="c1"># 设置建立 FTP 连接的超时时间，单位为秒。默认值为 60。</span>
+
+<span class="nv">connect_timeout</span><span class="o">=</span><span class="m">60</span>
+<span class="c1"># PORT 方式下建立数据连接的超时时间，单位为秒。默认值为 60。</span>
+
+<span class="nv">data_connection_timeout</span><span class="o">=</span><span class="m">120</span>
+<span class="c1"># 设置建立 FTP 数据连接的超时时间，单位为秒。默认值为 120。</span>
+
+<span class="nv">idle_session_timeout</span><span class="o">=</span><span class="m">300</span>
+<span class="c1"># 设置多长时间不对 FTP 服务器进行任何操作，则断开该 FTP 连接，单位为秒。默认值为 300 。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="日志文件设置">日志文件设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">xferlog_enable</span><span class="o">=</span> YES/NO（YES）
+<span class="c1"># 是否启用上传/下载日志记录。如果启用，则上传与下载的信息将被完整纪录在 xferlog_file 所定义的档案中。预设为开启。</span>
+
+<span class="nv">xferlog_file</span><span class="o">=</span>/var/log/vsftpd.log
+<span class="c1"># 设置日志文件名和路径，默认值为/var/log/vsftpd.log。</span>
+
+<span class="nv">xferlog_std_format</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 如果启用，则日志文件将会写成 xferlog 的标准格式，如同 wu-ftpd 一般。默认值为关闭。</span>
+
+<span class="nv">log_ftp_protocol</span><span class="o">=</span>YES<span class="p">|</span>NO（NO）
+<span class="c1"># 如果启用此选项，所有的 FTP 请求和响应都会被记录到日志中，默认日志文件在/var/log/vsftpd.log。启用此选项时，xferlog_std_format 不能被激活。这个选项有助于调试。默认值为 NO。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="定义用户配置文件">定义用户配置文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+在 vsftpd 中，可以通过定义用户配置文件来实现不同的用户使用不同的配置。
+
+<span class="nv">user_config_dir</span><span class="o">=</span>/etc/vsftpd/userconf
+<span class="c1"># 设置用户配置文件所在的目录。当设置了该配置项后，用户登陆服务器后，系统就会到/etc/vsftpd/userconf 目录下，读取与当前用户名相同的文件，并根据文件中的配置命令，对当前用户进行更进一步的配置。</span>
+
+<span class="c1"># 例如：定义 user_config_dir=/etc/vsftpd/userconf，且主机上有使用 者 test1,test2，那么我们就在 user_config_dir 的目录新增文件名为 test1 和 test2 两个文件。若是 test1 登入，则会读取 user_config_dir 下的 test1 这个档案内的设定。默认值为无。利用用户配置文件，可以实现对不同用户进行访问速度的控制，在各用户配置文件中定义 local_max_rate=XX， 即可。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="ftp-的工作方式与端口设置">FTP 的工作方式与端口设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+<span class="c1"># FTP 有两种工作方式：PORT FTP（主动模式）和 PASV FTP（被动模式）</span>
+
+<span class="nv">listen_port</span><span class="o">=</span><span class="m">21</span>
+<span class="c1"># 设置 FTP 服务器建立连接所监听的端口，默认值为 21。</span>
+
+<span class="nv">connect_from_port_20</span><span class="o">=</span>YES/NO
+<span class="c1"># 指定 FTP 使用 20 端口进行数据传输，默认值为 YES。</span>
+
+<span class="nv">ftp_data_port</span><span class="o">=</span><span class="m">20</span>
+<span class="c1"># 设置在 PORT 方式下，FTP 数据连接使用的端口，默认值为 20。</span>
+
+<span class="nv">pasv_enable</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 若设置为 YES，则使用 PASV 工作模式；若设置为 NO，则使用 PORT 模式。默认值为 YES，即使用 PASV 工作模式。</span>
+
+<span class="nv">pasv_max_port</span><span class="o">=</span><span class="m">0</span>
+<span class="c1"># 在 PASV 工作模式下，数据连接可以使用的端口范围的最大端口，0 表示任意端口。默认值为 0。</span>
+
+<span class="nv">pasv_min_port</span><span class="o">=</span><span class="m">0</span>
+<span class="c1"># 在 PASV 工作模式下，数据连接可以使用的端口范围的最小端口，0 表示任意端口。默认值为 0。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="与连接相关的设置">与连接相关的设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">
+<span class="nv">listen</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 设置 vsftpd 服务器是否以 standalone 模式运行。以 standalone 模式运行是一种较好 的方式，此时 listen 必须设置为 YES，此为默认值。建议不要更改，有很多与服务器运行相关的配置命令，需要在此模式下才有效。若设置为 NO，则 vsftpd 不是以独立的服务运行，要受到 xinetd 服务的管控，功能上会受到限制。</span>
+
+<span class="nv">max_clients</span><span class="o">=</span><span class="m">0</span>
+<span class="c1"># 设置 vsftpd 允许的最大连接数，默认值为 0，表示不受限制。若设置为 100 时，则同时允许有 100 个连接，超出的将被拒绝。只有在 standalone 模式运行才有效。</span>
+
+<span class="nv">max_per_ip</span><span class="o">=</span><span class="m">0</span>
+<span class="c1"># 设置每个 IP 允许与 FTP 服务器同时建立连接的数目。默认值为 0，表示不受限制。只有在 standalone 模式运行才有效。</span>
+
+<span class="nv">listen_address</span><span class="o">=</span>IP 地址
+<span class="c1"># 设置 FTP 服务器在指定的 IP 地址上侦听用户的 FTP 请求。若不设置，则对服务器绑定的所有 IP 地址进行侦听。只有在 standalone 模式运行才有效。</span>
+
+<span class="nv">setproctitle_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 设置每个与 FTP 服务器的连接，是否以不同的进程表现出来。默认值为 NO，此时使用 ps aux |grep ftp 只会有一个 vsftpd 的进程。若设置为 YES，则每个连接都会有一个 vsftpd 的进程。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="虚拟用户设置">虚拟用户设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># 虚拟用户使用 PAM 认证方式。</span>
+
+<span class="nv">pam_service_name</span><span class="o">=</span>vsftpd
+<span class="c1"># 设置 PAM 使用的名称，默认值为/etc/pam.d/vsftpd。</span>
+
+<span class="nv">guest_enable</span><span class="o">=</span> YES/NO（NO）
+<span class="c1"># 启用虚拟用户。默认值为 NO。</span>
+
+<span class="nv">guest_username</span><span class="o">=</span>ftp
+<span class="c1"># 这里用来映射虚拟用户。默认值为 ftp。</span>
+
+<span class="nv">virtual_use_local_privs</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 当该参数激活（YES）时，虚拟用户使用与本地用户相同的权限。当此参数关闭（NO）时，虚拟用户使用与匿名用户相同的权限。默认情况下此参数是关闭的（NO）。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="其他设置">其他设置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">text_userdb_names</span><span class="o">=</span> YES/NO（NO）
+<span class="c1"># 设置在执行 ls –la 之类的命令时，是显示 UID、GID 还是显示出具体的用户名和组名。默认值为 NO，即以 UID 和 GID 方式显示。若希望显示用户名和组名，则设置为 YES。</span>
+
+<span class="nv">ls_recurse_enable</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 若是启用此功能，则允许登入者使用 ls –R（可以查看当前目录下子目录中的文件）这个指令。默认值为 NO。</span>
+
+<span class="nv">hide_ids</span><span class="o">=</span>YES/NO（NO）
+<span class="c1"># 如果启用此功能，所有档案的拥有者与群组都为 ftp，也就是使用者登入使用 ls -al 之类的指令，所看到的档案拥有者跟群组均为 ftp。默认值为关闭。</span>
+
+<span class="nv">download_enable</span><span class="o">=</span>YES/NO（YES）
+<span class="c1"># 如果设置为 NO，所有的文件都不能下载到本地，文件夹不受影响。默认值为 YES。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="faq">FAQ</h2>
+<h3 id="error-of-running-with-a-writeable-root-directory-inside-a-chroot-dot">error of running with a writeable root directory inside a chroot().</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">allow_writeable_chroot</span><span class="o">=</span><span class="s">YES</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.cnblogs.com/LiuChang-blog/p/10491519.html">vsftpd.conf配置文件详解</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2023-03-20
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/e686c166f1b4ffa598b9aab80fe409cfb15ba30e" title="update tmp">(e686c16)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/emacs-org-mode-instruction/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Org-mode 简介</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/emacs-org-export-pdf/">
+            <span class="next-text nav-default">Org Export Pdf</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

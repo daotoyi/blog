@@ -6,14 +6,63 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Dec 2022 11:43:57 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 22:15:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux shell 脚本中-e 参数</title>
+      <link>https://daotoyi.github.io/post/linux-shell-e/</link>
+      <pubDate>Fri, 03 Mar 2023 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-e/</guid>
+      <description>set -e 在文件开头加上 set -e,这句语句告诉 bash 如果任何语句的执行结果不是 true 则应该退出。这样的好处是防止错误像滚雪球般变大导致一个致命的错误. 如果要</description>
+    </item>
+    
+    <item>
+      <title>UART、RS232、TTL 关系浅析</title>
+      <link>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</link>
+      <pubDate>Tue, 31 Jan 2023 22:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</guid>
+      <description>UART 在通信和计算机科学中，Serial communication 是一个通用概念，泛指所有的串行的通信协议，如 RS232、USB、I2C、SPI、1-Wire、Ethe</description>
+    </item>
+    
+    <item>
+      <title>CPU</title>
+      <link>https://daotoyi.github.io/post/hardware-cpu/</link>
+      <pubDate>Sun, 01 Jan 2023 11:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-cpu/</guid>
+      <description>线程 操作系统是通过线程来执行任务的，一般情况下内核单元和线程是 1:1 对应关系，即几核 CPU 就拥有几个线程，如果采用了 CPU 的虚拟化技术(Virtuali</description>
+    </item>
+    
+    <item>
+      <title>Org Table Shrink</title>
+      <link>https://daotoyi.github.io/post/emacs-org-table-shrink/</link>
+      <pubDate>Fri, 30 Dec 2022 19:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-table-shrink/</guid>
+      <description>C-c C-c (org-table-align)
+C-c TAB (org-table-toggle-column-width)
+C-u C-c TAB (org-table-shrink)
+C-u C-u C-c TAB (org-table-expand)
+ Column Width and Alignment  </description>
+    </item>
+    
     <item>
       <title>Org-mode 简介</title>
       <link>https://daotoyi.github.io/post/emacs-org-mode-instruction/</link>
-      <pubDate>Thu, 29 Dec 2022 11:43:57 +0000</pubDate>
+      <pubDate>Thu, 29 Dec 2022 19:49:24 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/emacs-org-mode-instruction/</guid>
       <description>列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任</description>
+    </item>
+    
+    <item>
+      <title>Linux vsftpd</title>
+      <link>https://daotoyi.github.io/post/linux-vsftpd/</link>
+      <pubDate>Thu, 29 Dec 2022 17:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-vsftpd/</guid>
+      <description>config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&amp;gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&amp;gt;匿名用户使用的登陆名为ftp或anonymo</description>
     </item>
     
     <item>
@@ -71,7 +120,7 @@
     </item>
     
     <item>
-      <title>Org Archive</title>
+      <title>Emacs Archive</title>
       <link>https://daotoyi.github.io/post/emacs-org-archive/</link>
       <pubDate>Fri, 25 Nov 2022 23:07:00 +0000</pubDate>
       

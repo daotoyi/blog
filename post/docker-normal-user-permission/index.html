@@ -44,11 +44,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/docker-normal-user-permission/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-28T13:40:00+00:00" />
-<meta property="article:modified_time" content="2022-12-29T11:45:24+08:00" />
+<meta property="article:modified_time" content="2023-03-20T23:09:09+08:00" />
 
 <meta itemprop="name" content="Docker 普通用户使用">
 <meta itemprop="description" content="问题 1 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create: dial unix /var/run/docker.sock: connect: permission denied. 这主要是因为 Docker 进程使用 Unix Socket，而 /var/run/docker.sock 需要 root 权限才能进行读写操作。 方案 使用 root 权限创建"><meta itemprop="datePublished" content="2022-10-28T13:40:00+00:00" />
-<meta itemprop="dateModified" content="2022-12-29T11:45:24+08:00" />
+<meta itemprop="dateModified" content="2023-03-20T23:09:09+08:00" />
 <meta itemprop="wordCount" content="156">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker 普通用户使用"/>
@@ -195,8 +195,8 @@ docker run hello-world			  <span class="c1"># 测试无 root 权限能否使用 
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2022-12-29
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/912d83c8810ee2f529fb7c0f9e1088bfc2a6adf3" title="update weekly">(912d83c)</a>
+        2023-03-20
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/e686c166f1b4ffa598b9aab80fe409cfb15ba30e" title="update tmp">(e686c16)</a>
     </span>
   </p>
   
@@ -270,7 +270,7 @@ docker run hello-world			  <span class="c1"># 测试无 root 权限能否使用 
   <span class="copyright-year">
     &copy; 
     2021 - 
-    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
   </span>
 </div>
 

@@ -6,7 +6,43 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Dec 2022 14:25:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 22:15:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux shell 脚本中-e 参数</title>
+      <link>https://daotoyi.github.io/post/linux-shell-e/</link>
+      <pubDate>Fri, 03 Mar 2023 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-e/</guid>
+      <description>set -e 在文件开头加上 set -e,这句语句告诉 bash 如果任何语句的执行结果不是 true 则应该退出。这样的好处是防止错误像滚雪球般变大导致一个致命的错误. 如果要</description>
+    </item>
+    
+    <item>
+      <title>Linux shell 脚本中-e 参数</title>
+      <link>https://daotoyi.github.io/posts/linux-shell-e/</link>
+      <pubDate>Fri, 03 Mar 2023 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-shell-e/</guid>
+      <description>set -e 在文件开头加上 set -e,这句语句告诉 bash 如果任何语句的执行结果不是 true 则应该退出。这样的好处是防止错误像滚雪球般变大导致一个致命的错误. 如果要</description>
+    </item>
+    
+    <item>
+      <title>Linux vsftpd</title>
+      <link>https://daotoyi.github.io/post/linux-vsftpd/</link>
+      <pubDate>Thu, 29 Dec 2022 17:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-vsftpd/</guid>
+      <description>config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&amp;gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&amp;gt;匿名用户使用的登陆名为ftp或anonymo</description>
+    </item>
+    
+    <item>
+      <title>Linux vsftpd</title>
+      <link>https://daotoyi.github.io/posts/linux-vsftpd/</link>
+      <pubDate>Thu, 29 Dec 2022 17:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-vsftpd/</guid>
+      <description>config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&amp;gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&amp;gt;匿名用户使用的登陆名为ftp或anonymo</description>
+    </item>
+    
     <item>
       <title>Manjaro FAQ</title>
       <link>https://daotoyi.github.io/post/majaro-faq/</link>

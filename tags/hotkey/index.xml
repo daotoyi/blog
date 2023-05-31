@@ -6,7 +6,25 @@
     <description>Recent content in hotkey on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Apr 2022 12:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/hotkey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 16:41:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/hotkey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/posts/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
     <item>
       <title>Sublime Hotkey</title>
       <link>https://daotoyi.github.io/post/sublime-hotkey/</link>

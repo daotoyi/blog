@@ -6,7 +6,43 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Mar 2023 22:15:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 May 2023 20:09:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Kylinx OS(国产）</title>
+      <link>https://daotoyi.github.io/post/linux-kylinx-operate-system/</link>
+      <pubDate>Tue, 16 May 2023 20:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-kylinx-operate-system/</guid>
+      <description>麒麟家族 中标麒麟（NeoKylin） https://www.cs2c.com.cn/ 中标软件 与 国防科学技术大学 联合推出“中标麒麟”操作系统产品 由民用的“中标 Linux”操作系统和军用“银</description>
+    </item>
+    
+    <item>
+      <title>Linux Kylinx OS(国产）</title>
+      <link>https://daotoyi.github.io/posts/linux-kylinx-operate-system/</link>
+      <pubDate>Tue, 16 May 2023 20:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-kylinx-operate-system/</guid>
+      <description>麒麟家族 中标麒麟（NeoKylin） https://www.cs2c.com.cn/ 中标软件 与 国防科学技术大学 联合推出“中标麒麟”操作系统产品 由民用的“中标 Linux”操作系统和军用“银</description>
+    </item>
+    
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/posts/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
     <item>
       <title>Linux shell 脚本中-e 参数</title>
       <link>https://daotoyi.github.io/post/linux-shell-e/</link>
@@ -49,7 +85,7 @@
       <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/majaro-faq/</guid>
-      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu Errors occurred, no packages were upgraded. error: failed to commit transaction (invalid or corrupted package) Manjaro软件更新失败：无效或已损坏的软件包 update openssl libcrypto.so.1.1: cannot open shared object file 单独升级 openssl 之后，部</description>
+      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu DONE xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节</description>
     </item>
     
     <item>
@@ -58,7 +94,7 @@
       <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/majaro-faq/</guid>
-      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu Errors occurred, no packages were upgraded. error: failed to commit transaction (invalid or corrupted package) Manjaro软件更新失败：无效或已损坏的软件包 update openssl libcrypto.so.1.1: cannot open shared object file 单独升级 openssl 之后，部</description>
+      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu DONE xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节</description>
     </item>
     
     <item>

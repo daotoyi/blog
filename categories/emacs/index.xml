@@ -6,7 +6,25 @@
     <description>Recent content in emacs on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Dec 2022 19:35:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Apr 2023 11:06:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Babel</title>
+      <link>https://daotoyi.github.io/post/emacs-org-babel/</link>
+      <pubDate>Wed, 12 Apr 2023 11:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-babel/</guid>
+      <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
+    </item>
+    
+    <item>
+      <title>Babel</title>
+      <link>https://daotoyi.github.io/posts/emacs-org-babel/</link>
+      <pubDate>Wed, 12 Apr 2023 11:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-org-babel/</guid>
+      <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
+    </item>
+    
     <item>
       <title>Org Table Shrink</title>
       <link>https://daotoyi.github.io/post/emacs-org-table-shrink/</link>

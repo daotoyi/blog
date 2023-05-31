@@ -44,11 +44,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/posts/windows-cmd-chkdsk/" /><meta property="article:section" content="posts" />
 
-<meta property="article:modified_time" content="2022-08-04T09:24:37+00:00" />
+<meta property="article:modified_time" content="2023-04-19T20:10:29+00:00" />
 
 <meta itemprop="name" content="Windows chkdsk">
 <meta itemprop="description" content="简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32">
-<meta itemprop="dateModified" content="2022-08-04T09:24:37+00:00" />
+<meta itemprop="dateModified" content="2023-04-19T20:10:29+00:00" />
 <meta itemprop="wordCount" content="786">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Windows chkdsk"/>
@@ -136,16 +136,16 @@
 <h2 id="参数">参数</h2>
 <blockquote>
 <p>CHKDSK [volume[[path]filename]]] [/F] [/V] [/R] [/X] [/I] [/C] [/L[:size]]</p>
-<p>volume 指定驱动器(后面跟一个冒号)、装入点 或卷名。
-filename 仅用于 FAT/FAT32: 指定要检查是否有碎片的文件。
-/F 修复磁盘上的错误。
-/V 在 FAT/FAT32 上: 显示磁盘上每个文件的完整路径和名称。 在 NTFS 上: 如果有清除消息，将其显示。
-/R 查找不正确的扇区并恢复可读信息(隐含 /F)。
-/L:size 仅用于 NTFS: 将日志文件大小改成指定的 KB 数。 如果没有指定大小，则显示当前的大小。
-/X 如果必要，强制卷先卸下。 卷的所有打开的句柄就会无效(隐含 /F)。
-/I 仅用于 NTFS: 对索引项进行强度较小的检查。
-/C 仅用于 NTFS: 跳过文件夹结构的循环检查。
-/I 和 /C 命令行开关跳过卷的某些检查，减少运行 Chkdsk 所需的时间。</p>
+<p>volume 指定驱动器(后面跟一个冒号)、装入点 或卷名。</p>
+<p>filename 仅用于 FAT/FAT32: 指定要检查是否有碎片的文件。</p>
+<p>/F 修复磁盘上的错误。</p>
+<p>/V 在 FAT/FAT32 上: 显示磁盘上每个文件的完整路径和名称。 在 NTFS 上: 如果有清除消息，将其显示。</p>
+<p>/R 查找不正确的扇区并恢复可读信息(隐含 /F)。</p>
+<p>/L:size 仅用于 NTFS: 将日志文件大小改成指定的 KB 数。 如果没有指定大小，则显示当前的大小。</p>
+<p>/X 如果必要，强制卷先卸下。 卷的所有打开的句柄就会无效(隐含 /F)。</p>
+<p>/I 仅用于 NTFS: 对索引项进行强度较小的检查。</p>
+<p>/C 仅用于 NTFS: 跳过文件夹结构的循环检查。</p>
+<p>/I 和 /C 命令行开关跳过卷的某些检查，减少运行 Chkdsk 所需的时间。</p>
 </blockquote>
 <h2 id="使用">使用</h2>
 <h3 id="从命令提示符运行磁盘检查命令">从命令提示符运行磁盘检查命令</h3>

@@ -6,7 +6,97 @@
     <description>Recent content on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Mar 2023 22:15:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 May 2023 20:09:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Kylinx OS(国产）</title>
+      <link>https://daotoyi.github.io/post/linux-kylinx-operate-system/</link>
+      <pubDate>Tue, 16 May 2023 20:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-kylinx-operate-system/</guid>
+      <description>麒麟家族 中标麒麟（NeoKylin） https://www.cs2c.com.cn/ 中标软件 与 国防科学技术大学 联合推出“中标麒麟”操作系统产品 由民用的“中标 Linux”操作系统和军用“银</description>
+    </item>
+    
+    <item>
+      <title>Linux Kylinx OS(国产）</title>
+      <link>https://daotoyi.github.io/posts/linux-kylinx-operate-system/</link>
+      <pubDate>Tue, 16 May 2023 20:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-kylinx-operate-system/</guid>
+      <description>麒麟家族 中标麒麟（NeoKylin） https://www.cs2c.com.cn/ 中标软件 与 国防科学技术大学 联合推出“中标麒麟”操作系统产品 由民用的“中标 Linux”操作系统和军用“银</description>
+    </item>
+    
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/posts/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
+    <item>
+      <title>Windows chkdsk</title>
+      <link>https://daotoyi.github.io/post/windows-cmd-chkdsk/</link>
+      <pubDate>Wed, 19 Apr 2023 20:10:29 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-cmd-chkdsk/</guid>
+      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
+    </item>
+    
+    <item>
+      <title>Windows chkdsk</title>
+      <link>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</link>
+      <pubDate>Wed, 19 Apr 2023 20:10:29 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</guid>
+      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
+    </item>
+    
+    <item>
+      <title>Babel</title>
+      <link>https://daotoyi.github.io/post/emacs-org-babel/</link>
+      <pubDate>Wed, 12 Apr 2023 11:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-babel/</guid>
+      <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
+    </item>
+    
+    <item>
+      <title>Babel</title>
+      <link>https://daotoyi.github.io/posts/emacs-org-babel/</link>
+      <pubDate>Wed, 12 Apr 2023 11:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-org-babel/</guid>
+      <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Mon, 20 Mar 2023 23:42:34 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/posts/vuepress-manual/</link>
+      <pubDate>Mon, 20 Mar 2023 23:42:34 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
     <item>
       <title>Linux shell 脚本中-e 参数</title>
       <link>https://daotoyi.github.io/post/linux-shell-e/</link>
@@ -59,6 +149,24 @@
       
       <guid>https://daotoyi.github.io/posts/hardware-cpu/</guid>
       <description>线程 操作系统是通过线程来执行任务的，一般情况下内核单元和线程是 1:1 对应关系，即几核 CPU 就拥有几个线程，如果采用了 CPU 的虚拟化技术(Virtuali</description>
+    </item>
+    
+    <item>
+      <title>网卡</title>
+      <link>https://daotoyi.github.io/post/hardware-network-card/</link>
+      <pubDate>Sun, 01 Jan 2023 11:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-network-card/</guid>
+      <description>网络信号接入 RJ-45 接口 （网线接入） Transformer 隔离变压器，它的作用是隔离保护，使网线和 PHY 之间没有物理上的连接而换传递了信号。 如果外部网线直接和芯片相连的话</description>
+    </item>
+    
+    <item>
+      <title>网卡</title>
+      <link>https://daotoyi.github.io/posts/hardware-network-card/</link>
+      <pubDate>Sun, 01 Jan 2023 11:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-network-card/</guid>
+      <description>网络信号接入 RJ-45 接口 （网线接入） Transformer 隔离变压器，它的作用是隔离保护，使网线和 PHY 之间没有物理上的连接而换传递了信号。 如果外部网线直接和芯片相连的话</description>
     </item>
     
     <item>
@@ -147,7 +255,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/majaro-faq/</guid>
-      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu Errors occurred, no packages were upgraded. error: failed to commit transaction (invalid or corrupted package) Manjaro软件更新失败：无效或已损坏的软件包 update openssl libcrypto.so.1.1: cannot open shared object file 单独升级 openssl 之后，部</description>
+      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu DONE xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节</description>
     </item>
     
     <item>
@@ -156,7 +264,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/majaro-faq/</guid>
-      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu Errors occurred, no packages were upgraded. error: failed to commit transaction (invalid or corrupted package) Manjaro软件更新失败：无效或已损坏的软件包 update openssl libcrypto.so.1.1: cannot open shared object file 单独升级 openssl 之后，部</description>
+      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu DONE xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节</description>
     </item>
     
     <item>
@@ -175,24 +283,6 @@ C-u C-u C-c TAB (org-table-expand)
       
       <guid>https://daotoyi.github.io/posts/emacs-emoji/</guid>
       <description>Unicode 15.0 和表情符号 Emacs 现在支持 Unicode 15.0，这是目前最新的 Unicode 版本。新前缀 C-x 8 e 现在会导致一些与表情符号相关的新命令： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
-      <pubDate>Fri, 09 Dec 2022 20:27:21 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/posts/vuepress-manual/</link>
-      <pubDate>Fri, 09 Dec 2022 20:27:21 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>
@@ -841,24 +931,6 @@ C-u C-u C-c TAB (org-table-expand)
       
       <guid>https://daotoyi.github.io/posts/linux-remote-desktop/</guid>
       <description>VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie</description>
-    </item>
-    
-    <item>
-      <title>Windows chkdsk</title>
-      <link>https://daotoyi.github.io/post/windows-cmd-chkdsk/</link>
-      <pubDate>Thu, 04 Aug 2022 09:24:37 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/windows-cmd-chkdsk/</guid>
-      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
-    </item>
-    
-    <item>
-      <title>Windows chkdsk</title>
-      <link>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</link>
-      <pubDate>Thu, 04 Aug 2022 09:24:37 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/windows-cmd-chkdsk/</guid>
-      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
     </item>
     
     <item>

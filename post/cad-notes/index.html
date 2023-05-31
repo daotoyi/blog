@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/cad-notes/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-17T19:58:00+00:00" />
-<meta property="article:modified_time" content="2023-03-20T23:09:09+08:00" />
+<meta property="article:modified_time" content="2023-05-31T21:23:54+08:00" />
 
 <meta itemprop="name" content="CAD">
 <meta itemprop="description" content="基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数"><meta itemprop="datePublished" content="2022-03-17T19:58:00+00:00" />
-<meta itemprop="dateModified" content="2023-03-20T23:09:09+08:00" />
-<meta itemprop="wordCount" content="616">
+<meta itemprop="dateModified" content="2023-05-31T21:23:54+08:00" />
+<meta itemprop="wordCount" content="760">
 <meta itemprop="keywords" content="CAD," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CAD"/>
 <meta name="twitter:description" content="基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数"/>
@@ -136,7 +136,7 @@
         <div class="post-category">
             <a href="/categories/tools/"> Tools </a>
             </div>
-          <span class="more-meta"> 616 words </span>
+          <span class="more-meta"> 760 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -158,13 +158,9 @@
         </li>
         <li><a href="#输出-pdf-文件线条太粗">输出 PDF 文件线条太粗</a></li>
         <li><a href="#空心化文字">空心化文字</a></li>
-        <li><a href="#notes">Notes</a>
-          <ul>
-            <li><a href="#参考-为什么cad图纸打印出来的pdf线条很粗">参考: <a href="https://www.sohu.com/a/401512116_657238">为什么CAD图纸打印出来的PDF线条很粗</a></a></li>
-            <li><a href="#按以上设置后-实测打印出的-pdf-线条也是粗的-dot-必须选输出-dot">按以上设置后,实测打印出的 pdf 线条也是粗的.必须选输出.</a></li>
-            <li><a href="#其他方案-在打印-模型页面-勾选掉-打印对象线宽-打印或者输出的仍然是宽线条-dot">其他方案, 在打印-模型页面,勾选掉 <code>打印对象线宽</code> , 打印或者输出的仍然是宽线条.</a></li>
-          </ul>
-        </li>
+        <li><a href="#局部转化为-pdf">局部转化为 pdf</a></li>
+        <li><a href="#批量修改标注字体大小">批量修改标注字体大小</a></li>
+        <li><a href="#notes">Notes</a></li>
       </ul>
     </li>
   </ul>
@@ -217,11 +213,7 @@
 <li>打印样式</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p>选中所有颜色</p>
-<ul>
+<li>选中所有颜色</li>
 <li>将线宽改成 <code>0</code></li>
 </ul>
 </li>
@@ -269,10 +261,48 @@
 </ul>
 </li>
 </ul>
+<h2 id="局部转化为-pdf">局部转化为 pdf</h2>
+<p>CAD 左上角</p>
+<ul>
+<li>“输出”</li>
+<li>选择 pdf</li>
+<li>“输出（X）”的下拉菜单中</li>
+<li>选择“窗口”</li>
+<li>窗口右侧的绿色小方框，选择截取区域</li>
+</ul>
+<h2 id="批量修改标注字体大小">批量修改标注字体大小</h2>
+<ul>
+<li>
+<p>注释选项</p>
+</li>
+<li>
+<p>标右下角</p>
+</li>
+<li>
+<p>弹出标注样式管理器</p>
+</li>
+<li>
+<p>修改</p>
+</li>
+<li>
+<p>调整字高</p>
+</li>
+<li>
+<p>确认</p>
+</li>
+<li>
+<p>置为当前</p>
+<p>配置完之后双击标注字体就会自动更新。</p>
+</li>
+</ul>
 <h2 id="notes">Notes</h2>
-<h3 id="参考-为什么cad图纸打印出来的pdf线条很粗">参考: <a href="https://www.sohu.com/a/401512116_657238">为什么CAD图纸打印出来的PDF线条很粗</a></h3>
-<h3 id="按以上设置后-实测打印出的-pdf-线条也是粗的-dot-必须选输出-dot">按以上设置后,实测打印出的 pdf 线条也是粗的.必须选输出.</h3>
-<h3 id="其他方案-在打印-模型页面-勾选掉-打印对象线宽-打印或者输出的仍然是宽线条-dot">其他方案, 在打印-模型页面,勾选掉 <code>打印对象线宽</code> , 打印或者输出的仍然是宽线条.</h3>
+<ul>
+<li><a href="https://www.sohu.com/a/401512116_657238">为什么CAD图纸打印出来的PDF线条很粗</a></li>
+<li>按以上设置后,实测打印出的 pdf 线条也是粗的.必须选输出.</li>
+<li>其他方案, 在打印-模型页面,勾选掉 <code>打印对象线宽</code> , 打印或者输出的仍然是宽线条.</li>
+<li><a href="https://jingyan.baidu.com/article/acf728fde8743eb8e410a31c.html">用Autocad将图纸局部转化为pdf文档</a></li>
+<li><a href="https://jingyan.baidu.com/article/3a2f7c2e753b4967aed61152.html">CAD中如何批量修改标注字体大小</a></li>
+</ul>
 
     </div>
 
@@ -284,8 +314,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2023-03-20
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/e686c166f1b4ffa598b9aab80fe409cfb15ba30e" title="update tmp">(e686c16)</a>
+        2023-05-31
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/bc6562253d213b842c383832ad5c42db40c1f16b" title="update">(bc65622)</a>
     </span>
   </p>
   

@@ -1,7 +1,7 @@
 ---
 title: "Linux locale"
 date: "2022-04-03 17:09:00"
-lastmod: "2022-08-09 09:25:43"
+lastmod: "2023-04-21 19:27:28"
 categories: ["Linux"]
 draft: false
 ---

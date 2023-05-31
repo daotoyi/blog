@@ -1,7 +1,7 @@
 ---
 title: "CPU"
 date: "2023-01-01 11:02:00"
-lastmod: "2023-01-01 11:05:15"
+lastmod: "2023-04-12 10:31:06"
 tags: ["cpu"]
 categories: ["Hardware"]
 draft: false
@@ -36,3 +36,6 @@ draft: false
     -   如果运行期间 Tjunction 温度超过 TjMax 之后，就会触发温度墙进行限制，从而降低核心温度。
     -   TjMax 是每个核心都提供的，只不过一般来说每个核心的 TjMax 都一样。
     -   CPU 核心温度才是关键,其他温度值，只能是一个参考。
+
+
+##  {#d41d8c}

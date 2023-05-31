@@ -1,7 +1,7 @@
 ---
 title: "Manjaro FAQ"
 date: "2022-12-24 14:25:00"
-lastmod: "2022-12-24 14:32:48"
+lastmod: "2023-04-21 18:13:23"
 categories: ["Linux"]
 draft: false
 ---
@@ -15,6 +15,24 @@ draft: false
 pacman -R python-pip
 pacman -Syu
 ```
+
+
+### <span class="org-todo done DONE">DONE</span> xxx:signature from "xxx &lt;xxx@manjaro.org&gt;" is unknown trust {#xxx-signature-from-xxx-xxx-manjaro-dot-org-is-unknown-trust}
+
+将 /etc/pacman.conf 中的 SigLevel 值改为 Never
+
+```cfg
+[core]
+#SigLevel = PackageRequired
+SigLevel = Never
+Include = /etc/pacman.d/mirrorlist
+```
+
+如果你的仓库包括 extra 和 community，在对应的节中也修改 SigLevel 的值 为 Never.
+
+修改完保存，再运行 pacman 就没有问题了。
+
+-   [pacman的 unknown trust 问题](https://www.cnblogs.com/jiqingwu/archive/2012/06/10/arch_linux_pacman_unknown_trust.html)
 
 
 ### Errors occurred, no packages were upgraded. {#errors-occurred-no-packages-were-upgraded-dot}

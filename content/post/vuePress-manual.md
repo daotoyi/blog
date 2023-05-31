@@ -1,6 +1,6 @@
 ---
 title: "Vuepress 使用小结"
-lastmod: "2022-12-09 20:27:21"
+lastmod: "2023-03-20 23:42:34"
 tags: ["Vuepress"]
 categories: ["VPS"]
 draft: false
@@ -76,7 +76,7 @@ mkdir docs &&  echo '# Hello VuePress' > docs/README.md
 #### 本地启动服务器 {#本地启动服务器}
 
 &gt; npm run docs:dev
-&gt; yarn docs:dev
+&gt; yarn docs:dev  #    yarn dev
 
 
 ### 更换主题 {#更换主题}

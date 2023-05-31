@@ -1,7 +1,7 @@
 ---
 title: "Linux system FAQ"
 date: "2022-08-01 14:00:00"
-lastmod: "2022-08-04 09:38:14"
+lastmod: "2023-04-19 10:20:06"
 tags: ["FAQ"]
 categories: ["Linux"]
 draft: false

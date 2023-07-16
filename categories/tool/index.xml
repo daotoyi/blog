@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tool on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/tool/</link>
+    <description>Recent content in tool on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Jun 2023 21:12:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/tool/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux cmd autojump</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-autojump/</link>
+      <pubDate>Sun, 04 Jun 2023 21:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-autojump/</guid>
+      <description>1 2 3 4 5 6  sudo apt install autojump git clone git://github.com/wting/autojump.git cd autojump ./install.py   </description>
+    </item>
+    
+    <item>
+      <title>linux cmd autojump</title>
+      <link>https://daotoyi.github.io/posts/linux-cmd-autojump/</link>
+      <pubDate>Sun, 04 Jun 2023 21:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-cmd-autojump/</guid>
+      <description>1 2 3 4 5 6  sudo apt install autojump git clone git://github.com/wting/autojump.git cd autojump ./install.py   </description>
+    </item>
+    
+  </channel>
+</rss>

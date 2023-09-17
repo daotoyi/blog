@@ -6,7 +6,115 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Jun 2023 21:12:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Sep 2023 09:16:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux ssh 本地/远程转发</title>
+      <link>https://daotoyi.github.io/post/linux-local-remote-transmit/</link>
+      <pubDate>Tue, 12 Sep 2023 09:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-local-remote-transmit/</guid>
+      <description>本地转发 A 机通过 B 机连接 C 机 B 机 1 2 3 4 5 6 7 8 9 10 11 12 ssh -L localport:remotehost:remotehostport sshserver 说明： localport 本机开启的端口号 remotehost 最终连接机器的IP地址 remotehostport 最终连接机器的端口号 sshserver 转发</description>
+    </item>
+    
+    <item>
+      <title>Linux ssh 本地/远程转发</title>
+      <link>https://daotoyi.github.io/posts/linux-local-remote-transmit/</link>
+      <pubDate>Tue, 12 Sep 2023 09:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-local-remote-transmit/</guid>
+      <description>本地转发 A 机通过 B 机连接 C 机 B 机 1 2 3 4 5 6 7 8 9 10 11 12 ssh -L localport:remotehost:remotehostport sshserver 说明： localport 本机开启的端口号 remotehost 最终连接机器的IP地址 remotehostport 最终连接机器的端口号 sshserver 转发</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统时间与 RTC 时间设置</title>
+      <link>https://daotoyi.github.io/post/linux-systime-and-rtctime/</link>
+      <pubDate>Fri, 08 Sep 2023 18:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-systime-and-rtctime/</guid>
+      <description>sys time &amp;amp; rtc time 系统时区为 UTC 系统时区不为 UTC 查看系统时间 # date # date 查看 RTC 时间 # hwclock # hwclock -u 设置系统时间 # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; 同步系统时间到 RTC # hwclock &amp;ndash;systohc # hwclock &amp;ndash;systohc -u 同</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统时间与 RTC 时间设置</title>
+      <link>https://daotoyi.github.io/posts/linux-systime-and-rtctime/</link>
+      <pubDate>Fri, 08 Sep 2023 18:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-systime-and-rtctime/</guid>
+      <description>sys time &amp;amp; rtc time 系统时区为 UTC 系统时区不为 UTC 查看系统时间 # date # date 查看 RTC 时间 # hwclock # hwclock -u 设置系统时间 # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; 同步系统时间到 RTC # hwclock &amp;ndash;systohc # hwclock &amp;ndash;systohc -u 同</description>
+    </item>
+    
+    <item>
+      <title>Linux Grub2 basic</title>
+      <link>https://daotoyi.github.io/post/linux-grub2/</link>
+      <pubDate>Wed, 30 Aug 2023 10:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-grub2/</guid>
+      <description>grub2 新特性 grub2 和 grub 有很多不同的地方： 图形接口 使用了模块机制，通过动态加载需要的模块来扩展功能 支持脚本语言，例如条件判断，循环、变量和函数 支持 rescue 模</description>
+    </item>
+    
+    <item>
+      <title>Linux Grub2 basic</title>
+      <link>https://daotoyi.github.io/posts/linux-grub2/</link>
+      <pubDate>Wed, 30 Aug 2023 10:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-grub2/</guid>
+      <description>grub2 新特性 grub2 和 grub 有很多不同的地方： 图形接口 使用了模块机制，通过动态加载需要的模块来扩展功能 支持脚本语言，例如条件判断，循环、变量和函数 支持 rescue 模</description>
+    </item>
+    
+    <item>
+      <title>Linux audit 监控 SIGKILL 的信号</title>
+      <link>https://daotoyi.github.io/post/linux-audit-monitor-sigkill/</link>
+      <pubDate>Sun, 13 Aug 2023 11:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-audit-monitor-sigkill/</guid>
+      <description>audit audit 是用户空间的一个组件，一般默认安装，配合内核的审计模块一起工作。可以记录与安全相关的内核事件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</description>
+    </item>
+    
+    <item>
+      <title>Linux audit 监控 SIGKILL 的信号</title>
+      <link>https://daotoyi.github.io/posts/linux-audit-monitor-sigkill/</link>
+      <pubDate>Sun, 13 Aug 2023 11:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-audit-monitor-sigkill/</guid>
+      <description>audit audit 是用户空间的一个组件，一般默认安装，配合内核的审计模块一起工作。可以记录与安全相关的内核事件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</description>
+    </item>
+    
+    <item>
+      <title>Linux NetworkManager</title>
+      <link>https://daotoyi.github.io/post/linux-networkmanager/</link>
+      <pubDate>Wed, 02 Aug 2023 11:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-networkmanager/</guid>
+      <description>基本配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 auto lo iface lo inet loopback # The primary network interface auto eth0 iface eth0 inet static address 192.168.0.42 network 192.168.0.0 netmask 255.255.255.0 broadcast 192.168.0.255 gateway 192.168.0.1 auto eth5 iface eth5 inet dhcp 增加路由 1 2 3 4 5 6 7 8 9 10 auto eth0 iface eth0 inet</description>
+    </item>
+    
+    <item>
+      <title>Linux NetworkManager</title>
+      <link>https://daotoyi.github.io/posts/linux-networkmanager/</link>
+      <pubDate>Wed, 02 Aug 2023 11:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-networkmanager/</guid>
+      <description>基本配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 auto lo iface lo inet loopback # The primary network interface auto eth0 iface eth0 inet static address 192.168.0.42 network 192.168.0.0 netmask 255.255.255.0 broadcast 192.168.0.255 gateway 192.168.0.1 auto eth5 iface eth5 inet dhcp 增加路由 1 2 3 4 5 6 7 8 9 10 auto eth0 iface eth0 inet</description>
+    </item>
+    
+    <item>
+      <title>Linux POSIX</title>
+      <link>https://daotoyi.github.io/post/linux-posix/</link>
+      <pubDate>Sun, 16 Jul 2023 07:57:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-posix/</guid>
+      <description>什么是 posix POSIX：可移植操作系统接口（Portable Operating System Interface of UNIX，缩写为 POSIX ）. 发布者为电气与电子工程师协会（Institute of Electrical and</description>
+    </item>
+    
+    <item>
+      <title>Linux POSIX</title>
+      <link>https://daotoyi.github.io/posts/linux-posix/</link>
+      <pubDate>Sun, 16 Jul 2023 07:57:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-posix/</guid>
+      <description>什么是 posix POSIX：可移植操作系统接口（Portable Operating System Interface of UNIX，缩写为 POSIX ）. 发布者为电气与电子工程师协会（Institute of Electrical and</description>
+    </item>
+    
     <item>
       <title>linux cmd autojump</title>
       <link>https://daotoyi.github.io/post/linux-cmd-autojump/</link>
@@ -239,6 +347,24 @@
       
       <guid>https://daotoyi.github.io/posts/linux-cmd-brctl/</guid>
       <description>简介 “bridge control”的缩写，其功能是用于管理以太网网桥。属于 bridge-utils 软件包。 参数 参数 功能 addbr 创建网桥 delbr 删除网桥 addif 将网卡接口接入网桥 delif 删</description>
+    </item>
+    
+    <item>
+      <title>Linux 集锦</title>
+      <link>https://daotoyi.github.io/post/linux-archives/</link>
+      <pubDate>Sun, 07 Aug 2022 09:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-archives/</guid>
+      <description>shell 空语句 : shell : python pass 去除文件后辍 1 2 $ basename /folder/f.zip .zip f 变更名中嵌套变量 1 2 3 4 5 6 id=1 string=id stream_1=&amp;#34;111&amp;#34; line=&amp;#34;$(eval echo \${stread_${id}}), 222&amp;#34; echo &amp;#34;{!string}&amp;#34; Code Snippet 1: calculate \\({stread_\){id}} CMD cp 和 mv 命令添加进度条 由于 cp 和 mv 命令都是</description>
+    </item>
+    
+    <item>
+      <title>Linux 集锦</title>
+      <link>https://daotoyi.github.io/posts/linux-archives/</link>
+      <pubDate>Sun, 07 Aug 2022 09:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-archives/</guid>
+      <description>shell 空语句 : shell : python pass 去除文件后辍 1 2 $ basename /folder/f.zip .zip f 变更名中嵌套变量 1 2 3 4 5 6 id=1 string=id stream_1=&amp;#34;111&amp;#34; line=&amp;#34;$(eval echo \${stread_${id}}), 222&amp;#34; echo &amp;#34;{!string}&amp;#34; Code Snippet 1: calculate \\({stread_\){id}} CMD cp 和 mv 命令添加进度条 由于 cp 和 mv 命令都是</description>
     </item>
     
     <item>

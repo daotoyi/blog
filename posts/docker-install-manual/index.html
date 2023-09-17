@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/posts/docker-install-manual/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-27T11:53:00+00:00" />
-<meta property="article:modified_time" content="2022-04-30T12:24:28+00:00" />
+<meta property="article:modified_time" content="2023-09-08T08:01:56+00:00" />
 
 <meta itemprop="name" content="Docker 安装">
 <meta itemprop="description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的"><meta itemprop="datePublished" content="2022-02-27T11:53:00+00:00" />
-<meta itemprop="dateModified" content="2022-04-30T12:24:28+00:00" />
-<meta itemprop="wordCount" content="253">
+<meta itemprop="dateModified" content="2023-09-08T08:01:56+00:00" />
+<meta itemprop="wordCount" content="409">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker 安装"/>
 <meta name="twitter:description" content="官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的"/>
@@ -203,6 +203,48 @@ yum remove docker-ce
 
 <span class="c1"># 移除镜像，容器，卷，网络，自定义文件等</span>
 rm -rf /var/lib/docker
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="almalinux">Almalinux</h2>
+<p>Red Hat Enterprise Linux 不提供对 Docker 的本机支持，AlmaLinux 也不提供，因为它是 RHEL 的一个分支。相反，红帽推动了对 Podman 的支持，Podman 是 Docker 的替代品。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 包更新到最新版本</span>
+dnf -y update
+<span class="c1"># reboot</span>
+
+<span class="c1"># 移除冲突包</span>
+dnf remove podman buildah
+
+<span class="c1"># 将 Docker CE 存储库添加到您的 AlmaLinux / Rocky Linux 8 系统</span>
+dnf config-manager --add-repo<span class="o">=</span>https://download.docker.com/linux/centos/docker-ce.repo
+
+<span class="c1"># 确认</span>
+dnf repolist
+
+<span class="c1"># 安装Docker CE</span>
+dnf -y install docker-ce docker-ce-cli containerd.io
+
+<span class="c1"># systemctl start/enable docker</span>
 </code></pre></td></tr></table>
 </div>
 </div>

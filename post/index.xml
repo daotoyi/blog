@@ -6,7 +6,88 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Jun 2023 21:12:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Sep 2023 17:58:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teminal Crack</title>
+      <link>https://daotoyi.github.io/post/tools-terminal-crack/</link>
+      <pubDate>Sat, 16 Sep 2023 17:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-terminal-crack/</guid>
+      <description>CRT SecureCRT 是一款支持 SSH（SSH1 和 SSH2）的终端仿真程序，简单地说是 Windows 下登录 UNIX 或 Linux 服务器主机的软件。 正版下载地址：https://www.v</description>
+    </item>
+    
+    <item>
+      <title>Linux ssh 本地/远程转发</title>
+      <link>https://daotoyi.github.io/post/linux-local-remote-transmit/</link>
+      <pubDate>Tue, 12 Sep 2023 09:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-local-remote-transmit/</guid>
+      <description>本地转发 A 机通过 B 机连接 C 机 B 机 1 2 3 4 5 6 7 8 9 10 11 12 ssh -L localport:remotehost:remotehostport sshserver 说明： localport 本机开启的端口号 remotehost 最终连接机器的IP地址 remotehostport 最终连接机器的端口号 sshserver 转发</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统时间与 RTC 时间设置</title>
+      <link>https://daotoyi.github.io/post/linux-systime-and-rtctime/</link>
+      <pubDate>Fri, 08 Sep 2023 18:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-systime-and-rtctime/</guid>
+      <description>sys time &amp;amp; rtc time 系统时区为 UTC 系统时区不为 UTC 查看系统时间 # date # date 查看 RTC 时间 # hwclock # hwclock -u 设置系统时间 # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; 同步系统时间到 RTC # hwclock &amp;ndash;systohc # hwclock &amp;ndash;systohc -u 同</description>
+    </item>
+    
+    <item>
+      <title>Linux Grub2 basic</title>
+      <link>https://daotoyi.github.io/post/linux-grub2/</link>
+      <pubDate>Wed, 30 Aug 2023 10:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-grub2/</guid>
+      <description>grub2 新特性 grub2 和 grub 有很多不同的地方： 图形接口 使用了模块机制，通过动态加载需要的模块来扩展功能 支持脚本语言，例如条件判断，循环、变量和函数 支持 rescue 模</description>
+    </item>
+    
+    <item>
+      <title>Windows C 盘清理</title>
+      <link>https://daotoyi.github.io/post/windows-clear-c-disk/</link>
+      <pubDate>Mon, 28 Aug 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-clear-c-disk/</guid>
+      <description>C盘清理指南，清理出30G+起，超详细总结</description>
+    </item>
+    
+    <item>
+      <title>Window 系统分区</title>
+      <link>https://daotoyi.github.io/post/windows-disk-filesystem/</link>
+      <pubDate>Fri, 25 Aug 2023 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-disk-filesystem/</guid>
+      <description>文件系统 文件系统是系统对文件的存放排列方式，不同格式的文件系统关系到数据是如何在磁盘进行存储，文件名、文件权限和其他属性也存在不同。 Windows 操作系</description>
+    </item>
+    
+    <item>
+      <title>Linux audit 监控 SIGKILL 的信号</title>
+      <link>https://daotoyi.github.io/post/linux-audit-monitor-sigkill/</link>
+      <pubDate>Sun, 13 Aug 2023 11:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-audit-monitor-sigkill/</guid>
+      <description>audit audit 是用户空间的一个组件，一般默认安装，配合内核的审计模块一起工作。可以记录与安全相关的内核事件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</description>
+    </item>
+    
+    <item>
+      <title>Linux NetworkManager</title>
+      <link>https://daotoyi.github.io/post/linux-networkmanager/</link>
+      <pubDate>Wed, 02 Aug 2023 11:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-networkmanager/</guid>
+      <description>基本配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 auto lo iface lo inet loopback # The primary network interface auto eth0 iface eth0 inet static address 192.168.0.42 network 192.168.0.0 netmask 255.255.255.0 broadcast 192.168.0.255 gateway 192.168.0.1 auto eth5 iface eth5 inet dhcp 增加路由 1 2 3 4 5 6 7 8 9 10 auto eth0 iface eth0 inet</description>
+    </item>
+    
+    <item>
+      <title>Linux POSIX</title>
+      <link>https://daotoyi.github.io/post/linux-posix/</link>
+      <pubDate>Sun, 16 Jul 2023 07:57:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-posix/</guid>
+      <description>什么是 posix POSIX：可移植操作系统接口（Portable Operating System Interface of UNIX，缩写为 POSIX ）. 发布者为电气与电子工程师协会（Institute of Electrical and</description>
+    </item>
+    
     <item>
       <title>linux cmd autojump</title>
       <link>https://daotoyi.github.io/post/linux-cmd-autojump/</link>
@@ -269,7 +350,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/windows-word-archive/</guid>
-      <description>模板 一劳永逸，打造自己的word常规模板</description>
+      <description>模板 一劳永逸，打造自己的word常规模板 hyper-VT 虚拟化选项 管理员权限执行批处理。 1 2 3 4 5 pushd &amp;#34;%~dp0&amp;#34; dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt for /f %%i in (&amp;#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#39;) do dism /online /norestart /add-package:&amp;#34;%SystemRoot%\servicing\Packages\%%i&amp;#34; del hyper-v.txt Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</description>
     </item>
     
     <item>
@@ -332,7 +413,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/windows-faq/</guid>
-      <description>电脑麦克风使用不了没有声音了怎么办</description>
+      <description>电脑麦克风使用不了没有声音了怎么办 windows11 更新卡住 遇到问题 检查互联网连接 以下界面要显示互联网已连接。电脑已联网但是显示未连接会导致卡进度，设置为按</description>
     </item>
     
     <item>
@@ -468,6 +549,15 @@ C-u C-u C-c TAB (org-table-expand)
       
       <guid>https://daotoyi.github.io/post/code-html-xml/</guid>
       <description>HTML Hyper Text Markup Language（超文本标记语言）的缩写. 在浏览器中看到的内容都是 HTML 代码经过浏览器渲染的结果 XML EXtensible Markup Language（可扩展标记语言）</description>
+    </item>
+    
+    <item>
+      <title>Linux 集锦</title>
+      <link>https://daotoyi.github.io/post/linux-archives/</link>
+      <pubDate>Sun, 07 Aug 2022 09:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-archives/</guid>
+      <description>shell 空语句 : shell : python pass 去除文件后辍 1 2 $ basename /folder/f.zip .zip f 变更名中嵌套变量 1 2 3 4 5 6 id=1 string=id stream_1=&amp;#34;111&amp;#34; line=&amp;#34;$(eval echo \${stread_${id}}), 222&amp;#34; echo &amp;#34;{!string}&amp;#34; Code Snippet 1: calculate \\({stread_\){id}} CMD cp 和 mv 命令添加进度条 由于 cp 和 mv 命令都是</description>
     </item>
     
     <item>
@@ -1367,7 +1457,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Sat, 19 Mar 2022 13:00:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/github-access-verification-with-token/</guid>
-      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 git remote set-url origin https://userName:token@github.com/userName/reponame.git # or git remote set-url origin https://token@github.com/userName/reponame.git git remote set-url origin https://hao203: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@github.com/hao203/Demo.git 将 token 当</description>
+      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 6 git remote set-url origin https://&amp;lt;user_ame&amp;gt;:token@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # or git remote set-url origin https://&amp;lt;token&amp;gt;@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # example git remote set-url origin https://hao203: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@github.com/hao203/Demo.git</description>
     </item>
     
     <item>
@@ -1848,7 +1938,7 @@ C-u C-u C-c TAB (org-table-expand)
     </item>
     
     <item>
-      <title>Git 使用问题整理</title>
+      <title>Git FAQ</title>
       <link>https://daotoyi.github.io/post/github-mannal-issues/</link>
       <pubDate>Sat, 05 Feb 2022 08:25:00 +0000</pubDate>
       

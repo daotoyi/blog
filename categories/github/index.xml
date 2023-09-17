@@ -157,7 +157,7 @@
       <pubDate>Sat, 19 Mar 2022 13:00:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/github-access-verification-with-token/</guid>
-      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 git remote set-url origin https://userName:token@github.com/userName/reponame.git # or git remote set-url origin https://token@github.com/userName/reponame.git git remote set-url origin https://hao203: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@github.com/hao203/Demo.git 将 token 当</description>
+      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 6 git remote set-url origin https://&amp;lt;user_ame&amp;gt;:token@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # or git remote set-url origin https://&amp;lt;token&amp;gt;@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # example git remote set-url origin https://hao203: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@github.com/hao203/Demo.git</description>
     </item>
     
     <item>
@@ -166,7 +166,7 @@
       <pubDate>Sat, 19 Mar 2022 13:00:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/github-access-verification-with-token/</guid>
-      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 git remote set-url origin https://userName:token@github.com/userName/reponame.git # or git remote set-url origin https://token@github.com/userName/reponame.git git remote set-url origin https://hao203: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@github.com/hao203/Demo.git 将 token 当</description>
+      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 6 git remote set-url origin https://&amp;lt;user_ame&amp;gt;:token@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # or git remote set-url origin https://&amp;lt;token&amp;gt;@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # example git remote set-url origin https://hao203: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@github.com/hao203/Demo.git</description>
     </item>
     
     <item>
@@ -260,7 +260,7 @@
     </item>
     
     <item>
-      <title>Git 使用问题整理</title>
+      <title>Git FAQ</title>
       <link>https://daotoyi.github.io/post/github-mannal-issues/</link>
       <pubDate>Sat, 05 Feb 2022 08:25:00 +0000</pubDate>
       
@@ -269,7 +269,7 @@
     </item>
     
     <item>
-      <title>Git 使用问题整理</title>
+      <title>Git FAQ</title>
       <link>https://daotoyi.github.io/posts/github-mannal-issues/</link>
       <pubDate>Sat, 05 Feb 2022 08:25:00 +0000</pubDate>
       

@@ -6,7 +6,43 @@
     <description>Recent content in Windows on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Apr 2023 20:10:29 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows C 盘清理</title>
+      <link>https://daotoyi.github.io/post/windows-clear-c-disk/</link>
+      <pubDate>Mon, 28 Aug 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-clear-c-disk/</guid>
+      <description>C盘清理指南，清理出30G+起，超详细总结</description>
+    </item>
+    
+    <item>
+      <title>Windows C 盘清理</title>
+      <link>https://daotoyi.github.io/posts/windows-clear-c-disk/</link>
+      <pubDate>Mon, 28 Aug 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-clear-c-disk/</guid>
+      <description>C盘清理指南，清理出30G+起，超详细总结</description>
+    </item>
+    
+    <item>
+      <title>Window 系统分区</title>
+      <link>https://daotoyi.github.io/post/windows-disk-filesystem/</link>
+      <pubDate>Fri, 25 Aug 2023 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-disk-filesystem/</guid>
+      <description>文件系统 文件系统是系统对文件的存放排列方式，不同格式的文件系统关系到数据是如何在磁盘进行存储，文件名、文件权限和其他属性也存在不同。 Windows 操作系</description>
+    </item>
+    
+    <item>
+      <title>Window 系统分区</title>
+      <link>https://daotoyi.github.io/posts/windows-disk-filesystem/</link>
+      <pubDate>Fri, 25 Aug 2023 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-disk-filesystem/</guid>
+      <description>文件系统 文件系统是系统对文件的存放排列方式，不同格式的文件系统关系到数据是如何在磁盘进行存储，文件名、文件权限和其他属性也存在不同。 Windows 操作系</description>
+    </item>
+    
     <item>
       <title>Windows chkdsk</title>
       <link>https://daotoyi.github.io/post/windows-cmd-chkdsk/</link>
@@ -31,7 +67,7 @@
       <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/windows-word-archive/</guid>
-      <description>模板 一劳永逸，打造自己的word常规模板</description>
+      <description>模板 一劳永逸，打造自己的word常规模板 hyper-VT 虚拟化选项 管理员权限执行批处理。 1 2 3 4 5 pushd &amp;#34;%~dp0&amp;#34; dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt for /f %%i in (&amp;#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#39;) do dism /online /norestart /add-package:&amp;#34;%SystemRoot%\servicing\Packages\%%i&amp;#34; del hyper-v.txt Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</description>
     </item>
     
     <item>
@@ -40,7 +76,7 @@
       <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/windows-word-archive/</guid>
-      <description>模板 一劳永逸，打造自己的word常规模板</description>
+      <description>模板 一劳永逸，打造自己的word常规模板 hyper-VT 虚拟化选项 管理员权限执行批处理。 1 2 3 4 5 pushd &amp;#34;%~dp0&amp;#34; dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt for /f %%i in (&amp;#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#39;) do dism /online /norestart /add-package:&amp;#34;%SystemRoot%\servicing\Packages\%%i&amp;#34; del hyper-v.txt Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</description>
     </item>
     
     <item>
@@ -49,7 +85,7 @@
       <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/windows-faq/</guid>
-      <description>电脑麦克风使用不了没有声音了怎么办</description>
+      <description>电脑麦克风使用不了没有声音了怎么办 windows11 更新卡住 遇到问题 检查互联网连接 以下界面要显示互联网已连接。电脑已联网但是显示未连接会导致卡进度，设置为按</description>
     </item>
     
     <item>
@@ -58,7 +94,7 @@
       <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/windows-faq/</guid>
-      <description>电脑麦克风使用不了没有声音了怎么办</description>
+      <description>电脑麦克风使用不了没有声音了怎么办 windows11 更新卡住 遇到问题 检查互联网连接 以下界面要显示互联网已连接。电脑已联网但是显示未连接会导致卡进度，设置为按</description>
     </item>
     
   </channel>

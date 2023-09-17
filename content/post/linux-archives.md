@@ -1,8 +1,9 @@
 ---
 title: "Linux 集锦"
-lastmod: "2022-07-20 20:43:19"
+date: "2022-08-07 09:28:00"
+lastmod: "2023-08-29 20:36:37"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## shell {#shell}
@@ -22,6 +23,26 @@ draft: true
 $ basename /folder/f.zip .zip
 f
 ```
+
+
+### 变更名中嵌套变量 {#变更名中嵌套变量}
+
+<a id="code-snippet--print-value"></a>
+```shell
+id=1
+string=id
+stream_1="111"
+
+line="$(eval echo \${stread_${id}}), 222"
+echo "{!string}"
+```
+
+<div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--print-value">Code Snippet 1</a></span>:
+  calculate
+</div>
+
+-   \\\\({stread\_\\){id}}
 
 
 ## CMD {#cmd}

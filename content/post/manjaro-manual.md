@@ -1,7 +1,7 @@
 ---
 title: "Manjaro/Linux 使用"
 date: "2022-03-31 22:53:00"
-lastmod: "2022-10-31 19:20:38"
+lastmod: "2023-08-26 15:37:21"
 categories: ["Linux"]
 draft: false
 ---
@@ -70,27 +70,6 @@ pacman -Sw 包名 #只下载包，不安装。
 pacman -Sc Pacman # 下载的包文件位于 /var/cache/pacman/pkg/ 目录。该命令将清理未安装的包文件
 pacman -Scc # 清理所有的缓存文件。
 ```
-
-
-## FAQ {#faq}
-
-
-### update systecm {#update-systecm}
-
-
-#### <span class="org-todo done DONE">DONE</span> - python-pip:xxx files exists. {#python-pip-xxx-files-exists-dot}
-
-```bash
-pacman -R python-pip
-pacman -Syu
-```
-
-
-#### Errors occurred, no packages were upgraded. {#errors-occurred-no-packages-were-upgraded-dot}
-
--   error: failed to commit transaction (invalid or corrupted package)
-
-[Manjaro软件更新失败：无效或已损坏的软件包](https://juejin.cn/post/7091962125660192798)
 
 
 ## pacman-gpg {#pacman-gpg}
@@ -571,7 +550,8 @@ pip install certbot-nginx
 ```
 
 
-## tools {#tools}
+## qemu {#qemu}
 
-
-###  {#d41d8c}
+```bash
+pacman -S qemu-system-x86_64
+```

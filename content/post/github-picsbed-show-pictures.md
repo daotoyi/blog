@@ -1,7 +1,7 @@
 ---
 title: "Github 图床显示图片"
 date: "2022-03-16 00:30:00"
-lastmod: "2022-04-30 12:32:12"
+lastmod: "2023-08-26 13:48:29"
 tags: ["PicsBed"]
 categories: ["Github"]
 draft: false

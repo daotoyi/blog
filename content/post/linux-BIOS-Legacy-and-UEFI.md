@@ -1,6 +1,6 @@
 ---
 title: "Linux BIOS(Legacy&UEFI)"
-lastmod: "2023-05-20 17:35:08"
+lastmod: "2023-08-25 12:54:06"
 categories: ["Linux"]
 draft: true
 ---

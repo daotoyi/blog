@@ -1,7 +1,7 @@
 ---
 title: "Docker 安装"
 date: "2022-02-27 11:53:00"
-lastmod: "2022-04-30 12:24:28"
+lastmod: "2023-09-08 08:01:56"
 categories: ["Docker"]
 draft: false
 ---
@@ -49,4 +49,29 @@ yum remove docker-ce
 
 # 移除镜像，容器，卷，网络，自定义文件等
 rm -rf /var/lib/docker
+```
+
+
+## Almalinux {#almalinux}
+
+Red Hat Enterprise Linux 不提供对 Docker 的本机支持，AlmaLinux 也不提供，因为它是 RHEL 的一个分支。相反，红帽推动了对 Podman 的支持，Podman 是 Docker 的替代品。
+
+```bash
+# 包更新到最新版本
+dnf -y update
+# reboot
+
+# 移除冲突包
+dnf remove podman buildah
+
+# 将 Docker CE 存储库添加到您的 AlmaLinux / Rocky Linux 8 系统
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+
+# 确认
+dnf repolist
+
+# 安装Docker CE
+dnf -y install docker-ce docker-ce-cli containerd.io
+
+# systemctl start/enable docker
 ```

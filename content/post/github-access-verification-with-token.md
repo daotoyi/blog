@@ -1,7 +1,7 @@
 ---
 title: "Github 推送验证"
 date: "2022-03-19 13:00:00"
-lastmod: "2022-04-30 12:32:38"
+lastmod: "2023-09-08 22:30:47"
 categories: ["Github"]
 draft: false
 ---
@@ -20,11 +20,19 @@ git remote add origin https://hao203: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@gi
 ### 修改远程仓库（recommend） {#修改远程仓库-recommend}
 
 ```shell
-git remote set-url origin https://userName:token@github.com/userName/reponame.git
+git remote set-url origin https://<user_ame>:token@github.com/<user_name>/<repo_name>.git
 # or
-git remote set-url origin https://token@github.com/userName/reponame.git
+git remote set-url origin https://<token>@github.com/<user_name>/<repo_name>.git
 
+# example
 git remote set-url origin https://hao203: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@github.com/hao203/Demo.git
+```
+
+
+### clone 全新仓库 {#clone-全新仓库}
+
+```bash
+git clone https://<token>@github.com/<user_name>/<repo_name>.git
 ```
 
 
@@ -38,7 +46,7 @@ Password: token
 git config credential.helper store
 
 # 输入用户名，token后，使用cache缓存
-# git config --global credential.helper cache
+git config --global credential.helper cache
 
 # 解除认证
 git config --global --unset credential.helper
@@ -52,8 +60,7 @@ Git 可以指定辅助工具（mananger、wincred 和 store 通过配置 credent
 
 ### 1 manager {#1-manager}
 
-若安装 Git 时安装了 GitGUI，自动会在 system 级别中设置 credential.helper 为 manager。并且不配置所处级别（system、global 或者 local）如何，一旦设置了 manager，都优先使用该方式。
-查看不同级别的 credential.helper
+若安装 Git 时安装了 GitGUI，自动会在 system 级别中设置 credential.helper 为 manager。并且不配置所处级别（system、global 或者 local）如何，一旦设置了 manager，都优先使用该方式。查看不同级别的 credential.helper
 
 
 ### 2 wincred {#2-wincred}

@@ -1,7 +1,7 @@
 ---
-title: "Git 使用问题整理"
+title: "Git FAQ"
 date: "2022-02-05 08:25:00"
-lastmod: "2022-04-30 12:32:08"
+lastmod: "2023-08-26 13:48:11"
 tags: ["git"]
 categories: ["Github"]
 draft: false

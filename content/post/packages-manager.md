@@ -1,7 +1,7 @@
 ---
 title: "Packages Manager"
 date: "2022-04-02 12:30:00"
-lastmod: "2022-04-30 12:48:31"
+lastmod: "2023-09-24 11:38:45"
 tags: ["managePackage"]
 categories: ["Tools"]
 draft: false

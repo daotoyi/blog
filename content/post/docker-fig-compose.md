@@ -1,7 +1,7 @@
 ---
 title: "Docker Compose"
 date: "2022-04-04 08:31:00"
-lastmod: "2022-04-30 12:25:01"
+lastmod: "2023-09-23 11:14:17"
 categories: ["Docker"]
 draft: false
 ---
@@ -68,12 +68,25 @@ Compose 中有两个重要的概念：
 
 ### install {#install}
 
-install via python-pip tool.
+-   install via python-pip tool.
+
+<!--listend-->
 
 ```bash
+# 1) pip
 apt install python-pip
 pip install -U docker-compose
 docker-compose --version
+```
+
+-   install via curl - (recommend)
+
+<!--listend-->
+
+```bash
+# 2） curl
+curl -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 ```
 
 

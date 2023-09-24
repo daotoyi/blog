@@ -1,7 +1,7 @@
 ---
 title: "Mermaid"
 date: "2023-09-17 15:29:00"
-lastmod: "2023-09-17 15:32:12"
+lastmod: "2023-09-24 20:35:26"
 tags: ["markdown"]
 categories: ["Tools"]
 draft: false

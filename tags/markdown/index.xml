@@ -6,7 +6,25 @@
     <description>Recent content in markdown on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Mar 2022 11:04:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 15:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid</title>
+      <link>https://daotoyi.github.io/post/tool-mermaid/</link>
+      <pubDate>Sun, 17 Sep 2023 15:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-mermaid/</guid>
+      <description>前言 开源的文本驱动图表生成工具. Mermaid 可以作为 JavaScript 库使用，也可以作为独立的命令行工具使用。 在文本编辑器中编写图表定义，而无需使用专业的图表工具或图</description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>https://daotoyi.github.io/posts/tool-mermaid/</link>
+      <pubDate>Sun, 17 Sep 2023 15:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/tool-mermaid/</guid>
+      <description>前言 开源的文本驱动图表生成工具. Mermaid 可以作为 JavaScript 库使用，也可以作为独立的命令行工具使用。 在文本编辑器中编写图表定义，而无需使用专业的图表工具或图</description>
+    </item>
+    
     <item>
       <title>Markdown</title>
       <link>https://daotoyi.github.io/post/markdown-notes/</link>

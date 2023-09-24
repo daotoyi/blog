@@ -6,7 +6,43 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Sep 2023 09:16:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 14:45:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux HSR/PRP 功能</title>
+      <link>https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/</link>
+      <pubDate>Sat, 23 Sep 2023 14:45:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/</guid>
+      <description>HSR/PRP HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）.一个专注于解决高可靠性自动化网络传输的标准</description>
+    </item>
+    
+    <item>
+      <title>Linux HSR/PRP 功能</title>
+      <link>https://daotoyi.github.io/posts/linux-support-hsr-prp-by-kernerl/</link>
+      <pubDate>Sat, 23 Sep 2023 14:45:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-support-hsr-prp-by-kernerl/</guid>
+      <description>HSR/PRP HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）.一个专注于解决高可靠性自动化网络传输的标准</description>
+    </item>
+    
+    <item>
+      <title>Linux debian sid source</title>
+      <link>https://daotoyi.github.io/post/linux-debain-sid/</link>
+      <pubDate>Sat, 23 Sep 2023 12:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-debain-sid/</guid>
+      <description>简述 Debian sid 其实严格意义上不是一个正式的发行版，它更像一个 Debian 发行版的滚动开发版本，包含引入 Debian 系统中的最新的软件包。一般都是一些硬派开发者或测试者</description>
+    </item>
+    
+    <item>
+      <title>Linux debian sid source</title>
+      <link>https://daotoyi.github.io/posts/linux-debain-sid/</link>
+      <pubDate>Sat, 23 Sep 2023 12:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-debain-sid/</guid>
+      <description>简述 Debian sid 其实严格意义上不是一个正式的发行版，它更像一个 Debian 发行版的滚动开发版本，包含引入 Debian 系统中的最新的软件包。一般都是一些硬派开发者或测试者</description>
+    </item>
+    
     <item>
       <title>Linux ssh 本地/远程转发</title>
       <link>https://daotoyi.github.io/post/linux-local-remote-transmit/</link>

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux HSR/PRP 功能 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="compile-kernel-hsr-module" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux HSR/PRP 功能" />
+<meta property="og:description" content="compile-kernel-hsr-module" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-09-23T14:45:00+00:00" />
+<meta property="article:modified_time" content="2023-09-24T22:04:21+08:00" />
+
+<meta itemprop="name" content="Linux HSR/PRP 功能">
+<meta itemprop="description" content="compile-kernel-hsr-module"><meta itemprop="datePublished" content="2023-09-23T14:45:00+00:00" />
+<meta itemprop="dateModified" content="2023-09-24T22:04:21+08:00" />
+<meta itemprop="wordCount" content="1670">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux HSR/PRP 功能"/>
+<meta name="twitter:description" content="compile-kernel-hsr-module"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux HSR/PRP 功能</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-09-23 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 1670 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#hsr-prp">HSR/PRP</a></li>
+        <li><a href="#环境说明">环境说明</a></li>
+        <li><a href="#编译内核">编译内核</a>
+          <ul>
+            <li><a href="#配置安装源">配置安装源</a></li>
+            <li><a href="#安装软件库">安装软件库</a></li>
+            <li><a href="#配置编译安装">配置编译安装</a></li>
+            <li><a href="#特别说明">特别说明</a></li>
+          </ul>
+        </li>
+        <li><a href="#编译安装包">编译安装包</a>
+          <ul>
+            <li><a href="#安装软件库">安装软件库</a></li>
+            <li><a href="#编译包">编译包</a></li>
+          </ul>
+        </li>
+        <li><a href="#测试环境">测试环境</a>
+          <ul>
+            <li><a href="#连接方式">连接方式</a></li>
+            <li><a href="#net-tools-配置">net-tools 配置</a></li>
+            <li><a href="#ip-配置">ip 配置</a></li>
+            <li><a href="#脚本化配置">脚本化配置</a></li>
+            <li><a href="#特别说明">特别说明</a></li>
+            <li><a href="#参考">参考</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="hsr-prp">HSR/PRP</h2>
+<p>HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）.一个专注于解决高可靠性自动化网络传输的标准.kkjkjkn</p>
+<h2 id="环境说明">环境说明</h2>
+<p>支持 HSR/PRP 功能的内核为 5.10.120 以上，系统环境 Debian11.5，系统自带内核为 5.10.0-18-amd64,采用 5.19.11 的内核。</p>
+<h2 id="编译内核">编译内核</h2>
+<h3 id="配置安装源">配置安装源</h3>
+<p>/etc/apt/source.list</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1"># loop iso</span>
+<span class="na">deb [trusted</span><span class="o">=</span><span class="s">true ] cdrom:[Debian GNU/Linux 11.5.0 _Bullseye_ - Official amd64 DVD Binary-1 20220910-10:40]/ bullseye contrib main</span>
+
+<span class="na">deb http://security.debian.org/debian-security bullseye-security main contrib</span>
+<span class="na">deb-src http://security.debian.org/debian-security bullseye-security main contrib</span>
+
+<span class="na">deb http://deb.debian.org/debian/ bullseye-updates main contrib</span>
+<span class="na">deb-src http://deb.debian.org/debian/ bullseye-updates main contrib</span>
+
+<span class="c1"># sid</span>
+<span class="na">deb http://ftp.cn.debian.org/debian sid main</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>[trusted=true] : 本地 iso 文件增加信任</li>
+<li>sid： 增加 debian 滚动源，解决安装 libelf-dev 时无法检索的总理</li>
+</ul>
+<h3 id="安装软件库">安装软件库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">apt update
+apt install libncurses-dev
+apt install flex
+apt install bison
+apt install libssl-dev
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="配置编译安装">配置编译安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> kernel-src/
+cp /boot/config-<span class="k">$(</span>uname -r<span class="k">)</span> .config
+
+make menuconfig
+<span class="c1"># Main menu --&gt; Networking support --&gt; HSR/PRP</span>
+<span class="c1"># &lt;load&gt; &lt;save&gt;</span>
+
+<span class="c1"># exit menuconfig(&lt;ESC&gt;&lt;ESC&gt;)</span>
+
+make -j4
+
+<span class="c1"># install modules</span>
+make modules_install
+
+<span class="c1"># install kernel</span>
+make install
+
+<span class="c1"># start priority</span>
+update-initramfs -c -k 5.19.11
+
+update-grub
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="特别说明">特别说明</h3>
+<p>libelf-dev 软包在 iso 文件或者 bullseys 在线源中均未找到，采用 sid 源安装成功。</p>
+<ul>
+<li><a href="https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download">https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download</a></li>
+<li>Asia repository</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">ftp.cn.debian.org/debian
+ftp.jp.debian.org/debian
+ftp.kr.debian.org/debian
+ftp.hk.debian.org/debian
+ftp.tw.debian.org/debian
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="编译安装包">编译安装包</h2>
+<p>将内核源码编译成</p>
+<h3 id="安装软件库">安装软件库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">apt install fakeroot
+apt install dpkg-dekv
+apt install rsync
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编译包">编译包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">make -j <span class="m">4</span>  deb-pkg
+</code></pre></td></tr></table>
+</div>
+</div><p>在编译目录上层目录生成内核和头文件的安装包（deb 格式）。</p>
+<h2 id="测试环境">测试环境</h2>
+<h3 id="连接方式">连接方式</h3>
+<p>分别配置 A、B 两台装置的 HSR/PRP 网络以及 IP，假设配置均配置 A、B 的 eth1 和 eth2，A 机的 eth1 和 eth2 分别连接 B 机的 eth1 和 eth2，此时 A 机 ping B 机的 prp0 设备是通的，拔掉任意的 eth0 和 eth1，prp0 网络应能正常连接不断网。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">graph LR
+
+    subgraph A
+        A:eth1
+        A:eth2
+    end
+
+    subgraph B
+        A:eth1 --&gt; B:eth1
+        A:eth2 --&gt; B:eth2
+    end
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="net-tools-配置">net-tools 配置</h3>
+<h4 id="配置-mac">配置 MAC</h4>
+<p>配置端口有一样的 MAC 地址：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ifconfig eth1 0.0.0.0 down <span class="o">&amp;&amp;</span> ifconfig eth2 0.0.0.0 down
+ifconfig eth1 hw ether 70:FF:76:1C:0E:8C <span class="o">&amp;&amp;</span> ifconfig eth2 hw ether 70:FF:76:1C:0E:8C
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="hsr-配置">HSR 配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">thtool -K eth1 hsr-rx-offload on <span class="o">&amp;&amp;</span> ethtool -K eth2 hsr-rx-offload on
+ifconfig eth1 up <span class="o">&amp;&amp;</span> ifconfig eth2 up
+ip link add name hsr0 <span class="nb">type</span> hsr slave1 eth1 slave2 eth2 supervision <span class="m">45</span> version <span class="m">1</span>
+ifconfig hsr0 192.168.2.20
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="prp-配置">PRP 配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ethtool -K eth1 prp-rx-offload on <span class="o">&amp;&amp;</span> ethtool -K eth2 prp-rx-offload on
+ifconfig eth1 up <span class="o">&amp;&amp;</span> ifconfig eth2 up
+ip link add name prp0 <span class="nb">type</span> hsr slave1 eth1 slave2 eth2 supervision <span class="m">45</span> proto <span class="m">1</span>
+ifconfig prp0 192.168.2.20
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="ip-配置">ip 配置</h3>
+<p>Getting Started</p>
+<p>To try out HSR/PRP (assuming two supported platforms are set up already, and the ethernet ports are eth1/eth2):</p>
+<p>Connect the Ethernet ports between devices, eth1 to eth1 and eth2 to eth2. (This acts as a 2 node ring for HSR, or a 2 node point-to-point for PRP)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Bring down both the ethernet interfaces</span>
+ip link <span class="nb">set</span> eth1 down <span class="o">&amp;&amp;</span> ip link <span class="nb">set</span> eth2 down
+
+<span class="c1"># Configure both ports to have the same MAC address</span>
+ip link <span class="nb">set</span> dev eth1 address 70:FF:76:1C:0E:8C <span class="o">&amp;&amp;</span> ip link <span class="nb">set</span> dev eth2 address 70:FF:76:1C:0E:8C
+
+<span class="c1"># Bring up both the ethernet interfaces</span>
+ip link <span class="nb">set</span> eth1 up <span class="o">&amp;&amp;</span> ip link <span class="nb">set</span> eth2 up
+
+<span class="c1"># Create HSR or PRP feature</span>
+<span class="c1"># For HSR</span>
+ip link add name hsr0 <span class="nb">type</span> hsr slave1 eth1 slave2 eth2 supervision <span class="m">45</span> version <span class="m">1</span>
+<span class="c1"># For PRP</span>
+ip link add name prp0 <span class="nb">type</span> hsr slave1 eth1 slave2 eth2 supervision <span class="m">45</span> proto <span class="m">1</span>
+
+<span class="c1"># Assign an IP address to the HSR/PRP interface</span>
+<span class="c1"># For HSR</span>
+ip addr add 192.168.2.20 dev hsr0
+
+<span class="c1"># For PRP</span>
+ip addr add 192.168.2.20 dev prp0
+</code></pre></td></tr></table>
+</div>
+</div><p>With the above configuration, if a ping is run between the two platforms on the HSR/PRP interface, the ping will continue even if one of the connections is removed.</p>
+<h3 id="脚本化配置">脚本化配置</h3>
+<h4 id="linux-hsr-prp-support">Linux HSR PRP Support</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$#</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;4&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2"> &lt;hsr|prp&gt; &lt;intf1&gt; &lt;intf2&gt; &lt;ip addr&gt;&#34;</span>
+    <span class="nb">exit</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;hsr&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;prp&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2"> &lt;hsr|prp&gt;&#34;</span>
+    <span class="nb">exit</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;hsr&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="k">if</span><span class="o">=</span>hsr0
+<span class="k">else</span>
+    <span class="k">if</span><span class="o">=</span>prp0
+<span class="k">fi</span>
+
+<span class="nv">ifa</span><span class="o">=</span><span class="nv">$2</span>
+<span class="nv">ifb</span><span class="o">=</span><span class="nv">$3</span>
+
+<span class="nv">ip</span><span class="o">=</span><span class="nv">$4</span>
+<span class="nv">mac</span><span class="o">=</span><span class="sb">`</span>ifconfig <span class="nv">$ifa</span> <span class="p">|</span> grep ether <span class="p">|</span> cut -d <span class="s2">&#34; &#34;</span> -f 10<span class="sb">`</span>
+
+<span class="nb">echo</span> <span class="s2">&#34;ip=</span><span class="nv">$ip</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;if=</span><span class="nv">$if</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;mac=</span><span class="nv">$mac</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;slave-a=</span><span class="nv">$ifa</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;slave-b=</span><span class="nv">$ifb</span><span class="s2">&#34;</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;hsr&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+    ip link delete prp0  2&gt; /dev/null
+<span class="k">else</span>
+    ip link delete hsr0  2&gt; /dev/null
+<span class="k">fi</span>
+
+ip link <span class="nb">set</span> <span class="nv">$ifa</span> down
+ip link <span class="nb">set</span> <span class="nv">$ifb</span> down
+sleep <span class="m">1</span>
+
+ip link <span class="nb">set</span> dev <span class="nv">$ifa</span> address <span class="nv">$mac</span>
+ip link <span class="nb">set</span> dev <span class="nv">$ifb</span> address <span class="nv">$mac</span>
+
+ip link <span class="nb">set</span> <span class="nv">$ifa</span> up
+sleep <span class="m">1</span>
+
+ip link <span class="nb">set</span> <span class="nv">$ifb</span> up
+sleep <span class="m">1</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;hsr&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+    ip link add name <span class="nv">$if</span> <span class="nb">type</span> hsr slave1 <span class="nv">$ifa</span> slave2 <span class="nv">$ifb</span> supervision <span class="m">45</span> version <span class="m">1</span>
+<span class="k">else</span>
+    ip link add name <span class="nv">$if</span> <span class="nb">type</span> hsr slave1 <span class="nv">$ifa</span> slave2 <span class="nv">$ifb</span> supervision <span class="m">45</span> proto <span class="m">1</span>
+<span class="k">fi</span>
+sleep <span class="m">3</span>
+
+ip addr add <span class="nv">$ip</span>/24 dev <span class="nv">$if</span>
+ip link <span class="nb">set</span> <span class="nv">$if</span> up
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>run-script</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># hsr interface</span>
+sh ./&lt;script_filename.sh&gt; hsr eth1 eth2 192.168.2.20
+
+<span class="c1"># prp interface</span>
+sh ./&lt;script_filename.sh&gt; prp eth1 eth2 192.168.2.20
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h4 id="linux-hsr-offload-support">Linux HSR Offload Support</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>
+<span class="c1">#For non offload - sh hsr_setup.sh hsr_sw &lt;INTF_A&gt; &lt;INTF_B&gt; &lt;HSR_INTF_IP_ADDR&gt;</span>
+<span class="c1">#For offload - sh hsr_setup.sh hsr_hw &lt;INTF_A&gt; &lt;INTF_B&gt; &lt;HSR_INTF_IP_ADDR&gt;</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$#</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;4&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2"> &lt;hsr_sw/hsr_hw&gt; &lt;intf1&gt; &lt;intf2&gt; &lt;ip addr&gt;&#34;</span>
+        <span class="nb">exit</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;hsr_sw&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;hsr_hw&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$0</span><span class="s2"> &lt;hsr_sw|hsr_hw&gt;&#34;</span>
+        <span class="nb">exit</span>
+<span class="k">fi</span>
+
+<span class="k">if</span><span class="o">=</span>hsr0
+
+<span class="nv">ifa</span><span class="o">=</span><span class="nv">$2</span>
+<span class="nv">ifb</span><span class="o">=</span><span class="nv">$3</span>
+
+<span class="nv">ip</span><span class="o">=</span><span class="nv">$4</span>
+<span class="nv">mac</span><span class="o">=</span><span class="sb">`</span>ifconfig <span class="nv">$ifa</span> <span class="p">|</span> grep ether <span class="p">|</span> cut -d <span class="s2">&#34; &#34;</span> -f 10<span class="sb">`</span>
+
+<span class="nv">device</span><span class="o">=</span><span class="s2">&#34;platform/&#34;</span>
+<span class="nv">device</span><span class="o">+=</span><span class="sb">`</span>dmesg <span class="p">|</span> grep <span class="nv">$ifa</span> <span class="p">|</span> grep icssg-prueth <span class="p">|</span> grep -m <span class="m">1</span> <span class="s2">&#34;Link is Up&#34;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $4}&#39;</span><span class="sb">`</span>
+
+<span class="nb">echo</span> <span class="s2">&#34;ip=</span><span class="nv">$ip</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;if=</span><span class="nv">$if</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;mac=</span><span class="nv">$mac</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;slave-a=</span><span class="nv">$ifa</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;slave-b=</span><span class="nv">$ifb</span><span class="s2">&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;device=</span><span class="nv">$device</span><span class="s2">&#34;</span>
+
+ip link delete hsr0  2&gt; /dev/null
+
+ip link <span class="nb">set</span> <span class="nv">$ifa</span> down
+ip link <span class="nb">set</span> <span class="nv">$ifb</span> down
+sleep <span class="m">1</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;hsr_hw&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+        ethtool -k <span class="nv">$ifa</span> <span class="p">|</span> grep hsr
+        ethtool -K <span class="nv">$ifa</span> hsr-fwd-offload on
+        ethtool -k <span class="nv">$ifa</span> <span class="p">|</span> grep hsr
+
+        ethtool -k <span class="nv">$ifb</span> <span class="p">|</span> grep hsr
+        ethtool -K <span class="nv">$ifb</span> hsr-fwd-offload on
+        ethtool -k <span class="nv">$ifb</span> <span class="p">|</span> grep hsr
+
+        devlink dev param <span class="nb">set</span> <span class="nv">$device</span> name hsr_offload_mode value <span class="nb">true</span> cmode runtime
+<span class="k">fi</span>
+
+ip link <span class="nb">set</span> dev <span class="nv">$ifa</span> address <span class="nv">$mac</span>
+ip link <span class="nb">set</span> dev <span class="nv">$ifb</span> address <span class="nv">$mac</span>
+
+ip link <span class="nb">set</span> <span class="nv">$ifa</span> up
+sleep <span class="m">1</span>
+
+ip link <span class="nb">set</span> <span class="nv">$ifb</span> up
+sleep <span class="m">1</span>
+
+ip link add name <span class="nv">$if</span> <span class="nb">type</span> hsr slave1 <span class="nv">$ifa</span> slave2 <span class="nv">$ifb</span> supervision <span class="m">45</span> version <span class="m">1</span>
+
+sleep <span class="m">3</span>
+
+ip addr add <span class="nv">$ip</span>/24 dev <span class="nv">$if</span>
+ip link <span class="nb">set</span> <span class="nv">$if</span> up
+</code></pre></td></tr></table>
+</div>
+</div><p>To create HSR interface with IP address 192.168.2.20 using eth1 and eth2 and port-to-port forwarding offloaded, run the script by passing the arguments as below:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sh ./&lt;script_filename.sh&gt; hsr_hw eth1 eth2 192.168.2.20
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="特别说明">特别说明</h3>
+<ul>
+<li>在参考示例中 eth1 和 eth2 需要设置同样的 MAC，实测不必要。</li>
+<li>命令不支持 <code>proto</code> 参数，去掉 <code>proto 1</code> 以及 <code>supervision 45</code> 实测也可。
+<ul>
+<li>-ip link add name prp0 type hsr slave1 eth1 slave2 eth2 supervision 45 proto 1-</li>
+<li>ip link add name hsr0 type hsr slave1 eth1 slave2 eth2</li>
+<li>ip link add name prp0 type hsr slave1 eth1 slave2 eth2</li>
+</ul>
+</li>
+</ul>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://software-dl.ti.com/processor-sdk-linux/esd/AM65X/latest/exports/docs/linux/Industrial_Protocols_HSR_PRP.html">HSR/PRP</a>配置 1</li>
+<li><a href="https://software-dl.ti.com/processor-sdk-linux/esd/AM64X/08_01_00_39/exports/docs/linux/Foundational_Components/Kernel/Kernel_Drivers/Network/HSR_PRP.html">HSR/PRP</a>配置 2</li>
+<li><a href="https://software-dl.ti.com/processor-sdk-linux/esd/AM64X/09_00_00_03/exports/docs/linux/Foundational_Components/Kernel/Kernel_Drivers/Network/HSR_PRP.html">HSR/PRP</a>配置脚本</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2023-09-24
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/5d8dc596866776204370809261b9170219d87533" title="update Irregular period">(5d8dc59)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/linux-debain-sid/">
+            <span class="next-text nav-default">Linux debian sid source</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

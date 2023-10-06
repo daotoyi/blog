@@ -6,7 +6,43 @@
     <description>Recent content in Hardware on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jan 2023 22:50:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Sep 2023 18:47:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>晶振</title>
+      <link>https://daotoyi.github.io/post/hardware-crystal-oscillator/</link>
+      <pubDate>Sun, 24 Sep 2023 18:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-crystal-oscillator/</guid>
+      <description>PPM 精度 ppm 晶振的精度(误差). PPM 含义为百万分之一(part per million 1/10^6)，表示晶体频率会偏离标称频率多少。值越小精度越高。 在产品规格书中，</description>
+    </item>
+    
+    <item>
+      <title>晶振</title>
+      <link>https://daotoyi.github.io/posts/hardware-crystal-oscillator/</link>
+      <pubDate>Sun, 24 Sep 2023 18:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-crystal-oscillator/</guid>
+      <description>PPM 精度 ppm 晶振的精度(误差). PPM 含义为百万分之一(part per million 1/10^6)，表示晶体频率会偏离标称频率多少。值越小精度越高。 在产品规格书中，</description>
+    </item>
+    
+    <item>
+      <title>无线通信</title>
+      <link>https://daotoyi.github.io/post/hardware-wireless-communication/</link>
+      <pubDate>Sun, 24 Sep 2023 18:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-wireless-communication/</guid>
+      <description>传输距离 短距离通信 Zigbee Wi-Fi Bluetooth Z-wave 广域网通信 低功耗广域网（LPWAN 非授权频段 Lora Sigfox 授权频段（3GPP/3GPP2 等国家组织 GSM CDMA WCDMA LTE NB-IoT 协商统一于 NB-</description>
+    </item>
+    
+    <item>
+      <title>无线通信</title>
+      <link>https://daotoyi.github.io/posts/hardware-wireless-communication/</link>
+      <pubDate>Sun, 24 Sep 2023 18:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-wireless-communication/</guid>
+      <description>传输距离 短距离通信 Zigbee Wi-Fi Bluetooth Z-wave 广域网通信 低功耗广域网（LPWAN 非授权频段 Lora Sigfox 授权频段（3GPP/3GPP2 等国家组织 GSM CDMA WCDMA LTE NB-IoT 协商统一于 NB-</description>
+    </item>
+    
     <item>
       <title>UART、RS232、TTL 关系浅析</title>
       <link>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</link>

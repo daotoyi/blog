@@ -6,7 +6,97 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Sep 2023 14:45:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 15:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 不同 shell 文件中的函数调用</title>
+      <link>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</link>
+      <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</guid>
+      <description>执行外部脚本或命令 使用 source 命令或.运算符执行另一个脚本文件。这将导致另一个脚本中的所有命令在当前脚本的上下文中执行。 例如，有两个脚本文件，sc</description>
+    </item>
+    
+    <item>
+      <title>Linux 不同 shell 文件中的函数调用</title>
+      <link>https://daotoyi.github.io/posts/linux-shell-function-invoke-between-files/</link>
+      <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-shell-function-invoke-between-files/</guid>
+      <description>执行外部脚本或命令 使用 source 命令或.运算符执行另一个脚本文件。这将导致另一个脚本中的所有命令在当前脚本的上下文中执行。 例如，有两个脚本文件，sc</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell Archive</title>
+      <link>https://daotoyi.github.io/post/linux-shell-archive/</link>
+      <pubDate>Fri, 29 Sep 2023 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-archive/</guid>
+      <description>cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell Archive</title>
+      <link>https://daotoyi.github.io/posts/linux-shell-archive/</link>
+      <pubDate>Fri, 29 Sep 2023 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-shell-archive/</guid>
+      <description>cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的</description>
+    </item>
+    
+    <item>
+      <title>Linux 终端常用快捷键</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey-commonly/</link>
+      <pubDate>Tue, 26 Sep 2023 20:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey-commonly/</guid>
+      <description>快捷键 功能描述 Ctrl + A 光标快速跳至行首。 Ctrl + E 光标快速跳至行尾。 Ctrl + U 删除光标至行首的所有内容。 Ctrl + K 删除光标至行尾的所有内容。 Ctrl + W 删除光标</description>
+    </item>
+    
+    <item>
+      <title>Linux 终端常用快捷键</title>
+      <link>https://daotoyi.github.io/posts/linux-terminal-hotkey-commonly/</link>
+      <pubDate>Tue, 26 Sep 2023 20:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-terminal-hotkey-commonly/</guid>
+      <description>快捷键 功能描述 Ctrl + A 光标快速跳至行首。 Ctrl + E 光标快速跳至行尾。 Ctrl + U 删除光标至行首的所有内容。 Ctrl + K 删除光标至行尾的所有内容。 Ctrl + W 删除光标</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统安全加固</title>
+      <link>https://daotoyi.github.io/post/linux-system-enhance/</link>
+      <pubDate>Sun, 24 Sep 2023 20:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-system-enhance/</guid>
+      <description>passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统安全加固</title>
+      <link>https://daotoyi.github.io/posts/linux-system-enhance/</link>
+      <pubDate>Sun, 24 Sep 2023 20:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-system-enhance/</guid>
+      <description>passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES</description>
+    </item>
+    
+    <item>
+      <title>Linux systecm service manager</title>
+      <link>https://daotoyi.github.io/post/linux-systecm-service-manager/</link>
+      <pubDate>Sun, 24 Sep 2023 20:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-systecm-service-manager/</guid>
+      <description>init/systemd https://img-blog.csdn.net/20180825000445679?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MjI4ODMw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70) service manage service/chkconfig 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 chkconfig 设置是当前不生效，linux重启后才生效 service 设置是即时生效，linux关机重启后设置失效 # 查看 service</description>
+    </item>
+    
+    <item>
+      <title>Linux systecm service manager</title>
+      <link>https://daotoyi.github.io/posts/linux-systecm-service-manager/</link>
+      <pubDate>Sun, 24 Sep 2023 20:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-systecm-service-manager/</guid>
+      <description>init/systemd https://img-blog.csdn.net/20180825000445679?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MjI4ODMw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70) service manage service/chkconfig 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 chkconfig 设置是当前不生效，linux重启后才生效 service 设置是即时生效，linux关机重启后设置失效 # 查看 service</description>
+    </item>
+    
     <item>
       <title>Linux HSR/PRP 功能</title>
       <link>https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/</link>
@@ -242,7 +332,7 @@
     </item>
     
     <item>
-      <title>Linux vsftpd</title>
+      <title>Linux FTP/Sftp</title>
       <link>https://daotoyi.github.io/post/linux-vsftpd/</link>
       <pubDate>Thu, 29 Dec 2022 17:56:00 +0000</pubDate>
       
@@ -251,7 +341,7 @@
     </item>
     
     <item>
-      <title>Linux vsftpd</title>
+      <title>Linux FTP/Sftp</title>
       <link>https://daotoyi.github.io/posts/linux-vsftpd/</link>
       <pubDate>Thu, 29 Dec 2022 17:56:00 +0000</pubDate>
       
@@ -265,7 +355,7 @@
       <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/majaro-faq/</guid>
-      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu DONE xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节</description>
+      <description>update systecm python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节中也修</description>
     </item>
     
     <item>
@@ -274,7 +364,7 @@
       <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/majaro-faq/</guid>
-      <description>update systecm DONE - python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu DONE xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节</description>
+      <description>update systecm python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节中也修</description>
     </item>
     
     <item>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux 系统安全加固 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-system-enhance/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux 系统安全加固" />
+<meta property="og:description" content="passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-system-enhance/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-09-24T20:48:00+00:00" />
+<meta property="article:modified_time" content="2023-10-06T20:00:22+08:00" />
+
+<meta itemprop="name" content="Linux 系统安全加固">
+<meta itemprop="description" content="passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES"><meta itemprop="datePublished" content="2023-09-24T20:48:00+00:00" />
+<meta itemprop="dateModified" content="2023-10-06T20:00:22+08:00" />
+<meta itemprop="wordCount" content="1204">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux 系统安全加固"/>
+<meta name="twitter:description" content="passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux 系统安全加固</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-09-24 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 1204 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#passwd">passwd</a>
+          <ul>
+            <li><a href="#密码复杂度">密码复杂度</a></li>
+          </ul>
+        </li>
+        <li><a href="#登录锁定">登录锁定</a>
+          <ul>
+            <li><a href="#debian">Debian</a></li>
+            <li><a href="#update-linux">Update Linux</a></li>
+          </ul>
+        </li>
+        <li><a href="#删禁账户">删禁账户</a></li>
+        <li><a href="#审计-audit">审计 audit</a></li>
+        <li><a href="#超时锁定">超时锁定</a></li>
+        <li><a href="#历史命令">历史命令</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="passwd">passwd</h2>
+<h3 id="密码复杂度">密码复杂度</h3>
+<p>口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES 等较复杂的加密算法对密码进行密文存储.</p>
+<ul>
+<li>/etc/pam.d/common_password
+中添加</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">password requisite
+pam<span class="se">\_</span>cracklib.so debug <span class="nv">minlen</span><span class="o">=</span><span class="m">8</span> <span class="nv">ucredit</span><span class="o">=</span>-2 <span class="nv">lcredit</span><span class="o">=</span>-1 <span class="nv">dcredit</span><span class="o">=</span>-4 <span class="nv">ocredit</span><span class="o">=</span>-1 enforce<span class="se">\_</span>for_root
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>此语句必须添加在第一行 ，否则无法生效</strong></p>
+<ul>
+<li>具体参数含义如下：
+<ul>
+<li>minlen：最小密码长度</li>
+<li>ucredit：最少大写字母</li>
+<li>lcredit：最少小写字母</li>
+<li>dcredit：最少数字</li>
+<li>ocredit：最少特殊字符</li>
+</ul>
+</li>
+</ul>
+<p><strong>enforce\_for\_root：使限制作用于超级用户，否则显示告警后仍能修改成功.</strong></p>
+<ul>
+<li>/etc/login.defs</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">PASS_MAX_DAYS	 99999</span>
+<span class="na">PASS_MIN_DAYS	 0</span>
+<span class="na">PASS_WARN_AGE 7</span>
+<span class="na">PASS_MIN_LEN 8</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="登录锁定">登录锁定</h2>
+<h3 id="debian">Debian</h3>
+<p>启用登录失败处理功能，可采取结束会话、限制非法登录次数和自动退出等措施：应限制同一用户连续失败登录次数，主机登录失败超过预设值锁定账户一定时间。</p>
+<p>在`/etc/pam.d/common-auth` 配置文件中添加</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">auth required pam\_tally2.so deny</span><span class="o">=</span><span class="s">5 unlock\_time=600 even\_deny\_root root\_unlock\_time=60</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在`/etc/pam.d/common-account` 配置文件中添加</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">account required pam_tally2.so</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>（如果不修改此配置文件，则会出现即使登录成功，系统的登录失败计数器也会不停的累加，从而导致用户一直被锁定无法登录，这是一个 BUG，只有修改此文件才可以避免此问题）</strong></p>
+<h3 id="update-linux">Update Linux</h3>
+<ul>
+<li>`vi /etc/pam.d/login`,在文件首行添加</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">auth required pam_tally2.so  <span class="nv">onerr</span><span class="o">=</span>fail <span class="nv">deny</span><span class="o">=</span><span class="m">5</span> <span class="nv">unlock_time</span><span class="o">=</span><span class="m">600</span> even_deny_root <span class="nv">root_unlock_time</span><span class="o">=</span><span class="m">60</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>参数解释：
+<ul>
+<li>onerr=fail 表示定义了当出现错误（比如无法打开配置文件）时的缺省返回值；</li>
+<li>even_deny_root 表示也限制 root 用户；</li>
+<li>deny               表示设置普通用户和 root 用户连续错误登陆的最大次数，超过最大次数，则锁定该用户；</li>
+<li>unlock_time 表示设定普通用户锁定后，多少时间后解锁，单位是秒；</li>
+<li>root_unlock_time   表示设定 root 用户锁定后，多少时间后解锁，单位是秒；</li>
+</ul>
+</li>
+</ul>
+<p>上面的配置只是限制了用户从 tty 终端登录，而没有限制远程 ssh 登录，如果想 <strong>限制远程登录</strong> ，需要在`/etc/pam.d/sshd`文件里配置:
+<code>vim /etc/pam.d/sshd</code>  （同样添加到 auth 区域的第一行）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">auth required pam_tally2.so  <span class="nv">onerr</span><span class="o">=</span>fail <span class="nv">deny</span><span class="o">=</span><span class="m">5</span> <span class="nv">unlock_time</span><span class="o">=</span><span class="m">600</span> even_deny_root <span class="nv">root_unlock_time</span><span class="o">=</span><span class="m">60</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="arm">ARM</h4>
+<p><span class="timestamp-wrapper"><span class="timestamp">[2020-10-29 周四 08:00]</span></span>
+Removed deprecated pam_tally and pam_tally2 modules, use pam_faillock instead.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">auth     required       pam_securetty.so</span>
+<span class="na">auth     required       pam_env.so</span>
+<span class="na">auth     required       pam_nologin.so</span>
+<span class="c1"># optionally call: auth requisite pam_faillock.so preauth deny=4 even_deny_root unlock_time=1200</span>
+<span class="c1"># to display the message about account being locked</span>
+<span class="na">auth     [success</span><span class="o">=</span><span class="s">1 default=bad] pam_unix.so</span>
+<span class="na">auth     [default</span><span class="o">=</span><span class="s">die]  pam_faillock.so authfail deny=4 even_deny_root unlock_time=1200</span>
+<span class="na">auth     sufficient     pam_faillock.so authsucc deny</span><span class="o">=</span><span class="s">4 even_deny_root unlock_time=1200</span>
+<span class="na">auth     required       pam_deny.so</span>
+<span class="na">account  required       pam_unix.so</span>
+<span class="na">auth     required       pam_nologin.so</span>
+<span class="na">auth     required       pam_faillock.so preauth silent deny</span><span class="o">=</span><span class="s">4 even_deny_root unlock_time=1200</span>
+<span class="c1"># optionally use requisite above if you do not want to prompt for the password</span>
+<span class="c1"># on locked accounts, possibly with removing the silent option as well</span>
+<span class="na">auth     sufficient     pam_unix.so</span>
+<span class="na">auth     [default</span><span class="o">=</span><span class="s">die]  pam_faillock.so authfail deny=4 even_deny_root unlock_time=1200</span>
+<span class="na">auth     required       pam_deny.so</span>
+<span class="na">account  required       pam_faillock.so</span>
+<span class="c1"># if you drop the above call to pam_faillock.so the lock will be done also</span>
+<span class="c1"># on non-consecutive authentication failures</span>
+<span class="na">account  required       pam_unix.so</span>
+<span class="na">password required       pam_unix.so shadow</span>
+<span class="na">session  required       pam_selinux.so close</span>
+<span class="na">session  required       pam_loginuid.so</span>
+<span class="na">session  required       pam_unix.so</span>
+<span class="na">session  required       pam_selinux.so open</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="删禁账户">删禁账户</h2>
+<p>修改 /etc/passwd 文件，将多余账户末尾的 shell 显示为 /sbin/nologin ,或者账户行首为 #.</p>
+<h2 id="审计-audit">审计 audit</h2>
+<ul>
+<li>系统应开启日志进程：`ps -ef | grep syslogd`或`ps aux | grep rsyslogd`.</li>
+<li>系统是否开启审计进程`ps aux | grep audit`。</li>
+<li>查看日志配置文件`/etc/syslog.conf`或`/etc/rsyslog.conf`是否具备日志
+记录策略，默认配置符合要求。</li>
+</ul>
+<h2 id="超时锁定">超时锁定</h2>
+<p>根据安全策略设置登录终端的操作超时锁定,修改`/etc/profile`文件，进行 TMOUT 设置，添加`export TMOUT=600`语句.</p>
+<h2 id="历史命令">历史命令</h2>
+<p>修改/etc/profile 配置，添加语句`export HISTSIZE=10`</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2023-10-06
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/b2f5e72168b1bca40ff118e9bdc108b382809605" title="update">(b2f5e72)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/linux-terminal-hotkey-commonly/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Linux 终端常用快捷键</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/linux-systecm-service-manager/">
+            <span class="next-text nav-default">Linux systecm service manager</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux Shell Archive - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/linux-shell-archive/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux Shell Archive" />
+<meta property="og:description" content="cat &lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &ldquo;EOF&rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/linux-shell-archive/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-29T09:35:00+00:00" />
+<meta property="article:modified_time" content="2023-10-03T16:01:03+00:00" />
+
+<meta itemprop="name" content="Linux Shell Archive">
+<meta itemprop="description" content="cat &lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &ldquo;EOF&rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的"><meta itemprop="datePublished" content="2023-09-29T09:35:00+00:00" />
+<meta itemprop="dateModified" content="2023-10-03T16:01:03+00:00" />
+<meta itemprop="wordCount" content="945">
+<meta itemprop="keywords" content="shell," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Shell Archive"/>
+<meta name="twitter:description" content="cat &lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &ldquo;EOF&rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="cat-eof">cat &lt; EOF</h2>
+<p>从标准输入(stdin) 读取一段文本，遇到 &ldquo;EOF&rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。</p>
+<p>EOF：一个标识符，标识文本信息的开始和结束，可以是任意自定义字符，比如 begin，data 等。</p>
+<h3 id="eof-和-eof-区别">&lsquo;&lt;&lt; EOF&rsquo; 和 &lsquo;&lt;&lt;- EOF&rsquo; 区别</h3>
+<blockquote>
+<p>If the redirection operator is &lt;&lt;-, then all leading tab characters are stripped from input lines and the line containing delimiter.</p>
+</blockquote>
+<ul>
+<li>
+<p>test</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>
+<span class="c1">#line 1、2、3，EOF，data 1、2、3 前面为 tab，不是空格。</span>
+cat <span class="s">&lt;&lt;- EOF
+</span><span class="s">        line 1
+</span><span class="s">        line 2
+</span><span class="s">        line 3
+</span><span class="s">        EOF</span>
+
+cat <span class="s">&lt;&lt; DATA
+</span><span class="s">        data 1
+</span><span class="s">        data 2
+</span><span class="s">        data 3
+</span><span class="s">DATA</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>output</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># cat testext1
+line 1
+line 2
+line 3
+
+# cat testext2
+        data 1
+        data 2
+        data 3
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h3 id="write-to-file">write to file</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat &gt; file <span class="s">&lt;&lt; EOF
+</span><span class="s">information 1
+</span><span class="s">information 1
+</span><span class="s">information 1
+</span><span class="s">...
+</span><span class="s">EOF</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="空语句">空语句 :</h2>
+<ul>
+<li>shell
+<ul>
+<li>:</li>
+</ul>
+</li>
+<li>python
+<ul>
+<li>pass</li>
+</ul>
+</li>
+</ul>
+<h2 id="去除文件后辍">去除文件后辍</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ basename /folder/f.zip .zip
+f
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="变更名中嵌套变量">变更名中嵌套变量</h2>
+<p><a id="code-snippet--print-value"></a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">id</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">string</span><span class="o">=</span>id
+<span class="nv">stream_1</span><span class="o">=</span><span class="s2">&#34;111&#34;</span>
+
+<span class="nv">line</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span><span class="nb">eval</span> <span class="nb">echo</span> <span class="se">\$</span><span class="o">{</span>stread_<span class="si">${</span><span class="nv">id</span><span class="si">}</span><span class="o">}</span><span class="k">)</span><span class="s2">, 222&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;{!string}&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--print-value">Code Snippet 1</a></span>:
+  calculate
+</div>
+<ul>
+<li>\\({stread_\){id}}</li>
+</ul>
+<h2 id="函数循环">函数循环</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 基本 for 循环</span>
+<span class="k">for</span> i in /etc/rc.*<span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="nv">$i</span>
+<span class="k">done</span>
+
+
+
+<span class="c1"># 类似 C 的 for 循环</span>
+<span class="k">for</span> <span class="o">((</span><span class="nv">i</span> <span class="o">=</span> <span class="m">0</span> <span class="p">;</span> i &lt; <span class="m">100</span> <span class="p">;</span> i++<span class="o">))</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="nv">$i</span>
+<span class="k">done</span>
+
+
+
+<span class="c1"># 范围</span>
+<span class="k">for</span> i in <span class="o">{</span>1..5<span class="o">}</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Welcome </span><span class="nv">$i</span><span class="s2">&#34;</span>
+<span class="k">done</span>
+
+<span class="c1"># 步长</span>
+
+<span class="k">for</span> i in <span class="o">{</span>5..50..5<span class="o">}</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Welcome </span><span class="nv">$i</span><span class="s2">&#34;</span>
+<span class="k">done</span>
+
+<span class="c1"># 自动递增</span>
+
+<span class="nv">i</span><span class="o">=</span><span class="m">1</span>
+<span class="k">while</span> <span class="o">[[</span> <span class="nv">$i</span> -lt <span class="m">4</span> <span class="o">]]</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Number: </span><span class="nv">$i</span><span class="s2">&#34;</span>
+    <span class="o">((</span>i++<span class="o">))</span>
+
+<span class="c1"># 自动递减</span>
+<span class="nv">i</span><span class="o">=</span><span class="m">3</span>
+<span class="k">while</span> <span class="o">[[</span> <span class="nv">$i</span> -gt <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Number: </span><span class="nv">$i</span><span class="s2">&#34;</span>
+    <span class="o">((</span>i--<span class="o">))</span>
+
+
+<span class="c1"># unti</span>
+
+<span class="nv">count</span><span class="o">=</span><span class="m">0</span>
+<span class="k">until</span> <span class="o">[</span> <span class="nv">$count</span> -gt <span class="m">10</span> <span class="o">]</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$count</span><span class="s2">&#34;</span>
+    <span class="o">((</span>count++<span class="o">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="替代-substitution">替代 Substitution</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">food</span><span class="k">:-</span><span class="nv">Cake</span><span class="si">}</span>  <span class="c1">#=&gt; $food or &#34;Cake&#34;</span>
+
+<span class="nv">STR</span><span class="o">=</span><span class="s2">&#34;/path/to/foo.cpp&#34;</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">%.cpp</span><span class="si">}</span>    <span class="c1"># /path/to/foo</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">%.cpp</span><span class="si">}</span>.o  <span class="c1"># /path/to/foo.o</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">%/*</span><span class="si">}</span>      <span class="c1"># /path/to</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">##*.</span><span class="si">}</span>     <span class="c1"># cpp (extension)</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">##*/</span><span class="si">}</span>     <span class="c1"># foo.cpp (basepath)</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">#*/</span><span class="si">}</span>      <span class="c1"># path/to/foo.cpp</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">##*/</span><span class="si">}</span>     <span class="c1"># foo.cpp</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">STR</span><span class="p">/foo/bar</span><span class="si">}</span> <span class="c1"># /path/to/bar.cpp</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="切片-slicing">切片 Slicing</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">
+<span class="nv">name</span><span class="o">=</span><span class="s2">&#34;John&#34;</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="si">}</span>           <span class="c1"># =&gt; John</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">:</span><span class="nv">0</span><span class="p">:</span><span class="nv">2</span><span class="si">}</span>       <span class="c1"># =&gt; Jo</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">::</span><span class="nv">2</span><span class="si">}</span>        <span class="c1"># =&gt; Jo</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">:</span><span class="k">:-</span><span class="nv">1</span><span class="si">}</span>       <span class="c1"># =&gt; Joh</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">:(-1)</span><span class="si">}</span>      <span class="c1"># =&gt; n</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">:(-2)</span><span class="si">}</span>      <span class="c1"># =&gt; hn</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">:(-2):</span><span class="nv">2</span><span class="si">}</span>    <span class="c1"># =&gt; hn</span>
+
+<span class="nv">length</span><span class="o">=</span><span class="m">2</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">name</span><span class="p">:</span><span class="nv">0</span><span class="p">:</span><span class="nv">length</span><span class="si">}</span>  <span class="c1"># =&gt; Jo</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="lsof-恢复删除的文件">lsof 恢复删除的文件</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">touch <span class="nb">test</span>
+<span class="nb">echo</span> my <span class="nb">test</span> file &gt; <span class="nb">test</span>
+tail -f <span class="nb">test</span>
+rm -f <span class="nb">test</span>
+lsof <span class="p">|</span> grep <span class="nb">test</span>
+cat /proc/5433/fd/3
+cat /proc/5433/fd/3 &gt; <span class="nb">test</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="cp-和-mv-命令添加进度条">cp 和 mv 命令添加进度条</h2>
+<p>由于 cp 和 mv 命令都是属于 coreutils 工具包下的，因此我们的主要操作就是在编译 coreutils 的时候加入补丁从而实现进度条功能.</p>
+<h3 id="过程">过程</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 注意尽量不要使用 root 用户操作</span>
+<span class="c1"># 下载coreutils</span>
+$ wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
+$ tar -xJf coreutils-8.32.tar.xz
+$ <span class="nb">cd</span> coreutils-8.32/
+
+<span class="c1"># 下载 github 上的补丁</span>
+$ wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
+<span class="c1"># 打补丁，实现进度条显示</span>
+$ patch -p1 -i advcpmv-0.8-8.32.patch
+<span class="c1"># patching file src/copy.c</span>
+<span class="c1"># patching file src/copy.h</span>
+<span class="c1"># patching file src/cp.c</span>
+<span class="c1"># patching file src/mv.c</span>
+
+<span class="c1"># 编译安装</span>
+$ ./configure
+$ make
+<span class="c1"># 将打补丁生成的cp和mv命令的二进制文件复制到bin目录下</span>
+$ sudo cp src/cp /usr/local/bin/cp
+$ sudo cp src/mv /usr/local/bin/mv
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="使用">使用</h3>
+<p>在使用 cp 和 mv 命令的时候加上 -g 参数就可以显示进度条.</p>
+<p>在 .bashrc 文件中设置 alias.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">alias</span> <span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -ig&#39;</span>
+$ <span class="nb">alias</span> <span class="nv">mv</span><span class="o">=</span><span class="s1">&#39;mv -ig&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="其他">其他</h2>
+<h3 id="保持-ssh-会话不中断"><a href="https://mp.weixin.qq.com/s/9YpQNJjATysLnLKXsK9VQQ">保持 SSH 会话不中断</a></h3>
+<h3 id="shell-格式化输出及颜色"><a href="https://mp.weixin.qq.com/s/2tjHTW_ouMkCBedLMMGUpw">shell 格式化输出及颜色</a></h3>
+<h3 id="shell-脚本的快速参考备忘单--全"><a href="https://mp.weixin.qq.com/s/9Hbr6n3ZiNj6Yk0hJt_Qbg">shell 脚本的快速参考备忘单(全)!!!</a></h3>
+<ul>
+<li>变量，注释，传参。参数扩展</li>
+<li>函数，条件句，大括号扩展</li>
+<li>字符串</li>
+<li>切片</li>
+<li>基本路径和目录路径</li>
+<li>数组</li>
+<li>字典</li>
+<li>条件句</li>
+<li>循环</li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

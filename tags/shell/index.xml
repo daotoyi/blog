@@ -6,7 +6,43 @@
     <description>Recent content in shell on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jul 2022 15:23:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 15:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 不同 shell 文件中的函数调用</title>
+      <link>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</link>
+      <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</guid>
+      <description>执行外部脚本或命令 使用 source 命令或.运算符执行另一个脚本文件。这将导致另一个脚本中的所有命令在当前脚本的上下文中执行。 例如，有两个脚本文件，sc</description>
+    </item>
+    
+    <item>
+      <title>Linux 不同 shell 文件中的函数调用</title>
+      <link>https://daotoyi.github.io/posts/linux-shell-function-invoke-between-files/</link>
+      <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-shell-function-invoke-between-files/</guid>
+      <description>执行外部脚本或命令 使用 source 命令或.运算符执行另一个脚本文件。这将导致另一个脚本中的所有命令在当前脚本的上下文中执行。 例如，有两个脚本文件，sc</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell Archive</title>
+      <link>https://daotoyi.github.io/post/linux-shell-archive/</link>
+      <pubDate>Fri, 29 Sep 2023 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-archive/</guid>
+      <description>cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell Archive</title>
+      <link>https://daotoyi.github.io/posts/linux-shell-archive/</link>
+      <pubDate>Fri, 29 Sep 2023 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-shell-archive/</guid>
+      <description>cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的</description>
+    </item>
+    
     <item>
       <title>Linux 反弹 shell</title>
       <link>https://daotoyi.github.io/post/linux-reverse-shell/</link>

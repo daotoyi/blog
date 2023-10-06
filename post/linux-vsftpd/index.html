@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Linux vsftpd - DaoyiSite</title>
+  <title>Linux FTP/Sftp - DaoyiSite</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -39,19 +39,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Linux vsftpd" />
+<meta property="og:title" content="Linux FTP/Sftp" />
 <meta property="og:description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&gt;匿名用户使用的登陆名为ftp或anonymo" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/linux-vsftpd/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-12-29T17:56:00+00:00" />
-<meta property="article:modified_time" content="2023-09-24T22:04:21+08:00" />
+<meta property="article:modified_time" content="2023-10-06T20:00:22+08:00" />
 
-<meta itemprop="name" content="Linux vsftpd">
+<meta itemprop="name" content="Linux FTP/Sftp">
 <meta itemprop="description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&gt;匿名用户使用的登陆名为ftp或anonymo"><meta itemprop="datePublished" content="2022-12-29T17:56:00+00:00" />
-<meta itemprop="dateModified" content="2023-09-24T22:04:21+08:00" />
-<meta itemprop="wordCount" content="5797">
+<meta itemprop="dateModified" content="2023-10-06T20:00:22+08:00" />
+<meta itemprop="wordCount" content="6225">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux vsftpd"/>
+<meta name="twitter:title" content="Linux FTP/Sftp"/>
 <meta name="twitter:description" content="config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&gt;匿名用户使用的登陆名为ftp或anonymo"/>
 
 <!--[if lte IE 9]>
@@ -129,15 +129,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Linux vsftpd</h1>
+      <h1 class="post-title">Linux FTP/Sftp</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2022-12-29 </span>
         <div class="post-category">
             <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 5797 words </span>
-          <span class="more-meta"> 12 mins read </span>
+          <span class="more-meta"> 6225 words </span>
+          <span class="more-meta"> 13 mins read </span>
         
       </div>
     </header>
@@ -172,6 +172,13 @@
         <li><a href="#faq">FAQ</a>
           <ul>
             <li><a href="#error-of-running-with-a-writeable-root-directory-inside-a-chroot-dot">error of running with a writeable root directory inside a chroot().</a></li>
+            <li><a href="#vsftpd-refusing-to-run-with-writable-root-inside-chroot">vsftpd: refusing to run with writable root inside chroot()</a></li>
+          </ul>
+        </li>
+        <li><a href="#限定目录">限定目录</a>
+          <ul>
+            <li><a href="#登录问题">登录问题</a></li>
+            <li><a href="#解决方式">解决方式</a></li>
           </ul>
         </li>
         <li><a href="#ref">Ref</a></li>
@@ -768,7 +775,61 @@
 <pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">allow_writeable_chroot</span><span class="o">=</span><span class="s">YES</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="ref">Ref</h2>
+</div><h3 id="vsftpd-refusing-to-run-with-writable-root-inside-chroot">vsftpd: refusing to run with writable root inside chroot()</h3>
+<p>（500 OOPS: vsftpd: refusing to run with writable root inside chroot()
+500 OOPS: priv\_sock\_get\_cm)</p>
+<h2 id="限定目录">限定目录</h2>
+<blockquote>
+<p>chroot_list_enable=YES/NO（NO）</p>
+</blockquote>
+<p>设置是否启用chroot_list_file配置项指定的用户列表文件。默认值为NO。</p>
+<blockquote>
+<p>chroot_list_file=/etc/<a href="https://so.csdn.net/so/search?q=vsftpd&amp;spm=1001.2101.3001.7020">vsftpd</a>.chroot_list</p>
+</blockquote>
+<p>用于指定用户列表文件，该文件用于控制哪些用户可以切换到用户家目录的上级目录。</p>
+<blockquote>
+<p>chroot_local_user=YES/NO（NO）</p>
+</blockquote>
+<p>用于指定用户列表文件中的用户是否允许切换到上级目录。默认值为NO。
+<strong>参考</strong>: <a href="https://www.cnblogs.com/LiuChang-blog/p/10491519.html">vsftpd.conf配置文件详解</a>.</p>
+<h3 id="登录问题">登录问题</h3>
+<blockquote>
+<p>500 OOPS: vsftpd: refusing to run with writable root inside chroot()
+500 OOPS: priv_sock_get_cm</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">C:\Windows\system32&gt;ftp 193.xxx.xxx.xxx
+连接到 193.xxx.xxx.xxx。
+220 Welcom vsftpd server
+200 Always in UTF8 mode.
+用户(193.xxx.xxx.xxx:(none)): xx
+331 Please specify the password.
+密码:
+500 OOPS: vsftpd: refusing to run with writable root inside chroot()
+500 OOPS: priv_sock_get_cmd
+登录失败。
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="解决方式">解决方式</h3>
+<p>[原文]发现ftp用户的家目录在/var/ftp，就是这个/var/ftp的权限不对所致，这个目录的权限是不能打开所有权限的；是运行了 <strong>chmod 777 /var/ftp</strong> 所致.</p>
+<blockquote>
+<p>chmod 755 /var/ftp</p>
+</blockquote>
+<p><strong>参考</strong>: <a href="https://www.cnblogs.com/Darlin356230410/p/4488286.html">500 OOPS: vsftpd: refusing to run with writable anonymous root</a>.</p>
+<h2 id="ref">Ref</h2>
 <ul>
 <li><a href="https://www.cnblogs.com/LiuChang-blog/p/10491519.html">vsftpd.conf配置文件详解</a></li>
 </ul>
@@ -783,8 +844,8 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2023-09-24
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/5d8dc596866776204370809261b9170219d87533" title="update Irregular period">(5d8dc59)</a>
+        2023-10-06
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/b2f5e72168b1bca40ff118e9bdc108b382809605" title="update">(b2f5e72)</a>
     </span>
   </p>
   

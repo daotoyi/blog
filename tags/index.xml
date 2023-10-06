@@ -6,7 +6,25 @@
     <description>Recent content in Tags on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Sep 2023 15:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 15:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>shell</title>
+      <link>https://daotoyi.github.io/tags/shell/</link>
+      <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hotkey</title>
+      <link>https://daotoyi.github.io/tags/hotkey/</link>
+      <pubDate>Tue, 26 Sep 2023 20:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/hotkey/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>markdown</title>
       <link>https://daotoyi.github.io/tags/markdown/</link>
@@ -22,15 +40,6 @@
       <pubDate>Sun, 04 Jun 2023 21:12:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/tags/cmd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hotkey</title>
-      <link>https://daotoyi.github.io/tags/hotkey/</link>
-      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/hotkey/</guid>
       <description></description>
     </item>
     
@@ -103,15 +112,6 @@
       <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/tags/domain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>https://daotoyi.github.io/tags/shell/</link>
-      <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/shell/</guid>
       <description></description>
     </item>
     

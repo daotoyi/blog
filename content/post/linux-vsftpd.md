@@ -1,7 +1,7 @@
 ---
-title: "Linux vsftpd"
+title: "Linux FTP/Sftp"
 date: "2022-12-29 17:56:00"
-lastmod: "2022-12-29 17:56:50"
+lastmod: "2023-10-06 19:43:38"
 categories: ["Linux"]
 draft: false
 ---
@@ -346,6 +346,53 @@ download_enable=YES/NO（YES）
 ```cfg
 allow_writeable_chroot=YES
 ```
+
+
+### vsftpd: refusing to run with writable root inside chroot() {#vsftpd-refusing-to-run-with-writable-root-inside-chroot}
+
+（500 OOPS: vsftpd: refusing to run with writable root inside chroot()
+500 OOPS: priv\\_sock\\_get\\_cm)
+
+## 限定目录
+
+> chroot\_list\_enable=YES/NO（NO）
+
+设置是否启用chroot\_list\_file配置项指定的用户列表文件。默认值为NO。
+
+> chroot\_list\_file=/etc/[vsftpd](https://so.csdn.net/so/search?q=vsftpd&spm=1001.2101.3001.7020).chroot\_list
+
+用于指定用户列表文件，该文件用于控制哪些用户可以切换到用户家目录的上级目录。
+
+> chroot\_local\_user=YES/NO（NO）
+
+用于指定用户列表文件中的用户是否允许切换到上级目录。默认值为NO。
+**参考**: [vsftpd.conf配置文件详解](https://www.cnblogs.com/LiuChang-blog/p/10491519.html).
+
+### 登录问题
+
+> 500 OOPS: vsftpd: refusing to run with writable root inside chroot()
+> 500 OOPS: priv\_sock\_get\_cm
+
+``` text
+C:\Windows\system32>ftp 193.xxx.xxx.xxx
+连接到 193.xxx.xxx.xxx。
+220 Welcom vsftpd server
+200 Always in UTF8 mode.
+用户(193.xxx.xxx.xxx:(none)): xx
+331 Please specify the password.
+密码:
+500 OOPS: vsftpd: refusing to run with writable root inside chroot()
+500 OOPS: priv_sock_get_cmd
+登录失败。
+```
+
+### 解决方式
+
+\[原文\]发现ftp用户的家目录在/var/ftp，就是这个/var/ftp的权限不对所致，这个目录的权限是不能打开所有权限的；是运行了 **chmod 777 /var/ftp** 所致.
+
+> chmod 755 /var/ftp
+
+**参考**: [500 OOPS: vsftpd: refusing to run with writable anonymous root](https://www.cnblogs.com/Darlin356230410/p/4488286.html).
 
 
 ## Ref {#ref}

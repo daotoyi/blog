@@ -1,7 +1,7 @@
 ---
 title: "Manjaro FAQ"
 date: "2022-12-24 14:25:00"
-lastmod: "2023-04-21 18:13:23"
+lastmod: "2023-10-06 19:21:27"
 categories: ["Linux"]
 draft: false
 ---
@@ -9,7 +9,7 @@ draft: false
 ## update systecm {#update-systecm}
 
 
-### <span class="org-todo done DONE">DONE</span> - python-pip:xxx files exists. {#python-pip-xxx-files-exists-dot}
+### python-pip:xxx files exists. {#python-pip-xxx-files-exists-dot}
 
 ```bash
 pacman -R python-pip
@@ -17,7 +17,7 @@ pacman -Syu
 ```
 
 
-### <span class="org-todo done DONE">DONE</span> xxx:signature from "xxx &lt;xxx@manjaro.org&gt;" is unknown trust {#xxx-signature-from-xxx-xxx-manjaro-dot-org-is-unknown-trust}
+### xxx:signature from "xxx &lt;xxx@manjaro.org&gt;" is unknown trust {#xxx-signature-from-xxx-xxx-manjaro-dot-org-is-unknown-trust}
 
 将 /etc/pacman.conf 中的 SigLevel 值改为 Never
 
@@ -40,6 +40,50 @@ Include = /etc/pacman.d/mirrorlist
 -   error: failed to commit transaction (invalid or corrupted package)
 
 [Manjaro软件更新失败：无效或已损坏的软件包](https://juejin.cn/post/7091962125660192798)
+
+
+### Operation too slow. Less than 1 bytes/sec transferred the last 10 seconds {#operation-too-slow-dot-less-than-1-bytes-sec-transferred-the-last-10-seconds}
+
+## 现象
+> xxx: Operation too slow. Less than 1 bytes/sec transferred the last 10 seconds
+
+镜像源在国外网站，国内访问太慢,以致于都更新不了，更新失败！
+
+## 解决方案
+
+/etc/pacman.d/mirrorlist.mingw32
+`Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/i686`
+
+/etc/pacman.d/mirrorlist.mingw64
+`Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/x86_64`
+
+/etc/pacman.d/mirrorlist.msys
+`Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/msys/$arch`
+
+**Note1** 将其他行的源地址删除，若存在还是会同样错误。
+**Note2** 将SigLevel注释掉，可以规避gpg签名带来的问题![pacman.png](https://img-blog.csdnimg.cn/img_convert/ee007fbe9a7b593fc009c3d04beac3b0.png)
+
+
+### 无法锁定数据库 {#无法锁定数据库}
+
+## 现象
+
+> 出现错误：
+> :: 正在同步软件包数据库…
+> 错误：无法升级 mingw32 (无法锁定数据库)
+> 错误：无法升级 mingw64 (无法锁定数据库)
+> 错误：无法升级 msys (无法锁定数据库)
+> 错误：同步所有数据库失败
+
+> 紧接着执行其它操作，会出现错误：
+> 错误：无法初始化事务处理 (无法锁定数据库)
+> 错误：无法锁定数据库：文件已存在
+> 如果你确认软件包管理器没有在运行，
+> 你可以删除 /var/lib/pacman/db.lck。
+
+## 解决方案
+
+`rm -rf /var/lib/pacman/db.lck`
 
 
 ## update openssl {#update-openssl}

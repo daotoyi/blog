@@ -1,7 +1,7 @@
 ---
 title: "Git FAQ"
 date: "2022-02-05 08:25:00"
-lastmod: "2023-08-26 13:48:11"
+lastmod: "2023-10-06 19:39:40"
 tags: ["git"]
 categories: ["Github"]
 draft: false
@@ -55,3 +55,35 @@ CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
     `set GIT_SSL_NO_VERIFY 1`
 
 之后 `git config --global http.sslVerify false`
+
+
+## git show: Chinese show {#git-show-chinese-show}
+
+git show 中文显示八进制
+
+
+### git window {#git-window}
+
+Options−&gt;Text−&gt;local(本地): zh\\_CN
+
+Options−&gt;Text−&gt;Charector set(字符集): UTF-8
+
+
+### Git Bash {#git-bash}
+
+git config --[global](<https://so.csdn.net/so/search?q=global&spm=1001.2101.3001.7020>) i18n.commitencoding utf-8
+
+注释：该命令表示提交命令的时候使用 utf-8 编码集提交
+
+git config --global i18n.logoutputencoding utf-8
+
+注释：该命令表示日志输出时使用 utf-8 编码集显示
+
+export LESSCHARSET=utf-8
+
+注释：设置 LESS 字符集为 utf-8
+
+
+### Refer {#refer}
+
+[GIT 使用 log 命令显示中文乱码](<https://www.cnblogs.com/yanzige/p/9810333.html>)

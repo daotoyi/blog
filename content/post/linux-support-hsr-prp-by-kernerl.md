@@ -2,7 +2,7 @@
 title: "Linux HSR/PRP 功能"
 description: "compile-kernel-hsr-module"
 date: "2023-09-23 14:45:00"
-lastmod: "2023-09-24 13:14:24"
+lastmod: "2023-09-26 14:22:51"
 categories: ["Linux"]
 draft: false
 ---
@@ -100,28 +100,52 @@ ftp.tw.debian.org/debian
 
 ## 编译安装包 {#编译安装包}
 
-将内核源码编译成
+
+### 配置安装源 {#配置安装源}
+
+/etc/apt/source.list
+
+```cfg
+# loop iso
+deb [trusted=true ] cdrom:[Debian GNU/Linux 11.5.0 _Bullseye_ - Official amd64 DVD Binary-1 20220910-10:40]/ bullseye contrib main
+
+deb http://security.debian.org/debian-security bullseye-security main contrib
+deb-src http://security.debian.org/debian-security bullseye-security main contrib
+
+deb http://deb.debian.org/debian/ bullseye-updates main contrib
+deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+
+# sid
+# deb http://ftp.cn.debian.org/debian sid main
+```
+
+-   [trusted=true] : 本地 iso 文件增加信任
 
 
 ### 安装软件库 {#安装软件库}
 
 ```bash
+apt update
 apt install fakeroot
 apt install dpkg-dekv
 apt install rsync
 ```
 
 
-### 编译包 {#编译包}
+### 编译内核安装包 {#编译内核安装包}
 
 ```bash
+cd kernel-src
+mkdir build/ && cd build
+make menuconfig
+   # Main menu --> Networking support --> HSR/PRP
 make -j 4  deb-pkg
 ```
 
 在编译目录上层目录生成内核和头文件的安装包（deb 格式）。
 
 
-## 测试环境 {#测试环境}
+## 测试说明 {#测试说明}
 
 
 ### 连接方式 {#连接方式}
@@ -206,6 +230,10 @@ ip addr add 192.168.2.20 dev hsr0
 
 # For PRP
 ip addr add 192.168.2.20 dev prp0
+
+# delete hsr0 or prp0
+ip link del hsr0
+ip link del prp0
 ```
 
 With the above configuration, if a ping is run between the two platforms on the HSR/PRP interface, the ping will continue even if one of the connections is removed.
@@ -376,10 +404,10 @@ sh ./<script_filename.sh> hsr_hw eth1 eth2 192.168.2.20
 ### 特别说明 {#特别说明}
 
 -   在参考示例中 eth1 和 eth2 需要设置同样的 MAC，实测不必要。
--   命令不支持 `proto` 参数，去掉 `proto 1` 以及 `supervision 45` 实测也可。
+-   命令不支持 `proto` 参数，去掉 `proto 1` 实测也可。
     -   -ip link add name prp0 type hsr slave1 eth1 slave2 eth2 supervision 45 proto 1-
-    -   ip link add name hsr0 type hsr slave1 eth1 slave2 eth2
-    -   ip link add name prp0 type hsr slave1 eth1 slave2 eth2
+    -   ip link add name hsr0 type hsr slave1 eth1 slave2 eth2 supervision 45
+    -   ip link add name prp0 type hsr slave1 eth1 slave2 eth2 supervision 45
 
 
 ### 参考 {#参考}

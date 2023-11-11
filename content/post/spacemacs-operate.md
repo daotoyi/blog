@@ -1,7 +1,8 @@
 ---
 title: "SpacemacsOperate"
 date: "2022-11-25 23:05:00"
-lastmod: "2022-11-25 23:07:40"
+lastmod: "2023-10-14 10:23:23"
+tags: ["spacemacs"]
 categories: ["emacs"]
 draft: false
 ---

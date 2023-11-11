@@ -2,14 +2,14 @@
 title: "Linux HSR/PRP 功能"
 description: "compile-kernel-hsr-module"
 date: "2023-09-23 14:45:00"
-lastmod: "2023-09-26 14:22:51"
+lastmod: "2023-10-08 15:37:31"
 categories: ["Linux"]
 draft: false
 ---
 
 ## HSR/PRP {#hsr-prp}
 
-HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）.一个专注于解决高可靠性自动化网络传输的标准.kkjkjkn
+HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）.一个专注于解决高可靠性自动化网络传输的标准.
 
 
 ## 环境说明 {#环境说明}
@@ -39,7 +39,7 @@ deb http://ftp.cn.debian.org/debian sid main
 ```
 
 -   [trusted=true] : 本地 iso 文件增加信任
--   sid： 增加 debian 滚动源，解决安装 libelf-dev 时无法检索的总理
+-   sid： 增加 debian 滚动源，解决安装 libelf-dev 时无法检索的问题
 
 
 ### 安装软件库 {#安装软件库}

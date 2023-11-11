@@ -1,6 +1,6 @@
 ---
 title: "Vuepress 使用小结"
-lastmod: "2023-03-20 23:42:34"
+lastmod: "2023-10-11 07:37:46"
 tags: ["Vuepress"]
 categories: ["VPS"]
 draft: false
@@ -197,7 +197,7 @@ jobs:
 ```
 
 
-## Note {#note}
+## FAQ {#faq}
 
 
 ### configuration {#configuration}
@@ -224,6 +224,27 @@ jobs:
 ### build {#build}
 
 如果 md 文件内容有问题，如找不到链接图片，在 dev 模式时，可以正常运行，但在 build 模式时无法正常生成。
+
+
+### process out of memory {#process-out-of-memory}
+
+
+#### **FATAL ERROR: Zone Allocation failed - process out of memory** {#fatal-error-zone-allocation-failed-process-out-of-memory}
+
+-   reason
+    -   node 内存溢出的问题。
+-   resolve
+    -   设置 node 进程可占用的内存，通过设置一个大内存占用来解决该问题
+
+        ```bash
+        npm install -g increase-memory-limit
+        increase-memory-limit
+        ```
+
+
+#### **"node --max-old-space-size=10240" 不是内部或外部命令，也不是可运行的程序或批处理文件** {#node-max-old-space-size-10240-不是内部或外部命令-也不是可运行的程序或批处理文件}
+
+在 node_modules\\.bin\vuepress.cmd 中搜索 "%_prog%" 替换成 %_prog% (即去掉双引号)
 
 
 ## Reference {#reference}

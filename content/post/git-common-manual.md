@@ -1,109 +1,96 @@
 ---
-title: "Git 常用操作"
-date: "2022-03-27 23:17:00"
-lastmod: "2022-06-10 23:02:22"
+title: "Git 操作对比"
+date: "2022-03-26 09:48:00"
+lastmod: "2023-11-11 22:14:45"
 tags: ["git"]
 categories: ["Github"]
 draft: false
 ---
 
-## 常用命令 {#常用命令}
+## chechkout VS reset VS revert {#chechkout-vs-reset-vs-revert}
 
-```bash
-# 工作区 -> 暂存区
-$ git add <file/dir>
-
-# 暂存区 -> 本地仓库
-$ git commit -m "some info"
-
-# 本地仓库 -> 远程仓库
-$ git push origin master  # 本地master分支推送到远程origin仓库
-# 工作区 <- 暂存区
-$ git checkout -- <file>  # 暂存区文件内容覆盖工作区文件内容
-
-# 暂存区 <- 本地仓库
-$ git reset HEAD <file>   # 本地仓库文件内容覆盖暂存区文件内容
-
-# 本地仓库 <- 远程仓库
-$ git clone <git_url>        # 克隆远程仓库
-$ git fetch upstream master  # 拉取远程代码到本地但不应用在当前分支
-$ git pull upstream master   # 拉取远程代码到本地但应用在当前分支
-$ git pull --rebase upstream master  # 如果平时使用rebase合并代码则加上
-
-# 克隆指定版本
-# -b 版本标签
-# --depth 克隆深度,如果标签迭代的版本很多, 克隆会很慢
-git clone -b v5.2.0 --depth=1 <git_url>
+| 命令         | 作用域 | 常用情景          |
+|------------|-----|---------------|
+| git reset    | 提交层面 | 在私有分支上舍弃一些没有提交的更改 |
+| git reset    | 文件层面 | 将文件从缓存区中移除 |
+| git checkout | 提交层面 | 切换分支或查看旧版本 |
+| git checkout | 文件层面 | 舍弃工作目录中的更改 |
+| git revert   | 提交层面 | 在公共分支上回滚更改 |
+| git revert   | 文件层面 | （木有）          |
 
 
-# 工作区 <- 本地仓库
-$ git reset <commit>          # 本地仓库覆盖到工作区(保存回退文件内容修改)
-$ git reset --mixed <commit>  # 本地仓库覆盖到工作区(保存回退文件内容修改)
-$ git reset --soft <commit>   # 本地仓库覆盖到工作区(保留修改并加到暂存区)
-$ git reset --hard <commit>   # 本地仓库覆盖到工作区(不保留修改直接删除掉)
+### reset {#reset}
+
+```shell
+git commit   --amend       # 撤销上一次提交  并讲暂存区文件重新提交
+git reset HEAD  -- <file>  # 拉取最近一次提交到版本库的文件到暂存区,操作不影响工作区
+git checkout -- <file>     # 拉取暂存区文件 并将其替换成工作区文件
+
+## 删除暂存区和工作区的文件
+git rm file_path
+
+## 仅仅删除暂存区里的文件
+git rm --cached file_path
+
+# 仅仅只是撤销已提交的版本库，不会修改暂存区和工作区
+git reset --soft 版本库ID
+
+# 仅仅只是撤销已提交的版本库和暂存区，不会修改工作区
+git reset --mixed 版本库ID
+
+# 彻底将工作区、暂存区和版本库记录恢复到指定的版本库
+git reset --hard 版本库ID
 ```
 
 
-## 配置实用参数 {#配置实用参数}
+### compare {#compare}
 
 ```bash
-# 用户信息
-$ git config --global user.name "your_name"
-$ git config --global user.email "your_email"
+# 删除未追踪文件
+# 删除 untracked files-
+$ git clean -f
+# 连 untracked 的目录也一起删掉
+$ git clean -fd
+# 连 gitignore 的 untrack 文件/目录也一起删掉 （慎用，一般这个是用来删掉编译出来的 .o 之类的文件用的）
+$ git clean -xfd
+# 在用上述 git clean 前，墙裂建议加上 -n 参数来先看看会删掉哪些文件，防止重要文件被误删
+$ git clean -nxfd
+$ git clean -nf
+$ git clean -nfd
 
-# 文本编辑器
-$ git config --global core.editor "nvim"
+# 取消修改（在工作区）：
+$ git checkout -- file_name.txt 单个文件
+$ git checkout .所有文件
 
-# 分页器
-$ git config --global core.pager "more"
+# 取消已暂存的文件：
+# 可以使用 git reset HEAD <file>... 的方式取消暂存，返回已修改未暂存的状态：
+$ git reset HEAD benchmarks.rb
 
-# 别名
-$ git config --global alias.gs "git status"
+# 现在将版本退回到合并前,也就是回退一个版本：
+$ git reset --hard head^
 
-# 纠错
-$ git config --global help.autocorrect 1
+# 撤销未 push 的 commit 到你想恢复到的 commit_id:
+$ git reset --hard commit_id 返回到某个节点，不保留修改。
+$ git reset --soft commit_id 返回到某个节点，保留修改。
 
-# 不加--global参数的话，则为个人配置
-$ git config --list
-$ git config user.name
-$ git config user.name "your_name"
+# 修改最后一次提交：
+# 有时候我们提交完了才发现漏掉了几个文件没有加，或者提交信息写错了。想要撤消刚才的提交操作，可以使用 --amend 选项重新提交：
+$ git commit --amend
+# 如果刚才提交时忘了暂存某些修改，可以先补上暂存操作，然后再运行 --amend 提交：
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
 
-# 如果在项目中设置，则保存在.git/config文件里面
-$ cat .git/config
-[user]
-name = "your_name"
+# 撤销某次提交：
+git revert 撤销 某次操作，此次操作之前和之后的 commit 和 history 都会保留，并且把这次撤销作为一次最新的提交：
+$ git revert HEAD 撤销前一次 commit
+$ git revert HEAD^ 撤销前前一次 commit
+$ git revert HEAD~n 撤销前 N 次的 commit
+$ git revert commit_id （比如：fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff）撤销指定的版本，撤销也会作为一次提交进行保存。
+
+# 不在暂存区的文件撤销更改：
+$ git restore test_file.c
+
+# 将暂存区的文件从暂存区撤出：
+$ git restore --staged test_file.c
 ```
-
-
-## 处理工作中断 {#处理工作中断}
-
-```bash
-# 存储当前的修改但不用提交commit
-$ git stash
-
-# 保存当前状态包括untracked的文件
-$ git stash -u
-
-# 展示所有stashes信息
-$ git stash list
-
-# 回到某个stash状态
-$ git stash apply <stash@{n}>
-
-# 删除储藏区
-$ git stash drop <stash@{n}>
-
-# 回到最后一个stash的状态并删除这个stash信息
-$ git stash pop
-
-# 删除所有的stash信息
-$ git stash clear
-
-# 从stash中拿出某个文件的修改
-$ git checkout <stash@{n}> -- <file-path>
-```
-
-
-## Ref {#ref}
-
--   [Git实用技巧记录](https://www.escapelife.site/posts/f6ffe82b.html)

@@ -1,8 +1,9 @@
 ---
 title: "Windows Office Update (应用程序无法正常启动)"
-lastmod: "2023-10-06 19:29:23"
+date: "2023-10-06 19:32:00"
+lastmod: "2023-10-07 08:30:26"
 categories: ["Windows"]
-draft: true
+draft: false
 ---
 
 ### 前言

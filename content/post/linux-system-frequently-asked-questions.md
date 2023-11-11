@@ -1,7 +1,7 @@
 ---
-title: "Linux system FAQ"
+title: "Linux System FAQ"
 date: "2022-08-01 14:00:00"
-lastmod: "2023-04-19 10:20:06"
+lastmod: "2023-11-07 14:00:07"
 tags: ["FAQ"]
 categories: ["Linux"]
 draft: false
@@ -47,3 +47,11 @@ draft: false
 
 -   [如何解决FAT文件系统出现readonly的问题](https://blog.csdn.net/dxt1107/article/details/106936862)
 -   @Windows [cmd chkdsk]
+
+
+## 修改显示时间为 UTC 格式 {#修改显示时间为-utc-格式}
+
+```bash
+rm /etc/localtime
+ln -s /usr/share/zoneinfo/Universal /etc/localtime
+```

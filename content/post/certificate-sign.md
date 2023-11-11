@@ -1,7 +1,7 @@
 ---
 title: "SSL 证书签发"
 date: "2022-04-04 18:52:00"
-lastmod: "2022-10-07 15:44:18"
+lastmod: "2023-10-17 14:34:33"
 tags: ["SSL", "Cert"]
 categories: ["Internet"]
 draft: false
@@ -175,13 +175,16 @@ acme.sh --uninstall
 # ~/.acme.sh/acme.sh --install-cert -d 域名 --key-file  /xxx --fullchain-file /xxx
 
 ~/.acme.sh/acme.sh --install-cert -d 域名 \
-                   --key-file       密钥存路径  \
-                   --fullchain-file 证书存放路径 \
+                   --key-file       /path/to/keyfile/in/nginx/key.pem  \
+                   --fullchain-file /path/to/fullchain/nginx/cert.pem \
                    --reloadcmd     "service nginx force-reload"
 # 可选的，用来安装好证书后重启web服务器
 ```
 
-上面提到的申请和安装命令，执行过一次后，acme.sh 便会记下你的操作，在证书即将到期前自动帮你执行一遍
+-   上面提到的申请和安装命令，执行过一次后，acme.sh 便会记下你的操作，在证书即将到期前自动帮你执行一遍
+-   这里用的是 service nginx force-reload, 不是 service nginx reload, 据测试, reload 并不会重新加载证书, 所以用的 force-reload
+-   Nginx 配置
+    -   **ssl_certificate 使用 /etc/nginx/ssl/fullchain.cer**  ，而非 /etc/nginx/ssl/&lt;domain&gt;.cer，否则 SSL Labs 的测试会报 Chain issues Incomplete 错误。
 
 
 ### FAQ {#faq}
@@ -208,17 +211,7 @@ acme.sh --register-account -m my@example.com
         -   acme.sh --issue -d [domain.tk] --webroot  [web 目录]
 
 
-## [SSL证书申请与配置acme.sh和certbot](https://page.syao.fun/2020/09/11/web_caddy.html) {#ssl证书申请与配置acme-dot-sh和certbot}
-
-由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用--test 参数可以有效避免因短时间内申请次数过多而失败。
-
-**acme.sh 在 V3.00 之后默认服务器更换为 ZeroSSL, 不存在短期内申请次数过多而申请受限的问题.**
-
-
-## [使用Let's Encrypt的acme.sh申请泛域名证书](https://www.psay.cn/toss/126.html) {#使用let-s-encrypt的acme-dot-sh申请泛域名证书}
-
-
-## [acme.h 通配符证书](https://xtls.github.io/Xray-docs-next/document/level-1/fallbacks-with-sni.html#%E7%94%B3%E8%AF%B7-tls-%E8%AF%81%E4%B9%A6) {#acme-dot-h-通配符证书}
+### [acme.h 通配符证书](https://xtls.github.io/Xray-docs-next/document/level-1/fallbacks-with-sni.html#%E7%94%B3%E8%AF%B7-tls-%E8%AF%81%E4%B9%A6) {#acme-dot-h-通配符证书}
 
 要对不同前缀的域名进行分流，但一个通配符证书的作用域仅限于两“.”之间（例如：申请 **.example.com，example.com 和 \*.**.example.com 并不能使用该证书），故需申请 SAN 通配符证书。根据 Let's Encrypt 官网信息[1]，申请通配符证书要求 DNS-01 验证方式，此处演示 NS 记录为 Cloudflare 的域名通过 acme.sh 申请 Let's Encrypt 的免费 TLS 证书。使用其他域名托管商的申请方法请阅读 dnsapi · acmesh-official/acme.sh Wiki。
 
@@ -233,12 +226,25 @@ acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --
 > 以下操作需要在 root 用户下进行，使用 sudo 会出现错误。
 
 
-## [Github Action 部署 acme.sh 全自动批量签发多域名证书教程](https://www.ioiox.com/archives/104.html) {#github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程}
+## Note {#note}
+
+-   [SSL证书申请与配置acme.sh和certbot](https://page.syao.fun/2020/09/11/web_caddy.html)
+
+由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用--test 参数可以有效避免因短时间内申请次数过多而失败。
+
+**acme.sh 在 V3.00 之后默认服务器更换为 ZeroSSL, 不存在短期内申请次数过多而申请受限的问题.**
 
 
-## [解決使用acme.sh申请zerossl证书出现timeout的解决方法](https://www.vpslala.com/t/746) {#解決使用acme-dot-sh申请zerossl证书出现timeout的解决方法}
+## Reference {#reference}
 
 
-## Ref {#ref}
+### [使用Let's Encrypt的acme.sh申请泛域名证书](https://www.psay.cn/toss/126.html) {#使用let-s-encrypt的acme-dot-sh申请泛域名证书}
 
--   [Let's Encrypt 官网信息](https://letsencrypt.org/zh-cn/docs/faq/)
+
+### [Github Action 部署 acme.sh 全自动批量签发多域名证书教程](https://www.ioiox.com/archives/104.html) {#github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程}
+
+
+### [解決使用acme.sh申请zerossl证书出现timeout的解决方法](https://www.vpslala.com/t/746) {#解決使用acme-dot-sh申请zerossl证书出现timeout的解决方法}
+
+
+### [Let's Encrypt 官网信息](https://letsencrypt.org/zh-cn/docs/faq/) {#let-s-encrypt-官网信息}

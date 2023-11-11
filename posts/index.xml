@@ -6,7 +6,151 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2023 15:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 21:18:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAID</title>
+      <link>https://daotoyi.github.io/posts/hardware-raid/</link>
+      <pubDate>Fri, 10 Nov 2023 21:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-raid/</guid>
+      <description>基本简介 RAID 是 Redundant Array of Inexpensive Disks 或 Redundant Array of Independent Drives 的缩写，廉价冗余磁盘阵列，是为了提高数据存储的性能和可靠性而开发的技术。 最初，RAID 的目标是通过将多个廉</description>
+    </item>
+    
+    <item>
+      <title>Obsidian</title>
+      <link>https://daotoyi.github.io/posts/tool-obsidian/</link>
+      <pubDate>Fri, 10 Nov 2023 14:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/tool-obsidian/</guid>
+      <description>pulgin 插件通常放在目录 .obsidian\plugins 下面 obsidian-proxy-github https://github.com/juqkai/obsidian-proxy-github Git pandoc 格式转换的一站式解决方案，覆盖了 txt，html，md，pdf，docx，ppt 等几乎所有文档格式 remotely save 第三方</description>
+    </item>
+    
+    <item>
+      <title>ARM 处理器家族</title>
+      <link>https://daotoyi.github.io/posts/hardware-arm-processors-family/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-arm-processors-family/</guid>
+      <description>ARM 处理器产品分为经典 ARM 处理器系列和最新的 Cortex 处理器系列。 ARM 处理器家族 根据应用范围的不同，ARM 处理器可以分类成 3 个系列： Application Processors （应用处理器） 面向</description>
+    </item>
+    
+    <item>
+      <title>TPM 可信平台模块</title>
+      <link>https://daotoyi.github.io/posts/hardware-trusted-platform-module/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-trusted-platform-module/</guid>
+      <description>Trusted Platform Module 是一种植于计算机内部为计算机提供可信根的芯片。该芯片的规格由可信计算组（Trusted Computing Group）来制定。 中国国内研究的 TCM（tr</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/posts/vuepress-manual/</link>
+      <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Emacs 设置选中区域的颜色</title>
+      <link>https://daotoyi.github.io/posts/emacs-region-selected-color-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-region-selected-color-set/</guid>
+      <description>emacs 行显示和选中区域的颜色均是灰色，比较难区分，如下修改方式可用。 操作步骤 M-x customize-face &amp;lt;回车&amp;gt; Customize-face （default ‘all face’） &amp;lt;Tab 补全</description>
+    </item>
+    
+    <item>
+      <title>Emacs 中文显示乱码</title>
+      <link>https://daotoyi.github.io/posts/emacs-chinese-show-errors/</link>
+      <pubDate>Fri, 06 Oct 2023 19:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-chinese-show-errors/</guid>
+      <description>Emacs打开中文乱码 有时使用emacs打开文件的时候，会显示乱码。原因是emacs默认编码跟文档编码不同而出现了乱码。 1 当前buffer调</description>
+    </item>
+    
+    <item>
+      <title>Windows Office Update (应用程序无法正常启动)</title>
+      <link>https://daotoyi.github.io/posts/windows-office-update-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:32:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-office-update-error/</guid>
+      <description>前言 有时候打开office套件，如word，outlook时，会弹出正在更新 Office，请稍候，然后弹出一个错误框应用程序无法正常启动(0</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell(putty) config</title>
+      <link>https://daotoyi.github.io/posts/emacs-shell-putty-config/</link>
+      <pubDate>Fri, 06 Oct 2023 19:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-shell-putty-config/</guid>
+      <description>Emacs Config init.el — EmacsEntrance ;; (setq explicit-shell-file-name “plink”) ;; (setq shell-file-name explicit-shell-file-name) (add-to-list &amp;lsquo;exec-path “path/to/PuTTY”) 或者 (setenv “PATH” (concat “/mingw64/bin:/usr/loc</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell-mode 中文显示乱码</title>
+      <link>https://daotoyi.github.io/posts/emacs-shell-mode-chinese-show-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-shell-mode-chinese-show-error/</guid>
+      <description>Emacs shell-mode中文显示乱码 M-x shell ssh root@192.168.220.136 Pseudo-terminal will not be allocated because stdin is not a terminal. δ 쳣: System.TypeInitializationException: Microsoft.Alm.Cli.Program ͳ ʼֵ 趨 쳣 —&amp;gt; System.IO.FileNotFoundException: δ ܼ ļ 򼯡 AzureDevOps.Authentication, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null ĳһ ϵͳ Ҳ ָ ļ Micros</description>
+    </item>
+    
+    <item>
+      <title>Linux 在 login 界面闪退</title>
+      <link>https://daotoyi.github.io/posts/linux-repeat-login-screen/</link>
+      <pubDate>Fri, 06 Oct 2023 19:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-repeat-login-screen/</guid>
+      <description>Linux终端无法登录 1）环境变量引起pam_limits.so丢失 使用 XShell 或者 SecureSRT 远程连接 进入 /etc/pam.d/login 文件 在/etc/pam.d/login里面的最</description>
+    </item>
+    
+    <item>
+      <title>Linux pam.d faillock 配置</title>
+      <link>https://daotoyi.github.io/posts/linux-pam/</link>
+      <pubDate>Fri, 06 Oct 2023 19:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-pam/</guid>
+      <description>导言 Removed deprecated pam_tally and pam_tally2 modules, use pam_faillock instead. pam_tally2配置 1 2 sed -i &amp;#39;1s/^/auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60/&amp;#39; /etc/pam.d/login sed -i &amp;#39;1 i auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60&amp;#39; /etc/pam.d/sshd 建立存储目录 mkdir /var/log/faillock faillock相关的信息</description>
+    </item>
+    
+    <item>
+      <title>Linux XDMCP remote Set(Redhat6)</title>
+      <link>https://daotoyi.github.io/posts/linux-xdmcp-remote-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-xdmcp-remote-set/</guid>
+      <description>Linux 配置 /etc/gdm/custom.conf 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 [daemon] RemoteGreeter=/usr/libexec/gdm-simple-greeter [security] AllowRemoteRoot=true [xdmcp] Enable=1 Port=177 DisplaysPerHost=5 [greeter] Browser=true [chooser] [debug] 另外，如果想开机免登录，可以在[daemon]字段下添加 1 2 3 4 5 6 [daemon] TimedLoginEnable=True</description>
+    </item>
+    
+    <item>
+      <title>Org &lt;TAB&gt;键无法展开视图</title>
+      <link>https://daotoyi.github.io/posts/emacs-org-tab-key-view/</link>
+      <pubDate>Fri, 06 Oct 2023 19:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-org-tab-key-view/</guid>
+      <description>说明 Linux系统，Emacs的org-mode使用evil插件时，&amp;lt;TAB&amp;gt;键无法展开视图。 Windows下正常。 解决 在ema</description>
+    </item>
+    
+    <item>
+      <title>Windows WSL</title>
+      <link>https://daotoyi.github.io/posts/windows-wsl/</link>
+      <pubDate>Fri, 06 Oct 2023 19:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-wsl/</guid>
+      <description>basic 1 2 3 wsl --set-default-version 2 wsl --install -d Ubuntu-22.04 wsl --list --online config 修改wsl终端字体 窗口属性（临时） 右击，选择&amp;quot;属性&amp;quot;，弹出的窗口中选择字体进行修改。 注册表</description>
+    </item>
+    
+    <item>
+      <title>PyQt5 QDock 初始化</title>
+      <link>https://daotoyi.github.io/posts/pyqt5_qdock_initsize/</link>
+      <pubDate>Fri, 06 Oct 2023 18:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/pyqt5_qdock_initsize/</guid>
+      <description>0x00 前言 QDockWidget自带的很多方法无法在保证其可调整大小的情况下，设置其初始大小. 0x01 初始化后固定大小 exampleCode 1 2 3 4 5 6 from PySide2.QtWidgets import QDockWidget, QMainWindow class UIMainWindow(QMainWindow): def __init__(self,</description>
+    </item>
+    
     <item>
       <title>Linux 不同 shell 文件中的函数调用</title>
       <link>https://daotoyi.github.io/posts/linux-shell-function-invoke-between-files/</link>
@@ -113,6 +257,15 @@
       
       <guid>https://daotoyi.github.io/posts/linux-local-remote-transmit/</guid>
       <description>本地转发 A 机通过 B 机连接 C 机 B 机 1 2 3 4 5 6 7 8 9 10 11 12 ssh -L localport:remotehost:remotehostport sshserver 说明： localport 本机开启的端口号 remotehost 最终连接机器的IP地址 remotehostport 最终连接机器的端口号 sshserver 转发</description>
+    </item>
+    
+    <item>
+      <title>Everything</title>
+      <link>https://daotoyi.github.io/posts/tool-everything-manual/</link>
+      <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/tool-everything-manual/</guid>
+      <description>hotkey function introdction remark new window hotkey wake up from backend tools-option-keyboard-new window hotkey search skill 使用通配符：&amp;ldquo;Everything&amp;quot;支持通配符搜索。例如，使用星号 * 可以匹配任何字符，</description>
     </item>
     
     <item>
@@ -230,15 +383,6 @@
       
       <guid>https://daotoyi.github.io/posts/emacs-org-babel/</guid>
       <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
-    </item>
-    
-    <item>
-      <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/posts/vuepress-manual/</link>
-      <pubDate>Mon, 20 Mar 2023 23:42:34 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/vuepress-manual/</guid>
-      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>
@@ -678,7 +822,7 @@ C-u C-u C-c TAB (org-table-expand)
     </item>
     
     <item>
-      <title>Linux system FAQ</title>
+      <title>Linux System FAQ</title>
       <link>https://daotoyi.github.io/posts/linux-system-frequently-asked-questions/</link>
       <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
       
@@ -1313,7 +1457,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Mon, 04 Apr 2022 23:44:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/nginx-conf-note/</guid>
-      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置</description>
+      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf</description>
     </item>
     
     <item>
@@ -1479,21 +1623,21 @@ C-u C-u C-c TAB (org-table-expand)
     </item>
     
     <item>
-      <title>Git 常用操作</title>
-      <link>https://daotoyi.github.io/posts/git-common-manual/</link>
-      <pubDate>Sun, 27 Mar 2022 23:17:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/git-common-manual/</guid>
-      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt; 远程</description>
-    </item>
-    
-    <item>
       <title>Git Pull 强制覆盖</title>
       <link>https://daotoyi.github.io/posts/git-pull-force/</link>
       <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/git-pull-force/</guid>
       <description>不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展</description>
+    </item>
+    
+    <item>
+      <title>Git 操作对比</title>
+      <link>https://daotoyi.github.io/posts/git-common-manual/</link>
+      <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/git-common-manual/</guid>
+      <description>chechkout VS reset VS revert 命令 作用域 常用情景 git reset 提交层面 在私有分支上舍弃一些没有提交的更改 git reset 文件层面 将文件从缓存区中移除 git checkout 提交层面 切换分支或查看旧版本 git</description>
     </item>
     
     <item>

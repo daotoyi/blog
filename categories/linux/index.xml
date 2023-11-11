@@ -6,7 +6,61 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2023 15:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 19:17:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 在 login 界面闪退</title>
+      <link>https://daotoyi.github.io/post/linux-repeat-login-screen/</link>
+      <pubDate>Fri, 06 Oct 2023 19:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-repeat-login-screen/</guid>
+      <description>Linux终端无法登录 1）环境变量引起pam_limits.so丢失 使用 XShell 或者 SecureSRT 远程连接 进入 /etc/pam.d/login 文件 在/etc/pam.d/login里面的最</description>
+    </item>
+    
+    <item>
+      <title>Linux 在 login 界面闪退</title>
+      <link>https://daotoyi.github.io/posts/linux-repeat-login-screen/</link>
+      <pubDate>Fri, 06 Oct 2023 19:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-repeat-login-screen/</guid>
+      <description>Linux终端无法登录 1）环境变量引起pam_limits.so丢失 使用 XShell 或者 SecureSRT 远程连接 进入 /etc/pam.d/login 文件 在/etc/pam.d/login里面的最</description>
+    </item>
+    
+    <item>
+      <title>Linux pam.d faillock 配置</title>
+      <link>https://daotoyi.github.io/post/linux-pam/</link>
+      <pubDate>Fri, 06 Oct 2023 19:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-pam/</guid>
+      <description>导言 Removed deprecated pam_tally and pam_tally2 modules, use pam_faillock instead. pam_tally2配置 1 2 sed -i &amp;#39;1s/^/auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60/&amp;#39; /etc/pam.d/login sed -i &amp;#39;1 i auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60&amp;#39; /etc/pam.d/sshd 建立存储目录 mkdir /var/log/faillock faillock相关的信息</description>
+    </item>
+    
+    <item>
+      <title>Linux pam.d faillock 配置</title>
+      <link>https://daotoyi.github.io/posts/linux-pam/</link>
+      <pubDate>Fri, 06 Oct 2023 19:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-pam/</guid>
+      <description>导言 Removed deprecated pam_tally and pam_tally2 modules, use pam_faillock instead. pam_tally2配置 1 2 sed -i &amp;#39;1s/^/auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60/&amp;#39; /etc/pam.d/login sed -i &amp;#39;1 i auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60&amp;#39; /etc/pam.d/sshd 建立存储目录 mkdir /var/log/faillock faillock相关的信息</description>
+    </item>
+    
+    <item>
+      <title>Linux XDMCP remote Set(Redhat6)</title>
+      <link>https://daotoyi.github.io/post/linux-xdmcp-remote-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-xdmcp-remote-set/</guid>
+      <description>Linux 配置 /etc/gdm/custom.conf 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 [daemon] RemoteGreeter=/usr/libexec/gdm-simple-greeter [security] AllowRemoteRoot=true [xdmcp] Enable=1 Port=177 DisplaysPerHost=5 [greeter] Browser=true [chooser] [debug] 另外，如果想开机免登录，可以在[daemon]字段下添加 1 2 3 4 5 6 [daemon] TimedLoginEnable=True</description>
+    </item>
+    
+    <item>
+      <title>Linux XDMCP remote Set(Redhat6)</title>
+      <link>https://daotoyi.github.io/posts/linux-xdmcp-remote-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-xdmcp-remote-set/</guid>
+      <description>Linux 配置 /etc/gdm/custom.conf 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 [daemon] RemoteGreeter=/usr/libexec/gdm-simple-greeter [security] AllowRemoteRoot=true [xdmcp] Enable=1 Port=177 DisplaysPerHost=5 [greeter] Browser=true [chooser] [debug] 另外，如果想开机免登录，可以在[daemon]字段下添加 1 2 3 4 5 6 [daemon] TimedLoginEnable=True</description>
+    </item>
+    
     <item>
       <title>Linux 不同 shell 文件中的函数调用</title>
       <link>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</link>
@@ -512,7 +566,7 @@
     </item>
     
     <item>
-      <title>Linux system FAQ</title>
+      <title>Linux System FAQ</title>
       <link>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</link>
       <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
       
@@ -521,7 +575,7 @@
     </item>
     
     <item>
-      <title>Linux system FAQ</title>
+      <title>Linux System FAQ</title>
       <link>https://daotoyi.github.io/posts/linux-system-frequently-asked-questions/</link>
       <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
       

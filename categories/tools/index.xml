@@ -6,7 +6,25 @@
     <description>Recent content in Tools on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Sep 2023 15:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 14:01:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian</title>
+      <link>https://daotoyi.github.io/post/tool-obsidian/</link>
+      <pubDate>Fri, 10 Nov 2023 14:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-obsidian/</guid>
+      <description>pulgin 插件通常放在目录 .obsidian\plugins 下面 obsidian-proxy-github https://github.com/juqkai/obsidian-proxy-github Git pandoc 格式转换的一站式解决方案，覆盖了 txt，html，md，pdf，docx，ppt 等几乎所有文档格式 remotely save 第三方</description>
+    </item>
+    
+    <item>
+      <title>Obsidian</title>
+      <link>https://daotoyi.github.io/posts/tool-obsidian/</link>
+      <pubDate>Fri, 10 Nov 2023 14:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/tool-obsidian/</guid>
+      <description>pulgin 插件通常放在目录 .obsidian\plugins 下面 obsidian-proxy-github https://github.com/juqkai/obsidian-proxy-github Git pandoc 格式转换的一站式解决方案，覆盖了 txt，html，md，pdf，docx，ppt 等几乎所有文档格式 remotely save 第三方</description>
+    </item>
+    
     <item>
       <title>Mermaid</title>
       <link>https://daotoyi.github.io/post/tool-mermaid/</link>
@@ -41,6 +59,24 @@
       
       <guid>https://daotoyi.github.io/posts/tools-terminal-crack/</guid>
       <description>CRT SecureCRT 是一款支持 SSH（SSH1 和 SSH2）的终端仿真程序，简单地说是 Windows 下登录 UNIX 或 Linux 服务器主机的软件。 正版下载地址：https://www.v</description>
+    </item>
+    
+    <item>
+      <title>Everything</title>
+      <link>https://daotoyi.github.io/post/tool-everything-manual/</link>
+      <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-everything-manual/</guid>
+      <description>hotkey function introdction remark new window hotkey wake up from backend tools-option-keyboard-new window hotkey search skill 使用通配符：&amp;ldquo;Everything&amp;quot;支持通配符搜索。例如，使用星号 * 可以匹配任何字符，</description>
+    </item>
+    
+    <item>
+      <title>Everything</title>
+      <link>https://daotoyi.github.io/posts/tool-everything-manual/</link>
+      <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/tool-everything-manual/</guid>
+      <description>hotkey function introdction remark new window hotkey wake up from backend tools-option-keyboard-new window hotkey search skill 使用通配符：&amp;ldquo;Everything&amp;quot;支持通配符搜索。例如，使用星号 * 可以匹配任何字符，</description>
     </item>
     
     <item>

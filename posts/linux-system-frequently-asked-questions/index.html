@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Linux system FAQ - DaoyiSite</title>
+  <title>Linux System FAQ - DaoyiSite</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -39,19 +39,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Linux system FAQ" />
+<meta property="og:title" content="Linux System FAQ" />
 <meta property="og:description" content="FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/posts/linux-system-frequently-asked-questions/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-01T14:00:00+00:00" />
-<meta property="article:modified_time" content="2023-04-19T10:20:06+00:00" />
+<meta property="article:modified_time" content="2023-11-07T14:00:07+00:00" />
 
-<meta itemprop="name" content="Linux system FAQ">
+<meta itemprop="name" content="Linux System FAQ">
 <meta itemprop="description" content="FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon"><meta itemprop="datePublished" content="2022-08-01T14:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-04-19T10:20:06+00:00" />
-<meta itemprop="wordCount" content="286">
+<meta itemprop="dateModified" content="2023-11-07T14:00:07+00:00" />
+<meta itemprop="wordCount" content="304">
 <meta itemprop="keywords" content="FAQ," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux system FAQ"/>
+<meta name="twitter:title" content="Linux System FAQ"/>
 <meta name="twitter:description" content="FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon"/>
 
 <!--[if lte IE 9]>
@@ -155,7 +155,18 @@ mount -t vfat /dev/sda /mnt/sda -o errors=continue</p>
 <li><a href="https://blog.csdn.net/dxt1107/article/details/106936862">如何解决FAT文件系统出现readonly的问题</a></li>
 <li>@Windows [cmd chkdsk]</li>
 </ul>
-
+<h2 id="修改显示时间为-utc-格式">修改显示时间为 UTC 格式</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">rm /etc/localtime
+ln -s /usr/share/zoneinfo/Universal /etc/localtime
+</code></pre></td></tr></table>
+</div>
+</div>
   </div>
 </article>
         </div>

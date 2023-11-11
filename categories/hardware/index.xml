@@ -6,7 +6,61 @@
     <description>Recent content in Hardware on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Sep 2023 18:47:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 21:18:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAID</title>
+      <link>https://daotoyi.github.io/post/hardware-raid/</link>
+      <pubDate>Fri, 10 Nov 2023 21:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-raid/</guid>
+      <description>基本简介 RAID 是 Redundant Array of Inexpensive Disks 或 Redundant Array of Independent Drives 的缩写，廉价冗余磁盘阵列，是为了提高数据存储的性能和可靠性而开发的技术。 最初，RAID 的目标是通过将多个廉</description>
+    </item>
+    
+    <item>
+      <title>RAID</title>
+      <link>https://daotoyi.github.io/posts/hardware-raid/</link>
+      <pubDate>Fri, 10 Nov 2023 21:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-raid/</guid>
+      <description>基本简介 RAID 是 Redundant Array of Inexpensive Disks 或 Redundant Array of Independent Drives 的缩写，廉价冗余磁盘阵列，是为了提高数据存储的性能和可靠性而开发的技术。 最初，RAID 的目标是通过将多个廉</description>
+    </item>
+    
+    <item>
+      <title>ARM 处理器家族</title>
+      <link>https://daotoyi.github.io/post/hardware-arm-processors-family/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-arm-processors-family/</guid>
+      <description>ARM 处理器产品分为经典 ARM 处理器系列和最新的 Cortex 处理器系列。 ARM 处理器家族 根据应用范围的不同，ARM 处理器可以分类成 3 个系列： Application Processors （应用处理器） 面向</description>
+    </item>
+    
+    <item>
+      <title>ARM 处理器家族</title>
+      <link>https://daotoyi.github.io/posts/hardware-arm-processors-family/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-arm-processors-family/</guid>
+      <description>ARM 处理器产品分为经典 ARM 处理器系列和最新的 Cortex 处理器系列。 ARM 处理器家族 根据应用范围的不同，ARM 处理器可以分类成 3 个系列： Application Processors （应用处理器） 面向</description>
+    </item>
+    
+    <item>
+      <title>TPM 可信平台模块</title>
+      <link>https://daotoyi.github.io/post/hardware-trusted-platform-module/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-trusted-platform-module/</guid>
+      <description>Trusted Platform Module 是一种植于计算机内部为计算机提供可信根的芯片。该芯片的规格由可信计算组（Trusted Computing Group）来制定。 中国国内研究的 TCM（tr</description>
+    </item>
+    
+    <item>
+      <title>TPM 可信平台模块</title>
+      <link>https://daotoyi.github.io/posts/hardware-trusted-platform-module/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/hardware-trusted-platform-module/</guid>
+      <description>Trusted Platform Module 是一种植于计算机内部为计算机提供可信根的芯片。该芯片的规格由可信计算组（Trusted Computing Group）来制定。 中国国内研究的 TCM（tr</description>
+    </item>
+    
     <item>
       <title>晶振</title>
       <link>https://daotoyi.github.io/post/hardware-crystal-oscillator/</link>

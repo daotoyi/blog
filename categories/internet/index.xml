@@ -139,7 +139,7 @@
       <pubDate>Mon, 04 Apr 2022 23:44:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/nginx-conf-note/</guid>
-      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置</description>
+      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf</description>
     </item>
     
     <item>
@@ -148,7 +148,7 @@
       <pubDate>Mon, 04 Apr 2022 23:44:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/nginx-conf-note/</guid>
-      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置</description>
+      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf</description>
     </item>
     
     <item>

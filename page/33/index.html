@@ -126,115 +126,115 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/manjaro-manual/">Manjaro/Linux 使用</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/nginx-conf-note/">Nginx</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-03-31 </span>
+      <span class="post-time"> 2022-04-04 </span>
       <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
+          <a href="/categories/internet/"> Internet </a>
           </div>
-        <span class="more-meta"> 2845 words </span>
-        <span class="more-meta"> 6 mins read </span>
+        <span class="more-meta"> 5845 words </span>
+        <span class="more-meta"> 12 mins read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也可以只执
+      instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf
     </div>
     <div class="read-more">
-      <a href="/post/manjaro-manual/" class="read-more-link">Read more...</a>
+      <a href="/post/nginx-conf-note/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-cmd-packages-manager-yum-dnf-pacman/">Linux cmd yum/dnf/pacman/npm/yarn</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/internet-proxy/">网络代理简介</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-03-30 </span>
+      <span class="post-time"> 2022-04-04 </span>
       <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
+          <a href="/categories/internet/"> Internet </a>
           </div>
-        <span class="more-meta"> 1665 words </span>
-        <span class="more-meta"> 4 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-cmd-packages-manager-yum-dnf-pacman/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-cmd-yum-dnf/">CMD yum/dnf</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-30 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 1086 words </span>
-        <span class="more-meta"> 3 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &lt;package_name&gt; # 仅安装指定的软件命令： yum update &lt;package_name&gt; # 仅更新指定的软
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-cmd-yum-dnf/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git-common-manual/">Git 常用操作</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-27 </span>
-      <div class="post-category">
-          <a href="/categories/github/"> Github </a>
-          </div>
-        <span class="more-meta"> 783 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&gt; 暂存区 $ git add &lt;file/dir&gt; # 暂存区 -&gt; 本地仓库 $ git commit -m &#34;some info&#34; # 本地仓库 -&gt; 远程
-    </div>
-    <div class="read-more">
-      <a href="/post/git-common-manual/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git-pull-force/">Git Pull 强制覆盖</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-26 </span>
-      <div class="post-category">
-          <a href="/categories/github/"> Github </a>
-          </div>
-        <span class="more-meta"> 103 words </span>
+        <span class="more-meta"> 347 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展
+      透明代理(Transparent Proxy) 是另一种类型的 HTTP 代理，它们不会修改通过它们发送的请求。 透明意味着代理本身对用户是不可见( invisible )的，也就是说用
     </div>
     <div class="read-more">
-      <a href="/post/git-pull-force/" class="read-more-link">Read more...</a>
+      <a href="/post/internet-proxy/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/ca-ssl-certificate/">CA SSL 证书</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-04 </span>
+      <div class="post-category">
+          <a href="/categories/internet/"> Internet </a>
+          </div>
+        <span class="more-meta"> 296 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      CA CA 是证书的签发机构，它是公钥基础设施（Public Key Infrastructure，PKI）的核心。CA 是负责签发证书、认证证书、管理已颁发
+    </div>
+    <div class="read-more">
+      <a href="/post/ca-ssl-certificate/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/certificate-sign/">SSL 证书签发</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-04 </span>
+      <div class="post-category">
+          <a href="/categories/internet/"> Internet </a>
+          </div>
+        <span class="more-meta"> 2177 words </span>
+        <span class="more-meta"> 5 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Certbot 使用自动证书机器人 Certbot,自动签发 Let’s Encrypt 的免费证书,只是需要三个月一续,机器人自动帮忙搞定 Before 1 2 3 4 5 6 7 8 9 10 11 12 13 # 安装
+    </div>
+    <div class="read-more">
+      <a href="/post/certificate-sign/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/docker-fig-compose/">Docker Compose</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-04 </span>
+      <div class="post-category">
+          <a href="/categories/docker/"> Docker </a>
+          </div>
+        <span class="more-meta"> 1342 words </span>
+        <span class="more-meta"> 3 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Ref Fig项目介绍 Docker Compose 项目 Fig introduction Docker Compose 的前身是 Fig。 Fig 是一个基于 Docker 的 Python 工具，允许用户基于一个 YAML 文件定义多容器应用，从而可以使用 fig 命令行工具进行应
+    </div>
+    <div class="read-more">
+      <a href="/post/docker-fig-compose/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

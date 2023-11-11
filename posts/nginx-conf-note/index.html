@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="daoyi" /><meta name="description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="daoyi" /><meta name="description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="Nginx" />
-<meta property="og:description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置" />
+<meta property="og:description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/posts/nginx-conf-note/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-04T23:44:00+00:00" />
-<meta property="article:modified_time" content="2022-05-21T12:53:09+00:00" />
+<meta property="article:modified_time" content="2023-11-11T14:22:30+00:00" />
 
 <meta itemprop="name" content="Nginx">
-<meta itemprop="description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置"><meta itemprop="datePublished" content="2022-04-04T23:44:00+00:00" />
-<meta itemprop="dateModified" content="2022-05-21T12:53:09+00:00" />
-<meta itemprop="wordCount" content="3660">
+<meta itemprop="description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf"><meta itemprop="datePublished" content="2022-04-04T23:44:00+00:00" />
+<meta itemprop="dateModified" content="2023-11-11T14:22:30+00:00" />
+<meta itemprop="wordCount" content="5845">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Nginx"/>
-<meta name="twitter:description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } 根据上述文件，我们可以很明显的将 nginx.conf 配置"/>
+<meta name="twitter:description" content="instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -170,9 +170,8 @@
 <span class="na">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><figure><img src="https://raw.githubusercontent.com/daotoyi/picsbed/main//img/202204051045737.png"/>
-</figure>
-
+</div><p><a href="https://raw.githubusercontent.com/daotoyi/picsbed/main/img/202204051045737.png">nginx pics</a></p>
+<p><img src="https://raw.githubusercontent.com/daotoyi/picsbed/main//img/202204051045737.png" alt=""></p>
 <p>根据上述文件，我们可以很明显的将 nginx.conf 配置文件分为三部分</p>
 <h3 id="global">global</h3>
 <p>从配置文件开始到 events 块之间的内容，主要会设置一些影响 nginx 服务器整体运行的配置指令，主要包括配置运行 Nginx 服务器的用户（组）、允许生成的 worker process 数，进程 PID 存放路径、日志存放路径和类型以及配置文件的引入等。</p>
@@ -284,8 +283,8 @@
     <span class="na">worker_connections  1024;</span>
     <span class="c1">#每个worker process可以支持的最大连接数，生成环境根据需要可以设置更大一些（9000）</span>
     <span class="c1">#值得注意的是，此数字是包括了反向代理等等所需要的连接数在内，并不仅仅是指web端发起的连接数</span>
-    <span class="na">multi_accept on #是否work进程一次只接收一个连接。并发较大时应打开</span>
-    <span class="na">use epoll #选择底层处理连接的模型，Linux下默认epoll，无需自己设置</span>
+    <span class="na">multi_accept on # 是否work进程一次只接收一个连接。并发较大时应打开</span>
+    <span class="na">use epoll # 选择底层处理连接的模型，Linux下默认epoll，无需自己设置</span>
     <span class="na">accept_mutex</span>
     <span class="na">accept_mutex_delay</span>
     <span class="c1">#上面2参数是表示是否让worker进程使用one by one的工作模式，默认是关闭的。</span>
@@ -309,7 +308,7 @@
     <span class="na">access_log  logs/access.log  main;</span>
     <span class="c1">#io时不阻塞处理connection，在传输大文件时使用，加快文件读写效率</span>
     <span class="na">sendfile        on;</span>
-    <span class="na">tcp_nopush     on;#貌似意思是只有在sendfile启用时使用，让nginx发包的时候满包发送（不明白）通常不使用</span>
+    <span class="na">tcp_nopush     on; #貌似意思是只有在sendfile启用时使用，让nginx发包的时候满包发送（不明白）通常不使用</span>
     <span class="c1">#连接idle的最大时间，现代浏览器往往在一个页面同时打开多个connection传输js,css,html等。</span>
     <span class="c1">#设置最大idle时间避免过长等待浪费connection</span>
     <span class="c1">#keepalive_timeout  0;</span>
@@ -339,7 +338,130 @@
 <li>$http_referer ：用来记录从那个页面链接访问过来的；</li>
 <li>$http_user_agent ：记录客户端浏览器的相关信息；</li>
 </ol>
-<h2 id="proxy-set-header">proxy_set_header</h2>
+<h2 id="variable">variable</h2>
+<p>ginx 中的变量分为两种，自定义变量与内置预定义变量.</p>
+<h3 id="自定义变量">自定义变量</h3>
+<p>可以在 http,sever,location 等标签中使用 set 命令（非唯一）声明变量，语法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="err">set</span> <span class="err">$变量名</span> <span class="err">变量值</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>变量必须都以$开头</li>
+<li>变量都必须是声明过的，否则 nginx 会无法启动并打印相关异常日志</li>
+</ul>
+<p>nginx 变量的一个有趣的特性就是 nginx 中每一个变量都是全局可见的，而他们又不是全局变量。如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">location a/ <span class="o">{</span>
+  <span class="k">return</span> <span class="m">200</span> <span class="nv">$a</span>
+<span class="o">}</span>
+
+location b/ <span class="o">{</span>
+ <span class="nb">set</span> <span class="nv">$a</span> hello nginx
+ <span class="k">return</span> <span class="m">200</span> <span class="nv">$a</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>变量是全局可见的所以 nginx 启动不会报错，而第一个 location 中并不知道$a 的具体值因此返回的响应结果为一个空字符串。</p>
+<p>不同层级的标签中声明的变量性的可见性规则如下:</p>
+<ol>
+<li>location 标签中声明的变量中对这个 location 块可见</li>
+<li>server 标签中声明的变量对 server 块以及 server 块中的所有子块可见</li>
+<li>http 标签中声明的变量对 http 块以及 http 块中的所有子块可见</li>
+</ol>
+<h3 id="内置变量"><a href="https://mp.weixin.qq.com/s/wjpFFPzvMuZI5lXKLB8lLQ">内置变量</a></h3>
+<h3 id="参考">参考</h3>
+<ul>
+<li><a href="https://blog.csdn.net/u014296316/article/details/80973530">nginx 变量使用</a></li>
+</ul>
+<h2 id="http-and-stream-module">http and stream module</h2>
+<p>工作原理</p>
+<ul>
+<li>HTTP 模块
+<ul>
+<li>HTTP 模块主要用于处理 HTTP 和 HTTPS 流量。</li>
+<li>它可以接收 HTTP 请求、代理 HTTP 请求到后端服务器、负载均衡、缓存和处理 HTTPS 加密等。</li>
+<li>HTTP 模块是 Nginx 最常用的模块之一，通常用于构建 Web 服务器或反向代理服务器。</li>
+</ul>
+</li>
+<li>Stream 模块
+<ul>
+<li>Stream 模块用于处理通用 TCP 和 UDP 流量。</li>
+<li>它允许 Nginx 在传输层（TCP/UDP）上进行代理、负载均衡和流量控制。Stream 模块通常用于构建 TCP 代理、数据库负载均衡、消息队列代理等应用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="proxy">proxy</h2>
+<h3 id="single-server">single server</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#配置监听的目录为：/</span>
+<span class="na">location /{</span>
+    <span class="na">root html;</span>
+    <span class="na">index index.html index.htm;</span>
+    <span class="na">proxy_pass http/127.0.0.1:8080;  #反向代理了本机的8080端口</span>
+    <span class="c1">#proxy_pass http/127.0.0.1:8081; #反向代理了本机的8081端口</span>
+
+    <span class="c1"># 可以同时配置多条proxy_pass</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="multi-server">multi server</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#配置服务器组，取名为hello</span>
+<span class="na">upstream hello{</span>
+<span class="c1">#一个server对应一个服务器，当然也可以是不同端口的web程序</span>
+<span class="na">server 127.0.0.1:8080:</span>
+<span class="na">server 127.0.0.1:8081;</span>
+
+<span class="c1">#在location块中修改反向代理为服务器组</span>
+<span class="na">location/{</span>
+  <span class="na">root html ;</span>
+  <span class="na">index index.html index.htm;</span>
+  <span class="na">proxy_pass http/hello; # 反向代理了hello服务器组中的所有服务</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="proxy-set-header">proxy_set_header</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -396,62 +518,13 @@
 </ul>
 </li>
 </ul>
-<h2 id="proxy">proxy</h2>
-<h3 id="single-server">single server</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#配置监听的目录为：/</span>
-<span class="na">location /{</span>
-    <span class="na">root html;</span>
-    <span class="na">index index.html index.htm;</span>
-    <span class="na">proxy_pass http/127.0.0.1:8080;  #反向代理了本机的8080端口</span>
-    <span class="c1">#proxy_pass http/127.0.0.1:8081; #反向代理了本机的8081端口</span>
-
-    <span class="c1"># 可以同时配置多条proxy_pass</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="multi-server">multi server</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="c1">#配置服务器组，取名为hello</span>
-<span class="na">upstream hello{</span>
-<span class="c1">#一个server对应一个服务器，当然也可以是不同端口的web程序</span>
-<span class="na">server 127.0.0.1:8080:</span>
-<span class="na">server 127.0.0.1:8081;</span>
-
-<span class="c1">#在location块中修改反向代理为服务器组</span>
-<span class="na">location/{</span>
-  <span class="na">root html ;</span>
-  <span class="na">index index.html index.htm;</span>
-  <span class="na">proxy_pass http/hello; #反向代理了hello服务器组中的所有服务</span>
-<span class="na">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="conf-dot-d">conf.d/</h2>
+<h2 id="proxy-multiport">proxy multiport</h2>
+<ul>
+<li><a href="https://blog.csdn.net/yaologos/article/details/113356620">Nginx单服务器部署多个网站，域名</a>(server)</li>
+<li><a href="https://www.jianshu.com/p/5bc9cd2271b1">Nginx配置——单域名反向代理多个端口</a>(location)</li>
+<li><a href="https://blog.csdn.net/weixin_48215755/article/details/122713914">nginx代理 1个端口+路径匹配 代理多个web</a>(location)</li>
+</ul>
+<h2 id="conf-dot-d">conf.d/</h2>
 <h3 id="subconfig">subConfig</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -603,6 +676,7 @@
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="location">location</h2>
+<h3 id="instruction">instruction</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -651,21 +725,156 @@
 <span class="na">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="proxy-multiport">proxy multiport</h2>
-<ul>
-<li><a href="https://blog.csdn.net/yaologos/article/details/113356620">Nginx单服务器部署多个网站，域名</a>(server)</li>
-<li><a href="https://www.jianshu.com/p/5bc9cd2271b1">Nginx配置——单域名反向代理多个端口</a>(location)</li>
-<li><a href="https://blog.csdn.net/weixin_48215755/article/details/122713914">nginx代理 1个端口+路径匹配 代理多个web</a>(location)</li>
-</ul>
+</div><h3 id="path">path</h3>
+<p><strong>location 匹配路径末尾没有 /此时 proxy_pass 后面的路径必须和 location 设置的路径一致</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location /index</span>
+<span class="na">{</span>
+  <span class="na">proxy_redirect off;</span>
+  <span class="na">proxy_set_header       Host $host;</span>
+  <span class="na">proxy_set_header       X-Real-IP $remote_addr;</span>
+  <span class="na">proxy_set_header       X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+  <span class="na">proxy_pass http://localhost:8080/index;</span>
+  <span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index/index.html">http://localhost:8080/index/index.html</a></p>
+<p><strong>location 匹配路径末尾有 /此时 proxy_pass 后面的路径需要分为以下四种情况讨论</strong></p>
+<ol>
+<li>proxy_pass 后面的路径只有域名且最后没有 /：</li>
+</ol>
+<p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index/index.html">http://localhost:8080/index/index.html</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location /index/</span>
+<span class="na">{</span>
+  <span class="na">proxy_redirect off;</span>
+  <span class="na">proxy_set_header       Host $host;</span>
+  <span class="na">proxy_set_header       X-Real-IP $remote_addr;</span>
+  <span class="na">proxy_set_header       X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+  <span class="na">proxy_pass http://localhost:8080;</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index/index.html">http://localhost:8080/index/index.html</a></p>
+<ol>
+<li>proxy_pass 后面的路径只有域名同时最后有 /：</li>
+</ol>
+<p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index.html">http://localhost:8080/index.html</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location /index/</span>
+<span class="na">{</span>
+  <span class="na">proxy_redirect off;</span>
+  <span class="na">proxy_set_header       Host $host;</span>
+  <span class="na">proxy_set_header       X-Real-IP $remote_addr;</span>
+  <span class="na">proxy_set_header       X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+  <span class="na">proxy_pass http://localhost:8080/;</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index.html">http://localhost:8080/index.html</a></p>
+<ol>
+<li>proxy_pass 后面的路径还有其他路径但是最后没有 /：</li>
+</ol>
+<p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/testindex.html">http://localhost:8080/testindex.html</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location /index/</span>
+<span class="na">{</span>
+  <span class="na">proxy_redirect off;</span>
+  <span class="na">proxy_set_header       Host $host;</span>
+  <span class="na">proxy_set_header       X-Real-IP $remote_addr;</span>
+  <span class="na">proxy_set_header       X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+  <span class="na">proxy_pass http://localhost:8080/test;</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/testindex.html">http://localhost:8080/testindex.html</a></p>
+<ol>
+<li>proxy_pass 后面的路径还有其他路径同时最后有 /：</li>
+</ol>
+<p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index/index.html">http://localhost:8080/index/index.html</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="err">location</span> <span class="err">/index/</span>
+<span class="p">{</span>
+  <span class="err">proxy_redirect</span> <span class="err">off;</span>
+  <span class="err">proxy_set_header</span>       <span class="err">Host</span> <span class="err">$host;</span>
+  <span class="err">proxy_set_header</span>       <span class="err">X-Real-IP</span> <span class="err">$remote_addr;</span>
+  <span class="err">proxy_set_header</span>       <span class="err">X-Forwarded-For</span> <span class="err">$proxy_add_x_forwarded_for;</span>
+  <span class="err">proxy_pass</span> <span class="err">http:</span><span class="c1">//localhost:8080/test/;
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>外面访问：<a href="http://romotehost/index/index.html">http://romotehost/index/index.html</a></p>
+<p>相当于访问：<a href="http://localhost:8080/index/index.html">http://localhost:8080/index/index.html</a></p>
 <h2 id="load-balancing">load balancing</h2>
 <h3 id="roll-polling-默认">roll polling 默认）</h3>
 <p>每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器 down 掉，能自动剔除。</p>
 <h3 id="weight">weight</h3>
 <p>Nginx 的负载均衡方式可以有很多种，如加权轮询(默认)、IP 哈希、url 哈希等等.</p>
 <p>加权轮询，也就是通过给服务器添加各自的权重值，Nginx 通过权重来进行请求的分配，权重越高接收到的请求数量越多，反之越少：</p>
-<figure><img src="https://pic3.zhimg.com/80/v2-fbfbfae025d0fbbebbfb7a67c5a206be_1440w.jpg"/>
-</figure>
-
+<p><img src="https://pic3.zhimg.com/80/v2-fbfbfae025d0fbbebbfb7a67c5a206be_1440w.jpg" alt=""></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -674,10 +883,10 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">upstream hello{</span>
-    <span class="na">server服务器1:8080 weight</span><span class="o">=</span><span class="s">3:#配置服务器1的权重为3
-</span><span class="s">    server服务器2:8080 weight=1;#配置服务器2的权重为1</span>
-<span class="na">}</span>
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="err">upstream</span> <span class="err">hello</span><span class="p">{</span>
+    <span class="err">server服务器1:8080</span> <span class="err">weight=3;</span> <span class="err">#配置服务器1的权重为3</span>
+    <span class="err">server服务器2:8080</span> <span class="err">weight=1;</span> <span class="err">#配置服务器2的权重为1</span>
+<span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="ip-hash">ip_hash</h3>
@@ -685,6 +894,170 @@
 <h3 id="fair">fair</h3>
 <p>（第三方）
 按后端服务器的响应时间来分配请求，响应时间短的优先分配。</p>
+<h2 id="hide-nginx-version">hide nginx version</h2>
+<p>/etc/nginx/conf.d/security.conf</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">server_tokens off;  ##隐藏nginx版本信息</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="access-control-allow">Access-Control-Allow</h2>
+<p>跨域，配置文件 nginx/conf/nginx.conf，找到 server 块， 在 location 块添加如下配置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">location / {</span>
+  <span class="c1"># 设置允许跨域的域名和端口 * 表示所有</span>
+  <span class="na">add_header Access-Control-Allow-Origin *;</span>
+
+  <span class="c1"># 也可以设置只允许某个域名访问</span>
+  <span class="c1"># add_header Access-Control-Allow-Origin &#39;http://allowdomain.com:8080&#39;;</span>
+
+  <span class="c1"># 允许跨域的方法</span>
+  <span class="na">add_header Access-Control-Allow-Methods &#39;GET, POST, OPTIONS&#39;;</span>
+
+  <span class="c1"># 允许跨域的请求头</span>
+  <span class="na">add_header Access-Control-Allow-Headers &#39;DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization&#39;;</span>
+
+  <span class="c1"># 是否跨域携带cookie</span>
+  <span class="na">add_header Access-Control-Allow-Credentials &#39;true&#39;;</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="login-authorization">login authorization</h2>
+<p>nginx 提供了 ngx_http_auth_basic_module 模块实现让用户只有输入正确的用户名密码才允许访问 web 内容。默认情况下，nginx 已经安装了该模块。</p>
+<p>先用第三方工具设置用户名、密码（其中密码已经加过密）,，然后保存到文件中，接着在 nginx 配置文件中根据之前事先保存的文件开启访问验证。</p>
+<p>生成密码可以使用 htpasswd，或者使用 openssl</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yum  -y install httpd-tools
+htpasswd -c /etc/nginx/auth username
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>nginx.conf</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js">
+<span class="nx">server</span> <span class="p">{</span>
+   <span class="nx">listen</span> <span class="mi">80</span><span class="p">;</span>
+   <span class="nx">server_name</span>  <span class="nx">localhost</span><span class="p">;</span>
+
+    <span class="c1">// 位于server 下
+</span><span class="c1"></span>   <span class="nx">auth_basic</span> <span class="s2">&#34;Please input password&#34;</span><span class="p">;</span>
+   <span class="nx">auth_basic_user_file</span> <span class="o">/</span><span class="nx">usr</span><span class="o">/</span><span class="nx">local</span><span class="o">/</span><span class="nx">nginx</span><span class="o">/</span><span class="nx">passwd</span><span class="p">;</span>
+   <span class="p">.......</span>
+
+  <span class="nx">location</span> <span class="o">/</span><span class="nx">lvshuocoding</span>
+      <span class="p">{</span>
+        <span class="nx">autoindex</span> <span class="nx">on</span><span class="p">;</span>
+        <span class="c1">// 位于location下
+</span><span class="c1"></span>        <span class="nx">auth_basic</span> <span class="s2">&#34;Please input password&#34;</span><span class="p">;</span>
+        <span class="nx">auth_basic_user_file</span> <span class="o">/</span><span class="nx">usr</span><span class="o">/</span><span class="nx">local</span><span class="o">/</span><span class="nx">nginx</span><span class="o">/</span><span class="nx">passwd</span><span class="p">;</span>
+      <span class="p">}</span>
+
+   <span class="p">.......</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>htpasswd</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># change passwd  username:lvshuo</span>
+htpasswd -D passwd lvshuo
+htpasswd -b passwd lvshuo <span class="m">123456</span>
+
+<span class="c1"># 在原有密码文件中增加</span>
+htpasswd -b ./.passwd onlyzq pass
+</code></pre></td></tr></table>
+</div>
+</div><p>htpasswd 命令选项参数说明</p>
+<ul>
+<li>
+<p>-c 创建一个加密文件</p>
+</li>
+<li>
+<p>-n 不更新加密文件，只将 htpasswd 命令加密后的用户名密码显示在屏幕上</p>
+</li>
+<li>
+<p>-m 默认 htpassswd 命令采用 MD5 算法对密码进行加密</p>
+</li>
+<li>
+<p>-d htpassswd 命令采用 CRYPT 算法对密码进行加密</p>
+</li>
+<li>
+<p>-p htpassswd 命令不对密码进行进行加密，即明文密码</p>
+</li>
+<li>
+<p>-s htpassswd 命令采用 SHA 算法对密码进行加密</p>
+</li>
+<li>
+<p>-b htpassswd 命令行中一并输入用户名和密码而不是根据提示输入密码</p>
+</li>
+<li>
+<p>-D 删除指定的用户</p>
+</li>
+<li>
+<p>reference: <a href="https://blog.csdn.net/lvshuocool/article/details/102783544">nginx配置目录访问密码</a></p>
+</li>
+</ul>
 <h2 id="operate">operate</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -700,11 +1073,23 @@ nginx -s stop
 nginx -s quit
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="ref">Ref</h2>
+</div><h2 id="note">note</h2>
+<ul>
+<li>分离式配置中
+<ul>
+<li>listen 同一个 port 和 server_name 的 sever 模块的内容要写在一直。若分开多个文件，在 nginx.conf 中 include，后面的 sever 模块中的 location 无法生效。</li>
+<li>listen 同一 port 但 server_name 的 server 模块可以分不同的配置文件加载。</li>
+</ul>
+</li>
+</ul>
+<h2 id="ref">Ref</h2>
 <ul>
 <li><a href="https://www.runoob.com/w3cnote/nginx-setup-intro.html">Nginx 配置详解</a></li>
 <li><a href="https://www.cnblogs.com/54chensongxia/p/12938929.html">Nginx配置文件详解</a></li>
 <li><a href="https://www.jianshu.com/p/1037e6929f54">nginx.conf的结构和基础配置解析</a></li>
+<li><a href="https://mp.weixin.qq.com/s/jroF7nIqhU4aAXdxO6jATw">nginx 配置项说明</a></li>
+<li><a href="https://mp.weixin.qq.com/s/LSmD0cfBGADEg8cToS_s0A">nginx常用超时时间设置</a></li>
+<li><a href="https://mp.weixin.qq.com/s/clvboOhcnGf8sWz8IC0gIg">深入理解Nginx工作原理及优化技巧</a> - refine</li>
 </ul>
 
   </div>

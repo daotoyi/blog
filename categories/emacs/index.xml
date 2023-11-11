@@ -6,7 +6,97 @@
     <description>Recent content in emacs on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Apr 2023 11:06:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 19:37:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs 设置选中区域的颜色</title>
+      <link>https://daotoyi.github.io/post/emacs-region-selected-color-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-region-selected-color-set/</guid>
+      <description>emacs 行显示和选中区域的颜色均是灰色，比较难区分，如下修改方式可用。 操作步骤 M-x customize-face &amp;lt;回车&amp;gt; Customize-face （default ‘all face’） &amp;lt;Tab 补全</description>
+    </item>
+    
+    <item>
+      <title>Emacs 设置选中区域的颜色</title>
+      <link>https://daotoyi.github.io/posts/emacs-region-selected-color-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-region-selected-color-set/</guid>
+      <description>emacs 行显示和选中区域的颜色均是灰色，比较难区分，如下修改方式可用。 操作步骤 M-x customize-face &amp;lt;回车&amp;gt; Customize-face （default ‘all face’） &amp;lt;Tab 补全</description>
+    </item>
+    
+    <item>
+      <title>Emacs 中文显示乱码</title>
+      <link>https://daotoyi.github.io/post/emacs-chinese-show-errors/</link>
+      <pubDate>Fri, 06 Oct 2023 19:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-chinese-show-errors/</guid>
+      <description>Emacs打开中文乱码 有时使用emacs打开文件的时候，会显示乱码。原因是emacs默认编码跟文档编码不同而出现了乱码。 1 当前buffer调</description>
+    </item>
+    
+    <item>
+      <title>Emacs 中文显示乱码</title>
+      <link>https://daotoyi.github.io/posts/emacs-chinese-show-errors/</link>
+      <pubDate>Fri, 06 Oct 2023 19:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-chinese-show-errors/</guid>
+      <description>Emacs打开中文乱码 有时使用emacs打开文件的时候，会显示乱码。原因是emacs默认编码跟文档编码不同而出现了乱码。 1 当前buffer调</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell(putty) config</title>
+      <link>https://daotoyi.github.io/post/emacs-shell-putty-config/</link>
+      <pubDate>Fri, 06 Oct 2023 19:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-shell-putty-config/</guid>
+      <description>Emacs Config init.el — EmacsEntrance ;; (setq explicit-shell-file-name “plink”) ;; (setq shell-file-name explicit-shell-file-name) (add-to-list &amp;lsquo;exec-path “path/to/PuTTY”) 或者 (setenv “PATH” (concat “/mingw64/bin:/usr/loc</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell(putty) config</title>
+      <link>https://daotoyi.github.io/posts/emacs-shell-putty-config/</link>
+      <pubDate>Fri, 06 Oct 2023 19:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-shell-putty-config/</guid>
+      <description>Emacs Config init.el — EmacsEntrance ;; (setq explicit-shell-file-name “plink”) ;; (setq shell-file-name explicit-shell-file-name) (add-to-list &amp;lsquo;exec-path “path/to/PuTTY”) 或者 (setenv “PATH” (concat “/mingw64/bin:/usr/loc</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell-mode 中文显示乱码</title>
+      <link>https://daotoyi.github.io/post/emacs-shell-mode-chinese-show-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-shell-mode-chinese-show-error/</guid>
+      <description>Emacs shell-mode中文显示乱码 M-x shell ssh root@192.168.220.136 Pseudo-terminal will not be allocated because stdin is not a terminal. δ 쳣: System.TypeInitializationException: Microsoft.Alm.Cli.Program ͳ ʼֵ 趨 쳣 —&amp;gt; System.IO.FileNotFoundException: δ ܼ ļ 򼯡 AzureDevOps.Authentication, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null ĳһ ϵͳ Ҳ ָ ļ Micros</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell-mode 中文显示乱码</title>
+      <link>https://daotoyi.github.io/posts/emacs-shell-mode-chinese-show-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-shell-mode-chinese-show-error/</guid>
+      <description>Emacs shell-mode中文显示乱码 M-x shell ssh root@192.168.220.136 Pseudo-terminal will not be allocated because stdin is not a terminal. δ 쳣: System.TypeInitializationException: Microsoft.Alm.Cli.Program ͳ ʼֵ 趨 쳣 —&amp;gt; System.IO.FileNotFoundException: δ ܼ ļ 򼯡 AzureDevOps.Authentication, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null ĳһ ϵͳ Ҳ ָ ļ Micros</description>
+    </item>
+    
+    <item>
+      <title>Org &lt;TAB&gt;键无法展开视图</title>
+      <link>https://daotoyi.github.io/post/emacs-org-tab-key-view/</link>
+      <pubDate>Fri, 06 Oct 2023 19:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-tab-key-view/</guid>
+      <description>说明 Linux系统，Emacs的org-mode使用evil插件时，&amp;lt;TAB&amp;gt;键无法展开视图。 Windows下正常。 解决 在ema</description>
+    </item>
+    
+    <item>
+      <title>Org &lt;TAB&gt;键无法展开视图</title>
+      <link>https://daotoyi.github.io/posts/emacs-org-tab-key-view/</link>
+      <pubDate>Fri, 06 Oct 2023 19:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/emacs-org-tab-key-view/</guid>
+      <description>说明 Linux系统，Emacs的org-mode使用evil插件时，&amp;lt;TAB&amp;gt;键无法展开视图。 Windows下正常。 解决 在ema</description>
+    </item>
+    
     <item>
       <title>Babel</title>
       <link>https://daotoyi.github.io/post/emacs-org-babel/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in Tags on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2023 15:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 07:37:46 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vuepress</title>
+      <link>https://daotoyi.github.io/tags/vuepress/</link>
+      <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/vuepress/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>shell</title>
       <link>https://daotoyi.github.io/tags/shell/</link>
@@ -35,20 +44,20 @@
     </item>
     
     <item>
+      <title>windows</title>
+      <link>https://daotoyi.github.io/tags/windows/</link>
+      <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cmd</title>
       <link>https://daotoyi.github.io/tags/cmd/</link>
       <pubDate>Sun, 04 Jun 2023 21:12:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/tags/cmd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vuepress</title>
-      <link>https://daotoyi.github.io/tags/vuepress/</link>
-      <pubDate>Mon, 20 Mar 2023 23:42:34 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/tags/vuepress/</guid>
       <description></description>
     </item>
     
@@ -76,6 +85,15 @@
       <pubDate>Fri, 30 Dec 2022 19:35:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/tags/org/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spacemacs</title>
+      <link>https://daotoyi.github.io/tags/spacemacs/</link>
+      <pubDate>Fri, 25 Nov 2022 23:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/tags/spacemacs/</guid>
       <description></description>
     </item>
     
@@ -253,7 +271,7 @@
     <item>
       <title>Cert</title>
       <link>https://daotoyi.github.io/tags/cert/</link>
-      <pubDate>Mon, 04 Apr 2022 18:52:00 +0000</pubDate>
+      <pubDate>Mon, 04 Apr 2022 22:33:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/tags/cert/</guid>
       <description></description>

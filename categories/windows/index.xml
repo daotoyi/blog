@@ -6,7 +6,43 @@
     <description>Recent content in Windows on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Aug 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 19:32:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Office Update (应用程序无法正常启动)</title>
+      <link>https://daotoyi.github.io/post/windows-office-update-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:32:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-office-update-error/</guid>
+      <description>前言 有时候打开office套件，如word，outlook时，会弹出正在更新 Office，请稍候，然后弹出一个错误框应用程序无法正常启动(0</description>
+    </item>
+    
+    <item>
+      <title>Windows Office Update (应用程序无法正常启动)</title>
+      <link>https://daotoyi.github.io/posts/windows-office-update-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:32:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-office-update-error/</guid>
+      <description>前言 有时候打开office套件，如word，outlook时，会弹出正在更新 Office，请稍候，然后弹出一个错误框应用程序无法正常启动(0</description>
+    </item>
+    
+    <item>
+      <title>Windows WSL</title>
+      <link>https://daotoyi.github.io/post/windows-wsl/</link>
+      <pubDate>Fri, 06 Oct 2023 19:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-wsl/</guid>
+      <description>basic 1 2 3 wsl --set-default-version 2 wsl --install -d Ubuntu-22.04 wsl --list --online config 修改wsl终端字体 窗口属性（临时） 右击，选择&amp;quot;属性&amp;quot;，弹出的窗口中选择字体进行修改。 注册表</description>
+    </item>
+    
+    <item>
+      <title>Windows WSL</title>
+      <link>https://daotoyi.github.io/posts/windows-wsl/</link>
+      <pubDate>Fri, 06 Oct 2023 19:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/windows-wsl/</guid>
+      <description>basic 1 2 3 wsl --set-default-version 2 wsl --install -d Ubuntu-22.04 wsl --list --online config 修改wsl终端字体 窗口属性（临时） 右击，选择&amp;quot;属性&amp;quot;，弹出的窗口中选择字体进行修改。 注册表</description>
+    </item>
+    
     <item>
       <title>Windows C 盘清理</title>
       <link>https://daotoyi.github.io/post/windows-clear-c-disk/</link>

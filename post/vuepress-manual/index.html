@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/vuepress-manual/" /><meta property="article:section" content="post" />
 
-<meta property="article:modified_time" content="2023-10-06T20:00:22+08:00" />
+<meta property="article:modified_time" content="2023-11-11T22:15:47+08:00" />
 
 <meta itemprop="name" content="Vuepress 使用小结">
 <meta itemprop="description" content="CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress">
-<meta itemprop="dateModified" content="2023-10-06T20:00:22+08:00" />
-<meta itemprop="wordCount" content="1235">
+<meta itemprop="dateModified" content="2023-11-11T22:15:47+08:00" />
+<meta itemprop="wordCount" content="1341">
 <meta itemprop="keywords" content="Vuepress," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Vuepress 使用小结"/>
 <meta name="twitter:description" content="CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress"/>
@@ -132,11 +132,11 @@
       <h1 class="post-title">Vuepress 使用小结</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2023-03-20 </span>
+        <span class="post-time"> 2023-10-11 </span>
         <div class="post-category">
             <a href="/categories/vps/"> VPS </a>
             </div>
-          <span class="more-meta"> 1235 words </span>
+          <span class="more-meta"> 1341 words </span>
           <span class="more-meta"> 3 mins read </span>
         
       </div>
@@ -160,11 +160,12 @@
             <li><a href="#定时推送百度">定时推送百度</a></li>
           </ul>
         </li>
-        <li><a href="#note">Note</a>
+        <li><a href="#faq">FAQ</a>
           <ul>
             <li><a href="#configuration">configuration</a></li>
             <li><a href="#markdown">markdown</a></li>
             <li><a href="#build">build</a></li>
+            <li><a href="#process-out-of-memory">process out of memory</a></li>
           </ul>
         </li>
         <li><a href="#reference">Reference</a></li>
@@ -453,7 +454,7 @@ mkdir docs <span class="o">&amp;&amp;</span>  <span class="nb">echo</span> <span
 </span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">npm install &amp;&amp; npm run baiduPush</span><span class="w"> </span><span class="c"># 运行命令。（注意，运行目录是仓库根目录）</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
-</div><h2 id="note">Note</h2>
+</div><h2 id="faq">FAQ</h2>
 <h3 id="configuration">configuration</h3>
 <ul>
 <li>使用 npm 管理安装，dev 启动时插件加载会异常</li>
@@ -486,6 +487,34 @@ mkdir docs <span class="o">&amp;&amp;</span>  <span class="nb">echo</span> <span
 </ul>
 <h3 id="build">build</h3>
 <p>如果 md 文件内容有问题，如找不到链接图片，在 dev 模式时，可以正常运行，但在 build 模式时无法正常生成。</p>
+<h3 id="process-out-of-memory">process out of memory</h3>
+<h4 id="fatal-error-zone-allocation-failed-process-out-of-memory"><strong>FATAL ERROR: Zone Allocation failed - process out of memory</strong></h4>
+<ul>
+<li>reason
+<ul>
+<li>node 内存溢出的问题。</li>
+</ul>
+</li>
+<li>resolve
+<ul>
+<li>
+<p>设置 node 进程可占用的内存，通过设置一个大内存占用来解决该问题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install -g increase-memory-limit
+increase-memory-limit
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+<h4 id="node-max-old-space-size-10240-不是内部或外部命令-也不是可运行的程序或批处理文件"><strong>&ldquo;node &ndash;max-old-space-size=10240&rdquo; 不是内部或外部命令，也不是可运行的程序或批处理文件</strong></h4>
+<p>在 node_modules\.bin\vuepress.cmd 中搜索 &ldquo;%_prog%&rdquo; 替换成 %_prog% (即去掉双引号)</p>
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="http://caibaojian.com/vuepress/guide/">VuePress中文网</a></li>
@@ -507,8 +536,8 @@ mkdir docs <span class="o">&amp;&amp;</span>  <span class="nb">echo</span> <span
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2023-10-06
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/b2f5e72168b1bca40ff118e9bdc108b382809605" title="update">(b2f5e72)</a>
+        2023-11-11
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/82eec09998b5b9f8d3126115d5bc662b88cce261" title="update weekly">(82eec09)</a>
     </span>
   </p>
   
@@ -519,13 +548,13 @@ mkdir docs <span class="o">&amp;&amp;</span>  <span class="nb">echo</span> <span
           <a href="/tags/vuepress/">Vuepress</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/emacs-org-babel/">
+        <a class="prev" href="/post/hardware-trusted-platform-module/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Babel</span>
+            <span class="prev-text nav-default">TPM 可信平台模块</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/linux-shell-e/">
-            <span class="next-text nav-default">Linux shell 脚本中-e 参数</span>
+        <a class="next" href="/post/emacs-region-selected-color-set/">
+            <span class="next-text nav-default">Emacs 设置选中区域的颜色</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

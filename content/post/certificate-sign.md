@@ -1,7 +1,7 @@
 ---
 title: "SSL 证书签发"
 date: "2022-04-04 18:52:00"
-lastmod: "2023-10-17 14:34:33"
+lastmod: "2023-11-16 20:00:12"
 tags: ["SSL", "Cert"]
 categories: ["Internet"]
 draft: false
@@ -226,25 +226,187 @@ acme.sh --install-cert -d example.com --fullchain-file /etc/ssl/xray/cert.pem --
 > 以下操作需要在 root 用户下进行，使用 sudo 会出现错误。
 
 
+## acme docker {#acme-docker}
+
+
+### config {#config}
+
+```bash
+acme_DP(){
+  # dnspod tencent
+  local domian=$1
+  export DP_Id="453877"
+  export DP_Key="b91549269094"
+
+  docker exec acme.sh \
+    --register-account -m xxx@gmail.com \
+    --server zerossl \
+    --issue --dns dns_dp \
+    -d $domain \
+    -d *.$domain
+}
+
+acme_CF(){
+  # cloudflare
+  local domian=$1
+  docker exec acme.sh \
+    --register-account -m xxx@gmail.com \
+    --server zerossl \
+    --issue --dns dns_cf \
+    -d $domain \
+    -d *.$domain
+}
+
+docker_acme(){
+  local domain=${PAR3}
+
+  acme_DP $domain
+  # acme_CF $domain
+
+  docker run  -itd  \
+    --name=acme.sh \
+    --restart=always \
+    -e DP_Id="453877" \
+    -e DP_Key="b9154926909467" \
+    -v ${CURRENT_PATH}/etc/cert/acme:/acme.sh  \
+    --net=host \
+    neilpang/acme.sh daemon
+
+}
+docker_acme mydomain.com
+```
+
+
+### useage {#useage}
+
+-   zerossl 得先注册
+
+执行后会有报错：
+
+```text
+[Mon Nov 13 15:06:56 UTC 2023] Using CA: https://acme.zerossl.com/v2/DV90
+[Mon Nov 13 15:06:56 UTC 2023] Create account key ok.
+[Mon Nov 13 15:06:57 UTC 2023] No EAB credentials found for ZeroSSL, let's get one
+[Mon Nov 13 15:06:57 UTC 2023] Registering account: https://acme.zerossl.com/v2/DV90
+[Mon Nov 13 15:06:59 UTC 2023] Registered
+[Mon Nov 13 15:06:59 UTC 2023] ACCOUNT_THUMBPRINT='lQioZXHy7OqnUjApEz8OXKOyP15qQX9G9R7ezHKbOIc'
+[Mon Nov 13 15:06:59 UTC 2023] Creating domain key
+[Mon Nov 13 15:06:59 UTC 2023] The domain key is here: /acme.sh/dyinvest.cn_ecc/dyinvest.cn.key
+[Mon Nov 13 15:06:59 UTC 2023] Multi domain='DNS:dyinvest.cn,DNS:*.dyinvest.cn'
+[Mon Nov 13 15:06:59 UTC 2023] Getting domain auth token for each domain
+[Mon Nov 13 15:07:02 UTC 2023] Getting webroot for domain='dyinvest.cn'
+[Mon Nov 13 15:07:02 UTC 2023] Getting webroot for domain='*.dyinvest.cn'
+[Mon Nov 13 15:07:02 UTC 2023] Adding txt value: 1JluaQ6nfTs4hfv26rqkWvn4_HlfF4KWXuAfqjbt48U for domain:  _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:07:02 UTC 2023] You don't specify dnspod api key and key id yet.
+[Mon Nov 13 15:07:02 UTC 2023] Please create you key and try again.
+[Mon Nov 13 15:07:02 UTC 2023] Error add txt for domain:_acme-challenge.dyinvest.cn
+[Mon Nov 13 15:07:02 UTC 2023] Please add '--debug' or '--log' to check more details.
+[Mon Nov 13 15:07:02 UTC 2023] See: https://github.com/acmesh-official/acme.sh/wiki/How-to-debug-acme.sh
+```
+
+> [Mon Nov 13 15:07:02 UTC 2023] Adding txt value: 1JluaQ6nfTs4hfv26rqkWvn4_HlfF4KWXuAfqjbt48U for domain:  \_acme-challenge.dyinvest.cn
+> [Mon Nov 13 15:07:02 UTC 2023] You don't specify dnspod api key and key id yet.
+
+需要手动添加 txt value: **1JluaQ6nfTs4hfv26rqkWvn4_HlfF4KWXuAfqjbt48U** for domain:  **\_acme-challenge.dyinvest.cn** ，之后执行：
+
+```text
+[Mon Nov 13 15:12:45 UTC 2023] Using CA: https://acme.zerossl.com/v2/DV90
+[Mon Nov 13 15:12:45 UTC 2023] Multi domain='DNS:dyinvest.cn,DNS:*.dyinvest.cn'
+[Mon Nov 13 15:12:45 UTC 2023] Getting domain auth token for each domain
+[Mon Nov 13 15:12:49 UTC 2023] Getting webroot for domain='dyinvest.cn'
+[Mon Nov 13 15:12:49 UTC 2023] Getting webroot for domain='*.dyinvest.cn'
+[Mon Nov 13 15:12:49 UTC 2023] Adding txt value: y-QFfkoBO_qYcfLoqpSk5hSLS8AOpm49CkFlA1WfdPY for domain:  _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:12:51 UTC 2023] Adding record
+[Mon Nov 13 15:12:53 UTC 2023] The txt record is added: Success.
+[Mon Nov 13 15:12:53 UTC 2023] Adding txt value: 4OXYUv4e3rOuT5cszW5esdIWzr-KJOZUmLTr3pyD9oI for domain:  _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:12:54 UTC 2023] Adding record
+[Mon Nov 13 15:12:55 UTC 2023] The txt record is added: Success.
+[Mon Nov 13 15:12:55 UTC 2023] Let's check each DNS record now. Sleep 20 seconds first.
+[Mon Nov 13 15:13:15 UTC 2023] You can use '--dnssleep' to disable public dns checks.
+[Mon Nov 13 15:13:15 UTC 2023] See: https://github.com/acmesh-official/acme.sh/wiki/dnscheck
+[Mon Nov 13 15:13:15 UTC 2023] Checking dyinvest.cn for _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:13:16 UTC 2023] Domain dyinvest.cn '_acme-challenge.dyinvest.cn' success.
+[Mon Nov 13 15:13:16 UTC 2023] Checking dyinvest.cn for _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:13:17 UTC 2023] Domain dyinvest.cn '_acme-challenge.dyinvest.cn' success.
+[Mon Nov 13 15:13:17 UTC 2023] All success, let's return
+[Mon Nov 13 15:13:17 UTC 2023] Verifying: dyinvest.cn
+[Mon Nov 13 15:13:18 UTC 2023] Processing, The CA is processing your order, please just wait. (1/30)
+[Mon Nov 13 15:13:20 UTC 2023] Success
+[Mon Nov 13 15:13:20 UTC 2023] Verifying: *.dyinvest.cn
+[Mon Nov 13 15:13:22 UTC 2023] Processing, The CA is processing your order, please just wait. (1/30)
+[Mon Nov 13 15:13:24 UTC 2023] Success
+[Mon Nov 13 15:13:24 UTC 2023] Removing DNS records.
+[Mon Nov 13 15:13:24 UTC 2023] Removing txt: y-QFfkoBO_qYcfLoqpSk5hSLS8AOpm49CkFlA1WfdPY for domain: _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:13:27 UTC 2023] Removed: Success
+[Mon Nov 13 15:13:27 UTC 2023] Removing txt: 4OXYUv4e3rOuT5cszW5esdIWzr-KJOZUmLTr3pyD9oI for domain: _acme-challenge.dyinvest.cn
+[Mon Nov 13 15:13:30 UTC 2023] Removed: Success
+[Mon Nov 13 15:13:30 UTC 2023] Verify finished, start to sign.
+[Mon Nov 13 15:13:30 UTC 2023] Lets finalize the order.
+[Mon Nov 13 15:13:30 UTC 2023] Le_OrderFinalize='https://acme.zerossl.com/v2/DV90/order/zYRBi1EOFx6fMgRxlYGH6Q/finalize'
+[Mon Nov 13 15:13:31 UTC 2023] Order status is processing, lets sleep and retry.
+[Mon Nov 13 15:13:31 UTC 2023] Retry after: 15
+[Mon Nov 13 15:13:46 UTC 2023] Polling order status: https://acme.zerossl.com/v2/DV90/order/zYRBi1EOFx6fMgRxlYGH6Q
+[Mon Nov 13 15:13:47 UTC 2023] Downloading cert.
+[Mon Nov 13 15:13:47 UTC 2023] Le_LinkCert='https://acme.zerossl.com/v2/DV90/cert/C_6NBtv-STVFbxHQdBj0Nw'
+[Mon Nov 13 15:13:48 UTC 2023] Cert success.
+-----BEGIN CERTIFICATE-----
+MIIECDCCA46gAwIBAgIQFIIVvJfunrrKJZL/CMWeMjAKBggqhkjOPQQDAzBLMQsw
+CQYDVQQGEwJBVDEQMA4GA1UEChMHWmVyb1NTTDEqMCgGA1UEAxMhWmVyb1NTTCBF
+Q0MgRG9tYWluIFNlY3VyZSBTaXRlIENBMB4XDTIzMTExMzAwMDAwMFoXDTI0MDIx
+MTIzNTk1OVowFjEUMBIGA1UEAxMLZHlpbnZlc3QuY24wWTATBgcqhkjOPQIBBggq
+hkjOPQMBBwNCAAQgwr2myAjal/QULIiLq64X00wYl4uOSayhzXAyXodFQ0CEhMS8
+TM4FH2X4Mps47p6IlFXRN3EtFee0BxyqIuvDo4IChzCCAoMwHwYDVR0jBBgwFoAU
+D2vmS845R672fpAeefAwkZLIX6MwHQYDVR0OBBYEFOvy2sk8hGSvYD7fb7P2S9dR
+3bn9MA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsG
+AQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJOMCUwIwYI
+KwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATCBiAYI
+KwYBBQUHAQEEfDB6MEsGCCsGAQUFBzAChj9odHRwOi8vemVyb3NzbC5jcnQuc2Vj
+dGlnby5jb20vWmVyb1NTTEVDQ0RvbWFpblNlY3VyZVNpdGVDQS5jcnQwKwYIKwYB
+BQUHMAGGH2h0dHA6Ly96ZXJvc3NsLm9jc3Auc2VjdGlnby5jb20wggEFBgorBgEE
+AdZ5AgQCBIH2BIHzAPEAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6
+dAAAAYvJPrcfAAAEAwBHMEUCIQCbh0SUSSGJk9bG/1alYcpDK9Kpi/wSfFDYymA6
+c1X2dAIgG6XpD5Z5Cv+8bK94pBvJt1WcTZSF7W/IhoruofdbThoAdwA7U3d1Pi25
+gE6LMFsG/kA7Z9hPw/THvQANLXJv4frUFwAAAYvJPrdAAAAEAwBIMEYCIQCGMGIZ
+h+ga86pfLfarg7VtUJHWT527Qu4pYWPvh6uGLQIhAIZAcz7UWIwDNquqyPp01thH
+7q4q04oKaWjgrrSlUg+qMCUGA1UdEQQeMByCC2R5aW52ZXN0LmNugg0qLmR5aW52
+ZXN0LmNuMAoGCCqGSM49BAMDA2gAMGUCMD8FsmEqH4la2jA9fA07T7s3z2DuMQY7
+TQteQ3KXuc4nyz2nNhnsTqLljpshLK/L7gIxAKxeunGVJcBUqP6rv9k+I7SJlT49
+WuDgub0ZFmJIyTUKXzdiathxUgTVQqeXtDWJ0g==
+-----END CERTIFICATE-----
+```
+
+生成以下文件：
+
+> -rw-r--r-- 1 root root 2668 Nov 13 10:13 ca.cer
+> -rw-r--r-- 1 root root 1460 Nov 13 10:13 dyinvest.cn.cer
+> -rw-r--r-- 1 root root  566 Nov 13 10:13 dyinvest.cn.conf
+> -rw-r--r-- 1 root root  477 Nov 13 10:12 dyinvest.cn.csr
+> -rw-r--r-- 1 root root  202 Nov 13 10:12 dyinvest.cn.csr.conf
+> -rw------- 1 root root  227 Nov 13 09:38 dyinvest.cn.key
+> -rw-r--r-- 1 root root 4128 Nov 13 10:13 fullchain.cer
+
+
+### reference {#reference}
+
+-   [使用docker部署nginx并配置https](https://www.cnblogs.com/tandk-blog/p/15449873.html)
+-   [docker运行acme.sh 安装配置泛域名证书](https://www.cnblogs.com/-mrl/p/13335360.html)
+-   [acme从letsencrypt 生成免费通配符/泛域名SSL证书并自动续期](https://cloud.tencent.com/developer/article/1736866)
+
+
 ## Note {#note}
 
--   [SSL证书申请与配置acme.sh和certbot](https://page.syao.fun/2020/09/11/web_caddy.html)
-
-由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用--test 参数可以有效避免因短时间内申请次数过多而失败。
-
-**acme.sh 在 V3.00 之后默认服务器更换为 ZeroSSL, 不存在短期内申请次数过多而申请受限的问题.**
+-   由于 Let’s Encrypt 对域名申请证书分次数有一定限制，在测试的时候使用--test 参数可以有效避免因短时间内申请次数过多而失败。
+-   **acme.sh 在 V3.00 之后默认服务器更换为 ZeroSSL, 不存在短期内申请次数过多而申请受限的问题.**
+-   腾讯云对于免费的证书限制：
+    1.  免费证书不能通配。就是上面说的，虽然同属于 tandk.com 这个主域名，但是我每多一个子域名，比如 blog.tandk.com，就需要再去申请一个专属于 blog.tandk.com 的 ssl 证书。
+    2.  一个主域名只能申请 20 张 ssl 证书。
+    3.  证书吊销后，还会在 15 个月内，占用这 20 个证书的名额。
 
 
 ## Reference {#reference}
 
-
-### [使用Let's Encrypt的acme.sh申请泛域名证书](https://www.psay.cn/toss/126.html) {#使用let-s-encrypt的acme-dot-sh申请泛域名证书}
-
-
-### [Github Action 部署 acme.sh 全自动批量签发多域名证书教程](https://www.ioiox.com/archives/104.html) {#github-action-部署-acme-dot-sh-全自动批量签发多域名证书教程}
-
-
-### [解決使用acme.sh申请zerossl证书出现timeout的解决方法](https://www.vpslala.com/t/746) {#解決使用acme-dot-sh申请zerossl证书出现timeout的解决方法}
-
-
-### [Let's Encrypt 官网信息](https://letsencrypt.org/zh-cn/docs/faq/) {#let-s-encrypt-官网信息}
+-   [使用Let's Encrypt的acme.sh申请泛域名证书](https://www.psay.cn/toss/126.html)
+-   [Github Action 部署 acme.sh 全自动批量签发多域名证书教程](https://www.ioiox.com/archives/104.html)
+-   [解決使用acme.sh申请zerossl证书出现timeout的解决方法](https://www.vpslala.com/t/746)
+-   [Let's Encrypt 官网信息](https://letsencrypt.org/zh-cn/docs/faq/)
+-   [SSL证书申请与配置acme.sh和certbot](https://page.syao.fun/2020/09/11/web_caddy.html)

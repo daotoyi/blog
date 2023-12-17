@@ -1,7 +1,7 @@
 ---
 title: "Nginx"
 date: "2022-04-04 23:44:00"
-lastmod: "2023-11-11 14:22:30"
+lastmod: "2023-12-17 18:39:38"
 categories: ["Internet"]
 draft: false
 ---
@@ -585,6 +585,37 @@ location / {
 ```
 
 
+## Index of download {#index-of-download}
+
+-   conf.d/downloads.conf
+
+    ```cfg
+    server {
+        listen       80;
+        server_name  downloads.domain.com;
+
+     location / {
+         alias /downloads/;
+
+            if ($request_filename ~* ^.*?\.(html|doc|pdf|zip|docx|txt)$) {
+                add_header Content-Disposition attachment;
+                add_header Content-Type application/octet-stream;
+            }
+                sendfile on;
+                autoindex on;
+                autoindex_format html;
+                autoindex_exact_size off;
+                autoindex_localtime on;
+                charset utf-8,gbk;
+     }
+    }
+    ```
+
+    重启：docker exec nginx nginx -s reload
+
+    将文件从本地上传到 downloads 目录中，即可通过链接发送给他人供其下载。
+
+
 ## login authorization {#login-authorization}
 
 nginx 提供了 ngx_http_auth_basic_module 模块实现让用户只有输入正确的用户名密码才允许访问 web 内容。默认情况下，nginx 已经安装了该模块。
@@ -593,40 +624,47 @@ nginx 提供了 ngx_http_auth_basic_module 模块实现让用户只有输入正�
 
 生成密码可以使用 htpasswd，或者使用 openssl
 
+
+### tools {#tools}
+
 ```bash
 yum  -y install httpd-tools
 htpasswd -c /etc/nginx/auth username
+
+openssl passwd <your_password>
 ```
 
--   nginx.conf
 
-<!--listend-->
+### nginx.conf {#nginx-dot-conf}
 
 ```js
-
 server {
-   listen 80;
-   server_name  localhost;
+    listen 80;
+    server_name  localhost;
 
     // 位于server 下
-   auth_basic "Please input password";
-   auth_basic_user_file /usr/local/nginx/passwd;
-   .......
+    auth_basic "Please input password";
+    auth_basic_user_file /usr/local/nginx/passwd;
+    .......
 
-  location /lvshuocoding
-      {
+    location /lvshuocoding {
         autoindex on;
         // 位于location下
         auth_basic "Please input password";
         auth_basic_user_file /usr/local/nginx/passwd;
-      }
+    }
 
-   .......
+    // 在已经要求身份认证的父目录下，可以对特定的子目录取消身份验证要求
+    loaction <subroute_match_rules> {
+        auth_basic off;
+    }
+    .......
 ```
 
--   htpasswd
+在多数情况下，auth_basic 不生效的原因就是由于路径匹配有误。
 
-<!--listend-->
+
+### htpasswd {#htpasswd}
 
 ```bash
 # change passwd  username:lvshuo
@@ -648,7 +686,11 @@ htpasswd 命令选项参数说明
 -   -b htpassswd 命令行中一并输入用户名和密码而不是根据提示输入密码
 -   -D 删除指定的用户
 
--   reference: [nginx配置目录访问密码](https://blog.csdn.net/lvshuocool/article/details/102783544)
+
+### reference {#reference}
+
+-   [nginx配置目录访问密码](https://blog.csdn.net/lvshuocool/article/details/102783544)
+-   [配置 Nginx auth_basic 身份验证](https://blog.csdn.net/qq_44633541/article/details/124370705)
 
 
 ## operate {#operate}
@@ -664,15 +706,19 @@ nginx -s quit
 ## note {#note}
 
 -   分离式配置中
-    -   listen 同一个 port 和 server_name 的 sever 模块的内容要写在一直。若分开多个文件，在 nginx.conf 中 include，后面的 sever 模块中的 location 无法生效。
-    -   listen 同一 port 但 server_name 的 server 模块可以分不同的配置文件加载。
+    -   **listen 同一个 port 和 server_name 的 sever 模块的内容要写在一起。**
+        -   **若分开多个文件，在 nginx.conf 中 include，后面的 sever 模块中的 location 无法生效。**
+    -   listen 同一 port 但不同 server_name 的 server 模块可以分不同的配置文件加载。
 
 
 ## Ref {#ref}
 
 -   [Nginx 配置详解](https://www.runoob.com/w3cnote/nginx-setup-intro.html)
 -   [Nginx配置文件详解](https://www.cnblogs.com/54chensongxia/p/12938929.html)
+-   [nginx 一把梭！（超详细讲解+实操）](https://mp.weixin.qq.com/s/D-YnmePJsjmwcLA-0Mk3fw)
+-   [全网最详细nginx配置详解](https://mp.weixin.qq.com/s/y0KtFDsCOwfbbFVhjvVy1Q?poc_token=HDyyfmWjoKd4Ak2IyBAYr3_RPszIi7TaFOglCoCE)
 -   [nginx.conf的结构和基础配置解析](https://www.jianshu.com/p/1037e6929f54)
 -   [nginx 配置项说明](https://mp.weixin.qq.com/s/jroF7nIqhU4aAXdxO6jATw)
 -   [nginx常用超时时间设置](https://mp.weixin.qq.com/s/LSmD0cfBGADEg8cToS_s0A)
 -   [深入理解Nginx工作原理及优化技巧](https://mp.weixin.qq.com/s/clvboOhcnGf8sWz8IC0gIg) - refine
+-   [Nginx: 最常见的 2 中 http to https 跳转场景](https://mp.weixin.qq.com/s/hr2V9Npv8RKm4ExEtF-aXA)

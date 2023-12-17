@@ -1,6 +1,6 @@
 ---
 title: "交叉编译 ARM 版 mysql"
-lastmod: "2023-11-09 20:41:27"
+lastmod: "2023-12-08 17:45:02"
 categories: ["Code"]
 draft: true
 ---
@@ -90,6 +90,10 @@ make
 
 
 ### ncurses {#ncurses}
+
+-   step
+
+<!--listend-->
 
 ```bash
 tar -xf　ncurses-6.1.tar.gz

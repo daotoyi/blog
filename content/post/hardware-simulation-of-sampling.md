@@ -1,7 +1,7 @@
 ---
 title: "模拟采样"
 date: "2022-12-04 11:05:00"
-lastmod: "2022-12-04 11:05:33"
+lastmod: "2023-12-17 17:17:04"
 categories: ["Hardware"]
 draft: false
 ---

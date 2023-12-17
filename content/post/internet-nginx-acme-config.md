@@ -1,8 +1,9 @@
 ---
 title: "Nginx 反向代理和 Acme 证书配置"
-lastmod: "2023-10-17 10:04:24"
+date: "2023-10-17 10:38:00"
+lastmod: "2023-11-13 08:34:24"
 categories: ["Internet"]
-draft: true
+draft: false
 ---
 
 ## nginx {#nginx}
@@ -127,38 +128,6 @@ ssl_certificate 和 ssl_certificate_key 是 Nginx 配置文件中的两个指令
 修改完成后重启 Nginx: `docker exec nginx nginx -s reload`
 
 
-## 搭建简易下载站点 {#搭建简易下载站点}
-
--   conf.d/downloads.conf
-
-    ```cfg
-    server {
-        listen       80;
-        server_name  downloads.domain.com;
-
-     location / {
-         alias /downloads/;
-
-            if ($request_filename ~* ^.*?\.(html|doc|pdf|zip|docx|txt)$) {
-                add_header Content-Disposition attachment;
-                add_header Content-Type application/octet-stream;
-            }
-                sendfile on;
-                autoindex on;
-                autoindex_format html;
-                autoindex_exact_size off;
-                autoindex_localtime on;
-                charset utf-8,gbk;
-     }
-    }
-    ```
-
-    重启：docker exec nginx nginx -s reload
-
-    将文件从本地上传到 downloads 目录中，即可通过链接发送给他人供其下载。
-
-
 ## reference {#reference}
 
 -   [Nginx (反向代理) 和 Acme (证书配置)](https://mp.weixin.qq.com/s/3Bp7Ii7PqbbAU3HNd3a1kg)
--   <https://mp.weixin.qq.com/s/3Bp7Ii7PqbbAU3HNd3a1kg>

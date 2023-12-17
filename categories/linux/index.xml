@@ -6,7 +6,25 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Oct 2023 19:17:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Dec 2023 12:27:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux cmd smartctl</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-smartctl/</link>
+      <pubDate>Sun, 17 Dec 2023 12:27:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-smartctl/</guid>
+      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 smartctl -i &amp;lt;device&amp;gt; #显示设备的身份信息，检查硬盘是否打开了SMART支持。 # SMART support is: Enabled，说明硬盘支</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd smartctl</title>
+      <link>https://daotoyi.github.io/posts/linux-cmd-smartctl/</link>
+      <pubDate>Sun, 17 Dec 2023 12:27:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-cmd-smartctl/</guid>
+      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 smartctl -i &amp;lt;device&amp;gt; #显示设备的身份信息，检查硬盘是否打开了SMART支持。 # SMART support is: Enabled，说明硬盘支</description>
+    </item>
+    
     <item>
       <title>Linux 在 login 界面闪退</title>
       <link>https://daotoyi.github.io/post/linux-repeat-login-screen/</link>
@@ -149,6 +167,24 @@
       
       <guid>https://daotoyi.github.io/posts/linux-systecm-service-manager/</guid>
       <description>init/systemd https://img-blog.csdn.net/20180825000445679?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MjI4ODMw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70) service manage service/chkconfig 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 chkconfig 设置是当前不生效，linux重启后才生效 service 设置是即时生效，linux关机重启后设置失效 # 查看 service</description>
+    </item>
+    
+    <item>
+      <title>Linux 相关镜像网址</title>
+      <link>https://daotoyi.github.io/post/linux-download-url/</link>
+      <pubDate>Sat, 23 Sep 2023 22:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-download-url/</guid>
+      <description>开源镜像站 https://mirrors.cernet.edu.cn/ 校园网联合镜像站 https://mirrors.tuna.tsinghua.edu.cn/ http://mirrors.ustc.edu.cn/ http://mirrors.163.com/ debain 归档系统 http://cdimage.debian.org/cdimage/archive/ debian sid 源 https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download</description>
+    </item>
+    
+    <item>
+      <title>Linux 相关镜像网址</title>
+      <link>https://daotoyi.github.io/posts/linux-download-url/</link>
+      <pubDate>Sat, 23 Sep 2023 22:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-download-url/</guid>
+      <description>开源镜像站 https://mirrors.cernet.edu.cn/ 校园网联合镜像站 https://mirrors.tuna.tsinghua.edu.cn/ http://mirrors.ustc.edu.cn/ http://mirrors.163.com/ debain 归档系统 http://cdimage.debian.org/cdimage/archive/ debian sid 源 https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download</description>
     </item>
     
     <item>
@@ -445,7 +481,7 @@
       <pubDate>Thu, 03 Nov 2022 14:47:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/linux-cmd-tar-zip/</guid>
-      <description>zip 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的是，使用</description>
+      <description>zip 常用命令 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的</description>
     </item>
     
     <item>
@@ -454,7 +490,7 @@
       <pubDate>Thu, 03 Nov 2022 14:47:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/linux-cmd-tar-zip/</guid>
-      <description>zip 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的是，使用</description>
+      <description>zip 常用命令 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的</description>
     </item>
     
     <item>

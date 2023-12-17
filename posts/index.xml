@@ -6,7 +6,25 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Nov 2023 21:18:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Dec 2023 12:27:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux cmd smartctl</title>
+      <link>https://daotoyi.github.io/posts/linux-cmd-smartctl/</link>
+      <pubDate>Sun, 17 Dec 2023 12:27:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-cmd-smartctl/</guid>
+      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 smartctl -i &amp;lt;device&amp;gt; #显示设备的身份信息，检查硬盘是否打开了SMART支持。 # SMART support is: Enabled，说明硬盘支</description>
+    </item>
+    
+    <item>
+      <title>Git commit 规范</title>
+      <link>https://daotoyi.github.io/posts/github-git-commit-standara/</link>
+      <pubDate>Sat, 18 Nov 2023 12:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/github-git-commit-standara/</guid>
+      <description>type 为必填项，用于指定 commit 的类型，约定了 feat、fix 两个主要 type，以及 docs、style、build、perf、refactor、re</description>
+    </item>
+    
     <item>
       <title>RAID</title>
       <link>https://daotoyi.github.io/posts/hardware-raid/</link>
@@ -23,6 +41,15 @@
       
       <guid>https://daotoyi.github.io/posts/tool-obsidian/</guid>
       <description>pulgin 插件通常放在目录 .obsidian\plugins 下面 obsidian-proxy-github https://github.com/juqkai/obsidian-proxy-github Git pandoc 格式转换的一站式解决方案，覆盖了 txt，html，md，pdf，docx，ppt 等几乎所有文档格式 remotely save 第三方</description>
+    </item>
+    
+    <item>
+      <title>Nginx 反向代理和 Acme 证书配置</title>
+      <link>https://daotoyi.github.io/posts/internet-nginx-acme-config/</link>
+      <pubDate>Tue, 17 Oct 2023 10:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/internet-nginx-acme-config/</guid>
+      <description>nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen</description>
     </item>
     
     <item>
@@ -212,6 +239,15 @@
       
       <guid>https://daotoyi.github.io/posts/hardware-wireless-communication/</guid>
       <description>传输距离 短距离通信 Zigbee Wi-Fi Bluetooth Z-wave 广域网通信 低功耗广域网（LPWAN 非授权频段 Lora Sigfox 授权频段（3GPP/3GPP2 等国家组织 GSM CDMA WCDMA LTE NB-IoT 协商统一于 NB-</description>
+    </item>
+    
+    <item>
+      <title>Linux 相关镜像网址</title>
+      <link>https://daotoyi.github.io/posts/linux-download-url/</link>
+      <pubDate>Sat, 23 Sep 2023 22:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-download-url/</guid>
+      <description>开源镜像站 https://mirrors.cernet.edu.cn/ 校园网联合镜像站 https://mirrors.tuna.tsinghua.edu.cn/ http://mirrors.ustc.edu.cn/ http://mirrors.163.com/ debain 归档系统 http://cdimage.debian.org/cdimage/archive/ debian sid 源 https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download</description>
     </item>
     
     <item>
@@ -593,7 +629,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Thu, 03 Nov 2022 14:47:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/linux-cmd-tar-zip/</guid>
-      <description>zip 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的是，使用</description>
+      <description>zip 常用命令 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的</description>
     </item>
     
     <item>
@@ -1623,21 +1659,21 @@ C-u C-u C-c TAB (org-table-expand)
     </item>
     
     <item>
+      <title>Git 常用操作</title>
+      <link>https://daotoyi.github.io/posts/git-common-manual/</link>
+      <pubDate>Sun, 27 Mar 2022 23:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/git-common-manual/</guid>
+      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt; 远程</description>
+    </item>
+    
+    <item>
       <title>Git Pull 强制覆盖</title>
       <link>https://daotoyi.github.io/posts/git-pull-force/</link>
       <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/git-pull-force/</guid>
       <description>不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展</description>
-    </item>
-    
-    <item>
-      <title>Git 操作对比</title>
-      <link>https://daotoyi.github.io/posts/git-common-manual/</link>
-      <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/git-common-manual/</guid>
-      <description>chechkout VS reset VS revert 命令 作用域 常用情景 git reset 提交层面 在私有分支上舍弃一些没有提交的更改 git reset 文件层面 将文件从缓存区中移除 git checkout 提交层面 切换分支或查看旧版本 git</description>
     </item>
     
     <item>
@@ -1844,7 +1880,7 @@ C-u C-u C-c TAB (org-table-expand)
       <pubDate>Fri, 11 Mar 2022 07:52:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/wifi-sta-and-ap-model/</guid>
-      <description>AP: Access Point，提供无线接入服务，允许其它无线设备接入，提供数据访问.是一个无线网络的创建者,是网络的中心节点。 一般的无线路由/网桥工作在该</description>
+      <description>AP: Access Point，提供无线接入服务，允许其它无线设备接入，提供数据访问. 是一个无线网络的创建者,是网络的中心节点。 一般的无线路由/网桥工作在该</description>
     </item>
     
     <item>

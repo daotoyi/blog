@@ -126,6 +126,98 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git-stash/">Git stash</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-26 </span>
+      <div class="post-category">
+          <a href="/categories/github/"> Github </a>
+          </div>
+        <span class="more-meta"> 81 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      git stash 命令用于将更改储藏在脏工作目录中。 useage 1 2 3 4 5 6 7 git stash # git stash save git stash list # 列出 git stash show # 进行检查 git stash apply # 恢复 git stash apply stash@{2} git stash drop stash@{2} # 移除储藏 git stash pop #
+    </div>
+    <div class="read-more">
+      <a href="/post/git-stash/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/cpu-frequency/">CPU Frequency</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-25 </span>
+      <div class="post-category">
+          <a href="/categories/hardware/"> Hardware </a>
+          </div>
+        <span class="more-meta"> 655 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      主频=外频×倍频系数 主频 即 CPU 内核工作的主时钟频率，表示在 CPU 内数字脉冲信号震荡的速度。 外频 通常为系统总线的工作频率，是 CPU 的基准频率，单位是 MH
+    </div>
+    <div class="read-more">
+      <a href="/post/cpu-frequency/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/linux-cmd-stty/">CMD stty</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-25 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          </div>
+        <span class="more-meta"> 698 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Stty 指令简介 TTY 是 Teletype 或 Teletypewriter 的缩写，原来是指电传打字机，后来这种设备逐渐键盘和显示器取代。不管是电传打字机还是键盘显示器，都是作为计算机的终端设备存
+    </div>
+    <div class="read-more">
+      <a href="/post/linux-cmd-stty/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/connectutility/">ConnectUtility</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-20 </span>
+      <div class="post-category">
+          <a href="/categories/tools/"> Tools </a>
+          </div>
+        <span class="more-meta"> 218 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      直接配对 无线鼠标配对步骤 无线鼠标断电重启 同时按住左、中、右 3 个键，持续 40-60s 左右 在 2 的过程中插入无线接收器，配对过程中（鼠标指示灯秒闪） 配对成功
+    </div>
+    <div class="read-more">
+      <a href="/post/connectutility/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/github-actions/">Github Actions</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-03-19 </span>
@@ -143,98 +235,6 @@
     </div>
     <div class="read-more">
       <a href="/post/github-actions/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/github-access-verification-with-token/">Github 推送验证</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-19 </span>
-      <div class="post-category">
-          <a href="/categories/github/"> Github </a>
-          </div>
-        <span class="more-meta"> 584 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 6 git remote set-url origin https://&lt;user_ame&gt;:token@github.com/&lt;user_name&gt;/&lt;repo_name&gt;.git # or git remote set-url origin https://&lt;token&gt;@github.com/&lt;user_name&gt;/&lt;repo_name&gt;.git # example git remote set-url origin https://hao203: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@github.com/hao203/Demo.git
-    </div>
-    <div class="read-more">
-      <a href="/post/github-access-verification-with-token/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/markdown-notes/">Markdown</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-19 </span>
-      <div class="post-category">
-          <a href="/categories/tools/"> Tools </a>
-          </div>
-        <span class="more-meta"> 290 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      图片排列 普通左右排列 要一张图片接着一张图片的写，中间不能有换行。如果换行的话则图片也换行 ，例如： 1 ![描述](图片链接)![描述](图片链接
-    </div>
-    <div class="read-more">
-      <a href="/post/markdown-notes/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/github-profile-show-stats-language-and-metrics/">Github Profile</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-19 </span>
-      <div class="post-category">
-          <a href="/categories/github/"> Github </a>
-          </div>
-        <span class="more-meta"> 108 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Metrics !Metrics 统计卡片 stats !Anurag&rsquo;s GitHub stats theme dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula language ![这里写昵称&rsquo;s Most used languages](https://github-readme-stats.vercel.app/api/top-langs?username=%E8%BF%99%E9%87%8C%E6%9B%BF%E6%8D%A2%E6%88%90%E4%BD%A0%E7%9A%84 GitHub ID&amp;show_icons=true&amp;count_private=true&amp;theme=gotham) !daotoyi&rsquo;s Most used languages 统计卡片并列显示 stats 和 language 卡片要紧接着写,不能空格换
-    </div>
-    <div class="read-more">
-      <a href="/post/github-profile-show-stats-language-and-metrics/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/cad-notes/">CAD</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-03-17 </span>
-      <div class="post-category">
-          <a href="/categories/tools/"> Tools </a>
-          </div>
-        <span class="more-meta"> 764 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数
-    </div>
-    <div class="read-more">
-      <a href="/post/cad-notes/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

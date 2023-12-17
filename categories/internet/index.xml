@@ -6,7 +6,25 @@
     <description>Recent content in Internet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Oct 2022 08:31:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2023 10:38:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx 反向代理和 Acme 证书配置</title>
+      <link>https://daotoyi.github.io/post/internet-nginx-acme-config/</link>
+      <pubDate>Tue, 17 Oct 2023 10:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-nginx-acme-config/</guid>
+      <description>nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen</description>
+    </item>
+    
+    <item>
+      <title>Nginx 反向代理和 Acme 证书配置</title>
+      <link>https://daotoyi.github.io/posts/internet-nginx-acme-config/</link>
+      <pubDate>Tue, 17 Oct 2023 10:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/internet-nginx-acme-config/</guid>
+      <description>nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen</description>
+    </item>
+    
     <item>
       <title>Cloudflare</title>
       <link>https://daotoyi.github.io/post/internet-cloudflare/</link>

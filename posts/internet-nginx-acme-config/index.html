@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Nginx 反向代理和 Acme 证书配置 - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/internet-nginx-acme-config/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Nginx 反向代理和 Acme 证书配置" />
+<meta property="og:description" content="nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/internet-nginx-acme-config/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-17T10:38:00+00:00" />
+<meta property="article:modified_time" content="2023-11-13T08:34:24+00:00" />
+
+<meta itemprop="name" content="Nginx 反向代理和 Acme 证书配置">
+<meta itemprop="description" content="nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen"><meta itemprop="datePublished" content="2023-10-17T10:38:00+00:00" />
+<meta itemprop="dateModified" content="2023-11-13T08:34:24+00:00" />
+<meta itemprop="wordCount" content="715">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nginx 反向代理和 Acme 证书配置"/>
+<meta name="twitter:description" content="nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="nginx">nginx</h2>
+<ul>
+<li>nginx</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">ocker run -d \</span>
+  <span class="na">--restart</span><span class="o">=</span><span class="s">unless-stopped \
+</span><span class="s">  --name nginx \
+</span><span class="s">  --net host \
+</span><span class="s">  --label nginx \
+</span><span class="s">  -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选
+</span><span class="s">  -v /home/ubuntu/data/nginx/log:/var/log/nginx \
+</span><span class="s">  -v /home/ubuntu/data/nginx/www:/var/www \
+</span><span class="s">  -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \
+</span><span class="s">  nginx</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>/etc/nginx/certs 目录用于 SSL。</p>
+<ul>
+<li>nginx/conf.d; vim domainxx.conf</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">server {</span>
+    <span class="na">listen       80;</span>
+    <span class="na">server_name  &lt;domain.com&gt;;</span>
+
+    <span class="na">location / {</span>
+        <span class="na">proxy_pass http://&lt;docker net&gt;:&lt;port&gt;;</span>
+        <span class="na">proxy_set_header Host $host;</span>
+        <span class="na">proxy_set_header X-Real-IP $remote_addr;</span>
+        <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+        <span class="na">proxy_set_header X-Forwarded-Proto $scheme;</span>
+    <span class="na">}</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>proxy_set_header 的一系列内容必须添加。如果不添加这些内容，会导致网站加载速度异常缓慢，而且像 css, js 文件都有可能不被加载出来。</p>
+<ul>
+<li>docker exec nginx nginx -s reload</li>
+</ul>
+<h2 id="acme-dot-sh">Acme.sh</h2>
+<p>签发 SSL 证书需证明这个域名的所有权，一般有两种方式验证: http 和 dns 验证。使用 acme.sh 能够定时自动续签，非常方便。部署步骤为:</p>
+<p>获取 DNS 解析 api。泛域名证书貌似只能使用 DNS 验证的方式，这种方式要获取 DNS 验证 api，不同服务器商家各有不同，腾讯云的在 API 密钥 - DNSPod。在该页面的 DNSPod Token 中创建密钥。
+使用 Dcoker 来安装 acme 容器。对应的密钥、域名要更改</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">docker run -d \</span>
+  <span class="na">--restart</span><span class="o">=</span><span class="s">unless-stopped \
+</span><span class="s">  --name acme \
+</span><span class="s">  --net host \
+</span><span class="s">  -v /home/ubuntu/data/acme:/acme.sh \
+</span><span class="s">  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+</span><span class="s">  -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \
+</span><span class="s">  -e DP_Id=&#34;ID&#34; \
+</span><span class="s">  -e DP_Key=&#34;Key&#34; \
+</span><span class="s">  -e DEPLOY_DOCKER_CONTAINER_LABEL=&#34;nginx&#34; \
+</span><span class="s">  -e DEPLOY_DOCKER_CONTAINER_KEY_FILE=&#39;/etc/nginx/certs/&lt;domain.com&gt;/cert.pem&#39; \
+</span><span class="s">  -e DEPLOY_DOCKER_CONTAINER_FULLCHAIN_FILE=&#39;/etc/nginx/certs/&lt;domain.com&gt;/fullchain.pem&#39; \
+</span><span class="s">  -e DEPLOY_DOCKER_CONTAINER_RELOAD_CMD=&#39;nginx -s reload&#39; \
+</span><span class="s">  neilpang/acme.sh daemon</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 生成证书。证书默认是使用 zerossl 方式生成。zerossl 需先注册。</span>
+docker <span class="nb">exec</span> -i acme acme.sh --register-account -m email@mail.com
+
+<span class="c1"># 生成泛域名证书。如果不使用 zero ssl 则用第二条 letsencrypt。</span>
+<span class="c1"># zero ssl</span>
+docker <span class="nb">exec</span> -i acme acme.sh --issue --dns dns_dp -d &lt;domain.com&gt; -d &lt;*.domain.com&gt; --force --dnssleep
+
+<span class="c1"># letsencrypt，好像不需要注册</span>
+docker <span class="nb">exec</span> -i acme acme.sh --issue --dns dns_dp -d &lt;domain.com&gt; -d &lt;*.domain.com&gt; --force --dnssleep --set-default-ca --server letsencrypt
+
+<span class="c1"># 部署证书。</span>
+docker <span class="nb">exec</span> -i acme acme.sh --deploy -d &lt;domain.com&gt; --deploy-hook docker
+</code></pre></td></tr></table>
+</div>
+</div><p>使用 SSL 证书后，Nginx 的配置需要做修改。注意更换容器 IP 和域名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">server {</span>
+    <span class="na">listen      80;</span>
+    <span class="na">listen [::]:80;</span>
+    <span class="na">server_name  blog.domain.com;</span>
+    <span class="na">return 301 https://$host$request_uri;</span>
+<span class="na">}</span>
+
+<span class="na">server {</span>
+    <span class="na">listen 443 ssl;</span>
+    <span class="na">listen [::]:443 ssl;</span>
+    <span class="na">server_name blog.domain.com;</span>
+    <span class="na">location / {</span>
+        <span class="na">proxy_pass http://172.18.0.5:80;</span>
+        <span class="na">proxy_set_header Host $host;</span>
+        <span class="na">proxy_set_header X-Real-IP $remote_addr;</span>
+        <span class="na">proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span>
+        <span class="na">proxy_set_header X-Forwarded-Proto $scheme;</span>
+        <span class="na">proxy_redirect off;</span>
+        <span class="na">proxy_set_header X-Real-Port $remote_port;</span>
+        <span class="na">proxy_set_header HTTP_X_FORWARDED_FOR $remote_addr;</span>
+        <span class="na">proxy_set_header X-NginX-Proxy true;</span>
+        <span class="na">proxy_set_header Accept-Encoding &#34;&#34;;</span>
+    <span class="na">}</span>
+
+    <span class="na">ssl_certificate /etc/nginx/certs/&lt;domain.com&gt;/fullchain.pem;</span>
+    <span class="na">ssl_certificate_key /etc/nginx/certs/&lt;domain.com&gt;/cert.pem;</span>
+    <span class="na">add_header Strict-Transport-Security &#34;max-age</span><span class="o">=</span><span class="s">63072000&#34; always;</span>
+<span class="na">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>ssl_certificate 和 ssl_certificate_key 是 Nginx 配置文件中的两个指令，它们分别用于指定服务器证书和私钥文件的位置。</p>
+<p>修改完成后重启 Nginx: <code>docker exec nginx nginx -s reload</code></p>
+<h2 id="reference">reference</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/3Bp7Ii7PqbbAU3HNd3a1kg">Nginx (反向代理) 和 Acme (证书配置)</a></li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

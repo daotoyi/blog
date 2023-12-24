@@ -1,7 +1,7 @@
 ---
 title: "Linux 修改 Ramdisk 镜像重新制作"
 date: "2023-12-17 21:30:00"
-lastmod: "2023-12-17 21:30:34"
+lastmod: "2023-12-19 14:23:46"
 categories: ["Linux"]
 draft: false
 ---
@@ -27,9 +27,10 @@ initrd.img: XZ compressed data, checksum CRC32
 ➜ cpio -ivd < ../initrd.img
 
 # 修改之后重新打包、压缩（rootfs/)
-➜ find . | cpio -o -H newc > ../initrd.img.cpio
+➜ find . | cpio -o -H newc > ../rootfs.cpio
 ➜ cd ..
-➜ xz -z -k initrd.img.cpio
+# ➜ xz -z -k initrd.img.cpio #生成的ramdisk启动异常
+➜ xz -9 -C crc32 -c  rootfs.cpio >  rootfs.cpio.xz
 ➜ ls
 initrd.img.cpio.xz
 ➜ mv initrd.img.cpio initrd.img

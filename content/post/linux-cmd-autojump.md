@@ -1,9 +1,9 @@
 ---
 title: "linux cmd autojump"
 date: "2023-06-04 21:12:00"
-lastmod: "2023-06-04 21:12:42"
+lastmod: "2023-12-20 08:24:17"
 tags: ["cmd"]
-categories: ["Linux", "tool"]
+categories: ["Tools", "tool"]
 draft: false
 ---
 

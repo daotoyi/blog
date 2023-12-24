@@ -6,7 +6,61 @@
     <description>Recent content in Linux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Dec 2023 12:27:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Dec 2023 23:24:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 重新安装 grub</title>
+      <link>https://daotoyi.github.io/post/linux-reinstall-grub/</link>
+      <pubDate>Sun, 17 Dec 2023 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-reinstall-grub/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 ~# mount /dev/sda1 /mnt ~# mount --bind /dev /mnt/dev ~# mount --bind /proc /mnt/proc ~# mount --bind /sys /mnt/sys ~# chroot /mnt # 若以UEFI方式安装，以/dev/sda1为efi分区，/d</description>
+    </item>
+    
+    <item>
+      <title>Linux 重新安装 grub</title>
+      <link>https://daotoyi.github.io/posts/linux-reinstall-grub/</link>
+      <pubDate>Sun, 17 Dec 2023 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-reinstall-grub/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 ~# mount /dev/sda1 /mnt ~# mount --bind /dev /mnt/dev ~# mount --bind /proc /mnt/proc ~# mount --bind /sys /mnt/sys ~# chroot /mnt # 若以UEFI方式安装，以/dev/sda1为efi分区，/d</description>
+    </item>
+    
+    <item>
+      <title>Linux 修改 Ramdisk 镜像重新制作</title>
+      <link>https://daotoyi.github.io/post/linux-change-ramdisk-img/</link>
+      <pubDate>Sun, 17 Dec 2023 21:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-change-ramdisk-img/</guid>
+      <description>说明 通过 cpio 命令解压 ramddisk 解压系统后重新打包制作镜像。 步骤 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # 查看文件格式 ➜ file initrd.img initrd.img: XZ compressed data, checksum CRC32 # 修改文件名，并</description>
+    </item>
+    
+    <item>
+      <title>Linux 修改 Ramdisk 镜像重新制作</title>
+      <link>https://daotoyi.github.io/posts/linux-change-ramdisk-img/</link>
+      <pubDate>Sun, 17 Dec 2023 21:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-change-ramdisk-img/</guid>
+      <description>说明 通过 cpio 命令解压 ramddisk 解压系统后重新打包制作镜像。 步骤 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # 查看文件格式 ➜ file initrd.img initrd.img: XZ compressed data, checksum CRC32 # 修改文件名，并</description>
+    </item>
+    
+    <item>
+      <title>Linux 文件扩展属性</title>
+      <link>https://daotoyi.github.io/post/linux-file-attributes/</link>
+      <pubDate>Sun, 17 Dec 2023 19:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-file-attributes/</guid>
+      <description>简述 扩展属性（xattrs）提供了一种机制，用来将键值对永久得关联到文件；让现有的文件系统得以支持在原始设计中未提供的功能。 扩展属性是目前流</description>
+    </item>
+    
+    <item>
+      <title>Linux 文件扩展属性</title>
+      <link>https://daotoyi.github.io/posts/linux-file-attributes/</link>
+      <pubDate>Sun, 17 Dec 2023 19:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/posts/linux-file-attributes/</guid>
+      <description>简述 扩展属性（xattrs）提供了一种机制，用来将键值对永久得关联到文件；让现有的文件系统得以支持在原始设计中未提供的功能。 扩展属性是目前流</description>
+    </item>
+    
     <item>
       <title>Linux cmd smartctl</title>
       <link>https://daotoyi.github.io/post/linux-cmd-smartctl/</link>
@@ -329,24 +383,6 @@
       
       <guid>https://daotoyi.github.io/posts/linux-posix/</guid>
       <description>什么是 posix POSIX：可移植操作系统接口（Portable Operating System Interface of UNIX，缩写为 POSIX ）. 发布者为电气与电子工程师协会（Institute of Electrical and</description>
-    </item>
-    
-    <item>
-      <title>linux cmd autojump</title>
-      <link>https://daotoyi.github.io/post/linux-cmd-autojump/</link>
-      <pubDate>Sun, 04 Jun 2023 21:12:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/linux-cmd-autojump/</guid>
-      <description>1 2 3 4 5 6  sudo apt install autojump git clone git://github.com/wting/autojump.git cd autojump ./install.py   </description>
-    </item>
-    
-    <item>
-      <title>linux cmd autojump</title>
-      <link>https://daotoyi.github.io/posts/linux-cmd-autojump/</link>
-      <pubDate>Sun, 04 Jun 2023 21:12:00 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/posts/linux-cmd-autojump/</guid>
-      <description>1 2 3 4 5 6  sudo apt install autojump git clone git://github.com/wting/autojump.git cd autojump ./install.py   </description>
     </item>
     
     <item>

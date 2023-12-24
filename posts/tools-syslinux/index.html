@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>syslinux - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="简述 SYSLINUX 是一个小型的 Linux 操作系统，它的目的是简化首次安装 Linux 的时间，并建立修护或其它特殊用途的启动盘。 也是一个功能强大的引导加载程序，而且兼容各种" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/posts/tools-syslinux/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="syslinux" />
+<meta property="og:description" content="简述 SYSLINUX 是一个小型的 Linux 操作系统，它的目的是简化首次安装 Linux 的时间，并建立修护或其它特殊用途的启动盘。 也是一个功能强大的引导加载程序，而且兼容各种" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/posts/tools-syslinux/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-24T10:59:00+00:00" />
+<meta property="article:modified_time" content="2023-12-24T23:10:46+00:00" />
+
+<meta itemprop="name" content="syslinux">
+<meta itemprop="description" content="简述 SYSLINUX 是一个小型的 Linux 操作系统，它的目的是简化首次安装 Linux 的时间，并建立修护或其它特殊用途的启动盘。 也是一个功能强大的引导加载程序，而且兼容各种"><meta itemprop="datePublished" content="2023-12-24T10:59:00+00:00" />
+<meta itemprop="dateModified" content="2023-12-24T23:10:46+00:00" />
+<meta itemprop="wordCount" content="8119">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="syslinux"/>
+<meta name="twitter:description" content="简述 SYSLINUX 是一个小型的 Linux 操作系统，它的目的是简化首次安装 Linux 的时间，并建立修护或其它特殊用途的启动盘。 也是一个功能强大的引导加载程序，而且兼容各种"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="简述">简述</h2>
+<p>SYSLINUX 是一个小型的 Linux 操作系统，它的目的是简化首次安装 Linux 的时间，并建立修护或其它特殊用途的启动盘。</p>
+<p>也是一个功能强大的引导加载程序，而且兼容各种介质。 它的安装很简单，一旦安装 syslinux 好之后，sysLinux 启动盘就可以引导各种基于 DOS 的工具，以及 MS-DOS/Windows 或者任何其它操作系统。</p>
+<h2 id="参数选项">参数选项</h2>
+<h3 id="适用于-syslinux-的所有版本的参数">适用于 syslinux 的所有版本的参数</h3>
+<ul>
+<li>-s
+<ul>
+<li>Safe, solw, stupid：这个参数可以提高 syslinux 的引导兼容性。</li>
+<li>此参数可以让 syslinux 工作在一些非常规的 BOIS 上，有些机器上-s 的选项(参数)是必需的，也就是说这是一个安全的选项(参数)，建议一般要用上这个选项(参数)。</li>
+</ul>
+</li>
+<li>-f
+<ul>
+<li>Force installing：强制写入 syslinux 的引导代码</li>
+<li>这是一个可选的选项(参数)，如果你发现不能写入 syslinux 时，就可以使用这个选项(参数)</li>
+<li>一般建议：写入本地磁盘时加上这个选项(参数)。</li>
+</ul>
+</li>
+<li>-r
+<ul>
+<li>Raid mode：RAID 模式。</li>
+<li>这是一个可选的选项(参数)，如果启动失败，告诉 BIOS 启动顺序(通常是下一个硬盘)，而不是给出错误信息后停止，这个一个 RAID 模式的选项(参数)，一般来说可以不使用。</li>
+</ul>
+</li>
+</ul>
+<h3 id="只适用于-windows-的版本的参数">只适用于 Windows 的版本的参数</h3>
+<ul>
+<li>-m
+<ul>
+<li>MBR：将 syslinux 引导代码写入到驱动器的 MBR 启动扇区。</li>
+<li>这是一个可选的选项(参数)，建议使用此选项(参数)</li>
+<li>如果之前有将 GURB4DOS 写入磁盘的 MBR 中，那么你必须使用-m 选项(参数)，否则将写入失败。</li>
+<li>示例
+<ul>
+<li>syslinux.exe -s -f -m -a -d /boot/syslinux x:</li>
+<li>(x: 为盘符)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>-a
+<ul>
+<li>Active：激活指定分区为活动分区</li>
+<li>这是一个可选的选项(参数)，当你不确定你所指定的分区是否是活动分区时可以加上这个选项(参数)</li>
+<li>实际上，就算你所指定的分区已经是活动的主分区了，也可以加上这个选项(参数)。(=bootable)</li>
+</ul>
+</li>
+</ul>
+<h3 id="只适用于-linux-的版本参数">只适用于 Linux 的版本参数</h3>
+<ul>
+<li>-o
+<ul>
+<li>指定文件系统映像文件中的字节偏移量，它必须是一个可使用的磁盘映像文件。</li>
+</ul>
+</li>
+</ul>
+<h2 id="创建启动磁盘">创建启动磁盘</h2>
+<p>安装 syslinux 的磁盘将改变磁盘上的引导扇区，并复制 ldlinux.sys 文件到其根目录(或者复制到指定的目录)下。</p>
+<p>注意：SYSLINUX 不支持 NTFS 文件系统，所以磁盘必须是 FAT(FAT16/FAT32)文件系统。</p>
+<h3 id="nt-2k-xp">NT/2K/XP</h3>
+<p>语法：syslinux.exe [-sfmar][-d directory] &lt;drive&gt;: [bootsecfile]</p>
+<p>例如：</p>
+<ul>
+<li>Floppy:(a:为软驱)</li>
+</ul>
+<p>syslinux.exe a:</p>
+<ul>
+<li>硬盘/可移动磁盘等：(z:为盘符)</li>
+</ul>
+<p>syslinux.exe -m -a -d /boot/syslinux z:</p>
+<p>【将引导文件复制到其分区的/boot/syslinux 目录下，注意：/boot/syslinux 目录必须事先建好。】</p>
+<p><strong>上例中的启动菜单配置文件(syslinux.cfg)要在/boot/syslinux 目录下</strong></p>
+<h3 id="dos">DOS</h3>
+<p>语法：syslinux.exe [-sfmar][-d directory] &lt;drive&gt;: [bootsecfile]</p>
+<h3 id="linux">Linux</h3>
+<p>语法：syslinux [-sfr][-d directory][-o offset] &lt;DeviceOrImage&gt;</p>
+<p>例如：</p>
+<ul>
+<li>syslinux /dev/fd0</li>
+</ul>
+<p>syslinux /设备/第一个软驱</p>
+<p>【将 syslinux 的引导代码写入第一个软驱】</p>
+<h2 id="配置-syslinux">配置 syslinux</h2>
+<p>所有的 syslinux 默认配置都可以在一个名为 syslinux.cfg 的文件里面更改。</p>
+<p>syslinux 会在下列位置搜索 syslinux.cfg 配置文件：</p>
+<ul>
+<li>/boot/syslinux/syslinux.cfg</li>
+<li>/syslinux/syslinux.cfg</li>
+<li>/syslinux.cfg</li>
+</ul>
+<p><strong>syslinux.cfg 文件必须是 UNIX 或 DOS 格式的文本文件。</strong></p>
+<h3 id="syslinx-配置">syslinx 配置</h3>
+<p>下面简单的例子来看一下 syslinux.cfg 文件怎样引导一个 linux 内核：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">DEFAULT linux</span>
+<span class="na">LABEL linux</span>
+<span class="na">SAY Now booting the kernel from SYSLINUX...</span>
+<span class="na">KERNEL vmlinuz.img</span>
+<span class="na">APPEND ro root</span><span class="o">=</span><span class="s">/dev/sda1 initrd=initrd.img</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="lilo-配置">lilo 配置</h3>
+<p>SYSLINUX 与 LILO 是不同的，下面是一个 LILO 的例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">image</span> <span class="o">=</span> <span class="s">mykernel</span>
+<span class="na">label</span> <span class="o">=</span> <span class="s">mylabel</span>
+<span class="na">append</span> <span class="o">=</span> <span class="s">&#34;myoptions&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>而 SYSLINUX 是这样写的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">label mylabel</span>
+<span class="na">kernel mykernel</span>
+<span class="na">append myoptions</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="syslinux-选项">SYSLINUX 选项：</h2>
+<p>注：以下所有选项适用于 PXELINUX，ISOLINUX 和 EXTLINUX 以及 SYSLINUX，除非另有说明。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">例如：
+LABEL maxdos
+MENU LABEL [01] -- Run MaxDos
+kernel /boot/syslinux/memdisk
+append initrd=/boot/imgs/maxdos.img
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>KERNEL file【内核文件】</li>
+</ul>
+<p>这个就是 SYSLINUX 指向的启动文件， <strong>这个“kernel”不一定是 Linux kernel【Linux 内核】，它可以是启动扇区，或者 COMBOOT 文件。</strong></p>
+<h2 id="文件扩展名">文件扩展名</h2>
+<p>以下所列出的为公认的文件扩展名(不区分大小写)：</p>
+<p>extensions explain none or other Linux kernel image</p>
+<ul>
+<li>.0 PXE bootstrap program (NBP) [PXELINUX only]</li>
+<li>.bin &ldquo;CD boot sector&rdquo; [ISOLINUX only]</li>
+<li>.bs Boot sector [SYSLINUX only]</li>
+<li>.bss Boot sector, DOS superblock will be patched in [SYSLINUX only]</li>
+<li>.c32 COM32 image (32-bit COMBOOT)</li>
+<li>.cbt COMBOOT image (not runnable from DOS)</li>
+<li>.com COMBOOT image (runnable from DOS)</li>
+<li>.img Disk image [ISOLINUX only]</li>
+<li>.ima Floppy image [ISOLINUX only]</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>扩展名</th>
+<th>说明                                                 没有或其它 Linux 内核映像</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.0</td>
+<td>PXE 启动引导程序(NBP)【只用于 PXELINUX】</td>
+</tr>
+<tr>
+<td>.bin</td>
+<td>“光盘引导扇区”【只用于 ISOLINUX】</td>
+</tr>
+<tr>
+<td>.bs</td>
+<td>“磁盘引导扇区”【只用于 SYSLINUX】，例如：bsf，</td>
+</tr>
+<tr>
+<td>.bss</td>
+<td>“磁盘引导扇区”，用在 DOS 上，【只用于 SYSLINUX】</td>
+</tr>
+<tr>
+<td>.c32</td>
+<td>COM32 映像文件【32-bitCOMBOOT】</td>
+</tr>
+<tr>
+<td>.cbt</td>
+<td>COMBOOT 映像文件【不能运行于 DOS】</td>
+</tr>
+<tr>
+<td>.com</td>
+<td>COMBOOT 映像文件【可运行于 DOS】</td>
+</tr>
+<tr>
+<td>.img</td>
+<td>磁盘映像文件【实际上可用于 ISOLINUX、SYSLINUX、PXELINUX】</td>
+</tr>
+<tr>
+<td>.ima</td>
+<td>软盘映像文件【实际上可用于 ISOLINUX、SYSLINUX、PXELINUX】</td>
+</tr>
+</tbody>
+</table>
+<p>使用这些关键字之一而不 KERNEL 强制文件类型，与文件名无关。</p>
+<ul>
+<li>LINUX image 可以直接使用这个，而不是使用 KERNEL file 来启动一个 Linux kernel image【Linux 内核映像】。</li>
+<li>BOOT image 启动引导程序(.bs，.bsf，.bin)</li>
+<li>PXE image PXE 网络启动引导程序(.0)</li>
+<li>FDIMAGE image 软盘映像(.img，.ima)</li>
+<li>COMBOOT image COMBOOT 程序(.com，.cbt)</li>
+<li>COM32 image COM32 程序(.c32)</li>
+<li>CONFIG image CONFIG 将重新启动引导程序而使用不同的配置文件</li>
+<li>APPEND options&hellip;【附加选项】
+<ul>
+<li>添加一个或多个选项(参数)到 kernel 命令行中，这些选项(参数)可以是手动或者是自动的。该选项(参数)是添加在 kernel 命令行的开始处，通常允许输入的选项覆盖。</li>
+<li>这点与 LILO 的“append”选项(参数)是相同的。</li>
+</ul>
+</li>
+<li>APPEND- 简单点说，不附加任何命令，可用于覆盖全局的 APPEND。</li>
+<li>IPAPPEND flag_val 【只适用于 PXELINUX】
+<ul>
+<li>这个 IPAPPEND 选项(参数)只适用于 PXELINUX，这个“flag_val”为下列选项(参数)：</li>
+</ul>
+</li>
+</ul>
+<h2 id="命令行参数">命令行参数</h2>
+<ul>
+<li>下列的选项(参数)将以如下格式添加到内核命令行：</li>
+</ul>
+<p><code>ip=&lt;client-ip&gt;:&lt;boot-server-ip&gt;:&lt;gw-ip&gt;:&lt;netmask&gt;</code></p>
+<p>以上基于 DHCP/BOOTP 或者 PXE 的启动服务器。 但不推荐使用此选项(参数)，使用 IP=DHCP 的内核命令行更为合适。</p>
+<ul>
+<li>下列的选项(参数)将以如下格式添加到内核命令行：</li>
+</ul>
+<p><code>BOOTIF=&lt;hardware-address-of-boot-interface&gt;</code></p>
+<p>这在 PXELINUX 的文档中有相关的介绍，这将决定临时文件系统程序将从哪一个 Interface【端口】启动系统。</p>
+<p><code>LABEL label KERNEL image APPEND options... IPAPPEND flag_val</code></p>
+<p>【只适用于 PXELINUX】</p>
+<p>以上表明，如果“LABEL”作为内核启动，其引导的“image”和指定的 APPEND 和 IPAPPEND 选项将取代配置文件中的全局(在第一个 LABEL 命令之前)命令。</p>
+<p>“image”默认值与“label”相同，而且如果没有定义 APPEND，则使用全局命令(如果存在)。</p>
+<ul>
+<li>LOCALBOOT type【ISOLINUX，PXELINUX】</li>
+</ul>
+<p>在 PXELINUX，指定“LOCALBOOT 0”代替一个“KERNEL”选项(参数)，这个意味着调用此特定 LABEL 将会引导本地磁盘，而不是一个“KERNEL”。</p>
+<p>所有其它的值都是未定义的。 如果不知道什么是 UNDI 和 PXE 堆栈，不要紧——你只要指定参数 0 就可以了。</p>
+<ul>
+<li>INITRD initrd_file</li>
+</ul>
+<p>从 3.71 版本开始，一个 initrd 可以指定一个单独的语句，（INITRD）而不是作为 APPEND 语句的一部分；这个功能添加“initrd=initrd_file”到内核命令行中。</p>
+<p>它支持以逗号分隔的多个文件名，这主要是有益于 initramfs【一个新的 initial RAM disks 模型】，它可以支持多个单独的 cpio 或 cpio.gz 压缩文件。</p>
+<blockquote>
+<p>cpio 简介【摘自：维基百科】</p>
+<p>CPIO 是 Linux 下的一种新的内核启动镜像所附带的虚拟磁盘格式。他与传统的 Image 格式比较而言有一些改进，主要体现在打包速度和启动引导方式上。</p>
+<p>cpio 可以从 cpio 或 tar 格式的归档包中存入和读取文件, 归档包是一种包含其他文件和有关信息的文件。有关信息包括：文件名, 属主, 时标(timestamp), 和访问权限。归档包可以是磁盘上的 其他文件, 也可以是磁带或管道。</p>
+<p>Note: all files except the last one are zero-padded to a 4K page boundary. This should not affect initramfs.</p>
+</blockquote>
+<ul>
+<li>DEFAULT command【默认命令】</li>
+</ul>
+<p>SYSLINUX 启动时默认执行的命令项——当用户没有进行选择时。</p>
+<p>如果没有配置文件存在，或在配置文件没有设置默认项时，默认是启动名为“linux”的内核，不会添加其它的选项(参数)。</p>
+<p>例如：可以用于设置所要加载的菜单模块
+default vesamenu.c32</p>
+<ul>
+<li>UI module options【用户界面模块选项(参数)】</li>
+</ul>
+<p>用于设置菜单模块(通常是“menu.c32”或“vesamenu.c32”)，也就是说这是一个命令行界面(菜单指令)，它可以覆盖 DEFAULT 和 PROMPT 指令。</p>
+<ul>
+<li>PROMPT flag_val</li>
+</ul>
+<p>如果 flag_val 为 0，启动将显示：“提示符”只有在 Shift 或 Alt 键被按下，或 Caps Lock 键或 Scroll lock 键设置（这是默认值）。如果 flag_val 是 1，启动时将始终：“提示符”。</p>
+<ul>
+<li>NOESCAPE flag_val</li>
+</ul>
+<p>如果 flag_val 设置为 1，那么将忽略 Shift/Alt/Caps Lock/Scroll Lock 退出，将强制使用此默认选择项目启动(也同时忽略 PROMPT 0)。</p>
+<ul>
+<li>NOCOMPLETE flag_val</li>
+</ul>
+<p>如果 flag_val 设置为 1，那么启动时将不会在显示标签中提示 Tab 键。</p>
+<ul>
+<li>IMPLICIT flag_val</li>
+</ul>
+<p>如果 flag_val 为设置为 0，将不会加载的 kernel image【内核映像】，除非它已在 LABEL 声明中明确指定。The default is 1【默认值为 1】。</p>
+<ul>
+<li>ALLOWOPTIONS flag_val</li>
+</ul>
+<p>如果 flag_val 为 0，用户将不能指定内核命令行的任何选项(参数)。唯一可用是在 APPEND 声明中所指定的选项。The default is 1。</p>
+<ul>
+<li>TIMEOUT timeout【超时】</li>
+</ul>
+<p>在执行默认启动菜单项前的等待时间。 其单位为：1/10 秒。</p>
+<p>如果设置为 0，那么将将完全禁用 timeout(始终等待用户选择)，这也是默认的设置。</p>
+<p>以下 timeout 为 30 秒： timeout 300</p>
+<p>注：最大的值为 35996，建议设置为小于一小时。</p>
+<ul>
+<li>TOTALTIMEOUT timeout</li>
+</ul>
+<p>不会被用户的输入取消，用于处理串口故障或类似 &ldquo;用户离开&rdquo; 的状况。</p>
+<p>默认值是 0。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">TIMEOUT 50</span>
+<span class="na">TOTALTIMEOUT 9000</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>ONTIMEOUT kernel options&hellip;</li>
+</ul>
+<p>timeout 后调用的命令。一般与 DEFAULT 调用相同。如果指定，DEFAULT 只适用于用户按&lt;Enter&gt;启动时。</p>
+<ul>
+<li>ONERROR kernel options&hellip;</li>
+</ul>
+<p>如果一个内核映像没有找到(不存在或设置了 IMPLICIT)，运行指定的命令。</p>
+<p>如果 ONERROR 指令为： ONERROR xyzzy plugh</p>
+<p>并且用户输入的命令行是： foo bar baz</p>
+<p>那么 SYSLINUX 将执行： xyzzy plugh foo bar baz</p>
+<ul>
+<li>SERIAL port 【[baudrate] flowcontrol】</li>
+</ul>
+<p>开启一个串口作为控制台，“port【端口】”是一个数字(0 = /dev/ttyS0 = COM1，etc。)或者 I/O 端口地址(例如：0x3F8)；如果省略“baudrate【波特率】”，波特率默认为 9600 bps。串行的硬编码是 8 bits，无奇偶校验，1个停止位。</p>
+<p>下列为“flowcontrol【流控制】”的 bits 组合：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">0x001 - Assert DTR</span>
+<span class="na">0x002 - Assert RTS</span>
+<span class="na">0x010 - Wait for CTS assertion</span>
+<span class="na">0x020 - Wait for DSR assertion</span>
+<span class="na">0x040 - Wait for RI assertion</span>
+<span class="na">0x080 - Wait for DCD assertion</span>
+<span class="na">0x100 - Ignore input unless CTS asserted</span>
+<span class="na">0x200 - Ignore input unless DSR asserted</span>
+<span class="na">0x400 - Ignore input unless RI asserted</span>
+<span class="na">0x800 - Ignore input unless DCD asserted</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>所有其它的 bits 给予保留。</p>
+<p>典型值为：</p>
+<p>作为 SERIA【串口】指令，它必须保证工作正常，它在配置文件中应该是“First”指令。</p>
+<ul>
+<li>CONSOLE flag_val</li>
+</ul>
+<p>如果 flag_val 为 0，禁止输出到普通视频终端。</p>
+<p>如果 flag_val 为 1，允许输出到视频终端(默认值)。</p>
+<p>有些 BIOS 因为这个选项(参数)会令视频终端出现异常。 所以该选项(参数)允许你在这些系统上禁用视频控制台。</p>
+<ul>
+<li>FONT filename</li>
+</ul>
+<p>在显示任何输出之前，装载.psf 格式的字体(除了版权行，ldlinux.sys 本身被加载里就输出这些)。SYSLINUX 只装载字体到显卡。忽略.psf 文件包含的 Unicode 表。并且只工作于 EGA 和 VGA 显示卡。</p>
+<p>注：.psf 格式的字体不支持中文。</p>
+<ul>
+<li>KBDMAP keymap</li>
+</ul>
+<p>装载一个简单的键盘映射。该重映射使用很简单(由于这个重映射是基于 BIOS 的，所以只有标准的美式键盘布局才能被映射)，不过这至少可以帮助使用 QWERTZ 和 AZERTY 键盘布局的人(这两个特殊字符大量用于 Linux 内核命令行)。</p>
+<p>syslinux 的还附带一个名为“kbdmap.c32”的 comboot 模块文件，它允许动态地改变键盘映射，这样就可以在 syslinux 的配置文件中增加一个键盘选择菜单或键盘选择标签【keyboard-selection menu and/or keyboard-selection labels】。</p>
+<ul>
+<li>SAY message</li>
+</ul>
+<p>在屏幕上打印 Message【信息】。</p>
+<ul>
+<li>DISPLAY filename</li>
+</ul>
+<p>启动时在屏幕上显示指定文件(如果显示：则在启动前：“提示符”显示内容)。</p>
+<p>请参阅下面一节的“DISPLAY file”。</p>
+<p>注：如果指定的文件未找到，那么此选项(参数)将被完全忽略。</p>
+<ul>
+<li>F[1-12] filename【F1 功能键到 F12 功能键】</li>
+</ul>
+<p>基本书写格式：</p>
+<p>在启动时按下相应的【F1-F12】功能键，将在屏幕上显示指定的文件。这个可用于实现开机前在线帮助。</p>
+<p>在使用 serial console【串行控制台】时，可以按&lt;Ctrl+F1-F12&gt;转到帮助屏幕：</p>
+<p>在配置文件中空行和注释行【#号空格后的内容】将被忽略。</p>
+<h2 id="引导文件--命令--解释">引导文件(命令)解释</h2>
+<p>以下为 SYSLINUX【ISOLINUX、PXELINUX、EXTLINUX 也类似】主要文件的作用及说明：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isolinux.bin</td>
+<td>光盘映像引导文件</td>
+</tr>
+<tr>
+<td>isolinux.cfg</td>
+<td>光盘映像启动菜单配置文件</td>
+</tr>
+<tr>
+<td>syslinux.bin</td>
+<td>磁盘(U 盘/移动硬盘/本地磁盘)映像引导文件</td>
+</tr>
+<tr>
+<td>syslinux.cfg</td>
+<td>磁盘(U 盘/移动硬盘/本地磁盘)映像启动菜单配置文件</td>
+</tr>
+<tr>
+<td>memdisk</td>
+<td>引导 IMG 映像的文件，如果你要引导 IMG/IMA 的映像文件，必须先加载 memdisk</td>
+</tr>
+<tr>
+<td>vesamenu.c32</td>
+<td>二种窗口模块之一</td>
+</tr>
+<tr>
+<td>menu.c32</td>
+<td>二种窗口模块之一</td>
+</tr>
+<tr>
+<td>chain.c32</td>
+<td>指定分区启动【如：chain.c32 hd0,1 (或 chain.c32 hd1,1)】</td>
+</tr>
+<tr>
+<td>reboot.c32</td>
+<td>重新启动计算机</td>
+</tr>
+<tr>
+<td>back.png</td>
+<td>窗口背景图片</td>
+</tr>
+</tbody>
+</table>
+<h2 id="syslinux-dot-cfg-isolinux-dot-cfg-菜单解释">SYSLINUX.CFG/ISOLINUX.CFG 菜单解释</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">default vesamenu.c32        默认使用 vesamenu.c32 窗口模块（必填项）</span>
+<span class="na">timeout 60                  菜单停留时间，计时单位 1/10 秒（必填项）</span>
+<span class="na">F1 readme.txt               按 F1 阅读自述文件</span>
+<span class="na">F2 syslinux.cfg             按 F2 显示启动菜单配置文件</span>
+<span class="na">MENU BACKGROUND back.png    运行窗口背景图片（必填项）</span>
+<span class="na">MENU TITLE                  菜单标题</span>
+<span class="na">MENU WIDTH 40               菜单选择条长度（必填项）</span>
+<span class="na">MENU MARGIN 0               菜单选择条缩进，0不缩进 （若删除则自动使用默认值）</span>
+<span class="na">MENU ROWS 30                菜单选择条却换，0不能却换（若删除则自动使用默认值）</span>
+<span class="na">MENU HELPMSGROW 26          帮助信息位置（若删除则自动使用默认值）</span>
+<span class="na">MENU TIMEOUTROW 27          倒计时条下移，0不下移（若删除则自动使用默认值）</span>
+<span class="na">MENU TABMSGROW 28           TAB 显示条下移，0不下移 （若删除则自动使用默认值）</span>
+<span class="na">MENU CMDLINEROW 28          TAB 信息条下移，0不下移 （若删除则自动使用默认值）</span>
+<span class="c1"># 上面这 2 项的参数必须一致，以免按 TAB 键后弹出的信息条易位</span>
+
+<span class="na">MENU HSHIFT 0                菜单选择条右移，0不右移 （若删除则自动使用默认值）</span>
+<span class="na">MENU VSHIFT 0                菜单选择条顶端，0不下移 （若删除则自动使用默认值）</span>
+<span class="c1"># 以上两项，默认值不一定是 0。</span>
+
+<span class="na">menu color screen</span>
+<span class="na">37;40</span>
+<span class="c1">#00000000 #00000000 none</span>
+
+<span class="na">menu color border</span>
+<span class="na">30;44</span>
+<span class="c1">#00000000 #00000000 none（必填项）</span>
+<span class="na">menu color title</span>
+<span class="na">1;36;44</span>
+<span class="c1">#00000000 #00000000 none</span>
+
+<span class="c1"># 上面这三条有关整个菜单外框，如第二条 menu color border 可设置背景图片上的整个菜单外框的线条颜色，线条粗细，单线条或双线条等，还可设置为不显示菜单外框。如果都用默认，对应的条文均可删除，MENU TITLE 后只剩下下面 2 条：</span>
+
+<span class="na">MENU WIDTH 58</span>
+<span class="na">MENU color border 0 #0000 #0000 none</span>
+
+<span class="na">LABEL DOS Tools           设置标签为“DOS Tools”，LABEL 后面有一个空格，这个空格是必须的。（看得懂就可以了）</span>
+<span class="na">MENU LABEL DOS Tools      这个就大家在启动菜单上看到的启动项目，MENU 和 LABEL 后面都有一个空格，这个空格是必须的。（看得懂就可以了）</span>
+<span class="na">kernel /memdisk             # 指定要启动的内核，启动根目录的 memdisk 内核，默认是启动磁盘（hd0,0）的根目录(如果启动的内核在其它目录，在这里必须指明)，如果启动的是 linux 内核，那么不可以指定一些那个 linux 内核允许的 Option。kernel 后面有一个空格，这个空格是必须的。</span>
+<span class="na">append initrd</span><span class="o">=</span><span class="s">/dostools.img #指定要启动的映像文件。这个文件可以是，.img .ima .gz（gz 的压缩格式的可以引导文件），.bin(如果是.bin 的格式，就可以不用 kernel 去启动 memdisk 了，例如：kernel /pe.bin) ，等等。</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline">__</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="使用心得">使用心得</h2>
+<p>以下说说笔者的使用心得</p>
+<ul>
+<li>再一次强调：SYSLINUX 目前还不支持 NTFS 文件系统，所以你的磁盘(U 盘/移动硬盘/本地磁盘)必须是 FAT(FAT16/FAT32)文件系统。</li>
+<li>如果你使用的是 PATA(IDE)接口的磁盘，那么使用 SYSLINUX 都没有什么问题的，如果你使用的是 SATA(串口)接口的磁盘，那么有可能的情况是：你已经正常将 SYSLINUX 的引导代码写入磁盘的 MBR 了，可是在引导菜单部分会出现一问题（例如：不能显示背景图片，菜单不能正常显示），有时候 U 盘也可能会出现这种情况。那么这时候你就要用 BOOTICE(引导扇区制作工具——最好下载比较新的版本)将 SYSLINUX 引导代码写入磁盘(U 盘/移动硬盘/本地磁盘)的 PBR(分区引导记录)。</li>
+<li>如果你要使用 SYSLINUX+GRUB4DOS 双引导，那么，在写入 SYSLINUX 的 PBR(分区引导记录)的引导代码后，可以用“grubinst gui”来将 GRUB4DOS 的引导代码写入 MBR(主引导记录)。</li>
+<li>注意要选择好其中的选项：
+<ul>
+<li>选择“启动时不搜索软盘”</li>
+<li>选择“优先引导原来 MBR”（这个是实现 SYSLINUX+GRUB4DOS 双引导的关键选项，一定要选择这项。）</li>
+<li>等待时间“默认是 5 秒”（你可以填一个你认为更适合的等待时间，也可以不填）</li>
+<li>热键“默认是 Space 键”（如果你不想要空格键作为热键，在这里更改，建议大家不要更改）</li>
+<li>其它的选项可以不用理会。</li>
+</ul>
+</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">LABEL runISO</span>
+   <span class="na">MENU LABEL &lt; ^A &gt; --- &lt;加载 ISO 镜像&gt; ---</span>
+   <span class="na">LINUX memdisk</span>
+   <span class="na">INITRD /****.iso</span>
+   <span class="na">APPEND iso raw</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="核心文件">核心文件</h2>
+<p>SYSLINUX 只要以下几个文件就可以了：</p>
+<ul>
+<li>vesamenu.c32</li>
+<li>menu.c32</li>
+<li>memdisk</li>
+<li>chain.c32</li>
+<li>reboot.c32</li>
+<li>syslinux.bin &gt;&gt;&gt;&gt;&gt;&gt; 光盘中用 isolinux.bin</li>
+<li>syslinux.cfg &gt;&gt;&gt;&gt;&gt;&gt; 这个文件一个文本文件，光盘中用 isolinux.cfg</li>
+<li>back.png &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 这个是背景图片，也可以使用其它文件名或其它格式的图片</li>
+<li>syslinux.exe &gt;&gt;&gt;&gt;&gt;&gt; 如果是用 BOOTICE(引导扇区制作工具)写入引导代码的，那么可以不用这个文件,其实这个文件写完代码就没有什么用处了</li>
+</ul>
+<h2 id="syslinux-的子菜单">SYSLINUX 的子菜单</h2>
+<p>只要再写一个.cfg 格式的文本文件就可以了， 在主菜单调用(假设要调用的子菜单为 bt3.cfg)：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">LABEL Loader Back Track 3 Menu</span>
+  <span class="na">MENU LABEL [02] -- Loader Back Track 3 Menu</span>
+  <span class="na">CONFIG /boot/syslinux/bt3.cfg</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="启动流程">启动流程</h2>
+<ul>
+<li>阶段 I
+<ul>
+<li>加载 BMR
+<ul>
+<li>/usr/lib/syslinux/bios/mbr.bin</li>
+<li>/usr/lib/syslinux/bios/gptmbr.bin</li>
+</ul>
+</li>
+<li>寻找活动分区
+<ul>
+<li>一般 boot 分区</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶段 II
+<ul>
+<li>执行卷启动记录程序
+<ul>
+<li>/boot/syslinux/ldlinux.sys</li>
+<li>注意与 dlinux.c32 不同</li>
+</ul>
+</li>
+<li>执行/boot/syslinux/ldlinux.sys
+<ul>
+<li>ldlinux.sys 所处在的扇区位置不可更改，否则 syslinux 无法启动。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶段 III
+<ul>
+<li>加载/boot/syslinux/ldlinux.c32
+<ul>
+<li>ldlinux.sys 加载剩下的 syslinux 的核心部分 /boot/syslinux/ldlinux.c32</li>
+<li>这部分是因为文件大小限制无法放入 ldlinux.sys 中的核心模块</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶段 IIII
+<ul>
+<li>查找并加载配置文件/boot/syslinux/syslinux.cfg</li>
+</ul>
+</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="can-syslinux-handle-large-kernels">Can SYSLINUX Handle Large Kernels?</h3>
+<p>【SYSLINUX 能处理大内核吗？】</p>
+<p>这个版本的 SYSLINUX(syslinux 3.83)已经支持大内核了(bzimage 格式)，取消了对 bzimage 格式内核的 500K 大小限制。能自动检测和透明处理用户的 bzimage 格式内核。</p>
+<p>这个版本的 SYSLINUX 还支持启动时加载 RAMDISK(initrd)，initrd 是从 DOS 文件加载的，其选项(参数)这：“initrd=filename”(这里的 filename 为 initrd 的映像文件名，并且这个文件必须在启动磁盘的根目录下。)</p>
+<p>例如(EXTLINUX)：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">append ro root=/dev/hda1 initrd=/boot/initrd.img
+</code></pre></td></tr></table>
+</div>
+</div><p>为了兼容 bzimage 和最近的 zimage 内核，SYSLINUX 1.30 和更高的的版本确定使用 ID byte 0x31，PXELINUX 识别使用 ID byte 0x32，ISOLINUX using ID byte 0x33，and EXTLINUX using ID byte 0x34，ID byte 0x35-0x3f 是预留给 SYSLINUX 之后版本的衍生工具使用。</p>
+<h3 id="what-is-the-display-file-format">What is the DISPLAY File Format？</h3>
+<p>【什么是 DISPLAY 文件格式？】</p>
+<p>DISPLAY 和功能键帮助文件是 DOS 或者 UNIX 格式的文本文件。 此处，以下特殊代码将会被解释：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Clear the screen, home the cursor【清屏，重置光标】：
+&lt;FF&gt;
+&lt;FF&gt; = &lt;Ctrl-L&gt; = ASCII 12
+</code></pre></td></tr></table>
+</div>
+</div><p>注意：屏幕将被当前显示色所填充。</p>
+<h3 id="set-the-display-colors-to-the-specified-background-and-foreground-colors">Set the display colors to the specified background and foreground colors</h3>
+<p>【设置显示颜色为指定的背景色和前景色】：</p>
+<ul>
+<li>&lt;SI&gt;&lt;bg&gt;&lt;fg&gt;</li>
+<li>&lt;SI&gt; = &lt;Ctrl-0&gt; = ASCII 15</li>
+</ul>
+<p>这里的&lt;bg&gt;和&lt;fg&gt;为十六进制数，对于标准的 PC 显示属性为：</p>
+<h3 id="display-graphic-form-filename">Display graphic form filename</h3>
+<p>【显示图像文件名】：</p>
+<ul>
+<li>&lt;CAN&gt;filename&lt;newline&gt;</li>
+<li>&lt;CAN&gt; = &lt;Ctrl-X&gt; = ASCII 24</li>
+</ul>
+<p>如果当前是 VGA 显示，进入图形模式并显示指定的图形文件。该文件格式为 ad hoc 格式，称为 LSS16；所包含的 Perl 程序“ppmtolss16”可用于生成这样的图片。</p>
+<p>该图像文件将被显示为 640x480 16 色模式，一旦进入图形模式，显示属性(由&lt;SI&gt;代码序列设置)稍有不同，背景色会被忽略，前景色是图像文件中指定的 16 种颜色。因此，ppmtolss16 允许你指定颜色索引。注意：颜色索引 0 和 7 应该注意选择：0是背景色，7是 SYSLINUX 自身打印文字的颜色。</p>
+<p>Return to text mode【返回到文本模式】：</p>
+<ul>
+<li>&lt;EM&gt;</li>
+<li>&lt;EM&gt; &lt;Ctrl-Y&gt; = ASCII 25</li>
+</ul>
+<p>如果当前是图形模式，则返回到文本模式。</p>
+<p>选择哪一种模式打印消息的一部分：</p>
+<ul>
+<li>&lt;DLE&gt;..&lt;ETB&gt;</li>
+<li>&lt;Ctrl-P&gt;..&lt;Ctrl-W&gt; = ASCII 16-23</li>
+</ul>
+<p>这些代码可用于选择那种模式会打印到消息文件的某个部分。任一控制字符选择特定的实际输出模式 (文本屏幕、图形屏幕、串口)。</p>
+<p>示例：
+&lt;DC1&gt;Text mode&lt;DC2&gt;Graphics mode&lt;DC4&gt;Serial port&lt;ETB&gt;</p>
+<p>将以控制台输入模式输出。</p>
+<p>End of file 文件终止：</p>
+<ul>
+<li>&lt;SUB&gt;</li>
+<li>&lt;SUB&gt; = &lt;Ctrl-Z&gt; = ASCII 26</li>
+</ul>
+<p>文件终止(DOS 惯例)</p>
+<p>Beep 提示音：</p>
+<ul>
+<li>&lt;BEL&gt;</li>
+<li>&lt;BEL&gt; = &lt;Ctrl-G&gt; = ASCII 7</li>
+</ul>
+<p>扬声器提示音。</p>
+<h2 id="bios-安装">BIOS 安装</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mkdir /boot/syslinux
+cp /usr/lib/syslinux/bios/*.c32 /boot/syslinux/
+extlinux --install /boot/syslinux
+<span class="c1"># 未挂载FAT分区</span>
+syslinux --directory syslinux --install /dev/sda1
+
+<span class="c1"># 继续安装适用于对应分区表的 Syslinux 引导代码</span>
+<span class="c1"># MBR 分区表上会安装 mbr.bin</span>
+<span class="c1"># GPT 分区表上会安装 gptmbr.bin</span>
+
+<span class="c1"># MBR分区表</span>
+dd <span class="nv">bs</span><span class="o">=</span><span class="m">440</span> <span class="nv">count</span><span class="o">=</span><span class="m">1</span> <span class="nv">conv</span><span class="o">=</span>notrunc <span class="k">if</span><span class="o">=</span>/usr/lib/syslinux/bios/mbr.bin <span class="nv">of</span><span class="o">=</span>/dev/sda
+
+<span class="c1"># GPT分区表</span>
+<span class="c1">## 确保您的启动分区 /boot 被设置上了 2 号属性&#34;传统BIOS可启动&#34;（legacy BIOS bootable）</span>
+<span class="c1">## Parted 可以使用&#34;legacy_boot&#34;参数实现</span>
+sgdisk /dev/sda --attributes<span class="o">=</span>1:set:2
+
+<span class="c1"># 检查&#34;传统BIOS可启动&#34;属性</span>
+<span class="c1"># sgdisk /dev/sda --attributes=1:show</span>
+1:2:1 <span class="o">(</span>legacy BIOS bootable<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="uefi-安装">UEFI 安装</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mkdir -p esp/EFI/syslinux
+cp -r /usr/lib/syslinux/efi64/* esp/EFI/syslinux
+
+<span class="c1"># 使用 efibootmgr 安装引导记录</span>
+efibootmgr --create --disk /dev/sdX --part Y --loader /EFI/syslinux/syslinux.efi --label <span class="s2">&#34;Syslinux&#34;</span> --verbose
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="典型使用">典型使用</h2>
+<h3 id="安装">安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">cd</span> syslinux-xx
+<span class="k">mkdir</span>  H:\boot\syslinux
+\bios\win32<span class="p">&gt;</span>syslinux.exe -ma -d \boot\syslinux H:
+\bios\win32<span class="p">&gt;</span>syslinux.exe --mbr --active --directory /boot/syslinux/ --install H:
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="必要文件">必要文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cfg" data-lang="cfg"><span class="na">memdisk             引导IMG镜像文件</span>
+<span class="na">menu.c32            窗口模块</span>
+<span class="na">vesamenu.c32        窗口模块</span>
+<span class="na">chain.c32           指定分区(硬盘)启动</span>
+<span class="na">reboot.c32          重新启动计算机</span>
+<span class="na">poweroff.c32        关闭计算机</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="配置">配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># WIN PE
+LABEL Winpe
+MENU LABEL Winpe
+  kernel /boot/isope.bin
+  append initrd=/boot/SETUPLDR.BIN
+
+LABEL linux
+MENU LABEL Puppy linux
+  kernel /boot/linux/vmlinuz
+  append initrd=/boot/syslinux/initrd.gz
+
+# 硬盘
+LABEL StartHD
+  MENU LABEL StartHD
+  COM32 /boot/syslinux/chain.c32 hd0
+
+LABEL Poweroff
+    MENU LABEL Poweroff
+    COM32 /boot/syslinux/poweroff.c32
+
+LABEL reboot
+  MENU LABEL Reboot
+  COM32 /boot/syslinux/reboot.c32
+</code></pre></td></tr></table>
+</div>
+</div><p>syslinux 支持 gzip 或 zip 压缩格式的(memdisk)，标准 floppy 镜像可直接引导启动，非标准(容量大于 2880K)要附加 CHS 参数 其中，CHS 参数可通过软件 GDParam 来获取</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># 磁盘镜像引导
+LABEL maxdos
+  kernel memdisk
+  append initrd=boot/maxdos.img floppy c=555 h=2 s=18
+
+# ISO光盘
+LABEL WIN7PE.iso
+  LINUX memdisk
+  INITRD /boot/wins/WIN7PE.iso
+  APPEND iso raw
+
+# LiveCD
+LABEL CentOS
+    MENU LABLE CentOS
+    kernel /boot/CentOS/vmlinuz0
+    append initrd=/boot/CentOS/initrd0.img root=UUID=4C9E-56D3 rootfstype=vfat rw quiet liveimg SQUASHED=&#34;/sysroot/boot/CentOS/squashfs.img&#34;
+#root=LABEL=FIX
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://wiki.archlinuxcn.org/wiki/Syslinux">Syslinux　Archlinx Wiki</a></li>
+<li><a href="https://www.cnblogs.com/hzl6255/p/3341374.html">Syslinux使用</a></li>
+<li><a href="https://www.cnblogs.com/lixuebin/p/10814607.html">syslinux引导文件名与菜单解释</a></li>
+</ul>
+
+  </div>
+</article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

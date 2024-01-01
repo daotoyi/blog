@@ -126,6 +126,98 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/hardware-hsr-prp/">HSR/PRP 冗余协议</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-08-18 </span>
+      <div class="post-category">
+          <a href="/categories/hardware/"> Hardware </a>
+          </div>
+        <span class="more-meta"> 186 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）. PRP 并行冗余协议 帧通过兼容设备和交换机以并行方
+    </div>
+    <div class="read-more">
+      <a href="/post/hardware-hsr-prp/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/linux-redhat-update-yum-repo/">Linux Redhat/Centos 更新 yum 源</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-08-07 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          </div>
+        <span class="more-meta"> 666 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      更换 yum 源 法 1:直接修改配置 /etc/yum.repos.d/，修改或者新建 .repo 格式的文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27
+    </div>
+    <div class="read-more">
+      <a href="/post/linux-redhat-update-yum-repo/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/linux-cmd-brctl/">Linux cmd brctl</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-08-07 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          </div>
+        <span class="more-meta"> 209 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      简介 “bridge control”的缩写，其功能是用于管理以太网网桥。属于 bridge-utils 软件包。 参数 参数 功能 addbr 创建网桥 delbr 删除网桥 addif 将网卡接口接入网桥 delif 删
+    </div>
+    <div class="read-more">
+      <a href="/post/linux-cmd-brctl/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/python-call-c&#43;&#43;/">Python 调用 C&#43;&#43;的方式</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-08-07 </span>
+      <div class="post-category">
+          <a href="/categories/python/"> Python </a>
+          </div>
+        <span class="more-meta"> 892 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()+ &#34;/libcdll.so&#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa
+    </div>
+    <div class="read-more">
+      <a href="/post/python-call-c&#43;&#43;/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/code-html-xml/">HTML、XML、XPath</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-08-07 </span>
@@ -143,98 +235,6 @@
     </div>
     <div class="read-more">
       <a href="/post/code-html-xml/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-archives/">Linux 集锦</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-07 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 308 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      shell 空语句 : shell : python pass 去除文件后辍 1 2 $ basename /folder/f.zip .zip f 变更名中嵌套变量 1 2 3 4 5 6 id=1 string=id stream_1=&#34;111&#34; line=&#34;$(eval echo \${stread_${id}}), 222&#34; echo &#34;{!string}&#34; Code Snippet 1: calculate \\({stread_\){id}} CMD cp 和 mv 命令添加进度条 由于 cp 和 mv 命令都是
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-archives/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-glibc-eglibc-uclibc-musl/">Linux glibc、eglibc、uclibc、Musl-libc</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-06 </span>
-      <div class="post-category">
-          <a href="/categories/cplus/"> Cplus </a>
-          </div>
-        <span class="more-meta"> 418 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      glibc GNU C Library 是 GNU 项目（GNU Project），所实现的 C 语言标准库（C standard library） 常见的桌面和服务器中的 GNU/Linux 类的系统中，都是用的这套 C 语言标
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-glibc-eglibc-uclibc-musl/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-remote-desktop/">Linux 远程桌面(win)</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-05 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> Linux </a>
-          </div>
-        <span class="more-meta"> 944 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-remote-desktop/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux-gcc-compile-lib/">Linux gcc/g&#43;&#43;</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-02 </span>
-      <div class="post-category">
-          <a href="/categories/cplus/"> Cplus </a>
-          </div>
-        <span class="more-meta"> 725 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I+ 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警
-    </div>
-    <div class="read-more">
-      <a href="/post/linux-gcc-compile-lib/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -289,7 +289,7 @@
   <span class="copyright-year">
     &copy; 
     2021 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
   </span>
 </div>
 

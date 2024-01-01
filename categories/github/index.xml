@@ -67,7 +67,7 @@
       <pubDate>Fri, 10 Jun 2022 21:00:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/git-tag/</guid>
-      <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bashttps://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git tag</description>
+      <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bash https://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@
       <pubDate>Fri, 10 Jun 2022 21:00:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/git-tag/</guid>
-      <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bashttps://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git tag</description>
+      <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bash https://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@
       <pubDate>Sun, 27 Mar 2022 23:17:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/post/git-common-manual/</guid>
-      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt; 远程</description>
+      <description>常用命令 常用 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt;</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Sun, 27 Mar 2022 23:17:00 +0000</pubDate>
       
       <guid>https://daotoyi.github.io/posts/git-common-manual/</guid>
-      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt; 远程</description>
+      <description>常用命令 常用 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux UEFI - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="entrance 在现代基于 UEFI 固件的系统中，shim 已经成为目前所有 Linux 发行版本中必备的一阶 bootloader；而传统上我们熟悉的 grub2 变成了二阶 bootloa" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-uefi/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux UEFI" />
+<meta property="og:description" content="entrance 在现代基于 UEFI 固件的系统中，shim 已经成为目前所有 Linux 发行版本中必备的一阶 bootloader；而传统上我们熟悉的 grub2 变成了二阶 bootloa" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-uefi/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-08-29T22:33:00+00:00" />
+<meta property="article:modified_time" content="2024-01-01T17:17:17+08:00" />
+
+<meta itemprop="name" content="Linux UEFI">
+<meta itemprop="description" content="entrance 在现代基于 UEFI 固件的系统中，shim 已经成为目前所有 Linux 发行版本中必备的一阶 bootloader；而传统上我们熟悉的 grub2 变成了二阶 bootloa"><meta itemprop="datePublished" content="2023-08-29T22:33:00+00:00" />
+<meta itemprop="dateModified" content="2024-01-01T17:17:17+08:00" />
+<meta itemprop="wordCount" content="2640">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux UEFI"/>
+<meta name="twitter:description" content="entrance 在现代基于 UEFI 固件的系统中，shim 已经成为目前所有 Linux 发行版本中必备的一阶 bootloader；而传统上我们熟悉的 grub2 变成了二阶 bootloa"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux UEFI</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-08-29 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 2640 words </span>
+          <span class="more-meta"> 6 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#entrance">entrance</a></li>
+        <li><a href="#shim">shim</a>
+          <ul>
+            <li><a href="#esp">ESP</a></li>
+            <li><a href="#shim-dot-efi-and-grubx64-dot-efi">shim.efi &amp; grubx64.efi</a></li>
+            <li><a href="#shim-first-boot">shim first boot</a></li>
+            <li><a href="#shim-normal-boot">shim normal boot</a></li>
+            <li><a href="#shim-boot">shim boot</a></li>
+            <li><a href="#ref">ref</a></li>
+          </ul>
+        </li>
+        <li><a href="#secureboot">SecureBoot</a></li>
+        <li><a href="#shell">shell</a></li>
+        <li><a href="#grub-install">grub install</a></li>
+        <li><a href="#ref">ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="entrance">entrance</h2>
+<p>在现代基于 UEFI 固件的系统中，shim 已经成为目前所有 Linux 发行版本中必备的一阶 bootloader；而传统上我们熟悉的 grub2 变成了二阶 bootloader。</p>
+<p>UEFI 规范里，在 GPT 分区表的基础上，规定了一个 EFI 系统分区（EFI System Partition，ESP），ESP 要格式化成 FAT32，EFI 启动文件要放在“\EFI\&lt;厂商&gt;”文件夹下面.
+├── EFI
+│   ├── boot
+│   │   └── bootX64.efi
+├── Microsoft
+├── Clover</p>
+<p>/EFI/Boot 这个文件夹放哪个程序都行。无论是“\EFI\Microsoft\Boot\Bootmgfw.efi”，还是“\EFI\Clover\CloverX64.efi”，只要放到“\EFI\Boot”下并且改名“bootX64.efi”，就能在没添加文件启动项的情况下，默认加载对应的系统。</p>
+<h2 id="shim">shim</h2>
+<h3 id="esp">ESP</h3>
+<p>├── EFI
+│   ├── myos
+│   │   ├── BOOT.CSV
+│   │   ├── BOOTX64.CSV
+│   │   ├── fonts
+│   │   │   └── unicode.pf2
+│   │   ├── grub.cfg
+│   │   ├── grubenv
+│   │   ├── grubx64.efi
+│   │   ├── mmx64.efi
+│   │   ├── MokManager.efi
+│   │   ├── shim.efi
+│   │   ├── shimx64-myos.efi
+│   │   └── shimx64.efi
+│   └── boot
+│          ├── bootx64.efi
+│          ├── fallback.efi
+│          └── fbx64.efi
+└── startup.nsh</p>
+<h3 id="shim-dot-efi-and-grubx64-dot-efi">shim.efi &amp; grubx64.efi</h3>
+<p>grubx64.efi 是 GRUB 二进制文件，而 EFI/centos/shimx64.efi 是 shim 的二进制文件。</p>
+<p>shimx64.efi 是一个相对简单的程序，它提供了一种在安全启动（Secure Boot）开启的状态下使用的方法。</p>
+<p>安全启动（Secure Boot）开启的状态下，未签名的 GRUB 版本(grubx64.efi)将无法启动，因此 shim 弥补了缺陷并添加了自己的安全工具，与 安全启动(Secure Boot) 类似。在没有启用 安全启动（Secure Boot） 的计算机中，启动 shimx64.efi 和启动 grubx64.efi 是一样的。</p>
+<h3 id="shim-first-boot">shim first boot</h3>
+<ul>
+<li>系统完成装机并进行第一次启动的时候，UEFI boot manager 会自动枚举出一个叫做 UEFI OS 的启动选项，该启动选项将 bootloader 程序的路径设置为/EFI/boot/bootx64.efi，即一阶 bootloader shim。</li>
+<li>shim 的主要工作是启动二阶 bootloader；
+<ul>
+<li>shim 会在当前目录下寻找 grubx64.efi，即/EFI/boot/grubx64.efi。</li>
+<li>如果不存在，shim 会加载/EFI/boot 目录下的 fbx64.efi(或 fallback.efi)。</li>
+<li>该程序的职责是枚举/EFI 目录下的、除 boot 子目录以外的所有子目录，并找到第一个 BOOTX64.CSV 文件。下面是一个记录了自定义的 myos 的 BOOTX64.CSV
+<ul>
+<li>该文件记录了二阶 bootloader 的路径（该路径相对于当前的\目录）和 title。title 字段会被用来创建一个全新的启动选项，该启动选项中的程序路径也会被设定为二阶 bootloader 所在的绝对路径(/EFI/&lt;二阶 bootloader 路径&gt;)</li>
+</ul>
+</li>
+<li>fallback 的作用就是创建一个启动选项，该启动选项指向了/EFI/&lt;bootloader-id&gt;/shimx64.efi,fallback 程序的最后一个工作就是修改 BootOrder 变量，将新创建的启动选项设为最优先启动，然后 issue warm boot 重启系统。</li>
+</ul>
+</li>
+<li>/EFI/boot/bootx64.efi -&gt; /EFI/boot/fbx64.efi -&gt; /EFI/BOOTX64.CSV -&gt; 创建启动选项；</li>
+<li>修改 BootOrder -&gt; /EFI/grubx64.efi -&gt; /EFI/grub.cfg -&gt; /boot/vmlinuz-* 。</li>
+</ul>
+<h3 id="shim-normal-boot">shim normal boot</h3>
+<p>正常情况下，UEFI boot manager 会根据新的 BootOrder 变量，从新的启动选项启动一阶 bootloader，即/EFI/&lt;bootloader-id&gt;/shimx64.efi。然后，/EFI/&lt;bootloader-id&gt;/shimx64.efi 在当前目录下找到 grubx64.efi，即/EFI/&lt;bootloader-id&gt;/grubx64.efi,进入 grub2 启动流程。</p>
+<h3 id="shim-boot">shim boot</h3>
+<ul>
+<li>shim first boot
+<ul>
+<li>默认启动选项 UEFI OS -&gt; /EFI/boot/bootx64.efi（本质就是/EFI/boot/shimx64.efi） -&gt; /EFI/boot/fbx64.efi -&gt; /EFI/myos/BOOTX64.CSV（记录了自定义启动选项的名称为 My Linux） -&gt; 自动创建启动选项，并修改 BootOrder 变量，然后自动执行 warm reboot。正常情况下，重启后会进入 shim normal boot 流程。</li>
+</ul>
+</li>
+<li>shim normal boot
+<ul>
+<li>启动选项 My Linux -&gt; /EFI/myos/shimx64.efi -&gt; /EFI/myos/grubx64.efi -&gt; /EFI/myos/grub.cfg -&gt; /boot/vmlinuz-* 。正常情况下，不管系统再经过多少次重启，每次都会走该启动流程，不会再执行 shim first boot。</li>
+</ul>
+</li>
+</ul>
+<h3 id="ref">ref</h3>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/436456032?utm_id=0">shim启动流程分析</a></li>
+<li><a href="https://www.cnblogs.com/shamoguzhou/p/17380191.html">grubx64.efi bootx64.efi</a></li>
+</ul>
+<h2 id="secureboot">SecureBoot</h2>
+<p>Secure Boot 的目的，是防止恶意软件侵入。它的做法就是采用密钥。</p>
+<p>UEFI 规定，主板出厂的时候，可以内置一些可靠的公钥。然后，任何想要在这块主板上加载的操作系统或者硬件驱动程序，都必须通过这些公钥的认证。</p>
+<p>也就是说，这些软件必须用对应的私钥签署过，否则主板拒绝加载。由于恶意软件不可能通过认证，因此就没有办法感染 Boot。</p>
+<h2 id="shell">shell</h2>
+<p>UEFI Shell 是一个提供用户和 UEFI 系统之间的接口，类似于 CMD。</p>
+<p>help 就可以输出所有指令，不做特殊说明，内置命令的命令行参数中的数值使用的是十六进制，和 Linux 不同的是不区分大小写。</p>
+<p>常见命令：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ver</td>
+<td>展示 shell 的版本号</td>
+</tr>
+<tr>
+<td>map -r</td>
+<td>列出所有设备</td>
+</tr>
+<tr>
+<td>fs0:</td>
+<td>设备号。通过设备号进入设备</td>
+</tr>
+<tr>
+<td>devices</td>
+<td>显示 EFI 驱动程序管理的设备</td>
+</tr>
+<tr>
+<td>drivers</td>
+<td>显示设备驱动</td>
+</tr>
+<tr>
+<td>dh</td>
+<td>显示设备句柄</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>列出目录内容或者文件信息</td>
+</tr>
+<tr>
+<td>echo</td>
+<td>关闭或者打开回显</td>
+</tr>
+<tr>
+<td>pci</td>
+<td>显示 PCI 设备</td>
+</tr>
+<tr>
+<td>devtree</td>
+<td>显示设备树</td>
+</tr>
+<tr>
+<td>date</td>
+<td>显示当前或者系统的日期</td>
+</tr>
+</tbody>
+</table>
+<h2 id="grub-install">grub install</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#系统默认已经安装grub，uefi环境下，安装的grub组件包括：grub-common、grub-efi-amd64、grub-efi-amd64-bin、grub2-common</span>
+apt list grub* <span class="c1">#列出grub相关包，可以看出已经安装的grub包，确认是否uefi环境，然后继续</span>
+
+<span class="c1">#1. 简单安装</span>
+grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot/efi --bootloader-id<span class="o">=</span>mygrub
+<span class="c1"># grub-install --removable --no-floppy --target=x86_64-efi --boot-directory=/ --efi-directory=/boot</span>
+<span class="c1"># x86_64-efi就是grub 的uefi引导框架</span>
+<span class="c1"># --boot-directory=参数指定boot根文件夹</span>
+<span class="c1">#--efi-directory这个指示了esp挂载的根在哪里。</span>
+<span class="c1">#--bootloader-id 这个参数会在esp分区的/efi/目录下生成对应的文件夹,和mircosoft，ubuntu等文件夹平级。这个命令并不会生成esp分区的/efi/boot/bootx64.efi 默认启动器，只会生成对应文件夹的/efi/mygrub/grubx64.efi启动器，这个时候就没有默认的启动器，如果你想要,可以复制：</span>
+
+mkdir /boot/efi/efi/boot
+mv /boot/efi/efi/mygrub/grubx64.efi /boot/efi/efi/boot
+
+
+<span class="c1"># 2. 定制安装</span>
+<span class="c1"># 自动生成的启动器，符合大多数要求，为了演示，接下来对其中某些过程进行定制</span>
+<span class="c1"># 首先要理解grub-install干了什么，它首先调用了grub-mkconfig生成了菜单，然后调用grub-mkimage生成启动映像</span>
+
+<span class="c1">#2.1 生成菜单，会自动调用os-prober搜索磁盘的其他系统，生成菜单</span>
+mkdir -p /boot/efi/efi/grub2
+grub-mkconfig -o /boot/efi/efi/grub2/grub.cfg
+
+<span class="c1"># 自动生成的菜单是根据/etc/grub.d/ 下的脚本，和/etc/default/grub来生成的。因为要定制，所以可以对这个生成后的脚本直接进行编辑。</span>
+
+<span class="nb">cd</span> /boot/efi/efi/grub2
+nano grub.cfg
+<span class="c1">#一般只需要增加或删减菜单项即可</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="ref">ref</h2>
+<ul>
+<li><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=157812">XORBOOT Uefi: 多系统引导程序</a></li>
+<li><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=413597">使用Grub2定制UEFI启动 (bootx64.efi)</a></li>
+<li><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=413596">UEFI启动文件bootx64.efi的定制</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-01-01
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/46c8a99c69dbc6cac6e17ea6626c73c93cdf689b" title="update weekly">(46c8a99)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/linux-grub2/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Linux Grub2 basic</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/windows-clear-c-disk/">
+            <span class="next-text nav-default">Windows C 盘清理</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

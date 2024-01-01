@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux Grub 手动启动 linux - DaoyiSite</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="daoyi" /><meta name="description" content="普通场景 「BIOS」&#43;「MBR」&#43;「普通的磁盘分区」 1 2 3 4 5 6 7 8 9 10 11 #1 查看所有分区 grub&amp;gt; ls #2 查看分区下的内容 grub&amp;gt; ls (hd0,1)/ #3 设置根分区及启动盘 grub&amp;gt; set" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="https://daotoyi.github.io/post/linux-grub-starup-manual/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux Grub 手动启动 linux" />
+<meta property="og:description" content="普通场景 「BIOS」&#43;「MBR」&#43;「普通的磁盘分区」 1 2 3 4 5 6 7 8 9 10 11 #1 查看所有分区 grub&gt; ls #2 查看分区下的内容 grub&gt; ls (hd0,1)/ #3 设置根分区及启动盘 grub&gt; set" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daotoyi.github.io/post/linux-grub-starup-manual/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-12-29T08:35:00+00:00" />
+<meta property="article:modified_time" content="2024-01-01T17:17:17+08:00" />
+
+<meta itemprop="name" content="Linux Grub 手动启动 linux">
+<meta itemprop="description" content="普通场景 「BIOS」&#43;「MBR」&#43;「普通的磁盘分区」 1 2 3 4 5 6 7 8 9 10 11 #1 查看所有分区 grub&gt; ls #2 查看分区下的内容 grub&gt; ls (hd0,1)/ #3 设置根分区及启动盘 grub&gt; set"><meta itemprop="datePublished" content="2023-12-29T08:35:00+00:00" />
+<meta itemprop="dateModified" content="2024-01-01T17:17:17+08:00" />
+<meta itemprop="wordCount" content="1126">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Grub 手动启动 linux"/>
+<meta name="twitter:description" content="普通场景 「BIOS」&#43;「MBR」&#43;「普通的磁盘分区」 1 2 3 4 5 6 7 8 9 10 11 #1 查看所有分区 grub&gt; ls #2 查看分区下的内容 grub&gt; ls (hd0,1)/ #3 设置根分区及启动盘 grub&gt; set"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">道一</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">道一</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux Grub 手动启动 linux</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-12-29 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 1126 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#普通场景">普通场景</a></li>
+        <li><a href="#引导-iso-启动">引导 iso 启动</a></li>
+        <li><a href="#uefi-模式下引导-windows">uefi 模式下引导 windows</a></li>
+        <li><a href="#bios-模式下引导-windows">bios 模式下引导 windows</a></li>
+        <li><a href="#救援模式--grub-rescue">救援模式(grub rescue)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="普通场景">普通场景</h2>
+<p>「BIOS」+「MBR」+「普通的磁盘分区」</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#1 查看所有分区</span>
+grub&gt; ls
+
+<span class="c1">#2 查看分区下的内容</span>
+grub&gt; ls <span class="o">(</span>hd0,1<span class="o">)</span>/
+
+<span class="c1">#3 设置根分区及启动盘</span>
+grub&gt; <span class="nb">set</span> <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+grub&gt; linux /boot/vmlinuz-3.13.0-29-generic <span class="nv">root</span><span class="o">=</span>/dev/sda1
+grub&gt; initrd /boot/initrd.img-3.13.0-29-generic
+grub&gt; boot
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="引导-iso-启动">引导 iso 启动</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查询所有已安装磁盘并打印详细信息</span>
+grub&gt;ls -l
+
+<span class="c1"># 设置根目录分区</span>
+grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+
+<span class="c1"># 将Ubuntu.iso位置赋值给变量isofile</span>
+grub&gt;set <span class="nv">isofile</span><span class="o">=</span>/ubuntu-18.04-desktop-amd64.iso
+
+<span class="c1"># 使用grub2的回放技术，把ubuntu.iso的文件内容，投射（挂载）到loop上。</span>
+<span class="c1"># 在使用这个命令时，得考虑你的内存足够的大。(hd0,1)iso镜像文件所在分区</span>
+grub&gt;loopback loop <span class="o">(</span>hd0,1<span class="o">)</span><span class="nv">$isofile</span>
+
+<span class="c1"># 加载内核，其中(loop),是使用了上一句所投射的设备，其访问的是ubuntu.iso文件的内容</span>
+<span class="c1"># boot=casper将目录casper挂载为boot，</span>
+<span class="c1"># iso-scan/filename=$isofile 是利用iso-scan来寻找到ubuntu.iso文件所在位置并把所找到的iso文件挂到光驱设备</span>
+grub&gt;linux <span class="o">(</span>loop<span class="o">)</span>/casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper iso-scan/filename<span class="o">=</span><span class="nv">$isofile</span> quiet splash
+
+<span class="c1"># initrid.lz是一个镜象文件，里面存的是一些内核要加载的重要文件</span>
+grub&gt;initrd <span class="o">(</span>loop<span class="o">)</span>/casper/initrd.lz
+
+<span class="c1">#根据上面的参数启动系统</span>
+grub&gt;boot
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="uefi-模式下引导-windows">uefi 模式下引导 windows</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#加载ntfs文件系统</span>
+grub&gt;insmod ntfs
+grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+grub&gt;chainloader +1 <span class="c1"># 引导传统bios启动的Windows</span>
+<span class="c1">#如果不成功则可能是efi，换个目录如：bootmgfw.efi--&gt;bootx64.efi</span>
+grub&gt;chainloader /EFI/boot/bootx64.efi
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="bios-模式下引导-windows">bios 模式下引导 windows</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+<span class="c1"># /bootmgr 是一个在根目录下的引导文件，</span>
+<span class="c1"># bootmgr是在Windows Vista、Windows 7、windows 8/8.1和windows 10中使用的新的启动管理器，</span>
+<span class="c1"># 就相当于Win NT/Win 2000/Win XP时代的NTLDR。</span>
+<span class="c1"># chainloader /bootmgr 命令会报签名错误，即使关闭签名验证也无法启动</span>
+grub&gt;ntldr /bootmgr
+grub&gt;boot
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="救援模式--grub-rescue">救援模式(grub rescue)</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">error : unknow filesystem
+grub rescue&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>由于分区调整或分区 UUID 改变造成 grub2 不能正常启动，从而进入修复模式了（grub rescue)，也称救援模式。</p>
+<p>在救援模式下只有很少的命令可以用：set  ,  ls , insmod , root , prefix</p>
+<ul>
+<li>set  查看环境变量，这里可以查看启动路径和分区。</li>
+<li>ls   查看设备</li>
+<li>insmod  加载模块</li>
+<li>root  指定用于启动系统的分区,在救援模式下设置 grub 启动分区</li>
+<li>prefix 设定 grub 启动路径</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">grub rescue&gt; ls   回车
+<span class="o">(</span>hd0<span class="o">)</span> <span class="o">(</span>hd0,msdos9<span class="o">)</span> <span class="o">(</span>hd0,msdos8<span class="o">)</span> <span class="o">(</span>hd0,msdos7<span class="o">)</span> <span class="o">(</span>hd0,msdos6<span class="o">)</span> <span class="o">(</span>hd0,msdos5<span class="o">)</span> <span class="o">(</span>hd0,msdos2<span class="o">)</span> <span class="o">(</span>hd0,msdos1<span class="o">)</span>
+grub rescue&gt; ls <span class="o">(</span>hd0,msdos1<span class="o">)</span>/
+<span class="c1"># （假如找到的启动分区是hd0,msdos8）</span>
+
+<span class="c1">## 查看一下设置情况：</span>
+<span class="c1"># grub rescue&gt; set</span>
+<span class="c1"># prefix=(hd0,msdos1)/boot/grub</span>
+<span class="c1"># root=hd0,msdos1</span>
+
+grub rescue&gt;root<span class="o">=(</span>hd0,msdos8<span class="o">)</span>
+grub rescue&gt;prefix<span class="o">=</span>/boot/grub                 <span class="c1">#grub路径设置</span>
+grub rescue&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,msdos8<span class="o">)</span>
+grub rescue&gt;set <span class="nv">prefix</span><span class="o">=(</span>hd0,msdos8<span class="o">)</span>/boot/grub
+grub rescue&gt;insmod normal                     <span class="c1">#启动normal启动</span>
+<span class="c1"># grub rescue&gt;insmod /boot/grub/normal.mod  #加载基本模块</span>
+grub rescue&gt;normal
+<span class="c1"># normal  #进入正常模式，出现菜单，如果加载grub.cfg（错误的）可能出现问题，按shift可以出现菜单，之后按c键进入控制台</span>
+
+<span class="c1"># grub&gt;正常的grub模式，可用命令多</span>
+grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,msdos1<span class="o">)</span>  <span class="c1">#设置正常启动分区</span>
+grub&gt;linux /boot/vmlinuz ....  ro text <span class="nv">root</span><span class="o">=</span>/dev/sda1  <span class="c1">#加载内核，进入控制台模式</span>
+grub&gt;initrd  /boot/initrd ....  <span class="c1">#加载initrd.img</span>
+grub&gt;boot <span class="c1">#引导</span>
+
+<span class="c1"># 启动进入系统后</span>
+grub-install /dev/sda
+update-grub
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">daoyi</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-01-01
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/46c8a99c69dbc6cac6e17ea6626c73c93cdf689b" title="update weekly">(46c8a99)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/linux-rhel8/">
+            <span class="next-text nav-default">Linux RHEL8.8LTS 安装仓库及 YUM 挂载方式</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+    <div id="utter-container"></div>
+    <script src="https://utteranc.es/client.js"
+            repo= 'daotoyi/blog-comments'
+            issue-term= "pathname"
+            theme= 'github-light'
+            crossorigin= "anonymous"
+            async>
+    </script>
+    
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="daotoyi@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/8853973/daotoyi" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.facebook.com/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://www.linkedin.cn/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.google.com/" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/daotoyi/daotoyi.github.io" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://github.com/daotoyi/" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://daotoyi.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

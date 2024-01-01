@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daotoyi.github.io/post/linux-grub2/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-08-30T10:09:00+00:00" />
-<meta property="article:modified_time" content="2023-12-24T23:11:59+08:00" />
+<meta property="article:modified_time" content="2024-01-01T17:17:17+08:00" />
 
 <meta itemprop="name" content="Linux Grub2 basic">
 <meta itemprop="description" content="grub2 新特性 grub2 和 grub 有很多不同的地方： 图形接口 使用了模块机制，通过动态加载需要的模块来扩展功能 支持脚本语言，例如条件判断，循环、变量和函数 支持 rescue 模"><meta itemprop="datePublished" content="2023-08-30T10:09:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-24T23:11:59+08:00" />
-<meta itemprop="wordCount" content="9030">
+<meta itemprop="dateModified" content="2024-01-01T17:17:17+08:00" />
+<meta itemprop="wordCount" content="9720">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux Grub2 basic"/>
 <meta name="twitter:description" content="grub2 新特性 grub2 和 grub 有很多不同的地方： 图形接口 使用了模块机制，通过动态加载需要的模块来扩展功能 支持脚本语言，例如条件判断，循环、变量和函数 支持 rescue 模"/>
@@ -136,8 +136,8 @@
         <div class="post-category">
             <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 9030 words </span>
-          <span class="more-meta"> 19 mins read </span>
+          <span class="more-meta"> 9720 words </span>
+          <span class="more-meta"> 20 mins read </span>
         
       </div>
     </header>
@@ -158,6 +158,14 @@
           <ul>
             <li><a href="#安装过程">安装过程</a></li>
             <li><a href="#grub2-常用命令">grub2 常用命令</a></li>
+          </ul>
+        </li>
+        <li><a href="#grub2-手动启动-linux">grub2 手动启动 linux</a>
+          <ul>
+            <li><a href="#普通场景">普通场景</a></li>
+            <li><a href="#引导-iso-启动">引导 iso 启动</a></li>
+            <li><a href="#uefi-模式下引导-windows">uefi 模式下引导 windows</a></li>
+            <li><a href="#bios-模式下引导-windows">bios 模式下引导 windows</a></li>
           </ul>
         </li>
         <li><a href="#grub2-配置文件详解">grub2 配置文件详解</a>
@@ -329,6 +337,130 @@ initrd (lo0)/abc.img</p>
 <span class="c1"># 对非标准的 1.4M 和 2.8M 的其他镜像挂载方法，需要指定 CHS 参数：menuentry &#34;Boot from IMG&#34; {</span>
 linux16 /memdisk <span class="nv">c</span><span class="o">=</span>* <span class="nv">h</span><span class="o">=</span>* <span class="nv">s</span><span class="o">=</span>* floppy
 initrd16 /xxx.img<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="grub2-手动启动-linux">grub2 手动启动 linux</h2>
+<h3 id="普通场景">普通场景</h3>
+<p>「BIOS」+「MBR」+「普通的磁盘分区」</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#1 查看所有分区</span>
+grub&gt; ls
+
+<span class="c1">#2 查看分区下的内容</span>
+grub&gt; ls <span class="o">(</span>hd0,1<span class="o">)</span>/
+
+<span class="c1">#3 设置根分区及启动盘</span>
+grub&gt; <span class="nb">set</span> <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+grub&gt; linux /boot/vmlinuz-3.13.0-29-generic <span class="nv">root</span><span class="o">=</span>/dev/sda1
+grub&gt; initrd /boot/initrd.img-3.13.0-29-generic
+grub&gt; boot
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="引导-iso-启动">引导 iso 启动</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查询所有已安装磁盘并打印详细信息</span>
+grub&gt;ls -l
+
+<span class="c1"># 设置根目录分区</span>
+grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+
+<span class="c1"># 将Ubuntu.iso位置赋值给变量isofile</span>
+grub&gt;set <span class="nv">isofile</span><span class="o">=</span>/ubuntu-18.04-desktop-amd64.iso
+
+<span class="c1"># 使用grub2的回放技术，把ubuntu.iso的文件内容，投射（挂载）到loop上。</span>
+<span class="c1"># 在使用这个命令时，得考虑你的内存足够的大。(hd0,1)iso镜像文件所在分区</span>
+grub&gt;loopback loop <span class="o">(</span>hd0,1<span class="o">)</span><span class="nv">$isofile</span>
+
+<span class="c1"># 加载内核，其中(loop),是使用了上一句所投射的设备，其访问的是ubuntu.iso文件的内容</span>
+<span class="c1"># boot=casper将目录casper挂载为boot，</span>
+<span class="c1"># iso-scan/filename=$isofile 是利用iso-scan来寻找到ubuntu.iso文件所在位置并把所找到的iso文件挂到光驱设备</span>
+grub&gt;linux <span class="o">(</span>loop<span class="o">)</span>/casper/vmlinuz <span class="nv">boot</span><span class="o">=</span>casper iso-scan/filename<span class="o">=</span><span class="nv">$isofile</span> quiet splash
+
+<span class="c1"># initrid.lz是一个镜象文件，里面存的是一些内核要加载的重要文件</span>
+grub&gt;initrd <span class="o">(</span>loop<span class="o">)</span>/casper/initrd.lz
+
+<span class="c1">#根据上面的参数启动系统</span>
+grub&gt;boot
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="uefi-模式下引导-windows">uefi 模式下引导 windows</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#加载ntfs文件系统</span>
+grub&gt;insmod ntfs
+grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+grub&gt;chainloader +1 <span class="c1"># 引导传统bios启动的Windows</span>
+<span class="c1">#如果不成功则可能是efi，换个目录如：bootmgfw.efi--&gt;bootx64.efi</span>
+grub&gt;chainloader /EFI/boot/bootx64.efi
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="bios-模式下引导-windows">bios 模式下引导 windows</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">grub&gt;set <span class="nv">root</span><span class="o">=(</span>hd0,1<span class="o">)</span>
+<span class="c1"># /bootmgr 是一个在根目录下的引导文件，</span>
+<span class="c1"># bootmgr是在Windows Vista、Windows 7、windows 8/8.1和windows 10中使用的新的启动管理器，</span>
+<span class="c1"># 就相当于Win NT/Win 2000/Win XP时代的NTLDR。</span>
+<span class="c1"># chainloader /bootmgr 命令会报签名错误，即使关闭签名验证也无法启动</span>
+grub&gt;ntldr /bootmgr
+grub&gt;boot
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="grub2-配置文件详解">grub2 配置文件详解</h2>
@@ -1219,8 +1351,8 @@ sudo update-grub <span class="c1">#--------&gt;重建 menu.lst</span>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2023-12-24
-        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/41b07422286c8641e3c6ea9a3ddd4f28bc093159" title="update weely">(41b0742)</a>
+        2024-01-01
+        <a href="https://github.com/daotoyi/daotoyi.github.io/commit/46c8a99c69dbc6cac6e17ea6626c73c93cdf689b" title="update weekly">(46c8a99)</a>
     </span>
   </p>
   
@@ -1234,8 +1366,8 @@ sudo update-grub <span class="c1">#--------&gt;重建 menu.lst</span>
             <span class="prev-text nav-default">Linux 系统时间与 RTC 时间设置</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/windows-clear-c-disk/">
-            <span class="next-text nav-default">Windows C 盘清理</span>
+        <a class="next" href="/post/linux-uefi/">
+            <span class="next-text nav-default">Linux UEFI</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -1294,7 +1426,7 @@ sudo update-grub <span class="c1">#--------&gt;重建 menu.lst</span>
   <span class="copyright-year">
     &copy; 
     2021 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>daoyi</span>
   </span>
 </div>
 

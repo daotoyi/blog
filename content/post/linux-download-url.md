@@ -1,7 +1,7 @@
 ---
 title: "Linux 相关镜像网址"
 date: "2023-09-23 22:17:00"
-lastmod: "2023-12-17 16:48:52"
+lastmod: "2024-01-01 17:10:34"
 categories: ["Linux"]
 draft: false
 ---
@@ -23,3 +23,8 @@ draft: false
 ## debian sid 源 {#debian-sid-源}
 
 <https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download>
+
+
+## 国内源集锦 {#国内源集锦}
+
+-   [CentOS、Ubuntu、Debian、Alpine更换国内源集锦](https://mp.weixin.qq.com/s/HIWxug83W5H42MnL6VXT3g)

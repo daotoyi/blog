@@ -1,7 +1,7 @@
 ---
 title: "Github Pages 托管静态网页绑定自定义域名"
 date: "2022-02-07 08:29:00"
-lastmod: "2022-04-30 12:32:09"
+lastmod: "2024-01-01 16:23:52"
 categories: ["Github"]
 draft: false
 ---
@@ -59,3 +59,30 @@ CNAME 方法用/不用 www 都能访问网站（www 的方式，会先解析成<
 -   使用 cloudflare.
     -   cloudflare CDN 在国内没有 CDN 节点，但是整体效果是完爆 github.io
     -   要注意的是免费版本是有请求次数限制的，每天 10W 次.
+
+
+## Firebase {#firebase}
+
+Firebase 记录浏览量与点赞数.
+
+Firebase[1] 是一个由谷歌开发的平台，它提供了多种工具和服务，包括：云端数据库、身份验证、数据分析、托管等功能，帮助开发人员更快、更方便地创建和运行应用程序。
+
+
+## Cusdis {#cusdis}
+
+Cusdis[3] 是 Disqus 的开源项目、轻量级（约 5kb gzip）、隐私友好的绝佳替代品，主要用于纯静态化网站。Cusdis 并非旨在成为 Disqus 的完整替代品。它的目的是为小型网站（例如您的静态博客）实现一个极简主义和可嵌入的评论系统。
+
+优点：
+
+-   Cusdis 是开源的并且可以自我托管
+-   SDK 是轻量级的（~5kb gzipped）
+-   **Cusdis 不需要用户登录即可发表评论，不使用 Cookie**
+
+缺点：
+
+-   没有垃圾邮件过滤必须手动审核评论，在批准之前不会显示评论（也可看作优点）
+
+
+## ref {#ref}
+
+-   [如何搭建零成本个人博客（二）](https://mp.weixin.qq.com/s/R3e21pacpoBwk4lq-au2ug)

@@ -1,7 +1,7 @@
 ---
 title: "Git tag"
 date: "2022-06-10 21:00:00"
-lastmod: "2022-06-12 12:04:46"
+lastmod: "2023-12-31 11:03:07"
 tags: ["git"]
 categories: ["Github"]
 draft: false
@@ -18,7 +18,9 @@ git 标签分为两种类型
 -   建议使用附注标签
 
 
-## bashttps://metabits.tk/wp-adminic {#bashttps-metabits-dot-tk-wp-adminic}
+## bash {#bash}
+
+<https://metabits.tk/wp-adminic>
 
 ```bash
 git tag

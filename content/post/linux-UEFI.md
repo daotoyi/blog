@@ -1,8 +1,9 @@
 ---
 title: "Linux UEFI"
-lastmod: "2023-08-29 22:32:02"
+date: "2023-08-29 22:33:00"
+lastmod: "2023-12-30 22:16:53"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## entrance {#entrance}
@@ -43,6 +44,15 @@ UEFI 规范里，在 GPT 分区表的基础上，规定了一个 EFI 系统分�
 │          ├── fallback.efi
 │          └── fbx64.efi
 └── startup.nsh
+
+
+### shim.efi &amp; grubx64.efi {#shim-dot-efi-and-grubx64-dot-efi}
+
+grubx64.efi 是 GRUB 二进制文件，而 EFI/centos/shimx64.efi 是 shim 的二进制文件。
+
+shimx64.efi 是一个相对简单的程序，它提供了一种在安全启动（Secure Boot）开启的状态下使用的方法。
+
+安全启动（Secure Boot）开启的状态下，未签名的 GRUB 版本(grubx64.efi)将无法启动，因此 shim 弥补了缺陷并添加了自己的安全工具，与 安全启动(Secure Boot) 类似。在没有启用 安全启动（Secure Boot） 的计算机中，启动 shimx64.efi 和启动 grubx64.efi 是一样的。
 
 
 ### shim first boot {#shim-first-boot}

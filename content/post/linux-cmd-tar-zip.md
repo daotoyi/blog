@@ -1,7 +1,7 @@
 ---
 title: "Linux cmd tar/zip"
 date: "2022-11-03 14:47:00"
-lastmod: "2023-12-11 20:32:57"
+lastmod: "2024-01-15 22:24:44"
 tags: ["cmd"]
 categories: ["Linux"]
 draft: false
@@ -21,6 +21,25 @@ draft: false
 | unzip -l 123.zip            | 列出压缩文件所包含的内容 |
 
 和 gzip、bzip2 和 xz 不同的是，使用 zip 压缩后，保留原文件。不能更改压缩后的压缩包名称。不能直接查看 zip 压缩包的内容，只能查看压缩包内文件列表。
+
+
+### 压缩包处理 {#压缩包处理}
+
+```bash
+# 删除压缩包文件
+zip a.zip -d b.txt
+# 追加文件
+zip -g a.zip b.txt
+
+unzip -v a.zip
+Archive:  a.zip
+ Length   Method    Size  Cmpr    Date    Time   CRC-32   Name
+--------  ------  ------- ---- ---------- ----- --------  ----
+151005959  Defl:N 14387536  91% 12-02-2021 17:10 000983ad  a.txt
+127489195  Defl:N 11942580  91% 12-02-2021 17:13 5bb5d63f  b.txt
+--------          -------  ---                            -------
+278495154         26330116  91%
+```
 
 
 ## tar {#tar}
@@ -53,6 +72,34 @@ draft: false
 | tar -Jcvf 123.xz 123          | 打包并压缩成 xz 压缩包 |
 | tar -Jxvf 123.xz              | 解包并解压缩 xz 压缩包 |
 | tar -tf 123.bz2/123.gz/123.xz | 查看压缩包文件列表 |
+
+
+### 操作打包／压缩文件 {#操作打包-压缩文件}
+
+－　解压部分文件
+
+```bash
+# 查看文件
+tar -tzvf u2file.tar.gz
+# -rw-r--r-- user/user 45489156 2008-08-04 23:59:46 foder/access.log.20080804
+# -rw-r--r-- user/user 37469223 2008-08-05 23:59:46 foder/access.log.20080805
+
+# 解压单个/多个文件
+tar -zxvf u2file.tar.gz foder/access.log.0805
+tar -zxvf u2file.tar.gz foder/access.log.*
+```
+
+-   追加文件
+
+<!--listend-->
+
+```bash
+# 未压缩追
+tar -rf test.tar  <file 或者 dir>
+
+# 已压缩追加
+gzip -c file.txt >> archive.gz
+```
 
 
 ### 扩展文件属性 {#扩展文件属性}

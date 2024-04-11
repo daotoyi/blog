@@ -1,7 +1,7 @@
 ---
 title: "Linux Ubuntu16.04LTS"
 date: "2023-12-29 08:35:00"
-lastmod: "2023-12-29 08:36:41"
+lastmod: "2024-03-02 23:41:09"
 categories: ["Linux"]
 draft: false
 ---

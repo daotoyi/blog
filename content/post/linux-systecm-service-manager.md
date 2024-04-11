@@ -1,7 +1,7 @@
 ---
 title: "Linux systecm service manager"
 date: "2023-09-24 20:18:00"
-lastmod: "2023-09-24 20:18:41"
+lastmod: "2024-03-02 23:40:46"
 categories: ["Linux"]
 draft: false
 ---
@@ -14,7 +14,11 @@ draft: false
 ## service manage {#service-manage}
 
 
-### service/chkconfig {#service-chkconfig}
+### 适用 service/chkconfig {#适用-service-chkconfig}
+
+-   redhat/centos6 及以下版本
+
+<!--listend-->
 
 ```bash
 chkconfig  设置是当前不生效，linux重启后才生效
@@ -41,3 +45,5 @@ chkconfig –del xxx
 
 
 ## systemd {#systemd}
+
+-   适用 redhat/centos7 及以上版本

@@ -1,7 +1,8 @@
 ---
 title: "Linux tar 备份还原系统后无法进入桌面"
+author: ["SHI WENHUA"]
 date: "2022-03-31 22:53:00"
-lastmod: "2022-07-21 23:15:30"
+lastmod: "2024-03-27 16:47:09"
 tags: ["selinux"]
 categories: ["Linux"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Linux 动态链接器"
 description: "跨 libc 启动程序（python3）"
 date: "2022-04-16 07:33:00"
-lastmod: "2022-08-07 14:47:49"
+lastmod: "2024-03-02 23:34:20"
 tags: ["libs"]
 categories: ["Cplus"]
 draft: false

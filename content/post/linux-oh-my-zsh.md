@@ -1,7 +1,7 @@
 ---
 title: "Linux oh-my-zsh"
 date: "2022-04-15 07:11:00"
-lastmod: "2022-04-30 20:58:37"
+lastmod: "2024-01-03 11:09:20"
 categories: ["Linux"]
 draft: false
 ---

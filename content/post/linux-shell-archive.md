@@ -1,7 +1,7 @@
 ---
 title: "Linux Shell Archive"
 date: "2023-09-29 09:35:00"
-lastmod: "2023-10-03 16:01:03"
+lastmod: "2024-01-07 08:03:57"
 tags: ["shell"]
 categories: ["Linux"]
 draft: false
@@ -80,7 +80,7 @@ f
 ```
 
 
-## 变更名中嵌套变量 {#变更名中嵌套变量}
+## 变量名中嵌套变量 {#变量名中嵌套变量}
 
 <a id="code-snippet--print-value"></a>
 ```shell

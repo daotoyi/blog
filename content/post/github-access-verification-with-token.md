@@ -1,7 +1,7 @@
 ---
 title: "Github 推送验证"
 date: "2022-03-19 13:00:00"
-lastmod: "2023-09-08 22:30:47"
+lastmod: "2024-02-10 22:52:42"
 categories: ["Github"]
 draft: false
 ---
@@ -42,6 +42,7 @@ git clone https://<token>@github.com/<user_name>/<repo_name>.git
 git push
 Username: 用户名
 Password: token
+
 # 记住token
 git config credential.helper store
 
@@ -60,7 +61,8 @@ Git 可以指定辅助工具（mananger、wincred 和 store 通过配置 credent
 
 ### 1 manager {#1-manager}
 
-若安装 Git 时安装了 GitGUI，自动会在 system 级别中设置 credential.helper 为 manager。并且不配置所处级别（system、global 或者 local）如何，一旦设置了 manager，都优先使用该方式。查看不同级别的 credential.helper
+若安装 Git 时安装了 GitGUI，自动会在 system 级别中设置 credential.helper 为 manager。并且不配置所处级别（system、global 或者 local）如何，一旦设置了 manager，都优先使用该方式。
+查看不同级别的 credential.helper
 
 
 ### 2 wincred {#2-wincred}

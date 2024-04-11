@@ -1,8 +1,9 @@
 ---
 title: "Linux FAQ Archives"
-lastmod: "2022-10-08 10:26:42"
+date: "2023-09-23 22:17:00"
+lastmod: "2024-03-02 23:39:34"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## system {#system}

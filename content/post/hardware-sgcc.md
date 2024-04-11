@@ -1,7 +1,7 @@
 ---
 title: "SGCC"
 date: "2022-09-27 08:14:00"
-lastmod: "2022-12-31 10:05:50"
+lastmod: "2024-01-23 17:50:33"
 categories: ["Hardware"]
 draft: false
 ---

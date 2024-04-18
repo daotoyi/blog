@@ -56,7 +56,6 @@ Then generate static web-files:
     theme = "github-light"
 #+end_src
 
-
   - comments
     add below content in themes/even/layouts/partials/comments.html，postion: after gitalk：
 

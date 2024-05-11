@@ -1,13 +1,16 @@
 ---
-title: "Manjaro/Linux 使用"
+title: "Manjaro 使用"
+author: ["SHI WENHUA"]
 date: "2022-03-31 22:53:00"
-lastmod: "2023-08-26 15:37:21"
+lastmod: "2024-04-25 20:15:26"
+tags: ["manjaro"]
 categories: ["Linux"]
 draft: false
 ---
 
-## basic opreration {#basic-opreration}
+## 常用操作 {#常用操作}
 
+basic opreration
 `/etc/pacman.conf`
 
 
@@ -72,17 +75,14 @@ pacman -Scc # 清理所有的缓存文件。
 ```
 
 
-## pacman-gpg {#pacman-gpg}
+## 环境配置 {#环境配置}
 
 
-### 说明 {#说明}
+### pacman-gpg {#pacman-gpg}
 
 加密的过程是：如果 A 君要发送信息给 B 君，首先 B 君得把自己的公钥扔出来，A君得获取 B 君的公钥后加密信息并发送过去，B君收到（加过密的）信息使用自己的私钥解密就可以还原信息了。
 
 而数字签名的过程稍微不同，信息是通过普通未加密方式发送信息给对方的，只是在每条信息后面都会附加一坨字符（名曰：签名）， 这个签名是由程序根据发送者的私钥以及信息内容计算得出，接收者使用发送者的公钥就可以核对信息有无被篡改。
-
-
-### 操作 {#操作}
 
 
 #### 生成查看 {#生成查看}
@@ -184,10 +184,10 @@ git commit -S -m "提交信息" # -S 选项表示对此次提交使用 gpg 进�
 GitHub 中，使用 SSH 连接到 GitHub 时可以使用 ssh key 来进行加密连接；而 gpg key 用于认证每次提交.
 
 
-## pacman-keys {#pacman-keys}
+### pacman-keys {#pacman-keys}
 
 
-### pacman.conf {#pacman-dot-conf}
+#### pacman.conf {#pacman-dot-conf}
 
 ```bash
 [mingw32]
@@ -210,7 +210,7 @@ Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ```
 
 
-### keys {#keys}
+#### keys {#keys}
 
 ```bash
 出现 Keys 错误，签名失败。。之类的依次运行以下命令
@@ -228,25 +228,41 @@ Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ```
 
 
-## ntpdate {#ntpdate}
+### shell {#shell}
+
+chsh -s /bin/zsh （重启生效)
 
 
-### 同步网络时间 {#同步网络时间}
+### ntpdate {#ntpdate}
+
+
+#### 同步网络时间 {#同步网络时间}
 
 ntpdate 0.rhel.pool.ntp.org
 
 
-### 双系统时间不一致 {#双系统时间不一致}
+#### 双系统时间不一致 {#双系统时间不一致}
 
 sudo timedatectl set-local-rtc 1
 
 
-## libreoffice-Chinese {#libreoffice-chinese}
+#### libreoffice-Chinese {#libreoffice-chinese}
 
 pacman -S libreoffice-zh-CN
 
 
-## gen-MirrorList + update system {#gen-mirrorlist-plus-update-system}
+### selinux {#selinux}
+
+Manjaro 防火墙默认关闭的，并且没有安装 selinux.
+
+```bash
+systemctl stop iptables #关闭防火墙
+setenforce 0 #关闭 selinux
+```
+
+关闭 selinux 开机启动:
+
+`vim /etc/selinux/config`, 将 `SELINUX=enforcing` 改为 `SELINUX=disabled`
 
 
 ### 生成镜像列表 {#生成镜像列表}
@@ -265,7 +281,9 @@ sudo pacman-mirrors -i -c China -m rank
 ```
 
 
-### /etc/pacman.conf: {#etc-pacman-dot-conf}
+### 配置文件 {#配置文件}
+
+/etc/pacman.conf:
 
 ```bash
 [archlinuxcn]
@@ -285,7 +303,29 @@ sudo pacman -S antergos-keyring
 ```
 
 
-## HotKey {#hotkey}
+### theme {#theme}
+
+```bash
+# 图标
+yaourt -S numix-circle-icon-theme
+pacman -S papirus-icon-theme
+
+# 主题
+yaourt -S gtk-theme-arc-git
+
+# 字体:
+xfce4-appearance-settings
+style:
+  vertex-maia-light
+Font:
+  cantarell
+```
+
+
+## 常用软件 {#常用软件}
+
+
+### HotKey {#hotkey}
 
 ```bash
 Alt + f10 最大化窗口或原大小
@@ -300,7 +340,23 @@ xfce4-popup-whiskermenu 显示 super 菜单
 ```
 
 
-## social-Tool {#social-tool}
+### common-tool {#common-tool}
+
+```bash
+# ag
+pacman -S the_silver_searcher
+pacman -S qemu-system-x86_64
+
+yay -S xray v2raya
+
+yauourt  -S  xsane	#后台服务端
+
+cairo-dock
+dockbarx
+```
+
+
+### social-tool {#social-tool}
 
 ```bash
 # TIM:
@@ -315,12 +371,14 @@ pacman -S netease-cloud-music
 ```
 
 
-## shell {#shell}
+### office-tool {#office-tool}
 
-chsh -s /bin/zsh （重启生效)
+```bash
+yay onedriver
+```
 
 
-## install-deb {#install-deb}
+### install-deb {#install-deb}
 
 ```bash
 # 查看电脑上是否安装过
@@ -340,24 +398,18 @@ sudo pacman -U x.tar.xz
 ```
 
 
-## RIME {#rime}
+### Rime {#rime}
 
 ```bash
-# 1、源文件目录
-/usr/share/rime-data/
-
+# install
+pacman -S ibus-rime
 # 2、用户目录
 ~/.config/ibus/rime/
-~/.config/fcitx/rime/
+# ~/.config/fcitx/rime/
 ```
 
 
-## scan {#scan}
-
-yauourt  -S  xsane	#后台服务端
-
-
-## XX-net {#xx-net}
+### xx-net {#xx-net}
 
 ```bash
   supervisor
@@ -392,26 +444,25 @@ EOF
 ```
 
 
-## theme {#theme}
+### WPS {#wps}
 
 ```bash
-# 图标
-yaourt -S numix-circle-icon-theme
-pacman -S papirus-icon-theme
-
-# 主题
-yaourt -S gtk-theme-arc-git
-
-# 字体:
-xfce4-appearance-settings
-style:
-  vertex-maia-light
-Font:
-  cantarell
+sudo pacman -S wps-office
+sudo pacman -S ttf-wps-fonts
 ```
 
+解决中文输入：
 
-## WPS-font {#wps-font}
+```bash
+sudo vim /usr/bin/wps
+在第一行（#!/bin/bash）下面添加：
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE="fcitx" gOpt=gTemplateExt=("wpt" "dot" "dotx")
+```
+
+-   font
+
+<!--listend-->
 
 ```bash
  sudo cp * /usr/share/fonts
@@ -437,18 +488,26 @@ Font:
   ████████  ████████  ████████     WM Theme: X-Arc-White
   ████████  ████████  ████████     GTK Theme: Arc [GTK2]
   ████████  ████████  ████████     Icon Theme: Enlightenment-X
-
- cairo-dock
- dockbarx
 ```
 
 
-## conky {#conky}
+### nutstore {#nutstore}
 
 ```bash
+yay -S nutstore
+yay -S python-gobject #如果出现坚果云打不开或者没有登录页面的情况，安装坚果云相关依赖
+```
+
+
+### conky {#conky}
+
+```bash
+yay -S conky
+
 API:a2f877a8682f22d1da079a5617de304e
 ID:1809104 haidian
 ID:1796236 shanghai
+
 kill $(ps aux | grep conky | awk '{print $2}')
 
 conky -c /home/wenhuas/Harmattan/.harmattan-themes/Transparent/God-Mode/.conkyrc  #透明 黑白
@@ -460,14 +519,14 @@ conky -c /home/wenhuas/Harmattan/.harmattan-themes/Nord/God-Mode/normal-mode/.co
 ```
 
 
-## virbox {#virbox}
+### virbox {#virbox}
 
 > 共享文件
 > net use e：\\\vboxsvr
 > net use e: /del
 
 
-## docker {#docker}
+### docker {#docker}
 
 ```bash
 pacman -Syu # update system first
@@ -490,31 +549,17 @@ sudo usermod -aG docker $USER
 ```
 
 
-## selinux {#selinux}
-
-Manjaro 防火墙默认关闭的，并且没有安装 selinux.
-
-```bash
-systemctl stop iptables #关闭防火墙
-setenforce 0 #关闭 selinux
-```
-
-关闭 selinux 开机启动:
-
-`vim /etc/selinux/config`, 将 `SELINUX=enforcing` 改为 `SELINUX=disabled`
+### bt_panel {#bt-panel}
 
 
-## bt_panel {#bt-panel}
-
-
-### install {#install}
+#### install {#install}
 
 ```bash
 curl -sSO http://download.bt.cn/install/install_panel.sh &&sudo bash ./install_panel.sh
 ```
 
 
-### systemctl {#systemctl}
+#### systemctl {#systemctl}
 
 /etc/systemd/system/bt-local.service
 
@@ -535,14 +580,7 @@ WantedBy=multi-user.target
 ```
 
 
-## ag {#ag}
-
-```bash
-pacman -S the_silver_searcher
-```
-
-
-## certbox {#certbox}
+### certbox {#certbox}
 
 ```bash
 pacman -S certbot
@@ -550,8 +588,119 @@ pip install certbot-nginx
 ```
 
 
-## qemu {#qemu}
+### Onedrive {#onedrive}
 
 ```bash
-pacman -S qemu-system-x86_64
+yay -S onedrive-abraunegg
+
+# authorize.
+onedrive
+# open the address in a browser
+# login and paste the response to uri promot:
+# Enter the response uri:
+
+# syncing. do a test sync, which is called a dry run
+onedrive --synchronize --verbose --dry-run
+
+# sync
+onedrive --synchronize
+
+# sync one directory
+onedrive --synchronize --single-directory 'directoryname'
+# onedrive --synchronize --single-directory 'org'  # only org directory
+
+# OneDrive for Linux GUI App
+# https://www.credibledev.com/onedrive-for-linux/#:~:text=AppImage%20from%20the-,official%20GitHub%20repo,-.
+chmod +x OneDriveGUI-1.0.1_fix59-x86_64.AppImage
+# double click
+```
+
+-   [Install OneDrive for Linux - Manjaro Edition](https://www.credibledev.com/onedrive-for-linux/)
+
+<!--listend-->
+
+-   onedrive
+
+<!--listend-->
+
+```text
+➜ yay onedrive
+16 aur/microsoft-office-appimage 2022.8.1-1 (+0 0.00)
+    Microsoft Office Desktop App Specially Made for Linux, made with electron: Includes Microsoft Word, Excel, PowerPoint, Outlook, OneDrive, Teams, OneNote, To-Do, Family Safety, Calendar, and Skype.
+15 aur/ntfs-3g-onedrive-bin 1.2.0-1 (+1 0.00) (Out-of-date: 2023-12-02)
+    NTFS-3G plugin for reading OneDrive directories created by Windows 10
+14 aur/keepass-plugin-onedrivesync 2.1.2.2-1 (+1 0.00)
+    KeePass plugin to allows syncing of KeePass databases stored on OneDrive Personal, OneDrive for Business or SharePoint.
+13 aur/insync-headless 3.1.6.10648-1 (+1 0.00) (Orphaned) (Out-of-date: 2022-10-06)
+    Google Drive and OneDrive headless client for servers
+12 aur/duck 8.7.1.40770-1 (+7 0.57)
+    Cyberduck CLI file transfer client for WebDAV HTTPS FTP-SSL SFTP Azure Backblaze B2 Google Cloud Drive Amazon S3 OpenStack Swift Rackspace DRACOON Dropbox OneDrive SharePoint
+11 aur/onemanager-php-git 3.4.r40.gd99ee1d-1 (+0 0.00) (Orphaned)
+    An index & manager of Onedrive based on serverless.
+10 aur/onedrive-abraunegg-git 1:2.3.3.r4.gfbad4b4-2 (+24 0.00)
+    Free OneDrive client written in D - abraunegg's fork
+9 aur/onedrive_tray-git r28.6883538-1 (+5 0.87)
+    OneDrive system tray program
+8 aur/insync 3.9.0.60000-1 (+316 0.27)
+    An unofficial Dropbox, Google Drive, and OneDrive client that runs on Linux, with support for various desktops
+7 aur/onedrivegui-git 1.1.0alpha5.r2.g9f9df60-1 (+6 0.01)
+    A simple GUI for OneDrive Linux client, with multi-account support.
+6 aur/onedriver-git 0.12.0.r11.g65be12a-1 (+2 0.00) (Out-of-date: 2023-07-16)
+    Native Linux filesystem for Microsoft OneDrive
+5 aur/onedrivegui 1.0.3-1 (+6 0.27)
+    A simple GUI for OneDrive Linux client, with multi-account support.
+4 aur/onedrive-abraunegg 2.4.25-1 (+105 1.62) (Installed)
+    Free OneDrive client written in D - abraunegg's fork. Follows the releases on https://github.com/abraunegg/onedrive/releases
+3 aur/onedrive-git 1:1.1.3.r0.g945251f-1 (+44 0.05)
+    Free OneDrive client written in D
+2 aur/onedriver 0.14.1-0 (+31 0.08)
+    Native Linux filesystem for Microsoft OneDrive
+1 aur/onedrive 1.1.4-1 (+19 0.25)
+    Free OneDrive client written in D
+==> Packages to install (eg: 1 2 3, 1-3 or ^4)
+```
+
+
+### google-chrome {#google-chrome}
+
+由于 Google Chrome 不是开源的，因此它不随 Linux 发行版一起提供。 可以通过两种主要方法在 Manjaro 上获取 Google Chrome：
+
+-   通过 AUR 助手
+-   通过 git 仓库
+
+
+#### AUR {#aur}
+
+```bash
+sudo pacman -S --needed base-devel git
+```
+
+```bash
+# 安装 yay
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si
+
+# install
+yay -S google-chrome
+```
+
+-   google-chrome（点击 1 以获得稳定版本）
+-   google-chrome-beta（在此版本中点击 2）
+-   google-chrome-dev（开发版本输入 3）
+
+
+#### git {#git}
+
+```bash
+git clone https://aur.archlinux.org/google-chrome.git
+cd google-chrome
+makepkg -si
+```
+
+
+#### uninstall {#uninstall}
+
+```bash
+yay -R google-chrome
 ```

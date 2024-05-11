@@ -1,7 +1,7 @@
 ---
 title: "macOS spacemacs 的 evil 模式 fcitx-remote 切换输入法"
 author: ["SHI WENHUA"]
-lastmod: "2024-04-01 23:10:05"
+lastmod: "2024-04-18 22:54:42"
 categories: ["Mac"]
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Mac OS 新手配置"
 author: ["SHI WENHUA"]
 date: "2024-03-28 17:55:00"
-lastmod: "2024-04-12 12:12:30"
+lastmod: "2024-05-10 11:27:12"
 categories: ["Mac"]
 draft: false
 ---
@@ -214,6 +214,7 @@ brew install --cask iterm2
 brew install --cask alfred
 brew install --cask parallels # RMB600+/y
 brew install --cask the-unarchiver # rar.zip.tar.
+brew install --cask marta
 
 brew install --cask wechat
 brew install --cask google-chrome

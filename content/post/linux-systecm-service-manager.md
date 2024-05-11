@@ -1,7 +1,8 @@
 ---
 title: "Linux systecm service manager"
+author: ["SHI WENHUA"]
 date: "2023-09-24 20:18:00"
-lastmod: "2024-03-02 23:40:46"
+lastmod: "2024-04-27 09:59:41"
 categories: ["Linux"]
 draft: false
 ---

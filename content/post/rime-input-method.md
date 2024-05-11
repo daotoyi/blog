@@ -1,7 +1,8 @@
 ---
 title: "Rime"
+author: ["SHI WENHUA"]
 date: "2022-07-16 20:43:00"
-lastmod: "2024-02-27 23:09:15"
+lastmod: "2024-04-25 22:46:56"
 categories: ["Tools"]
 draft: false
 ---
@@ -34,13 +35,31 @@ sync_dir: 'D:\path\to\RimeSync'
 -   【鼠鬚管】 ~/Library/Rime/
 
 
+#### 定制文档 {#定制文档}
+
+```yaml
+Patch:
+ "一级设定项/二级设定项/三级设定项": 新的设定值
+ "另一个设定项": 新的设定值
+ "再一个设定项": 新的设定值
+ "含列表的设定项/@0": 列表第一个元素新的设定值
+ "含列表的设定项/@last": 列表最后一个元素新的设定值
+ "含列表的设定项/@before 0": 在列表第一个元素之前插入新的设定值（不建议在补丁中使用）
+ "含列表的设定项/@after last": 在列表最后一个元素之后插入新的设定值（不建议在补丁中使用）
+ "含列表的设定项/@next": 在列表最后一个元素之后插入新的设定值（不建议在补丁中使用）
+```
+
+
 ## 用戶資料夾 {#用戶資料夾}
 
 包含爲用戶準備的內容，如：
 
 -   〔全局設定〕 default.yaml
+    -   用于设置输入法方案、切换输入法快捷键、中英文切换、翻页等等。
 -   〔發行版設定〕 weasel.yaml
+    -   用于设置托盘图标、指定软件默认英文输入、候选词横竖排列、界面布局、配色方案等等。
 -   〔預設輸入方案副本〕 &lt;方案標識&gt;.schema.yaml
+    -   &lt;方案标识&gt;.custom.yaml 用于设置具体的输入方案。
 
 
 #### 編譯輸入方案所產出的二進制文件： {#編譯輸入方案所產出的二進制文件}
@@ -130,6 +149,104 @@ if __name__ == '__main__':
 ### Ref {#ref}
 
 -   [RIME输入法 实现简体中文输入，简体繁体多个提示](https://blog.csdn.net/yulinxx/article/details/124006694)
+
+
+## 配置说明 {#配置说明}
+
+```yaml
+# 输入方案配置
+patch:
+  # 载入自定义词库表
+  translator:
+    dictionary: daoyi
+    enable_sentence: false
+    # 把preedit里的 ' 删除
+    preedit_format:
+      - "xform/'//"
+  # preedit分隔符改成 '
+  "speller/delimiter": "'"
+  # 默认英文
+  "switches/@0/reset": 1  #表示将 switcher 列表中的第一个元素（即 ascii_mode 开关）的初始值重设为状态1（即“英文”）。
+
+   # 20k_en设置（这里下载了easy_en.schema.yaml 和 easy_en.dict.yaml以后，可以换成easy_en）
+  "schema/dependencies/@next": 20k_en
+  # 載入翻譯英文的碼表翻譯器，取名爲 english
+  "engine/translators/@next": [email protected]
+  # english 翻譯器的設定項
+  english:
+    dictionary: 20k_en
+    spelling_hints: 9
+    # 自动完成
+    enable_completion: true
+    enable_sentence: false
+    # 候选词排名优先级，还是不太满意
+    initial_quality: 0
+    # 删除候选字里的自动完成提示（没有用，因为效果是输入eng以后，提示:english ~lish）
+    comment_format:
+      - "xform/[~a-z]*//"
+
+  # Emoji支持
+  # 切换Emoji
+  "switches/@next":
+    name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️️uFE0E", "🈶️️uFE0F" ]
+  # 增加Emoji过滤器
+  "engine/filters/@before 0":
+    [email protected]_suggestion
+  # 使用opencc（即简繁转换）的方式实现emoji输入，可以理解为简-emoji转换。
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    # 设置为all会显示tips，其他任何值都不会显示。
+    tips: none
+
+  simplifier:
+    option_name: zh_simp
+
+  # 不懂，也许有啥用。
+  recognizer:
+    patterns:
+      email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+      uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+      # 简写用
+      punct: "^/([a-z]+|[0-9]0?)$"
+
+  # 改寫拼寫運算，使得含西文的詞彙（位於 luna_pinyin.cn_en.dict.yaml 中）不影響簡拼功能（注意，此功能只適用於朙月拼音系列方案，不適用於各類雙拼方案）
+  # 本條補靪只在「小狼毫 0.9.30」、「鼠鬚管 0.9.25 」、「Rime-1.2」及更高的版本中起作用。
+  # "speller/algebra/@before 0": xform/^([b-df-hj-np-tv-z])$/$1_/
+
+  punctuator:
+    # 载入默认symbols.yaml，可以替换成mysymbols.yaml
+    import_preset: symbols
+    half_shape:
+      "#": "#"
+      "`": "`"
+      "~": "~"
+      "@": "@"
+      "=": "="
+      "/": ["/", "÷"]
+      '': ["、", '']
+      "'": {pair: ["「", "」"]}
+      "[": ["【", "["]
+      "]": ["】", "]"]
+      "$": ["¥", "$", "€", "£", "¢", "¤"]
+      "<": ["《", "〈", "«", "<"]
+      ">": ["》", "〉", "»", ">"]
+    symbols:
+      "/fs": [½,‰,¼,⅓,⅔,¾,⅒]
+      "/dq": [🌍,🌎,🌏,🌐,🌑,🌒,🌓,🌔,🌕,🌖,🌗,🌘,🌙,🌚,🌛,🌜,🌝,🌞,⭐,🌟,🌠,⛅,⚡,❄,🔥,💧,🌊]
+      "/jt": [⬆,↗,➡,↘,⬇,↙,⬅,↖,↕,↔,↩,↪,⤴,⤵,🔃,🔄,🔙,🔚,🔛,🔜,🔝]
+      "/sg": [🍇,🍈,🍉,🍊,🍋,🍌,🍍,🍎,🍏,🍐,🍑,🍒,🍓,🍅,🍆,🌽,🍄,🌰,🍞,🍖,🍗,🍔,🍟,🍕,🍳,🍲,🍱,🍘,🍙,🍚,🍛,🍜,🍝,🍠,🍢,🍣,🍤,🍥,🍡,🍦,🍧,🍨,🍩,🍪,🎂,🍰,🍫,🍬,🍭,🍮,🍯,🍼,🍵,🍶,🍷,🍸,🍹,🍺,🍻,🍴]
+      "/dw": [🙈,🙉,🙊,🐵,🐒,🐶,🐕,🐩,🐺,🐱,😺,😸,😹,😻,😼,😽,🙀,😿,😾,🐈,🐯,🐅,🐆,🐴,🐎,🐮,🐂,🐃,🐄,🐷,🐖,🐗,🐽,🐏,🐑,🐐,🐪,🐫,🐘,🐭,🐁,🐀,🐹,🐰,🐇,🐻,🐨,🐼,🐾,🐔,🐓,🐣,🐤,🐥,🐦,🐧,🐸,🐊,🐢,🐍,🐲,🐉,🐳,🐋,🐬,🐟,🐠,🐡,🐙,🐚,🐌,🐛,🐜,🐝,🐞,🦋]
+      "/bq": [😀,😁,😂,😃,😄,😅,😆,😉,😊,😋,😎,😍,😘,😗,😙,😚,😇,😐,😑,😶,😏,😣,😥,😮,😯,😪,😫,😴,😌,😛,😜,😝,😒,😓,😔,😕,😲,😷,😖,😞,😟,😤,😢,😭,😦,😧,😨,😬,😰,😱,😳,😵,😡,😠]
+      "/ss": [💪,👈,👉,👆,👇,✋,👌,👍,👎,✊,👊,👋,👏,👐]
+      "/dn": [⌘, ⌥, ⇧, ⌃, ⎋, ⇪, , ⌫, ⌦, ↩︎, ⏎, ↑, ↓, ←, →, ↖, ↘, ⇟, ⇞]
+      "/fh": [©,®,℗,ⓘ,℠,™,℡,␡,♂,♀,☉,☊,☋,☌,☍,☑︎,☒,☜,☝,☞,☟,✎,✄,♻,⚐,⚑,⚠]
+      "/xh": [＊,×,✱,★,☆,✩,✧,❋,❊,❉,❈,❅,✿,✲]
+  "/man": [ 符號：/fh, 單位：/dw, 標點：/bd, 數學：/sx, 拼音：/py, 星號：/xh, 方塊：/fk, 幾何：/jh, 箭頭：/jt, 電腦：/dn, 羅馬數字：/lm, 大写羅馬數字：/lmd, 拉丁：/ld, 上標：/sb, 下標：/xb, 希臘字母：/xl, 大写希臘字母：/xld, 數字：/0到/9, 分數：/fs, いろは順：/iro, 假名：/jm或/pjm或/jmk到/jmo, 假名+圈：/jmq, 假名+半角：/jmbj, 俄語：/ey, 大写俄語：/eyd, 韓文：/hw, 韓文+圈：/hwq, 韓文+弧：/hwh, 結構：/jg, 偏旁：/pp, 康熙（部首）：/kx, 筆畫：/bh, 註音：/zy, 聲調：/sd, 漢字+圈：/hzq, 漢字+弧：/hzh, 數字+圈：/szq, 數字+弧：/szh, 數字+點：/szd, 字母+圈：/zmq, 字母+弧：/zmh, 表情：/bq, 音樂：/yy, 月份：/yf, 日期：/rq, 曜日：/yr, 時間：/sj, 天干：/tg, 地支：/dz, 干支：/gz, 節氣：/jq, 象棋：/xq, 麻將：/mj, 色子：/sz, 撲克：/pk, 八卦：/bg, 八卦名：/bgm, 六十四卦：/lssg, 六十四卦名：/lssgm, 太玄經：/txj, 天體：/tt, 星座：/xz, 星座名：/xzm, 十二宮：/seg, 蘇州碼：/szm ]⏎
+```
 
 
 ## Note {#note}

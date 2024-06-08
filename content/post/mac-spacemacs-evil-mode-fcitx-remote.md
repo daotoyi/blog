@@ -1,7 +1,7 @@
 ---
-title: "macOS spacemacs 的 evil 模式 fcitx-remote 切换输入法"
+title: "macOS spacemacs 的 evil 模式 fcitx-remote/swim 切换输入法"
 author: ["SHI WENHUA"]
-lastmod: "2024-04-18 22:54:42"
+lastmod: "2024-05-19 19:01:37"
 categories: ["Mac"]
 draft: false
 ---
@@ -48,7 +48,6 @@ brew info xcodebuild/fcitx-remote-for-osx/fcitx-remote-for-osx
 -   setp4
 
 参考 GitHub - xcodebuild/fcitx-remote-for-osx: A simulate fcitx-remote to handle osx input method in command line 5 在 macOS 在输入法面板设置“选择下一个输入法的快捷键”为：Ctrl-Shift-z
-\*\*
 
 
 ## swim {#swim}
@@ -99,7 +98,7 @@ swim use com.apple.inputmethod.SCIM
 只要执行 M-x `input-switch-enable` 就可以开始愉快码字了。
 
 
-## **Note** {#note}
+## Note {#note}
 
 -   github
     -   [xcodebuild/fcitx-remote-for-osx](https://github.com/xcodebuild/fcitx-remote-for-osx)
@@ -151,4 +150,24 @@ ln -s /path/to/fcitx-remote-squirrel-rime-hans /usr/local/bin
 ;; (setq fcitx-use-dbus t) ; uncomment if you're using Linux
 ```
 
--   输入法只保留 ABC 和 squirrel，从 insert 模式的中文退出时，会切到 ABC 模式，但再进入 Insert 模式时还是 ABC 输入法。
+-   [2024/3/28] 输入法只保留 ABC 和 squirrel，从 insert 模式的中文退出时，会切到 ABC 模式，但再进入 Insert 模式时还是 ABC 输入法。
+-   [2024/5/12] 增加 swim 切换后，在进入 Insert 模式后，即可切换为中文。
+    ```lisp
+    ;; swim work good， together with fcitx-remote.
+    ;; input-switch-is-on t
+    (cond ((eq system-type 'darwin)
+           (setq input-switch-method-abc "com.apple.keylayout.ABC")
+           (setq input-switch-method-squirrel "im.rime.inputmethod.Squirrel.Hans")
+           (setq input-switch-is-on nil)
+           (defun input-switch-use-method (method)
+             (when input-switch-is-on
+               (shell-command (replace-regexp-in-string "method" method "swim use method"))))
+           (defun input-switch-enable () (interactive) (setq input-switch-is-on t))
+           (defun input-switch-disable () (interactive) (setq input-switch-is-on nil))
+           (add-hook 'evil-insert-state-entry-hook
+                     (lambda () (input-switch-use-method input-switch-method-squirrel)))
+           (add-hook 'evil-insert-state-exit-hook
+                     (lambda () (input-switch-use-method input-switch-method-abc)))
+           (setq input-switch-is-on t)
+           ))
+    ```

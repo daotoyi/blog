@@ -2,7 +2,7 @@
 title: "Manjaro 使用"
 author: ["SHI WENHUA"]
 date: "2022-03-31 22:53:00"
-lastmod: "2024-04-25 20:15:26"
+lastmod: "2024-06-08 10:27:11"
 tags: ["manjaro"]
 categories: ["Linux"]
 draft: false

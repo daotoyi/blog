@@ -1,7 +1,8 @@
 ---
 title: "Linux Grub2 basic"
+author: ["SHI WENHUA"]
 date: "2023-08-30 10:09:00"
-lastmod: "2023-12-28 21:56:06"
+lastmod: "2024-05-11 21:27:52"
 categories: ["Linux"]
 draft: false
 ---
@@ -155,82 +156,6 @@ initrd16 /xxx.img}
 ```
 
 
-## grub2 手动启动 linux {#grub2-手动启动-linux}
-
-
-### 普通场景 {#普通场景}
-
-「BIOS」+「MBR」+「普通的磁盘分区」
-
-```bash
-#1 查看所有分区
-grub> ls
-
-#2 查看分区下的内容
-grub> ls (hd0,1)/
-
-#3 设置根分区及启动盘
-grub> set root=(hd0,1)
-grub> linux /boot/vmlinuz-3.13.0-29-generic root=/dev/sda1
-grub> initrd /boot/initrd.img-3.13.0-29-generic
-grub> boot
-```
-
-
-### 引导 iso 启动 {#引导-iso-启动}
-
-```bash
-# 查询所有已安装磁盘并打印详细信息
-grub>ls -l
-
-# 设置根目录分区
-grub>set root=(hd0,1)
-
-# 将Ubuntu.iso位置赋值给变量isofile
-grub>set isofile=/ubuntu-18.04-desktop-amd64.iso
-
-# 使用grub2的回放技术，把ubuntu.iso的文件内容，投射（挂载）到loop上。
-# 在使用这个命令时，得考虑你的内存足够的大。(hd0,1)iso镜像文件所在分区
-grub>loopback loop (hd0,1)$isofile
-
-# 加载内核，其中(loop),是使用了上一句所投射的设备，其访问的是ubuntu.iso文件的内容
-# boot=casper将目录casper挂载为boot，
-# iso-scan/filename=$isofile 是利用iso-scan来寻找到ubuntu.iso文件所在位置并把所找到的iso文件挂到光驱设备
-grub>linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=$isofile quiet splash
-
-# initrid.lz是一个镜象文件，里面存的是一些内核要加载的重要文件
-grub>initrd (loop)/casper/initrd.lz
-
-#根据上面的参数启动系统
-grub>boot
-```
-
-
-### uefi 模式下引导 windows {#uefi-模式下引导-windows}
-
-```bash
-#加载ntfs文件系统
-grub>insmod ntfs
-grub>set root=(hd0,1)
-grub>chainloader +1 # 引导传统bios启动的Windows
-#如果不成功则可能是efi，换个目录如：bootmgfw.efi-->bootx64.efi
-grub>chainloader /EFI/boot/bootx64.efi
-```
-
-
-### bios 模式下引导 windows {#bios-模式下引导-windows}
-
-```bash
-grub>set root=(hd0,1)
-# /bootmgr 是一个在根目录下的引导文件，
-# bootmgr是在Windows Vista、Windows 7、windows 8/8.1和windows 10中使用的新的启动管理器，
-# 就相当于Win NT/Win 2000/Win XP时代的NTLDR。
-# chainloader /bootmgr 命令会报签名错误，即使关闭签名验证也无法启动
-grub>ntldr /bootmgr
-grub>boot
-```
-
-
 ## grub2 配置文件详解 {#grub2-配置文件详解}
 
 grub2 改用 grub.cfg 为配置文件，配置文件包含以下基本内容：
@@ -365,8 +290,7 @@ menuentry "Microsoft Windows XP Professional" {
 
 ### /etc/default/grub {#etc-default-grub}
 
-先从应用程序－附件里打开终端，输入 `sudo gedit /etc/default/grub` 用户密码
-看看打开的文件可作什么修改：
+先从应用程序－附件里打开终端，输入 `sudo gedit /etc/default/grub` 用户密码看看打开的文件可作什么修改：
 
 ```cfg
 # If you change  this file, run 'update-grub' afterwards to update# /boot/grub/grub.cfg.
@@ -592,8 +516,7 @@ menuentry "启动 CDLinux" {
 #### 用 grub4dos 修复 ubuntu {#用-grub4dos-修复-ubuntu}
 
 先下载最新版的 grub4dos，下载地址<http://nufans.net/grub4dos/> ，如果是 xp 系统，把 grub4dos 压缩包内的 grldr 复制到 C 盘根目录下，修改 boot.ini，在最后加上一行 c:\grldr="grub4dos"，对 于 vista/win7 系统，把压缩包内的 grldr.mbr 和 grldr 复制到 C 盘根目录下，在 C 盘自己建立一个 boot.ini 文件，若有 boot 隐 藏分区的，先给 boot 分区分配盘符，再把 grldr，grldr.mbr 和 boot.ini 放在 boot 分区下，boot.ini 内容如下：
-Win7 使用软改激活的请不要使用此方法，否则会造成 win7 不能启动。
-然后在根目录新建一个 menu.lst，内容为:
+Win7 使用软改激活的请不要使用此方法，否则会造成 win7 不能启动。然后在根目录新建一个 menu.lst，内容为:
 
 ```cfg
 timeout 0
@@ -770,7 +693,6 @@ fi
 1.  livecd 启动进入试用系统
 2.  挂载 / 分区，比如 / 分区为 /dev/sda7,sudo mount /dev/sda7 /mnt,如果有 /boot 单独分区，则挂载 /boot 分区
 3.  修改 grub.cfg
-
     ```bash
     sudo chmod +w /mnt/boot/grub/grub.cfg
     sudo chmod +w /mnt/grub/grub.cfg #(/boot 单独分区的)
@@ -780,7 +702,6 @@ fi
     ```
 4.  重启试试能否进入系统，可这进系统再进行下个步
 5.  sudo gedit /usr/lib/grub/grub-mkconfig_lib 找到 173-175 行
-
     ```bash
     if fs_uuid="`${grub_probe} --device ${device} --target=fs_uuid 2> /dev/null`" ; then
         echo "search --no-floppy --fs-uuid --set ${fs_uuid}"

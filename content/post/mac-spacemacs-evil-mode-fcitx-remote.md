@@ -1,8 +1,8 @@
 ---
 title: "macOS spacemacs 的 evil 模式 fcitx-remote/swim 切换输入法"
 author: ["SHI WENHUA"]
-lastmod: "2024-05-19 19:01:37"
-categories: ["Mac"]
+lastmod: "2024-06-09 08:28:16"
+categories: ["macOS"]
 draft: false
 ---
 

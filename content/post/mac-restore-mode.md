@@ -2,8 +2,8 @@
 title: "恢复模式"
 author: ["SHI WENHUA"]
 date: "2024-03-28 17:57:00"
-lastmod: "2024-03-30 08:18:15"
-categories: ["Mac"]
+lastmod: "2024-06-09 08:28:58"
+categories: ["macOS"]
 draft: false
 ---
 

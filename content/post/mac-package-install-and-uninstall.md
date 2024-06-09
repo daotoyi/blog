@@ -1,8 +1,8 @@
 ---
 title: "macOS 软件包安装/卸載"
 author: ["SHI WENHUA"]
-lastmod: "2024-04-12 12:13:30"
-categories: ["Mac"]
+lastmod: "2024-06-09 08:29:08"
+categories: ["macOS"]
 draft: false
 ---
 

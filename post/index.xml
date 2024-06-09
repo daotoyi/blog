@@ -6,7 +6,25 @@
     <description>Recent content in Posts on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jun 2024 19:34:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jun 2024 08:29:08 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS 软件包安装/卸載</title>
+      <link>https://daotoyi.github.io/post/mac-package-install-and-uninstall/</link>
+      <pubDate>Sun, 09 Jun 2024 08:29:08 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-package-install-and-uninstall/</guid>
+      <description>CLOSED: [2024-03-28 Thu 00:43] 安装 dmg 文件安装 App Store 安装 卸载方法与 dmg 文件安装一致 pkg 安装包安装 Homebrew 等包管理器安装 卸載 dmg dmg 是苹果电脑上专用的磁盘镜像（disk image）文</description>
+    </item>
+    
+    <item>
+      <title>macOS spacemacs 的 evil 模式 fcitx-remote/swim 切换输入法</title>
+      <link>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote/</link>
+      <pubDate>Sun, 09 Jun 2024 08:28:16 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote/</guid>
+      <description>CLOSED: [2024-03-28 Thu 00:41] fcitx-for-osx step1： 在 dotspacemacs-configuration-layers 中配置并启用 chinese，并启用 fcitx.el 1 2 (chinese :variables chinese-enable-fcitx t) setp2 在 dotspacemacs/user-config() 1 2 3 4 5 ;; Make sure the following comes before `(fcitx-aggressive</description>
+    </item>
+    
     <item>
       <title>邮箱协议</title>
       <link>https://daotoyi.github.io/post/internet-email-protocol/</link>
@@ -14,15 +32,6 @@
       
       <guid>https://daotoyi.github.io/post/internet-email-protocol/</guid>
       <description>SMTP SMTP（simple mail transfer protocol）简单邮件传输协议。 SMTP 协议属于 TCP/IP 协议簇，它是一组用于从源地址到目的地址传输邮件的规范，通过它来控</description>
-    </item>
-    
-    <item>
-      <title>macOS spacemacs 的 evil 模式 fcitx-remote/swim 切换输入法</title>
-      <link>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote/</link>
-      <pubDate>Sun, 19 May 2024 19:01:37 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote/</guid>
-      <description>CLOSED: [2024-03-28 Thu 00:41] fcitx-for-osx step1： 在 dotspacemacs-configuration-layers 中配置并启用 chinese，并启用 fcitx.el 1 2 (chinese :variables chinese-enable-fcitx t) setp2 在 dotspacemacs/user-config() 1 2 3 4 5 ;; Make sure the following comes before `(fcitx-aggressive</description>
     </item>
     
     <item>
@@ -68,15 +77,6 @@
       
       <guid>https://daotoyi.github.io/post/majaro-pacman-aur-and-yaourt/</guid>
       <description>pacman Pacman 在 Arch wiki 的说明如下 pacman 软件包管理器是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来(参见 makepkg 和 ABS)。不管软件包是来自</description>
-    </item>
-    
-    <item>
-      <title>macOS 软件包安装/卸載</title>
-      <link>https://daotoyi.github.io/post/mac-package-install-and-uninstall/</link>
-      <pubDate>Fri, 12 Apr 2024 12:13:30 +0000</pubDate>
-      
-      <guid>https://daotoyi.github.io/post/mac-package-install-and-uninstall/</guid>
-      <description>CLOSED: [2024-03-28 Thu 00:43] 安装 dmg 文件安装 App Store 安装 卸载方法与 dmg 文件安装一致 pkg 安装包安装 Homebrew 等包管理器安装 卸載 dmg dmg 是苹果电脑上专用的磁盘镜像（disk image）文</description>
     </item>
     
     <item>

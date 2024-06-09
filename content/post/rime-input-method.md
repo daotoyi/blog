@@ -2,7 +2,7 @@
 title: "Rime"
 author: ["SHI WENHUA"]
 date: "2022-07-16 20:43:00"
-lastmod: "2024-04-25 22:46:56"
+lastmod: "2024-06-09 08:16:46"
 categories: ["Tools"]
 draft: false
 ---
@@ -247,6 +247,69 @@ patch:
       "/xh": [＊,×,✱,★,☆,✩,✧,❋,❊,❉,❈,❅,✿,✲]
   "/man": [ 符號：/fh, 單位：/dw, 標點：/bd, 數學：/sx, 拼音：/py, 星號：/xh, 方塊：/fk, 幾何：/jh, 箭頭：/jt, 電腦：/dn, 羅馬數字：/lm, 大写羅馬數字：/lmd, 拉丁：/ld, 上標：/sb, 下標：/xb, 希臘字母：/xl, 大写希臘字母：/xld, 數字：/0到/9, 分數：/fs, いろは順：/iro, 假名：/jm或/pjm或/jmk到/jmo, 假名+圈：/jmq, 假名+半角：/jmbj, 俄語：/ey, 大写俄語：/eyd, 韓文：/hw, 韓文+圈：/hwq, 韓文+弧：/hwh, 結構：/jg, 偏旁：/pp, 康熙（部首）：/kx, 筆畫：/bh, 註音：/zy, 聲調：/sd, 漢字+圈：/hzq, 漢字+弧：/hzh, 數字+圈：/szq, 數字+弧：/szh, 數字+點：/szd, 字母+圈：/zmq, 字母+弧：/zmh, 表情：/bq, 音樂：/yy, 月份：/yf, 日期：/rq, 曜日：/yr, 時間：/sj, 天干：/tg, 地支：/dz, 干支：/gz, 節氣：/jq, 象棋：/xq, 麻將：/mj, 色子：/sz, 撲克：/pk, 八卦：/bg, 八卦名：/bgm, 六十四卦：/lssg, 六十四卦名：/lssgm, 太玄經：/txj, 天體：/tt, 星座：/xz, 星座名：/xzm, 十二宮：/seg, 蘇州碼：/szm ]⏎
 ```
+
+
+## 东风破工具 {#东风破工具}
+
+_plum_ 提供了一个基于配方（Recipe）的概念，使得用户可以根据需求选择安装特定的配置或功能.
+
+```bash
+curl -fsSL https://git.io/rime-install | bash
+```
+
+
+## Emoji 输入方案 {#emoji-输入方案}
+
+使用东风破 rime-plum 安装 emoji
+
+```bash
+bash rime-install emoji
+# 给输入方案打 patch
+bash rime-install emoji:customize:schema=luna_pinyin_simp
+```
+
+-   参考
+    -   [自由输入法 RIME 简明配置指南](https://sspai.com/post/84373#!)
+    -   [最新版 Rime 输入法使用 (2022 更新)](https://jdhao.github.io/2019/02/18/rime_configuration_intro/)
+
+
+## 快捷键 {#快捷键}
+
+```cfg
+control + ~: 切换输入方式
+control + a: 在输入状态下将光标移动到开始
+control + e: 在输入状态下将光标移动到结尾
+control + b: 在输入状态下将光标向左移动一个单词
+control + f: 在输入状态下将光标向右移动一个单词
+control + h: 在输入状态下向左删除一个字符
+=/.: 向下翻页
+-/,: 向上翻页
+shift + backspace: 在输入状态下删除一个单词
+```
+
+
+## 自定义词库 {#自定义词库}
+
+我们可以通过建立自定义词典文件(如 ~/Library/Rime/.dict.yaml), 并在其中按照 文字 编码 频次(可省略) 的顺序定义单词. 示例如下:
+
+```yaml
+yaml
+
+---
+name: daoyi.dict
+version: "2024.06.09"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+# 有码表的词库, 格式
+# (注意是用制表符分割):
+# 文字  编码    频次(可省略)
+
+🆘  sos   10000
+```
+
+最后需要在 ~/Library/Rime/daotu.dict.yaml 中增加此词典，进行部署, 我们就可以看到我们定义的 sos 了
 
 
 ## Note {#note}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RSS on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/rss/</link>
+    <description>Recent content in RSS on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Feb 2022 08:21:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/rss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inoreader</title>
+      <link>https://daotoyi.github.io/post/inoreader-access-in-mainland/</link>
+      <pubDate>Sun, 27 Feb 2022 08:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/inoreader-access-in-mainland/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 08:21] WEB Inoreader -&amp;gt; Innoreader 可正常墙内访问，且同一账号登录，内容一致。 APK APKHere 可下载 Inoreader, APKPure 未收录, Google Play 无法打开. 通过科学上网登录移动端 Inoreader</description>
+    </item>
+    
+    <item>
+      <title>Huginn 笔记</title>
+      <link>https://daotoyi.github.io/post/huginn-manual/</link>
+      <pubDate>Sun, 27 Feb 2022 08:19:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/huginn-manual/</guid>
+      <description>Huginn is a system for building agents that perform automated tasks for you online. 中文社区 英文官网 heroku deploy 利用 Huginn 打造一站式信息阅读平台 heroku 空间几点说明： heroku 免费账户的网站在 30 分钟内无人访问后会自动关闭（</description>
+    </item>
+    
+  </channel>
+</rss>

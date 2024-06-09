@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/music/</link>
+    <description>Recent content in music on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Nov 2022 22:37:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EMMS</title>
+      <link>https://daotoyi.github.io/post/emacs-emms/</link>
+      <pubDate>Fri, 25 Nov 2022 22:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-emms/</guid>
+      <description>eg.1 1 2 3 4 5 6 7  (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/emms/lisp&amp;#34;) (require &amp;#39;emms-setup) (require &amp;#39;emms-player-vlc) (emms-standard) (emms-default-players) (setq emms-player-vlc-command-name &amp;#34;/Applications/VLC.app/Contents/MacOS/VLC&amp;#34;)   eg.2 1 2 3 4 5 6 7 8 9 10 11  (setq exec-path (append exec-path &amp;#39;(&amp;#34;/usr/local/bin&amp;#34;))) (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/site-lisp/emms/lisp&amp;#34;) (require &amp;#39;emms-setup) (require &amp;#39;emms-player-mplayer) (emms-standard) (emms-default-players) (define-emms-simple-player mplayer &amp;#39;(file url) (regexp-opt &amp;#39;(&amp;#34;.ogg&amp;#34; &amp;#34;.mp3&amp;#34; &amp;#34;.wav&amp;#34; &amp;#34;.mpg&amp;#34; &amp;#34;.mpeg&amp;#34; &amp;#34;.wmv&amp;#34; &amp;#34;.wma&amp;#34; &amp;#34;.mov&amp;#34; &amp;#34;.avi&amp;#34; &amp;#34;.divx&amp;#34; &amp;#34;.ogm&amp;#34; &amp;#34;.asf&amp;#34; &amp;#34;.mkv&amp;#34; &amp;#34;http://&amp;#34; &amp;#34;mms://&amp;#34; &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Bongo</title>
+      <link>https://daotoyi.github.io/post/emacs-bongo/</link>
+      <pubDate>Fri, 25 Nov 2022 22:36:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-bongo/</guid>
+      <description>configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &amp;#39;normal :keymaps &amp;#39;bongo-playlist-mode-map &amp;#34;&amp;lt;return&amp;gt;&amp;#34; &amp;#39;bongo-dwim &amp;#34;i&amp;#34; &amp;#39;bongo-insert-file &amp;#34;p&amp;#34; &amp;#39;bongo-play-previous &amp;#34;n&amp;#34; &amp;#39;bongo-play-next &amp;#34;w&amp;#34; &amp;#39;bongo-pause/resume &amp;#34;d&amp;#34; &amp;#39;bongo-dired-line &amp;#34;a&amp;#34; &amp;#39;bongo-append-enqueue &amp;#34;s&amp;#34; &amp;#39;bongo-seek &amp;#34;r&amp;#34; &amp;#39;bongo-rename-line &amp;#34;v&amp;#34; &amp;#39;volume) :custom (bongo-enabled-backends &amp;#39;(mplayer.exe)) (bongo-default-directory &amp;#34;e:/Recreation/Music/&amp;#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&amp;#39;.</description>
+    </item>
+    
+  </channel>
+</rss>

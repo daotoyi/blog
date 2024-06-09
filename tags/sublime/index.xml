@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sublime on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/sublime/</link>
+    <description>Recent content in sublime on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Apr 2022 11:58:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/sublime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sublime Notes</title>
+      <link>https://daotoyi.github.io/post/sublime-notes/</link>
+      <pubDate>Tue, 12 Apr 2022 11:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/sublime-notes/</guid>
+      <description>python default python config 使用默认配置报错 Unable to create process.因为默认配置使用 “C:\Program Files\WindowsApps\PythonSoft</description>
+    </item>
+    
+  </channel>
+</rss>

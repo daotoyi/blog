@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/windows/</link>
+    <description>Recent content in windows on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Sep 2023 09:18:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Everything</title>
+      <link>https://daotoyi.github.io/post/tool-everything-manual/</link>
+      <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-everything-manual/</guid>
+      <description>hotkey function introdction remark new window hotkey wake up from backend tools-option-keyboard-new window hotkey search skill 使用通配符：&amp;ldquo;Everything&amp;quot;支持通配符搜索。例如，使用星号 * 可以匹配任何字符，</description>
+    </item>
+    
+  </channel>
+</rss>

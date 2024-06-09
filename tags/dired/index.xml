@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dired on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/dired/</link>
+    <description>Recent content in dired on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Feb 2022 06:58:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/dired/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dired 使用</title>
+      <link>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</link>
+      <pubDate>Sun, 13 Feb 2022 06:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</guid>
+      <description>hotkey cmd function notes C-x d dired 进入 Dired 模式 ^ dired-up-directory 返回上一目录 p/C-p diredp-previous-line 上一行 n/C-n/SPC diredp-next-line 下一行 &amp;lt; dired-prev-dirline 上一个目录行 &amp;gt; dired-next-dirline 下一个目录行 g revert-buffer 刷新文件列表 + 新建目录 C 拷贝文件 把 dired-recursive-copies 设为非 nil</description>
+    </item>
+    
+  </channel>
+</rss>

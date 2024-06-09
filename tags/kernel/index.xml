@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kernel on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/kernel/</link>
+    <description>Recent content in kernel on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Apr 2022 23:16:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实时内核/系统</title>
+      <link>https://daotoyi.github.io/post/linux-realtime-kernel/</link>
+      <pubDate>Tue, 05 Apr 2022 23:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-realtime-kernel/</guid>
+      <description>实时操作系统有硬实时和软实时之分. 硬实时要求在规定的时间内必须完成操作，这是在操作系统设计时保证的； 软实时则只要按照任务的优先级，尽可能快地</description>
+    </item>
+    
+  </channel>
+</rss>

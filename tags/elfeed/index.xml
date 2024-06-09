@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elfeed on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/elfeed/</link>
+    <description>Recent content in elfeed on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Feb 2022 11:37:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/elfeed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>elfeed,elfeed-org,elfeed-dashboard 使用总结</title>
+      <link>https://daotoyi.github.io/post/emacs-elfeed-org/</link>
+      <pubDate>Fri, 18 Feb 2022 11:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-elfeed-org/</guid>
+      <description>elfeed elfeed elfeed-org elfeed-org 一级标题的 tags 必须是 elfeed . elfeed-dashboard elfeed-dashboard 注意得按 repo 标的配置抄写.模板参考 括号要对齐,链接位置的描述词占位需要一致.</description>
+    </item>
+    
+  </channel>
+</rss>

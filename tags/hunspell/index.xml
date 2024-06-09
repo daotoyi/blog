@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hunspell on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/hunspell/</link>
+    <description>Recent content in hunspell on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Feb 2022 11:07:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/hunspell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>flymode 在 windows 上使用总结</title>
+      <link>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:07:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</guid>
+      <description>ENV win10 emacs-27.1 spacemacs foreword spell-checking flymode export error. spacemacs 需要 aspell0.6 以上的版本，但是 Latest Version: GNU Aspell-0.50.3 (win32)（Released Dec 22, 2002）. Aspell 找到 Aspell6 的字典包，但未找到程序包,也是不能</description>
+    </item>
+    
+  </channel>
+</rss>

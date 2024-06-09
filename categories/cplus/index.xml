@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cplus on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/cplus/</link>
+    <description>Recent content in Cplus on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 06 Aug 2022 20:12:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/cplus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux glibc、eglibc、uclibc、Musl-libc</title>
+      <link>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</link>
+      <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</guid>
+      <description>glibc GNU C Library 是 GNU 项目（GNU Project），所实现的 C 语言标准库（C standard library） 常见的桌面和服务器中的 GNU/Linux 类的系统中，都是用的这套 C 语言标</description>
+    </item>
+    
+    <item>
+      <title>Linux gcc/g&#43;&#43;</title>
+      <link>https://daotoyi.github.io/post/linux-gcc-compile-lib/</link>
+      <pubDate>Tue, 02 Aug 2022 22:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-gcc-compile-lib/</guid>
+      <description>gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I+ 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警</description>
+    </item>
+    
+    <item>
+      <title>Linux 动态链接器</title>
+      <link>https://daotoyi.github.io/post/linux-ld-linux.so/</link>
+      <pubDate>Sat, 16 Apr 2022 07:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-ld-linux.so/</guid>
+      <description>ELF 格式 Linux 上可执行程序遵循的是 ELF 格式。 一般一个 ELF 文件都会有两个 header : ELF header，作用是描述整个 ELF 文件的一些信息 program header, 作用主要是为了表明自己应该</description>
+    </item>
+    
+    <item>
+      <title>Linux make, cmake, qmake</title>
+      <link>https://daotoyi.github.io/post/make-cmake-qmake/</link>
+      <pubDate>Fri, 15 Apr 2022 14:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/make-cmake-qmake/</guid>
+      <description>make make 是用来执行 Makefile 的, Makefile 是类 unix 环境下(比如 Linux)的类似于批处理的&amp;quot;脚本&amp;quot;文件。 其基本语法是: 目标+依赖+命令 ，只有在</description>
+    </item>
+    
+  </channel>
+</rss>

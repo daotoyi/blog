@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Sep 2023 15:29:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid</title>
+      <link>https://daotoyi.github.io/post/tool-mermaid/</link>
+      <pubDate>Sun, 17 Sep 2023 15:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-mermaid/</guid>
+      <description>前言 开源的文本驱动图表生成工具. Mermaid 可以作为 JavaScript 库使用，也可以作为独立的命令行工具使用。 在文本编辑器中编写图表定义，而无需使用专业的图表工具或图</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://daotoyi.github.io/post/markdown-notes/</link>
+      <pubDate>Sat, 19 Mar 2022 11:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/markdown-notes/</guid>
+      <description>图片排列 普通左右排列 要一张图片接着一张图片的写，中间不能有换行。如果换行的话则图片也换行 ，例如： 1 ![描述](图片链接)![描述](图片链接</description>
+    </item>
+    
+    <item>
+      <title>Hugo-markdown</title>
+      <link>https://daotoyi.github.io/post/hugo-markdown/</link>
+      <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-markdown/</guid>
+      <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CAD on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/cad/</link>
+    <description>Recent content in CAD on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 17 Mar 2022 19:58:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/cad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAD</title>
+      <link>https://daotoyi.github.io/post/cad-notes/</link>
+      <pubDate>Thu, 17 Mar 2022 19:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/cad-notes/</guid>
+      <description>基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数</description>
+    </item>
+    
+  </channel>
+</rss>

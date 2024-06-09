@@ -1,0 +1,2630 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DaoyiSite</title>
+    <link>https://daotoyi.github.io/</link>
+    <description>Recent content on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Jun 2024 19:34:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>邮箱协议</title>
+      <link>https://daotoyi.github.io/post/internet-email-protocol/</link>
+      <pubDate>Fri, 07 Jun 2024 19:34:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-email-protocol/</guid>
+      <description>SMTP SMTP（simple mail transfer protocol）简单邮件传输协议。 SMTP 协议属于 TCP/IP 协议簇，它是一组用于从源地址到目的地址传输邮件的规范，通过它来控</description>
+    </item>
+    
+    <item>
+      <title>macOS spacemacs 的 evil 模式 fcitx-remote/swim 切换输入法</title>
+      <link>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote/</link>
+      <pubDate>Sun, 19 May 2024 19:01:37 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote/</guid>
+      <description>CLOSED: [2024-03-28 Thu 00:41] fcitx-for-osx step1： 在 dotspacemacs-configuration-layers 中配置并启用 chinese，并启用 fcitx.el 1 2 (chinese :variables chinese-enable-fcitx t) setp2 在 dotspacemacs/user-config() 1 2 3 4 5 ;; Make sure the following comes before `(fcitx-aggressive</description>
+    </item>
+    
+    <item>
+      <title>macOS sshfs 使用</title>
+      <link>https://daotoyi.github.io/post/macos-sshfs-useage/</link>
+      <pubDate>Sun, 19 May 2024 19:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/macos-sshfs-useage/</guid>
+      <description>SSHFS SSHFS（SSH Filesystem）是一个基于 FUSE 的文件系统客户端，用于通过 SSH 连接远程目录。SSHFS 使用的是 SFTP 协议，它是 SSH 的一个子系统</description>
+    </item>
+    
+    <item>
+      <title>Linux grub parameter</title>
+      <link>https://daotoyi.github.io/post/linux-grub-parameter/</link>
+      <pubDate>Sun, 12 May 2024 05:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-grub-parameter/</guid>
+      <description>quiet 启动系统的过程中，如果没有 quiet，那么内核就会输出很多内核消息，这些内核消息就包括的了系统启动过程中运行了哪些程序. splash splash 是一个不可或缺</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd autojump</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-autojump/</link>
+      <pubDate>Sat, 11 May 2024 21:49:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-autojump/</guid>
+      <description>install 1 2 3 4 5 # Add the following line to your ~/.bash_profile or ~/.zshrc file: [ -f /opt/homebrew/etc/profile.d/autojump.sh ] &amp;amp;&amp;amp; . /opt/homebrew/etc/profile.d/autojump.sh # If you use the Fish shell then add the following line to your ~/.config/fish/config.fish: [ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish fish 1 2 3 4 5 if status is-interactive # Commands to run in interactive sessions can go here [ -f /opt/homebrew/share/autojump/autojump.fish ] source</description>
+    </item>
+    
+    <item>
+      <title>Manjaro 美化 macos</title>
+      <link>https://daotoyi.github.io/post/majaro-customize-to-macos-style/</link>
+      <pubDate>Sun, 21 Apr 2024 12:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/majaro-customize-to-macos-style/</guid>
+      <description>steps 安装 WhiteSur-Gtk-theme 登录 xfce-look.org 主题站，搜索 WhiteSur，在搜索结果中下载主题，图标，指针这三项主题资源包到本地进行安装。 WhiteSur-Gtk-the</description>
+    </item>
+    
+    <item>
+      <title>Manjaro pacman、aur and yaourt(yay)</title>
+      <link>https://daotoyi.github.io/post/majaro-pacman-aur-and-yaourt/</link>
+      <pubDate>Sat, 20 Apr 2024 20:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/majaro-pacman-aur-and-yaourt/</guid>
+      <description>pacman Pacman 在 Arch wiki 的说明如下 pacman 软件包管理器是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来(参见 makepkg 和 ABS)。不管软件包是来自</description>
+    </item>
+    
+    <item>
+      <title>macOS 软件包安装/卸載</title>
+      <link>https://daotoyi.github.io/post/mac-package-install-and-uninstall/</link>
+      <pubDate>Fri, 12 Apr 2024 12:13:30 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-package-install-and-uninstall/</guid>
+      <description>CLOSED: [2024-03-28 Thu 00:43] 安装 dmg 文件安装 App Store 安装 卸载方法与 dmg 文件安装一致 pkg 安装包安装 Homebrew 等包管理器安装 卸載 dmg dmg 是苹果电脑上专用的磁盘镜像（disk image）文</description>
+    </item>
+    
+    <item>
+      <title>恢复模式</title>
+      <link>https://daotoyi.github.io/post/mac-restore-mode/</link>
+      <pubDate>Thu, 28 Mar 2024 17:57:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-restore-mode/</guid>
+      <description>Intel 重启电脑，屏幕变黑后，长按 command + R 键，直到屏幕上出现 Apple 徽标。启动完成后，您将进入恢复模式。 Apple ARM64 长按 电源按钮（10 秒）。然后转到“选项”。您可</description>
+    </item>
+    
+    <item>
+      <title>Mac OS 新手配置</title>
+      <link>https://daotoyi.github.io/post/mac-new-configure/</link>
+      <pubDate>Thu, 28 Mar 2024 17:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-new-configure/</guid>
+      <description>Homebrew instruction Homebrew 是 MacOS（或 Linux）的软件包管理器。Homebrew 是一款包管理工具，目前支持 macOS 和 Linux 系统。主要有四个部分组成： brew： 源代码</description>
+    </item>
+    
+    <item>
+      <title>Linux oh-my-fish</title>
+      <link>https://daotoyi.github.io/post/linux-oh-my-fish/</link>
+      <pubDate>Mon, 25 Mar 2024 11:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-oh-my-fish/</guid>
+      <description>install 1 2 3 4 5 6 7 8 9 brew install fish # /etc/shells /usr/local/bin/fish ln -s /opt/homebrew/bin/fish /usr/local/bin/fish chsh -s /usr/local/bin/fish curl -L https://get.oh-my.fish | fish useage omf(oh my fish)是基于 fish shell 的框架，提供插件跟主题，具体使用方式： 1 2 3 4 5 6 7 8 9 10</description>
+    </item>
+    
+    <item>
+      <title>Linux shell 正则表达式</title>
+      <link>https://daotoyi.github.io/post/linux-shell-regrex/</link>
+      <pubDate>Sat, 02 Mar 2024 23:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-regrex/</guid>
+      <description>\ 将下一个字符标记为一个特殊字符、或一个原义字符、或一个反向引用、或一个八进制转义符。例如，&#39;\\&amp;lsquo;匹配斜线&amp;quot;\&amp;qu</description>
+    </item>
+    
+    <item>
+      <title>Linux shell 进度条</title>
+      <link>https://daotoyi.github.io/post/linux-shell-progress-show/</link>
+      <pubDate>Sat, 02 Mar 2024 13:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-progress-show/</guid>
+      <description>pv 命令 pv 命令：pv 是 &amp;ldquo;pipe viewer&amp;rdquo; 的缩写，可以监视通过管道传输数据的进度。 1 pv file.tar | gzip &amp;gt; file.tar.gz rsync 命令 rsync 提供了内置的进度展示功能，可以使用 &amp;ndash;progress 选项来显示文件的同</description>
+    </item>
+    
+    <item>
+      <title>BMC、IPMI、UEFI 和 BIOS</title>
+      <link>https://daotoyi.github.io/post/hardware-bmc-ipmi-eufi-bios/</link>
+      <pubDate>Fri, 09 Feb 2024 18:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-bmc-ipmi-eufi-bios/</guid>
+      <description>BIOS （Basic Input Output System），即基础输入输出系统，是刻在主板 ROM 芯片上不可篡改的启动程序，BIOS 负责计算系统自检程序（POST，Powe</description>
+    </item>
+    
+    <item>
+      <title>Linux initramfs</title>
+      <link>https://daotoyi.github.io/post/linux-initramfs/</link>
+      <pubDate>Sat, 03 Feb 2024 12:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-initramfs/</guid>
+      <description>为什么需要 initramfs 在 Linux 内核被加载到内存并运行后，内核进程最终需要切换到用户的进程来使用计算机，而用户进程又存在于外存储设备上。 内核源码是没有包含驱</description>
+    </item>
+    
+    <item>
+      <title>Windows bat manual</title>
+      <link>https://daotoyi.github.io/post/windows-bat-manual/</link>
+      <pubDate>Sun, 14 Jan 2024 14:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-bat-manual/</guid>
+      <description>BAT Archive 1 2 :: 输出空行 echo. 常用命令 start 简述 启动单独的“命令提示符”窗口来运行指定程序或命令。如果在没有参数的情况下使用，start 将打开第二个命令提</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd pv</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-pv/</link>
+      <pubDate>Sat, 13 Jan 2024 10:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-pv/</guid>
+      <description>简述 显示当前在命令行执行的命令的进度信息，管道查看器。 pv 命令 Pipe Viewer 的简称，由 Andrew Wood 开发。意思是通过管道显示数据处理进度的信息。这些信息包括已经耗</description>
+    </item>
+    
+    <item>
+      <title>Linux Samba</title>
+      <link>https://daotoyi.github.io/post/linux-samba/</link>
+      <pubDate>Sat, 13 Jan 2024 10:13:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-samba/</guid>
+      <description>服务器 docker 安装 samba 1 2 3 4 5 6 7 8 9 docker run -it \ --name samba \ --restart=always \ -p 139:139 \ -p 445:445 \ -v /home//download/samba:/mount \ -d dperson/samba \ -u &amp;#34;samba;zkty&amp;#34; \ -s &amp;#34;samba;/mount/;yes;no;no;all;none&amp;#34; 1 2 3 4 5 6 7 8 9 10 11 12 13 -s &amp;#34;&amp;lt;name;/path&amp;gt;[;browse;readonly;guest;users;admins;writelist;comment]&amp;#34; Configure a share required arg: &amp;#34;&amp;lt;name&amp;gt;;&amp;lt;/path&amp;gt;&amp;#34; &amp;lt;name&amp;gt; is how it&amp;#39;s called for clients</description>
+    </item>
+    
+    <item>
+      <title>syslinux 简单使用</title>
+      <link>https://daotoyi.github.io/post/tools-syslinux-instruction/</link>
+      <pubDate>Fri, 12 Jan 2024 22:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-syslinux-instruction/</guid>
+      <description>简介 Syslinux 是一个功能强大的引导加载程序, 可以装在 U 盘上来引导系统 5.00 版本以前，几乎所有 c32 模块是独立的，即没有其他模块依赖； 但在 5.00 以后，很多 c32 模块则</description>
+    </item>
+    
+    <item>
+      <title>硬件架构</title>
+      <link>https://daotoyi.github.io/post/hardware-architecture/</link>
+      <pubDate>Sun, 07 Jan 2024 20:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-architecture/</guid>
+      <description>常见硬件架构 x86_64 x86_64 架构，也称为 AMD64 或 Intel 64，是当前最常见和广泛使用的硬件架构之一。 基于 64 位扩展 x86 架构，支持 64 位操作系统和应用程序。 x86_64 架构兼容 32 位</description>
+    </item>
+    
+    <item>
+      <title>Linux IP（0.0.0.0 和 ::）</title>
+      <link>https://daotoyi.github.io/post/linux-ip-localhost/</link>
+      <pubDate>Wed, 03 Jan 2024 15:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-ip-localhost/</guid>
+      <description>127.0.0.1 127.0.0.1 属于{127，}集合中的一个，所有的网络号为 127 的地址都被称为环回地址，所以环回地址不等价于 127.0.0.1，后者只是环回地址的一份子，</description>
+    </item>
+    
+    <item>
+      <title>Linux CIFS 与 SMB</title>
+      <link>https://daotoyi.github.io/post/linux-cifs-vs-smb/</link>
+      <pubDate>Wed, 03 Jan 2024 11:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cifs-vs-smb/</guid>
+      <description>SMB Server Message Block - SMB，即服务(器)消息块，是 IBM 公司在 80 年代中期发明的一种文件共享协议。它只是系统之间通信的一种 方式（协议） ，并不是一款特殊的软件</description>
+    </item>
+    
+    <item>
+      <title>OpenStack</title>
+      <link>https://daotoyi.github.io/post/internet-openstack/</link>
+      <pubDate>Wed, 03 Jan 2024 11:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-openstack/</guid>
+      <description>OpenStack 起源 2002 年，美国著名的电商公司亚马逊（Amazon）向客户推出了一项全新的业务——包括存储空间、计算能力等资源服务的 Web Service。这就是</description>
+    </item>
+    
+    <item>
+      <title>CMOS 和 BIOS</title>
+      <link>https://daotoyi.github.io/post/hardware-cmos-and-bios/</link>
+      <pubDate>Mon, 01 Jan 2024 17:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-cmos-and-bios/</guid>
+      <description>CMOS CMOS（Complementary Metal-Oxide-Semiconductor，互补金属氧化物半导体）是一块可读写的 RAM（随机存</description>
+    </item>
+    
+    <item>
+      <title>FRP</title>
+      <link>https://daotoyi.github.io/post/tool-frp-manual/</link>
+      <pubDate>Mon, 01 Jan 2024 16:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-frp-manual/</guid>
+      <description>Fast Reverse Proxy （Fast Reverse Proxy） frps 常用配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 [common] # Frp 服务器监听的端口，默认为 7000，这里改成 7001 bind_port = 7001 #</description>
+    </item>
+    
+    <item>
+      <title>衡量 WIFI 信号的强弱</title>
+      <link>https://daotoyi.github.io/post/hardware-measure-the-strength-of-wifi-signal/</link>
+      <pubDate>Mon, 01 Jan 2024 11:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-measure-the-strength-of-wifi-signal/</guid>
+      <description>通常是用 db、dbm 来表达 WIFI 信号强度. db 是一个纯粹的比值，只表示两个量的相对大小关系。 通常用 1w 的比值来表示为 dbw，与 1mw 的比值单位表示为 db</description>
+    </item>
+    
+    <item>
+      <title>Linux shell echo 输出颜色</title>
+      <link>https://daotoyi.github.io/post/linux-shell-echo-color/</link>
+      <pubDate>Mon, 01 Jan 2024 09:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-echo-color/</guid>
+      <description>ANSI 控制码简述 ANSI 控制码用于在字符显示系统中控制光标移动和字符色彩等，常用于 BBS 系统中。 ANSI ESCAPE SEQUENCES 又称为 VT100 系列控制码，国内译为 ANSI 控制码。 ANSI 控制码依赖终</description>
+    </item>
+    
+    <item>
+      <title>Linux Grub 手动启动 linux</title>
+      <link>https://daotoyi.github.io/post/linux-grub-starup-manual/</link>
+      <pubDate>Fri, 29 Dec 2023 08:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-grub-starup-manual/</guid>
+      <description>普通场景 「BIOS」+「MBR」+「普通的磁盘分区」 1 2 3 4 5 6 7 8 9 10 11 #1 查看所有分区 grub&amp;gt; ls #2 查看分区下的内容 grub&amp;gt; ls (hd0,1)/ #3 设置根分区及启动盘 grub&amp;gt; set</description>
+    </item>
+    
+    <item>
+      <title>Linux RHEL8.8LTS 安装仓库及 YUM 挂载方式</title>
+      <link>https://daotoyi.github.io/post/linux-rhel8/</link>
+      <pubDate>Fri, 29 Dec 2023 08:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-rhel8/</guid>
+      <description>挂载本地镜像仓库(rhel8.8 ) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 mkdir /media/cdrom mount -oloop rhel8.8xxx.iso /media/cdrom cat &amp;gt;&amp;gt; /etc/tyum.repos.d/iso.repo &amp;lt;EOF [BaseOS] name=BaseOS baseurl=file:///media/cdrom/BaseOS gpgcheck=0 enabled=1 [AppStream] name=AppStream baseurl=file:///media/cdrom/AppStream gpgcheck=0 enabled=1 EOF # 清理缓存 yum clean all # 建立</description>
+    </item>
+    
+    <item>
+      <title>Linux Ubuntu16.04LTS</title>
+      <link>https://daotoyi.github.io/post/linux-ubuntu16-config/</link>
+      <pubDate>Fri, 29 Dec 2023 08:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-ubuntu16-config/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 # ENV Ubuntu 16.04.6 LTS uname: 4.15.0-45-generic # ISO安装后默认apt源可用 apt update # 安装sshd apt install openssh-server # root可远程，配置/</description>
+    </item>
+    
+    <item>
+      <title>syslinux</title>
+      <link>https://daotoyi.github.io/post/tools-syslinux/</link>
+      <pubDate>Sun, 24 Dec 2023 10:59:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-syslinux/</guid>
+      <description>简述 SYSLINUX 是一个小型的 Linux 操作系统，它的目的是简化首次安装 Linux 的时间，并建立修护或其它特殊用途的启动盘。 也是一个功能强大的引导加载程序，而且兼容各种</description>
+    </item>
+    
+    <item>
+      <title>Linux 重新安装 grub</title>
+      <link>https://daotoyi.github.io/post/linux-reinstall-grub/</link>
+      <pubDate>Sun, 17 Dec 2023 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-reinstall-grub/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 ~# mount /dev/sda1 /mnt ~# mount --bind /dev /mnt/dev ~# mount --bind /proc /mnt/proc ~# mount --bind /sys /mnt/sys ~# chroot /mnt # 若以UEFI方式安装，以/dev/sda1为efi分区，/d</description>
+    </item>
+    
+    <item>
+      <title>Linux 修改 Ramdisk 镜像重新制作</title>
+      <link>https://daotoyi.github.io/post/linux-change-ramdisk-img/</link>
+      <pubDate>Sun, 17 Dec 2023 21:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-change-ramdisk-img/</guid>
+      <description>说明 通过 cpio 命令解压 ramddisk 解压系统后重新打包制作镜像。 步骤 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # 查看文件格式 ➜ file initrd.img initrd.img: XZ compressed data, checksum CRC32 # 修改文件名，并</description>
+    </item>
+    
+    <item>
+      <title>Linux 文件扩展属性</title>
+      <link>https://daotoyi.github.io/post/linux-file-attributes/</link>
+      <pubDate>Sun, 17 Dec 2023 19:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-file-attributes/</guid>
+      <description>简述 扩展属性（xattrs）提供了一种机制，用来将键值对永久得关联到文件；让现有的文件系统得以支持在原始设计中未提供的功能。 扩展属性是目前流</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd download</title>
+      <link>https://daotoyi.github.io/post/tool-linux-download/</link>
+      <pubDate>Sun, 17 Dec 2023 18:59:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-linux-download/</guid>
+      <description>axel 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 Axel 2.17.11 (linux-gnu) Usage: axel [options] url1 [url2] [url...] --max-speed=x -s x Specify maximum speed (bytes per second) --num-connections=x -n x Specify maximum number of connections --max-redirect=x Specify maximum number of redirections --output=f -o f Specify local output file --search[=n] -S[n] Search for mirrors and</description>
+    </item>
+    
+    <item>
+      <title>Nginx 手动生成证书</title>
+      <link>https://daotoyi.github.io/post/internet-generate-certificate-manually/</link>
+      <pubDate>Sun, 17 Dec 2023 18:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-generate-certificate-manually/</guid>
+      <description>CA 生成一对密钥 1 2 3 4 5 6 7 8 9 10 11 12 [root@nginx ~]# mkdir -p /etc/pki/CA [root@nginx ~]# cd /etc/pki/CA/ [root@nginx CA]# mkdir private [root@nginx CA]# ls private [root@nginx CA]# (umask 077;openssl genrsa -out private/cakey.pem 2048) Generating RSA private key, 2048 bit long modulus (2 primes) [root@nginx CA]# ls private/ cakey.pem [root@nginx CA]# mkdir certs newcerts crl [root@nginx CA]# touch index.txt &amp;amp;&amp;amp;</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd smartctl</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-smartctl/</link>
+      <pubDate>Sun, 17 Dec 2023 12:27:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-smartctl/</guid>
+      <description>常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 smartctl -i &amp;lt;device&amp;gt; #显示设备的身份信息，检查硬盘是否打开了SMART支持。 # SMART support is: Enabled，说明硬盘支</description>
+    </item>
+    
+    <item>
+      <title>Git commit 规范</title>
+      <link>https://daotoyi.github.io/post/github-git-commit-standara/</link>
+      <pubDate>Sat, 18 Nov 2023 12:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-git-commit-standara/</guid>
+      <description>type 为必填项，用于指定 commit 的类型，约定了 feat、fix 两个主要 type，以及 docs、style、build、perf、refactor、re</description>
+    </item>
+    
+    <item>
+      <title>RAID</title>
+      <link>https://daotoyi.github.io/post/hardware-raid/</link>
+      <pubDate>Fri, 10 Nov 2023 21:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-raid/</guid>
+      <description>基本简介 RAID 是 Redundant Array of Inexpensive Disks 或 Redundant Array of Independent Drives 的缩写，廉价冗余磁盘阵列，是为了提高数据存储的性能和可靠性而开发的技术。 最初，RAID 的目标是通过将多个廉</description>
+    </item>
+    
+    <item>
+      <title>Obsidian</title>
+      <link>https://daotoyi.github.io/post/tool-obsidian/</link>
+      <pubDate>Fri, 10 Nov 2023 14:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-obsidian/</guid>
+      <description>pulgin 插件通常放在目录 .obsidian\plugins 下面 obsidian-proxy-github https://github.com/juqkai/obsidian-proxy-github Git pandoc 格式转换的一站式解决方案，覆盖了 txt，html，md，pdf，docx，ppt 等几乎所有文档格式 remotely save 第三方</description>
+    </item>
+    
+    <item>
+      <title>Nginx 反向代理和 Acme 证书配置</title>
+      <link>https://daotoyi.github.io/post/internet-nginx-acme-config/</link>
+      <pubDate>Tue, 17 Oct 2023 10:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-nginx-acme-config/</guid>
+      <description>nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen</description>
+    </item>
+    
+    <item>
+      <title>ARM 处理器家族</title>
+      <link>https://daotoyi.github.io/post/hardware-arm-processors-family/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-arm-processors-family/</guid>
+      <description>ARM 处理器产品分为经典 ARM 处理器系列和最新的 Cortex 处理器系列。 ARM 处理器家族 根据应用范围的不同，ARM 处理器可以分类成 3 个系列： Application Processors （应用处理器） 面向</description>
+    </item>
+    
+    <item>
+      <title>TPM 可信平台模块</title>
+      <link>https://daotoyi.github.io/post/hardware-trusted-platform-module/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-trusted-platform-module/</guid>
+      <description>Trusted Platform Module 是一种植于计算机内部为计算机提供可信根的芯片。该芯片的规格由可信计算组（Trusted Computing Group）来制定。 中国国内研究的 TCM（tr</description>
+    </item>
+    
+    <item>
+      <title>Elkhart lake 方案的网络设计</title>
+      <link>https://daotoyi.github.io/post/hardware-elkhart-lake-network-design/</link>
+      <pubDate>Fri, 13 Oct 2023 21:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-elkhart-lake-network-design/</guid>
+      <description>CPU 支持 8 条 PCIe 通道，但只有 6 个 port 能接外设，分别如下使用： 目前方案中未使用 PCIe 桥，其中 4 个 Lane 接 4 路网络，1个 Lane 接主板，另 1 个 Lane 默认接背板，当有压缩</description>
+    </item>
+    
+    <item>
+      <title>Vuepress 使用小结</title>
+      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
+    </item>
+    
+    <item>
+      <title>Emacs 设置选中区域的颜色</title>
+      <link>https://daotoyi.github.io/post/emacs-region-selected-color-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-region-selected-color-set/</guid>
+      <description>emacs 行显示和选中区域的颜色均是灰色，比较难区分，如下修改方式可用。 操作步骤 M-x customize-face &amp;lt;回车&amp;gt; Customize-face （default ‘all face’） &amp;lt;Tab 补全</description>
+    </item>
+    
+    <item>
+      <title>Emacs 中文显示乱码</title>
+      <link>https://daotoyi.github.io/post/emacs-chinese-show-errors/</link>
+      <pubDate>Fri, 06 Oct 2023 19:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-chinese-show-errors/</guid>
+      <description>Emacs打开中文乱码 有时使用emacs打开文件的时候，会显示乱码。原因是emacs默认编码跟文档编码不同而出现了乱码。 1 当前buffer调</description>
+    </item>
+    
+    <item>
+      <title>Windows Office Update (应用程序无法正常启动)</title>
+      <link>https://daotoyi.github.io/post/windows-office-update-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:32:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-office-update-error/</guid>
+      <description>前言 有时候打开office套件，如word，outlook时，会弹出正在更新 Office，请稍候，然后弹出一个错误框应用程序无法正常启动(0</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell(putty) config</title>
+      <link>https://daotoyi.github.io/post/emacs-shell-putty-config/</link>
+      <pubDate>Fri, 06 Oct 2023 19:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-shell-putty-config/</guid>
+      <description>Emacs Config init.el — EmacsEntrance ;; (setq explicit-shell-file-name “plink”) ;; (setq shell-file-name explicit-shell-file-name) (add-to-list &amp;lsquo;exec-path “path/to/PuTTY”) 或者 (setenv “PATH” (concat “/mingw64/bin:/usr/loc</description>
+    </item>
+    
+    <item>
+      <title>Emacs Shell-mode 中文显示乱码</title>
+      <link>https://daotoyi.github.io/post/emacs-shell-mode-chinese-show-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-shell-mode-chinese-show-error/</guid>
+      <description>Emacs shell-mode中文显示乱码 M-x shell ssh root@192.168.220.136 Pseudo-terminal will not be allocated because stdin is not a terminal. δ 쳣: System.TypeInitializationException: Microsoft.Alm.Cli.Program ͳ ʼֵ 趨 쳣 —&amp;gt; System.IO.FileNotFoundException: δ ܼ ļ 򼯡 AzureDevOps.Authentication, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null ĳһ ϵͳ Ҳ ָ ļ Micros</description>
+    </item>
+    
+    <item>
+      <title>Linux 在 login 界面闪退</title>
+      <link>https://daotoyi.github.io/post/linux-repeat-login-screen/</link>
+      <pubDate>Fri, 06 Oct 2023 19:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-repeat-login-screen/</guid>
+      <description>Linux终端无法登录 1）环境变量引起pam_limits.so丢失 使用 XShell 或者 SecureSRT 远程连接 进入 /etc/pam.d/login 文件 在/etc/pam.d/login里面的最</description>
+    </item>
+    
+    <item>
+      <title>Linux pam.d faillock 配置</title>
+      <link>https://daotoyi.github.io/post/linux-pam/</link>
+      <pubDate>Fri, 06 Oct 2023 19:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-pam/</guid>
+      <description>导言 Removed deprecated pam_tally and pam_tally2 modules, use pam_faillock instead. pam_tally2配置 1 2 sed -i &amp;#39;1s/^/auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60/&amp;#39; /etc/pam.d/login sed -i &amp;#39;1 i auth required pam_tally2.so onerr=fail deny=5 unlock_time=600 even_deny_root root_unlock_time=60&amp;#39; /etc/pam.d/sshd 建立存储目录 mkdir /var/log/faillock faillock相关的信息</description>
+    </item>
+    
+    <item>
+      <title>Linux XDMCP remote Set(Redhat6)</title>
+      <link>https://daotoyi.github.io/post/linux-xdmcp-remote-set/</link>
+      <pubDate>Fri, 06 Oct 2023 19:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-xdmcp-remote-set/</guid>
+      <description>Linux 配置 /etc/gdm/custom.conf 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 [daemon] RemoteGreeter=/usr/libexec/gdm-simple-greeter [security] AllowRemoteRoot=true [xdmcp] Enable=1 Port=177 DisplaysPerHost=5 [greeter] Browser=true [chooser] [debug] 另外，如果想开机免登录，可以在[daemon]字段下添加 1 2 3 4 5 6 [daemon] TimedLoginEnable=True</description>
+    </item>
+    
+    <item>
+      <title>Org &lt;TAB&gt;键无法展开视图</title>
+      <link>https://daotoyi.github.io/post/emacs-org-tab-key-view/</link>
+      <pubDate>Fri, 06 Oct 2023 19:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-tab-key-view/</guid>
+      <description>说明 Linux系统，Emacs的org-mode使用evil插件时，&amp;lt;TAB&amp;gt;键无法展开视图。 Windows下正常。 解决 在ema</description>
+    </item>
+    
+    <item>
+      <title>Windows WSL</title>
+      <link>https://daotoyi.github.io/post/windows-wsl/</link>
+      <pubDate>Fri, 06 Oct 2023 19:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-wsl/</guid>
+      <description>basic 1 2 3 wsl --set-default-version 2 wsl --install -d Ubuntu-22.04 wsl --list --online config 修改wsl终端字体 窗口属性（临时） 右击，选择&amp;quot;属性&amp;quot;，弹出的窗口中选择字体进行修改。 注册表</description>
+    </item>
+    
+    <item>
+      <title>PyQt5 QDock 初始化</title>
+      <link>https://daotoyi.github.io/post/pyqt5_qdock_initsize/</link>
+      <pubDate>Fri, 06 Oct 2023 18:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/pyqt5_qdock_initsize/</guid>
+      <description>0x00 前言 QDockWidget自带的很多方法无法在保证其可调整大小的情况下，设置其初始大小. 0x01 初始化后固定大小 exampleCode 1 2 3 4 5 6 from PySide2.QtWidgets import QDockWidget, QMainWindow class UIMainWindow(QMainWindow): def __init__(self,</description>
+    </item>
+    
+    <item>
+      <title>Linux 不同 shell 文件中的函数调用</title>
+      <link>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</link>
+      <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files/</guid>
+      <description>执行外部脚本或命令 使用 source 命令或.运算符执行另一个脚本文件。这将导致另一个脚本中的所有命令在当前脚本的上下文中执行。 例如，有两个脚本文件，sc</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell Archive</title>
+      <link>https://daotoyi.github.io/post/linux-shell-archive/</link>
+      <pubDate>Fri, 29 Sep 2023 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-archive/</guid>
+      <description>cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的</description>
+    </item>
+    
+    <item>
+      <title>Linux 终端常用快捷键</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey-commonly/</link>
+      <pubDate>Tue, 26 Sep 2023 20:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey-commonly/</guid>
+      <description>快捷键 功能描述 Ctrl + A 光标快速跳至行首。 Ctrl + E 光标快速跳至行尾。 Ctrl + U 删除光标至行首的所有内容。 Ctrl + K 删除光标至行尾的所有内容。 Ctrl + W 删除光标</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统安全加固</title>
+      <link>https://daotoyi.github.io/post/linux-system-enhance/</link>
+      <pubDate>Sun, 24 Sep 2023 20:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-system-enhance/</guid>
+      <description>passwd 密码复杂度 口令长度不 得小于 8 位，且为字母、数字或特殊字符的混合组合，用户名和口令不得相同，禁止明文存 储口令，应使用 MD5、SHA1、DES</description>
+    </item>
+    
+    <item>
+      <title>Linux systecm service manager</title>
+      <link>https://daotoyi.github.io/post/linux-systecm-service-manager/</link>
+      <pubDate>Sun, 24 Sep 2023 20:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-systecm-service-manager/</guid>
+      <description>init/systemd https://img-blog.csdn.net/20180825000445679?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MjI4ODMw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70) service manage 适用 service/chkconfig redhat/centos6 及以下版本 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 chkconfig 设置是当前不生效，linux重启后才生效 service 设置是即时生效，linux关机重启后</description>
+    </item>
+    
+    <item>
+      <title>晶振</title>
+      <link>https://daotoyi.github.io/post/hardware-crystal-oscillator/</link>
+      <pubDate>Sun, 24 Sep 2023 18:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-crystal-oscillator/</guid>
+      <description>PPM 精度 ppm 晶振的精度(误差). PPM 含义为百万分之一(part per million 1/10^6)，表示晶体频率会偏离标称频率多少。值越小精度越高。 在产品规格书中，</description>
+    </item>
+    
+    <item>
+      <title>无线通信</title>
+      <link>https://daotoyi.github.io/post/hardware-wireless-communication/</link>
+      <pubDate>Sun, 24 Sep 2023 18:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-wireless-communication/</guid>
+      <description>传输距离 短距离通信 Zigbee Wi-Fi Bluetooth Z-wave 广域网通信 低功耗广域网（LPWAN 非授权频段 Lora Sigfox 授权频段（3GPP/3GPP2 等国家组织 GSM CDMA WCDMA LTE NB-IoT 协商统一于 NB-</description>
+    </item>
+    
+    <item>
+      <title>Linux FAQ Archives</title>
+      <link>https://daotoyi.github.io/post/linux-faq-archives/</link>
+      <pubDate>Sat, 23 Sep 2023 22:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-faq-archives/</guid>
+      <description>system Linux 如何查看文件是被哪个进程占用写数据？</description>
+    </item>
+    
+    <item>
+      <title>Linux 相关镜像网址</title>
+      <link>https://daotoyi.github.io/post/linux-download-url/</link>
+      <pubDate>Sat, 23 Sep 2023 22:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-download-url/</guid>
+      <description>开源镜像站 https://mirrors.cernet.edu.cn/ 校园网联合镜像站 https://mirrors.tuna.tsinghua.edu.cn/ http://mirrors.ustc.edu.cn/ http://mirrors.163.com/ debain 归档系统 http://cdimage.debian.org/cdimage/archive/ debian sid 源 https://packages.debian.org/zh-cn/sid/amd64/libelf-dev/download 国内源集锦 CentOS、Ubuntu、Debian、Alpine更换国内源集锦</description>
+    </item>
+    
+    <item>
+      <title>Linux HSR/PRP 功能</title>
+      <link>https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/</link>
+      <pubDate>Sat, 23 Sep 2023 14:45:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl/</guid>
+      <description>HSR/PRP HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）.一个专注于解决高可靠性自动化网络传输的标准</description>
+    </item>
+    
+    <item>
+      <title>Linux debian sid source</title>
+      <link>https://daotoyi.github.io/post/linux-debain-sid/</link>
+      <pubDate>Sat, 23 Sep 2023 12:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-debain-sid/</guid>
+      <description>简述 Debian sid 其实严格意义上不是一个正式的发行版，它更像一个 Debian 发行版的滚动开发版本，包含引入 Debian 系统中的最新的软件包。一般都是一些硬派开发者或测试者</description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>https://daotoyi.github.io/post/tool-mermaid/</link>
+      <pubDate>Sun, 17 Sep 2023 15:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-mermaid/</guid>
+      <description>前言 开源的文本驱动图表生成工具. Mermaid 可以作为 JavaScript 库使用，也可以作为独立的命令行工具使用。 在文本编辑器中编写图表定义，而无需使用专业的图表工具或图</description>
+    </item>
+    
+    <item>
+      <title>Teminal Crack</title>
+      <link>https://daotoyi.github.io/post/tools-terminal-crack/</link>
+      <pubDate>Sat, 16 Sep 2023 17:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-terminal-crack/</guid>
+      <description>CRT SecureCRT 是一款支持 SSH（SSH1 和 SSH2）的终端仿真程序，简单地说是 Windows 下登录 UNIX 或 Linux 服务器主机的软件。 正版下载地址：https://www.v</description>
+    </item>
+    
+    <item>
+      <title>Linux ssh 本地/远程转发</title>
+      <link>https://daotoyi.github.io/post/linux-local-remote-transmit/</link>
+      <pubDate>Tue, 12 Sep 2023 09:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-local-remote-transmit/</guid>
+      <description>本地转发 A 机通过 B 机连接 C 机 B 机 1 2 3 4 5 6 7 8 9 10 11 12 ssh -L localport:remotehost:remotehostport sshserver 说明： localport 本机开启的端口号 remotehost 最终连接机器的IP地址 remotehostport 最终连接机器的端口号 sshserver 转发</description>
+    </item>
+    
+    <item>
+      <title>Everything</title>
+      <link>https://daotoyi.github.io/post/tool-everything-manual/</link>
+      <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-everything-manual/</guid>
+      <description>hotkey function introdction remark new window hotkey wake up from backend tools-option-keyboard-new window hotkey search skill 使用通配符：&amp;ldquo;Everything&amp;quot;支持通配符搜索。例如，使用星号 * 可以匹配任何字符，</description>
+    </item>
+    
+    <item>
+      <title>Linux 系统时间与 RTC 时间设置</title>
+      <link>https://daotoyi.github.io/post/linux-systime-and-rtctime/</link>
+      <pubDate>Fri, 08 Sep 2023 18:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-systime-and-rtctime/</guid>
+      <description>sys time &amp;amp; rtc time 系统时区为 UTC 系统时区不为 UTC 查看系统时间 # date # date 查看 RTC 时间 # hwclock # hwclock -u 设置系统时间 # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; # date -s &amp;ldquo;2020-02-25 16:33:33&amp;rdquo; 同步系统时间到 RTC # hwclock &amp;ndash;systohc # hwclock &amp;ndash;systohc -u 同</description>
+    </item>
+    
+    <item>
+      <title>Linux Grub2 basic</title>
+      <link>https://daotoyi.github.io/post/linux-grub2/</link>
+      <pubDate>Wed, 30 Aug 2023 10:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-grub2/</guid>
+      <description>grub2 新特性 grub2 和 grub 有很多不同的地方： 图形接口 使用了模块机制，通过动态加载需要的模块来扩展功能 支持脚本语言，例如条件判断，循环、变量和函数 支持 rescue 模</description>
+    </item>
+    
+    <item>
+      <title>Linux UEFI</title>
+      <link>https://daotoyi.github.io/post/linux-uefi/</link>
+      <pubDate>Tue, 29 Aug 2023 22:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-uefi/</guid>
+      <description>entrance 在现代基于 UEFI 固件的系统中，shim 已经成为目前所有 Linux 发行版本中必备的一阶 bootloader；而传统上我们熟悉的 grub2 变成了二阶 bootloa</description>
+    </item>
+    
+    <item>
+      <title>Windows C 盘清理</title>
+      <link>https://daotoyi.github.io/post/windows-clear-c-disk/</link>
+      <pubDate>Mon, 28 Aug 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-clear-c-disk/</guid>
+      <description>C盘清理指南，清理出30G+起，超详细总结</description>
+    </item>
+    
+    <item>
+      <title>Window 系统分区</title>
+      <link>https://daotoyi.github.io/post/windows-disk-filesystem/</link>
+      <pubDate>Fri, 25 Aug 2023 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-disk-filesystem/</guid>
+      <description>文件系统 文件系统是系统对文件的存放排列方式，不同格式的文件系统关系到数据是如何在磁盘进行存储，文件名、文件权限和其他属性也存在不同。 Windows 操作系</description>
+    </item>
+    
+    <item>
+      <title>Linux audit 监控 SIGKILL 的信号</title>
+      <link>https://daotoyi.github.io/post/linux-audit-monitor-sigkill/</link>
+      <pubDate>Sun, 13 Aug 2023 11:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-audit-monitor-sigkill/</guid>
+      <description>audit audit 是用户空间的一个组件，一般默认安装，配合内核的审计模块一起工作。可以记录与安全相关的内核事件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</description>
+    </item>
+    
+    <item>
+      <title>Linux NetworkManager</title>
+      <link>https://daotoyi.github.io/post/linux-networkmanager/</link>
+      <pubDate>Wed, 02 Aug 2023 11:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-networkmanager/</guid>
+      <description>基本配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 auto lo iface lo inet loopback # The primary network interface auto eth0 iface eth0 inet static address 192.168.0.42 network 192.168.0.0 netmask 255.255.255.0 broadcast 192.168.0.255 gateway 192.168.0.1 auto eth5 iface eth5 inet dhcp 增加路由 1 2 3 4 5 6 7 8 9 10 auto eth0 iface eth0 inet</description>
+    </item>
+    
+    <item>
+      <title>Linux POSIX</title>
+      <link>https://daotoyi.github.io/post/linux-posix/</link>
+      <pubDate>Sun, 16 Jul 2023 07:57:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-posix/</guid>
+      <description>什么是 posix POSIX：可移植操作系统接口（Portable Operating System Interface of UNIX，缩写为 POSIX ）. 发布者为电气与电子工程师协会（Institute of Electrical and</description>
+    </item>
+    
+    <item>
+      <title>Linux cmake nmake qmake 的区别联系</title>
+      <link>https://daotoyi.github.io/post/linux-cmake-nmake-qmake/</link>
+      <pubDate>Wed, 31 May 2023 16:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmake-nmake-qmake/</guid>
+      <description>基本概念 gcc 是 GNU Compiler Collection（就是 GNU 编译器套件），也可以简单认为是编译器，它可以编译很多种编程语言（括 C、C++、Objective</description>
+    </item>
+    
+    <item>
+      <title>Linux Kylinx OS(国产）</title>
+      <link>https://daotoyi.github.io/post/linux-kylinx-operate-system/</link>
+      <pubDate>Tue, 16 May 2023 20:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-kylinx-operate-system/</guid>
+      <description>麒麟家族 中标麒麟（NeoKylin） https://www.cs2c.com.cn/ 中标软件 与 国防科学技术大学 联合推出“中标麒麟”操作系统产品 由民用的“中标 Linux”操作系统和军用“银</description>
+    </item>
+    
+    <item>
+      <title>Linux terminal hotkey</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey/</link>
+      <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey/</guid>
+      <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
+    </item>
+    
+    <item>
+      <title>Windows chkdsk</title>
+      <link>https://daotoyi.github.io/post/windows-cmd-chkdsk/</link>
+      <pubDate>Wed, 19 Apr 2023 20:10:29 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-cmd-chkdsk/</guid>
+      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
+    </item>
+    
+    <item>
+      <title>Babel</title>
+      <link>https://daotoyi.github.io/post/emacs-org-babel/</link>
+      <pubDate>Wed, 12 Apr 2023 11:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-babel/</guid>
+      <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
+    </item>
+    
+    <item>
+      <title>Linux shell 脚本中-e 参数</title>
+      <link>https://daotoyi.github.io/post/linux-shell-e/</link>
+      <pubDate>Fri, 03 Mar 2023 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-e/</guid>
+      <description>set -e 在文件开头加上 set -e,这句语句告诉 bash 如果任何语句的执行结果不是 true 则应该退出。这样的好处是防止错误像滚雪球般变大导致一个致命的错误. 如果要</description>
+    </item>
+    
+    <item>
+      <title>UART、RS232、TTL 关系浅析</title>
+      <link>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</link>
+      <pubDate>Tue, 31 Jan 2023 22:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</guid>
+      <description>UART 在通信和计算机科学中，Serial communication 是一个通用概念，泛指所有的串行的通信协议，如 RS232、USB、I2C、SPI、1-Wire、Ethe</description>
+    </item>
+    
+    <item>
+      <title>CPU</title>
+      <link>https://daotoyi.github.io/post/hardware-cpu/</link>
+      <pubDate>Sun, 01 Jan 2023 11:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-cpu/</guid>
+      <description>线程 操作系统是通过线程来执行任务的，一般情况下内核单元和线程是 1:1 对应关系，即几核 CPU 就拥有几个线程，如果采用了 CPU 的虚拟化技术(Virtuali</description>
+    </item>
+    
+    <item>
+      <title>网卡</title>
+      <link>https://daotoyi.github.io/post/hardware-network-card/</link>
+      <pubDate>Sun, 01 Jan 2023 11:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-network-card/</guid>
+      <description>网络信号接入 RJ-45 接口 （网线接入） Transformer 隔离变压器，它的作用是隔离保护，使网线和 PHY 之间没有物理上的连接而换传递了信号。 如果外部网线直接和芯片相连的话</description>
+    </item>
+    
+    <item>
+      <title>Org Table Shrink</title>
+      <link>https://daotoyi.github.io/post/emacs-org-table-shrink/</link>
+      <pubDate>Fri, 30 Dec 2022 19:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-table-shrink/</guid>
+      <description>C-c C-c (org-table-align)
+C-c TAB (org-table-toggle-column-width)
+C-u C-c TAB (org-table-shrink)
+C-u C-u C-c TAB (org-table-expand)
+ Column Width and Alignment  </description>
+    </item>
+    
+    <item>
+      <title>Org-mode 简介</title>
+      <link>https://daotoyi.github.io/post/emacs-org-mode-instruction/</link>
+      <pubDate>Thu, 29 Dec 2022 19:49:24 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-mode-instruction/</guid>
+      <description>列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任</description>
+    </item>
+    
+    <item>
+      <title>Linux FTP/Sftp</title>
+      <link>https://daotoyi.github.io/post/linux-vsftpd/</link>
+      <pubDate>Thu, 29 Dec 2022 17:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-vsftpd/</guid>
+      <description>config 默认配置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 1&amp;gt;允许匿名用户和本地用户登陆。 anonymous_enable=YES local_enable=YES # 2&amp;gt;匿名用户使用的登陆名为ftp或anonymo</description>
+    </item>
+    
+    <item>
+      <title>Org Export Pdf</title>
+      <link>https://daotoyi.github.io/post/emacs-org-export-pdf/</link>
+      <pubDate>Sat, 24 Dec 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-export-pdf/</guid>
+      <description>Table 溢出表格 整体缩放 表格前后增加以下内容 1 2 3 4 5 6 #+LaTeX: \resizebox{\textwidth}{!}{ | 姓名 | 身高 | 颜值 | 爱好 | 交往系数 | |------+-----+------+------+---------| | | | | | | #+LaTeX: } +ATTR_LATEX 改字号+longtable+a</description>
+    </item>
+    
+    <item>
+      <title>Manjaro FAQ</title>
+      <link>https://daotoyi.github.io/post/majaro-faq/</link>
+      <pubDate>Sat, 24 Dec 2022 14:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/majaro-faq/</guid>
+      <description>update systecm python-pip:xxx files exists. 1 2 pacman -R python-pip pacman -Syu xxx:signature from &amp;ldquo;xxx &amp;lt;xxx@manjaro.org&amp;gt;&amp;rdquo; is unknown trust 将 /etc/pacman.conf 中的 SigLevel 值改为 Never 1 2 3 4 [core] #SigLevel = PackageRequired SigLevel = Never Include = /etc/pacman.d/mirrorlist 如果你的仓库包括 extra 和 community，在对应的节中也修</description>
+    </item>
+    
+    <item>
+      <title>emacs emoji</title>
+      <link>https://daotoyi.github.io/post/emacs-emoji/</link>
+      <pubDate>Mon, 12 Dec 2022 13:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-emoji/</guid>
+      <description>Unicode 15.0 和表情符号 Emacs 现在支持 Unicode 15.0，这是目前最新的 Unicode 版本。新前缀 C-x 8 e 现在会导致一些与表情符号相关的新命令： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
+    </item>
+    
+    <item>
+      <title>Sphinx 使用总结</title>
+      <link>https://daotoyi.github.io/post/sphinx-manual/</link>
+      <pubDate>Fri, 09 Dec 2022 14:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/sphinx-manual/</guid>
+      <description>reStructuredText reStructuredText 是一种轻量级标记语言。它是 Python Doc-SIG（Documentation Special Interest Group）的 Docutils 项目的一部分，旨在为 Python 创建一组类似于 Java 的 Javadoc 或 Perl</description>
+    </item>
+    
+    <item>
+      <title>模拟采样</title>
+      <link>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</link>
+      <pubDate>Sun, 04 Dec 2022 11:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</guid>
+      <description>AD burst 模式 一次将所有通道内的数据采过来，然后由软件读取。 过采样 Oversampling 以远远高于信号带宽两倍或其最高频率对其进行采样的过程。一般来说是指采样频率高于</description>
+    </item>
+    
+    <item>
+      <title>Emacs Archive</title>
+      <link>https://daotoyi.github.io/post/emacs-org-archive/</link>
+      <pubDate>Fri, 25 Nov 2022 23:07:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-archive/</guid>
+      <description>org-mode basic touch *.org C-c-e export menuone R-B broswer to reveal.js html block s #+begin_src &amp;hellip; #+end_src e #+begin_example &amp;hellip; #+end_example : 单行的例子以冒号开头 q #+begin_quote &amp;hellip; #+end_quote 通常用于引用，与默认格式相比左右都会留出缩进 v #+begin_verse &amp;hellip; #+end_verse 默认内容不换行，</description>
+    </item>
+    
+    <item>
+      <title>SpacemacsOperate</title>
+      <link>https://daotoyi.github.io/post/spacemacs-operate/</link>
+      <pubDate>Fri, 25 Nov 2022 23:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/spacemacs-operate/</guid>
+      <description>set-space 1 2 3 4 5 dotspacemacs-default-font &amp;#39;(&amp;#34;Inconsolata_NF&amp;#34; :size 20 :weight normal :width normal :powerline-scale 1.1) ;&amp;#39; file 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 SPC f f #从当前目录开始查找文件. 在作者的配置中同时启用</description>
+    </item>
+    
+    <item>
+      <title>SpacemacsBasicOperate</title>
+      <link>https://daotoyi.github.io/post/spacemacs-basic-operation/</link>
+      <pubDate>Fri, 25 Nov 2022 22:57:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/spacemacs-basic-operation/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</description>
+    </item>
+    
+    <item>
+      <title>package location</title>
+      <link>https://daotoyi.github.io/post/spacemacs-package-lation/</link>
+      <pubDate>Fri, 25 Nov 2022 22:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/spacemacs-package-lation/</guid>
+      <description>local package 1 2 3 4 5 6 7 8 9 10 11 ;; 自定义 package 安装地址 (defconst zilongshanren-packages &amp;#39;(youdao-dictionary ；&amp;#39; (occur-mode :location built-in) ) ) ;; 初始化 occur mode (defun zilongshanren/init-occur-mode () (evilified-state-evilify-map occur-mode-map :mode occur-mmode) ) github 1 2 3 4 5 6 7 8 9 10 11 12 ;; 自定义 package 安装</description>
+    </item>
+    
+    <item>
+      <title>use-package</title>
+      <link>https://daotoyi.github.io/post/emacs-use-package/</link>
+      <pubDate>Fri, 25 Nov 2022 22:42:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-use-package/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ;; 最简洁的格式 (use-package restart-emacs) ;; 常用的格式 (use-package smooth-scrolling :ensure t ;是否一定要确保已安装 :defer nil ;是否要延迟加</description>
+    </item>
+    
+    <item>
+      <title>EMMS</title>
+      <link>https://daotoyi.github.io/post/emacs-emms/</link>
+      <pubDate>Fri, 25 Nov 2022 22:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-emms/</guid>
+      <description>eg.1 1 2 3 4 5 6 7  (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/emms/lisp&amp;#34;) (require &amp;#39;emms-setup) (require &amp;#39;emms-player-vlc) (emms-standard) (emms-default-players) (setq emms-player-vlc-command-name &amp;#34;/Applications/VLC.app/Contents/MacOS/VLC&amp;#34;)   eg.2 1 2 3 4 5 6 7 8 9 10 11  (setq exec-path (append exec-path &amp;#39;(&amp;#34;/usr/local/bin&amp;#34;))) (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/site-lisp/emms/lisp&amp;#34;) (require &amp;#39;emms-setup) (require &amp;#39;emms-player-mplayer) (emms-standard) (emms-default-players) (define-emms-simple-player mplayer &amp;#39;(file url) (regexp-opt &amp;#39;(&amp;#34;.ogg&amp;#34; &amp;#34;.mp3&amp;#34; &amp;#34;.wav&amp;#34; &amp;#34;.mpg&amp;#34; &amp;#34;.mpeg&amp;#34; &amp;#34;.wmv&amp;#34; &amp;#34;.wma&amp;#34; &amp;#34;.mov&amp;#34; &amp;#34;.avi&amp;#34; &amp;#34;.divx&amp;#34; &amp;#34;.ogm&amp;#34; &amp;#34;.asf&amp;#34; &amp;#34;.mkv&amp;#34; &amp;#34;http://&amp;#34; &amp;#34;mms://&amp;#34; &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Bongo</title>
+      <link>https://daotoyi.github.io/post/emacs-bongo/</link>
+      <pubDate>Fri, 25 Nov 2022 22:36:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-bongo/</guid>
+      <description>configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &amp;#39;normal :keymaps &amp;#39;bongo-playlist-mode-map &amp;#34;&amp;lt;return&amp;gt;&amp;#34; &amp;#39;bongo-dwim &amp;#34;i&amp;#34; &amp;#39;bongo-insert-file &amp;#34;p&amp;#34; &amp;#39;bongo-play-previous &amp;#34;n&amp;#34; &amp;#39;bongo-play-next &amp;#34;w&amp;#34; &amp;#39;bongo-pause/resume &amp;#34;d&amp;#34; &amp;#39;bongo-dired-line &amp;#34;a&amp;#34; &amp;#39;bongo-append-enqueue &amp;#34;s&amp;#34; &amp;#39;bongo-seek &amp;#34;r&amp;#34; &amp;#39;bongo-rename-line &amp;#34;v&amp;#34; &amp;#39;volume) :custom (bongo-enabled-backends &amp;#39;(mplayer.exe)) (bongo-default-directory &amp;#34;e:/Recreation/Music/&amp;#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Linux 解压安装包文件</title>
+      <link>https://daotoyi.github.io/post/linuxumpack-install-packages/</link>
+      <pubDate>Mon, 21 Nov 2022 12:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linuxumpack-install-packages/</guid>
+      <description>dpkg X 解压 dekg-deb 重新打包 1 2 3 4 5 6 7 8 9 10 11 mkdir extract mkdir extract/DEBIAN mkdir build # 0 解压出包中的文件到 extract 目录下 dpkg -X ../openssh-client_6.1p1_i386.deb extract/ # 1 解压出包的控制信息 extract/DEBIAN</description>
+    </item>
+    
+    <item>
+      <title>Emacs 插件列表</title>
+      <link>https://daotoyi.github.io/post/emacs-plugins-list/</link>
+      <pubDate>Sun, 13 Nov 2022 13:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-plugins-list/</guid>
+      <description>基础 插件 用途 dracula-theme / molokai-theme 配色 neotree 文件列表 super-save 自动保存 popwin 窗口操作 window-numbering 窗口跳转 dired+ 目录增强 direx 打开当前文件目录 crux 打开应用 undo-tree 撤销 swiper，counsel 快捷命</description>
+    </item>
+    
+    <item>
+      <title>Word archive</title>
+      <link>https://daotoyi.github.io/post/windows-word-archive/</link>
+      <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-word-archive/</guid>
+      <description>模板 一劳永逸，打造自己的word常规模板 hyper-VT 虚拟化选项 管理员权限执行批处理。 1 2 3 4 5 pushd &amp;#34;%~dp0&amp;#34; dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt for /f %%i in (&amp;#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#39;) do dism /online /norestart /add-package:&amp;#34;%SystemRoot%\servicing\Packages\%%i&amp;#34; del hyper-v.txt Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd tar/zip</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-tar-zip/</link>
+      <pubDate>Thu, 03 Nov 2022 14:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-tar-zip/</guid>
+      <description>zip 常用命令 命 令 作 用 zip 1.txt.zip 1.txt 压缩 zip -r 123.zip 123/ 压缩目录 unzip 1.txt.zip 解压 unzip 123.zip -d root/456 解压缩到指定目录下 unzip -l 123.zip 列出压缩文件所包含的内容 和 gzip、bzip2 和 xz 不同的</description>
+    </item>
+    
+    <item>
+      <title>Linux Qt</title>
+      <link>https://daotoyi.github.io/post/linux-qt/</link>
+      <pubDate>Wed, 02 Nov 2022 20:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-qt/</guid>
+      <description>basic pro 文件 用来告诉 qmake 如何生成 makefile。 如该项目有哪些源文件和头文件，该应用程序的特定配置， 比如需要链接的额外的库，或者一个额外的包含路</description>
+    </item>
+    
+    <item>
+      <title>Docker 普通用户使用</title>
+      <link>https://daotoyi.github.io/post/docker-normal-user-permission/</link>
+      <pubDate>Fri, 28 Oct 2022 13:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-normal-user-permission/</guid>
+      <description>问题 1 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create: dial unix /var/run/docker.sock: connect: permission denied. 这主要是因为 Docker 进程使用 Unix Socket，而 /var/run/docker.sock 需要 root 权限才能进行读写操作。 方案 使用 root 权限创建</description>
+    </item>
+    
+    <item>
+      <title>Git 访问</title>
+      <link>https://daotoyi.github.io/post/git-access/</link>
+      <pubDate>Sun, 23 Oct 2022 10:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-access/</guid>
+      <description>由于网络原因, 一般情况无访问，可参考修改主机映射： /etc/host 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 140.82.114.25 alive.github.com 140.82.112.25 live.github.com 185.199.108.154 github.githubassets.com 140.82.112.22 central.github.com 185.199.108.133 desktop.githubusercontent.com</description>
+    </item>
+    
+    <item>
+      <title>Cloudflare</title>
+      <link>https://daotoyi.github.io/post/internet-cloudflare/</link>
+      <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-cloudflare/</guid>
+      <description>Exposing a web service with Cloudflare Tunnel 使用 Cloudflare Tunnel 公开 Web 服务 No more VPN. Introducting Cloudflare Tunnel 使用 Cloudflare Tunnel 隐藏你的服务器 SSH into your private machines from anywhere, for free, using Cloudflare Tunnel ssh-over-cloudflare</description>
+    </item>
+    
+    <item>
+      <title>Cloudflare Tunnel</title>
+      <link>https://daotoyi.github.io/post/internet-cloudflare-tunnel/</link>
+      <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-cloudflare-tunnel/</guid>
+      <description>CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上</description>
+    </item>
+    
+    <item>
+      <title>Windows FAQ</title>
+      <link>https://daotoyi.github.io/post/windows-faq/</link>
+      <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-faq/</guid>
+      <description>电脑麦克风使用不了没有声音了怎么办 windows11 更新卡住 遇到问题 检查互联网连接 以下界面要显示互联网已连接。电脑已联网但是显示未连接会导致卡进度，设置为按</description>
+    </item>
+    
+    <item>
+      <title>Linux 终端输出颜色</title>
+      <link>https://daotoyi.github.io/post/linux-terminal-show-color/</link>
+      <pubDate>Sat, 08 Oct 2022 10:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-terminal-show-color/</guid>
+      <description>ANSI 转义序列 终端不仅能够显示程序的输出。它可以显示移动光标、为文本着色、清除整个屏幕，并且不仅仅是静态输出。比如颜色字体或者闪烁的光标或者是进</description>
+    </item>
+    
+    <item>
+      <title>SGCC</title>
+      <link>https://daotoyi.github.io/post/hardware-sgcc/</link>
+      <pubDate>Tue, 27 Sep 2022 08:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-sgcc/</guid>
+      <description>热浸镀锌钢板. 工艺就是把已清洗洁净的铁件，通过由 Flux 的润湿作用，浸入锌浴中让钢铁与熔融锌反应生成一合金化的皮膜. 优点是防锈、防蚀、耐候性强，而</description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://daotoyi.github.io/post/hardware-hardware/</link>
+      <pubDate>Sun, 25 Sep 2022 12:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-hardware/</guid>
+      <description>器件温度 Ta Actual ambient temperature 实际环境温度。 Ta 是指驱动器工作的环境温度。 Tc Surface Temperature of body 物体的表面温度。 Tc 为驱动器的外壳允许的最高温度。 Tj Operating Junction Temperature Range。 Tj 表</description>
+    </item>
+    
+    <item>
+      <title>干节点、湿节点</title>
+      <link>https://daotoyi.github.io/post/hardware-jiedian/</link>
+      <pubDate>Sun, 25 Sep 2022 11:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-jiedian/</guid>
+      <description>干节点：无源开关，具有闭合和断开的两种状态，两个接点之间没有极性，可以互换； 湿节点：有源开关，具有有电和无电的两种状态，两个接点之间有极性，</description>
+    </item>
+    
+    <item>
+      <title>Org VS Markdown</title>
+      <link>https://daotoyi.github.io/post/emacs-org-vs-markdown/</link>
+      <pubDate>Sat, 17 Sep 2022 09:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-vs-markdown/</guid>
+      <description>org output item org markdown show 粗体 `*粗体*` `**粗体**` or `_粗体_` 粗体 斜体 `/斜体/` `*斜体* ` or `_斜体_` 斜体 删除线 `+删除线+` `删除线` 删</description>
+    </item>
+    
+    <item>
+      <title>Beamer</title>
+      <link>https://daotoyi.github.io/post/emacs-org-beamer/</link>
+      <pubDate>Wed, 14 Sep 2022 16:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-beamer/</guid>
+      <description>ref Writing Beamer presentations in org-mode Beamer Export Frames and Blocks in Beamer Beamer specific syntax Org Beamer reference card archive LaTeX-beamer 学习教程 https://www.jianshu.com/p/7eba149baef7 Beamer 快速入门 - 中译本 黄旭华老师翻译 Beamer 3.0 指南 中译本 - 黄旭华老师翻译 Beamer用户手册(V</description>
+    </item>
+    
+    <item>
+      <title>主机硬件</title>
+      <link>https://daotoyi.github.io/post/hardware-host/</link>
+      <pubDate>Sat, 10 Sep 2022 09:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-host/</guid>
+      <description>CPU Intel &amp;amp; AMD 主频＝外频 X 倍频 主频：即 CPU 内核工作的时钟频率（CPU Clock Speed）。CPU 的主频表示在 CPU 内数字脉冲信号震荡的速度，与 CPU 实际的运算能力</description>
+    </item>
+    
+    <item>
+      <title>Modbus</title>
+      <link>https://daotoyi.github.io/post/hardware-modbus/</link>
+      <pubDate>Tue, 30 Aug 2022 20:36:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-modbus/</guid>
+      <description>简介 Modbus 是一种串行通信协议，是 Modicon 公司（现在的施耐德电气 Schneider Electric）于 1979 年为使用可编程逻辑控制器（PLC）通信而发表。 Modbus 已经成为工业领域</description>
+    </item>
+    
+    <item>
+      <title>Apache2</title>
+      <link>https://daotoyi.github.io/post/apache2-conf-note/</link>
+      <pubDate>Sun, 21 Aug 2022 15:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/apache2-conf-note/</guid>
+      <description>Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include</description>
+    </item>
+    
+    <item>
+      <title>SiYuan_note</title>
+      <link>https://daotoyi.github.io/post/tools-siyuan_note/</link>
+      <pubDate>Sun, 21 Aug 2022 10:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-siyuan_note/</guid>
+      <description>简介 开源免费且“本地优先”的下一代个人知识管理系统 (笔记软件)，它支持离线使用，同时也支持端到端加密同步。 使用官方的云端服务来同步数据, 或通</description>
+    </item>
+    
+    <item>
+      <title>HSR/PRP 冗余协议</title>
+      <link>https://daotoyi.github.io/post/hardware-hsr-prp/</link>
+      <pubDate>Thu, 18 Aug 2022 22:54:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-hsr-prp/</guid>
+      <description>HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）. PRP 并行冗余协议 帧通过兼容设备和交换机以并行方</description>
+    </item>
+    
+    <item>
+      <title>Linux Redhat/Centos 更新 yum 源</title>
+      <link>https://daotoyi.github.io/post/linux-redhat-update-yum-repo/</link>
+      <pubDate>Sun, 07 Aug 2022 22:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-redhat-update-yum-repo/</guid>
+      <description>更换 yum 源 法 1:直接修改配置 /etc/yum.repos.d/，修改或者新建 .repo 格式的文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd brctl</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-brctl/</link>
+      <pubDate>Sun, 07 Aug 2022 15:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-brctl/</guid>
+      <description>简介 “bridge control”的缩写，其功能是用于管理以太网网桥。属于 bridge-utils 软件包。 参数 参数 功能 addbr 创建网桥 delbr 删除网桥 addif 将网卡接口接入网桥 delif 删</description>
+    </item>
+    
+    <item>
+      <title>Python 调用 C&#43;&#43;的方式</title>
+      <link>https://daotoyi.github.io/post/python-call-c&#43;&#43;/</link>
+      <pubDate>Sun, 07 Aug 2022 13:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-call-c&#43;&#43;/</guid>
+      <description>调用 Python 的自有模块 ctypes(.cpp 编译好的.so) （简单） 1 2 3 from ctypes import * import os sotest = cdll.LoadLibrary(os.getcwd()+ &amp;#34;/libcdll.so&amp;#34;) 1 gcc -fPIC test.c -o example.so -shared -I/usr/include/python2.7 -fPIC：生成位置无关目标代码，适用于动态连接； -L pa</description>
+    </item>
+    
+    <item>
+      <title>HTML、XML、XPath</title>
+      <link>https://daotoyi.github.io/post/code-html-xml/</link>
+      <pubDate>Sun, 07 Aug 2022 10:49:15 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/code-html-xml/</guid>
+      <description>HTML Hyper Text Markup Language（超文本标记语言）的缩写. 在浏览器中看到的内容都是 HTML 代码经过浏览器渲染的结果 XML EXtensible Markup Language（可扩展标记语言）</description>
+    </item>
+    
+    <item>
+      <title>Linux iptables</title>
+      <link>https://daotoyi.github.io/post/linux-iptables/</link>
+      <pubDate>Sun, 07 Aug 2022 09:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-iptables/</guid>
+      <description>简介 集成在 Linux 内核中的包过滤防火墙系统。 iptables 默认维护着 4 个表和 5 个链，所有的防火墙策略规则都被分别写入这些表与链中。 “四表”是指 iptables 的功能 filter 表（过</description>
+    </item>
+    
+    <item>
+      <title>Linux 集锦</title>
+      <link>https://daotoyi.github.io/post/linux-archives/</link>
+      <pubDate>Sun, 07 Aug 2022 09:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-archives/</guid>
+      <description>shell 空语句 : shell : python pass 去除文件后辍 1 2 $ basename /folder/f.zip .zip f 变更名中嵌套变量 1 2 3 4 5 6 id=1 string=id stream_1=&amp;#34;111&amp;#34; line=&amp;#34;$(eval echo \${stread_${id}}), 222&amp;#34; echo &amp;#34;{!string}&amp;#34; Code Snippet 1: calculate \\({stread_\){id}} CMD cp 和 mv 命令添加进度条 由于 cp 和 mv 命令都是</description>
+    </item>
+    
+    <item>
+      <title>Linux glibc、eglibc、uclibc、Musl-libc</title>
+      <link>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</link>
+      <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl/</guid>
+      <description>glibc GNU C Library 是 GNU 项目（GNU Project），所实现的 C 语言标准库（C standard library） 常见的桌面和服务器中的 GNU/Linux 类的系统中，都是用的这套 C 语言标</description>
+    </item>
+    
+    <item>
+      <title>Linux desktop 环境</title>
+      <link>https://daotoyi.github.io/post/linux-desktop-environment/</link>
+      <pubDate>Sat, 06 Aug 2022 14:13:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-desktop-environment/</guid>
+      <description>检查桌面环境 1 2 3 4 5 6 7 8 9 # 只能进入桌面系统后，在桌面系统启动命令窗口执行才能得到结果 # 使用SecureCRT工具连接到系统，执行以下命</description>
+    </item>
+    
+    <item>
+      <title>Linux 远程桌面(win)</title>
+      <link>https://daotoyi.github.io/post/linux-remote-desktop/</link>
+      <pubDate>Fri, 05 Aug 2022 21:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-remote-desktop/</guid>
+      <description>VNC | vncserver/vncviewer vncserver linux / raspbian realvnc、tightvnc、x11vnc vncviewer PC realvnc、tightvnc、ultravnc、tigervnc tightvnc vie</description>
+    </item>
+    
+    <item>
+      <title>Linux gcc/g&#43;&#43;</title>
+      <link>https://daotoyi.github.io/post/linux-gcc-compile-lib/</link>
+      <pubDate>Tue, 02 Aug 2022 22:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-gcc-compile-lib/</guid>
+      <description>gcc 工作流程 https://img-blog.csdn.net/20180703103940467?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RhaWRhaWhlbWE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70 常用参数 1 2 3 4 5 6 7 8 9 -v 查看版本 -o 产生目标文件 -I+ 目录 指定头文件目录 -D 编译时定义宏 -00/-01/-03 没有优化/缺省值/优化级别最高 -Wall 提示更多警</description>
+    </item>
+    
+    <item>
+      <title>Linux System FAQ</title>
+      <link>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</guid>
+      <description>FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd coredump</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-coredump/</link>
+      <pubDate>Mon, 01 Aug 2022 13:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-coredump/</guid>
+      <description>简介 coredumpctl 工具用于提取与处理先前由 systemd-coredump 保存的内存转储数据. 当某个进程（或属于应用程序的所有进程）崩溃时，此工具默认会将核心转储记录到 systemd 日记（如有可</description>
+    </item>
+    
+    <item>
+      <title>Xray&#43;XTLS&#43;VLESS(前端 Nginx SNI 分流)</title>
+      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</link>
+      <pubDate>Fri, 29 Jul 2022 07:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</guid>
+      <description>简述 Nginx 和 Xray 共用 443 端口，一般就两种方案: Xray 做前端 监听 443 端口，给 Vless 用 利用 vless+tcp+tls 强大的回落/分流特性，实现 Trojan 和 Nginx 共用 443 端口。 Nginx 做前端 监听 443 端口，给网站</description>
+    </item>
+    
+    <item>
+      <title>QTTabBar(2048)卸载</title>
+      <link>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</link>
+      <pubDate>Wed, 27 Jul 2022 23:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tools-qttabbar-uninstall/</guid>
+      <description>QTTabBar windows 自带的开源多标签浏览器插件。 使用起来卡顿，体验不如第三方工具 clover 好，很难卸载。 卸载方法 下载 Windows Installer CleanUp Utility工具，找到 QTTabBar 点击 remove 移除安装信</description>
+    </item>
+    
+    <item>
+      <title>NAT-NNDS</title>
+      <link>https://daotoyi.github.io/post/nat-nnds/</link>
+      <pubDate>Mon, 25 Jul 2022 09:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/nat-nnds/</guid>
+      <description>utools xray/v2ray iox 一款端口转发 &amp;amp; 内网代理工具 frp 使用 FRP 部署内网穿透 ssh 使用 ssh 执行端口转发和内网穿透 cloudflare 使用 Cloudflare 实现内网穿透 一行指令快速让你的本地服务暴露在公网 serveo</description>
+    </item>
+    
+    <item>
+      <title>Windows and ISO「隔空投送」</title>
+      <link>https://daotoyi.github.io/post/windows-and-iso/</link>
+      <pubDate>Mon, 25 Jul 2022 09:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-and-iso/</guid>
+      <description>Send Anywhere 文件传输：Windows 和 iOS 也有「隔空投送」 win 和 iso 均需要安装客户端 第一次使用需要配对 Continue on PC 把手机上查看的网页发送到电脑上 在 Safari 里打开想要分</description>
+    </item>
+    
+    <item>
+      <title>Docker 类似功能区分</title>
+      <link>https://daotoyi.github.io/post/docker-distinguish-functions/</link>
+      <pubDate>Sun, 24 Jul 2022 12:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-distinguish-functions/</guid>
+      <description>ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通</description>
+    </item>
+    
+    <item>
+      <title>Docker compose multi-files</title>
+      <link>https://daotoyi.github.io/post/docker-compose-multi-files/</link>
+      <pubDate>Sun, 24 Jul 2022 10:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-compose-multi-files/</guid>
+      <description>two mode 通过使用多个 compose 文件扩展整个 compose 文件 使用 extends 字段扩展单个服务 multi files 使用多个 compose 文件可以为不同的环境或不同的工作流自定义 compose 应用程序. 默认下，comp</description>
+    </item>
+    
+    <item>
+      <title>私有网盘 Nextcloud/ownCloud 和 Cloudreve</title>
+      <link>https://daotoyi.github.io/post/private-network-disk-nextcloud/</link>
+      <pubDate>Sat, 23 Jul 2022 20:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/private-network-disk-nextcloud/</guid>
+      <description>Cloudreve 国人开发的 支持使用七牛云存储、阿里云 OSS、又拍云、Amazon S3 等对象存储作为存储后端 也支持本地服务器、远程服务器和 OneDrive 等作为存储后端 也支</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd crontab</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-crontab/</link>
+      <pubDate>Thu, 21 Jul 2022 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-crontab/</guid>
+      <description>格式 f1 f2 f3 f4 f5 program 其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell getopts/getopt</title>
+      <link>https://daotoyi.github.io/post/linux-shell-input-parameter/</link>
+      <pubDate>Thu, 21 Jul 2022 09:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-shell-input-parameter/</guid>
+      <description>解析方式 在 Linux bash 中，可以用以下三种方式解析命令行参数 直接处理：使用$1,$2,$3…进行解析 getopts: 单个字符选项的情况，例如：-n 10 -f file.txt 等选项 get</description>
+    </item>
+    
+    <item>
+      <title>企业邮箱(自定义域名)邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>企业邮箱 (绑定域名) 服务对比 免费的企业邮箱 / 域名邮箱服务: 国内 腾讯企业邮箱 阿里云企业邮箱 163 网易企业邮箱 飞书企业邮箱、 Zoho 中国版 国外 微软 Office 365 企业</description>
+    </item>
+    
+    <item>
+      <title>自定义域名邮箱</title>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain/</link>
+      <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain/</guid>
+      <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
+    </item>
+    
+    <item>
+      <title>Rime</title>
+      <link>https://daotoyi.github.io/post/rime-input-method/</link>
+      <pubDate>Sat, 16 Jul 2022 20:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/rime-input-method/</guid>
+      <description>使用说明 同步 打开 installation.yaml 文件，在最下方添加如下代码: C:\Users\`USER`\AppData\Roaming\Rime\installation.yaml 1 sync_dir: &amp;#39;D:\path\to\RimeSync&amp;#39; 在开始菜单找到点击*【小狼毫】用户资料同步*. NOTE :Rime 的同步功能，在个人词典是双向同步，在</description>
+    </item>
+    
+    <item>
+      <title>Linux 反弹 shell</title>
+      <link>https://daotoyi.github.io/post/linux-reverse-shell/</link>
+      <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-reverse-shell/</guid>
+      <description>什么是反弹 Shell 控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来</description>
+    </item>
+    
+    <item>
+      <title>Linux 32 位系统支持 8G 内存</title>
+      <link>https://daotoyi.github.io/post/linux-32bit-systecm-support-8g-ram/</link>
+      <pubDate>Mon, 11 Jul 2022 12:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-32bit-systecm-support-8g-ram/</guid>
+      <description>问题方案 32 位的操作系统只能识别 4G 内存 yum install kernel-PAE PAE Physical Address Extension，PAE 是 Intel 提供的内存地址扩展机制. 通过在宿主操作系统中使用 Address Windowing Extensions API 为应用</description>
+    </item>
+    
+    <item>
+      <title>Linux 64 位系统运行 32 位程序</title>
+      <link>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</link>
+      <pubDate>Mon, 11 Jul 2022 12:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system/</guid>
+      <description>step linux 64 位系统默认不支持 32 位程序运行. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 查看程序 file program_name # 查看系统 uname -a # 安装32位库 # ubuntu apt-get install ia32-libs # centos yum install xulrunner.i686 # yum install ia32-libs.i686</description>
+    </item>
+    
+    <item>
+      <title>WebSSH - 网页上的 SSH 终端</title>
+      <link>https://daotoyi.github.io/post/webssh/</link>
+      <pubDate>Sun, 10 Jul 2022 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/webssh/</guid>
+      <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
+    </item>
+    
+    <item>
+      <title>判断海外 VPS 的 ip/port 是否被封</title>
+      <link>https://daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned/</link>
+      <pubDate>Tue, 05 Jul 2022 21:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned/</guid>
+      <description>判断 IP 站长工具 https://ping.chinaz.com/ ping.pe 检测 https://ping.pe/ 以上方法均从世界各地访问测试 ip，从而判断是否 ip 被封 判断 port 国外的端口检测工具网站检测 https://www.yougetsignal.com/tools/open-ports/ IP/PORT 可用性检测工具 https://www.toolsdaquan.com/ipcheck/ 推荐 ，可同时</description>
+    </item>
+    
+    <item>
+      <title>Cython</title>
+      <link>https://daotoyi.github.io/post/python-cython/</link>
+      <pubDate>Fri, 01 Jul 2022 11:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-cython/</guid>
+      <description>需求背景 不得不编写一些多重嵌套的循环，C 语言来实现会快上百倍 至少在数字计算方面，能够加入可选的静态类型，这样可以极大地加速运算效果。 对于一些</description>
+    </item>
+    
+    <item>
+      <title>二层和三层交换机</title>
+      <link>https://daotoyi.github.io/post/hardware-switch/</link>
+      <pubDate>Fri, 01 Jul 2022 10:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-switch/</guid>
+      <description>二层交换机 可以识别数据包中的 MAC 地址，根据 MAC 地址进行转发，并将这些 MAC 地址与对应的端口记录在自己内部的一个地址表中。二层交换机不遵循路由算法。 特</description>
+    </item>
+    
+    <item>
+      <title>Linux busybox/buildroot/openwrt</title>
+      <link>https://daotoyi.github.io/post/linux-busybox-buildroot-openwrt/</link>
+      <pubDate>Sun, 26 Jun 2022 16:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-busybox-buildroot-openwrt/</guid>
+      <description>使用 Busybox 手工制作 Busybox 本身包含了很了 Linux 命令，但是要编译其他程序的话需要手工下载、编译，如果它需要某些依赖库，你还需要手工下载、编译这些依赖库。 如果</description>
+    </item>
+    
+    <item>
+      <title>Docker Network</title>
+      <link>https://daotoyi.github.io/post/docker-network/</link>
+      <pubDate>Sat, 25 Jun 2022 18:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-network/</guid>
+      <description>容器间网络互通 容器间要能相互通信，需要同在一个网络中。 docker 容器在创建时若不指定网络驱动时会默认归属到 bridge 网络。 使用 docker inspect 指令查看两个容器是否同属一</description>
+    </item>
+    
+    <item>
+      <title>Linux Compile Install Openssh/Openssl</title>
+      <link>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</link>
+      <pubDate>Sat, 25 Jun 2022 16:13:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</guid>
+      <description>download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ openssl 1 2 3 4 5 6 7 openssl version # 查看版本号 ./config make make install ln -s /usr/local/bin/openssl /usr/bin/openssl openssh 1 2 3 4 5 6 7 8 9 sshd -v # version mkdir /opt/sshbak &amp;amp;&amp;amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;amp;&amp;amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref L</description>
+    </item>
+    
+    <item>
+      <title>Linux chroot(mount –bind | mount namespaces)</title>
+      <link>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</link>
+      <pubDate>Sat, 25 Jun 2022 16:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/chroot-mount-bind-and-namespaces/</guid>
+      <description>chroot 切换根文件系统并运行进程 ,可以改变一个进程的根目录. Bind Mount 可以将一个目录或文件映射到别处，可以跨越不同的卷。 mount &amp;ndash;bind 命令是将前一个目录挂载到后一</description>
+    </item>
+    
+    <item>
+      <title>Git/GitHub/GitLab</title>
+      <link>https://daotoyi.github.io/post/git-github-gitlab/</link>
+      <pubDate>Thu, 23 Jun 2022 15:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-github-gitlab/</guid>
+      <description>简介 Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持</description>
+    </item>
+    
+    <item>
+      <title>Linux yum/dnf 配置</title>
+      <link>https://daotoyi.github.io/post/linux-yum-dnf/</link>
+      <pubDate>Tue, 14 Jun 2022 16:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-yum-dnf/</guid>
+      <description>yum yum 的下载并安装 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 [root@localhost ~]# rpm -qa | grep yum # 删除yum下的所有组件 [root@localhost ~]# rpm -qa | grep yum | xargs rpm -e --nodeps # 查询原有yu</description>
+    </item>
+    
+    <item>
+      <title>VPS | Shared Hosting</title>
+      <link>https://daotoyi.github.io/post/vps-vs-shared-hosting/</link>
+      <pubDate>Mon, 13 Jun 2022 23:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vps-vs-shared-hosting/</guid>
+      <description>vps与共享虚拟主机(Shared Hosting)的区别 VPS 拥有与实体服务器一样的用户体验 Shared Hosting 共享进程、共享内存 某一个站点有 bug,或者严重消</description>
+    </item>
+    
+    <item>
+      <title>Git tag</title>
+      <link>https://daotoyi.github.io/post/git-tag/</link>
+      <pubDate>Fri, 10 Jun 2022 21:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-tag/</guid>
+      <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bash https://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git</description>
+    </item>
+    
+    <item>
+      <title>WorPress 运维</title>
+      <link>https://daotoyi.github.io/post/wordpress-maintenance/</link>
+      <pubDate>Mon, 23 May 2022 10:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/wordpress-maintenance/</guid>
+      <description>结构配置 wordpress目录文件结构 wp-admin/ 登陆 wordpress 后看到的界面，包括所有的后台文件 wp-content/ 包含所有的内容，包括插件 ， 主题和上传的内容 Plugins 文件夹包含所有插</description>
+    </item>
+    
+    <item>
+      <title>SaaS、IaaS 和 PaaS</title>
+      <link>https://daotoyi.github.io/post/saas-iaas-paas/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/saas-iaas-paas/</guid>
+      <description>IaaS 基础设施服务 (Infrastructure-as-a-service) 最接近服务器硬件资源，用户可以以最大的自由度接入网络本身. PaaS 平台服务 Platform-as-a-service PaaS 是在 IaaS 的基础之上，解决了操作系统、数据库、运行时环境</description>
+    </item>
+    
+    <item>
+      <title>Google gmail</title>
+      <link>https://daotoyi.github.io/post/google-gmail/</link>
+      <pubDate>Tue, 10 May 2022 23:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/google-gmail/</guid>
+      <description>abc.def+hi@googlemail.com abcdef@gmail.com 1 2 3 4 5  abcdef@gmail.com a.bcdef@gmail.com ab.cdef@gmail.com abc.def@gmail.com ***   example@gmail.com 1 2 3 4  example+noreply@gmail.com example+bicner.com-1@gmail.com example+bicner.com-2@gmail.com example+bicner.com-3@gmail.com   @googlemail.com abcd@gmail.com -&amp;gt; abcd@googlemail.com</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 账号无法登陆</title>
+      <link>https://daotoyi.github.io/post/microsoft-account-login/</link>
+      <pubDate>Mon, 09 May 2022 17:45:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/microsoft-account-login/</guid>
+      <description>DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份</description>
+    </item>
+    
+    <item>
+      <title>RSSHub docker 部署</title>
+      <link>https://daotoyi.github.io/post/rsshub-docker-deployed/</link>
+      <pubDate>Sat, 07 May 2022 07:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/rsshub-docker-deployed/</guid>
+      <description>deploy 1 2 3 docker pull diygod/rsshub docker run -d --name rsshub -p 1200:1200 diygod/rsshub docker run --restart=always -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 diygod/rsshub CACHE_EXPIRE=3600 : 设置缓存时间为 1 小时 access: http://127.0.0.1:1200/ Docker 部署 feed browser extension RSSHub Radar TamperMonkey Script: RSS+ 在 TamperMonkey 的 RSS 脚本扩展的 RSSHub 服务器域名修为：h</description>
+    </item>
+    
+    <item>
+      <title>代理共享给局域网内其他设备</title>
+      <link>https://daotoyi.github.io/post/v2ray-share-proxy-to-others/</link>
+      <pubDate>Wed, 04 May 2022 10:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-share-proxy-to-others/</guid>
+      <description>Ref SS/V2ray代理共享给局域网内其他设备 添加允许本地局域网使用代理</description>
+    </item>
+    
+    <item>
+      <title>v2ray 混合代理和反代流量</title>
+      <link>https://daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy/</link>
+      <pubDate>Tue, 03 May 2022 11:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy/</guid>
+      <description>入门：微软远程桌面反代 需要反代的 A 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53</description>
+    </item>
+    
+    <item>
+      <title>Linux 用户及用户组</title>
+      <link>https://daotoyi.github.io/post/linux-user-group/</link>
+      <pubDate>Mon, 02 May 2022 15:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-user-group/</guid>
+      <description>useradd 1 2 3 4 5 # 新建了一个用户gem，该用户的登录Shell是 /bin/sh，它属于group用户组，同时又属于adm和root用户组，其中g</description>
+    </item>
+    
+    <item>
+      <title>SSH 端口转发实现穿透内网</title>
+      <link>https://daotoyi.github.io/post/ssh-nat&#43;ddns/</link>
+      <pubDate>Mon, 02 May 2022 10:41:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ssh-nat&#43;ddns/</guid>
+      <description>connect 假设有本地内网服务器 A，外网服务 B（固定 IP）。为了进行端口转发，需要从 A ssh 连到 B（建立隧道）并监听端口。达到该目的的命令是： ssh -R 外网监听</description>
+    </item>
+    
+    <item>
+      <title>Git 撤销 commit 和 push 并清除记录</title>
+      <link>https://daotoyi.github.io/post/git-checkout-commit&#43;push/</link>
+      <pubDate>Sun, 01 May 2022 19:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-checkout-commit&#43;push/</guid>
+      <description>git reset &amp;lt;版本号&amp;gt; —— 回退到指定版本。指定的版本号可通过 git log 查看 注：不需要携带&amp;ndash;hard，可使用&amp;ndash;soft 使</description>
+    </item>
+    
+    <item>
+      <title>v2rayN 和 Qv2ray</title>
+      <link>https://daotoyi.github.io/post/v2rayn-qv2ray/</link>
+      <pubDate>Sun, 01 May 2022 18:42:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2rayn-qv2ray/</guid>
+      <description>域名策略 AsIs 只使用域名进行路由选择，默认值 IPIfNonMatch 当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）后再次进行匹配 当一个域名有多个 A 记录时</description>
+    </item>
+    
+    <item>
+      <title>linux 文件目录颜色及特殊权限对应的颜色</title>
+      <link>https://daotoyi.github.io/post/linux-file&#43;directory-color/</link>
+      <pubDate>Sun, 01 May 2022 13:59:55 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-file&#43;directory-color/</guid>
+      <description>CLOSED: [2022-05-01 周日 13:58] 白色：表示普通文件 蓝色：表示目录 绿色：表示可执行文件 红色：表示压缩文件 浅蓝色：链接文件 红色闪烁：表示链接的文件有问题 黄色：表示设备</description>
+    </item>
+    
+    <item>
+      <title>Tampermonkey</title>
+      <link>https://daotoyi.github.io/post/tampermonkey/</link>
+      <pubDate>Sat, 30 Apr 2022 21:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tampermonkey/</guid>
+      <description>Ref 从零快速编写一个油猴脚本</description>
+    </item>
+    
+    <item>
+      <title>ox-hugo 生成 hugo/vuepress 通用 md 文件</title>
+      <link>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</link>
+      <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
+      <description>时间格式 vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击</description>
+    </item>
+    
+    <item>
+      <title>Tushare</title>
+      <link>https://daotoyi.github.io/post/quant-tushare/</link>
+      <pubDate>Sat, 30 Apr 2022 10:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/quant-tushare/</guid>
+      <description>数据接口 通用行情接口 积分与频次权限对应表 note 适用于回测,日线及以上 分钟及 tick 需要积分</description>
+    </item>
+    
+    <item>
+      <title>Org ox-hugo</title>
+      <link>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</link>
+      <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</guid>
+      <description>File meta 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: Subtree/files meta 1 2 3 4 5 :PROPERTIES: :EXPORT_FILE_NAME: emacs-org-ox+hugo-meta :EXPORT_DESCRIPTION: :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :motto Refine :END: preview hugo server hugo server 是 hugo 常用的命令,只要启动了站点服务,就可以实</description>
+    </item>
+    
+    <item>
+      <title>SpaceVim</title>
+      <link>https://daotoyi.github.io/post/spacevim/</link>
+      <pubDate>Thu, 28 Apr 2022 20:59:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/spacevim/</guid>
+      <description>install 1 2 3 4  curl -sLf https://spacevim.org/cn/install.sh | bash git clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.d ln -s ~/.SpceVim.d/autoload/dylayer.vim ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim   root 1 2 3 4 5  su root ln -s /home/daoyi/.vim /root/.vim ln -s /home/daoyi/.SpaceVim /root/.SpaceVim ln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.d ln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles   Ref  SpaceVim daotoyi/SpaceVim.d  </description>
+    </item>
+    
+    <item>
+      <title>Capslock&#43;</title>
+      <link>https://daotoyi.github.io/post/tool-capslock&#43;/</link>
+      <pubDate>Wed, 27 Apr 2022 22:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/tool-capslock&#43;/</guid>
+      <description>basic 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 [Keys] caps_q=keyFunc_qbar ; ------------------------------- caps_a=keyFunc_moveWordLeft caps_g=keyFunc_moveWordRight caps_e=keyFunc_moveUp caps_d=keyFunc_moveDown caps_s=keyFunc_moveLeft caps_f=keyFunc_moveRight ; ------------------------------- ; select caps_k=keyFunc_selectUp caps_j=keyFunc_selectDown caps_h=keyFunc_selectLeft caps_l=keyFunc_selectRight caps_n=keyFunc_selectWordLeft caps_m=keyFunc_selectWordRight ; caps_dot=keyFunc_selectWordRight caps_p=keyFunc_home caps_semicolon=keyFunc_end caps_c=keyFunc_copy_1 caps_v=keyFunc_paste_1 ; ------------------------------- caps_f1=keyFunc_openCpasDocs caps_f2=keyFunc_mathBoard caps_f3=keyFunc_translate caps_f4=keyFunc_winTransparent caps_f5=keyFunc_reload</description>
+    </item>
+    
+    <item>
+      <title>WxPusher</title>
+      <link>https://daotoyi.github.io/post/wxpusher/</link>
+      <pubDate>Wed, 20 Apr 2022 13:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/wxpusher/</guid>
+      <description>POST 1 http://wxpusher.zjiecode.com/api/send/message/?appToken=AT_xxx&amp;amp;content=daotyi-test&amp;amp;uid= UID_xxx&amp;amp;url=https://www.daotoyi.cn j#+begin_src js { &amp;ldquo;appToken&amp;rdquo;:&amp;ldquo;AT_xxx &amp;ldquo;, &amp;ldquo;summary&amp;rdquo;:&amp;ldquo;summary-decsriptions&amp;rdquo;, &amp;ldquo;content&amp;rdquo;:&amp;ldquo;daotoyi： {{EntryTitle}}&amp;rdquo;, &amp;ldquo;contentType&amp;rdquo;:1, &amp;ldquo;topicIds&amp;rdquo;:[ ], &amp;ldquo;uids&amp;rdquo;:[ &amp;ldquo;UID_xxx &amp;quot; ], &amp;ldquo;url&amp;rdquo;:&amp;ldquo;hhtps://www.daotoyi.cn&amp;rdquo; } #+end_src Ref github WxPusher后台</description>
+    </item>
+    
+    <item>
+      <title>Python 装饰器高级版</title>
+      <link>https://daotoyi.github.io/post/python-decorator-advanced/</link>
+      <pubDate>Sat, 16 Apr 2022 20:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-decorator-advanced/</guid>
+      <description>基本装饰器 装饰不带参数的函数 1 2 3 4 5 6 7 8 9 def clothes(func): def wear(): print(&amp;#39;Buy clothes!{}&amp;#39;.format(func.__name__)) return func() return wear @clothes def body(): print(&amp;#39;The body feels could!&amp;#39;) 装饰带一个参数的函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 def clothes(func): def wear(anything): #</description>
+    </item>
+    
+    <item>
+      <title>Josn 格式化输入中文</title>
+      <link>https://daotoyi.github.io/post/python-json-export-chinese-formate/</link>
+      <pubDate>Sat, 16 Apr 2022 13:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-json-export-chinese-formate/</guid>
+      <description>code 1 2 3 4 5 import json dic = {&amp;#39;a&amp;#39;: &amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;: 2, &amp;#39;c&amp;#39;: &amp;#34;中文&amp;#34;} js = json.dumps(dic, sort_keys=True, indent=4, separators=(&amp;#39;,&amp;#39;, &amp;#39;:&amp;#39;), ensure_ascii=False) print(js) sort_keys：是否按照字典排序（a-z）输出 indent=4</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebook/Lab</title>
+      <link>https://daotoyi.github.io/post/python-jupyter-lab/</link>
+      <pubDate>Sat, 16 Apr 2022 13:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-jupyter-lab/</guid>
+      <description>notebook lab 1 2  pip install jupyterlab jupyter lab   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  rem echo off @echo off if &amp;#34;%1&amp;#34;==&amp;#34;h&amp;#34; goto begin start mshta vbscript:createobject(&amp;#34;wscript.shell&amp;#34;).run(&amp;#34;&amp;#34;&amp;#34;%~nx0&amp;#34;&amp;#34; h&amp;#34;,0)(window.close)&amp;amp;&amp;amp;exit :begin e: cd Refine\Python\Jupyter rem activate base rem manual start jupyterLab, `activate base` needed rem in jupyterlab.bat, if activate, it will not work. ::.\jupyter.exe.lnk lab jupyter lab pause   </description>
+    </item>
+    
+    <item>
+      <title>Linux 动态链接器</title>
+      <link>https://daotoyi.github.io/post/linux-ld-linux.so/</link>
+      <pubDate>Sat, 16 Apr 2022 07:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-ld-linux.so/</guid>
+      <description>ELF 格式 Linux 上可执行程序遵循的是 ELF 格式。 一般一个 ELF 文件都会有两个 header : ELF header，作用是描述整个 ELF 文件的一些信息 program header, 作用主要是为了表明自己应该</description>
+    </item>
+    
+    <item>
+      <title>Linux make, cmake, qmake</title>
+      <link>https://daotoyi.github.io/post/make-cmake-qmake/</link>
+      <pubDate>Fri, 15 Apr 2022 14:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/make-cmake-qmake/</guid>
+      <description>make make 是用来执行 Makefile 的, Makefile 是类 unix 环境下(比如 Linux)的类似于批处理的&amp;quot;脚本&amp;quot;文件。 其基本语法是: 目标+依赖+命令 ，只有在</description>
+    </item>
+    
+    <item>
+      <title>cmd ag</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-ag/</link>
+      <pubDate>Fri, 15 Apr 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-ag/</guid>
+      <description>common command parameter ag -g &amp;lt;File Name&amp;gt; 类似于 find . -name &amp;lt;File Name&amp;gt; ag -i PATTERN： 忽略大小写搜索含 PATTERN 文本 ag -A PATTERN：搜索含 PATTERN 文本，并显示匹配内容之后的 n 行文本，例如</description>
+    </item>
+    
+    <item>
+      <title>Selinux</title>
+      <link>https://daotoyi.github.io/post/linux-selinux/</link>
+      <pubDate>Fri, 15 Apr 2022 14:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-selinux/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 ## Reahdet # 查看SELinux状态： /usr/sbin/sestatus -v # SELinux status: enabled # or getenforce # 关闭SELinux： # 临时关闭（不用重启机器）： setenforce 0 # 设置SELi</description>
+    </item>
+    
+    <item>
+      <title>Linux oh-my-zsh</title>
+      <link>https://daotoyi.github.io/post/linux-oh-my-zsh/</link>
+      <pubDate>Fri, 15 Apr 2022 07:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-oh-my-zsh/</guid>
+      <description>zsh 1 2 3 4 5 6  apt install zsh yum/dnf install zsh pacman -S zsh # change default terminal chsh -s /usr/bin/zsh   oh-my-zsh 1 2 3 4 5 6 7 8 9 10  sh -c &amp;#34;$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; source ~/.zshrc # plugins $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting # $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/ $ echo &amp;#34;plugins=(zsh-syntax-highlighting)&amp;#34; &amp;gt;&amp;gt;　~/.zshrc $ source ~/.zshrc   root user 1 2  sudo ln -s $HOME/.</description>
+    </item>
+    
+    <item>
+      <title>Python 命名</title>
+      <link>https://daotoyi.github.io/post/python-name-standard/</link>
+      <pubDate>Wed, 13 Apr 2022 18:06:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/python-name-standard/</guid>
+      <description>Python 命名规范需要注意以下几点： 模块命名 模块推荐使用小写命名， 除非有很多字母，尽量不要用下划线 因为很多模块文件存与模块名称一致的类，模块采用小写</description>
+    </item>
+    
+    <item>
+      <title>Sublime Notes</title>
+      <link>https://daotoyi.github.io/post/sublime-notes/</link>
+      <pubDate>Tue, 12 Apr 2022 11:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/sublime-notes/</guid>
+      <description>python default python config 使用默认配置报错 Unable to create process.因为默认配置使用 “C:\Program Files\WindowsApps\PythonSoft</description>
+    </item>
+    
+    <item>
+      <title>AWS 笔记</title>
+      <link>https://daotoyi.github.io/post/amazon-web-services/</link>
+      <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/amazon-web-services/</guid>
+      <description>Amazon Web Services (AWS) Notes 注册 AWS 要使用从未在 AWS 上用过的信用卡，不然你就不符合 Free Tier 的使用条件，所有服务将会按需收费 申请免费成功后免费服务只有一年的有效期，到期</description>
+    </item>
+    
+    <item>
+      <title>Xray 笔记</title>
+      <link>https://daotoyi.github.io/post/xray-note/</link>
+      <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-note/</guid>
+      <description>install system github/XTLS Install &amp;amp; Upgrade Xray-core and geodata with User=nobody, but will NOT overwrite User in existing service files 1 bash &amp;lt;(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh) install Update geoip.dat and geosite.dat only 1 bash -c &amp;#34;$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)&amp;#34; @ install-geodata Remove Xray, except json and logs 1 docker 1 2 3 4 5 docker pull teddysun/xray mkdir -p /etc/xray mkdir -p /etc/xray/ssl yum install -y nginx config /etc/xray/config.json 1 2 3</description>
+    </item>
+    
+    <item>
+      <title>Xray&#43;XTLS&#43;VLESS 终极配置</title>
+      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</link>
+      <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</guid>
+      <description>config VLESS over TCP with XTLS，数倍性能，首选方式 VLESS over TCP with TLS VLESS over WS with TLS VMess over TCP with TLS，不推荐 VMess over WS with TLS Trojan over TCP with TLS config note 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</description>
+    </item>
+    
+    <item>
+      <title>FastKey keybinding</title>
+      <link>https://daotoyi.github.io/post/fastkeysautomation/</link>
+      <pubDate>Sun, 10 Apr 2022 20:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/fastkeysautomation/</guid>
+      <description>   key func     Escape double-click close window   Alt + Inset window always on top+   Alt + G google search text   trl + ALT + T translate webpage   ALT + H hide other window   ALT + W stop watch timer   ALT + T make window transparent   Alt + Q recent files/folder   Alt + V paste without formatting   ALT + snipping tool    </description>
+    </item>
+    
+    <item>
+      <title>Linux Proxy</title>
+      <link>https://daotoyi.github.io/post/linux-rpoxy/</link>
+      <pubDate>Sun, 10 Apr 2022 16:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-rpoxy/</guid>
+      <description>Linux 图形化下设置本地代理与 Windows 类似，原理都是监听本地（127.0.0.1）的指定端口。也可以直接修改配置文件，这在无图形界面下很有用。写入后重新</description>
+    </item>
+    
+    <item>
+      <title>Docker Compose config</title>
+      <link>https://daotoyi.github.io/post/docker-compose-config/</link>
+      <pubDate>Sun, 10 Apr 2022 14:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-compose-config/</guid>
+      <description>compose parameter: parame note version 指定 compose 文件的版本 services 定义所有的 service 信息 build 指定 Dockerfile 所在文件夹的路径 cap_add 让容器拥有内核的某项能力 cap_drop 去掉容器内核的某项能力 command 覆盖容器启动后默认执</description>
+    </item>
+    
+    <item>
+      <title>vim/evil jump list</title>
+      <link>https://daotoyi.github.io/post/vim-jump/</link>
+      <pubDate>Thu, 07 Apr 2022 18:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vim-jump/</guid>
+      <description>TRL + o：调整到上一次光标所在的行号上，即往后跳转 TRL + i ：调整到 jump list 中当前记录的下一个记录的行号上，即往前调整</description>
+    </item>
+    
+    <item>
+      <title>Google RGB</title>
+      <link>https://daotoyi.github.io/post/google-rgb/</link>
+      <pubDate>Thu, 07 Apr 2022 17:52:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/google-rgb/</guid>
+      <description>color 0x RGB 蓝色 4285F4 RGB: (66,133,244) 绿色 34A853 RGB: (52,168,83) 黄色 FBB05 RGB:(251,188,5) 红色 EA4335 RGB:(234,67,53)</description>
+    </item>
+    
+    <item>
+      <title>实时内核/系统</title>
+      <link>https://daotoyi.github.io/post/linux-realtime-kernel/</link>
+      <pubDate>Tue, 05 Apr 2022 23:16:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-realtime-kernel/</guid>
+      <description>实时操作系统有硬实时和软实时之分. 硬实时要求在规定的时间内必须完成操作，这是在操作系统设计时保证的； 软实时则只要按照任务的优先级，尽可能快地</description>
+    </item>
+    
+    <item>
+      <title>Kindle epub mobi azw3</title>
+      <link>https://daotoyi.github.io/post/kindle-formate-epub-mobi-azw3/</link>
+      <pubDate>Tue, 05 Apr 2022 23:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/kindle-formate-epub-mobi-azw3/</guid>
+      <description>epub 格式，是通用的电子书格式，主流阅读 APP 都支持。 mobi 格式，是亚马逊开发的电子书传输格式， azw3，则是加了版权保护的 mobi 格式。 epub 格式电子书最大的特</description>
+    </item>
+    
+    <item>
+      <title>Org Table calculate</title>
+      <link>https://daotoyi.github.io/post/emacs-org-table-calculate/</link>
+      <pubDate>Tue, 05 Apr 2022 23:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-table-calculate/</guid>
+      <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&#39;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
+    </item>
+    
+    <item>
+      <title>Docker Dockerfile</title>
+      <link>https://daotoyi.github.io/post/docker-docker-file/</link>
+      <pubDate>Tue, 05 Apr 2022 15:32:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-docker-file/</guid>
+      <description>Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://daotoyi.github.io/post/nginx-conf-note/</link>
+      <pubDate>Mon, 04 Apr 2022 23:44:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/nginx-conf-note/</guid>
+      <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf</description>
+    </item>
+    
+    <item>
+      <title>网络代理简介</title>
+      <link>https://daotoyi.github.io/post/internet-proxy/</link>
+      <pubDate>Mon, 04 Apr 2022 22:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/internet-proxy/</guid>
+      <description>透明代理(Transparent Proxy) 是另一种类型的 HTTP 代理，它们不会修改通过它们发送的请求。 透明意味着代理本身对用户是不可见( invisible )的，也就是说用</description>
+    </item>
+    
+    <item>
+      <title>CA SSL 证书</title>
+      <link>https://daotoyi.github.io/post/ca-ssl-certificate/</link>
+      <pubDate>Mon, 04 Apr 2022 22:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ca-ssl-certificate/</guid>
+      <description>CA CA 是证书的签发机构，它是公钥基础设施（Public Key Infrastructure，PKI）的核心。CA 是负责签发证书、认证证书、管理已颁发</description>
+    </item>
+    
+    <item>
+      <title>SSL 证书签发</title>
+      <link>https://daotoyi.github.io/post/certificate-sign/</link>
+      <pubDate>Mon, 04 Apr 2022 18:52:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/certificate-sign/</guid>
+      <description>Certbot 使用自动证书机器人 Certbot,自动签发 Let’s Encrypt 的免费证书,只是需要三个月一续,机器人自动帮忙搞定 Before 1 2 3 4 5 6 7 8 9 10 11 12 13 # 安装</description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://daotoyi.github.io/post/docker-fig-compose/</link>
+      <pubDate>Mon, 04 Apr 2022 08:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-fig-compose/</guid>
+      <description>Ref Fig项目介绍 Docker Compose 项目 Fig introduction Docker Compose 的前身是 Fig。 Fig 是一个基于 Docker 的 Python 工具，允许用户基于一个 YAML 文件定义多容器应用，从而可以使用 fig 命令行工具进行应</description>
+    </item>
+    
+    <item>
+      <title>Docker Watchtower</title>
+      <link>https://daotoyi.github.io/post/docker-watchtower/</link>
+      <pubDate>Mon, 04 Apr 2022 08:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-watchtower/</guid>
+      <description>instroduction Watchtower 会监视运行容器并监视这些容器最初启动时的镜像是否需要更新。 当 watchtower 检测到一个镜像已经有变动时，它会使用新镜像，使用相同的参数自动重新启动相应</description>
+    </item>
+    
+    <item>
+      <title>Mariadb/Mysql common command</title>
+      <link>https://daotoyi.github.io/post/mariadb-mysql-common-command/</link>
+      <pubDate>Mon, 04 Apr 2022 06:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mariadb-mysql-common-command/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 # 登陆数据库方法 mysql -u 用户名 -p 用户密码 # 修改root及用户密码 use mysql; update user set password=password(&amp;#39;11111111&amp;#39;) where user=&amp;#39;root&amp;#39; and host=&amp;#39;localhost&amp;#39;; privileges; # 创建用户</description>
+    </item>
+    
+    <item>
+      <title>v2ray 与 Xray</title>
+      <link>https://daotoyi.github.io/post/xray-and-projectx/</link>
+      <pubDate>Sun, 03 Apr 2022 21:44:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-and-projectx/</guid>
+      <description>v2ray/Project V V2Ray 的由来：V2Ray 是 继 Shadowsocks 作者@clowwindy 被请去喝茶之后，V2Ray 项目组为表示抗议而开发的，后破娃酱@breakwa11 也被请</description>
+    </item>
+    
+    <item>
+      <title>Linux locale</title>
+      <link>https://daotoyi.github.io/post/linux-locale/</link>
+      <pubDate>Sun, 03 Apr 2022 17:09:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-locale/</guid>
+      <description>locale 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 $ locale LANG=en_US.UTF-8 LC_CTYPE=&amp;#34;en_US.UTF- 8&amp;#34; #用户所使用的语言符号及其分类 LC_NUMERIC=&amp;#34;en_US.UTF- 8&amp;#34; #数字 LC_TIME=&amp;#34;en_US.UTF-8&amp;#34; #时间显示格式 LC_COLLATE=&amp;#34;en_US.UTF-8&amp;#34; #比较和排序习惯 LC_MONETARY=&amp;#34;en_US.UTF-8&amp;#34; #LC_MONETARY LC_MESSAGES=&amp;#34;en_US.UTF- 8&amp;#34; #信息主要是提</description>
+    </item>
+    
+    <item>
+      <title>Packages Manager</title>
+      <link>https://daotoyi.github.io/post/packages-manager/</link>
+      <pubDate>Sat, 02 Apr 2022 12:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/packages-manager/</guid>
+      <description>Scoop 安装 Scoop 依赖于 Powershell 3+ 和 .NET Framework 4.5+，因此，安装 Scoop 前请确保已经正确安装了它们。 1 2 3 iex (new-object net.webclient).downloadstring(&amp;#39;https://get.scoop.sh&amp;#39;) # 如果出现“权限”错误，请根据错误提示执行以下命令 Set-ExecutionPolicy RemoteSigned</description>
+    </item>
+    
+    <item>
+      <title>Sublime Hotkey</title>
+      <link>https://daotoyi.github.io/post/sublime-hotkey/</link>
+      <pubDate>Sat, 02 Apr 2022 12:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/sublime-hotkey/</guid>
+      <description>通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl + Shift + P：调出命令板（Command Palette</description>
+    </item>
+    
+    <item>
+      <title>SSL/TLS 和 SNI 概念</title>
+      <link>https://daotoyi.github.io/post/ssl-tls-sni/</link>
+      <pubDate>Fri, 01 Apr 2022 23:12:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ssl-tls-sni/</guid>
+      <description>自 Web 诞生以来，我们所接触的互联网时代，都有可能存在信息的截断，而 SSL 协议及其后代 TLS 提供了加密和安全性，使现代互联网安全成为可能。 SSL/TLS SSL: 安全套接字</description>
+    </item>
+    
+    <item>
+      <title>v2ray 反向代理/内网穿透</title>
+      <link>https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/</link>
+      <pubDate>Fri, 01 Apr 2022 21:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/</guid>
+      <description>说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有</description>
+    </item>
+    
+    <item>
+      <title>v2ray 趟坑</title>
+      <link>https://daotoyi.github.io/post/v2ray-debug-config-record/</link>
+      <pubDate>Fri, 01 Apr 2022 16:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-debug-config-record/</guid>
+      <description>port 443 端口 速度没有 80 端口快 得配套设置 security：&amp;ldquo;tsl&amp;rdquo;,设置跳过证书验证（allowInsecure：tru</description>
+    </item>
+    
+    <item>
+      <title>Jianguoyun</title>
+      <link>https://daotoyi.github.io/post/jianguoyun-sync-exclude-file/</link>
+      <pubDate>Fri, 01 Apr 2022 10:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/jianguoyun-sync-exclude-file/</guid>
+      <description>坚果云中设置，倒是可以在坚果云的同步文件夹右键中选择“选择性同步”，但是只能设置到单个文件夹。 可通过以下方式设置单个文件不同步。 Windows 系统 打开您</description>
+    </item>
+    
+    <item>
+      <title>Linux tar 备份还原系统后无法进入桌面</title>
+      <link>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</guid>
+      <description>现象 如果因为某些缘故，所以你的系统必须要以备份的数据来回填到原本的系统中，那么得要 特别注意复原后的系统的 SELinux 问题！它可能会让你的系统⽆法存取某</description>
+    </item>
+    
+    <item>
+      <title>Manjaro 使用</title>
+      <link>https://daotoyi.github.io/post/manjaro-manual/</link>
+      <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/manjaro-manual/</guid>
+      <description>常用操作 basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也</description>
+    </item>
+    
+    <item>
+      <title>Linux cmd yum/dnf/pacman/npm/yarn</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
+      <title>CMD yum/dnf</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</link>
+      <pubDate>Wed, 30 Mar 2022 18:49:00 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-yum-dnf/</guid>
+      <description>yum 1 2 3 4 5 6 7 8 9 10 11 12 13 yum check-update # 列出所有可更新的软件清单命令： yum update # 更新所有软件命令： yum install &amp;lt;package_name&amp;gt; # 仅安装指定的软件命令： yum update &amp;lt;package_name&amp;gt; # 仅更新指定的软</description>
+    </item>
+    
+    <item>
+      <title>Git 常用操作</title>
+      <link>https://daotoyi.github.io/post/git-common-manual/</link>
+      <pubDate>Sun, 27 Mar 2022 23:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-common-manual/</guid>
+      <description>常用命令 常用 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Git Pull 强制覆盖</title>
+      <link>https://daotoyi.github.io/post/git-pull-force/</link>
+      <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-pull-force/</guid>
+      <description>不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展</description>
+    </item>
+    
+    <item>
+      <title>Git stash</title>
+      <link>https://daotoyi.github.io/post/git-stash/</link>
+      <pubDate>Sat, 26 Mar 2022 09:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-stash/</guid>
+      <description>git stash 命令用于将更改储藏在脏工作目录中。 useage 1 2 3 4 5 6 7 git stash # git stash save git stash list # 列出 git stash show # 进行检查 git stash apply # 恢复 git stash apply stash@{2} git stash drop stash@{2} # 移除储藏 git stash pop #</description>
+    </item>
+    
+    <item>
+      <title>CPU Frequency</title>
+      <link>https://daotoyi.github.io/post/cpu-frequency/</link>
+      <pubDate>Fri, 25 Mar 2022 22:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/cpu-frequency/</guid>
+      <description>主频=外频×倍频系数 主频 即 CPU 内核工作的主时钟频率，表示在 CPU 内数字脉冲信号震荡的速度。 外频 通常为系统总线的工作频率，是 CPU 的基准频率，单位是 MH</description>
+    </item>
+    
+    <item>
+      <title>CMD stty</title>
+      <link>https://daotoyi.github.io/post/linux-cmd-stty/</link>
+      <pubDate>Fri, 25 Mar 2022 21:03:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-cmd-stty/</guid>
+      <description>Stty 指令简介 TTY 是 Teletype 或 Teletypewriter 的缩写，原来是指电传打字机，后来这种设备逐渐键盘和显示器取代。不管是电传打字机还是键盘显示器，都是作为计算机的终端设备存</description>
+    </item>
+    
+    <item>
+      <title>ConnectUtility</title>
+      <link>https://daotoyi.github.io/post/connectutility/</link>
+      <pubDate>Sun, 20 Mar 2022 11:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/connectutility/</guid>
+      <description>直接配对 无线鼠标配对步骤 无线鼠标断电重启 同时按住左、中、右 3 个键，持续 40-60s 左右 在 2 的过程中插入无线接收器，配对过程中（鼠标指示灯秒闪） 配对成功</description>
+    </item>
+    
+    <item>
+      <title>Github Actions</title>
+      <link>https://daotoyi.github.io/post/github-actions/</link>
+      <pubDate>Sat, 19 Mar 2022 22:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-actions/</guid>
+      <description>GitHub Actions入门教程：自动化部署静态博客 example 将博客原文档推送给 github 的仓库 repo1. Github Actions 接收到 push 请求后，按以下配置将生成的静态内容推送给 github 的仓库 rep</description>
+    </item>
+    
+    <item>
+      <title>Github 推送验证</title>
+      <link>https://daotoyi.github.io/post/github-access-verification-with-token/</link>
+      <pubDate>Sat, 19 Mar 2022 13:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-access-verification-with-token/</guid>
+      <description>采用 token 进行认证访问 重新设置远程仓库 1 2 git remote rm origin git remote add origin https://hao203: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@github.com/hao203/Demo.git 修改远程仓库（recommend） 1 2 3 4 5 6 git remote set-url origin https://&amp;lt;user_ame&amp;gt;:token@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # or git remote set-url origin https://&amp;lt;token&amp;gt;@github.com/&amp;lt;user_name&amp;gt;/&amp;lt;repo_name&amp;gt;.git # example git remote set-url origin https://hao203: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@github.com/hao203/Demo.git</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://daotoyi.github.io/post/markdown-notes/</link>
+      <pubDate>Sat, 19 Mar 2022 11:04:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/markdown-notes/</guid>
+      <description>图片排列 普通左右排列 要一张图片接着一张图片的写，中间不能有换行。如果换行的话则图片也换行 ，例如： 1 ![描述](图片链接)![描述](图片链接</description>
+    </item>
+    
+    <item>
+      <title>Github Profile</title>
+      <link>https://daotoyi.github.io/post/github-profile-show-stats-language-and-metrics/</link>
+      <pubDate>Sat, 19 Mar 2022 10:51:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-profile-show-stats-language-and-metrics/</guid>
+      <description>Metrics !Metrics 统计卡片 stats !Anurag&amp;rsquo;s GitHub stats theme dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula language ![这里写昵称&amp;rsquo;s Most used languages](https://github-readme-stats.vercel.app/api/top-langs?username=%E8%BF%99%E9%87%8C%E6%9B%BF%E6%8D%A2%E6%88%90%E4%BD%A0%E7%9A%84 GitHub ID&amp;amp;show_icons=true&amp;amp;count_private=true&amp;amp;theme=gotham) !daotoyi&amp;rsquo;s Most used languages 统计卡片并列显示 stats 和 language 卡片要紧接着写,不能空格换</description>
+    </item>
+    
+    <item>
+      <title>CAD</title>
+      <link>https://daotoyi.github.io/post/cad-notes/</link>
+      <pubDate>Thu, 17 Mar 2022 19:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/cad-notes/</guid>
+      <description>基本概念 dwg dwg 是 AutoCAD 的图形文件，是二维或三维图形档案。 dxf dxf 是 Autodesk 公司开发的用于 AutoCAD 与其它软件之间进行 CAD 数据交换的 CAD 数据文件格式。 DXF 是一种开放的矢量数</description>
+    </item>
+    
+    <item>
+      <title>IFTTT</title>
+      <link>https://daotoyi.github.io/post/iftt-example/</link>
+      <pubDate>Thu, 17 Mar 2022 19:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/iftt-example/</guid>
+      <description>if rssfeed, then telegram 用 IFTTT 让 Telegram 变得更加「聪明」 webhoos Python 发送手机通知教程 make request - JSON body To trigger an Event with an arbitrary JSON payload Make a POST or GET web request to: https://maker.ifttt.com/trigger/%7Bevent%7D/json/with/key/bMhBKbwkXMxADTWok23HtB Note the extra /json path element in this trigger. With any JSON body. For example: { &amp;ldquo;this&amp;rdquo; : [ { &amp;ldquo;is&amp;rdquo;:</description>
+    </item>
+    
+    <item>
+      <title>ImagesMagick</title>
+      <link>https://daotoyi.github.io/post/imagemagick-pdf-switch-image/</link>
+      <pubDate>Thu, 17 Mar 2022 19:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/imagemagick-pdf-switch-image/</guid>
+      <description>ImageMagick 轻松转换 PDF 和图片 将当前文件夹下所有 JPG 图片合并为一个 PDF 文档： convert *.jpg 1.pdf 将当前文件夹下指定的图片合并为一个 PDF 文档： conert 01.jpg 02.png 1.pdf PDF 分解为图片: convert 1.pdf 11.jpg 让分</description>
+    </item>
+    
+    <item>
+      <title>PicGo&#43;Github</title>
+      <link>https://daotoyi.github.io/post/picgo-github-picsbed/</link>
+      <pubDate>Thu, 17 Mar 2022 19:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/picgo-github-picsbed/</guid>
+      <description>PicGo 直接参考官方指南即可. Github 新建仓库 easy. note 上传时报服务器 由于常用 FastGithub.UI 工具访问 github, 当上传图片时报错. 应该是代理出问题,需要关闭此工具才可上传成功.</description>
+    </item>
+    
+    <item>
+      <title>Github 图床显示图片</title>
+      <link>https://daotoyi.github.io/post/github-picsbed-show-pictures/</link>
+      <pubDate>Wed, 16 Mar 2022 00:30:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-picsbed-show-pictures/</guid>
+      <description>Github/Gitee 格式 可显示的链接格式: https://raw.githubusercontent.com/UserName/RepoName/BranchName/ 如:https://raw.githubusercontent.com/daotoyi/picsbed/main/</description>
+    </item>
+    
+    <item>
+      <title>WordPress 笔记</title>
+      <link>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/</link>
+      <pubDate>Tue, 15 Mar 2022 22:26:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/</guid>
+      <description>VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建</description>
+    </item>
+    
+    <item>
+      <title>Linux capacity &amp;&amp; reduce</title>
+      <link>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</link>
+      <pubDate>Mon, 14 Mar 2022 20:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce/</guid>
+      <description>Reduce capacity 方法 1：给项目的 git 仓库瘦身 1 2 3 4 5 6 # 1.删除无用的分支 $ git branch -d &amp;lt;branch_name&amp;gt; # 2.删除无用的 tag $ git tag -d &amp;lt;tag_name&amp;gt; # 3.清理本地版本库 $ git gc --prune=now 方法 2：删除</description>
+    </item>
+    
+    <item>
+      <title>Hugo 使用 Github Action 使用</title>
+      <link>https://daotoyi.github.io/post/hugo-github-action/</link>
+      <pubDate>Sun, 13 Mar 2022 23:24:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-github-action/</guid>
+      <description>Useage Touch .github/workflows/main.yml in root directory. confiure as: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 name:Deploy GitHub Pages# 触发条件：在 push 到 master/main 分支后on:push:br</description>
+    </item>
+    
+    <item>
+      <title>Linux compare with Windows</title>
+      <link>https://daotoyi.github.io/post/linux-compare-with-windows/</link>
+      <pubDate>Sun, 13 Mar 2022 15:17:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-compare-with-windows/</guid>
+      <description>CMD link (mklink ln) MKLINK [[/D] | [/H] | [/J]] Link Source para function /D 创建目录符号链接。默认为文件符号链接。 /H 创建硬链接而非符号链接。 /J 创建目录联接。 Link 指定新的符号链接名称。 Source 指定</description>
+    </item>
+    
+    <item>
+      <title>Export PDF</title>
+      <link>https://daotoyi.github.io/post/emacs-export-pdf-setting/</link>
+      <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-export-pdf-setting/</guid>
+      <description>LATEX_HEADER 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 1 2 3 #+ATTR_LATEX: :environment longtable :align l|lp{3cm}r|l | ..... | ..... | | ..... | ..... |</description>
+    </item>
+    
+    <item>
+      <title>Org Table 中文表格对齐</title>
+      <link>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</link>
+      <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</guid>
+      <description>方法 1中文表格对齐 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ;; ----------------------------------------------------------------------------- ;; setting font for mac system ;; ----------------------------------------------------------------------------- ;; Setting English Font (defun s-font() (interactive) ;; font config for org table showing. (set-face-attribute &amp;#39;default nil :font &amp;#34;Monaco 12&amp;#34;) ;; Chinese Font 配制中文字</description>
+    </item>
+    
+    <item>
+      <title>Org(eamcs) set&amp;export</title>
+      <link>https://daotoyi.github.io/post/emacs-export-manual/</link>
+      <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-export-manual/</guid>
+      <description>Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出</description>
+    </item>
+    
+    <item>
+      <title>RSShub&#43;Vercel 笔记</title>
+      <link>https://daotoyi.github.io/post/rsshub-vercel-deploy/</link>
+      <pubDate>Fri, 11 Mar 2022 09:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/rsshub-vercel-deploy/</guid>
+      <description>login 打开 https://vercel.com 打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问） deploy 接着打开 https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub 点击右边的“Github”，登陆授权后，输入仓库名称，比如</description>
+    </item>
+    
+    <item>
+      <title>面向 WEB 的免费托管</title>
+      <link>https://daotoyi.github.io/post/web-trusteeship-freely/</link>
+      <pubDate>Fri, 11 Mar 2022 08:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/web-trusteeship-freely/</guid>
+      <description>GitHub Pages1 GitHub Pages 让开发者可以在 .github.io 域上免费托管静态站点。 InspireCloud2 轻服务（即 InspireCloud）是由字节跳动提供的开箱即用的云服务. 免费提供以下服务: 50</description>
+    </item>
+    
+    <item>
+      <title>WIFI 模式：STA 及 AP</title>
+      <link>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</link>
+      <pubDate>Fri, 11 Mar 2022 07:52:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</guid>
+      <description>AP: Access Point，提供无线接入服务，允许其它无线设备接入，提供数据访问. 是一个无线网络的创建者,是网络的中心节点。 一般的无线路由/网桥工作在该</description>
+    </item>
+    
+    <item>
+      <title>Hugo 主题 book 使用小结</title>
+      <link>https://daotoyi.github.io/post/hugo-theme-book-manual/</link>
+      <pubDate>Wed, 09 Mar 2022 00:07:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-theme-book-manual/</guid>
+      <description>Menu Render pages from the content/docs section as a menu in a tree structure. set title and weight in the front matter of pages to adjust the order and titles in the menu. /menu deprated. Blog A simple blog is supported in the section posts. 保证 content 目录下只有一个 posts 目录。 Plugins numbered scrollbars themes/hugo-book/assets/_custom.scss 1 2 3 4 /* You can</description>
+    </item>
+    
+    <item>
+      <title>Hugo 主题 LoveIt 使用小结</title>
+      <link>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</link>
+      <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</guid>
+      <description>compatible</description>
+    </item>
+    
+    <item>
+      <title>Hugo 使用总结</title>
+      <link>https://daotoyi.github.io/post/hugo-manual/</link>
+      <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-manual/</guid>
+      <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>VPN 推荐</title>
+      <link>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</link>
+      <pubDate>Sun, 06 Mar 2022 16:59:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</guid>
+      <description>v2ray VPN Repo:v2ray.vpn 移动端参考 SS 设计，配置方法可参考手机版Shadowsocks技巧，“分应用VPN”快速应用设置到所有服务器配置文件。 路由 设置选项 全局 绕</description>
+    </item>
+    
+    <item>
+      <title>v2ray 搭建笔记</title>
+      <link>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</link>
+      <pubDate>Sat, 05 Mar 2022 20:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</guid>
+      <description>目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) startup 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20</description>
+    </item>
+    
+    <item>
+      <title>GCP 笔记</title>
+      <link>https://daotoyi.github.io/post/google-cloud-platform/</link>
+      <pubDate>Sat, 05 Mar 2022 17:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/google-cloud-platform/</guid>
+      <description>GCP（Google Cloud Platform）入门 防火墙 建站之后若无法访问, 可能需要设置防火墙规则(入站防火墙)(GCP 建站及配置). 流量方向是：</description>
+    </item>
+    
+    <item>
+      <title>v2ray 笔记</title>
+      <link>https://daotoyi.github.io/post/v2ray-manual/</link>
+      <pubDate>Sat, 05 Mar 2022 17:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2ray-manual/</guid>
+      <description>introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu</description>
+    </item>
+    
+    <item>
+      <title>Domain name 域名概念</title>
+      <link>https://daotoyi.github.io/post/domain-instruction/</link>
+      <pubDate>Sat, 05 Mar 2022 16:31:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/domain-instruction/</guid>
+      <description>域名 域名（英语：Domain Name），又称网域，是由一串用点分隔的名字组成的 Internet 上某一台计算机或计算机组的名称，用于在数据传输时对计算机的定</description>
+    </item>
+    
+    <item>
+      <title>Edge 无法翻译、无法下载插件</title>
+      <link>https://daotoyi.github.io/post/edge-access-extension/</link>
+      <pubDate>Fri, 04 Mar 2022 14:44:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/edge-access-extension/</guid>
+      <description>State &amp;ldquo;TODO&amp;rdquo; from [2022-03-04 周五 14:44] 修改 host 文件 修改 C:\Windows\System32\drivers\etc 文件，增加以下内容。 1 2 3 4 5 6 7 8 9 10 11 # Edge 翻译 117.28.245.88 edge.microsoft.com # 商店扩展 117.28.245.88 msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com # 微软账户 117.28.245.88 logincdn.msauth.net 117.28.245.88 login.live.com 117.28.245.88 account.live.com 117.28.245.88 acctcdn.msauth.net 注意 hots 文件不能直</description>
+    </item>
+    
+    <item>
+      <title>Docker daemon</title>
+      <link>https://daotoyi.github.io/post/docker-daemon/</link>
+      <pubDate>Thu, 03 Mar 2022 09:56:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-daemon/</guid>
+      <description>startup error 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # systemctl status docker ● docker.service - Docker Application Container Engine Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled) Active: failed (Result: exit-code) since Wed 2022-03-02 13:52:17 UTC; 2min 57s ago Docs: https://docs.docker.com Process: 8646 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock (code=exited, status=1/FAILURE) Main PID: 8646 (code=exited, status=1/FAILURE) Mar 02 13:52:17 instance-1 systemd[1]: docker.service: Service hold-off time</description>
+    </item>
+    
+    <item>
+      <title>Docker 远程访问</title>
+      <link>https://daotoyi.github.io/post/docker-remote-access/</link>
+      <pubDate>Thu, 03 Mar 2022 09:54:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-remote-access/</guid>
+      <description>默认情况下，Docker 守护进程会生成一个 socket 文件来进行本地进程通信，而不会监听任何端口，因此只能在本地使用 docker 客户端或者使用 Docker API 进行操作。 如果</description>
+    </item>
+    
+    <item>
+      <title>System Port</title>
+      <link>https://daotoyi.github.io/post/system-port/</link>
+      <pubDate>Wed, 02 Mar 2022 16:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/system-port/</guid>
+      <description>netstat 提供有关网络连接的信息. netstat -tunlp -t：显示 TCP 端口。 -u：显示 UDP 端口。 -n：显示数字地址而不是解析主机。 -l：仅显示侦听端口。 -p：显示监听器进</description>
+    </item>
+    
+    <item>
+      <title>Time TZ</title>
+      <link>https://daotoyi.github.io/post/system-time-timezone/</link>
+      <pubDate>Wed, 02 Mar 2022 16:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/system-time-timezone/</guid>
+      <description>GMT，CST，UTC UTC 协调世界时 ，又称 世界标准时间 或 世界协调时间 ， UTC（Coordinated Universal Time），是最主要的世界时间标准，其以</description>
+    </item>
+    
+    <item>
+      <title>RSS 整理</title>
+      <link>https://daotoyi.github.io/post/rss-instruction/</link>
+      <pubDate>Wed, 02 Mar 2022 15:40:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/rss-instruction/</guid>
+      <description>(Really Simple Syndication,简易信息聚合) RSSHub RSSHub 使用文档 Docker部署 heroku部署 Vercel 和 Heroku 方案十分友好。 RSShub 镜像网站 9 个 公开的 RSShub 镜像网站，它</description>
+    </item>
+    
+    <item>
+      <title>Docker 使用镜像</title>
+      <link>https://daotoyi.github.io/post/docker-operation-manual/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-operation-manual/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] basic Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况下，Docker 从 Docker Hub 下载这些镜像，Docker 公司在运营这个 Docker</description>
+    </item>
+    
+    <item>
+      <title>Docker 初识</title>
+      <link>https://daotoyi.github.io/post/docker-instruction/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-instruction/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker 是一个开源的应用容器引擎。Docker 可以让开发者打包他们创建的应用以及相应的依赖包到一个可移植、轻量级的容器中。Docke</description>
+    </item>
+    
+    <item>
+      <title>Docker 安装</title>
+      <link>https://daotoyi.github.io/post/docker-install-manual/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-install-manual/</guid>
+      <description>官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的</description>
+    </item>
+    
+    <item>
+      <title>Docker 提交推送</title>
+      <link>https://daotoyi.github.io/post/docker-push-to-dockerhub/</link>
+      <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/docker-push-to-dockerhub/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker commit 1 2 3 docker commit -m &amp;#34;What you did to the image&amp;#34; -a &amp;#34;Author Name&amp;#34; container_id repository/new_image_name # docker commit -m &amp;#39;dyQuant image linux&amp;#39; -a &amp;#39;daotoyi&amp;#39; xxxx daotoyi/dypython -m 是提交镜像的备注 -a 用于指定作者名 container_id ( docker ps -a 显示的 CONTAINER ID) 当我们提交新</description>
+    </item>
+    
+    <item>
+      <title>Inoreader</title>
+      <link>https://daotoyi.github.io/post/inoreader-access-in-mainland/</link>
+      <pubDate>Sun, 27 Feb 2022 08:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/inoreader-access-in-mainland/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 08:21] WEB Inoreader -&amp;gt; Innoreader 可正常墙内访问，且同一账号登录，内容一致。 APK APKHere 可下载 Inoreader, APKPure 未收录, Google Play 无法打开. 通过科学上网登录移动端 Inoreader</description>
+    </item>
+    
+    <item>
+      <title>Huginn 笔记</title>
+      <link>https://daotoyi.github.io/post/huginn-manual/</link>
+      <pubDate>Sun, 27 Feb 2022 08:19:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/huginn-manual/</guid>
+      <description>Huginn is a system for building agents that perform automated tasks for you online. 中文社区 英文官网 heroku deploy 利用 Huginn 打造一站式信息阅读平台 heroku 空间几点说明： heroku 免费账户的网站在 30 分钟内无人访问后会自动关闭（</description>
+    </item>
+    
+    <item>
+      <title>Table: latex 表格超详细教程</title>
+      <link>https://daotoyi.github.io/post/latex-export-table/</link>
+      <pubDate>Sat, 19 Feb 2022 12:44:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/latex-export-table/</guid>
+      <description>常用配置说明 \begin{table*}[t], *号，是为了让表格宽度与页面等宽而不是二分之一宽 \begin{center}让表格居中 \caption{Your first table.}写表格的标题 \begi</description>
+    </item>
+    
+    <item>
+      <title>Latex Config</title>
+      <link>https://daotoyi.github.io/post/latex-common-manual/</link>
+      <pubDate>Sat, 19 Feb 2022 12:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/latex-common-manual/</guid>
+      <description>latex_introduction 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 #+begin_src latex \documentclass[oneside]{article}% \usepackage{ctex} \usepackage{geometry} \usepackage[dvipsnames, svgnames, x11names]{xcolor} \usepackage{graphics} \usepackage[ colorlinks=true, linkcolor=Navy, urlcolor=Navy, citecolor=Navy, anchorcolor=Navy ]{hyperref} \usepackage{enumerate} \usepackage{tcolorbox} \tcbuselibrary{skins, breakable} \usepackage[english]{babel} \usepackage[cache=false]{minted} \geometry{ width = 210mm,% height = 297mm, left = 19.1mm,% right = 19.1mm,%</description>
+    </item>
+    
+    <item>
+      <title>Table: Org-mode 导出表格过宽溢出页面</title>
+      <link>https://daotoyi.github.io/post/org-latex-table-width/</link>
+      <pubDate>Sat, 19 Feb 2022 12:43:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/org-latex-table-width/</guid>
+      <description>表格横置 \usepackage(lscape) 建议加在表格的最外层 表格横置 \usepackage{rotating} 页面横置 \usepackage{pdflscape} 自动调整字体的大小 \usepackage{graphix} 缩小字体 \footnotesize 在\begin{table}后使用\footnotesize</description>
+    </item>
+    
+    <item>
+      <title>elfeed,elfeed-org,elfeed-dashboard 使用总结</title>
+      <link>https://daotoyi.github.io/post/emacs-elfeed-org/</link>
+      <pubDate>Fri, 18 Feb 2022 11:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-elfeed-org/</guid>
+      <description>elfeed elfeed elfeed-org elfeed-org 一级标题的 tags 必须是 elfeed . elfeed-dashboard elfeed-dashboard 注意得按 repo 标的配置抄写.模板参考 括号要对齐,链接位置的描述词占位需要一致.</description>
+    </item>
+    
+    <item>
+      <title>org-download&#43;screenshot 使用总结</title>
+      <link>https://daotoyi.github.io/post/org-download-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/org-download-on-windows/</guid>
+      <description>org-download org-download 使用的 ImageMagick 工具无法在 winodw 上截屏（import）。 使用 org-download-yank 直接粘贴 URL 地址 手动拖动本地图片到 emacs 中. 首次拖入emacs前需要触发org-downlo</description>
+    </item>
+    
+    <item>
+      <title>flymode 在 windows 上使用总结</title>
+      <link>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:07:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</guid>
+      <description>ENV win10 emacs-27.1 spacemacs foreword spell-checking flymode export error. spacemacs 需要 aspell0.6 以上的版本，但是 Latest Version: GNU Aspell-0.50.3 (win32)（Released Dec 22, 2002）. Aspell 找到 Aspell6 的字典包，但未找到程序包,也是不能</description>
+    </item>
+    
+    <item>
+      <title>Magit 使用</title>
+      <link>https://daotoyi.github.io/post/emacs-magit-manual/</link>
+      <pubDate>Sun, 13 Feb 2022 23:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-magit-manual/</guid>
+      <description>基本说明 status notes Head 当前处于哪个 branch Push 要 push 到哪个远程 branch Untracked files 哪些文件未被 gt 管理 Unstaged Changes 哪些文件修改了未 stage Staged Changes 哪些文件处于 staged 状态(即运行了 git adc) Unpushed to 哪些 commit 未 push</description>
+    </item>
+    
+    <item>
+      <title>Unicode</title>
+      <link>https://daotoyi.github.io/post/unicode-utf8-gbk/</link>
+      <pubDate>Sun, 13 Feb 2022 14:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/unicode-utf8-gbk/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-13 周日 14:25] 概述 用什么编码，就用什么解码 ASCII 码 ASCII 码占 8 个比特位，也就是一个字节，其中最前面一个位是扩展位，都是 0，为了日后扩展所用，其余位</description>
+    </item>
+    
+    <item>
+      <title>Dired 使用</title>
+      <link>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</link>
+      <pubDate>Sun, 13 Feb 2022 06:58:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</guid>
+      <description>hotkey cmd function notes C-x d dired 进入 Dired 模式 ^ dired-up-directory 返回上一目录 p/C-p diredp-previous-line 上一行 n/C-n/SPC diredp-next-line 下一行 &amp;lt; dired-prev-dirline 上一个目录行 &amp;gt; dired-next-dirline 下一个目录行 g revert-buffer 刷新文件列表 + 新建目录 C 拷贝文件 把 dired-recursive-copies 设为非 nil</description>
+    </item>
+    
+    <item>
+      <title>vim 不需要多光标编辑</title>
+      <link>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</link>
+      <pubDate>Sat, 12 Feb 2022 14:54:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</guid>
+      <description>** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs</description>
+    </item>
+    
+    <item>
+      <title>Git submodule VS subtree</title>
+      <link>https://daotoyi.github.io/post/git-submodule-vs-subtree/</link>
+      <pubDate>Sat, 12 Feb 2022 09:49:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/git-submodule-vs-subtree/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 09:49] 仓库共用 两种子仓库使用方式 git submodule(子模块) git subtree(子树合并) git subtree 本质就是把子项目目录作为一个普通的文</description>
+    </item>
+    
+    <item>
+      <title>SSD 性能提升</title>
+      <link>https://daotoyi.github.io/post/ssd-performance-improvement/</link>
+      <pubDate>Tue, 08 Feb 2022 08:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ssd-performance-improvement/</guid>
+      <description>固态硬盘接口 性能从低到高排序为: SATA 接口 SATA Revision 1.0 SATA Revision 2.0 SATA Revision 3.0 M.2 接口 一种支持 SATA 协议 一种支持 NVME 协议 协议性能更好，走 PCIE 通道，带宽高达 32G PCI-E 接口 直接通过 PCI-E</description>
+    </item>
+    
+    <item>
+      <title>Domain name system 解析</title>
+      <link>https://daotoyi.github.io/post/doman-name-system/</link>
+      <pubDate>Mon, 07 Feb 2022 08:44:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/doman-name-system/</guid>
+      <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 08:44] DNS（Domain Name System[域名系统]) 万维网上作为域名和 IP 地址相互映射的一个[分布式数据库]能够使用户更方便的访问</description>
+    </item>
+    
+    <item>
+      <title>Github Pages 托管静态网页绑定自定义域名</title>
+      <link>https://daotoyi.github.io/post/github-pages-custome-domain-name-ssl/</link>
+      <pubDate>Mon, 07 Feb 2022 08:29:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-pages-custome-domain-name-ssl/</guid>
+      <description>Git Pages 只能为每个 GitHub 帐户创建一个用户或组织站点；而项目站点没有限制。 用户或组织站点 新建 username.github.io 仓库，将静态网页文件所在分支托管到 Github Pages。 项目站点</description>
+    </item>
+    
+    <item>
+      <title>snippets 使用总结</title>
+      <link>https://daotoyi.github.io/post/emacs-snippets-manual/</link>
+      <pubDate>Sun, 06 Feb 2022 08:21:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-snippets-manual/</guid>
+      <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
+    </item>
+    
+    <item>
+      <title>Github App 及 OAuth</title>
+      <link>https://daotoyi.github.io/post/oauth/</link>
+      <pubDate>Sat, 05 Feb 2022 08:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/oauth/</guid>
+      <description>令牌与密码 令牌（token）与密码（password）的作用是一样的，都可以进入系统，但是有三点差异。 令牌是短期的，到期会自动失效，用户自己</description>
+    </item>
+    
+    <item>
+      <title>Git FAQ</title>
+      <link>https://daotoyi.github.io/post/github-mannal-issues/</link>
+      <pubDate>Sat, 05 Feb 2022 08:25:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/github-mannal-issues/</guid>
+      <description>fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1</description>
+    </item>
+    
+    <item>
+      <title>Hugo 主题 even 使用小结</title>
+      <link>https://daotoyi.github.io/post/hugo-theme-even-archive/</link>
+      <pubDate>Sat, 05 Feb 2022 08:19:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-theme-even-archive/</guid>
+      <description>config hugo &amp;ndash;config debugconfig.toml hugo &amp;ndash;config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放在 config.toml 文档中，在该文档中加</description>
+    </item>
+    
+    <item>
+      <title>Repositories</title>
+      <link>https://daotoyi.github.io/repositories/</link>
+      <pubDate>Fri, 04 Feb 2022 09:33:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/repositories/</guid>
+      <description> Github    emacs
+ dylayer(spacemacs) emacs.d    vim
+ dylayer(spacevim) _vimrc    quant
+ dymonitor    tools
+ inspectionPro      Gitee    vim-plugins
+ easymotion monokai orgmode supertab      Org   github    </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://daotoyi.github.io/about/</link>
+      <pubDate>Thu, 03 Feb 2022 13:09:17 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/about/</guid>
+      <description>About Me Daoyi Refine. Jekyll Page FIRE Page Site Home Hobbies computer financial/economic quant/hedge zhouyi/zhongyi comics Refine Read Code Python Shell C/C++ emacs-lisp Latex Efficient Tool Categories Archive Opensource Mark windows uTools Quicker Scoop Github package manager Capslock++ capslock key extension geek uninstall application on windows everything/listary search FastKeys hotkey PicGo picbed QTTabBar QTTabBar-github Explorer extension(2048 version,full function,support columns) screenshot/win ImageMagick NirCmd cmd line screenshot-cmd MiniCap RSS Inoreader innoreader The</description>
+    </item>
+    
+    <item>
+      <title>Hugo-markdown</title>
+      <link>https://daotoyi.github.io/post/hugo-markdown/</link>
+      <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-markdown/</guid>
+      <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
+    </item>
+    
+    <item>
+      <title>Hugo 使用 orgmode(ox-hugo)</title>
+      <link>https://daotoyi.github.io/post/hugo-org-mode/</link>
+      <pubDate>Tue, 01 Feb 2022 08:37:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hugo-org-mode/</guid>
+      <description>简述 采用 emacs org-mde 在 Hugo + Github 部署的静态网站上记录个人博客。 Org-mode Read More 生成的文章要支持 Read More ，在需要分割的地方添加 #more (中间有空格)即可。 meta 1 2 3 4 5 #+title: First-orgmode #+Author: daoyi</description>
+    </item>
+    
+  </channel>
+</rss>

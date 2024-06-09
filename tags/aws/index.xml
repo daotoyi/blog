@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/aws/</link>
+    <description>Recent content in AWS on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Apr 2022 22:15:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS 笔记</title>
+      <link>https://daotoyi.github.io/post/amazon-web-services/</link>
+      <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/amazon-web-services/</guid>
+      <description>Amazon Web Services (AWS) Notes 注册 AWS 要使用从未在 AWS 上用过的信用卡，不然你就不符合 Free Tier 的使用条件，所有服务将会按需收费 申请免费成功后免费服务只有一年的有效期，到期</description>
+    </item>
+    
+  </channel>
+</rss>

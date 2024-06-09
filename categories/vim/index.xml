@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VIm on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/vim/</link>
+    <description>Recent content in VIm on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Apr 2022 20:59:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpaceVim</title>
+      <link>https://daotoyi.github.io/post/spacevim/</link>
+      <pubDate>Thu, 28 Apr 2022 20:59:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/spacevim/</guid>
+      <description>install 1 2 3 4  curl -sLf https://spacevim.org/cn/install.sh | bash git clone https://github.com/daotoyi/SpaceVim.d ~/.SpaceVim.d ln -s ~/.SpceVim.d/autoload/dylayer.vim ~/.SpaceVim/autoload/SpaceVim/layers/dylayer.vim   root 1 2 3 4 5  su root ln -s /home/daoyi/.vim /root/.vim ln -s /home/daoyi/.SpaceVim /root/.SpaceVim ln -s /home/daoyi/.SpaceVim.d /root/.SpaceVim.d ln -s /home/daoyi/.cache/vimfiles /root/.cache/vimfiles   Ref  SpaceVim daotoyi/SpaceVim.d  </description>
+    </item>
+    
+    <item>
+      <title>vim/evil jump list</title>
+      <link>https://daotoyi.github.io/post/vim-jump/</link>
+      <pubDate>Thu, 07 Apr 2022 18:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vim-jump/</guid>
+      <description>TRL + o：调整到上一次光标所在的行号上，即往后跳转 TRL + i ：调整到 jump list 中当前记录的下一个记录的行号上，即往前调整</description>
+    </item>
+    
+    <item>
+      <title>vim 不需要多光标编辑</title>
+      <link>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</link>
+      <pubDate>Sat, 12 Feb 2022 14:54:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit/</guid>
+      <description>** 前言 Sublime text 首次引入了多光标编辑功能 1 （据我所知），这意味着可以在多个光标位置同时编辑代码。Vim 有个插件（vim-multiple-curs</description>
+    </item>
+    
+  </channel>
+</rss>

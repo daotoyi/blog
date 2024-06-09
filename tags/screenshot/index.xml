@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>screenshot on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/screenshot/</link>
+    <description>Recent content in screenshot on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Feb 2022 11:22:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/screenshot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-download&#43;screenshot 使用总结</title>
+      <link>https://daotoyi.github.io/post/org-download-on-windows/</link>
+      <pubDate>Fri, 18 Feb 2022 11:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/org-download-on-windows/</guid>
+      <description>org-download org-download 使用的 ImageMagick 工具无法在 winodw 上截屏（import）。 使用 org-download-yank 直接粘贴 URL 地址 手动拖动本地图片到 emacs 中. 首次拖入emacs前需要触发org-downlo</description>
+    </item>
+    
+  </channel>
+</rss>

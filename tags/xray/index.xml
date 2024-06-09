@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xray on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/xray/</link>
+    <description>Recent content in Xray on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Apr 2022 22:15:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/xray/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xray 笔记</title>
+      <link>https://daotoyi.github.io/post/xray-note/</link>
+      <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-note/</guid>
+      <description>install system github/XTLS Install &amp;amp; Upgrade Xray-core and geodata with User=nobody, but will NOT overwrite User in existing service files 1 bash &amp;lt;(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh) install Update geoip.dat and geosite.dat only 1 bash -c &amp;#34;$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)&amp;#34; @ install-geodata Remove Xray, except json and logs 1 docker 1 2 3 4 5 docker pull teddysun/xray mkdir -p /etc/xray mkdir -p /etc/xray/ssl yum install -y nginx config /etc/xray/config.json 1 2 3</description>
+    </item>
+    
+    <item>
+      <title>Xray&#43;XTLS&#43;VLESS 终极配置</title>
+      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</link>
+      <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</guid>
+      <description>config VLESS over TCP with XTLS，数倍性能，首选方式 VLESS over TCP with TLS VLESS over WS with TLS VMess over TCP with TLS，不推荐 VMess over WS with TLS Trojan over TCP with TLS config note 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</description>
+    </item>
+    
+    <item>
+      <title>v2ray 与 Xray</title>
+      <link>https://daotoyi.github.io/post/xray-and-projectx/</link>
+      <pubDate>Sun, 03 Apr 2022 21:44:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/xray-and-projectx/</guid>
+      <description>v2ray/Project V V2Ray 的由来：V2Ray 是 继 Shadowsocks 作者@clowwindy 被请去喝茶之后，V2Ray 项目组为表示抗议而开发的，后破娃酱@breakwa11 也被请</description>
+    </item>
+    
+  </channel>
+</rss>

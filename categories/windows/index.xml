@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/windows/</link>
+    <description>Recent content in Windows on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Jan 2024 14:28:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows bat manual</title>
+      <link>https://daotoyi.github.io/post/windows-bat-manual/</link>
+      <pubDate>Sun, 14 Jan 2024 14:28:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-bat-manual/</guid>
+      <description>BAT Archive 1 2 :: 输出空行 echo. 常用命令 start 简述 启动单独的“命令提示符”窗口来运行指定程序或命令。如果在没有参数的情况下使用，start 将打开第二个命令提</description>
+    </item>
+    
+    <item>
+      <title>Windows Office Update (应用程序无法正常启动)</title>
+      <link>https://daotoyi.github.io/post/windows-office-update-error/</link>
+      <pubDate>Fri, 06 Oct 2023 19:32:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-office-update-error/</guid>
+      <description>前言 有时候打开office套件，如word，outlook时，会弹出正在更新 Office，请稍候，然后弹出一个错误框应用程序无法正常启动(0</description>
+    </item>
+    
+    <item>
+      <title>Windows WSL</title>
+      <link>https://daotoyi.github.io/post/windows-wsl/</link>
+      <pubDate>Fri, 06 Oct 2023 19:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-wsl/</guid>
+      <description>basic 1 2 3 wsl --set-default-version 2 wsl --install -d Ubuntu-22.04 wsl --list --online config 修改wsl终端字体 窗口属性（临时） 右击，选择&amp;quot;属性&amp;quot;，弹出的窗口中选择字体进行修改。 注册表</description>
+    </item>
+    
+    <item>
+      <title>Windows C 盘清理</title>
+      <link>https://daotoyi.github.io/post/windows-clear-c-disk/</link>
+      <pubDate>Mon, 28 Aug 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-clear-c-disk/</guid>
+      <description>C盘清理指南，清理出30G+起，超详细总结</description>
+    </item>
+    
+    <item>
+      <title>Window 系统分区</title>
+      <link>https://daotoyi.github.io/post/windows-disk-filesystem/</link>
+      <pubDate>Fri, 25 Aug 2023 12:20:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-disk-filesystem/</guid>
+      <description>文件系统 文件系统是系统对文件的存放排列方式，不同格式的文件系统关系到数据是如何在磁盘进行存储，文件名、文件权限和其他属性也存在不同。 Windows 操作系</description>
+    </item>
+    
+    <item>
+      <title>Windows chkdsk</title>
+      <link>https://daotoyi.github.io/post/windows-cmd-chkdsk/</link>
+      <pubDate>Wed, 19 Apr 2023 20:10:29 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-cmd-chkdsk/</guid>
+      <description>简介 chkdsk 的全称是 checkdisk，就是磁盘检查的意思。 是一种 Windows 内置的实用程序，可以检查硬盘文件系统的完整性，并可以修复 FAT16、FAT32</description>
+    </item>
+    
+    <item>
+      <title>Word archive</title>
+      <link>https://daotoyi.github.io/post/windows-word-archive/</link>
+      <pubDate>Mon, 07 Nov 2022 18:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-word-archive/</guid>
+      <description>模板 一劳永逸，打造自己的word常规模板 hyper-VT 虚拟化选项 管理员权限执行批处理。 1 2 3 4 5 pushd &amp;#34;%~dp0&amp;#34; dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt for /f %%i in (&amp;#39;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#39;) do dism /online /norestart /add-package:&amp;#34;%SystemRoot%\servicing\Packages\%%i&amp;#34; del hyper-v.txt Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</description>
+    </item>
+    
+    <item>
+      <title>Windows FAQ</title>
+      <link>https://daotoyi.github.io/post/windows-faq/</link>
+      <pubDate>Tue, 18 Oct 2022 14:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/windows-faq/</guid>
+      <description>电脑麦克风使用不了没有声音了怎么办 windows11 更新卡住 遇到问题 检查互联网连接 以下界面要显示互联网已连接。电脑已联网但是显示未连接会导致卡进度，设置为按</description>
+    </item>
+    
+  </channel>
+</rss>

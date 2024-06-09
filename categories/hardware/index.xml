@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/hardware/</link>
+    <description>Recent content in Hardware on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 09 Feb 2024 18:35:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BMC、IPMI、UEFI 和 BIOS</title>
+      <link>https://daotoyi.github.io/post/hardware-bmc-ipmi-eufi-bios/</link>
+      <pubDate>Fri, 09 Feb 2024 18:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-bmc-ipmi-eufi-bios/</guid>
+      <description>BIOS （Basic Input Output System），即基础输入输出系统，是刻在主板 ROM 芯片上不可篡改的启动程序，BIOS 负责计算系统自检程序（POST，Powe</description>
+    </item>
+    
+    <item>
+      <title>硬件架构</title>
+      <link>https://daotoyi.github.io/post/hardware-architecture/</link>
+      <pubDate>Sun, 07 Jan 2024 20:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-architecture/</guid>
+      <description>常见硬件架构 x86_64 x86_64 架构，也称为 AMD64 或 Intel 64，是当前最常见和广泛使用的硬件架构之一。 基于 64 位扩展 x86 架构，支持 64 位操作系统和应用程序。 x86_64 架构兼容 32 位</description>
+    </item>
+    
+    <item>
+      <title>CMOS 和 BIOS</title>
+      <link>https://daotoyi.github.io/post/hardware-cmos-and-bios/</link>
+      <pubDate>Mon, 01 Jan 2024 17:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-cmos-and-bios/</guid>
+      <description>CMOS CMOS（Complementary Metal-Oxide-Semiconductor，互补金属氧化物半导体）是一块可读写的 RAM（随机存</description>
+    </item>
+    
+    <item>
+      <title>衡量 WIFI 信号的强弱</title>
+      <link>https://daotoyi.github.io/post/hardware-measure-the-strength-of-wifi-signal/</link>
+      <pubDate>Mon, 01 Jan 2024 11:08:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-measure-the-strength-of-wifi-signal/</guid>
+      <description>通常是用 db、dbm 来表达 WIFI 信号强度. db 是一个纯粹的比值，只表示两个量的相对大小关系。 通常用 1w 的比值来表示为 dbw，与 1mw 的比值单位表示为 db</description>
+    </item>
+    
+    <item>
+      <title>RAID</title>
+      <link>https://daotoyi.github.io/post/hardware-raid/</link>
+      <pubDate>Fri, 10 Nov 2023 21:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-raid/</guid>
+      <description>基本简介 RAID 是 Redundant Array of Inexpensive Disks 或 Redundant Array of Independent Drives 的缩写，廉价冗余磁盘阵列，是为了提高数据存储的性能和可靠性而开发的技术。 最初，RAID 的目标是通过将多个廉</description>
+    </item>
+    
+    <item>
+      <title>ARM 处理器家族</title>
+      <link>https://daotoyi.github.io/post/hardware-arm-processors-family/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-arm-processors-family/</guid>
+      <description>ARM 处理器产品分为经典 ARM 处理器系列和最新的 Cortex 处理器系列。 ARM 处理器家族 根据应用范围的不同，ARM 处理器可以分类成 3 个系列： Application Processors （应用处理器） 面向</description>
+    </item>
+    
+    <item>
+      <title>TPM 可信平台模块</title>
+      <link>https://daotoyi.github.io/post/hardware-trusted-platform-module/</link>
+      <pubDate>Sat, 14 Oct 2023 17:11:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-trusted-platform-module/</guid>
+      <description>Trusted Platform Module 是一种植于计算机内部为计算机提供可信根的芯片。该芯片的规格由可信计算组（Trusted Computing Group）来制定。 中国国内研究的 TCM（tr</description>
+    </item>
+    
+    <item>
+      <title>Elkhart lake 方案的网络设计</title>
+      <link>https://daotoyi.github.io/post/hardware-elkhart-lake-network-design/</link>
+      <pubDate>Fri, 13 Oct 2023 21:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-elkhart-lake-network-design/</guid>
+      <description>CPU 支持 8 条 PCIe 通道，但只有 6 个 port 能接外设，分别如下使用： 目前方案中未使用 PCIe 桥，其中 4 个 Lane 接 4 路网络，1个 Lane 接主板，另 1 个 Lane 默认接背板，当有压缩</description>
+    </item>
+    
+    <item>
+      <title>晶振</title>
+      <link>https://daotoyi.github.io/post/hardware-crystal-oscillator/</link>
+      <pubDate>Sun, 24 Sep 2023 18:47:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-crystal-oscillator/</guid>
+      <description>PPM 精度 ppm 晶振的精度(误差). PPM 含义为百万分之一(part per million 1/10^6)，表示晶体频率会偏离标称频率多少。值越小精度越高。 在产品规格书中，</description>
+    </item>
+    
+    <item>
+      <title>无线通信</title>
+      <link>https://daotoyi.github.io/post/hardware-wireless-communication/</link>
+      <pubDate>Sun, 24 Sep 2023 18:46:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-wireless-communication/</guid>
+      <description>传输距离 短距离通信 Zigbee Wi-Fi Bluetooth Z-wave 广域网通信 低功耗广域网（LPWAN 非授权频段 Lora Sigfox 授权频段（3GPP/3GPP2 等国家组织 GSM CDMA WCDMA LTE NB-IoT 协商统一于 NB-</description>
+    </item>
+    
+    <item>
+      <title>UART、RS232、TTL 关系浅析</title>
+      <link>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</link>
+      <pubDate>Tue, 31 Jan 2023 22:50:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-uart-rs232-ttl/</guid>
+      <description>UART 在通信和计算机科学中，Serial communication 是一个通用概念，泛指所有的串行的通信协议，如 RS232、USB、I2C、SPI、1-Wire、Ethe</description>
+    </item>
+    
+    <item>
+      <title>CPU</title>
+      <link>https://daotoyi.github.io/post/hardware-cpu/</link>
+      <pubDate>Sun, 01 Jan 2023 11:02:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-cpu/</guid>
+      <description>线程 操作系统是通过线程来执行任务的，一般情况下内核单元和线程是 1:1 对应关系，即几核 CPU 就拥有几个线程，如果采用了 CPU 的虚拟化技术(Virtuali</description>
+    </item>
+    
+    <item>
+      <title>网卡</title>
+      <link>https://daotoyi.github.io/post/hardware-network-card/</link>
+      <pubDate>Sun, 01 Jan 2023 11:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-network-card/</guid>
+      <description>网络信号接入 RJ-45 接口 （网线接入） Transformer 隔离变压器，它的作用是隔离保护，使网线和 PHY 之间没有物理上的连接而换传递了信号。 如果外部网线直接和芯片相连的话</description>
+    </item>
+    
+    <item>
+      <title>模拟采样</title>
+      <link>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</link>
+      <pubDate>Sun, 04 Dec 2022 11:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-simulation-of-sampling/</guid>
+      <description>AD burst 模式 一次将所有通道内的数据采过来，然后由软件读取。 过采样 Oversampling 以远远高于信号带宽两倍或其最高频率对其进行采样的过程。一般来说是指采样频率高于</description>
+    </item>
+    
+    <item>
+      <title>SGCC</title>
+      <link>https://daotoyi.github.io/post/hardware-sgcc/</link>
+      <pubDate>Tue, 27 Sep 2022 08:14:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-sgcc/</guid>
+      <description>热浸镀锌钢板. 工艺就是把已清洗洁净的铁件，通过由 Flux 的润湿作用，浸入锌浴中让钢铁与熔融锌反应生成一合金化的皮膜. 优点是防锈、防蚀、耐候性强，而</description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://daotoyi.github.io/post/hardware-hardware/</link>
+      <pubDate>Sun, 25 Sep 2022 12:05:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-hardware/</guid>
+      <description>器件温度 Ta Actual ambient temperature 实际环境温度。 Ta 是指驱动器工作的环境温度。 Tc Surface Temperature of body 物体的表面温度。 Tc 为驱动器的外壳允许的最高温度。 Tj Operating Junction Temperature Range。 Tj 表</description>
+    </item>
+    
+    <item>
+      <title>干节点、湿节点</title>
+      <link>https://daotoyi.github.io/post/hardware-jiedian/</link>
+      <pubDate>Sun, 25 Sep 2022 11:15:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-jiedian/</guid>
+      <description>干节点：无源开关，具有闭合和断开的两种状态，两个接点之间没有极性，可以互换； 湿节点：有源开关，具有有电和无电的两种状态，两个接点之间有极性，</description>
+    </item>
+    
+    <item>
+      <title>主机硬件</title>
+      <link>https://daotoyi.github.io/post/hardware-host/</link>
+      <pubDate>Sat, 10 Sep 2022 09:53:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-host/</guid>
+      <description>CPU Intel &amp;amp; AMD 主频＝外频 X 倍频 主频：即 CPU 内核工作的时钟频率（CPU Clock Speed）。CPU 的主频表示在 CPU 内数字脉冲信号震荡的速度，与 CPU 实际的运算能力</description>
+    </item>
+    
+    <item>
+      <title>Modbus</title>
+      <link>https://daotoyi.github.io/post/hardware-modbus/</link>
+      <pubDate>Tue, 30 Aug 2022 20:36:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-modbus/</guid>
+      <description>简介 Modbus 是一种串行通信协议，是 Modicon 公司（现在的施耐德电气 Schneider Electric）于 1979 年为使用可编程逻辑控制器（PLC）通信而发表。 Modbus 已经成为工业领域</description>
+    </item>
+    
+    <item>
+      <title>HSR/PRP 冗余协议</title>
+      <link>https://daotoyi.github.io/post/hardware-hsr-prp/</link>
+      <pubDate>Thu, 18 Aug 2022 22:54:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-hsr-prp/</guid>
+      <description>HSR/PRP 全称分别为 High-availability Seamless Redundancy（高可靠性无缝冗余）与 Parallel Redundancy Protocol（并行冗余协议）. PRP 并行冗余协议 帧通过兼容设备和交换机以并行方</description>
+    </item>
+    
+    <item>
+      <title>二层和三层交换机</title>
+      <link>https://daotoyi.github.io/post/hardware-switch/</link>
+      <pubDate>Fri, 01 Jul 2022 10:22:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/hardware-switch/</guid>
+      <description>二层交换机 可以识别数据包中的 MAC 地址，根据 MAC 地址进行转发，并将这些 MAC 地址与对应的端口记录在自己内部的一个地址表中。二层交换机不遵循路由算法。 特</description>
+    </item>
+    
+    <item>
+      <title>CPU Frequency</title>
+      <link>https://daotoyi.github.io/post/cpu-frequency/</link>
+      <pubDate>Fri, 25 Mar 2022 22:10:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/cpu-frequency/</guid>
+      <description>主频=外频×倍频系数 主频 即 CPU 内核工作的主时钟频率，表示在 CPU 内数字脉冲信号震荡的速度。 外频 通常为系统总线的工作频率，是 CPU 的基准频率，单位是 MH</description>
+    </item>
+    
+    <item>
+      <title>WIFI 模式：STA 及 AP</title>
+      <link>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</link>
+      <pubDate>Fri, 11 Mar 2022 07:52:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/wifi-sta-and-ap-model/</guid>
+      <description>AP: Access Point，提供无线接入服务，允许其它无线设备接入，提供数据访问. 是一个无线网络的创建者,是网络的中心节点。 一般的无线路由/网桥工作在该</description>
+    </item>
+    
+    <item>
+      <title>SSD 性能提升</title>
+      <link>https://daotoyi.github.io/post/ssd-performance-improvement/</link>
+      <pubDate>Tue, 08 Feb 2022 08:18:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ssd-performance-improvement/</guid>
+      <description>固态硬盘接口 性能从低到高排序为: SATA 接口 SATA Revision 1.0 SATA Revision 2.0 SATA Revision 3.0 M.2 接口 一种支持 SATA 协议 一种支持 NVME 协议 协议性能更好，走 PCIE 通道，带宽高达 32G PCI-E 接口 直接通过 PCI-E</description>
+    </item>
+    
+  </channel>
+</rss>

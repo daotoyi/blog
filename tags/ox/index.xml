@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ox on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/ox/</link>
+    <description>Recent content in ox on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Apr 2022 09:35:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/ox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org ox-hugo</title>
+      <link>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</link>
+      <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</guid>
+      <description>File meta 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: Subtree/files meta 1 2 3 4 5 :PROPERTIES: :EXPORT_FILE_NAME: emacs-org-ox+hugo-meta :EXPORT_DESCRIPTION: :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :motto Refine :END: preview hugo server hugo server 是 hugo 常用的命令,只要启动了站点服务,就可以实</description>
+    </item>
+    
+  </channel>
+</rss>

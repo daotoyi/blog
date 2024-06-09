@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>v2rayN on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/v2rayn/</link>
+    <description>Recent content in v2rayN on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 May 2022 18:42:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/v2rayn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>v2rayN 和 Qv2ray</title>
+      <link>https://daotoyi.github.io/post/v2rayn-qv2ray/</link>
+      <pubDate>Sun, 01 May 2022 18:42:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/v2rayn-qv2ray/</guid>
+      <description>域名策略 AsIs 只使用域名进行路由选择，默认值 IPIfNonMatch 当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）后再次进行匹配 当一个域名有多个 A 记录时</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSL on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/ssl/</link>
+    <description>Recent content in SSL on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Jun 2022 16:13:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Compile Install Openssh/Openssl</title>
+      <link>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</link>
+      <pubDate>Sat, 25 Jun 2022 16:13:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-compile-openssh-and-openssl/</guid>
+      <description>download https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/ https://ftp.openssl.org/source/ https://www.openssl.org/source/ openssl 1 2 3 4 5 6 7 openssl version # 查看版本号 ./config make make install ln -s /usr/local/bin/openssl /usr/bin/openssl openssh 1 2 3 4 5 6 7 8 9 sshd -v # version mkdir /opt/sshbak &amp;amp;&amp;amp; mv /etc/ssh/* /opt/sshbak/ mkdir /usr/local/sshd tar xf openssh-8.8p1.tar.gz -C /usr/local/src/ &amp;amp;&amp;amp; cd /usr/local/src/openssh-8.8p1/ ./configure --with-md5-passwords --with-pam --with-selinux --with-privsep-path=/usr/local/sshd/ --sysconfdir=/etc/ssh make -j4 make install Ref L</description>
+    </item>
+    
+    <item>
+      <title>CA SSL 证书</title>
+      <link>https://daotoyi.github.io/post/ca-ssl-certificate/</link>
+      <pubDate>Mon, 04 Apr 2022 22:33:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/ca-ssl-certificate/</guid>
+      <description>CA CA 是证书的签发机构，它是公钥基础设施（Public Key Infrastructure，PKI）的核心。CA 是负责签发证书、认证证书、管理已颁发</description>
+    </item>
+    
+    <item>
+      <title>SSL 证书签发</title>
+      <link>https://daotoyi.github.io/post/certificate-sign/</link>
+      <pubDate>Mon, 04 Apr 2022 18:52:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/certificate-sign/</guid>
+      <description>Certbot 使用自动证书机器人 Certbot,自动签发 Let’s Encrypt 的免费证书,只是需要三个月一续,机器人自动帮忙搞定 Before 1 2 3 4 5 6 7 8 9 10 11 12 13 # 安装</description>
+    </item>
+    
+  </channel>
+</rss>

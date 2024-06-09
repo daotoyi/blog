@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAQ on DaoyiSite</title>
+    <link>https://daotoyi.github.io/tags/faq/</link>
+    <description>Recent content in FAQ on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Aug 2022 14:00:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux System FAQ</title>
+      <link>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/linux-system-frequently-asked-questions/</guid>
+      <description>FAT32 格式 u 盘只读 背景 [ 1456.424000] FAT-fs (sdc4)： error, fat_free_clusters: deleting FAT entry beyond EOF 分析 通过分析日志和内核代码，当检测到文件系统异常时，会进行错误处理，默认是 remount readon</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on DaoyiSite</title>
+    <link>https://daotoyi.github.io/categories/macos/</link>
+    <description>Recent content in macOS on DaoyiSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 May 2024 19:01:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS sshfs 使用</title>
+      <link>https://daotoyi.github.io/post/macos-sshfs-useage/</link>
+      <pubDate>Sun, 19 May 2024 19:01:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/macos-sshfs-useage/</guid>
+      <description>SSHFS SSHFS（SSH Filesystem）是一个基于 FUSE 的文件系统客户端，用于通过 SSH 连接远程目录。SSHFS 使用的是 SFTP 协议，它是 SSH 的一个子系统</description>
+    </item>
+    
+    <item>
+      <title>Mac OS 新手配置</title>
+      <link>https://daotoyi.github.io/post/mac-new-configure/</link>
+      <pubDate>Thu, 28 Mar 2024 17:55:00 +0000</pubDate>
+      
+      <guid>https://daotoyi.github.io/post/mac-new-configure/</guid>
+      <description>Homebrew instruction Homebrew 是 MacOS（或 Linux）的软件包管理器。Homebrew 是一款包管理工具，目前支持 macOS 和 Linux 系统。主要有四个部分组成： brew： 源代码</description>
+    </item>
+    
+  </channel>
+</rss>

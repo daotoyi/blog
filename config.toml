@@ -1,5 +1,7 @@
 # baseURL = "http://localhost:1313/"
-# baseURL = "https://daotoyi.github.io/"
+baseURL = "https://daotoyi.github.io/"
+relativeURLs = true
+uglyURLs = true
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "DaoyiSite"

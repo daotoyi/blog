@@ -2,431 +2,431 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on DaoyiSite</title>
-    <link>/tags/</link>
+    <link>https://daotoyi.github.io/tags.html</link>
     <description>Recent content in Tags on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Apr 2024 12:06:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Apr 2024 12:06:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>manjaro</title>
-      <link>/tags/manjaro/</link>
+      <link>https://daotoyi.github.io/tags/manjaro.html</link>
       <pubDate>Sun, 21 Apr 2024 12:06:00 +0000</pubDate>
       
-      <guid>/tags/manjaro/</guid>
+      <guid>https://daotoyi.github.io/tags/manjaro.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>/tags/shell/</link>
+      <link>https://daotoyi.github.io/tags/shell.html</link>
       <pubDate>Sat, 02 Mar 2024 13:53:00 +0000</pubDate>
       
-      <guid>/tags/shell/</guid>
+      <guid>https://daotoyi.github.io/tags/shell.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>cmd</title>
-      <link>/tags/cmd/</link>
+      <link>https://daotoyi.github.io/tags/cmd.html</link>
       <pubDate>Sat, 13 Jan 2024 10:28:00 +0000</pubDate>
       
-      <guid>/tags/cmd/</guid>
+      <guid>https://daotoyi.github.io/tags/cmd.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vuepress</title>
-      <link>/tags/vuepress/</link>
+      <link>https://daotoyi.github.io/tags/vuepress.html</link>
       <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
       
-      <guid>/tags/vuepress/</guid>
+      <guid>https://daotoyi.github.io/tags/vuepress.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>hotkey</title>
-      <link>/tags/hotkey/</link>
+      <link>https://daotoyi.github.io/tags/hotkey.html</link>
       <pubDate>Tue, 26 Sep 2023 20:22:00 +0000</pubDate>
       
-      <guid>/tags/hotkey/</guid>
+      <guid>https://daotoyi.github.io/tags/hotkey.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>/tags/markdown/</link>
+      <link>https://daotoyi.github.io/tags/markdown.html</link>
       <pubDate>Sun, 17 Sep 2023 15:29:00 +0000</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>https://daotoyi.github.io/tags/markdown.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>windows</title>
-      <link>/tags/windows/</link>
+      <link>https://daotoyi.github.io/tags/windows.html</link>
       <pubDate>Mon, 11 Sep 2023 09:18:00 +0000</pubDate>
       
-      <guid>/tags/windows/</guid>
+      <guid>https://daotoyi.github.io/tags/windows.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>cpu</title>
-      <link>/tags/cpu/</link>
+      <link>https://daotoyi.github.io/tags/cpu.html</link>
       <pubDate>Sun, 01 Jan 2023 11:02:00 +0000</pubDate>
       
-      <guid>/tags/cpu/</guid>
+      <guid>https://daotoyi.github.io/tags/cpu.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>network</title>
-      <link>/tags/network/</link>
+      <link>https://daotoyi.github.io/tags/network.html</link>
       <pubDate>Sun, 01 Jan 2023 11:01:00 +0000</pubDate>
       
-      <guid>/tags/network/</guid>
+      <guid>https://daotoyi.github.io/tags/network.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>org</title>
-      <link>/tags/org/</link>
+      <link>https://daotoyi.github.io/tags/org.html</link>
       <pubDate>Fri, 30 Dec 2022 19:35:00 +0000</pubDate>
       
-      <guid>/tags/org/</guid>
+      <guid>https://daotoyi.github.io/tags/org.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>spacemacs</title>
-      <link>/tags/spacemacs/</link>
+      <link>https://daotoyi.github.io/tags/spacemacs.html</link>
       <pubDate>Fri, 25 Nov 2022 23:05:00 +0000</pubDate>
       
-      <guid>/tags/spacemacs/</guid>
+      <guid>https://daotoyi.github.io/tags/spacemacs.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>music</title>
-      <link>/tags/music/</link>
+      <link>https://daotoyi.github.io/tags/music.html</link>
       <pubDate>Fri, 25 Nov 2022 22:37:00 +0000</pubDate>
       
-      <guid>/tags/music/</guid>
+      <guid>https://daotoyi.github.io/tags/music.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>libs</title>
-      <link>/tags/libs/</link>
+      <link>https://daotoyi.github.io/tags/libs.html</link>
       <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
       
-      <guid>/tags/libs/</guid>
+      <guid>https://daotoyi.github.io/tags/libs.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>FAQ</title>
-      <link>/tags/faq/</link>
+      <link>https://daotoyi.github.io/tags/faq.html</link>
       <pubDate>Mon, 01 Aug 2022 14:00:00 +0000</pubDate>
       
-      <guid>/tags/faq/</guid>
+      <guid>https://daotoyi.github.io/tags/faq.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>domain</title>
-      <link>/tags/domain/</link>
+      <link>https://daotoyi.github.io/tags/domain.html</link>
       <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
       
-      <guid>/tags/domain/</guid>
+      <guid>https://daotoyi.github.io/tags/domain.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebSSH</title>
-      <link>/tags/webssh/</link>
+      <link>https://daotoyi.github.io/tags/webssh.html</link>
       <pubDate>Sun, 10 Jul 2022 12:20:00 +0000</pubDate>
       
-      <guid>/tags/webssh/</guid>
+      <guid>https://daotoyi.github.io/tags/webssh.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>busybox</title>
-      <link>/tags/busybox/</link>
+      <link>https://daotoyi.github.io/tags/busybox.html</link>
       <pubDate>Sun, 26 Jun 2022 16:17:00 +0000</pubDate>
       
-      <guid>/tags/busybox/</guid>
+      <guid>https://daotoyi.github.io/tags/busybox.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSL</title>
-      <link>/tags/ssl/</link>
+      <link>https://daotoyi.github.io/tags/ssl.html</link>
       <pubDate>Sat, 25 Jun 2022 16:13:00 +0000</pubDate>
       
-      <guid>/tags/ssl/</guid>
+      <guid>https://daotoyi.github.io/tags/ssl.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>/tags/git/</link>
+      <link>https://daotoyi.github.io/tags/git.html</link>
       <pubDate>Fri, 10 Jun 2022 21:00:00 +0000</pubDate>
       
-      <guid>/tags/git/</guid>
+      <guid>https://daotoyi.github.io/tags/git.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>v2ray</title>
-      <link>/tags/v2ray/</link>
+      <link>https://daotoyi.github.io/tags/v2ray.html</link>
       <pubDate>Wed, 04 May 2022 10:11:00 +0000</pubDate>
       
-      <guid>/tags/v2ray/</guid>
+      <guid>https://daotoyi.github.io/tags/v2ray.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>NAT-DDNS</title>
-      <link>/tags/nat-ddns/</link>
+      <link>https://daotoyi.github.io/tags/nat-ddns.html</link>
       <pubDate>Tue, 03 May 2022 11:14:00 +0000</pubDate>
       
-      <guid>/tags/nat-ddns/</guid>
+      <guid>https://daotoyi.github.io/tags/nat-ddns.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSH</title>
-      <link>/tags/ssh/</link>
+      <link>https://daotoyi.github.io/tags/ssh.html</link>
       <pubDate>Mon, 02 May 2022 10:41:00 +0000</pubDate>
       
-      <guid>/tags/ssh/</guid>
+      <guid>https://daotoyi.github.io/tags/ssh.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>v2rayN</title>
-      <link>/tags/v2rayn/</link>
+      <link>https://daotoyi.github.io/tags/v2rayn.html</link>
       <pubDate>Sun, 01 May 2022 18:42:00 +0000</pubDate>
       
-      <guid>/tags/v2rayn/</guid>
+      <guid>https://daotoyi.github.io/tags/v2rayn.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://daotoyi.github.io/tags/hugo.html</link>
       <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://daotoyi.github.io/tags/hugo.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>oxhugo</title>
-      <link>/tags/oxhugo/</link>
+      <link>https://daotoyi.github.io/tags/oxhugo.html</link>
       <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
       
-      <guid>/tags/oxhugo/</guid>
+      <guid>https://daotoyi.github.io/tags/oxhugo.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>ox</title>
-      <link>/tags/ox/</link>
+      <link>https://daotoyi.github.io/tags/ox.html</link>
       <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
       
-      <guid>/tags/ox/</guid>
+      <guid>https://daotoyi.github.io/tags/ox.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>sublime</title>
-      <link>/tags/sublime/</link>
+      <link>https://daotoyi.github.io/tags/sublime.html</link>
       <pubDate>Tue, 12 Apr 2022 11:58:00 +0000</pubDate>
       
-      <guid>/tags/sublime/</guid>
+      <guid>https://daotoyi.github.io/tags/sublime.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>/tags/aws/</link>
+      <link>https://daotoyi.github.io/tags/aws.html</link>
       <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
       
-      <guid>/tags/aws/</guid>
+      <guid>https://daotoyi.github.io/tags/aws.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xray</title>
-      <link>/tags/xray/</link>
+      <link>https://daotoyi.github.io/tags/xray.html</link>
       <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
       
-      <guid>/tags/xray/</guid>
+      <guid>https://daotoyi.github.io/tags/xray.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>kernel</title>
-      <link>/tags/kernel/</link>
+      <link>https://daotoyi.github.io/tags/kernel.html</link>
       <pubDate>Tue, 05 Apr 2022 23:16:00 +0000</pubDate>
       
-      <guid>/tags/kernel/</guid>
+      <guid>https://daotoyi.github.io/tags/kernel.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cert</title>
-      <link>/tags/cert/</link>
+      <link>https://daotoyi.github.io/tags/cert.html</link>
       <pubDate>Mon, 04 Apr 2022 22:33:00 +0000</pubDate>
       
-      <guid>/tags/cert/</guid>
+      <guid>https://daotoyi.github.io/tags/cert.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>managePackage</title>
-      <link>/tags/managepackage/</link>
+      <link>https://daotoyi.github.io/tags/managepackage.html</link>
       <pubDate>Sat, 02 Apr 2022 12:30:00 +0000</pubDate>
       
-      <guid>/tags/managepackage/</guid>
+      <guid>https://daotoyi.github.io/tags/managepackage.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>selinux</title>
-      <link>/tags/selinux/</link>
+      <link>https://daotoyi.github.io/tags/selinux.html</link>
       <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
       
-      <guid>/tags/selinux/</guid>
+      <guid>https://daotoyi.github.io/tags/selinux.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>CAD</title>
-      <link>/tags/cad/</link>
+      <link>https://daotoyi.github.io/tags/cad.html</link>
       <pubDate>Thu, 17 Mar 2022 19:58:00 +0000</pubDate>
       
-      <guid>/tags/cad/</guid>
+      <guid>https://daotoyi.github.io/tags/cad.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>PicsBed</title>
-      <link>/tags/picsbed/</link>
+      <link>https://daotoyi.github.io/tags/picsbed.html</link>
       <pubDate>Wed, 16 Mar 2022 00:30:00 +0000</pubDate>
       
-      <guid>/tags/picsbed/</guid>
+      <guid>https://daotoyi.github.io/tags/picsbed.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>WordPress</title>
-      <link>/tags/wordpress/</link>
+      <link>https://daotoyi.github.io/tags/wordpress.html</link>
       <pubDate>Tue, 15 Mar 2022 22:26:00 +0000</pubDate>
       
-      <guid>/tags/wordpress/</guid>
+      <guid>https://daotoyi.github.io/tags/wordpress.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>trusteeship</title>
-      <link>/tags/trusteeship/</link>
+      <link>https://daotoyi.github.io/tags/trusteeship.html</link>
       <pubDate>Fri, 11 Mar 2022 08:02:00 +0000</pubDate>
       
-      <guid>/tags/trusteeship/</guid>
+      <guid>https://daotoyi.github.io/tags/trusteeship.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>VPN</title>
-      <link>/tags/vpn/</link>
+      <link>https://daotoyi.github.io/tags/vpn.html</link>
       <pubDate>Sun, 06 Mar 2022 16:59:00 +0000</pubDate>
       
-      <guid>/tags/vpn/</guid>
+      <guid>https://daotoyi.github.io/tags/vpn.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>GCP</title>
-      <link>/tags/gcp/</link>
+      <link>https://daotoyi.github.io/tags/gcp.html</link>
       <pubDate>Sat, 05 Mar 2022 17:20:00 +0000</pubDate>
       
-      <guid>/tags/gcp/</guid>
+      <guid>https://daotoyi.github.io/tags/gcp.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>edge</title>
-      <link>/tags/edge/</link>
+      <link>https://daotoyi.github.io/tags/edge.html</link>
       <pubDate>Fri, 04 Mar 2022 14:44:00 +0000</pubDate>
       
-      <guid>/tags/edge/</guid>
+      <guid>https://daotoyi.github.io/tags/edge.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>RSS</title>
-      <link>/tags/rss/</link>
+      <link>https://daotoyi.github.io/tags/rss.html</link>
       <pubDate>Sun, 27 Feb 2022 08:21:00 +0000</pubDate>
       
-      <guid>/tags/rss/</guid>
+      <guid>https://daotoyi.github.io/tags/rss.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>elfeed</title>
-      <link>/tags/elfeed/</link>
+      <link>https://daotoyi.github.io/tags/elfeed.html</link>
       <pubDate>Fri, 18 Feb 2022 11:37:00 +0000</pubDate>
       
-      <guid>/tags/elfeed/</guid>
+      <guid>https://daotoyi.github.io/tags/elfeed.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>screenshot</title>
-      <link>/tags/screenshot/</link>
+      <link>https://daotoyi.github.io/tags/screenshot.html</link>
       <pubDate>Fri, 18 Feb 2022 11:22:00 +0000</pubDate>
       
-      <guid>/tags/screenshot/</guid>
+      <guid>https://daotoyi.github.io/tags/screenshot.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>hunspell</title>
-      <link>/tags/hunspell/</link>
+      <link>https://daotoyi.github.io/tags/hunspell.html</link>
       <pubDate>Fri, 18 Feb 2022 11:07:00 +0000</pubDate>
       
-      <guid>/tags/hunspell/</guid>
+      <guid>https://daotoyi.github.io/tags/hunspell.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>magit</title>
-      <link>/tags/magit/</link>
+      <link>https://daotoyi.github.io/tags/magit.html</link>
       <pubDate>Sun, 13 Feb 2022 23:35:00 +0000</pubDate>
       
-      <guid>/tags/magit/</guid>
+      <guid>https://daotoyi.github.io/tags/magit.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>dired</title>
-      <link>/tags/dired/</link>
+      <link>https://daotoyi.github.io/tags/dired.html</link>
       <pubDate>Sun, 13 Feb 2022 06:58:00 +0000</pubDate>
       
-      <guid>/tags/dired/</guid>
+      <guid>https://daotoyi.github.io/tags/dired.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>snippet</title>
-      <link>/tags/snippet/</link>
+      <link>https://daotoyi.github.io/tags/snippet.html</link>
       <pubDate>Sun, 06 Feb 2022 08:21:00 +0000</pubDate>
       
-      <guid>/tags/snippet/</guid>
+      <guid>https://daotoyi.github.io/tags/snippet.html</guid>
       <description></description>
     </item>
     

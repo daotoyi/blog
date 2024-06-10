@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hotkey on DaoyiSite</title>
-    <link>/tags/hotkey/</link>
+    <link>https://daotoyi.github.io/tags/hotkey.html</link>
     <description>Recent content in hotkey on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Sep 2023 20:22:00 +0000</lastBuildDate><atom:link href="/tags/hotkey/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 20:22:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/hotkey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux 终端常用快捷键</title>
-      <link>/post/linux-terminal-hotkey-commonly/</link>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey-commonly.html</link>
       <pubDate>Tue, 26 Sep 2023 20:22:00 +0000</pubDate>
       
-      <guid>/post/linux-terminal-hotkey-commonly/</guid>
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey-commonly.html</guid>
       <description>快捷键 功能描述 Ctrl + A 光标快速跳至行首。 Ctrl + E 光标快速跳至行尾。 Ctrl + U 删除光标至行首的所有内容。 Ctrl + K 删除光标至行尾的所有内容。 Ctrl + W 删除光标</description>
     </item>
     
     <item>
       <title>Linux terminal hotkey</title>
-      <link>/post/linux-terminal-hotkey/</link>
+      <link>https://daotoyi.github.io/post/linux-terminal-hotkey.html</link>
       <pubDate>Fri, 21 Apr 2023 16:41:00 +0000</pubDate>
       
-      <guid>/post/linux-terminal-hotkey/</guid>
+      <guid>https://daotoyi.github.io/post/linux-terminal-hotkey.html</guid>
       <description>终端及标签页 快捷键 功能 Shift+Ctrl+T 新建标签页 Shift+Ctrl+W 关闭标签页 Ctrl+PageUp 前一标签页 Ctrl+PageDown 后一标签页 Shift+Ctrl+PageUp 标签页左移 Shift+Ctrl+PageDown 标签页右移 Alt+1 切换到标签页 1 Alt+2 切换到标签页 2 Alt+3 切换到标签页</description>
     </item>
     
     <item>
       <title>Sublime Hotkey</title>
-      <link>/post/sublime-hotkey/</link>
+      <link>https://daotoyi.github.io/post/sublime-hotkey.html</link>
       <pubDate>Sat, 02 Apr 2022 12:29:00 +0000</pubDate>
       
-      <guid>/post/sublime-hotkey/</guid>
+      <guid>https://daotoyi.github.io/post/sublime-hotkey.html</guid>
       <description>通用（General） ↑↓←→：上下左右移动光标，注意不是不是 KJHL！ Alt：调出菜单 Ctrl + Shift + P：调出命令板（Command Palette</description>
     </item>
     

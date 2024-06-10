@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RSS on DaoyiSite</title>
-    <link>/categories/rss/</link>
+    <link>https://daotoyi.github.io/categories/rss.html</link>
     <description>Recent content in RSS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Mar 2022 09:25:00 +0000</lastBuildDate><atom:link href="/categories/rss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 09:25:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/rss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RSShub&#43;Vercel 笔记</title>
-      <link>/post/rsshub-vercel-deploy/</link>
+      <link>https://daotoyi.github.io/post/rsshub-vercel-deploy.html</link>
       <pubDate>Fri, 11 Mar 2022 09:25:00 +0000</pubDate>
       
-      <guid>/post/rsshub-vercel-deploy/</guid>
+      <guid>https://daotoyi.github.io/post/rsshub-vercel-deploy.html</guid>
       <description>login 打开 https://vercel.com 打开后，使用 Github 帐号登陆。（Github 在大陆地区可以正常访问） deploy 接着打开 https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub 点击右边的“Github”，登陆授权后，输入仓库名称，比如</description>
     </item>
     
     <item>
       <title>RSS 整理</title>
-      <link>/post/rss-instruction/</link>
+      <link>https://daotoyi.github.io/post/rss-instruction.html</link>
       <pubDate>Wed, 02 Mar 2022 15:40:00 +0000</pubDate>
       
-      <guid>/post/rss-instruction/</guid>
+      <guid>https://daotoyi.github.io/post/rss-instruction.html</guid>
       <description>(Really Simple Syndication,简易信息聚合) RSSHub RSSHub 使用文档 Docker部署 heroku部署 Vercel 和 Heroku 方案十分友好。 RSShub 镜像网站 9 个 公开的 RSShub 镜像网站，它</description>
     </item>
     

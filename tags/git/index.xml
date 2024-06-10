@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on DaoyiSite</title>
-    <link>/tags/git/</link>
+    <link>https://daotoyi.github.io/tags/git.html</link>
     <description>Recent content in git on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Jun 2022 21:00:00 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 21:00:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git tag</title>
-      <link>/post/git-tag/</link>
+      <link>https://daotoyi.github.io/post/git-tag.html</link>
       <pubDate>Fri, 10 Jun 2022 21:00:00 +0000</pubDate>
       
-      <guid>/post/git-tag/</guid>
+      <guid>https://daotoyi.github.io/post/git-tag.html</guid>
       <description>tag git 标签分为两种类型 轻量标签 轻量标签是指向提交对象的引用 附注标签 附注标签则是仓库中的一个独立对象。 建议使用附注标签 bash https://metabits.tk/wp-adminic 1 2 3 4 5 6 7 8 9 10 git</description>
     </item>
     
     <item>
       <title>Git 撤销 commit 和 push 并清除记录</title>
-      <link>/post/git-checkout-commit&#43;push/</link>
+      <link>https://daotoyi.github.io/post/git-checkout-commit&#43;push.html</link>
       <pubDate>Sun, 01 May 2022 19:05:00 +0000</pubDate>
       
-      <guid>/post/git-checkout-commit&#43;push/</guid>
+      <guid>https://daotoyi.github.io/post/git-checkout-commit&#43;push.html</guid>
       <description>git reset &amp;lt;版本号&amp;gt; —— 回退到指定版本。指定的版本号可通过 git log 查看 注：不需要携带&amp;ndash;hard，可使用&amp;ndash;soft 使</description>
     </item>
     
     <item>
       <title>Git 常用操作</title>
-      <link>/post/git-common-manual/</link>
+      <link>https://daotoyi.github.io/post/git-common-manual.html</link>
       <pubDate>Sun, 27 Mar 2022 23:17:00 +0000</pubDate>
       
-      <guid>/post/git-common-manual/</guid>
+      <guid>https://daotoyi.github.io/post/git-common-manual.html</guid>
       <description>常用命令 常用 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 # 工作区 -&amp;gt; 暂存区 $ git add &amp;lt;file/dir&amp;gt; # 暂存区 -&amp;gt; 本地仓库 $ git commit -m &amp;#34;some info&amp;#34; # 本地仓库 -&amp;gt;</description>
     </item>
     
     <item>
       <title>Git Pull 强制覆盖</title>
-      <link>/post/git-pull-force/</link>
+      <link>https://daotoyi.github.io/post/git-pull-force.html</link>
       <pubDate>Sat, 26 Mar 2022 09:48:00 +0000</pubDate>
       
-      <guid>/post/git-pull-force/</guid>
+      <guid>https://daotoyi.github.io/post/git-pull-force.html</guid>
       <description>不保留本地文件 1 2 git fetch origin master git reset --hard origin/master “git pull”如何强制覆盖本地文件？ 保留本地文件 1 2 3 4 git fetch origin main git stash git reset --hard origin/main git stash pop 冲突文件会在文件中展</description>
     </item>
     
     <item>
       <title>Git stash</title>
-      <link>/post/git-stash/</link>
+      <link>https://daotoyi.github.io/post/git-stash.html</link>
       <pubDate>Sat, 26 Mar 2022 09:17:00 +0000</pubDate>
       
-      <guid>/post/git-stash/</guid>
+      <guid>https://daotoyi.github.io/post/git-stash.html</guid>
       <description>git stash 命令用于将更改储藏在脏工作目录中。 useage 1 2 3 4 5 6 7 git stash # git stash save git stash list # 列出 git stash show # 进行检查 git stash apply # 恢复 git stash apply stash@{2} git stash drop stash@{2} # 移除储藏 git stash pop #</description>
     </item>
     
     <item>
       <title>Git submodule VS subtree</title>
-      <link>/post/git-submodule-vs-subtree/</link>
+      <link>https://daotoyi.github.io/post/git-submodule-vs-subtree.html</link>
       <pubDate>Sat, 12 Feb 2022 09:49:00 +0000</pubDate>
       
-      <guid>/post/git-submodule-vs-subtree/</guid>
+      <guid>https://daotoyi.github.io/post/git-submodule-vs-subtree.html</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 09:49] 仓库共用 两种子仓库使用方式 git submodule(子模块) git subtree(子树合并) git subtree 本质就是把子项目目录作为一个普通的文</description>
     </item>
     
     <item>
       <title>Git FAQ</title>
-      <link>/post/github-mannal-issues/</link>
+      <link>https://daotoyi.github.io/post/github-mannal-issues.html</link>
       <pubDate>Sat, 05 Feb 2022 08:25:00 +0000</pubDate>
       
-      <guid>/post/github-mannal-issues/</guid>
+      <guid>https://daotoyi.github.io/post/github-mannal-issues.html</guid>
       <description>fatal: in unpopulated submodule XXX 若是直接从 github 中下载到对应的项目，直接放到自己的版本控制中，在提交就会报此错误 fatal: in unpopulated submodule. 即使删除了.git 文件也是没用的。 解决办法: 1</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oxhugo on DaoyiSite</title>
-    <link>/tags/oxhugo/</link>
+    <link>https://daotoyi.github.io/tags/oxhugo.html</link>
     <description>Recent content in oxhugo on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Apr 2022 12:23:00 +0000</lastBuildDate><atom:link href="/tags/oxhugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 12:23:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/oxhugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ox-hugo 生成 hugo/vuepress 通用 md 文件</title>
-      <link>/post/emacs-ox&#43;hugo-hugo-vuepress/</link>
+      <link>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress.html</link>
       <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
       
-      <guid>/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
+      <guid>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress.html</guid>
       <description>时间格式 vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击</description>
     </item>
     

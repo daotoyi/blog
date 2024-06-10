@@ -2,170 +2,170 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on DaoyiSite</title>
-    <link>/categories/</link>
+    <link>https://daotoyi.github.io/categories.html</link>
     <description>Recent content in Categories on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jun 2024 08:29:08 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jun 2024 08:29:08 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macOS</title>
-      <link>/categories/macos/</link>
+      <link>https://daotoyi.github.io/categories/macos.html</link>
       <pubDate>Sun, 09 Jun 2024 08:29:08 +0000</pubDate>
       
-      <guid>/categories/macos/</guid>
+      <guid>https://daotoyi.github.io/categories/macos.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internet</title>
-      <link>/categories/internet/</link>
+      <link>https://daotoyi.github.io/categories/internet.html</link>
       <pubDate>Fri, 07 Jun 2024 19:34:00 +0000</pubDate>
       
-      <guid>/categories/internet/</guid>
+      <guid>https://daotoyi.github.io/categories/internet.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/categories/linux/</link>
+      <link>https://daotoyi.github.io/categories/linux.html</link>
       <pubDate>Sun, 12 May 2024 05:46:00 +0000</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>https://daotoyi.github.io/categories/linux.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hardware</title>
-      <link>/categories/hardware/</link>
+      <link>https://daotoyi.github.io/categories/hardware.html</link>
       <pubDate>Fri, 09 Feb 2024 18:35:00 +0000</pubDate>
       
-      <guid>/categories/hardware/</guid>
+      <guid>https://daotoyi.github.io/categories/hardware.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>/categories/windows/</link>
+      <link>https://daotoyi.github.io/categories/windows.html</link>
       <pubDate>Sun, 14 Jan 2024 14:28:00 +0000</pubDate>
       
-      <guid>/categories/windows/</guid>
+      <guid>https://daotoyi.github.io/categories/windows.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>/categories/tools/</link>
+      <link>https://daotoyi.github.io/categories/tools.html</link>
       <pubDate>Fri, 12 Jan 2024 22:22:00 +0000</pubDate>
       
-      <guid>/categories/tools/</guid>
+      <guid>https://daotoyi.github.io/categories/tools.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>/categories/github/</link>
+      <link>https://daotoyi.github.io/categories/github.html</link>
       <pubDate>Sat, 18 Nov 2023 12:10:00 +0000</pubDate>
       
-      <guid>/categories/github/</guid>
+      <guid>https://daotoyi.github.io/categories/github.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>VPS</title>
-      <link>/categories/vps/</link>
+      <link>https://daotoyi.github.io/categories/vps.html</link>
       <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
       
-      <guid>/categories/vps/</guid>
+      <guid>https://daotoyi.github.io/categories/vps.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>/categories/emacs/</link>
+      <link>https://daotoyi.github.io/categories/emacs.html</link>
       <pubDate>Fri, 06 Oct 2023 19:37:00 +0000</pubDate>
       
-      <guid>/categories/emacs/</guid>
+      <guid>https://daotoyi.github.io/categories/emacs.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>/categories/code/</link>
+      <link>https://daotoyi.github.io/categories/code.html</link>
       <pubDate>Fri, 06 Oct 2023 18:24:00 +0000</pubDate>
       
-      <guid>/categories/code/</guid>
+      <guid>https://daotoyi.github.io/categories/code.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>/categories/docker/</link>
+      <link>https://daotoyi.github.io/categories/docker.html</link>
       <pubDate>Fri, 28 Oct 2022 13:40:00 +0000</pubDate>
       
-      <guid>/categories/docker/</guid>
+      <guid>https://daotoyi.github.io/categories/docker.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/categories/python/</link>
+      <link>https://daotoyi.github.io/categories/python.html</link>
       <pubDate>Sun, 07 Aug 2022 13:09:00 +0000</pubDate>
       
-      <guid>/categories/python/</guid>
+      <guid>https://daotoyi.github.io/categories/python.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cplus</title>
-      <link>/categories/cplus/</link>
+      <link>https://daotoyi.github.io/categories/cplus.html</link>
       <pubDate>Sat, 06 Aug 2022 20:12:00 +0000</pubDate>
       
-      <guid>/categories/cplus/</guid>
+      <guid>https://daotoyi.github.io/categories/cplus.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quant</title>
-      <link>/categories/quant/</link>
+      <link>https://daotoyi.github.io/categories/quant.html</link>
       <pubDate>Sat, 30 Apr 2022 10:08:00 +0000</pubDate>
       
-      <guid>/categories/quant/</guid>
+      <guid>https://daotoyi.github.io/categories/quant.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>VIm</title>
-      <link>/categories/vim/</link>
+      <link>https://daotoyi.github.io/categories/vim.html</link>
       <pubDate>Thu, 28 Apr 2022 20:59:00 +0000</pubDate>
       
-      <guid>/categories/vim/</guid>
+      <guid>https://daotoyi.github.io/categories/vim.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>RSS</title>
-      <link>/categories/rss/</link>
+      <link>https://daotoyi.github.io/categories/rss.html</link>
       <pubDate>Fri, 11 Mar 2022 09:25:00 +0000</pubDate>
       
-      <guid>/categories/rss/</guid>
+      <guid>https://daotoyi.github.io/categories/rss.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latex</title>
-      <link>/categories/latex/</link>
+      <link>https://daotoyi.github.io/categories/latex.html</link>
       <pubDate>Sat, 19 Feb 2022 12:44:00 +0000</pubDate>
       
-      <guid>/categories/latex/</guid>
+      <guid>https://daotoyi.github.io/categories/latex.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/categories/hugo/</link>
+      <link>https://daotoyi.github.io/categories/hugo.html</link>
       <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
       
-      <guid>/categories/hugo/</guid>
+      <guid>https://daotoyi.github.io/categories/hugo.html</guid>
       <description></description>
     </item>
     

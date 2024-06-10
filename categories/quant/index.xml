@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quant on DaoyiSite</title>
-    <link>/categories/quant/</link>
+    <link>https://daotoyi.github.io/categories/quant.html</link>
     <description>Recent content in Quant on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Apr 2022 10:08:00 +0000</lastBuildDate><atom:link href="/categories/quant/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 10:08:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/quant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tushare</title>
-      <link>/post/quant-tushare/</link>
+      <link>https://daotoyi.github.io/post/quant-tushare.html</link>
       <pubDate>Sat, 30 Apr 2022 10:08:00 +0000</pubDate>
       
-      <guid>/post/quant-tushare/</guid>
+      <guid>https://daotoyi.github.io/post/quant-tushare.html</guid>
       <description>数据接口 通用行情接口 积分与频次权限对应表 note 适用于回测,日线及以上 分钟及 tick 需要积分</description>
     </item>
     

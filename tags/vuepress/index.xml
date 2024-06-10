@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vuepress on DaoyiSite</title>
-    <link>/tags/vuepress/</link>
+    <link>https://daotoyi.github.io/tags/vuepress.html</link>
     <description>Recent content in Vuepress on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Oct 2023 07:37:46 +0000</lastBuildDate><atom:link href="/tags/vuepress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 07:37:46 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/vuepress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vuepress 使用小结</title>
-      <link>/post/vuepress-manual/</link>
+      <link>https://daotoyi.github.io/post/vuepress-manual.html</link>
       <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
       
-      <guid>/post/vuepress-manual/</guid>
+      <guid>https://daotoyi.github.io/post/vuepress-manual.html</guid>
       <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     

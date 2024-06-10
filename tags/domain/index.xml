@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>domain on DaoyiSite</title>
-    <link>/tags/domain/</link>
+    <link>https://daotoyi.github.io/tags/domain.html</link>
     <description>Recent content in domain on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Jul 2022 08:55:00 +0000</lastBuildDate><atom:link href="/tags/domain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 08:55:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/domain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>企业邮箱(自定义域名)邮箱</title>
-      <link>/post/internetcustomize-email-domain/</link>
+      <link>https://daotoyi.github.io/post/internetcustomize-email-domain.html</link>
       <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
       
-      <guid>/post/internetcustomize-email-domain/</guid>
+      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain.html</guid>
       <description>企业邮箱 (绑定域名) 服务对比 免费的企业邮箱 / 域名邮箱服务: 国内 腾讯企业邮箱 阿里云企业邮箱 163 网易企业邮箱 飞书企业邮箱、 Zoho 中国版 国外 微软 Office 365 企业</description>
     </item>
     
     <item>
       <title>Domain name 域名概念</title>
-      <link>/post/domain-instruction/</link>
+      <link>https://daotoyi.github.io/post/domain-instruction.html</link>
       <pubDate>Sat, 05 Mar 2022 16:31:00 +0000</pubDate>
       
-      <guid>/post/domain-instruction/</guid>
+      <guid>https://daotoyi.github.io/post/domain-instruction.html</guid>
       <description>域名 域名（英语：Domain Name），又称网域，是由一串用点分隔的名字组成的 Internet 上某一台计算机或计算机组的名称，用于在数据传输时对计算机的定</description>
     </item>
     
     <item>
       <title>Domain name system 解析</title>
-      <link>/post/doman-name-system/</link>
+      <link>https://daotoyi.github.io/post/doman-name-system.html</link>
       <pubDate>Mon, 07 Feb 2022 08:44:00 +0000</pubDate>
       
-      <guid>/post/doman-name-system/</guid>
+      <guid>https://daotoyi.github.io/post/doman-name-system.html</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 08:44] DNS（Domain Name System[域名系统]) 万维网上作为域名和 IP 地址相互映射的一个[分布式数据库]能够使用户更方便的访问</description>
     </item>
     

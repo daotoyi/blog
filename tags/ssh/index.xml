@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH on DaoyiSite</title>
-    <link>/tags/ssh/</link>
+    <link>https://daotoyi.github.io/tags/ssh.html</link>
     <description>Recent content in SSH on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 May 2022 10:41:00 +0000</lastBuildDate><atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 10:41:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH 端口转发实现穿透内网</title>
-      <link>/post/ssh-nat&#43;ddns/</link>
+      <link>https://daotoyi.github.io/post/ssh-nat&#43;ddns.html</link>
       <pubDate>Mon, 02 May 2022 10:41:00 +0000</pubDate>
       
-      <guid>/post/ssh-nat&#43;ddns/</guid>
+      <guid>https://daotoyi.github.io/post/ssh-nat&#43;ddns.html</guid>
       <description>connect 假设有本地内网服务器 A，外网服务 B（固定 IP）。为了进行端口转发，需要从 A ssh 连到 B（建立隧道）并监听端口。达到该目的的命令是： ssh -R 外网监听</description>
     </item>
     

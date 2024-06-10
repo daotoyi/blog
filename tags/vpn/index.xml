@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VPN on DaoyiSite</title>
-    <link>/tags/vpn/</link>
+    <link>https://daotoyi.github.io/tags/vpn.html</link>
     <description>Recent content in VPN on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Mar 2022 16:59:00 +0000</lastBuildDate><atom:link href="/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Mar 2022 16:59:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPN 推荐</title>
-      <link>/post/vpn-v2rayvpn-v2free/</link>
+      <link>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free.html</link>
       <pubDate>Sun, 06 Mar 2022 16:59:00 +0000</pubDate>
       
-      <guid>/post/vpn-v2rayvpn-v2free/</guid>
+      <guid>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free.html</guid>
       <description>v2ray VPN Repo:v2ray.vpn 移动端参考 SS 设计，配置方法可参考手机版Shadowsocks技巧，“分应用VPN”快速应用设置到所有服务器配置文件。 路由 设置选项 全局 绕</description>
     </item>
     

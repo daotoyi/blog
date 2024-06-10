@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on DaoyiSite</title>
-    <link>/tags/hugo/</link>
+    <link>https://daotoyi.github.io/tags/hugo.html</link>
     <description>Recent content in hugo on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Apr 2022 12:23:00 +0000</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 12:23:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ox-hugo 生成 hugo/vuepress 通用 md 文件</title>
-      <link>/post/emacs-ox&#43;hugo-hugo-vuepress/</link>
+      <link>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress.html</link>
       <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
       
-      <guid>/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
+      <guid>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress.html</guid>
       <description>时间格式 vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击</description>
     </item>
     
     <item>
       <title>Org ox-hugo</title>
-      <link>/post/emacs-org-ox&#43;hugo-meta/</link>
+      <link>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta.html</link>
       <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
       
-      <guid>/post/emacs-org-ox&#43;hugo-meta/</guid>
+      <guid>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta.html</guid>
       <description>File meta 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: Subtree/files meta 1 2 3 4 5 :PROPERTIES: :EXPORT_FILE_NAME: emacs-org-ox+hugo-meta :EXPORT_DESCRIPTION: :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :motto Refine :END: preview hugo server hugo server 是 hugo 常用的命令,只要启动了站点服务,就可以实</description>
     </item>
     
     <item>
       <title>Hugo 使用 Github Action 使用</title>
-      <link>/post/hugo-github-action/</link>
+      <link>https://daotoyi.github.io/post/hugo-github-action.html</link>
       <pubDate>Sun, 13 Mar 2022 23:24:00 +0000</pubDate>
       
-      <guid>/post/hugo-github-action/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-github-action.html</guid>
       <description>Useage Touch .github/workflows/main.yml in root directory. confiure as: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 name:Deploy GitHub Pages# 触发条件：在 push 到 master/main 分支后on:push:br</description>
     </item>
     
     <item>
       <title>Hugo 主题 book 使用小结</title>
-      <link>/post/hugo-theme-book-manual/</link>
+      <link>https://daotoyi.github.io/post/hugo-theme-book-manual.html</link>
       <pubDate>Wed, 09 Mar 2022 00:07:00 +0000</pubDate>
       
-      <guid>/post/hugo-theme-book-manual/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-theme-book-manual.html</guid>
       <description>Menu Render pages from the content/docs section as a menu in a tree structure. set title and weight in the front matter of pages to adjust the order and titles in the menu. /menu deprated. Blog A simple blog is supported in the section posts. 保证 content 目录下只有一个 posts 目录。 Plugins numbered scrollbars themes/hugo-book/assets/_custom.scss 1 2 3 4 /* You can</description>
     </item>
     
     <item>
       <title>Hugo 主题 LoveIt 使用小结</title>
-      <link>/post/hugo-theme-loveit-archive/</link>
+      <link>https://daotoyi.github.io/post/hugo-theme-loveit-archive.html</link>
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
-      <guid>/post/hugo-theme-loveit-archive/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-theme-loveit-archive.html</guid>
       <description>compatible</description>
     </item>
     
     <item>
       <title>Hugo 使用总结</title>
-      <link>/post/hugo-manual/</link>
+      <link>https://daotoyi.github.io/post/hugo-manual.html</link>
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
-      <guid>/post/hugo-manual/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-manual.html</guid>
       <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>
       <title>Hugo 主题 even 使用小结</title>
-      <link>/post/hugo-theme-even-archive/</link>
+      <link>https://daotoyi.github.io/post/hugo-theme-even-archive.html</link>
       <pubDate>Sat, 05 Feb 2022 08:19:00 +0000</pubDate>
       
-      <guid>/post/hugo-theme-even-archive/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-theme-even-archive.html</guid>
       <description>config hugo &amp;ndash;config debugconfig.toml hugo &amp;ndash;config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放在 config.toml 文档中，在该文档中加</description>
     </item>
     
     <item>
       <title>Hugo 使用 orgmode(ox-hugo)</title>
-      <link>/post/hugo-org-mode/</link>
+      <link>https://daotoyi.github.io/post/hugo-org-mode.html</link>
       <pubDate>Tue, 01 Feb 2022 08:37:00 +0000</pubDate>
       
-      <guid>/post/hugo-org-mode/</guid>
+      <guid>https://daotoyi.github.io/post/hugo-org-mode.html</guid>
       <description>简述 采用 emacs org-mde 在 Hugo + Github 部署的静态网站上记录个人博客。 Org-mode Read More 生成的文章要支持 Read More ，在需要分割的地方添加 #more (中间有空格)即可。 meta 1 2 3 4 5 #+title: First-orgmode #+Author: daoyi</description>
     </item>
     

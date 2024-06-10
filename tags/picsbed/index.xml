@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PicsBed on DaoyiSite</title>
-    <link>/tags/picsbed/</link>
+    <link>https://daotoyi.github.io/tags/picsbed.html</link>
     <description>Recent content in PicsBed on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Mar 2022 00:30:00 +0000</lastBuildDate><atom:link href="/tags/picsbed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 00:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/picsbed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github 图床显示图片</title>
-      <link>/post/github-picsbed-show-pictures/</link>
+      <link>https://daotoyi.github.io/post/github-picsbed-show-pictures.html</link>
       <pubDate>Wed, 16 Mar 2022 00:30:00 +0000</pubDate>
       
-      <guid>/post/github-picsbed-show-pictures/</guid>
+      <guid>https://daotoyi.github.io/post/github-picsbed-show-pictures.html</guid>
       <description>Github/Gitee 格式 可显示的链接格式: https://raw.githubusercontent.com/UserName/RepoName/BranchName/ 如:https://raw.githubusercontent.com/daotoyi/picsbed/main/</description>
     </item>
     

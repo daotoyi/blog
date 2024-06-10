@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macOS on DaoyiSite</title>
-    <link>/categories/macos/</link>
+    <link>https://daotoyi.github.io/categories/macos.html</link>
     <description>Recent content in macOS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jun 2024 08:29:08 +0000</lastBuildDate><atom:link href="/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jun 2024 08:29:08 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macOS 软件包安装/卸載</title>
-      <link>/post/mac-package-install-and-uninstall/</link>
+      <link>https://daotoyi.github.io/post/mac-package-install-and-uninstall.html</link>
       <pubDate>Sun, 09 Jun 2024 08:29:08 +0000</pubDate>
       
-      <guid>/post/mac-package-install-and-uninstall/</guid>
+      <guid>https://daotoyi.github.io/post/mac-package-install-and-uninstall.html</guid>
       <description>CLOSED: [2024-03-28 Thu 00:43] 安装 dmg 文件安装 App Store 安装 卸载方法与 dmg 文件安装一致 pkg 安装包安装 Homebrew 等包管理器安装 卸載 dmg dmg 是苹果电脑上专用的磁盘镜像（disk image）文</description>
     </item>
     
     <item>
       <title>macOS spacemacs 的 evil 模式 fcitx-remote/swim 切换输入法</title>
-      <link>/post/mac-spacemacs-evil-mode-fcitx-remote/</link>
+      <link>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote.html</link>
       <pubDate>Sun, 09 Jun 2024 08:28:16 +0000</pubDate>
       
-      <guid>/post/mac-spacemacs-evil-mode-fcitx-remote/</guid>
+      <guid>https://daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote.html</guid>
       <description>CLOSED: [2024-03-28 Thu 00:41] fcitx-for-osx step1： 在 dotspacemacs-configuration-layers 中配置并启用 chinese，并启用 fcitx.el 1 2 (chinese :variables chinese-enable-fcitx t) setp2 在 dotspacemacs/user-config() 1 2 3 4 5 ;; Make sure the following comes before `(fcitx-aggressive</description>
     </item>
     
     <item>
       <title>macOS sshfs 使用</title>
-      <link>/post/macos-sshfs-useage/</link>
+      <link>https://daotoyi.github.io/post/macos-sshfs-useage.html</link>
       <pubDate>Sun, 19 May 2024 19:01:00 +0000</pubDate>
       
-      <guid>/post/macos-sshfs-useage/</guid>
+      <guid>https://daotoyi.github.io/post/macos-sshfs-useage.html</guid>
       <description>SSHFS SSHFS（SSH Filesystem）是一个基于 FUSE 的文件系统客户端，用于通过 SSH 连接远程目录。SSHFS 使用的是 SFTP 协议，它是 SSH 的一个子系统</description>
     </item>
     
     <item>
       <title>恢复模式</title>
-      <link>/post/mac-restore-mode/</link>
+      <link>https://daotoyi.github.io/post/mac-restore-mode.html</link>
       <pubDate>Thu, 28 Mar 2024 17:57:00 +0000</pubDate>
       
-      <guid>/post/mac-restore-mode/</guid>
+      <guid>https://daotoyi.github.io/post/mac-restore-mode.html</guid>
       <description>Intel 重启电脑，屏幕变黑后，长按 command + R 键，直到屏幕上出现 Apple 徽标。启动完成后，您将进入恢复模式。 Apple ARM64 长按 电源按钮（10 秒）。然后转到“选项”。您可</description>
     </item>
     
     <item>
       <title>Mac OS 新手配置</title>
-      <link>/post/mac-new-configure/</link>
+      <link>https://daotoyi.github.io/post/mac-new-configure.html</link>
       <pubDate>Thu, 28 Mar 2024 17:55:00 +0000</pubDate>
       
-      <guid>/post/mac-new-configure/</guid>
+      <guid>https://daotoyi.github.io/post/mac-new-configure.html</guid>
       <description>Homebrew instruction Homebrew 是 MacOS（或 Linux）的软件包管理器。Homebrew 是一款包管理工具，目前支持 macOS 和 Linux 系统。主要有四个部分组成： brew： 源代码</description>
     </item>
     

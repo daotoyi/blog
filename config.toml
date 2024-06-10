@@ -1,5 +1,5 @@
 # baseURL = "http://localhost:1313/"
-baseURL = "https://daotoyi.github.io/"
+baseURL = "https://blog.daotoyi.github.io/"
 relativeURLs = true
 uglyURLs = true
 languageCode = "en"

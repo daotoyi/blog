@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on DaoyiSite</title>
-    <link>https://daotoyi.github.io/categories/latex.html</link>
+    <link>https://blog.daotoyi.github.io/categories/latex.html</link>
     <description>Recent content in Latex on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Feb 2022 12:44:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 12:44:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/categories/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Table: latex 表格超详细教程</title>
-      <link>https://daotoyi.github.io/post/latex-export-table.html</link>
+      <link>https://blog.daotoyi.github.io/post/latex-export-table.html</link>
       <pubDate>Sat, 19 Feb 2022 12:44:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/latex-export-table.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/latex-export-table.html</guid>
       <description>常用配置说明 \begin{table*}[t], *号，是为了让表格宽度与页面等宽而不是二分之一宽 \begin{center}让表格居中 \caption{Your first table.}写表格的标题 \begi</description>
     </item>
     
     <item>
       <title>Latex Config</title>
-      <link>https://daotoyi.github.io/post/latex-common-manual.html</link>
+      <link>https://blog.daotoyi.github.io/post/latex-common-manual.html</link>
       <pubDate>Sat, 19 Feb 2022 12:43:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/latex-common-manual.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/latex-common-manual.html</guid>
       <description>latex_introduction 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 #+begin_src latex \documentclass[oneside]{article}% \usepackage{ctex} \usepackage{geometry} \usepackage[dvipsnames, svgnames, x11names]{xcolor} \usepackage{graphics} \usepackage[ colorlinks=true, linkcolor=Navy, urlcolor=Navy, citecolor=Navy, anchorcolor=Navy ]{hyperref} \usepackage{enumerate} \usepackage{tcolorbox} \tcbuselibrary{skins, breakable} \usepackage[english]{babel} \usepackage[cache=false]{minted} \geometry{ width = 210mm,% height = 297mm, left = 19.1mm,% right = 19.1mm,%</description>
     </item>
     
     <item>
       <title>Table: Org-mode 导出表格过宽溢出页面</title>
-      <link>https://daotoyi.github.io/post/org-latex-table-width.html</link>
+      <link>https://blog.daotoyi.github.io/post/org-latex-table-width.html</link>
       <pubDate>Sat, 19 Feb 2022 12:43:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/org-latex-table-width.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/org-latex-table-width.html</guid>
       <description>表格横置 \usepackage(lscape) 建议加在表格的最外层 表格横置 \usepackage{rotating} 页面横置 \usepackage{pdflscape} 自动调整字体的大小 \usepackage{graphix} 缩小字体 \footnotesize 在\begin{table}后使用\footnotesize</description>
     </item>
     

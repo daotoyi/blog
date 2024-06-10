@@ -2,179 +2,179 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Internet on DaoyiSite</title>
-    <link>https://daotoyi.github.io/categories/internet.html</link>
+    <link>https://blog.daotoyi.github.io/categories/internet.html</link>
     <description>Recent content in Internet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jun 2024 19:34:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jun 2024 19:34:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/categories/internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>邮箱协议</title>
-      <link>https://daotoyi.github.io/post/internet-email-protocol.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-email-protocol.html</link>
       <pubDate>Fri, 07 Jun 2024 19:34:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-email-protocol.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-email-protocol.html</guid>
       <description>SMTP SMTP（simple mail transfer protocol）简单邮件传输协议。 SMTP 协议属于 TCP/IP 协议簇，它是一组用于从源地址到目的地址传输邮件的规范，通过它来控</description>
     </item>
     
     <item>
       <title>OpenStack</title>
-      <link>https://daotoyi.github.io/post/internet-openstack.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-openstack.html</link>
       <pubDate>Wed, 03 Jan 2024 11:37:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-openstack.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-openstack.html</guid>
       <description>OpenStack 起源 2002 年，美国著名的电商公司亚马逊（Amazon）向客户推出了一项全新的业务——包括存储空间、计算能力等资源服务的 Web Service。这就是</description>
     </item>
     
     <item>
       <title>Nginx 手动生成证书</title>
-      <link>https://daotoyi.github.io/post/internet-generate-certificate-manually.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-generate-certificate-manually.html</link>
       <pubDate>Sun, 17 Dec 2023 18:50:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-generate-certificate-manually.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-generate-certificate-manually.html</guid>
       <description>CA 生成一对密钥 1 2 3 4 5 6 7 8 9 10 11 12 [root@nginx ~]# mkdir -p /etc/pki/CA [root@nginx ~]# cd /etc/pki/CA/ [root@nginx CA]# mkdir private [root@nginx CA]# ls private [root@nginx CA]# (umask 077;openssl genrsa -out private/cakey.pem 2048) Generating RSA private key, 2048 bit long modulus (2 primes) [root@nginx CA]# ls private/ cakey.pem [root@nginx CA]# mkdir certs newcerts crl [root@nginx CA]# touch index.txt &amp;amp;&amp;amp;</description>
     </item>
     
     <item>
       <title>Nginx 反向代理和 Acme 证书配置</title>
-      <link>https://daotoyi.github.io/post/internet-nginx-acme-config.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-nginx-acme-config.html</link>
       <pubDate>Tue, 17 Oct 2023 10:38:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-nginx-acme-config.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-nginx-acme-config.html</guid>
       <description>nginx nginx 1 2 3 4 5 6 7 8 9 10 ocker run -d \ --restart=unless-stopped \ --name nginx \ --net host \ --label nginx \ -v /home/ubuntu/data/nginx/certs:/etc/nginx/certs \ # 可选 -v /home/ubuntu/data/nginx/log:/var/log/nginx \ -v /home/ubuntu/data/nginx/www:/var/www \ -v /home/ubuntu/data/nginx/conf.d:/etc/nginx/conf.d \ nginx /etc/nginx/certs 目录用于 SSL。 nginx/conf.d; vim domainxx.conf 1 2 3 4 5 6 7 8 9 10 11 12 server { listen</description>
     </item>
     
     <item>
       <title>Cloudflare</title>
-      <link>https://daotoyi.github.io/post/internet-cloudflare.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-cloudflare.html</link>
       <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-cloudflare.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-cloudflare.html</guid>
       <description>Exposing a web service with Cloudflare Tunnel 使用 Cloudflare Tunnel 公开 Web 服务 No more VPN. Introducting Cloudflare Tunnel 使用 Cloudflare Tunnel 隐藏你的服务器 SSH into your private machines from anywhere, for free, using Cloudflare Tunnel ssh-over-cloudflare</description>
     </item>
     
     <item>
       <title>Cloudflare Tunnel</title>
-      <link>https://daotoyi.github.io/post/internet-cloudflare-tunnel.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-cloudflare-tunnel.html</link>
       <pubDate>Sat, 22 Oct 2022 08:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-cloudflare-tunnel.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-cloudflare-tunnel.html</guid>
       <description>CF Tunnel CF Tunnel 介绍 Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. 这是 Cloudflare 在他的产品介绍页里面介绍 Tunnel 这个功能的描述，很直观， Tunnel 的作用就是那你可以在公网连接上</description>
     </item>
     
     <item>
       <title>Apache2</title>
-      <link>https://daotoyi.github.io/post/apache2-conf-note.html</link>
+      <link>https://blog.daotoyi.github.io/post/apache2-conf-note.html</link>
       <pubDate>Sun, 21 Aug 2022 15:40:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/apache2-conf-note.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/apache2-conf-note.html</guid>
       <description>Basic 配置文件是 /etc/apache2/apache2.conf,Apache 在启动时会自动读取这个文件的配置信息。而其他的一些配置文件，如 httpd.conf 等，则是通过 Include 指令包含进来。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # Include</description>
     </item>
     
     <item>
       <title>企业邮箱(自定义域名)邮箱</title>
-      <link>https://daotoyi.github.io/post/internetcustomize-email-domain.html</link>
+      <link>https://blog.daotoyi.github.io/post/internetcustomize-email-domain.html</link>
       <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internetcustomize-email-domain.html</guid>
       <description>企业邮箱 (绑定域名) 服务对比 免费的企业邮箱 / 域名邮箱服务: 国内 腾讯企业邮箱 阿里云企业邮箱 163 网易企业邮箱 飞书企业邮箱、 Zoho 中国版 国外 微软 Office 365 企业</description>
     </item>
     
     <item>
       <title>自定义域名邮箱</title>
-      <link>https://daotoyi.github.io/post/internetcustomize-email-domain.html</link>
+      <link>https://blog.daotoyi.github.io/post/internetcustomize-email-domain.html</link>
       <pubDate>Wed, 20 Jul 2022 08:55:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internetcustomize-email-domain.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internetcustomize-email-domain.html</guid>
       <description>Outlook 邮箱绑定域名邮箱 前提 Outlook 绑定自己的域名邮箱必须要满足以下两个条件： 是 Office 365（目前已更名为 Microsoft 365）的个人版或家庭版用户。（商业版不可） 在与</description>
     </item>
     
     <item>
       <title>Microsoft 账号无法登陆</title>
-      <link>https://daotoyi.github.io/post/microsoft-account-login.html</link>
+      <link>https://blog.daotoyi.github.io/post/microsoft-account-login.html</link>
       <pubDate>Mon, 09 May 2022 17:45:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/microsoft-account-login.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/microsoft-account-login.html</guid>
       <description>DNS 修改配置 WLAN 属性 Internet 协议版本 4 DNS 修改为 4.2.2.2 备选 DNS 修改为 4.2.2.1 官方方案 点击「此处」下载 “调整 HOST 文件” 工具。请您解压文件，右击 Hosts-Modify.bat 文件，点击 “以管理员身份</description>
     </item>
     
     <item>
       <title>Google RGB</title>
-      <link>https://daotoyi.github.io/post/google-rgb.html</link>
+      <link>https://blog.daotoyi.github.io/post/google-rgb.html</link>
       <pubDate>Thu, 07 Apr 2022 17:52:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/google-rgb.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/google-rgb.html</guid>
       <description>color 0x RGB 蓝色 4285F4 RGB: (66,133,244) 绿色 34A853 RGB: (52,168,83) 黄色 FBB05 RGB:(251,188,5) 红色 EA4335 RGB:(234,67,53)</description>
     </item>
     
     <item>
       <title>Nginx</title>
-      <link>https://daotoyi.github.io/post/nginx-conf-note.html</link>
+      <link>https://blog.daotoyi.github.io/post/nginx-conf-note.html</link>
       <pubDate>Mon, 04 Apr 2022 23:44:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/nginx-conf-note.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/nginx-conf-note.html</guid>
       <description>instoducton template 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 worker_processes 1; events { worker_connections 1024; } http { include mime.types; default_type application/octet-stream; keepalive_timeout 65; server { listen 80; server_name localhost; location / { root html; index index.html index.htm; } } } nginx pics 根据上述文件，我们可以很明显的将 nginx.conf</description>
     </item>
     
     <item>
       <title>网络代理简介</title>
-      <link>https://daotoyi.github.io/post/internet-proxy.html</link>
+      <link>https://blog.daotoyi.github.io/post/internet-proxy.html</link>
       <pubDate>Mon, 04 Apr 2022 22:37:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/internet-proxy.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/internet-proxy.html</guid>
       <description>透明代理(Transparent Proxy) 是另一种类型的 HTTP 代理，它们不会修改通过它们发送的请求。 透明意味着代理本身对用户是不可见( invisible )的，也就是说用</description>
     </item>
     
     <item>
       <title>CA SSL 证书</title>
-      <link>https://daotoyi.github.io/post/ca-ssl-certificate.html</link>
+      <link>https://blog.daotoyi.github.io/post/ca-ssl-certificate.html</link>
       <pubDate>Mon, 04 Apr 2022 22:33:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/ca-ssl-certificate.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/ca-ssl-certificate.html</guid>
       <description>CA CA 是证书的签发机构，它是公钥基础设施（Public Key Infrastructure，PKI）的核心。CA 是负责签发证书、认证证书、管理已颁发</description>
     </item>
     
     <item>
       <title>SSL 证书签发</title>
-      <link>https://daotoyi.github.io/post/certificate-sign.html</link>
+      <link>https://blog.daotoyi.github.io/post/certificate-sign.html</link>
       <pubDate>Mon, 04 Apr 2022 18:52:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/certificate-sign.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/certificate-sign.html</guid>
       <description>Certbot 使用自动证书机器人 Certbot,自动签发 Let’s Encrypt 的免费证书,只是需要三个月一续,机器人自动帮忙搞定 Before 1 2 3 4 5 6 7 8 9 10 11 12 13 # 安装</description>
     </item>
     
     <item>
       <title>SSL/TLS 和 SNI 概念</title>
-      <link>https://daotoyi.github.io/post/ssl-tls-sni.html</link>
+      <link>https://blog.daotoyi.github.io/post/ssl-tls-sni.html</link>
       <pubDate>Fri, 01 Apr 2022 23:12:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/ssl-tls-sni.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/ssl-tls-sni.html</guid>
       <description>自 Web 诞生以来，我们所接触的互联网时代，都有可能存在信息的截断，而 SSL 协议及其后代 TLS 提供了加密和安全性，使现代互联网安全成为可能。 SSL/TLS SSL: 安全套接字</description>
     </item>
     
     <item>
       <title>Domain name 域名概念</title>
-      <link>https://daotoyi.github.io/post/domain-instruction.html</link>
+      <link>https://blog.daotoyi.github.io/post/domain-instruction.html</link>
       <pubDate>Sat, 05 Mar 2022 16:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/domain-instruction.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/domain-instruction.html</guid>
       <description>域名 域名（英语：Domain Name），又称网域，是由一串用点分隔的名字组成的 Internet 上某一台计算机或计算机组的名称，用于在数据传输时对计算机的定</description>
     </item>
     
     <item>
       <title>Edge 无法翻译、无法下载插件</title>
-      <link>https://daotoyi.github.io/post/edge-access-extension.html</link>
+      <link>https://blog.daotoyi.github.io/post/edge-access-extension.html</link>
       <pubDate>Fri, 04 Mar 2022 14:44:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/edge-access-extension.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/edge-access-extension.html</guid>
       <description>State &amp;ldquo;TODO&amp;rdquo; from [2022-03-04 周五 14:44] 修改 host 文件 修改 C:\Windows\System32\drivers\etc 文件，增加以下内容。 1 2 3 4 5 6 7 8 9 10 11 # Edge 翻译 117.28.245.88 edge.microsoft.com # 商店扩展 117.28.245.88 msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com # 微软账户 117.28.245.88 logincdn.msauth.net 117.28.245.88 login.live.com 117.28.245.88 account.live.com 117.28.245.88 acctcdn.msauth.net 注意 hots 文件不能直</description>
     </item>
     
     <item>
       <title>Domain name system 解析</title>
-      <link>https://daotoyi.github.io/post/doman-name-system.html</link>
+      <link>https://blog.daotoyi.github.io/post/doman-name-system.html</link>
       <pubDate>Mon, 07 Feb 2022 08:44:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/doman-name-system.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/doman-name-system.html</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2022-02-12 周六 08:44] DNS（Domain Name System[域名系统]) 万维网上作为域名和 IP 地址相互映射的一个[分布式数据库]能够使用户更方便的访问</description>
     </item>
     

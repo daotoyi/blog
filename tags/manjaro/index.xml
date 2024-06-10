@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>manjaro on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/manjaro.html</link>
+    <link>https://blog.daotoyi.github.io/tags/manjaro.html</link>
     <description>Recent content in manjaro on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Apr 2024 12:06:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Apr 2024 12:06:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manjaro 美化 macos</title>
-      <link>https://daotoyi.github.io/post/majaro-customize-to-macos-style.html</link>
+      <link>https://blog.daotoyi.github.io/post/majaro-customize-to-macos-style.html</link>
       <pubDate>Sun, 21 Apr 2024 12:06:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/majaro-customize-to-macos-style.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/majaro-customize-to-macos-style.html</guid>
       <description>steps 安装 WhiteSur-Gtk-theme 登录 xfce-look.org 主题站，搜索 WhiteSur，在搜索结果中下载主题，图标，指针这三项主题资源包到本地进行安装。 WhiteSur-Gtk-the</description>
     </item>
     
     <item>
       <title>Manjaro pacman、aur and yaourt(yay)</title>
-      <link>https://daotoyi.github.io/post/majaro-pacman-aur-and-yaourt.html</link>
+      <link>https://blog.daotoyi.github.io/post/majaro-pacman-aur-and-yaourt.html</link>
       <pubDate>Sat, 20 Apr 2024 20:28:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/majaro-pacman-aur-and-yaourt.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/majaro-pacman-aur-and-yaourt.html</guid>
       <description>pacman Pacman 在 Arch wiki 的说明如下 pacman 软件包管理器是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来(参见 makepkg 和 ABS)。不管软件包是来自</description>
     </item>
     
     <item>
       <title>Manjaro 使用</title>
-      <link>https://daotoyi.github.io/post/manjaro-manual.html</link>
+      <link>https://blog.daotoyi.github.io/post/manjaro-manual.html</link>
       <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/manjaro-manual.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/manjaro-manual.html</guid>
       <description>常用操作 basic opreration /etc/pacman.conf 更新系统 1 2 3 4 pacman -Syy #本地的包数据库和远程的软件仓库同步 pacman -Syu pacman -Su # 如果你已经使用 pacman -Sy 将本地的包数据库与远程的仓库进行了同步，也</description>
     </item>
     

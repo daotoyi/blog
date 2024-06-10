@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>edge on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/edge.html</link>
+    <link>https://blog.daotoyi.github.io/tags/edge.html</link>
     <description>Recent content in edge on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Mar 2022 14:44:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/edge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Mar 2022 14:44:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/edge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Edge 无法翻译、无法下载插件</title>
-      <link>https://daotoyi.github.io/post/edge-access-extension.html</link>
+      <link>https://blog.daotoyi.github.io/post/edge-access-extension.html</link>
       <pubDate>Fri, 04 Mar 2022 14:44:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/edge-access-extension.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/edge-access-extension.html</guid>
       <description>State &amp;ldquo;TODO&amp;rdquo; from [2022-03-04 周五 14:44] 修改 host 文件 修改 C:\Windows\System32\drivers\etc 文件，增加以下内容。 1 2 3 4 5 6 7 8 9 10 11 # Edge 翻译 117.28.245.88 edge.microsoft.com # 商店扩展 117.28.245.88 msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com # 微软账户 117.28.245.88 logincdn.msauth.net 117.28.245.88 login.live.com 117.28.245.88 account.live.com 117.28.245.88 acctcdn.msauth.net 注意 hots 文件不能直</description>
     </item>
     

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shell on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/shell.html</link>
+    <link>https://blog.daotoyi.github.io/tags/shell.html</link>
     <description>Recent content in shell on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Mar 2024 13:53:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 13:53:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux shell 进度条</title>
-      <link>https://daotoyi.github.io/post/linux-shell-progress-show.html</link>
+      <link>https://blog.daotoyi.github.io/post/linux-shell-progress-show.html</link>
       <pubDate>Sat, 02 Mar 2024 13:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/linux-shell-progress-show.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/linux-shell-progress-show.html</guid>
       <description>pv 命令 pv 命令：pv 是 &amp;ldquo;pipe viewer&amp;rdquo; 的缩写，可以监视通过管道传输数据的进度。 1 pv file.tar | gzip &amp;gt; file.tar.gz rsync 命令 rsync 提供了内置的进度展示功能，可以使用 &amp;ndash;progress 选项来显示文件的同</description>
     </item>
     
     <item>
       <title>Linux 不同 shell 文件中的函数调用</title>
-      <link>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files.html</link>
+      <link>https://blog.daotoyi.github.io/post/linux-shell-function-invoke-between-files.html</link>
       <pubDate>Tue, 03 Oct 2023 15:30:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/linux-shell-function-invoke-between-files.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/linux-shell-function-invoke-between-files.html</guid>
       <description>执行外部脚本或命令 使用 source 命令或.运算符执行另一个脚本文件。这将导致另一个脚本中的所有命令在当前脚本的上下文中执行。 例如，有两个脚本文件，sc</description>
     </item>
     
     <item>
       <title>Linux Shell Archive</title>
-      <link>https://daotoyi.github.io/post/linux-shell-archive.html</link>
+      <link>https://blog.daotoyi.github.io/post/linux-shell-archive.html</link>
       <pubDate>Fri, 29 Sep 2023 09:35:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/linux-shell-archive.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/linux-shell-archive.html</guid>
       <description>cat &amp;lt; EOF 从标准输入(stdin) 读取一段文本，遇到 &amp;ldquo;EOF&amp;rdquo; 就停止读取，然后将文本输出到标准输出(stdout) 中。 EOF：一个标识符，标识文本信息的</description>
     </item>
     
     <item>
       <title>Linux 反弹 shell</title>
-      <link>https://daotoyi.github.io/post/linux-reverse-shell.html</link>
+      <link>https://blog.daotoyi.github.io/post/linux-reverse-shell.html</link>
       <pubDate>Mon, 11 Jul 2022 15:23:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/linux-reverse-shell.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/linux-reverse-shell.html</guid>
       <description>什么是反弹 Shell 控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来</description>
     </item>
     

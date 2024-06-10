@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WordPress on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/wordpress.html</link>
+    <link>https://blog.daotoyi.github.io/tags/wordpress.html</link>
     <description>Recent content in WordPress on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Mar 2022 22:26:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Mar 2022 22:26:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WordPress 笔记</title>
-      <link>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy.html</link>
+      <link>https://blog.daotoyi.github.io/post/wordpress-and-bt-install-deploy.html</link>
       <pubDate>Tue, 15 Mar 2022 22:26:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/wordpress-and-bt-install-deploy.html</guid>
       <description>VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建</description>
     </item>
     

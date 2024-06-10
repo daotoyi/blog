@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cpu on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/cpu.html</link>
+    <link>https://blog.daotoyi.github.io/tags/cpu.html</link>
     <description>Recent content in cpu on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 11:02:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 11:02:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CPU</title>
-      <link>https://daotoyi.github.io/post/hardware-cpu.html</link>
+      <link>https://blog.daotoyi.github.io/post/hardware-cpu.html</link>
       <pubDate>Sun, 01 Jan 2023 11:02:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hardware-cpu.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/hardware-cpu.html</guid>
       <description>线程 操作系统是通过线程来执行任务的，一般情况下内核单元和线程是 1:1 对应关系，即几核 CPU 就拥有几个线程，如果采用了 CPU 的虚拟化技术(Virtuali</description>
     </item>
     

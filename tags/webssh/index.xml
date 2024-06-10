@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WebSSH on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/webssh.html</link>
+    <link>https://blog.daotoyi.github.io/tags/webssh.html</link>
     <description>Recent content in WebSSH on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Jul 2022 12:20:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/webssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jul 2022 12:20:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/webssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WebSSH - 网页上的 SSH 终端</title>
-      <link>https://daotoyi.github.io/post/webssh.html</link>
+      <link>https://blog.daotoyi.github.io/post/webssh.html</link>
       <pubDate>Sun, 10 Jul 2022 12:20:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/webssh.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/webssh.html</guid>
       <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
     </item>
     

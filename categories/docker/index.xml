@@ -2,134 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on DaoyiSite</title>
-    <link>https://daotoyi.github.io/categories/docker.html</link>
+    <link>https://blog.daotoyi.github.io/categories/docker.html</link>
     <description>Recent content in Docker on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Oct 2022 13:40:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Oct 2022 13:40:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker 普通用户使用</title>
-      <link>https://daotoyi.github.io/post/docker-normal-user-permission.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-normal-user-permission.html</link>
       <pubDate>Fri, 28 Oct 2022 13:40:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-normal-user-permission.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-normal-user-permission.html</guid>
       <description>问题 1 docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create: dial unix /var/run/docker.sock: connect: permission denied. 这主要是因为 Docker 进程使用 Unix Socket，而 /var/run/docker.sock 需要 root 权限才能进行读写操作。 方案 使用 root 权限创建</description>
     </item>
     
     <item>
       <title>Docker 类似功能区分</title>
-      <link>https://daotoyi.github.io/post/docker-distinguish-functions.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-distinguish-functions.html</link>
       <pubDate>Sun, 24 Jul 2022 12:01:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-distinguish-functions.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-distinguish-functions.html</guid>
       <description>ports 和 expose ports 用来把服务端口映射给宿主机，可以访问宿主机 IP 地址的人都可以访问 ports 映射出来的端口。 expose 用来把服务端口开放给其他服务使用，客户端服务可以通</description>
     </item>
     
     <item>
       <title>Docker compose multi-files</title>
-      <link>https://daotoyi.github.io/post/docker-compose-multi-files.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-compose-multi-files.html</link>
       <pubDate>Sun, 24 Jul 2022 10:22:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-compose-multi-files.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-compose-multi-files.html</guid>
       <description>two mode 通过使用多个 compose 文件扩展整个 compose 文件 使用 extends 字段扩展单个服务 multi files 使用多个 compose 文件可以为不同的环境或不同的工作流自定义 compose 应用程序. 默认下，comp</description>
     </item>
     
     <item>
       <title>Docker Network</title>
-      <link>https://daotoyi.github.io/post/docker-network.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-network.html</link>
       <pubDate>Sat, 25 Jun 2022 18:30:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-network.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-network.html</guid>
       <description>容器间网络互通 容器间要能相互通信，需要同在一个网络中。 docker 容器在创建时若不指定网络驱动时会默认归属到 bridge 网络。 使用 docker inspect 指令查看两个容器是否同属一</description>
     </item>
     
     <item>
       <title>Docker Compose config</title>
-      <link>https://daotoyi.github.io/post/docker-compose-config.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-compose-config.html</link>
       <pubDate>Sun, 10 Apr 2022 14:22:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-compose-config.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-compose-config.html</guid>
       <description>compose parameter: parame note version 指定 compose 文件的版本 services 定义所有的 service 信息 build 指定 Dockerfile 所在文件夹的路径 cap_add 让容器拥有内核的某项能力 cap_drop 去掉容器内核的某项能力 command 覆盖容器启动后默认执</description>
     </item>
     
     <item>
       <title>Docker Dockerfile</title>
-      <link>https://daotoyi.github.io/post/docker-docker-file.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-docker-file.html</link>
       <pubDate>Tue, 05 Apr 2022 15:32:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-docker-file.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-docker-file.html</guid>
       <description>Ref Dockerfile介绍 Docker 容器入门 structure Dockerfile 分为四部分： 基础镜像信息 维护者信息 镜像操作指令 容器启动时执行指令 config 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</description>
     </item>
     
     <item>
       <title>Docker Compose</title>
-      <link>https://daotoyi.github.io/post/docker-fig-compose.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-fig-compose.html</link>
       <pubDate>Mon, 04 Apr 2022 08:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-fig-compose.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-fig-compose.html</guid>
       <description>Ref Fig项目介绍 Docker Compose 项目 Fig introduction Docker Compose 的前身是 Fig。 Fig 是一个基于 Docker 的 Python 工具，允许用户基于一个 YAML 文件定义多容器应用，从而可以使用 fig 命令行工具进行应</description>
     </item>
     
     <item>
       <title>Docker Watchtower</title>
-      <link>https://daotoyi.github.io/post/docker-watchtower.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-watchtower.html</link>
       <pubDate>Mon, 04 Apr 2022 08:30:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-watchtower.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-watchtower.html</guid>
       <description>instroduction Watchtower 会监视运行容器并监视这些容器最初启动时的镜像是否需要更新。 当 watchtower 检测到一个镜像已经有变动时，它会使用新镜像，使用相同的参数自动重新启动相应</description>
     </item>
     
     <item>
       <title>Docker daemon</title>
-      <link>https://daotoyi.github.io/post/docker-daemon.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-daemon.html</link>
       <pubDate>Thu, 03 Mar 2022 09:56:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-daemon.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-daemon.html</guid>
       <description>startup error 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # systemctl status docker ● docker.service - Docker Application Container Engine Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled) Active: failed (Result: exit-code) since Wed 2022-03-02 13:52:17 UTC; 2min 57s ago Docs: https://docs.docker.com Process: 8646 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock (code=exited, status=1/FAILURE) Main PID: 8646 (code=exited, status=1/FAILURE) Mar 02 13:52:17 instance-1 systemd[1]: docker.service: Service hold-off time</description>
     </item>
     
     <item>
       <title>Docker 远程访问</title>
-      <link>https://daotoyi.github.io/post/docker-remote-access.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-remote-access.html</link>
       <pubDate>Thu, 03 Mar 2022 09:54:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-remote-access.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-remote-access.html</guid>
       <description>默认情况下，Docker 守护进程会生成一个 socket 文件来进行本地进程通信，而不会监听任何端口，因此只能在本地使用 docker 客户端或者使用 Docker API 进行操作。 如果</description>
     </item>
     
     <item>
       <title>Docker 使用镜像</title>
-      <link>https://daotoyi.github.io/post/docker-operation-manual.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-operation-manual.html</link>
       <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-operation-manual.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-operation-manual.html</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] basic Docker 容器（containers）是从 Docker 镜像生成出来的。默认情况下，Docker 从 Docker Hub 下载这些镜像，Docker 公司在运营这个 Docker</description>
     </item>
     
     <item>
       <title>Docker 初识</title>
-      <link>https://daotoyi.github.io/post/docker-instruction.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-instruction.html</link>
       <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-instruction.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-instruction.html</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker 是一个开源的应用容器引擎。Docker 可以让开发者打包他们创建的应用以及相应的依赖包到一个可移植、轻量级的容器中。Docke</description>
     </item>
     
     <item>
       <title>Docker 安装</title>
-      <link>https://daotoyi.github.io/post/docker-install-manual.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-install-manual.html</link>
       <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-install-manual.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-install-manual.html</guid>
       <description>官方 Ubuntu 存储库中提供的 Docker 安装软件包可能不是最新版本，为了保证是最新版，我们从 Docker 官方库来安装。 Ubuntu 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 # 将官方 Docker 版本库的</description>
     </item>
     
     <item>
       <title>Docker 提交推送</title>
-      <link>https://daotoyi.github.io/post/docker-push-to-dockerhub.html</link>
+      <link>https://blog.daotoyi.github.io/post/docker-push-to-dockerhub.html</link>
       <pubDate>Sun, 27 Feb 2022 11:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/docker-push-to-dockerhub.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/docker-push-to-dockerhub.html</guid>
       <description>State &amp;ldquo;DONE&amp;rdquo; from [2022-02-27 周日 11:53] Docker commit 1 2 3 docker commit -m &amp;#34;What you did to the image&amp;#34; -a &amp;#34;Author Name&amp;#34; container_id repository/new_image_name # docker commit -m &amp;#39;dyQuant image linux&amp;#39; -a &amp;#39;daotoyi&amp;#39; xxxx daotoyi/dypython -m 是提交镜像的备注 -a 用于指定作者名 container_id ( docker ps -a 显示的 CONTAINER ID) 当我们提交新</description>
     </item>
     

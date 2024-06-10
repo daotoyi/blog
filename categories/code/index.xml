@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on DaoyiSite</title>
-    <link>https://daotoyi.github.io/categories/code.html</link>
+    <link>https://blog.daotoyi.github.io/categories/code.html</link>
     <description>Recent content in Code on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Oct 2023 18:24:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 18:24:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyQt5 QDock 初始化</title>
-      <link>https://daotoyi.github.io/post/pyqt5_qdock_initsize.html</link>
+      <link>https://blog.daotoyi.github.io/post/pyqt5_qdock_initsize.html</link>
       <pubDate>Fri, 06 Oct 2023 18:24:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/pyqt5_qdock_initsize.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/pyqt5_qdock_initsize.html</guid>
       <description>0x00 前言 QDockWidget自带的很多方法无法在保证其可调整大小的情况下，设置其初始大小. 0x01 初始化后固定大小 exampleCode 1 2 3 4 5 6 from PySide2.QtWidgets import QDockWidget, QMainWindow class UIMainWindow(QMainWindow): def __init__(self,</description>
     </item>
     
     <item>
       <title>HTML、XML、XPath</title>
-      <link>https://daotoyi.github.io/post/code-html-xml.html</link>
+      <link>https://blog.daotoyi.github.io/post/code-html-xml.html</link>
       <pubDate>Sun, 07 Aug 2022 10:49:15 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/code-html-xml.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/code-html-xml.html</guid>
       <description>HTML Hyper Text Markup Language（超文本标记语言）的缩写. 在浏览器中看到的内容都是 HTML 代码经过浏览器渲染的结果 XML EXtensible Markup Language（可扩展标记语言）</description>
     </item>
     
     <item>
       <title>Hugo-markdown</title>
-      <link>https://daotoyi.github.io/post/hugo-markdown.html</link>
+      <link>https://blog.daotoyi.github.io/post/hugo-markdown.html</link>
       <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-markdown.html</guid>
+      <guid>https://blog.daotoyi.github.io/post/hugo-markdown.html</guid>
       <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
     </item>
     

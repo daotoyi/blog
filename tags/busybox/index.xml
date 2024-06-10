@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>busybox on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/busybox/</link>
+    <link>/tags/busybox/</link>
     <description>Recent content in busybox on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jun 2022 16:17:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/busybox/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jun 2022 16:17:00 +0000</lastBuildDate><atom:link href="/tags/busybox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux busybox/buildroot/openwrt</title>
-      <link>https://daotoyi.github.io/post/linux-busybox-buildroot-openwrt/</link>
+      <link>/post/linux-busybox-buildroot-openwrt/</link>
       <pubDate>Sun, 26 Jun 2022 16:17:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/linux-busybox-buildroot-openwrt/</guid>
+      <guid>/post/linux-busybox-buildroot-openwrt/</guid>
       <description>使用 Busybox 手工制作 Busybox 本身包含了很了 Linux 命令，但是要编译其他程序的话需要手工下载、编译，如果它需要某些依赖库，你还需要手工下载、编译这些依赖库。 如果</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>managePackage on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/managepackage/</link>
+    <link>/tags/managepackage/</link>
     <description>Recent content in managePackage on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Apr 2022 12:30:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/managepackage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Apr 2022 12:30:00 +0000</lastBuildDate><atom:link href="/tags/managepackage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Packages Manager</title>
-      <link>https://daotoyi.github.io/post/packages-manager/</link>
+      <link>/post/packages-manager/</link>
       <pubDate>Sat, 02 Apr 2022 12:30:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/packages-manager/</guid>
+      <guid>/post/packages-manager/</guid>
       <description>Scoop 安装 Scoop 依赖于 Powershell 3+ 和 .NET Framework 4.5+，因此，安装 Scoop 前请确保已经正确安装了它们。 1 2 3 iex (new-object net.webclient).downloadstring(&amp;#39;https://get.scoop.sh&amp;#39;) # 如果出现“权限”错误，请根据错误提示执行以下命令 Set-ExecutionPolicy RemoteSigned</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>org on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/org/</link>
+    <link>/tags/org/</link>
     <description>Recent content in org on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Dec 2022 19:35:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 19:35:00 +0000</lastBuildDate><atom:link href="/tags/org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org Table Shrink</title>
-      <link>https://daotoyi.github.io/post/emacs-org-table-shrink/</link>
+      <link>/post/emacs-org-table-shrink/</link>
       <pubDate>Fri, 30 Dec 2022 19:35:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-table-shrink/</guid>
+      <guid>/post/emacs-org-table-shrink/</guid>
       <description>C-c C-c (org-table-align)
 C-c TAB (org-table-toggle-column-width)
 C-u C-c TAB (org-table-shrink)
@@ -22,55 +22,55 @@ C-u C-u C-c TAB (org-table-expand)
     
     <item>
       <title>Org Export Pdf</title>
-      <link>https://daotoyi.github.io/post/emacs-org-export-pdf/</link>
+      <link>/post/emacs-org-export-pdf/</link>
       <pubDate>Sat, 24 Dec 2022 14:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-export-pdf/</guid>
+      <guid>/post/emacs-org-export-pdf/</guid>
       <description>Table 溢出表格 整体缩放 表格前后增加以下内容 1 2 3 4 5 6 #+LaTeX: \resizebox{\textwidth}{!}{ | 姓名 | 身高 | 颜值 | 爱好 | 交往系数 | |------+-----+------+------+---------| | | | | | | #+LaTeX: } +ATTR_LATEX 改字号+longtable+a</description>
     </item>
     
     <item>
       <title>Org ox-hugo</title>
-      <link>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</link>
+      <link>/post/emacs-org-ox&#43;hugo-meta/</link>
       <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</guid>
+      <guid>/post/emacs-org-ox&#43;hugo-meta/</guid>
       <description>File meta 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: Subtree/files meta 1 2 3 4 5 :PROPERTIES: :EXPORT_FILE_NAME: emacs-org-ox+hugo-meta :EXPORT_DESCRIPTION: :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :motto Refine :END: preview hugo server hugo server 是 hugo 常用的命令,只要启动了站点服务,就可以实</description>
     </item>
     
     <item>
       <title>Org Table calculate</title>
-      <link>https://daotoyi.github.io/post/emacs-org-table-calculate/</link>
+      <link>/post/emacs-org-table-calculate/</link>
       <pubDate>Tue, 05 Apr 2022 23:10:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-table-calculate/</guid>
+      <guid>/post/emacs-org-table-calculate/</guid>
       <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&#39;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
     </item>
     
     <item>
       <title>Org Table 中文表格对齐</title>
-      <link>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</link>
+      <link>/post/emacs-export-align-table-with-chinese/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</guid>
+      <guid>/post/emacs-export-align-table-with-chinese/</guid>
       <description>方法 1中文表格对齐 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ;; ----------------------------------------------------------------------------- ;; setting font for mac system ;; ----------------------------------------------------------------------------- ;; Setting English Font (defun s-font() (interactive) ;; font config for org table showing. (set-face-attribute &amp;#39;default nil :font &amp;#34;Monaco 12&amp;#34;) ;; Chinese Font 配制中文字</description>
     </item>
     
     <item>
       <title>Org(eamcs) set&amp;export</title>
-      <link>https://daotoyi.github.io/post/emacs-export-manual/</link>
+      <link>/post/emacs-export-manual/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-export-manual/</guid>
+      <guid>/post/emacs-export-manual/</guid>
       <description>Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出</description>
     </item>
     
     <item>
       <title>Hugo-markdown</title>
-      <link>https://daotoyi.github.io/post/hugo-markdown/</link>
+      <link>/post/hugo-markdown/</link>
       <pubDate>Thu, 03 Feb 2022 11:17:37 +0800</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-markdown/</guid>
+      <guid>/post/hugo-markdown/</guid>
       <description>简述 采用 markdown 在 Hugo + Github 部署的静态网站上记录个人博客。 Hugo Hugo 是由 Go 语言实现的静态网站生成器。 简单、易用、高效、易扩展、快速部署。 Github github pages 完全免费 可以绑</description>
     </item>
     

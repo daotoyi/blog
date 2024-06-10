@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>snippet on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/snippet/</link>
+    <link>/tags/snippet/</link>
     <description>Recent content in snippet on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Feb 2022 08:21:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/snippet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Feb 2022 08:21:00 +0000</lastBuildDate><atom:link href="/tags/snippet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>snippets 使用总结</title>
-      <link>https://daotoyi.github.io/post/emacs-snippets-manual/</link>
+      <link>/post/emacs-snippets-manual/</link>
       <pubDate>Sun, 06 Feb 2022 08:21:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-snippets-manual/</guid>
+      <guid>/post/emacs-snippets-manual/</guid>
       <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
     </item>
     

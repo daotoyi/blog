@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emacs on DaoyiSite</title>
-    <link>https://daotoyi.github.io/categories/emacs/</link>
+    <link>/categories/emacs/</link>
     <description>Recent content in emacs on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Oct 2023 19:37:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Oct 2023 19:37:00 +0000</lastBuildDate><atom:link href="/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs 设置选中区域的颜色</title>
-      <link>https://daotoyi.github.io/post/emacs-region-selected-color-set/</link>
+      <link>/post/emacs-region-selected-color-set/</link>
       <pubDate>Fri, 06 Oct 2023 19:37:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-region-selected-color-set/</guid>
+      <guid>/post/emacs-region-selected-color-set/</guid>
       <description>emacs 行显示和选中区域的颜色均是灰色，比较难区分，如下修改方式可用。 操作步骤 M-x customize-face &amp;lt;回车&amp;gt; Customize-face （default ‘all face’） &amp;lt;Tab 补全</description>
     </item>
     
     <item>
       <title>Emacs 中文显示乱码</title>
-      <link>https://daotoyi.github.io/post/emacs-chinese-show-errors/</link>
+      <link>/post/emacs-chinese-show-errors/</link>
       <pubDate>Fri, 06 Oct 2023 19:33:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-chinese-show-errors/</guid>
+      <guid>/post/emacs-chinese-show-errors/</guid>
       <description>Emacs打开中文乱码 有时使用emacs打开文件的时候，会显示乱码。原因是emacs默认编码跟文档编码不同而出现了乱码。 1 当前buffer调</description>
     </item>
     
     <item>
       <title>Emacs Shell(putty) config</title>
-      <link>https://daotoyi.github.io/post/emacs-shell-putty-config/</link>
+      <link>/post/emacs-shell-putty-config/</link>
       <pubDate>Fri, 06 Oct 2023 19:25:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-shell-putty-config/</guid>
+      <guid>/post/emacs-shell-putty-config/</guid>
       <description>Emacs Config init.el — EmacsEntrance ;; (setq explicit-shell-file-name “plink”) ;; (setq shell-file-name explicit-shell-file-name) (add-to-list &amp;lsquo;exec-path “path/to/PuTTY”) 或者 (setenv “PATH” (concat “/mingw64/bin:/usr/loc</description>
     </item>
     
     <item>
       <title>Emacs Shell-mode 中文显示乱码</title>
-      <link>https://daotoyi.github.io/post/emacs-shell-mode-chinese-show-error/</link>
+      <link>/post/emacs-shell-mode-chinese-show-error/</link>
       <pubDate>Fri, 06 Oct 2023 19:23:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-shell-mode-chinese-show-error/</guid>
+      <guid>/post/emacs-shell-mode-chinese-show-error/</guid>
       <description>Emacs shell-mode中文显示乱码 M-x shell ssh root@192.168.220.136 Pseudo-terminal will not be allocated because stdin is not a terminal. δ 쳣: System.TypeInitializationException: Microsoft.Alm.Cli.Program ͳ ʼֵ 趨 쳣 —&amp;gt; System.IO.FileNotFoundException: δ ܼ ļ 򼯡 AzureDevOps.Authentication, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null ĳһ ϵͳ Ҳ ָ ļ Micros</description>
     </item>
     
     <item>
       <title>Org &lt;TAB&gt;键无法展开视图</title>
-      <link>https://daotoyi.github.io/post/emacs-org-tab-key-view/</link>
+      <link>/post/emacs-org-tab-key-view/</link>
       <pubDate>Fri, 06 Oct 2023 19:06:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-tab-key-view/</guid>
+      <guid>/post/emacs-org-tab-key-view/</guid>
       <description>说明 Linux系统，Emacs的org-mode使用evil插件时，&amp;lt;TAB&amp;gt;键无法展开视图。 Windows下正常。 解决 在ema</description>
     </item>
     
     <item>
       <title>Babel</title>
-      <link>https://daotoyi.github.io/post/emacs-org-babel/</link>
+      <link>/post/emacs-org-babel/</link>
       <pubDate>Wed, 12 Apr 2023 11:06:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-babel/</guid>
+      <guid>/post/emacs-org-babel/</guid>
       <description>literate programming Babel is Org&amp;rsquo;s ability to execute source code within Org documents. 根据 Donald Knuth 的 定义，文学编程是一种把文档语言和编程语言组合在一起的方法（methodology）。org mode 原来是通过 org-babel</description>
     </item>
     
     <item>
       <title>Org Table Shrink</title>
-      <link>https://daotoyi.github.io/post/emacs-org-table-shrink/</link>
+      <link>/post/emacs-org-table-shrink/</link>
       <pubDate>Fri, 30 Dec 2022 19:35:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-table-shrink/</guid>
+      <guid>/post/emacs-org-table-shrink/</guid>
       <description>C-c C-c (org-table-align)
 C-c TAB (org-table-toggle-column-width)
 C-u C-c TAB (org-table-shrink)
@@ -76,217 +76,217 @@ C-u C-u C-c TAB (org-table-expand)
     
     <item>
       <title>Org-mode 简介</title>
-      <link>https://daotoyi.github.io/post/emacs-org-mode-instruction/</link>
+      <link>/post/emacs-org-mode-instruction/</link>
       <pubDate>Thu, 29 Dec 2022 19:49:24 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-mode-instruction/</guid>
+      <guid>/post/emacs-org-mode-instruction/</guid>
       <description>列表 常用快捷键： M-RRT 插入同级列表项 M-S-RRT 插入有 checkbox 的同级列表项 C-c C-c 改变 checkbox 状态 M-left/right 改变列表项层级关系 M-up/dowm 上下移动列表项 [-] 任务 1 [33%] 子任务 1 子任务 2 子任务 3 任</description>
     </item>
     
     <item>
       <title>Org Export Pdf</title>
-      <link>https://daotoyi.github.io/post/emacs-org-export-pdf/</link>
+      <link>/post/emacs-org-export-pdf/</link>
       <pubDate>Sat, 24 Dec 2022 14:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-export-pdf/</guid>
+      <guid>/post/emacs-org-export-pdf/</guid>
       <description>Table 溢出表格 整体缩放 表格前后增加以下内容 1 2 3 4 5 6 #+LaTeX: \resizebox{\textwidth}{!}{ | 姓名 | 身高 | 颜值 | 爱好 | 交往系数 | |------+-----+------+------+---------| | | | | | | #+LaTeX: } +ATTR_LATEX 改字号+longtable+a</description>
     </item>
     
     <item>
       <title>emacs emoji</title>
-      <link>https://daotoyi.github.io/post/emacs-emoji/</link>
+      <link>/post/emacs-emoji/</link>
       <pubDate>Mon, 12 Dec 2022 13:01:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-emoji/</guid>
+      <guid>/post/emacs-emoji/</guid>
       <description>Unicode 15.0 和表情符号 Emacs 现在支持 Unicode 15.0，这是目前最新的 Unicode 版本。新前缀 C-x 8 e 现在会导致一些与表情符号相关的新命令： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
     </item>
     
     <item>
       <title>Emacs Archive</title>
-      <link>https://daotoyi.github.io/post/emacs-org-archive/</link>
+      <link>/post/emacs-org-archive/</link>
       <pubDate>Fri, 25 Nov 2022 23:07:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-archive/</guid>
+      <guid>/post/emacs-org-archive/</guid>
       <description>org-mode basic touch *.org C-c-e export menuone R-B broswer to reveal.js html block s #+begin_src &amp;hellip; #+end_src e #+begin_example &amp;hellip; #+end_example : 单行的例子以冒号开头 q #+begin_quote &amp;hellip; #+end_quote 通常用于引用，与默认格式相比左右都会留出缩进 v #+begin_verse &amp;hellip; #+end_verse 默认内容不换行，</description>
     </item>
     
     <item>
       <title>SpacemacsOperate</title>
-      <link>https://daotoyi.github.io/post/spacemacs-operate/</link>
+      <link>/post/spacemacs-operate/</link>
       <pubDate>Fri, 25 Nov 2022 23:05:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/spacemacs-operate/</guid>
+      <guid>/post/spacemacs-operate/</guid>
       <description>set-space 1 2 3 4 5 dotspacemacs-default-font &amp;#39;(&amp;#34;Inconsolata_NF&amp;#34; :size 20 :weight normal :width normal :powerline-scale 1.1) ;&amp;#39; file 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 SPC f f #从当前目录开始查找文件. 在作者的配置中同时启用</description>
     </item>
     
     <item>
       <title>SpacemacsBasicOperate</title>
-      <link>https://daotoyi.github.io/post/spacemacs-basic-operation/</link>
+      <link>/post/spacemacs-basic-operation/</link>
       <pubDate>Fri, 25 Nov 2022 22:57:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/spacemacs-basic-operation/</guid>
+      <guid>/post/spacemacs-basic-operation/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</description>
     </item>
     
     <item>
       <title>package location</title>
-      <link>https://daotoyi.github.io/post/spacemacs-package-lation/</link>
+      <link>/post/spacemacs-package-lation/</link>
       <pubDate>Fri, 25 Nov 2022 22:56:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/spacemacs-package-lation/</guid>
+      <guid>/post/spacemacs-package-lation/</guid>
       <description>local package 1 2 3 4 5 6 7 8 9 10 11 ;; 自定义 package 安装地址 (defconst zilongshanren-packages &amp;#39;(youdao-dictionary ；&amp;#39; (occur-mode :location built-in) ) ) ;; 初始化 occur mode (defun zilongshanren/init-occur-mode () (evilified-state-evilify-map occur-mode-map :mode occur-mmode) ) github 1 2 3 4 5 6 7 8 9 10 11 12 ;; 自定义 package 安装</description>
     </item>
     
     <item>
       <title>use-package</title>
-      <link>https://daotoyi.github.io/post/emacs-use-package/</link>
+      <link>/post/emacs-use-package/</link>
       <pubDate>Fri, 25 Nov 2022 22:42:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-use-package/</guid>
+      <guid>/post/emacs-use-package/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 ;; 最简洁的格式 (use-package restart-emacs) ;; 常用的格式 (use-package smooth-scrolling :ensure t ;是否一定要确保已安装 :defer nil ;是否要延迟加</description>
     </item>
     
     <item>
       <title>EMMS</title>
-      <link>https://daotoyi.github.io/post/emacs-emms/</link>
+      <link>/post/emacs-emms/</link>
       <pubDate>Fri, 25 Nov 2022 22:37:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-emms/</guid>
+      <guid>/post/emacs-emms/</guid>
       <description>eg.1 1 2 3 4 5 6 7  (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/emms/lisp&amp;#34;) (require &amp;#39;emms-setup) (require &amp;#39;emms-player-vlc) (emms-standard) (emms-default-players) (setq emms-player-vlc-command-name &amp;#34;/Applications/VLC.app/Contents/MacOS/VLC&amp;#34;)   eg.2 1 2 3 4 5 6 7 8 9 10 11  (setq exec-path (append exec-path &amp;#39;(&amp;#34;/usr/local/bin&amp;#34;))) (add-to-list &amp;#39;load-path &amp;#34;~/.emacs.d/site-lisp/emms/lisp&amp;#34;) (require &amp;#39;emms-setup) (require &amp;#39;emms-player-mplayer) (emms-standard) (emms-default-players) (define-emms-simple-player mplayer &amp;#39;(file url) (regexp-opt &amp;#39;(&amp;#34;.ogg&amp;#34; &amp;#34;.mp3&amp;#34; &amp;#34;.wav&amp;#34; &amp;#34;.mpg&amp;#34; &amp;#34;.mpeg&amp;#34; &amp;#34;.wmv&amp;#34; &amp;#34;.wma&amp;#34; &amp;#34;.mov&amp;#34; &amp;#34;.avi&amp;#34; &amp;#34;.divx&amp;#34; &amp;#34;.ogm&amp;#34; &amp;#34;.asf&amp;#34; &amp;#34;.mkv&amp;#34; &amp;#34;http://&amp;#34; &amp;#34;mms://&amp;#34; &amp;#34;.</description>
     </item>
     
     <item>
       <title>Bongo</title>
-      <link>https://daotoyi.github.io/post/emacs-bongo/</link>
+      <link>/post/emacs-bongo/</link>
       <pubDate>Fri, 25 Nov 2022 22:36:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-bongo/</guid>
+      <guid>/post/emacs-bongo/</guid>
       <description>configure 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  (use-package bongo :commands bongo-playlist :general (:states &amp;#39;normal :keymaps &amp;#39;bongo-playlist-mode-map &amp;#34;&amp;lt;return&amp;gt;&amp;#34; &amp;#39;bongo-dwim &amp;#34;i&amp;#34; &amp;#39;bongo-insert-file &amp;#34;p&amp;#34; &amp;#39;bongo-play-previous &amp;#34;n&amp;#34; &amp;#39;bongo-play-next &amp;#34;w&amp;#34; &amp;#39;bongo-pause/resume &amp;#34;d&amp;#34; &amp;#39;bongo-dired-line &amp;#34;a&amp;#34; &amp;#39;bongo-append-enqueue &amp;#34;s&amp;#34; &amp;#39;bongo-seek &amp;#34;r&amp;#34; &amp;#39;bongo-rename-line &amp;#34;v&amp;#34; &amp;#39;volume) :custom (bongo-enabled-backends &amp;#39;(mplayer.exe)) (bongo-default-directory &amp;#34;e:/Recreation/Music/&amp;#34;) (bongo-insert-album-covers t) (bongo-album-cover-size 100) (bongo-mode-line-indicator-mode nil))   note githut/bongo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56  To start Bongo, run `M-x bongo RET&amp;#39;.</description>
     </item>
     
     <item>
       <title>Emacs 插件列表</title>
-      <link>https://daotoyi.github.io/post/emacs-plugins-list/</link>
+      <link>/post/emacs-plugins-list/</link>
       <pubDate>Sun, 13 Nov 2022 13:08:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-plugins-list/</guid>
+      <guid>/post/emacs-plugins-list/</guid>
       <description>基础 插件 用途 dracula-theme / molokai-theme 配色 neotree 文件列表 super-save 自动保存 popwin 窗口操作 window-numbering 窗口跳转 dired+ 目录增强 direx 打开当前文件目录 crux 打开应用 undo-tree 撤销 swiper，counsel 快捷命</description>
     </item>
     
     <item>
       <title>Org VS Markdown</title>
-      <link>https://daotoyi.github.io/post/emacs-org-vs-markdown/</link>
+      <link>/post/emacs-org-vs-markdown/</link>
       <pubDate>Sat, 17 Sep 2022 09:23:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-vs-markdown/</guid>
+      <guid>/post/emacs-org-vs-markdown/</guid>
       <description>org output item org markdown show 粗体 `*粗体*` `**粗体**` or `_粗体_` 粗体 斜体 `/斜体/` `*斜体* ` or `_斜体_` 斜体 删除线 `+删除线+` `删除线` 删</description>
     </item>
     
     <item>
       <title>Beamer</title>
-      <link>https://daotoyi.github.io/post/emacs-org-beamer/</link>
+      <link>/post/emacs-org-beamer/</link>
       <pubDate>Wed, 14 Sep 2022 16:50:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-beamer/</guid>
+      <guid>/post/emacs-org-beamer/</guid>
       <description>ref Writing Beamer presentations in org-mode Beamer Export Frames and Blocks in Beamer Beamer specific syntax Org Beamer reference card archive LaTeX-beamer 学习教程 https://www.jianshu.com/p/7eba149baef7 Beamer 快速入门 - 中译本 黄旭华老师翻译 Beamer 3.0 指南 中译本 - 黄旭华老师翻译 Beamer用户手册(V</description>
     </item>
     
     <item>
       <title>Org ox-hugo</title>
-      <link>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</link>
+      <link>/post/emacs-org-ox&#43;hugo-meta/</link>
       <pubDate>Sat, 30 Apr 2022 09:35:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta/</guid>
+      <guid>/post/emacs-org-ox&#43;hugo-meta/</guid>
       <description>File meta 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: Subtree/files meta 1 2 3 4 5 :PROPERTIES: :EXPORT_FILE_NAME: emacs-org-ox+hugo-meta :EXPORT_DESCRIPTION: :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :motto Refine :END: preview hugo server hugo server 是 hugo 常用的命令,只要启动了站点服务,就可以实</description>
     </item>
     
     <item>
       <title>Org Table calculate</title>
-      <link>https://daotoyi.github.io/post/emacs-org-table-calculate/</link>
+      <link>/post/emacs-org-table-calculate/</link>
       <pubDate>Tue, 05 Apr 2022 23:10:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-org-table-calculate/</guid>
+      <guid>/post/emacs-org-table-calculate/</guid>
       <description>Ref https://orgmode.org/manual/Formula-syntax-for-alc.htmlFormula-syntax-for-alc https://blog.csdn.net/csfreebird/article/details/45459465 note 引用表格中字段: @row_index$col_index 优化: @4$5=&#39;(/ $4 $3);N, @4 已经指定了当前行数，所以后面$4 和$3 就不需要指定行号，直接用当前行即可 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
     </item>
     
     <item>
       <title>Export PDF</title>
-      <link>https://daotoyi.github.io/post/emacs-export-pdf-setting/</link>
+      <link>/post/emacs-export-pdf-setting/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-export-pdf-setting/</guid>
+      <guid>/post/emacs-export-pdf-setting/</guid>
       <description>LATEX_HEADER 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 1 2 3 #+ATTR_LATEX: :environment longtable :align l|lp{3cm}r|l | ..... | ..... | | ..... | ..... |</description>
     </item>
     
     <item>
       <title>Org Table 中文表格对齐</title>
-      <link>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</link>
+      <link>/post/emacs-export-align-table-with-chinese/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-export-align-table-with-chinese/</guid>
+      <guid>/post/emacs-export-align-table-with-chinese/</guid>
       <description>方法 1中文表格对齐 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ;; ----------------------------------------------------------------------------- ;; setting font for mac system ;; ----------------------------------------------------------------------------- ;; Setting English Font (defun s-font() (interactive) ;; font config for org table showing. (set-face-attribute &amp;#39;default nil :font &amp;#34;Monaco 12&amp;#34;) ;; Chinese Font 配制中文字</description>
     </item>
     
     <item>
       <title>Org(eamcs) set&amp;export</title>
-      <link>https://daotoyi.github.io/post/emacs-export-manual/</link>
+      <link>/post/emacs-export-manual/</link>
       <pubDate>Fri, 11 Mar 2022 17:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-export-manual/</guid>
+      <guid>/post/emacs-export-manual/</guid>
       <description>Emacs: Align Text Export Settings org-mode各种设定 highlight inline =code=, ~code~ highlight in export file code-src export pdf (LATEX_HEADER) 1 2 3 4 5 6 #+LATEX_HEADER: documentclass{article} #+LATEX_CLASS_OPTIONS: [a4paper] #+LATEX_HEADER: usepackage{xeCJK} #+LATEX_HEADER: usepackage{minted} #+LATEX_HEADER: usepackage[margin=2cm]{geometry} #+LATEX_HEADER: setminted{fontsize=small,baselinestretch=1} 防止页面溢出 如果一个 table 太宽了，导出成 pdf 时会超出</description>
     </item>
     
     <item>
       <title>elfeed,elfeed-org,elfeed-dashboard 使用总结</title>
-      <link>https://daotoyi.github.io/post/emacs-elfeed-org/</link>
+      <link>/post/emacs-elfeed-org/</link>
       <pubDate>Fri, 18 Feb 2022 11:37:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-elfeed-org/</guid>
+      <guid>/post/emacs-elfeed-org/</guid>
       <description>elfeed elfeed elfeed-org elfeed-org 一级标题的 tags 必须是 elfeed . elfeed-dashboard elfeed-dashboard 注意得按 repo 标的配置抄写.模板参考 括号要对齐,链接位置的描述词占位需要一致.</description>
     </item>
     
     <item>
       <title>org-download&#43;screenshot 使用总结</title>
-      <link>https://daotoyi.github.io/post/org-download-on-windows/</link>
+      <link>/post/org-download-on-windows/</link>
       <pubDate>Fri, 18 Feb 2022 11:22:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/org-download-on-windows/</guid>
+      <guid>/post/org-download-on-windows/</guid>
       <description>org-download org-download 使用的 ImageMagick 工具无法在 winodw 上截屏（import）。 使用 org-download-yank 直接粘贴 URL 地址 手动拖动本地图片到 emacs 中. 首次拖入emacs前需要触发org-downlo</description>
     </item>
     
     <item>
       <title>flymode 在 windows 上使用总结</title>
-      <link>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</link>
+      <link>/post/hunspell-flymode-on-windows/</link>
       <pubDate>Fri, 18 Feb 2022 11:07:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hunspell-flymode-on-windows/</guid>
+      <guid>/post/hunspell-flymode-on-windows/</guid>
       <description>ENV win10 emacs-27.1 spacemacs foreword spell-checking flymode export error. spacemacs 需要 aspell0.6 以上的版本，但是 Latest Version: GNU Aspell-0.50.3 (win32)（Released Dec 22, 2002）. Aspell 找到 Aspell6 的字典包，但未找到程序包,也是不能</description>
     </item>
     
     <item>
       <title>Magit 使用</title>
-      <link>https://daotoyi.github.io/post/emacs-magit-manual/</link>
+      <link>/post/emacs-magit-manual/</link>
       <pubDate>Sun, 13 Feb 2022 23:35:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-magit-manual/</guid>
+      <guid>/post/emacs-magit-manual/</guid>
       <description>基本说明 status notes Head 当前处于哪个 branch Push 要 push 到哪个远程 branch Untracked files 哪些文件未被 gt 管理 Unstaged Changes 哪些文件修改了未 stage Staged Changes 哪些文件处于 staged 状态(即运行了 git adc) Unpushed to 哪些 commit 未 push</description>
     </item>
     
     <item>
       <title>Dired 使用</title>
-      <link>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</link>
+      <link>/post/emacs-dired-common-hotkey/</link>
       <pubDate>Sun, 13 Feb 2022 06:58:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-dired-common-hotkey/</guid>
+      <guid>/post/emacs-dired-common-hotkey/</guid>
       <description>hotkey cmd function notes C-x d dired 进入 Dired 模式 ^ dired-up-directory 返回上一目录 p/C-p diredp-previous-line 上一行 n/C-n/SPC diredp-next-line 下一行 &amp;lt; dired-prev-dirline 上一个目录行 &amp;gt; dired-next-dirline 下一个目录行 g revert-buffer 刷新文件列表 + 新建目录 C 拷贝文件 把 dired-recursive-copies 设为非 nil</description>
     </item>
     
     <item>
       <title>snippets 使用总结</title>
-      <link>https://daotoyi.github.io/post/emacs-snippets-manual/</link>
+      <link>/post/emacs-snippets-manual/</link>
       <pubDate>Sun, 06 Feb 2022 08:21:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-snippets-manual/</guid>
+      <guid>/post/emacs-snippets-manual/</guid>
       <description>常用指令 hotkey M-x （function） note C-c &amp;amp; C-n yas-new-snippet C-c &amp;amp; C-s yas-insert-snippet C-c &amp;amp; C-v yas-visit-snippet-file yas-tryout-snippet test 可以保存到两个地方： ~/.emacs.d/private/snippets/modename-mode/ ~/.spacemacs.d/snippets/modename-mode/ 模板说明 1 2 3 4 5 6 7 8 9 #name : #ifndef XXX; #define XXX; #endif # key: once # -- #ifndef ${1:`(upcase</description>
     </item>
     

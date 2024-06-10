@@ -2,314 +2,314 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VPS on DaoyiSite</title>
-    <link>https://daotoyi.github.io/categories/vps/</link>
+    <link>/categories/vps/</link>
     <description>Recent content in VPS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Oct 2023 07:37:46 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/categories/vps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 07:37:46 +0000</lastBuildDate><atom:link href="/categories/vps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vuepress 使用小结</title>
-      <link>https://daotoyi.github.io/post/vuepress-manual/</link>
+      <link>/post/vuepress-manual/</link>
       <pubDate>Wed, 11 Oct 2023 07:37:46 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/vuepress-manual/</guid>
+      <guid>/post/vuepress-manual/</guid>
       <description>CLOSED: [2022-03-26 周六 21:13] Vue.js Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 VuePress</description>
     </item>
     
     <item>
       <title>Sphinx 使用总结</title>
-      <link>https://daotoyi.github.io/post/sphinx-manual/</link>
+      <link>/post/sphinx-manual/</link>
       <pubDate>Fri, 09 Dec 2022 14:43:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/sphinx-manual/</guid>
+      <guid>/post/sphinx-manual/</guid>
       <description>reStructuredText reStructuredText 是一种轻量级标记语言。它是 Python Doc-SIG（Documentation Special Interest Group）的 Docutils 项目的一部分，旨在为 Python 创建一组类似于 Java 的 Javadoc 或 Perl</description>
     </item>
     
     <item>
       <title>Xray&#43;XTLS&#43;VLESS(前端 Nginx SNI 分流)</title>
-      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</link>
+      <link>/post/xray-vless-tcp-xtls-via-nginx/</link>
       <pubDate>Fri, 29 Jul 2022 07:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx/</guid>
+      <guid>/post/xray-vless-tcp-xtls-via-nginx/</guid>
       <description>简述 Nginx 和 Xray 共用 443 端口，一般就两种方案: Xray 做前端 监听 443 端口，给 Vless 用 利用 vless+tcp+tls 强大的回落/分流特性，实现 Trojan 和 Nginx 共用 443 端口。 Nginx 做前端 监听 443 端口，给网站</description>
     </item>
     
     <item>
       <title>私有网盘 Nextcloud/ownCloud 和 Cloudreve</title>
-      <link>https://daotoyi.github.io/post/private-network-disk-nextcloud/</link>
+      <link>/post/private-network-disk-nextcloud/</link>
       <pubDate>Sat, 23 Jul 2022 20:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/private-network-disk-nextcloud/</guid>
+      <guid>/post/private-network-disk-nextcloud/</guid>
       <description>Cloudreve 国人开发的 支持使用七牛云存储、阿里云 OSS、又拍云、Amazon S3 等对象存储作为存储后端 也支持本地服务器、远程服务器和 OneDrive 等作为存储后端 也支</description>
     </item>
     
     <item>
       <title>WebSSH - 网页上的 SSH 终端</title>
-      <link>https://daotoyi.github.io/post/webssh/</link>
+      <link>/post/webssh/</link>
       <pubDate>Sun, 10 Jul 2022 12:20:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/webssh/</guid>
+      <guid>/post/webssh/</guid>
       <description>安装使用 WebSSH 要求 Python2.7 或 3.4+。 1 2 3 pip install webssh wssh docker-compose up 登录参数 WebSSH 支持使用 URL 参数进行登录，和进行命令行窗口的外观设置： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16</description>
     </item>
     
     <item>
       <title>判断海外 VPS 的 ip/port 是否被封</title>
-      <link>https://daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned/</link>
+      <link>/post/vps-judge-vps-ip-or-port-banned/</link>
       <pubDate>Tue, 05 Jul 2022 21:46:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned/</guid>
+      <guid>/post/vps-judge-vps-ip-or-port-banned/</guid>
       <description>判断 IP 站长工具 https://ping.chinaz.com/ ping.pe 检测 https://ping.pe/ 以上方法均从世界各地访问测试 ip，从而判断是否 ip 被封 判断 port 国外的端口检测工具网站检测 https://www.yougetsignal.com/tools/open-ports/ IP/PORT 可用性检测工具 https://www.toolsdaquan.com/ipcheck/ 推荐 ，可同时</description>
     </item>
     
     <item>
       <title>VPS | Shared Hosting</title>
-      <link>https://daotoyi.github.io/post/vps-vs-shared-hosting/</link>
+      <link>/post/vps-vs-shared-hosting/</link>
       <pubDate>Mon, 13 Jun 2022 23:14:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/vps-vs-shared-hosting/</guid>
+      <guid>/post/vps-vs-shared-hosting/</guid>
       <description>vps与共享虚拟主机(Shared Hosting)的区别 VPS 拥有与实体服务器一样的用户体验 Shared Hosting 共享进程、共享内存 某一个站点有 bug,或者严重消</description>
     </item>
     
     <item>
       <title>WorPress 运维</title>
-      <link>https://daotoyi.github.io/post/wordpress-maintenance/</link>
+      <link>/post/wordpress-maintenance/</link>
       <pubDate>Mon, 23 May 2022 10:29:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/wordpress-maintenance/</guid>
+      <guid>/post/wordpress-maintenance/</guid>
       <description>结构配置 wordpress目录文件结构 wp-admin/ 登陆 wordpress 后看到的界面，包括所有的后台文件 wp-content/ 包含所有的内容，包括插件 ， 主题和上传的内容 Plugins 文件夹包含所有插</description>
     </item>
     
     <item>
       <title>SaaS、IaaS 和 PaaS</title>
-      <link>https://daotoyi.github.io/post/saas-iaas-paas/</link>
+      <link>/post/saas-iaas-paas/</link>
       <pubDate>Fri, 13 May 2022 08:38:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/saas-iaas-paas/</guid>
+      <guid>/post/saas-iaas-paas/</guid>
       <description>IaaS 基础设施服务 (Infrastructure-as-a-service) 最接近服务器硬件资源，用户可以以最大的自由度接入网络本身. PaaS 平台服务 Platform-as-a-service PaaS 是在 IaaS 的基础之上，解决了操作系统、数据库、运行时环境</description>
     </item>
     
     <item>
       <title>RSSHub docker 部署</title>
-      <link>https://daotoyi.github.io/post/rsshub-docker-deployed/</link>
+      <link>/post/rsshub-docker-deployed/</link>
       <pubDate>Sat, 07 May 2022 07:09:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/rsshub-docker-deployed/</guid>
+      <guid>/post/rsshub-docker-deployed/</guid>
       <description>deploy 1 2 3 docker pull diygod/rsshub docker run -d --name rsshub -p 1200:1200 diygod/rsshub docker run --restart=always -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 diygod/rsshub CACHE_EXPIRE=3600 : 设置缓存时间为 1 小时 access: http://127.0.0.1:1200/ Docker 部署 feed browser extension RSSHub Radar TamperMonkey Script: RSS+ 在 TamperMonkey 的 RSS 脚本扩展的 RSSHub 服务器域名修为：h</description>
     </item>
     
     <item>
       <title>代理共享给局域网内其他设备</title>
-      <link>https://daotoyi.github.io/post/v2ray-share-proxy-to-others/</link>
+      <link>/post/v2ray-share-proxy-to-others/</link>
       <pubDate>Wed, 04 May 2022 10:11:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2ray-share-proxy-to-others/</guid>
+      <guid>/post/v2ray-share-proxy-to-others/</guid>
       <description>Ref SS/V2ray代理共享给局域网内其他设备 添加允许本地局域网使用代理</description>
     </item>
     
     <item>
       <title>v2ray 混合代理和反代流量</title>
-      <link>https://daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy/</link>
+      <link>/post/v2ray-mix-reverse&#43;proxy/</link>
       <pubDate>Tue, 03 May 2022 11:14:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy/</guid>
+      <guid>/post/v2ray-mix-reverse&#43;proxy/</guid>
       <description>入门：微软远程桌面反代 需要反代的 A 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53</description>
     </item>
     
     <item>
       <title>SSH 端口转发实现穿透内网</title>
-      <link>https://daotoyi.github.io/post/ssh-nat&#43;ddns/</link>
+      <link>/post/ssh-nat&#43;ddns/</link>
       <pubDate>Mon, 02 May 2022 10:41:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/ssh-nat&#43;ddns/</guid>
+      <guid>/post/ssh-nat&#43;ddns/</guid>
       <description>connect 假设有本地内网服务器 A，外网服务 B（固定 IP）。为了进行端口转发，需要从 A ssh 连到 B（建立隧道）并监听端口。达到该目的的命令是： ssh -R 外网监听</description>
     </item>
     
     <item>
       <title>v2rayN 和 Qv2ray</title>
-      <link>https://daotoyi.github.io/post/v2rayn-qv2ray/</link>
+      <link>/post/v2rayn-qv2ray/</link>
       <pubDate>Sun, 01 May 2022 18:42:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2rayn-qv2ray/</guid>
+      <guid>/post/v2rayn-qv2ray/</guid>
       <description>域名策略 AsIs 只使用域名进行路由选择，默认值 IPIfNonMatch 当域名没有匹配任何规则时，将域名解析成 IP（A 记录或 AAAA 记录）后再次进行匹配 当一个域名有多个 A 记录时</description>
     </item>
     
     <item>
       <title>ox-hugo 生成 hugo/vuepress 通用 md 文件</title>
-      <link>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</link>
+      <link>/post/emacs-ox&#43;hugo-hugo-vuepress/</link>
       <pubDate>Sat, 30 Apr 2022 12:23:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
+      <guid>/post/emacs-ox&#43;hugo-hugo-vuepress/</guid>
       <description>时间格式 vuepress 使用的是 vdoing 主题： 只支持 yaml 格式的 frontmatter 时间格式要求 YYYY-mm-dd HH:MM:SS yaml 1 2 3 4 5 6 7 #+HUGO_BASE_DIR : ../Blog/ #+HUGO_FRONT_MATTER_FORMAT: yaml #+HUGO_AUTO_SET_LASTMOD: t #+HUGO_SECTION: post #+SEQ_TODO: TODO DRAFT DONE #+PROPERTY: header-args :eval no #+FILETAGS: :@emacs: date formate C-h v org-hugo-date-format, 在弹出的 emacs buffer 上点击</description>
     </item>
     
     <item>
       <title>AWS 笔记</title>
-      <link>https://daotoyi.github.io/post/amazon-web-services/</link>
+      <link>/post/amazon-web-services/</link>
       <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/amazon-web-services/</guid>
+      <guid>/post/amazon-web-services/</guid>
       <description>Amazon Web Services (AWS) Notes 注册 AWS 要使用从未在 AWS 上用过的信用卡，不然你就不符合 Free Tier 的使用条件，所有服务将会按需收费 申请免费成功后免费服务只有一年的有效期，到期</description>
     </item>
     
     <item>
       <title>Xray 笔记</title>
-      <link>https://daotoyi.github.io/post/xray-note/</link>
+      <link>/post/xray-note/</link>
       <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/xray-note/</guid>
+      <guid>/post/xray-note/</guid>
       <description>install system github/XTLS Install &amp;amp; Upgrade Xray-core and geodata with User=nobody, but will NOT overwrite User in existing service files 1 bash &amp;lt;(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh) install Update geoip.dat and geosite.dat only 1 bash -c &amp;#34;$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)&amp;#34; @ install-geodata Remove Xray, except json and logs 1 docker 1 2 3 4 5 docker pull teddysun/xray mkdir -p /etc/xray mkdir -p /etc/xray/ssl yum install -y nginx config /etc/xray/config.json 1 2 3</description>
     </item>
     
     <item>
       <title>Xray&#43;XTLS&#43;VLESS 终极配置</title>
-      <link>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</link>
+      <link>/post/xray-vless-tcp-xtls-whatever/</link>
       <pubDate>Sun, 10 Apr 2022 22:15:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/xray-vless-tcp-xtls-whatever/</guid>
+      <guid>/post/xray-vless-tcp-xtls-whatever/</guid>
       <description>config VLESS over TCP with XTLS，数倍性能，首选方式 VLESS over TCP with TLS VLESS over WS with TLS VMess over TCP with TLS，不推荐 VMess over WS with TLS Trojan over TCP with TLS config note 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</description>
     </item>
     
     <item>
       <title>v2ray 与 Xray</title>
-      <link>https://daotoyi.github.io/post/xray-and-projectx/</link>
+      <link>/post/xray-and-projectx/</link>
       <pubDate>Sun, 03 Apr 2022 21:44:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/xray-and-projectx/</guid>
+      <guid>/post/xray-and-projectx/</guid>
       <description>v2ray/Project V V2Ray 的由来：V2Ray 是 继 Shadowsocks 作者@clowwindy 被请去喝茶之后，V2Ray 项目组为表示抗议而开发的，后破娃酱@breakwa11 也被请</description>
     </item>
     
     <item>
       <title>v2ray 反向代理/内网穿透</title>
-      <link>https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/</link>
+      <link>/post/v2ray-reverse-implement-nat-ddns/</link>
       <pubDate>Fri, 01 Apr 2022 21:50:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns/</guid>
+      <guid>/post/v2ray-reverse-implement-nat-ddns/</guid>
       <description>说明示例 约定 约定有 3 种设备，名为 A, B, C。（这 3 种的每一种设备都可以是一台或多台） A 为不具备公网 IP 的内网服务器，运行了 NAS 或个人网盘等； B 为具有</description>
     </item>
     
     <item>
       <title>v2ray 趟坑</title>
-      <link>https://daotoyi.github.io/post/v2ray-debug-config-record/</link>
+      <link>/post/v2ray-debug-config-record/</link>
       <pubDate>Fri, 01 Apr 2022 16:43:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2ray-debug-config-record/</guid>
+      <guid>/post/v2ray-debug-config-record/</guid>
       <description>port 443 端口 速度没有 80 端口快 得配套设置 security：&amp;ldquo;tsl&amp;rdquo;,设置跳过证书验证（allowInsecure：tru</description>
     </item>
     
     <item>
       <title>WordPress 笔记</title>
-      <link>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/</link>
+      <link>/post/wordpress-and-bt-install-deploy/</link>
       <pubDate>Tue, 15 Mar 2022 22:26:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/wordpress-and-bt-install-deploy/</guid>
+      <guid>/post/wordpress-and-bt-install-deploy/</guid>
       <description>VPS Panel Compare 最强大、最完善建站工具：WordPress (CMS) 最受初学者欢迎的建站工具：Wix 最设计优良的建站工具：Squarespace 最容易使用的建</description>
     </item>
     
     <item>
       <title>Hugo 使用 Github Action 使用</title>
-      <link>https://daotoyi.github.io/post/hugo-github-action/</link>
+      <link>/post/hugo-github-action/</link>
       <pubDate>Sun, 13 Mar 2022 23:24:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-github-action/</guid>
+      <guid>/post/hugo-github-action/</guid>
       <description>Useage Touch .github/workflows/main.yml in root directory. confiure as: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 name:Deploy GitHub Pages# 触发条件：在 push 到 master/main 分支后on:push:br</description>
     </item>
     
     <item>
       <title>面向 WEB 的免费托管</title>
-      <link>https://daotoyi.github.io/post/web-trusteeship-freely/</link>
+      <link>/post/web-trusteeship-freely/</link>
       <pubDate>Fri, 11 Mar 2022 08:02:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/web-trusteeship-freely/</guid>
+      <guid>/post/web-trusteeship-freely/</guid>
       <description>GitHub Pages1 GitHub Pages 让开发者可以在 .github.io 域上免费托管静态站点。 InspireCloud2 轻服务（即 InspireCloud）是由字节跳动提供的开箱即用的云服务. 免费提供以下服务: 50</description>
     </item>
     
     <item>
       <title>Hugo 主题 book 使用小结</title>
-      <link>https://daotoyi.github.io/post/hugo-theme-book-manual/</link>
+      <link>/post/hugo-theme-book-manual/</link>
       <pubDate>Wed, 09 Mar 2022 00:07:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-theme-book-manual/</guid>
+      <guid>/post/hugo-theme-book-manual/</guid>
       <description>Menu Render pages from the content/docs section as a menu in a tree structure. set title and weight in the front matter of pages to adjust the order and titles in the menu. /menu deprated. Blog A simple blog is supported in the section posts. 保证 content 目录下只有一个 posts 目录。 Plugins numbered scrollbars themes/hugo-book/assets/_custom.scss 1 2 3 4 /* You can</description>
     </item>
     
     <item>
       <title>Hugo 主题 LoveIt 使用小结</title>
-      <link>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</link>
+      <link>/post/hugo-theme-loveit-archive/</link>
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-theme-loveit-archive/</guid>
+      <guid>/post/hugo-theme-loveit-archive/</guid>
       <description>compatible</description>
     </item>
     
     <item>
       <title>Hugo 使用总结</title>
-      <link>https://daotoyi.github.io/post/hugo-manual/</link>
+      <link>/post/hugo-manual/</link>
       <pubDate>Tue, 08 Mar 2022 11:31:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-manual/</guid>
+      <guid>/post/hugo-manual/</guid>
       <description>按不同配置启动 在 development 环境下，可指定以不同的模式启动以预览效果。 1 2 hugo --config debugconfig.toml hugo --config a.toml,b.toml,c.toml fix content hugo server to show effect on website will be deployed. example: 1 2 3 4 5 6 /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt;</description>
     </item>
     
     <item>
       <title>VPN 推荐</title>
-      <link>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</link>
+      <link>/post/vpn-v2rayvpn-v2free/</link>
       <pubDate>Sun, 06 Mar 2022 16:59:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/vpn-v2rayvpn-v2free/</guid>
+      <guid>/post/vpn-v2rayvpn-v2free/</guid>
       <description>v2ray VPN Repo:v2ray.vpn 移动端参考 SS 设计，配置方法可参考手机版Shadowsocks技巧，“分应用VPN”快速应用设置到所有服务器配置文件。 路由 设置选项 全局 绕</description>
     </item>
     
     <item>
       <title>v2ray 搭建笔记</title>
-      <link>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</link>
+      <link>/post/v2ray-websocket-nginx-cnd-tsl/</link>
       <pubDate>Sat, 05 Mar 2022 20:58:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl/</guid>
+      <guid>/post/v2ray-websocket-nginx-cnd-tsl/</guid>
       <description>目前官方推荐的协议组合方式： VMess over Websocket with TLS VMess over TLS VMess over HTTP/2 （使用 TLS 的 HTTP/2，并非 h2c） Shadowsocks(AEAD) over Websocket with TLS v2ray(WebSocket) startup 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20</description>
     </item>
     
     <item>
       <title>GCP 笔记</title>
-      <link>https://daotoyi.github.io/post/google-cloud-platform/</link>
+      <link>/post/google-cloud-platform/</link>
       <pubDate>Sat, 05 Mar 2022 17:20:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/google-cloud-platform/</guid>
+      <guid>/post/google-cloud-platform/</guid>
       <description>GCP（Google Cloud Platform）入门 防火墙 建站之后若无法访问, 可能需要设置防火墙规则(入站防火墙)(GCP 建站及配置). 流量方向是：</description>
     </item>
     
     <item>
       <title>v2ray 笔记</title>
-      <link>https://daotoyi.github.io/post/v2ray-manual/</link>
+      <link>/post/v2ray-manual/</link>
       <pubDate>Sat, 05 Mar 2022 17:20:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/v2ray-manual/</guid>
+      <guid>/post/v2ray-manual/</guid>
       <description>introduction V2Ray 用户手册 v2ray简易手册 V2Ray 项目地址 TLS/XTLS TLS (Transport Layer Security) 译作: 传输层安全性协议 (wikipedia:传输层安全性协议) 前身 *安全套接层*（Secu</description>
     </item>
     
     <item>
       <title>Huginn 笔记</title>
-      <link>https://daotoyi.github.io/post/huginn-manual/</link>
+      <link>/post/huginn-manual/</link>
       <pubDate>Sun, 27 Feb 2022 08:19:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/huginn-manual/</guid>
+      <guid>/post/huginn-manual/</guid>
       <description>Huginn is a system for building agents that perform automated tasks for you online. 中文社区 英文官网 heroku deploy 利用 Huginn 打造一站式信息阅读平台 heroku 空间几点说明： heroku 免费账户的网站在 30 分钟内无人访问后会自动关闭（</description>
     </item>
     
     <item>
       <title>Hugo 主题 even 使用小结</title>
-      <link>https://daotoyi.github.io/post/hugo-theme-even-archive/</link>
+      <link>/post/hugo-theme-even-archive/</link>
       <pubDate>Sat, 05 Feb 2022 08:19:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-theme-even-archive/</guid>
+      <guid>/post/hugo-theme-even-archive/</guid>
       <description>config hugo &amp;ndash;config debugconfig.toml hugo &amp;ndash;config a.toml,b.toml,c.toml commmet 在 even 主题中加入 utterances 创建 repository 在 Github 上新建一个 public repo，用于存储评论内容 配置 config 为了方便配置，把需要的参数都放在 config.toml 文档中，在该文档中加</description>
     </item>
     
     <item>
       <title>Hugo 使用 orgmode(ox-hugo)</title>
-      <link>https://daotoyi.github.io/post/hugo-org-mode/</link>
+      <link>/post/hugo-org-mode/</link>
       <pubDate>Tue, 01 Feb 2022 08:37:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/hugo-org-mode/</guid>
+      <guid>/post/hugo-org-mode/</guid>
       <description>简述 采用 emacs org-mde 在 Hugo + Github 部署的静态网站上记录个人博客。 Org-mode Read More 生成的文章要支持 Read More ，在需要分割的地方添加 #more (中间有空格)即可。 meta 1 2 3 4 5 #+title: First-orgmode #+Author: daoyi</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>selinux on DaoyiSite</title>
-    <link>https://daotoyi.github.io/tags/selinux/</link>
+    <link>/tags/selinux/</link>
     <description>Recent content in selinux on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 31 Mar 2022 22:53:00 +0000</lastBuildDate><atom:link href="https://daotoyi.github.io/tags/selinux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Mar 2022 22:53:00 +0000</lastBuildDate><atom:link href="/tags/selinux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux tar 备份还原系统后无法进入桌面</title>
-      <link>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</link>
+      <link>/post/linux-selinux-tar-uncompress/</link>
       <pubDate>Thu, 31 Mar 2022 22:53:00 +0000</pubDate>
       
-      <guid>https://daotoyi.github.io/post/linux-selinux-tar-uncompress/</guid>
+      <guid>/post/linux-selinux-tar-uncompress/</guid>
       <description>现象 如果因为某些缘故，所以你的系统必须要以备份的数据来回填到原本的系统中，那么得要 特别注意复原后的系统的 SELinux 问题！它可能会让你的系统⽆法存取某</description>
     </item>
     

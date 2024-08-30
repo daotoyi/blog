@@ -1,7 +1,8 @@
 ---
 title: "Linux pam.d faillock 配置"
+author: ["SHI WENHUA"]
 date: "2023-10-06 19:14:00"
-lastmod: "2023-10-06 19:14:57"
+lastmod: "2024-08-12 21:27:23"
 categories: ["Linux"]
 draft: false
 ---

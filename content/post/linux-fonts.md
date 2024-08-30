@@ -1,9 +1,10 @@
 ---
 title: "Linux fonts"
 author: ["SHI WENHUA"]
-lastmod: "2024-03-27 17:40:16"
+date: "2024-06-21 13:51:00"
+lastmod: "2024-06-21 13:51:57"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ## 字体说明 {#字体说明}
@@ -36,7 +37,7 @@ cd fonts
 
 ## Nerd font {#nerd-font}
 
-Nerd font 的原理和 Powerline fonts 是一样的，也是针对已有的字体打 patch，把一些 icon 字符插入进去。不过 Nerd font 就比较厉害了，是一个“集大成者”，他几乎把目前市面上主流的 icon 字符全打进去了，包括powerline icon 字符以及 Font Awesome 等几千个 icon 字符。
+Nerd font 的原理和 Powerline fonts 是一样的，也是针对已有的字体打 patch，把一些 icon 字符插入进去。不过 Nerd font 就比较厉害了，是一个“集大成者”，他几乎把目前市面上主流的 icon 字符全打进去了，包括 powerline icon 字符以及 Font Awesome 等几千个 icon 字符。
 
 Nerd font 对 50 多款编程字体打了 patch，和 Powerline fonts 类似，也会在 patch 后，对名字做一下修改，比如 Source Code Font 会修改为 Sauce Code Nerd Font。
 
@@ -50,4 +51,4 @@ brew cask install font-sourcecodepro-nerd-font-mono -v
 
 ## monaco 下载安装 {#monaco-下载安装}
 
-从 <https://github.com/supermarin/powerline-fonts> 下载monaco字体点击/拖放安装即可。
+从 <https://github.com/supermarin/powerline-fonts> 下载 monaco 字体点击/拖放安装即可。

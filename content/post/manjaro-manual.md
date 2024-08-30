@@ -2,7 +2,7 @@
 title: "Manjaro 使用"
 author: ["SHI WENHUA"]
 date: "2022-03-31 22:53:00"
-lastmod: "2024-06-08 10:27:11"
+lastmod: "2024-06-21 08:34:11"
 tags: ["manjaro"]
 categories: ["Linux"]
 draft: false
@@ -406,6 +406,24 @@ pacman -S ibus-rime
 # 2、用户目录
 ~/.config/ibus/rime/
 # ~/.config/fcitx/rime/
+```
+
+```bash
+# manjaro 无法找到数据库
+sudo pacman-mirrors -c China
+sudo pacman -Syyu
+
+# 安装软件
+sudo pacman -S yay
+sudo pacman -S ibus ibus-rime
+yay -S ibus-qt
+
+# 添加配置
+sudo vi ~/.xprofile
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+ibus-daemon -d -x
 ```
 
 

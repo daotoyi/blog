@@ -2,7 +2,7 @@
 title: "Linux Proxy"
 author: ["SHI WENHUA"]
 date: "2022-04-10 16:43:00"
-lastmod: "2024-04-22 19:32:18"
+lastmod: "2024-06-21 08:35:51"
 categories: ["Linux"]
 draft: false
 ---
@@ -18,7 +18,8 @@ export http_proxy=<http://127.0.0.1:port>
 ## config {#config}
 
 ```cfg
-no_proxy=localhost,127.0.0.0/8,*.local # 访问指定地址时不使用代理，可以用逗号分隔多个地址
+# 访问指定地址时不使用代理，可以用逗号分隔多个地址
+no_proxy=localhost,127.0.0.0/8,*.local
 NO_PROXY=localhost,127.0.0.0/8,*.local
 all_proxy=socks://proxy.example.com:8080/
 ALL_PROXY=socks://proxy.example.com:8080/

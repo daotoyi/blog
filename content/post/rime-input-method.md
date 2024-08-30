@@ -2,7 +2,7 @@
 title: "Rime"
 author: ["SHI WENHUA"]
 date: "2022-07-16 20:43:00"
-lastmod: "2024-06-09 08:16:46"
+lastmod: "2024-06-11 22:43:29"
 categories: ["Tools"]
 draft: false
 ---
@@ -309,7 +309,7 @@ use_preset_vocabulary: true
 🆘  sos   10000
 ```
 
-最后需要在 ~/Library/Rime/daotu.dict.yaml 中增加此词典，进行部署, 我们就可以看到我们定义的 sos 了
+最后需要在 ~/Library/Rime/daoyi.dict.yaml 中增加此词典，进行部署, 我们就可以看到我们定义的 sos 了
 
 
 ## Note {#note}

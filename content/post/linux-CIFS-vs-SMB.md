@@ -1,7 +1,8 @@
 ---
 title: "Linux CIFS 与 SMB"
+author: ["SHI WENHUA"]
 date: "2024-01-03 11:46:00"
-lastmod: "2024-01-03 11:46:43"
+lastmod: "2024-08-04 11:45:57"
 categories: ["Linux"]
 draft: false
 ---

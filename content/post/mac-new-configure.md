@@ -2,15 +2,15 @@
 title: "Mac OS 新手配置"
 author: ["SHI WENHUA"]
 date: "2024-03-28 17:55:00"
-lastmod: "2024-06-07 18:47:41"
+lastmod: "2024-08-24 10:31:18"
 categories: ["macOS"]
 draft: false
 ---
 
-### Homebrew {#homebrew}
+## Homebrew {#homebrew}
 
 
-#### instruction {#instruction}
+### instruction {#instruction}
 
 Homebrew 是 MacOS（或 Linux）的软件包管理器。Homebrew 是一款包管理工具，目前支持 macOS 和 Linux 系统。主要有四个部分组成：
 
@@ -25,7 +25,7 @@ brew 下载安装目录
 -   brew install 命令安装的应用程序会默认放在/usr/local/Cellar/目录下
 
 
-#### install {#install}
+### install {#install}
 
 ```bash
 # 官方
@@ -37,30 +37,74 @@ brew 下载安装目录
 
 # homebrew的安装路径为："/opt/Homebrew/"
 # 安装时需要先安装git
+```
 
+
+### replace source {#replace-source}
+
+
+#### method 1 {#method-1}
+
+```bash
+# 替换 brew.git
+cd "$(brew --repo)"
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+# 替换 homebrew-core.git
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+```
+
+
+#### method 2 {#method-2}
+
+```bash
 # 更换brew.git
 git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git # 中科大
-git -C "$(brew --repo)" remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git # 阿里巴巴
-git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git # 清华大学
-# 更换xxx
-git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git # 中科大
-git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git # 中科大
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles' >> ~/.bash_profile # 中科大
-source ~/.zshrc
-# source ~/.bash_profile
+# git -C "$(brew --repo)" remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git # 阿里巴巴
+# git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git # 清华大学
+# 更换xxx # 中科大
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
+```
 
+
+#### method 3 {#method-3}
+
+```bash
+if [ $SHELL = "/bin/bash" ] # 如果你的是bash
+then
+    echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/' >> ~/.bash_profile
+    # echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles' >> ~/.bash_profile # 中科大
+    source ~/.bash_profile
+elif [ $SHELL = "/bin/zsh" ] # 如果用的shell 是zsh 的话
+then
+    echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/' >> ~/.zshrc
+    source ~/.zshrc
+fi
+```
+
+
+#### restore default {#restore-default}
+
+```bash
 # 恢复默认源
 git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
 git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core.git
 git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
+
 # 删除环境变量 HOMEBREW_BOTTLE_DOMAIN
 source ~/.zshrc
 # source ~/.bash_profile
+
 brew update
 ```
 
 
-#### brew usage {#brew-usage}
+#### brew config {#brew-config}
+
+
+### brew usage {#brew-usage}
 
 ```bash
 brew -v
@@ -102,7 +146,7 @@ brew services cleanup
 ```
 
 
-#### brew doctor {#brew-doctor}
+### brew doctor {#brew-doctor}
 
 ```bash
 brew doctor # 查看问题，按照指示对问题进行修复
@@ -111,7 +155,7 @@ brew update # 更新软件包
 ```
 
 
-#### brew install 和 brew cask install {#brew-install-和-brew-cask-install}
+### brew install 和 brew cask install {#brew-install-和-brew-cask-install}
 
 Homebrew 是一款 Mac OS 平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。
 
@@ -138,17 +182,17 @@ Homebrw 相关的几个文件夹用途：
 -   brew cask install 用来安装一些带界面的应用软件。
 
 
-#### brew tap {#brew-tap}
+### brew tap {#brew-tap}
 
 除了自带的两个仓库「Formulae」与「Casks」，使用 tap 指令可以添加更多的仓库。这些仓库默认从 Homebrew 自己的 Github 仓库添加，但也可以是第三方的仓库「甚至可以是你自己的仓库」。
 
 [https://github.com/Homebrew](https://github.com/Homebrew)
 
 
-### 必备软件 {#必备软件}
+## 必备软件 {#必备软件}
 
 
-#### brew {#brew}
+### brew {#brew}
 
 -   install
 
@@ -172,6 +216,7 @@ brew install bat      # dependenies: libssh2, libgit2, oniguruma
 brew install zoxide
 brew install ripgrep
 brew install hugo
+brew install pdfgrep
 
 brew install autojump
 # services
@@ -184,7 +229,7 @@ brew services start nginx
 MANUAL INSTALLATION: download, put bin.link to /usr/local/bin
 
 
-#### brew cask {#brew-cask}
+### brew cask {#brew-cask}
 
 ```bash
 
@@ -199,6 +244,7 @@ brew install --cask microsoft-powerpoint
 brew install --cask microsoft-remote-deskto
 brew install --cask onedrive
 brew install --cask wpsoffice-cn
+brew install --cask baidunetdisk
 
 # vpn
 brew install --cask shadowsocksx-ng-r
@@ -236,7 +282,7 @@ brew install --cask sshfs
 ```
 
 
-#### brew tap {#brew-tap}
+### brew tap {#brew-tap}
 
 ```bash
 brew tap homebrew/cask-fonts
@@ -248,7 +294,7 @@ brew install d12frosted/emacs-plus/emacs-plus@30
 ```
 
 
-#### brew bundle {#brew-bundle}
+### brew bundle {#brew-bundle}
 
 Homebrew 不仅仅是一个包管理器，还具有软件依赖管理能力。通过 Homebrew Bundle 可以解决所有软件依赖，包括官方和第三方的 formula 以及 cask，甚至还包括 Mac App Store（简称 mas）中的应用。
 
@@ -261,7 +307,7 @@ brew bundle
 ```
 
 
-#### mas-cli {#mas-cli}
+### mas-cli {#mas-cli}
 
 Homebrew 并不能管理 MAS 上的应用软件。 mas-cli 官方用「A simple command line interface for the Mac App Store. Designed for scripting and automation.」这样简洁的话说明了它的用途。
 
@@ -319,7 +365,7 @@ alias mas?='mas account'
 -   对于 MAS 中新上架的应用，可能无法查询到其应用识别码。因为 mas-cli 的查询列表在其缓存文件中，可能暂时未更新。如若由其他途径（如应用链接）得知新上架应用识别码，仍可正常安装。
 
 
-#### brew 正常安装 {#brew-正常安装}
+### brew 正常安装 {#brew-正常安装}
 
 ```bash
 brew install --cask \
@@ -330,100 +376,96 @@ brew install --cask \
 ```
 
 
-#### brew 安装异常 {#brew-安装异常}
+### brew 安装异常 {#brew-安装异常}
 
 -   百度网盘，brew 安装的是一个很老的叫百度同步盘的东西
 -   zoom 会议，brew 没有
 
 
-#### 下载安装 {#下载安装}
+### 下载安装 {#下载安装}
 
 -   Neat Download Manager
     -   官网下载，双击后在访达位置处将 app 文件拷贝到 Application 中。
 -   TotalFinder
 
 
-### 工具软件 {#工具软件}
+## 工具软件 {#工具软件}
 
 
-#### Spacemacs {#spacemacs}
+### Spacemacs {#spacemacs}
 
-<!--list-separator-->
 
--  terminal
+#### terminal {#terminal}
 
-    -   emacs
+-   emacs
 
-    <!--listend-->
+<!--listend-->
 
+```bash
+brew install emacs
+# dependencies:
+# gmp, libunistring, libidn2, libtasn1, nettle, p11-kit, libevent, libnghttp2, unbound, gnutls and jansso
+```
+
+-   emacs-plus(also GUI）
+
+<!--listend-->
+
+```bash
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-native-comp
+
+brew install d12frosted/emacs-plus/emacs-plus@30
+```
+
+
+#### GUI {#gui}
+
+-   Emacs For Mac OSX(官方 complele)
+-   Emacs Mac Port
+-   相较于 Emacs For Mac OS X ，Emacs Mac Port 界面效果更好，裸 Emacs 的图标更加美观。
+
+主要特性：
+
+-   Core Text for text rendering. 增强文本显示及 Unicode 支持，已并入官方 24.4   - 平滑滚动。用触控板时可以像素级平滑滚动，官方版是按行滚动。   - 手势。可以用触控板手势调整字体大小等   - 支持 Apple 的事件。   - 支持字典服务，三指查看字典   - 服务集成。可以在 Finder 中用 Emacs 打开指定文件   - 用 Webkit 替代 librsvg 来显示 SVG
+
+-   emacs mac port (官方基础上优化后编译）
+
+<!--listend-->
+
+```bash
+brew tap railwaycat/emacsmacport
+brew install --cask emacs-mac
+```
+
+
+#### spacemacs configure {#spacemacs-configure}
+
+```bash
+cd ~
+mv .emacs.d .emacs.d.bak
+mv .emacs .emacs.bak
+
+brew install --cask emacs-mac
+emacs --version
+
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
+
+
+#### dylayer/configure key {#dylayer-configure-key}
+
+-   Spacemacs 的主要配置位于 `~/.spacemacs` 文件中。
+    -   可以单独使用编辑器对此文件进行编辑，也可以在 Spacemacs 中对其进行编辑。
+    -   在 Spacemacs 状态下进行编辑 `SPC f e d` ，刷新配置 `SPC f e R` 。
+-   dylayer 的主要配置位于 `~/.spacemacs.d/` 目录中。
     ```bash
-    brew install emacs
-    # dependencies:
-    # gmp, libunistring, libidn2, libtasn1, nettle, p11-kit, libevent, libnghttp2, unbound, gnutls and jansso
+    mkdir ~/.spacemacs.d
+    git clone https://github.com/daotoyi/spacemacs.d.git ~/.spacemacs.d
     ```
 
-    -   emacs-plus(also GUI）
 
-    <!--listend-->
-
-    ```bash
-    brew tap d12frosted/emacs-plus
-    brew install emacs-plus --with-native-comp
-
-    brew install d12frosted/emacs-plus/emacs-plus@30
-    ```
-
-<!--list-separator-->
-
--  GUI
-
-    -   Emacs For Mac OSX(官方 complele)
-    -   Emacs Mac Port
-    -   相较于 Emacs For Mac OS X ，Emacs Mac Port 界面效果更好，裸 Emacs 的图标更加美观。
-
-    主要特性：
-
-    -   Core Text for text rendering. 增强文本显示及 Unicode 支持，已并入官方 24.4   - 平滑滚动。用触控板时可以像素级平滑滚动，官方版是按行滚动。   - 手势。可以用触控板手势调整字体大小等   - 支持 Apple 的事件。   - 支持字典服务，三指查看字典   - 服务集成。可以在 Finder 中用 Emacs 打开指定文件   - 用 Webkit 替代 librsvg 来显示 SVG
-
-    -   emacs mac port (官方基础上优化后编译）
-
-    <!--listend-->
-
-    ```bash
-    brew tap railwaycat/emacsmacport
-    brew install --cask emacs-mac
-    ```
-
-<!--list-separator-->
-
--  spacemacs configure
-
-    ```bash
-    cd ~
-    mv .emacs.d .emacs.d.bak
-    mv .emacs .emacs.bak
-
-    brew install --cask emacs-mac
-    emacs --version
-
-    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-    ```
-
-<!--list-separator-->
-
--  dylayer/configure key
-
-    -   Spacemacs 的主要配置位于 `~/.spacemacs` 文件中。
-        -   可以单独使用编辑器对此文件进行编辑，也可以在 Spacemacs 中对其进行编辑。
-        -   在 Spacemacs 状态下进行编辑 `SPC f e d` ，刷新配置 `SPC f e R` 。
-    -   dylayer 的主要配置位于 `~/.spacemacs.d/` 目录中。
-        ```bash
-        mkdir ~/.spacemacs.d
-        git clone https://github.com/daotoyi/spacemacs.d.git ~/.spacemacs.d
-        ```
-
-
-#### MacTex {#mactex}
+### MacTex {#mactex}
 
 MacTex 提供了几个版本，完整版的 Mactex 超过一个 G，而基本版的话只有 90MBs 左右.
 
@@ -445,7 +487,7 @@ sudo tlmgr install environ
 ```
 
 
-#### Proxy {#proxy}
+### Proxy {#proxy}
 
 ```bash
 # 当前终端走代理
@@ -455,39 +497,59 @@ export ALL_PROXY=socks5://127.0.0.1:1080
 ```
 
 
-### 办公软件 {#办公软件}
+### screen proflific {#screen-proflific}
+
+需要安装以下串口驱动，并配置隐私与安全。 PL2303HXD_G_Mac Driver_v2.2.2_20221228.pkg
+
+安装驱动并接入 USB 转串口线后，会在系统中出现 PL2303G-xxxx
+
+```bash
+ ~/ofb# ll /dev/cu.*
+crw-rw-rw-   0,5 root  9 Jul 21:54   /dev/cu.Bluetooth-Incoming-Port
+crw-rw-rw-   0,3 root 10 Jul 13:32   /dev/cu.PL2303G-USBtoUART1110
+crw-rw-rw-   0,1 root  9 Jul 21:53   /dev/cu.wlan-debug
+ ~/ofb# ll /dev/tty.*
+crw-rw-rw-   0,4 root  9 Jul 21:54   /dev/tty.Bluetooth-Incoming-Port
+crw-rw-rw-   0,2 root 10 Jul 13:31   /dev/tty.PL2303G-USBtoUART1110
+crw-rw-rw-   0,0 root  9 Jul 21:53   /dev/tty.wlan-debug
+
+# console登录
+screen /dev/cu.PL2303G-USBtoUART1110 115200
+```
 
 
-#### Outlook {#outlook}
-
-<!--list-separator-->
-
--  263 登录
-
-    -   协议-POP
-    -   电子邮箱地址
-        -   xxx@xxx.com
-    -   POP 用户名
-        -   xxx@xxx.com
-    -   POP 密码
-        -   （邮箱密码）
-    -   POP 接收服务器
-        -   popcom.263xmail.com
-        -   或者域名地址 211.150.82.8
-        -   (使用 ssl 连接）
-            -   无
-    -   SMTP 用户名
-        -   空
-    -   SMTP 密码
-        -   空
-    -   SMTP 发送服务器
-        -   smtpcom.263xmail.com
-        -   或者域名地址 211.150.65.66
-        -   (使用 ssl 连接）
-            -   无
+## 办公软件 {#办公软件}
 
 
-#### AppMail {#appmail}
+### Outlook {#outlook}
+
+
+#### 263 登录 {#263-登录}
+
+-   协议-POP
+-   电子邮箱地址
+    -   xxx@xxx.com
+-   POP 用户名
+    -   xxx@xxx.com
+-   POP 密码
+    -   （邮箱密码）
+-   POP 接收服务器
+    -   popcom.263xmail.com
+    -   或者域名地址 211.150.82.8
+    -   (使用 ssl 连接）
+        -   无
+-   SMTP 用户名
+    -   空
+-   SMTP 密码
+    -   空
+-   SMTP 发送服务器
+    -   smtpcom.263xmail.com
+    -   或者域名地址 211.150.65.66
+    -   (使用 ssl 连接）
+        -   无
+
+
+### AppMail {#appmail}
 
 -   IMAP
 -   收服务器
@@ -496,17 +558,11 @@ export ALL_PROXY=socks5://127.0.0.1:1080
     -   smtp.263.net
 
 
-#### 网易邮箱 {#网易邮箱}
+### 网易邮箱 {#网易邮箱}
 
 ```nil
 brew install --cask mailmaster
 ```
 
 
-### 投资软件 {#投资软件}
-
-
-## <span class="org-todo done DONE">DONE</span> 恢复模式 {#恢复模式}
-
-:PROPERTIES:
-:EXPORT_FILE_NAME: ma
+## 投资软件 {#投资软件}

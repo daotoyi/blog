@@ -1,9 +1,10 @@
 ---
 title: "Linux cmd zoxide"
 author: ["SHI WENHUA"]
-lastmod: "2024-04-01 12:43:16"
+date: "2024-06-21 13:51:00"
+lastmod: "2024-06-21 13:51:06"
 categories: ["Linux"]
-draft: true
+draft: false
 ---
 
 ```bash

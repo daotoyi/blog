@@ -2,7 +2,7 @@
 title: "Linux debian sid source"
 author: ["SHI WENHUA"]
 date: "2023-09-23 12:17:00"
-lastmod: "2024-08-27 10:38:16"
+lastmod: "2024-08-27 10:39:00"
 categories: ["Linux"]
 draft: false
 ---

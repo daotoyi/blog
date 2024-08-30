@@ -1,7 +1,8 @@
 ---
 title: "Linux cmd tar/zip"
+author: ["SHI WENHUA"]
 date: "2022-11-03 14:47:00"
-lastmod: "2024-01-15 22:24:44"
+lastmod: "2024-08-10 08:22:29"
 tags: ["cmd"]
 categories: ["Linux"]
 draft: false
@@ -89,17 +90,36 @@ tar -zxvf u2file.tar.gz foder/access.log.0805
 tar -zxvf u2file.tar.gz foder/access.log.*
 ```
 
--   追加文件
+-   追加文件（只针对于 tar 格式）
 
 <!--listend-->
 
 ```bash
-# 未压缩追
+# 未压缩追加
 tar -rf test.tar  <file 或者 dir>
+tar -tf test.tar --add-file=test #只针对tar包
 
 # 已压缩追加
 gzip -c file.txt >> archive.gz
 ```
+
+-   删除文件（只针对于 tar 格式）
+
+<!--listend-->
+
+```bash
+tar --delete -f test.tar  test1 #从test.tar中删除test1文件
+```
+
+-   解压时去掉目录
+    ```bash
+    tar -xvf test.tar.gz --strip-components=1 #去掉一层目录
+    ```
+-   解压不覆盖原文件
+    ```bash
+    # -k参数（会抛出错误信息）
+    tar -xvkf test.tar.gz
+    ```
 
 
 ### 扩展文件属性 {#扩展文件属性}

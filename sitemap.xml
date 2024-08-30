@@ -3,647 +3,712 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.daotoyi.github.io/categories.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/categories/macos.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/mac-package-install-and-uninstall.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/categories/internet.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/internet-email-protocol.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/macos-sshfs-useage.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/linux.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/linux-grub-parameter.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/linux-linx-source.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/linux-cmd-autojump.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/tags/manjaro.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/categories/internet.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/majaro-customize-to-macos-style.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/internet-samba.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/tags.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/categories/macos.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/majaro-pacman-aur-and-yaourt.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/macos-qemu-useage.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/mac-restore-mode.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/linux-invoke-compress-api.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/mac-new-configure.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/linux-cmd-zutils.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/linux-oh-my-fish.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/linux-debian9-chinese-input-config.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.daotoyi.github.io/post/linux-shell-regrex.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/linux-shell-progress-show.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/tags/shell.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/hardware-bmc-ipmi-eufi-bios.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/categories/hardware.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/linux-initramfs.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/categories/windows.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.daotoyi.github.io/post/windows-bat-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <loc>https://blog.daotoyi.github.io/post/linux-cmd-screen.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/cmd.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-cmd-dracut.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/tags.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-network-interfaces-allow-hotplug-vs-auto.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-cmd-zoxide.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-fonts.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/mac-package-install-and-uninstall.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/mac-spacemacs-evil-mode-fcitx-remote.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/internet-email-protocol.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/macos-sshfs-useage.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-grub-parameter.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-cmd-autojump.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-debian-add-rc-local-service.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/tags/manjaro.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/majaro-customize-to-macos-style.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/majaro-pacman-aur-and-yaourt.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/mac-restore-mode.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/mac-new-configure.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-oh-my-fish.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-shell-regrex.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-shell-progress-show.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/tags/shell.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/hardware-bmc-ipmi-eufi-bios.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/categories/hardware.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-initramfs.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/categories/windows.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/windows-bat-manual.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-pv.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-samba.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tools-syslinux-instruction.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/tools.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-architecture.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-ip-localhost.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cifs-vs-smb.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internet-openstack.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-cmos-and-bios.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tool-frp-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-measure-the-strength-of-wifi-signal.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-shell-echo-color.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-grub-starup-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-rhel8.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-ubuntu16-config.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tools-syslinux.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-reinstall-grub.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-change-ramdisk-img.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-file-attributes.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tool-linux-download.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internet-generate-certificate-manually.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-smartctl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-git-commit-standara.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/github.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-raid.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tool-obsidian.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internet-nginx-acme-config.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-arm-processors-family.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-trusted-platform-module.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-elkhart-lake-network-design.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/vps.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/vuepress.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/vuepress-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/emacs.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-region-selected-color-set.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-chinese-show-errors.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-office-update-error.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-shell-putty-config.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-shell-mode-chinese-show-error.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-repeat-login-screen.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-pam.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-xdmcp-remote-set.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-tab-key-view.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-wsl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/code.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/pyqt5_qdock_initsize.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-shell-function-invoke-between-files.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-shell-archive.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/hotkey.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-terminal-hotkey-commonly.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-system-enhance.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-systecm-service-manager.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-crystal-oscillator.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-wireless-communication.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-faq-archives.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-download-url.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-support-hsr-prp-by-kernerl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.daotoyi.github.io/post/linux-debain-sid-source.html</loc>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-debain-sid.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/markdown.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tool-mermaid.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tools-terminal-crack.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-local-remote-transmit.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tool-everything-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/windows.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-systime-and-rtctime.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-grub2.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-uefi.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-clear-c-disk.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-disk-filesystem.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-audit-monitor-sigkill.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-networkmanager.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-posix.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmake-nmake-qmake.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-kylinx-operate-system.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-terminal-hotkey.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-cmd-chkdsk.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-babel.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-shell-e.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-uart-rs232-ttl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-cpu.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/cpu.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/network.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-network-card.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/org.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-table-shrink.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-mode-instruction.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-vsftpd.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-export-pdf.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/majaro-faq.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-emoji.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/sphinx-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-simulation-of-sampling.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-archive.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/spacemacs.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/spacemacs-operate.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/spacemacs-basic-operation.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/spacemacs-package-lation.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-use-package.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-emms.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/music.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-bongo.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -653,1147 +718,1147 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-plugins-list.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-word-archive.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-tar-zip.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-qt.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/docker.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-normal-user-permission.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-access.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internet-cloudflare.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internet-cloudflare-tunnel.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-faq.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-terminal-show-color.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-sgcc.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-hardware.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-jiedian.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-vs-markdown.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-beamer.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-host.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-modbus.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/apache2-conf-note.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tools-siyuan_note.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-hsr-prp.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-redhat-update-yum-repo.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-brctl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/python.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/python-call-c&#43;&#43;.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/code-html-xml.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-iptables.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-archives.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/cplus.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/libs.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-glibc-eglibc-uclibc-musl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-desktop-environment.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-remote-desktop.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-gcc-compile-lib.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/faq.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-system-frequently-asked-questions.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-coredump.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/xray-vless-tcp-xtls-via-nginx.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tools-qttabbar-uninstall.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/nat-nnds.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/windows-and-iso.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-distinguish-functions.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-compose-multi-files.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/private-network-disk-nextcloud.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-crontab.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-shell-input-parameter.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/domain.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internetcustomize-email-domain.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internetcustomize-email-domain.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/rime-input-method.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-reverse-shell.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-32bit-systecm-support-8g-ram.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-32bit-program-run-on-64bit-system.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/webssh.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/webssh.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/vps-judge-vps-ip-or-port-banned.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/python-cython.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hardware-switch.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/busybox.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-busybox-buildroot-openwrt.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-network.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-compile-openssh-and-openssl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/ssl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/chroot-mount-bind-and-namespaces.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-github-gitlab.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-yum-dnf.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/vps-vs-shared-hosting.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/git.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-tag.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/wordpress-maintenance.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/saas-iaas-paas.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/google-gmail.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/microsoft-account-login.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/rsshub-docker-deployed.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/v2ray.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2ray-share-proxy-to-others.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/nat-ddns.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2ray-mix-reverse&#43;proxy.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-user-group.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/ssh.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/ssh-nat&#43;ddns.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-checkout-commit&#43;push.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/v2rayn.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2rayn-qv2ray.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-file&#43;directory-color.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tampermonkey.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/hugo.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-ox&#43;hugo-hugo-vuepress.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/oxhugo.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/quant.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/quant-tushare.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-ox&#43;hugo-meta.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/ox.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/spacevim.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/vim.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/tool-capslock&#43;.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/wxpusher.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/python-decorator-advanced.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/python-json-export-chinese-formate.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/python-jupyter-lab.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-ld-linux.so.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/make-cmake-qmake.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-ag.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-selinux.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-oh-my-zsh.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/python-name-standard.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/sublime.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/sublime-notes.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/aws.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/amazon-web-services.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/xray.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/xray-note.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/xray-vless-tcp-xtls-whatever.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/fastkeysautomation.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-rpoxy.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-compose-config.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/vim-jump.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/google-rgb.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/kernel.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-realtime-kernel.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/kindle-formate-epub-mobi-azw3.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-org-table-calculate.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-docker-file.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/nginx-conf-note.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/internet-proxy.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/ca-ssl-certificate.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/cert.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/certificate-sign.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-fig-compose.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-watchtower.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/mariadb-mysql-common-command.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/xray-and-projectx.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-locale.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/managepackage.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/packages-manager.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/sublime-hotkey.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/ssl-tls-sni.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2ray-reverse-implement-nat-ddns.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2ray-debug-config-record.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/jianguoyun-sync-exclude-file.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-selinux-tar-uncompress.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/manjaro-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/selinux.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-packages-manager-yum-dnf-pacman.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-yum-dnf.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-common-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-pull-force.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-stash.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/cpu-frequency.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-cmd-stty.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/connectutility.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-actions.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-access-verification-with-token.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/markdown-notes.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-profile-show-stats-language-and-metrics.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/cad.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/cad-notes.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/iftt-example.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/imagemagick-pdf-switch-image.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/picgo-github-picsbed.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-picsbed-show-pictures.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/picsbed.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/wordpress.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/wordpress-and-bt-install-deploy.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-virtual-machine-capacity-and-reduce.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-github-action.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/linux-compare-with-windows.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-export-pdf-setting.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-export-align-table-with-chinese.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-export-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/rss.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/rsshub-vercel-deploy.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/trusteeship.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/web-trusteeship-freely.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/wifi-sta-and-ap-model.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-theme-book-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-theme-loveit-archive.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/vpn.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/vpn-v2rayvpn-v2free.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2ray-websocket-nginx-cnd-tsl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/gcp.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/google-cloud-platform.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/v2ray-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/domain-instruction.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/edge.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/edge-access-extension.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-daemon.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-remote-access.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/system-port.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/system-time-timezone.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/rss-instruction.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-operation-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-instruction.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-install-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/docker-push-to-dockerhub.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/inoreader-access-in-mainland.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/rss.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/huginn-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/latex.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/latex-export-table.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/latex-common-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/org-latex-table-width.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/elfeed.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-elfeed-org.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/org-download-on-windows.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/screenshot.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hunspell-flymode-on-windows.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/hunspell.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/magit.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-magit-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/unicode-utf8-gbk.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/dired.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-dired-common-hotkey.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/vim-donnot-need-multipe-cursor-edit.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/git-submodule-vs-subtree.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/ssd-performance-improvement.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/doman-name-system.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-pages-custome-domain-name-ssl.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/tags/snippet.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/emacs-snippets-manual.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/oauth.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/github-mannal-issues.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-theme-even-archive.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/repositories.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/about.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/categories/hugo.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-markdown.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.daotoyi.github.io/post/hugo-org-mode.html</loc>
-    <lastmod>2024-06-10T09:26:22+08:00</lastmod>
+    <lastmod>2024-08-30T23:03:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

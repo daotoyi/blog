@@ -6,7 +6,16 @@
     <description>Recent content in macOS on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jun 2024 08:29:08 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Aug 2024 22:14:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS qemu 安装 Archlinux</title>
+      <link>https://blog.daotoyi.github.io/post/macos-qemu-useage.html</link>
+      <pubDate>Sat, 24 Aug 2024 22:14:00 +0000</pubDate>
+      
+      <guid>https://blog.daotoyi.github.io/post/macos-qemu-useage.html</guid>
+      <description>install qemu 1 2 3 4 5 brew install qemu qemu-system-x86_64 --version QEMU emulator version 9.0.2 Copyright (c) 2003-2024 Fabrice Bellard and the QEMU Project developers startup archlinux create img 1 qemu-img Create -f qcow2 ~/QEMU/archlinux.qcow2 20G 占用的磁盘空间随着使用逐渐扩展，而非一次分配 20 G 磁盘空间。 startup archlinux 1 2</description>
+    </item>
+    
     <item>
       <title>macOS 软件包安装/卸載</title>
       <link>https://blog.daotoyi.github.io/post/mac-package-install-and-uninstall.html</link>

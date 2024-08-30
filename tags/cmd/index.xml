@@ -6,7 +6,16 @@
     <description>Recent content in cmd on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jan 2024 10:28:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jun 2024 13:49:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux cmd dracut</title>
+      <link>https://blog.daotoyi.github.io/post/linux-cmd-dracut.html</link>
+      <pubDate>Sat, 29 Jun 2024 13:49:00 +0000</pubDate>
+      
+      <guid>https://blog.daotoyi.github.io/post/linux-cmd-dracut.html</guid>
+      <description>用于增强 Linux 启动系统的功能，并通过从已安装的系统中复制设备和文件并将其与 Dracut 框架合并来开发 Linux 启动映像（initramfs，初始 RAM 文件系统）。 dracut 作</description>
+    </item>
+    
     <item>
       <title>Linux cmd pv</title>
       <link>https://blog.daotoyi.github.io/post/linux-cmd-pv.html</link>

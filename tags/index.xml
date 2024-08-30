@@ -6,7 +6,16 @@
     <description>Recent content in Tags on DaoyiSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Apr 2024 12:06:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jun 2024 13:49:00 +0000</lastBuildDate><atom:link href="https://blog.daotoyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cmd</title>
+      <link>https://blog.daotoyi.github.io/tags/cmd.html</link>
+      <pubDate>Sat, 29 Jun 2024 13:49:00 +0000</pubDate>
+      
+      <guid>https://blog.daotoyi.github.io/tags/cmd.html</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>manjaro</title>
       <link>https://blog.daotoyi.github.io/tags/manjaro.html</link>
@@ -22,15 +31,6 @@
       <pubDate>Sat, 02 Mar 2024 13:53:00 +0000</pubDate>
       
       <guid>https://blog.daotoyi.github.io/tags/shell.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cmd</title>
-      <link>https://blog.daotoyi.github.io/tags/cmd.html</link>
-      <pubDate>Sat, 13 Jan 2024 10:28:00 +0000</pubDate>
-      
-      <guid>https://blog.daotoyi.github.io/tags/cmd.html</guid>
       <description></description>
     </item>
     

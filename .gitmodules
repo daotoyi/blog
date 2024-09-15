@@ -7,3 +7,6 @@
 [submodule "themes/den"]
 	path = themes/den
 	url = https://github.com/iswbm/hugo-theme-den
+[submodule "themes/mainroad"]
+	path = themes/den
+	url = https://github.com/diguage/hugo-theme-mainroad

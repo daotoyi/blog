@@ -1,8 +1,9 @@
 ---
 title: "Linux HSR/PRP 功能"
+author: ["SHI WENHUA"]
 description: "compile-kernel-hsr-module"
 date: "2023-09-23 14:45:00"
-lastmod: "2023-10-08 15:37:31"
+lastmod: "2024-09-12 18:06:58"
 categories: ["Linux"]
 draft: false
 ---
@@ -310,7 +311,6 @@ ip link set $if up
 ```
 
 -   run-script
-
     ```shell
     # hsr interface
     sh ./<script_filename.sh> hsr eth1 eth2 192.168.2.20
